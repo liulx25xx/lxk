@@ -1,0 +1,46 @@
+{
+  "domain": "math",
+  "model_tag": "grpo_lr2e5",
+  "model_path": "outputs/math/grpo/FIXED_seed42_gsm8k_lr2e5/final",
+  "accuracy": 0.522,
+  "n_test": 500,
+  "correct": 261,
+  "source": "MATH-500",
+  "subdomain_breakdown": {
+    "Algebra": {
+      "correct": 96,
+      "total": 125,
+      "accuracy": 0.768
+    },
+    "Intermediate Algebra": {
+      "correct": 26,
+      "total": 89,
+      "accuracy": 0.29213483146067415
+    },
+    "Geometry": {
+      "correct": 23,
+      "total": 57,
+      "accuracy": 0.40350877192982454
+    },
+    "Precalculus": {
+      "correct": 10,
+      "total": 56,
+      "accuracy": 0.17857142857142858
+    },
+    "Number Theory": {
+      "correct": 40,
+      "total": 54,
+      "accuracy": 0.7407407407407407
+    },
+    "Prealgebra": {
+      "correct": 49,
+      "total": 73,
+      "accuracy": 0.6712328767123288
+    },
+    "Counting & Probability": {
+      "correct": 17,
+      "total": 46,
+      "accuracy": 0.3695652173913043
+    }
+  }
+}

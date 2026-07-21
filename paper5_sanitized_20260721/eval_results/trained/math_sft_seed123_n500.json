@@ -1,0 +1,12 @@
+{
+  "domain": "math",
+  "method": "sft",
+  "run_name": "seed123_n500",
+  "seed": 123,
+  "n_train": 500,
+  "accuracy": 0.7907505686125853,
+  "n_test": 1319,
+  "correct": 1043,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/math/sft/seed123_n500/final",
+  "subdomain_evaluated": "gsm8k"
+}

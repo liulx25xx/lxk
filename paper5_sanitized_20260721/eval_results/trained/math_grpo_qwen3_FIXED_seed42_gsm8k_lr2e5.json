@@ -1,0 +1,12 @@
+{
+  "domain": "math",
+  "method": "grpo",
+  "run_name": "qwen3_FIXED_seed42_gsm8k_lr2e5",
+  "seed": 42,
+  "n_train": 3,
+  "accuracy": 0.9052312357846853,
+  "n_test": 1319,
+  "correct": 1194,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/math/grpo/qwen3_FIXED_seed42_gsm8k_lr2e5/final",
+  "subdomain_evaluated": "gsm8k"
+}

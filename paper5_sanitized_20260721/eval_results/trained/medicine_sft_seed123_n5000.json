@@ -1,0 +1,12 @@
+{
+  "domain": "medicine",
+  "method": "sft",
+  "run_name": "seed123_n5000",
+  "seed": 123,
+  "n_train": 5000,
+  "accuracy": 0.5813040062843676,
+  "n_test": 1273,
+  "correct": 740,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/sft/seed123_n5000/final",
+  "subdomain_evaluated": "all"
+}

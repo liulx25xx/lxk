@@ -1,0 +1,16 @@
+{
+  "domain": "science",
+  "model_tag": "sft_best",
+  "model_path": "outputs/science/sft/seed456_n5000/final",
+  "accuracy": 0.78839590443686,
+  "n_test": 1172,
+  "correct": 924,
+  "source": "ARC-Challenge",
+  "subdomain_breakdown": {
+    "arc_challenge": {
+      "correct": 924,
+      "total": 1172,
+      "accuracy": 0.78839590443686
+    }
+  }
+}

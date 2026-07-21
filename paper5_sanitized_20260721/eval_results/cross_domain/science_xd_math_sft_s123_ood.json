@@ -1,0 +1,16 @@
+{
+  "domain": "science",
+  "model_tag": "xd_math_sft_s123",
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/math/sft/seed123_n2000/final/",
+  "accuracy": 0.8344709897610921,
+  "n_test": 1172,
+  "correct": 978,
+  "source": "ARC-Challenge",
+  "subdomain_breakdown": {
+    "arc_challenge": {
+      "correct": 978,
+      "total": 1172,
+      "accuracy": 0.8344709897610921
+    }
+  }
+}

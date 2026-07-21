@@ -1,0 +1,12 @@
+{
+  "domain": "medicine",
+  "method": "grpo",
+  "run_name": "FIXED_seed42_n2000_lr2e5_beta01",
+  "seed": 42,
+  "n_train": 2000,
+  "accuracy": 0.6017282010997643,
+  "n_test": 1273,
+  "correct": 766,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/grpo/FIXED_seed42_n2000_lr2e5_beta01/final",
+  "subdomain_evaluated": "all"
+}

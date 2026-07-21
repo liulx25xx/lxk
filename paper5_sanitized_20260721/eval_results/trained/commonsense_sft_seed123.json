@@ -1,0 +1,12 @@
+{
+  "domain": "commonsense",
+  "method": "sft",
+  "run_name": "seed123",
+  "seed": 123,
+  "n_train": 0,
+  "accuracy": 0.47173457883717185,
+  "n_test": 12418,
+  "correct": 5858,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/commonsense/sft/seed123/final",
+  "subdomain_evaluated": "all"
+}

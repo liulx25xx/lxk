@@ -1,0 +1,12 @@
+{
+  "domain": "science",
+  "method": "grpo",
+  "run_name": "qwen3_FIXED_seed42_n2000_lr2e5",
+  "seed": 42,
+  "n_train": 3,
+  "accuracy": 0.7869942730463698,
+  "n_test": 5413,
+  "correct": 4260,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/science/grpo/qwen3_FIXED_seed42_n2000_lr2e5/final",
+  "subdomain_evaluated": "all"
+}

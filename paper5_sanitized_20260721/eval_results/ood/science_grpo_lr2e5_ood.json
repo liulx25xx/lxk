@@ -1,0 +1,16 @@
+{
+  "domain": "science",
+  "model_tag": "grpo_lr2e5",
+  "model_path": "outputs/science/grpo/FIXED_seed456_n2000_lr2e5/final",
+  "accuracy": 0.9232081911262798,
+  "n_test": 1172,
+  "correct": 1082,
+  "source": "ARC-Challenge",
+  "subdomain_breakdown": {
+    "arc_challenge": {
+      "correct": 1082,
+      "total": 1172,
+      "accuracy": 0.9232081911262798
+    }
+  }
+}

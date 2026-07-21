@@ -1,0 +1,46 @@
+{
+  "domain": "math",
+  "model_tag": "sft_best",
+  "model_path": "outputs/math/sft/seed123_n100/final",
+  "accuracy": 0.508,
+  "n_test": 500,
+  "correct": 254,
+  "source": "MATH-500",
+  "subdomain_breakdown": {
+    "Algebra": {
+      "correct": 94,
+      "total": 125,
+      "accuracy": 0.752
+    },
+    "Intermediate Algebra": {
+      "correct": 25,
+      "total": 89,
+      "accuracy": 0.2808988764044944
+    },
+    "Geometry": {
+      "correct": 19,
+      "total": 57,
+      "accuracy": 0.3333333333333333
+    },
+    "Precalculus": {
+      "correct": 11,
+      "total": 56,
+      "accuracy": 0.19642857142857142
+    },
+    "Number Theory": {
+      "correct": 40,
+      "total": 54,
+      "accuracy": 0.7407407407407407
+    },
+    "Prealgebra": {
+      "correct": 48,
+      "total": 73,
+      "accuracy": 0.6575342465753424
+    },
+    "Counting & Probability": {
+      "correct": 17,
+      "total": 46,
+      "accuracy": 0.3695652173913043
+    }
+  }
+}

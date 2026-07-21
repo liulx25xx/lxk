@@ -1,0 +1,17 @@
+# DPO default hyperparameters
+
+beta: 0.1
+loss_type: sigmoid
+num_train_steps: 4000
+per_device_batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-7
+warmup_ratio: 0.1
+weight_decay: 0.01
+lr_scheduler_type: cosine
+max_grad_norm: 1.0
+max_prompt_length: 512
+
+logging_steps: 10
+save_steps: 500
+eval_steps: 500

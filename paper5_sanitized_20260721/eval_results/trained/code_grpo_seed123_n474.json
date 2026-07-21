@@ -1,0 +1,12 @@
+{
+  "domain": "code",
+  "method": "grpo",
+  "run_name": "seed123_n474",
+  "seed": 123,
+  "n_train": 474,
+  "accuracy": 0.0,
+  "n_test": 664,
+  "correct": 0,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/code/grpo/seed123_n474/final",
+  "subdomain_evaluated": "all"
+}

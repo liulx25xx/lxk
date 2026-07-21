@@ -1,0 +1,12 @@
+{
+  "domain": "law",
+  "method": "sft",
+  "run_name": "seed456",
+  "seed": 42,
+  "n_train": 0,
+  "accuracy": 0.5888685955974238,
+  "n_test": 10403,
+  "correct": 6126,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/law/sft/seed456/final",
+  "subdomain_evaluated": "all"
+}

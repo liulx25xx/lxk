@@ -1,0 +1,12 @@
+{
+  "domain": "math",
+  "method": "sft",
+  "run_name": "qwen3_seed42_n5000",
+  "seed": 42,
+  "n_train": 3,
+  "accuracy": 0.8294162244124337,
+  "n_test": 1319,
+  "correct": 1094,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/math/sft/qwen3_seed42_n5000/final",
+  "subdomain_evaluated": "gsm8k"
+}

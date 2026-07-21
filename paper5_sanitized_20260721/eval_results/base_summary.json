@@ -1,0 +1,119 @@
+{
+  "medicine": {
+    "accuracy": 0.591516103692066,
+    "n": 1273,
+    "correct": 753,
+    "subdomains": {
+      "medqa": {
+        "accuracy": 0.591516103692066,
+        "n": 1273,
+        "correct": 753
+      }
+    }
+  },
+  "code": {
+    "accuracy": 0.20481927710843373,
+    "n": 664,
+    "correct": 136,
+    "subdomains": {
+      "humaneval": {
+        "accuracy": 0.6829268292682927,
+        "n": 164,
+        "correct": 112
+      },
+      "mbpp": {
+        "accuracy": 0.048,
+        "n": 500,
+        "correct": 24
+      }
+    }
+  },
+  "science": {
+    "accuracy": 0.7110659523369666,
+    "n": 5413,
+    "correct": 3849,
+    "subdomains": {
+      "arc_challenge": {
+        "accuracy": 0.7320819112627986,
+        "n": 1172,
+        "correct": 858
+      },
+      "scienceqa": {
+        "accuracy": 0.7052581938222118,
+        "n": 4241,
+        "correct": 2991
+      }
+    }
+  },
+  "math": {
+    "accuracy": 0.6766893495806299,
+    "n": 6319,
+    "correct": 4276,
+    "subdomains": {
+      "gsm8k": {
+        "accuracy": 0.8438210765731615,
+        "n": 1319,
+        "correct": 1113
+      },
+      "math_full": {
+        "accuracy": 0.6326,
+        "n": 5000,
+        "correct": 3163
+      }
+    }
+  },
+  "law": {
+    "accuracy": 0.5758915697394982,
+    "n": 10403,
+    "correct": 5991,
+    "subdomains": {
+      "abercrombie": {
+        "accuracy": 0.18947368421052632,
+        "n": 95,
+        "correct": 18
+      },
+      "corporate_lobbying": {
+        "accuracy": 0.5102040816326531,
+        "n": 490,
+        "correct": 250
+      },
+      "function_of_decision_section": {
+        "accuracy": 0.13896457765667575,
+        "n": 367,
+        "correct": 51
+      },
+      "international_citizenship_questions": {
+        "accuracy": 0.604341285192349,
+        "n": 9306,
+        "correct": 5624
+      },
+      "proa": {
+        "accuracy": 0.47368421052631576,
+        "n": 95,
+        "correct": 45
+      },
+      "rule_qa": {
+        "accuracy": 0.06,
+        "n": 50,
+        "correct": 3
+      }
+    }
+  },
+  "commonsense": {
+    "accuracy": 0.4378321790948623,
+    "n": 12418,
+    "correct": 5437,
+    "subdomains": {
+      "arc_easy": {
+        "accuracy": 0.8143939393939394,
+        "n": 2376,
+        "correct": 1935
+      },
+      "hellaswag": {
+        "accuracy": 0.3487353116908982,
+        "n": 10042,
+        "correct": 3502
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model_tag": "opd_med_s42",
+  "train_domain": "medicine",
+  "method": "opd",
+  "indomain": {
+    "accuracy": 0.5993715632364494,
+    "n_test": 1273,
+    "correct": 763
+  },
+  "ood_math": {
+    "accuracy": 0.492,
+    "n_test": 500,
+    "correct": 246
+  },
+  "ood_science": {
+    "accuracy": 0.7679180887372014,
+    "n_test": 1172,
+    "correct": 900
+  }
+}

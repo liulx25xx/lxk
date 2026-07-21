@@ -1,0 +1,12 @@
+{
+  "domain": "science",
+  "method": "sft",
+  "run_name": "seed42_n5000_lr5e6",
+  "seed": 42,
+  "n_train": 5000,
+  "accuracy": 0.723443561795677,
+  "n_test": 5413,
+  "correct": 3916,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/science/sft/seed42_n5000_lr5e6/final",
+  "subdomain_evaluated": "all"
+}

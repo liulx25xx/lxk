@@ -1,0 +1,16 @@
+{
+  "domain": "commonsense",
+  "model_tag": "base",
+  "model_path": "base",
+  "accuracy": 0.6921862667719021,
+  "n_test": 1267,
+  "correct": 877,
+  "source": "WinoGrande",
+  "subdomain_breakdown": {
+    "winogrande": {
+      "correct": 877,
+      "total": 1267,
+      "accuracy": 0.6921862667719021
+    }
+  }
+}

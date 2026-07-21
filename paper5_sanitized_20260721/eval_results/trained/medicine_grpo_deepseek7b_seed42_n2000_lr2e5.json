@@ -1,0 +1,12 @@
+{
+  "domain": "medicine",
+  "method": "grpo",
+  "run_name": "deepseek7b_seed42_n2000_lr2e5",
+  "seed": 42,
+  "n_train": 2000,
+  "accuracy": 0.20267085624509035,
+  "n_test": 1273,
+  "correct": 258,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/grpo/deepseek7b_seed42_n2000_lr2e5/final",
+  "subdomain_evaluated": "all"
+}

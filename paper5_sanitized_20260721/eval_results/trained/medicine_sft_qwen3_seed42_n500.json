@@ -1,0 +1,12 @@
+{
+  "domain": "medicine",
+  "method": "sft",
+  "run_name": "qwen3_seed42_n500",
+  "seed": 42,
+  "n_train": 3,
+  "accuracy": 0.631578947368421,
+  "n_test": 1273,
+  "correct": 804,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/sft/qwen3_seed42_n500/final",
+  "subdomain_evaluated": "all"
+}

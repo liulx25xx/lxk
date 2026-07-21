@@ -1,0 +1,13 @@
+{
+  "domain": "science",
+  "method": "grpo",
+  "run_name": "seed42_n2000",
+  "seed": 42,
+  "n_train": 2000,
+  "accuracy": 0.7108812118972844,
+  "n_test": 5413,
+  "correct": 3848,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/science/grpo/seed42_n2000/final",
+  "subdomain_evaluated": "all",
+  "is_fullft": false
+}

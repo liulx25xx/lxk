@@ -1,0 +1,13 @@
+# SFT default hyperparameters (fair-compute budget)
+# 3 epochs on N training samples ≈ matched compute with GRPO 4000 steps @ G=8
+
+num_epochs: 3
+per_device_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-5
+warmup_ratio: 0.1
+weight_decay: 0.01
+lr_scheduler_type: cosine
+logging_steps: 10
+save_steps: 200
+eval_steps: 200

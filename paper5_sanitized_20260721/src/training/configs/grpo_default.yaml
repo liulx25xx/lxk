@@ -1,0 +1,26 @@
+# GRPO default hyperparameters
+# 4000 steps with G=8 rollouts per prompt
+
+num_generations: 8
+num_train_steps: 4000
+per_device_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-6
+warmup_steps: 100
+weight_decay: 0.01
+max_grad_norm: 1.0
+temperature: 0.7
+top_p: 0.95
+
+# DAPO-style asymmetric clipping
+clip_eps_high: 0.28
+clip_eps_low: 0.18
+kl_coeff: 0.01
+
+# Reward settings
+use_format_reward: true
+format_reward_weight: 0.1
+
+logging_steps: 10
+save_steps: 500
+eval_steps: 500
