@@ -1,0 +1,36 @@
+{
+  "domain": "medicine",
+  "model_tag": "base",
+  "model_path": "base",
+  "accuracy": 0.6941798941798942,
+  "n_test": 945,
+  "correct": 656,
+  "source": "MMLU-Med",
+  "subdomain_breakdown": {
+    "anatomy": {
+      "correct": 91,
+      "total": 135,
+      "accuracy": 0.674074074074074
+    },
+    "clinical_knowledge": {
+      "correct": 183,
+      "total": 265,
+      "accuracy": 0.690566037735849
+    },
+    "college_medicine": {
+      "correct": 116,
+      "total": 173,
+      "accuracy": 0.6705202312138728
+    },
+    "medical_genetics": {
+      "correct": 81,
+      "total": 100,
+      "accuracy": 0.81
+    },
+    "professional_medicine": {
+      "correct": 185,
+      "total": 272,
+      "accuracy": 0.6801470588235294
+    }
+  }
+}

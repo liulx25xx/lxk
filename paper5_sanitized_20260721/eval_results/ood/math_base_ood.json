@@ -1,0 +1,46 @@
+{
+  "domain": "math",
+  "model_tag": "base",
+  "model_path": "base",
+  "accuracy": 0.508,
+  "n_test": 500,
+  "correct": 254,
+  "source": "MATH-500",
+  "subdomain_breakdown": {
+    "Algebra": {
+      "correct": 92,
+      "total": 125,
+      "accuracy": 0.736
+    },
+    "Intermediate Algebra": {
+      "correct": 26,
+      "total": 89,
+      "accuracy": 0.29213483146067415
+    },
+    "Geometry": {
+      "correct": 20,
+      "total": 57,
+      "accuracy": 0.3508771929824561
+    },
+    "Precalculus": {
+      "correct": 11,
+      "total": 56,
+      "accuracy": 0.19642857142857142
+    },
+    "Number Theory": {
+      "correct": 38,
+      "total": 54,
+      "accuracy": 0.7037037037037037
+    },
+    "Prealgebra": {
+      "correct": 50,
+      "total": 73,
+      "accuracy": 0.684931506849315
+    },
+    "Counting & Probability": {
+      "correct": 17,
+      "total": 46,
+      "accuracy": 0.3695652173913043
+    }
+  }
+}

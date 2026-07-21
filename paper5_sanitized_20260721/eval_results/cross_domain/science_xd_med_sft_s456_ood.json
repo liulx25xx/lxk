@@ -1,0 +1,16 @@
+{
+  "domain": "science",
+  "model_tag": "xd_med_sft_s456",
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/sft/seed456_n2000/final/",
+  "accuracy": 0.7824232081911263,
+  "n_test": 1172,
+  "correct": 917,
+  "source": "ARC-Challenge",
+  "subdomain_breakdown": {
+    "arc_challenge": {
+      "correct": 917,
+      "total": 1172,
+      "accuracy": 0.7824232081911263
+    }
+  }
+}

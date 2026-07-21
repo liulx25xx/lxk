@@ -1,0 +1,12 @@
+{
+  "domain": "commonsense",
+  "method": "grpo",
+  "run_name": "FIXED_seed123_n2000_lr2e5",
+  "seed": 123,
+  "n_train": 2000,
+  "accuracy": 0.6743436946368175,
+  "n_test": 12418,
+  "correct": 8374,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/commonsense/grpo/FIXED_seed123_n2000_lr2e5/final",
+  "subdomain_evaluated": "all"
+}

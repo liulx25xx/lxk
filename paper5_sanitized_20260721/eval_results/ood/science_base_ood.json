@@ -1,0 +1,16 @@
+{
+  "domain": "science",
+  "model_tag": "base",
+  "model_path": "base",
+  "accuracy": 0.7636518771331058,
+  "n_test": 1172,
+  "correct": 895,
+  "source": "ARC-Challenge",
+  "subdomain_breakdown": {
+    "arc_challenge": {
+      "correct": 895,
+      "total": 1172,
+      "accuracy": 0.7636518771331058
+    }
+  }
+}

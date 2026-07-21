@@ -1,0 +1,36 @@
+{
+  "domain": "medicine",
+  "model_tag": "xd_sci_sft_s42",
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/science/sft/seed42_n2000/final/",
+  "accuracy": 0.6952380952380952,
+  "n_test": 945,
+  "correct": 657,
+  "source": "MMLU-Med",
+  "subdomain_breakdown": {
+    "anatomy": {
+      "correct": 88,
+      "total": 135,
+      "accuracy": 0.6518518518518519
+    },
+    "clinical_knowledge": {
+      "correct": 187,
+      "total": 265,
+      "accuracy": 0.7056603773584905
+    },
+    "college_medicine": {
+      "correct": 106,
+      "total": 173,
+      "accuracy": 0.6127167630057804
+    },
+    "medical_genetics": {
+      "correct": 83,
+      "total": 100,
+      "accuracy": 0.83
+    },
+    "professional_medicine": {
+      "correct": 193,
+      "total": 272,
+      "accuracy": 0.7095588235294118
+    }
+  }
+}

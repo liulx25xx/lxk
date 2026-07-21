@@ -1,0 +1,12 @@
+{
+  "domain": "science",
+  "method": "grpo",
+  "run_name": "FIXED_seed123_n2000",
+  "seed": 123,
+  "n_train": 2000,
+  "accuracy": 0.7171623868464807,
+  "n_test": 5413,
+  "correct": 3882,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/science/grpo/FIXED_seed123_n2000/final",
+  "subdomain_evaluated": "all"
+}

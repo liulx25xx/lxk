@@ -1,0 +1,26 @@
+{
+  "domain": "law",
+  "model_tag": "base",
+  "model_path": "base",
+  "accuracy": 0.42824730572887126,
+  "n_test": 1763,
+  "correct": 755,
+  "source": "MMLU-Law",
+  "subdomain_breakdown": {
+    "professional_law": {
+      "correct": 610,
+      "total": 1534,
+      "accuracy": 0.39765319426336376
+    },
+    "international_law": {
+      "correct": 76,
+      "total": 121,
+      "accuracy": 0.628099173553719
+    },
+    "jurisprudence": {
+      "correct": 69,
+      "total": 108,
+      "accuracy": 0.6388888888888888
+    }
+  }
+}

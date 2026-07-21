@@ -1,0 +1,12 @@
+{
+  "domain": "law",
+  "method": "grpo",
+  "run_name": "seed123",
+  "seed": 123,
+  "n_train": 0,
+  "accuracy": 0.5793521099682784,
+  "n_test": 10403,
+  "correct": 6027,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/law/grpo/seed123/final",
+  "subdomain_evaluated": "all"
+}

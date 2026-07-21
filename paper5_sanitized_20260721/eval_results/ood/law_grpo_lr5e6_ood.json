@@ -1,0 +1,26 @@
+{
+  "domain": "law",
+  "model_tag": "grpo_lr5e6",
+  "model_path": "outputs/law/grpo/FIXED_seed42_lr5e6/final",
+  "accuracy": 0.4288145207033466,
+  "n_test": 1763,
+  "correct": 756,
+  "source": "MMLU-Law",
+  "subdomain_breakdown": {
+    "professional_law": {
+      "correct": 613,
+      "total": 1534,
+      "accuracy": 0.39960886571056065
+    },
+    "international_law": {
+      "correct": 77,
+      "total": 121,
+      "accuracy": 0.6363636363636364
+    },
+    "jurisprudence": {
+      "correct": 66,
+      "total": 108,
+      "accuracy": 0.6111111111111112
+    }
+  }
+}

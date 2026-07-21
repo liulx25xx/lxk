@@ -1,0 +1,20 @@
+{
+  "model_tag": "opd_math_s1001",
+  "train_domain": "math",
+  "method": "opd",
+  "indomain": {
+    "accuracy": 0.6470960595030859,
+    "n_test": 6319,
+    "correct": 4089
+  },
+  "ood_science": {
+    "accuracy": 0.7517064846416383,
+    "n_test": 1172,
+    "correct": 881
+  },
+  "ood_medicine": {
+    "accuracy": 0.674074074074074,
+    "n_test": 945,
+    "correct": 637
+  }
+}

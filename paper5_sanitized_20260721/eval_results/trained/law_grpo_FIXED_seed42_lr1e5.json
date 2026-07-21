@@ -1,0 +1,12 @@
+{
+  "domain": "law",
+  "method": "grpo",
+  "run_name": "FIXED_seed42_lr1e5",
+  "seed": 42,
+  "n_train": 0,
+  "accuracy": 0.588195712775161,
+  "n_test": 10403,
+  "correct": 6119,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/law/grpo/FIXED_seed42_lr1e5/final",
+  "subdomain_evaluated": "all"
+}

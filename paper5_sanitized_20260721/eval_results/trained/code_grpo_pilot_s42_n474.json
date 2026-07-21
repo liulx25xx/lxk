@@ -1,0 +1,12 @@
+{
+  "domain": "code",
+  "method": "grpo",
+  "run_name": "pilot_s42_n474",
+  "seed": 42,
+  "n_train": 474,
+  "accuracy": 0.0,
+  "n_test": 664,
+  "correct": 0,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/code/grpo/pilot_s42_n474/final",
+  "subdomain_evaluated": "all"
+}

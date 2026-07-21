@@ -1,0 +1,14 @@
+{
+  "math": {
+    "mean_ppl": 4.34,
+    "n": 200
+  },
+  "medicine": {
+    "mean_ppl": 2.46,
+    "n": 200
+  },
+  "science": {
+    "mean_ppl": 2.92,
+    "n": 200
+  }
+}

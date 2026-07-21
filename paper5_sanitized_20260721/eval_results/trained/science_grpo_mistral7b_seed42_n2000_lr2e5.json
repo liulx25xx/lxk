@@ -1,0 +1,12 @@
+{
+  "domain": "science",
+  "method": "grpo",
+  "run_name": "mistral7b_seed42_n2000_lr2e5",
+  "seed": 42,
+  "n_train": 2000,
+  "accuracy": 0.7040458156290412,
+  "n_test": 5413,
+  "correct": 3811,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/science/grpo/mistral7b_seed42_n2000_lr2e5/final",
+  "subdomain_evaluated": "all"
+}

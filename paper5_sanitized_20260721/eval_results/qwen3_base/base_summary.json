@@ -1,0 +1,48 @@
+{
+  "medicine": {
+    "accuracy": 0.5051060487038491,
+    "n": 1273,
+    "correct": 643,
+    "subdomains": {
+      "medqa": {
+        "accuracy": 0.5051060487038491,
+        "n": 1273,
+        "correct": 643
+      }
+    }
+  },
+  "science": {
+    "accuracy": 0.7385922778496213,
+    "n": 5413,
+    "correct": 3998,
+    "subdomains": {
+      "arc_challenge": {
+        "accuracy": 0.7918088737201365,
+        "n": 1172,
+        "correct": 928
+      },
+      "scienceqa": {
+        "accuracy": 0.723885875972648,
+        "n": 4241,
+        "correct": 3070
+      }
+    }
+  },
+  "math": {
+    "accuracy": 0.4649469852824814,
+    "n": 6319,
+    "correct": 2938,
+    "subdomains": {
+      "gsm8k": {
+        "accuracy": 0.8150113722517058,
+        "n": 1319,
+        "correct": 1075
+      },
+      "math_full": {
+        "accuracy": 0.3726,
+        "n": 5000,
+        "correct": 1863
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Default config shared across all domain x method combinations.
+# Override per experiment by loading this + domain-specific YAML.
+
+# ---- Model ----
+model_name: "Qwen/Qwen2.5-7B-Instruct"
+max_length: 2048
+
+# ---- LoRA (identical across SFT / GRPO / DPO) ----
+lora_rank: 64
+lora_alpha: 128
+lora_dropout: 0.05
+lora_target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# ---- Hardware ----
+bf16: true
+gradient_checkpointing: true

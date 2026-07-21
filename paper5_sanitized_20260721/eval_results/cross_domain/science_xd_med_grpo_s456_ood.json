@@ -1,0 +1,16 @@
+{
+  "domain": "science",
+  "model_tag": "xd_med_grpo_s456",
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/grpo/FIXED_seed456_n2000_lr2e5/final/",
+  "accuracy": 0.893344709897611,
+  "n_test": 1172,
+  "correct": 1047,
+  "source": "ARC-Challenge",
+  "subdomain_breakdown": {
+    "arc_challenge": {
+      "correct": 1047,
+      "total": 1172,
+      "accuracy": 0.893344709897611
+    }
+  }
+}

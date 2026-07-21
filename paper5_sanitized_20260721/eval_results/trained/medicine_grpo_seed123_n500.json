@@ -1,0 +1,13 @@
+{
+  "domain": "medicine",
+  "method": "grpo",
+  "run_name": "seed123_n500",
+  "seed": 123,
+  "n_train": 500,
+  "accuracy": 0.5954438334642577,
+  "n_test": 1273,
+  "correct": 758,
+  "model_path": "/path/to/workspace/project/emnlp/paper5/outputs/medicine/grpo/seed123_n500/final",
+  "subdomain_evaluated": "all",
+  "is_fullft": false
+}

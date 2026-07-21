@@ -1,0 +1,26 @@
+{
+  "domain": "law",
+  "model_tag": "sft_best",
+  "model_path": "outputs/law/sft/seed42/final",
+  "accuracy": 0.4446965399886557,
+  "n_test": 1763,
+  "correct": 784,
+  "source": "MMLU-Law",
+  "subdomain_breakdown": {
+    "professional_law": {
+      "correct": 625,
+      "total": 1534,
+      "accuracy": 0.4074315514993481
+    },
+    "international_law": {
+      "correct": 86,
+      "total": 121,
+      "accuracy": 0.7107438016528925
+    },
+    "jurisprudence": {
+      "correct": 73,
+      "total": 108,
+      "accuracy": 0.6759259259259259
+    }
+  }
+}
