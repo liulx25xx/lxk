@@ -1,0 +1,27 @@
+[
+  {
+    "instance_id": "django__django-11206",
+    "model_name_or_path": "gpt41_scaffold",
+    "model_patch": "diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py\nindex 88b35fc435..0e1ac29804 100644\n--- a/django/utils/numberformat.py\n+++ b/django/utils/numberformat.py\n@@ -31,14 +31,17 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',\n         # scientific notation to avoid high memory usage in {:f}'.format().\n         _, digits, exponent = number.as_tuple()\n         if abs(exponent) + len(digits) > 200:\n-            number = '{:e}'.format(number)\n-            coefficient, exponent = number.split('e')\n-            # Format the coefficient.\n-            coefficient = format(\n-                coefficient, decimal_sep, decimal_pos, grouping,\n-                thousand_sep, force_grouping, use_l10n,\n-            )\n-            return '{}e{}'.format(coefficient, exponent)\n+            if decimal_pos is not None and number == 0:\n+                str_number = '0.' + '0' * decimal_pos\n+            else:\n+                number = '{:e}'.format(number)\n+                coefficient, exponent = number.split('e')\n+                # Format the coefficient.\n+                coefficient = format(\n+                    coefficient, decimal_sep, decimal_pos, grouping,\n+                    thousand_sep, force_grouping, use_l10n,\n+                )\n+                return '{}e{}'.format(coefficient, exponent)\n         else:\n             str_number = '{:f}'.format(number)\n     else:"
+  },
+  {
+    "instance_id": "django__django-13406",
+    "model_name_or_path": "gpt41_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-14017",
+    "model_name_or_path": "gpt41_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-11885",
+    "model_name_or_path": "gpt41_scaffold",
+    "model_patch": "diff --git a/django/db/models/deletion.py b/django/db/models/deletion.py\nindex ae82d26340..bc2d58ef9a 100644\n--- a/django/db/models/deletion.py\n+++ b/django/db/models/deletion.py\n@@ -310,7 +310,23 @@ class Collector:\n                     )\n \n             # fast deletes\n+            from collections import defaultdict\n+            from django.db.models import Q\n+\n+            # Group fast deletes by model and combine their filters\n+            grouped = defaultdict(list)\n             for qs in self.fast_deletes:\n+                grouped[qs.model].append(qs)\n+\n+            for model, qs_list in grouped.items():\n+                if len(qs_list) == 1:\n+                    qs = qs_list[0]\n+                else:\n+                    # Combine querysets using OR\n+                    combined_qs = qs_list[0]\n+                    for other_qs in qs_list[1:]:\n+                        combined_qs = combined_qs | other_qs\n+                    qs = combined_qs\n                 count = qs._raw_delete(using=self.using)\n                 deleted_counter[qs.model._meta.label] += count"
+  },
+  {
+    "instance_id": "django__django-16502",
+    "model_name_or_path": "gpt41_scaffold",
+    "model_patch": "diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py\nindex fef5532e58..29de00f87f 100644\n--- a/django/core/servers/basehttp.py\n+++ b/django/core/servers/basehttp.py\n@@ -128,6 +128,11 @@ class ServerHandler(simple_server.ServerHandler):\n             LimitedStream(stdin, content_length), stdout, stderr, environ, **kwargs\n         )\n \n+    def write(self, data):\n+        if self.environ.get('REQUEST_METHOD') == 'HEAD':\n+            return\n+        super().write(data)\n+\n     def cleanup_headers(self):\n         super().cleanup_headers()\n         # HTTP/1.1 requires support for persistent connections. Send 'close' if"
+  }
+]

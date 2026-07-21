@@ -1,0 +1,12 @@
+## Recovery Feedback: Re-read the Issue
+
+Your previous attempt targeted the wrong code location. Go back to basics.
+
+**Action Required:**
+- Re-read the issue description word by word
+- Identify the exact symptoms described (what behavior is wrong?)
+- Trace those symptoms to the responsible code — what function/class produces that behavior?
+- Use `search_dir` with keywords from the error message or the described behavior
+- Do NOT assume your previous localization was correct
+
+Start fresh from the issue description and find the real source of the bug.

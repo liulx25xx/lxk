@@ -1,0 +1,27 @@
+[
+  {
+    "instance_id": "django__django-11206",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py\nindex 88b35fc435..15ef523538 100644\n--- a/django/utils/numberformat.py\n+++ b/django/utils/numberformat.py\n@@ -30,7 +30,8 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',\n         # Format values with more than 200 digits (an arbitrary cutoff) using\n         # scientific notation to avoid high memory usage in {:f}'.format().\n         _, digits, exponent = number.as_tuple()\n-        if abs(exponent) + len(digits) > 200:\n+        if abs(exponent) + len(digits) > 200 or (decimal_pos is not None and abs(number) < 10**(-decimal_pos)):\n+            return \"0.\" + \"0\" * decimal_pos\n             number = '{:e}'.format(number)\n             coefficient, exponent = number.split('e')\n             # Format the coefficient."
+  },
+  {
+    "instance_id": "django__django-13406",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/db/models/query.py b/django/db/models/query.py\nindex b48d0df9c0..c172d7a0ed 100644\n--- a/django/db/models/query.py\n+++ b/django/db/models/query.py\n@@ -182,6 +182,15 @@ class FlatValuesListIterable(BaseIterable):\n \n \n class QuerySet:\n+    def __getstate__(self):\n+        state = self.__dict__.copy()\n+        state['_iterable_class'] = self._iterable_class\n+        return state\n+\n+    def __setstate__(self, state):\n+        self.__dict__.update(state)\n+        self._iterable_class = state.get('_iterable_class', ModelIterable)\n+\n     \"\"\"Represent a lazy database lookup for a set of objects.\"\"\"\n \n     def __init__(self, model=None, query=None, using=None, hints=None):"
+  },
+  {
+    "instance_id": "django__django-14017",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/db/models/expressions.py b/django/db/models/expressions.py\nindex ffc3a7fda5..e9083aac36 100644\n--- a/django/db/models/expressions.py\n+++ b/django/db/models/expressions.py\n@@ -1148,6 +1148,9 @@ class Subquery(Expression):\n \n \n class Exists(Subquery):\n+    def __rand__(self, other):\n+        return self.__and__(other)\n+\n     template = 'EXISTS(%(subquery)s)'\n     output_field = fields.BooleanField()"
+  },
+  {
+    "instance_id": "django__django-11885",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-16502",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py\nindex fef5532e58..3ef91f2fcc 100644\n--- a/django/core/servers/basehttp.py\n+++ b/django/core/servers/basehttp.py\n@@ -208,6 +208,14 @@ class WSGIRequestHandler(simple_server.WSGIRequestHandler):\n             pass\n \n     def handle_one_request(self):\n+        self.raw_requestline = self.rfile.readline(65537)\n+        if not self.parse_request(): return\n+        if self.command == \"HEAD\":\n+            self.wfile.write(b\"\")\n+        if self.raw_requestline.startswith(b\"HEAD \"):\n+            self.wfile.write(b\"\")\n+        if self.command == \"HEAD\":\n+            self.wfile.write(b\"\")\n         \"\"\"Copy of WSGIRequestHandler.handle() but with different ServerHandler\"\"\"\n         self.raw_requestline = self.rfile.readline(65537)\n         if len(self.raw_requestline) > 65536:"
+  }
+]

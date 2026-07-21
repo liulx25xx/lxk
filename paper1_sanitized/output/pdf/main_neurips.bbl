@@ -1,0 +1,173 @@
+\begin{thebibliography}{33}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bouzenia et~al.(2023)Bouzenia, Ding, Pei, Ray, and Pradel]{bouzenia2023tracefixer}
+Islem Bouzenia, Yangruibo Ding, Kexin Pei, Baishakhi Ray, and Michael Pradel.
+\newblock {TraceFixer}: Execution trace-driven program repair.
+\newblock \emph{arXiv preprint arXiv:2304.12743}, 2023.
+
+\bibitem[Bouzenia et~al.(2025)Bouzenia, Devanbu, and Pradel]{bouzenia2025repairagent}
+Islem Bouzenia, Premkumar Devanbu, and Michael Pradel.
+\newblock {RepairAgent}: An autonomous, {LLM}-based agent for program repair.
+\newblock In \emph{Proceedings of the 47th IEEE/ACM International Conference on Software Engineering (ICSE)}, 2025.
+
+\bibitem[Cemri et~al.(2025)Cemri, Pan, Yang, Agrawal, Chopra, Tiwari, Keutzer, Parameswaran, Klein, Ramchandran, Zaharia, Gonzalez, and Stoica]{cemri2025mast}
+Mert Cemri, Melissa~Z. Pan, Shuyi Yang, Lakshya~A. Agrawal, Bhavya Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya~G. Parameswaran, Dan Klein, Kannan Ramchandran, Matei Zaharia, Joseph~E. Gonzalez, and Ion Stoica.
+\newblock Why do multi-agent {LLM} systems fail?
+\newblock \emph{arXiv preprint arXiv:2503.13657}, 2025.
+
+\bibitem[Chen et~al.(2024)Chen, Lin, Zeng, Zan, Wang, Cheshkov, Sun, Yu, Dong, Aliev, Wang, Cheng, Liang, Ma, Bian, Xie, and Wang]{chen2024coder}
+Dong Chen, Shaoxin Lin, Muhan Zeng, Daoguang Zan, Jian-Gang Wang, Anton Cheshkov, Jun Sun, Hao Yu, Guoliang Dong, Artem Aliev, Jie Wang, Xiao Cheng, Guangtai Liang, Yuchi Ma, Pan Bian, Tao Xie, and Qianxiang Wang.
+\newblock {CodeR}: Issue resolving with multi-agent and task graphs.
+\newblock \emph{arXiv preprint arXiv:2406.01304}, 2024.
+
+\bibitem[Chen et~al.(2025)Chen, Tao, Zhang, Zhou, Zhang, Gu, He, Zhang, Cai, Zhao, and Jin]{chen2025revisitselfdebugging}
+Xiancai Chen, Zhengwei Tao, Kechi Zhang, Changzhi Zhou, Xinyu Zhang, Wanli Gu, Yuanpeng He, Mengdi Zhang, Xunliang Cai, Haiyan Zhao, and Zhi Jin.
+\newblock Revisit self-debugging with self-generated tests for code generation.
+\newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)}, 2025.
+
+\bibitem[Chen et~al.(2023)Chen, Lin, Sch{"a}rli, and Zhou]{chen2023teaching}
+Xinyun Chen, Maxwell Lin, Nathanael Sch{"a}rli, and Denny Zhou.
+\newblock Teaching large language models to self-debug.
+\newblock \emph{arXiv preprint arXiv:2304.05128}, 2023.
+
+\bibitem[Feng et~al.(2025)Feng, Xue, Liu, and An]{feng2025gigpo}
+Lang Feng, Zhenghai Xue, Tingcong Liu, and Bo~An.
+\newblock Group-in-group policy optimization for {LLM} agent training.
+\newblock \emph{arXiv preprint arXiv:2505.10978}, 2025.
+
+\bibitem[Gandhi et~al.(2025)Gandhi, Tsay, Ganhotra, Kate, and Rizk]{gandhi2025sweprm}
+Shubham Gandhi, Jason Tsay, Jatin Ganhotra, Kiran Kate, and Yara Rizk.
+\newblock When agents go astray: Course-correcting {SWE} agents with {PRMs}.
+\newblock \emph{arXiv preprint arXiv:2509.02360}, 2025.
+
+\bibitem[Huang et~al.(2024)Huang, Bu, Zhang, Luck, and Wen]{huang2024agentcoder}
+Dong Huang, Jie Bu, Jie~M. Zhang, Michael Luck, and Cong Wen.
+\newblock {AgentCoder}: Multi-agent code generation with effective testing and self-optimisation.
+\newblock \emph{arXiv preprint arXiv:2312.13010}, 2024.
+
+\bibitem[Huang et~al.(2026)Huang, Ye, Sun, Zhang, Zhang, and Liu]{huang2026tracecoder}
+Jiangping Huang, Wenguang Ye, Weisong Sun, Jian Zhang, Mingyue Zhang, and Yang Liu.
+\newblock {TraceCoder}: A trace-driven multi-agent framework for automated debugging of {LLM}-generated code.
+\newblock In \emph{Proceedings of the 48th IEEE/ACM International Conference on Software Engineering (ICSE)}, 2026.
+
+\bibitem[Huang et~al.(2025)Huang, Xu, Liu, Sun, Zhang, Lei, Yan, and Zhang]{huang2025dynafix}
+Zhili Huang, Ling Xu, Chao Liu, Weifeng Sun, Xu~Zhang, Yan Lei, Meng Yan, and Hongyu Zhang.
+\newblock {DynaFix}: Iterative automated program repair driven by execution-level dynamic information.
+\newblock \emph{arXiv preprint arXiv:2512.24635}, 2025.
+
+\bibitem[Jimenez et~al.(2024)Jimenez, Yang, Wettig, Yao, Pei, Press, and Narasimhan]{jimenez2024swebench}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik~R. Narasimhan.
+\newblock {SWE}-bench: Can language models resolve real-world {GitHub} issues?
+\newblock In \emph{Proceedings of the 12th International Conference on Learning Representations (ICLR)}, 2024.
+
+\bibitem[Khot et~al.(2023)Khot, Trivedi, Finlayson, Fu, Richardson, Clark, and Sabharwal]{khot2023decomposed}
+Tushar Khot, Harsh Trivedi, Matthew Finlayson, Yao Fu, Kyle Richardson, Peter Clark, and Ashish Sabharwal.
+\newblock Decomposed prompting: A modular approach for solving complex tasks.
+\newblock In \emph{Proceedings of the 11th International Conference on Learning Representations (ICLR)}, 2023.
+
+\bibitem[Lightman et~al.(2024)Lightman, Kosaraju, Burda, Edwards, Baker, Lee, Leike, Schulman, Sutskever, and Cobbe]{lightman2024lets}
+Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe.
+\newblock Let's verify step by step.
+\newblock In \emph{Proceedings of the 12th International Conference on Learning Representations (ICLR)}, 2024.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe, Alon, Dziri, Prabhumoye, Yang, Gupta, Majumder, Hermann, Welleck, Yazdanbakhsh, and Clark]{madaan2023selfrefine}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bodhisattwa~Prasad Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, and Peter Clark.
+\newblock Self-refine: Iterative refinement with self-feedback.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2023.
+
+\bibitem[Nam et~al.(2024)Nam, Macvean, Hellendoorn, Vasilescu, and Myers]{nam2024using}
+Daye Nam, Andrew Macvean, Vincent Hellendoorn, Bogdan Vasilescu, and Brad Myers.
+\newblock Using an {LLM} to help with code understanding.
+\newblock In \emph{Proceedings of the 46th International Conference on Software Engineering (ICSE)}, 2024.
+
+\bibitem[Olausson et~al.(2024)Olausson, Inala, Wang, Gao, and Solar-Lezama]{olausson2024repair}
+Theo~X. Olausson, Jeevana~Priya Inala, Chenglong Wang, Jianfeng Gao, and Armando Solar-Lezama.
+\newblock Is self-repair a silver bullet for code generation?
+\newblock In \emph{Proceedings of the 12th International Conference on Learning Representations (ICLR)}, 2024.
+
+\bibitem[Seddik and Fard(2026)]{seddik2026arise}
+Shahd Seddik and Fatemeh Fard.
+\newblock {ARISE}: A repository-level graph representation and toolset for agentic fault localization and program repair.
+\newblock \emph{arXiv preprint arXiv:2605.03117}, 2026.
+
+\bibitem[Sepidband et~al.(2026)Sepidband, Taherkhani, Pham, and Hemmati]{sepidband2026rgfl}
+Melika Sepidband, Hamed Taherkhani, Hung~Viet Pham, and Hadi Hemmati.
+\newblock {RGFL}: Reasoning guided fault localization for automated program repair using large language models.
+\newblock \emph{arXiv preprint arXiv:2601.18044}, 2026.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Gopinath, Narasimhan, and Yao]{shinn2023reflexion}
+Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik~R. Narasimhan, and Shunyu Yao.
+\newblock Reflexion: Language agents with verbal reinforcement learning.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2023.
+
+\bibitem[Tao et~al.(2024)Tao, Zhou, Wang, Zhang, Zhang, and Cheng]{tao2024magis}
+Wei Tao, Yucheng Zhou, Yanlin Wang, Wenqiang Zhang, Hongyu Zhang, and Yu~Cheng.
+\newblock {MAGIS}: {LLM}-based multi-agent framework for {GitHub} issue resolution.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2024.
+
+\bibitem[Uesato et~al.(2022)Uesato, Kushman, Kumar, Song, Siegel, Wang, Creswell, Irving, and Higgins]{uesato2022solving}
+Jonathan Uesato, Nate Kushman, Ramana Kumar, Francis Song, Noah Siegel, Lisa Wang, Antonia Creswell, Geoffrey Irving, and Irina Higgins.
+\newblock Solving math word problems with process- and outcome-based feedback.
+\newblock \emph{arXiv preprint arXiv:2211.14275}, 2022.
+
+\bibitem[Wang et~al.(2025)Wang, Li, Song, Xu, Tang, Zhuge, Pan, Song, Li, Singh, Tran, Li, Ma, Zheng, Qian, Shao, Muennighoff, Zhang, Hui, Lin, Brennan, Peng, Ji, and Neubig]{wang2024openhands}
+Xingyao Wang, Boxuan Li, Yufan Song, Frank~F. Xu, Xiangru Tang, Mingchen Zhuge, Jiayi Pan, Yueqi Song, Bowen Li, Jaskirat Singh, Hoang~H. Tran, Fuqiang Li, Ren Ma, Mingzhang Zheng, Bill Qian, Yanjun Shao, Niklas Muennighoff, Yizhe Zhang, Binyuan Hui, Junyang Lin, Robert Brennan, Hao Peng, Heng Ji, and Graham Neubig.
+\newblock {OpenHands}: An open platform for {AI} software developers as generalist agents.
+\newblock In \emph{Proceedings of the 13th International Conference on Learning Representations (ICLR)}, 2025.
+
+\bibitem[Wang et~al.(2023)Wang, Wei, Schuurmans, Le, Chi, Narang, Chowdhery, and Zhou]{wang2023selfconsistency}
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc~V. Le, Ed~H. Chi, Sharan Narang, Aakanksha Chowdhery, and Denny Zhou.
+\newblock Self-consistency improves chain of thought reasoning in language models.
+\newblock In \emph{Proceedings of the 11th International Conference on Learning Representations (ICLR)}, 2023.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le, and Zhou]{wei2022chain}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed~H. Chi, Quoc~V. Le, and Denny Zhou.
+\newblock Chain-of-thought prompting elicits reasoning in large language models.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2022.
+
+\bibitem[Xia et~al.(2025)Xia, Deng, Dunn, and Zhang]{xia2024agentless}
+Chunqiu~Steven Xia, Yinlin Deng, Soren Dunn, and Lingming Zhang.
+\newblock Agentless: Demystifying {LLM}-based software engineering agents.
+\newblock In \emph{Proceedings of the ACM on Software Engineering (FSE)}, 2025.
+
+\bibitem[Yang et~al.(2024)Yang, Jimenez, Wettig, Lieret, Yao, Pei, Press, and Narasimhan]{yang2024sweagent}
+John Yang, Carlos~E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik~R. Narasimhan.
+\newblock {SWE}-agent: Agent-computer interfaces enable automated software engineering.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2024.
+
+\bibitem[Yao et~al.(2023)Yao, Yu, Zhao, Shafran, Griffiths, Cao, and Narasimhan]{yao2023tot}
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas~L. Griffiths, Yuan Cao, and Karthik~R. Narasimhan.
+\newblock Tree of thoughts: Deliberate problem solving with large language models.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2023.
+
+\bibitem[Yuan et~al.(2025)Yuan, Chen, Xi, Ye, Du, and Chen]{yuan2025agentr}
+Siyu Yuan, Zehui Chen, Zhiheng Xi, Junjie Ye, Zhengyin Du, and Jiecao Chen.
+\newblock {Agent-R}: Training language model agents to reflect via iterative self-training.
+\newblock \emph{arXiv preprint arXiv:2501.11425}, 2025.
+
+\bibitem[Zhang et~al.(2024)Zhang, Ruan, Fan, and Roychoudhury]{zhang2024autocoderover}
+Yuntong Zhang, Haifeng Ruan, Zhiyu Fan, and Abhik Roychoudhury.
+\newblock {AutoCodeRover}: Autonomous program improvement.
+\newblock In \emph{Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)}, 2024.
+
+\bibitem[Zheng et~al.(2024)Zheng, Mishra, Chen, Cheng, Chi, Le, and Zhou]{zheng2024stepback}
+Huaixiu~Steven Zheng, Swaroop Mishra, Xinyun Chen, Heng-Tze Cheng, Ed~H. Chi, Quoc~V. Le, and Denny Zhou.
+\newblock Take a step back: Evoking reasoning via abstraction in large language models.
+\newblock In \emph{Proceedings of the 12th International Conference on Learning Representations (ICLR)}, 2024.
+
+\bibitem[Zhou et~al.(2024)Zhou, Yan, Shlapentokh-Rothman, Wang, and Wang]{zhou2024lats}
+Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, and Yu-Xiong Wang.
+\newblock Language agent tree search unifies reasoning, acting, and planning in language models.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine Learning (ICML)}, 2024.
+
+\bibitem[Zhu et~al.(2025)Zhu, Liu, Li, Tian, Yang, and Zhang]{zhu2025agentdebug}
+Kunlun Zhu, Zijia Liu, Bingxuan Li, Muxin Tian, Yingxuan Yang, and Jiaxun Zhang.
+\newblock Where {LLM} agents fail and how they can learn from failures.
+\newblock \emph{arXiv preprint arXiv:2509.25370}, 2025.
+
+\end{thebibliography}

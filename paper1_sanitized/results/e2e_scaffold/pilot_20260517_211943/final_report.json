@@ -1,0 +1,33 @@
+{
+  "run_id": "pilot_20260517_211943",
+  "timestamp": "20260517_211943",
+  "config": {
+    "model": "gpt-4o-mini",
+    "max_steps": 15,
+    "rate_limit": 3.5,
+    "instances": [
+      "django__django-11206",
+      "django__django-13406",
+      "django__django-14017",
+      "django__django-11885",
+      "django__django-16502"
+    ]
+  },
+  "results": {
+    "control_resolved": 0,
+    "scaffold_resolved": 0,
+    "total": 5,
+    "delta": 0
+  },
+  "api_calls_total": 57,
+  "eval_results": {
+    "control": {
+      "resolved": 0,
+      "total": 5
+    },
+    "scaffold": {
+      "resolved": 0,
+      "total": 5
+    }
+  }
+}

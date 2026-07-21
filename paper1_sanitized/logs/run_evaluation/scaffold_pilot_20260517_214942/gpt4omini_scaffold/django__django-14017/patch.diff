@@ -1,0 +1,17 @@
+diff --git a/django/db/models/expressions.py b/django/db/models/expressions.py
+index ffc3a7fda5..01476d4c68 100644
+--- a/django/db/models/expressions.py
++++ b/django/db/models/expressions.py
+@@ -983,7 +983,11 @@ class When(Expression):
+         c.result = c.result.resolve_expression(query, allow_joins, reuse, summarize, for_save)
+         return c
+ 
+-    def as_sql(self, compiler, connection, template=None, **extra_context):
++    def __rand__(self, other):
++    if isinstance(other, Q):
++        return CombinedExpression(other, self.AND, self)
++    raise TypeError(f"Unsupported operand type(s) for &: 'Q' and '{type(self).__name__}'")
++def as_sql(self, compiler, connection, template=None, **extra_context):
+         connection.ops.check_expression_support(self)
+         template_params = extra_context
+         sql_params = []

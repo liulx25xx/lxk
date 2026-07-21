@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "instance_id": "django__django-11885",
+      "mode": "control",
+      "steps": 25,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-11885",
+      "mode": "scaffold",
+      "steps": 25,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    }
+  ],
+  "api_calls": 50
+}

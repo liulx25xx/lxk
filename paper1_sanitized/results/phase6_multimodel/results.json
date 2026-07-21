@@ -1,0 +1,5096 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-17T22:26:24.776676",
+    "calls": 424
+  },
+  "results": [
+    {
+      "instance_id": "django__django-15629",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "deepseek-v4-flash",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "deepseek-v4-flash",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "deepseek-v4-flash",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "qwen3.5-35b-a3b",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "claude-opus-4-7",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "claude-opus-4-7",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "claude-opus-4-7",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-15629",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15252",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14034",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12308",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11551",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13363",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15098",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11211",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-15957",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14351",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "model": "o4-mini",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11885",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13406",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14017",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11206",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "model": "o4-mini",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-16454",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-12325",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11149",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11400",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13964",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11820",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "model": "o4-mini",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      }
+    },
+    {
+      "instance_id": "django__django-11133",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13417",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-13670",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14534",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "django__django-14787",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "model": "o4-mini",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+diff --git a/tests/delete/tests.py b/tests/delete/tests.py
+index 505fd843d7..6ae85ecc97 100644
+--- a/tests/delete/tests.py
++++ b/tests/delete/tests.py
+@@ -490,6 +490,24 @@ class DeletionTests(TestCase):
+ 
+ 
+ class FastDeleteTests(TestCase):
++    from delete_regress.models import Person  # Import Person model
++
++    def test_fast_delete_combined_relationships(self):
++        user = User.objects.create()
++        person = Person.objects.create()
++        person.friends.add(user)
++        self.assertNumQueries(3, person.delete)
++        self.assertFalse(User.objects.filter(pk=user.pk).exists())
++        self.assertFalse(Person.objects.filter(pk=person.pk).exists())
++
++    def test_fast_delete_combined_relationships(self):
++        user = User.objects.create()
++        person = Person.objects.create()
++        person.friends.add(user)
++        self.assertNumQueries(3, person.delete)
++        self.assertFalse(User.objects.filter(pk=user.pk).exists())
++        self.assertFalse(Person.objects.filter(pk=person.pk).exists())
++
+ 
+     def test_fast_delete_fk(self):
+         u = User.objects.create(

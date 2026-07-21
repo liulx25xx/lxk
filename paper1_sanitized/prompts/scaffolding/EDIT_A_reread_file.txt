@@ -1,0 +1,11 @@
+## Recovery Feedback: Re-read the File Exactly
+
+Your edit command failed because the text you tried to replace doesn't match what's actually in the file. This is a text-matching problem.
+
+**Action Required:**
+- Open the file and read the EXACT content around your edit location
+- Pay attention to: whitespace, indentation (tabs vs spaces), line breaks, trailing spaces
+- Copy the text character-by-character — do not rely on memory
+- Then re-apply your edit with the correct old_str that exactly matches the file content
+
+The fix logic may be correct, but the edit operation itself needs the exact source text.

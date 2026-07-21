@@ -1,0 +1,56 @@
+2026-05-17 23:27:48,119 - INFO - Creating container for django__django-16502...
+2026-05-17 23:27:48,148 - INFO - Container for django__django-16502 created: 2b09645429b26fc1211da937fdda6d6e3e2e8d93f904e4001a117109c2b01208
+2026-05-17 23:27:48,319 - INFO - Container for django__django-16502 started: 2b09645429b26fc1211da937fdda6d6e3e2e8d93f904e4001a117109c2b01208
+2026-05-17 23:27:48,319 - INFO - Intermediate patch for django__django-16502 written to logs/run_evaluation/scaffold_pilot_20260517_225954/gpt41_scaffold/django__django-16502/patch.diff, now applying to container...
+2026-05-17 23:27:48,423 - INFO - Failed to apply patch to container: git apply --verbose
+2026-05-17 23:27:48,473 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-05-17 23:27:48,555 - INFO - >>>>> Applied Patch:
+patching file django/core/servers/basehttp.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 128 with fuzz 1.
+
+2026-05-17 23:27:49,406 - INFO - Git diff before:
+diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py
+index fef5532e58..29de00f87f 100644
+--- a/django/core/servers/basehttp.py
++++ b/django/core/servers/basehttp.py
+@@ -128,6 +128,11 @@ class ServerHandler(simple_server.ServerHandler):
+             LimitedStream(stdin, content_length), stdout, stderr, environ, **kwargs
+         )
+ 
++    def write(self, data):
++        if self.environ.get('REQUEST_METHOD') == 'HEAD':
++            return
++        super().write(data)
++
+     def cleanup_headers(self):
+         super().cleanup_headers()
+         # HTTP/1.1 requires support for persistent connections. Send 'close' if
+2026-05-17 23:27:49,407 - INFO - Eval script for django__django-16502 written to logs/run_evaluation/scaffold_pilot_20260517_225954/gpt41_scaffold/django__django-16502/eval.sh; copying to container...
+2026-05-17 23:27:58,651 - INFO - Test runtime: 9.19 seconds
+2026-05-17 23:27:58,651 - INFO - Test output for django__django-16502 written to logs/run_evaluation/scaffold_pilot_20260517_225954/gpt41_scaffold/django__django-16502/test_output.txt
+2026-05-17 23:27:58,742 - INFO - Git diff after:
+diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py
+index fef5532e58..29de00f87f 100644
+--- a/django/core/servers/basehttp.py
++++ b/django/core/servers/basehttp.py
+@@ -128,6 +128,11 @@ class ServerHandler(simple_server.ServerHandler):
+             LimitedStream(stdin, content_length), stdout, stderr, environ, **kwargs
+         )
+ 
++    def write(self, data):
++        if self.environ.get('REQUEST_METHOD') == 'HEAD':
++            return
++        super().write(data)
++
+     def cleanup_headers(self):
+         super().cleanup_headers()
+         # HTTP/1.1 requires support for persistent connections. Send 'close' if
+2026-05-17 23:27:58,742 - INFO - Grading answer for django__django-16502...
+2026-05-17 23:27:58,742 - INFO - report: {'django__django-16502': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_no_body_returned_for_head_requests (servers.test_basehttp.WSGIRequestHandlerTestCase.test_no_body_returned_for_head_requests)']}, 'PASS_TO_PASS': {'success': ['test_https (servers.test_basehttp.WSGIRequestHandlerTestCase.test_https)', 'test_log_message (servers.test_basehttp.WSGIRequestHandlerTestCase.test_log_message)', 'WSGIRequestHandler ignores headers containing underscores.', 'WSGIServer handles broken pipe errors.'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16502: resolved: False
+2026-05-17 23:27:58,742 - INFO - Attempting to stop container sweb.eval.django__django-16502.scaffold_pilot_20260517_225954...
+2026-05-17 23:28:16,229 - INFO - Attempting to remove container sweb.eval.django__django-16502.scaffold_pilot_20260517_225954...
+2026-05-17 23:28:17,120 - INFO - Container sweb.eval.django__django-16502.scaffold_pilot_20260517_225954 removed.
+2026-05-17 23:28:17,121 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16502:latest...
+2026-05-17 23:28:19,998 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16502:latest removed.

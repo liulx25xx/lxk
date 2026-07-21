@@ -1,0 +1,16 @@
+diff --git a/django/http/response.py b/django/http/response.py
+index f62dec8ce9..c93614feae 100644
+--- a/django/http/response.py
++++ b/django/http/response.py
+@@ -424,7 +424,10 @@ class HttpResponse(HttpResponseBase):
+         else:
+             content = self.make_bytes(value)
+         # Create a list of properly encoded bytestrings to support write().
+-        self._container = [content]
++        if request.method == "HEAD":
++    self._container = []
++else:
++    self._container = [content]
+ 
+     def __iter__(self):
+         return iter(self._container)

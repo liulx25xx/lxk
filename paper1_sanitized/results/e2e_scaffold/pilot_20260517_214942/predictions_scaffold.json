@@ -1,0 +1,27 @@
+[
+  {
+    "instance_id": "django__django-11206",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py\nindex 88b35fc435..aee0b396bf 100644\n--- a/django/utils/numberformat.py\n+++ b/django/utils/numberformat.py\n@@ -30,7 +30,7 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',\n         # Format values with more than 200 digits (an arbitrary cutoff) using\n         # scientific notation to avoid high memory usage in {:f}'.format().\n         _, digits, exponent = number.as_tuple()\n-        if abs(exponent) + len(digits) > 200:\n+        if abs(exponent) + len(digits) > 200 or (decimal_pos is not None and number < Decimal('1e-{0}')):\n             number = '{:e}'.format(number)\n             coefficient, exponent = number.split('e')\n             # Format the coefficient.\n@@ -40,7 +40,10 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',\n             )\n             return '{}e{}'.format(coefficient, exponent)\n         else:\n-            str_number = '{:f}'.format(number)\n+            if decimal_pos is not None and number < Decimal('1e-{0}'):\n+    str_number = '0.' + '0' * decimal_pos\n+else:\n+    str_number = '{:f}'.format(number)\n     else:\n         str_number = str(number)\n     if str_number[0] == '-':"
+  },
+  {
+    "instance_id": "django__django-13406",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-14017",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/db/models/expressions.py b/django/db/models/expressions.py\nindex ffc3a7fda5..01476d4c68 100644\n--- a/django/db/models/expressions.py\n+++ b/django/db/models/expressions.py\n@@ -983,7 +983,11 @@ class When(Expression):\n         c.result = c.result.resolve_expression(query, allow_joins, reuse, summarize, for_save)\n         return c\n \n-    def as_sql(self, compiler, connection, template=None, **extra_context):\n+    def __rand__(self, other):\n+    if isinstance(other, Q):\n+        return CombinedExpression(other, self.AND, self)\n+    raise TypeError(f\"Unsupported operand type(s) for &: 'Q' and '{type(self).__name__}'\")\n+def as_sql(self, compiler, connection, template=None, **extra_context):\n         connection.ops.check_expression_support(self)\n         template_params = extra_context\n         sql_params = []"
+  },
+  {
+    "instance_id": "django__django-11885",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-16502",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": "diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py\nindex fef5532e58..986f203896 100644\n--- a/django/core/servers/basehttp.py\n+++ b/django/core/servers/basehttp.py\n@@ -224,6 +224,8 @@ class WSGIRequestHandler(simple_server.WSGIRequestHandler):\n             self.rfile, self.wfile, self.get_stderr(), self.get_environ()\n         )\n         handler.request_handler = self  # backpointer for logging & connection closing\n+        if self.command == \"HEAD\":\n+            self.wfile.write(b\"\")\n         handler.run(self.server.get_app())"
+  }
+]

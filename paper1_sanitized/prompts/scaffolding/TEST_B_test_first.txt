@@ -1,0 +1,11 @@
+## Recovery Feedback: Work Backward from the Test
+
+You misinterpreted the issue's requirements. Let the test define what "correct" means.
+
+**Action Required:**
+- Read ALL test assertions for the failing test, line by line
+- For each assertion, ask: "What code change would make this assertion pass?"
+- Work backward: the test's expected output defines the correct implementation
+- Ignore your previous interpretation — let the test be the specification
+
+The test is the ground truth. Reverse-engineer the correct behavior from it.

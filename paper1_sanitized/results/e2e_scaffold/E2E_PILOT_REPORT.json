@@ -1,0 +1,103 @@
+{
+  "experiment": "E2E SWE-bench Scaffold Pilot",
+  "date": "2026-05-17",
+  "pipeline": {
+    "agent_model": "gpt-4o-mini",
+    "api": "Venus proxy (<REDACTED_URL>)",
+    "evaluation": "swebench v4.1.0 harness (Docker-based, binary pass/fail)",
+    "container_images": "swebench env images (built from scratch)",
+    "max_steps": 15,
+    "rate_limit_seconds": 3.5,
+    "total_api_calls_used": 136,
+    "budget": 350
+  },
+  "instances": {
+    "type": "EDIT (from phase0_v2_annotations)",
+    "repo": "django/django",
+    "count": 5,
+    "ids": [
+      "django__django-11206",
+      "django__django-13406",
+      "django__django-14017",
+      "django__django-11885",
+      "django__django-16502"
+    ]
+  },
+  "results": {
+    "control": {
+      "resolved": 0,
+      "total": 5,
+      "patches_produced": 3,
+      "patches_evaluated": 3,
+      "failure_modes": {
+        "IndentationError": 2,
+        "wrong_file_edited": 1,
+        "empty_patch": 2
+      }
+    },
+    "scaffold": {
+      "resolved": 0,
+      "total": 5,
+      "patches_produced": 3,
+      "patches_evaluated": 3,
+      "scaffold_injected_count": 2,
+      "scaffold_injection_steps": [11, 8],
+      "failure_modes": {
+        "IndentationError": 2,
+        "logic_error_test_ran": 1,
+        "empty_patch": 2
+      }
+    },
+    "delta": 0,
+    "scaffold_injection_rate": "2/5 (40%)"
+  },
+  "detailed_per_instance": {
+    "django__django-11206": {
+      "control": {"patch_lines": 13, "eval": "IndentationError in numberformat.py"},
+      "scaffold": {"patch_lines": 25, "scaffold_step": 11, "eval": "IndentationError in numberformat.py"},
+      "gold_lines": 18,
+      "note": "Both found right file, wrong edit approach. Gold adds cutoff Decimal check."
+    },
+    "django__django-13406": {
+      "control": {"patch_lines": 0, "eval": "no patch"},
+      "scaffold": {"patch_lines": 0, "eval": "no patch"},
+      "gold_lines": 12,
+      "note": "Agent couldn't find the pickle serialization bug"
+    },
+    "django__django-14017": {
+      "control": {"patch_lines": 0, "eval": "no patch (declared DONE without editing)"},
+      "scaffold": {"patch_lines": 17, "scaffold_step": 8, "eval": "IndentationError in expressions.py"},
+      "gold_lines": 12,
+      "note": "Scaffold helped produce a patch (vs empty control), but indentation broke"
+    },
+    "django__django-11885": {
+      "control": {"patch_lines": 29, "eval": "Modified test file (wrong approach)"},
+      "scaffold": {"patch_lines": 0, "eval": "no patch"},
+      "gold_lines": 213,
+      "note": "Complex multi-file fix, beyond gpt-4o-mini capability"
+    },
+    "django__django-16502": {
+      "control": {"patch_lines": 16, "eval": "IndentationError in response.py"},
+      "scaffold": {"patch_lines": 11, "eval": "Test ran but FAILED (wrong fix logic)"},
+      "gold_lines": 54,
+      "note": "Scaffold version is higher quality: no syntax error, test actually ran"
+    }
+  },
+  "key_findings": [
+    "Pipeline works end-to-end: agent → Docker → patch → swebench harness → binary pass/fail",
+    "Scaffold was injected in 2/5 instances (40%) when edit errors detected",
+    "IndentationError is the dominant failure mode for gpt-4o-mini (4/6 evaluated patches)",
+    "In django-14017, scaffold produced a patch where control was empty (qualitative improvement)",
+    "In django-16502, scaffold patch was syntactically valid (test ran) while control had IndentationError",
+    "Zero resolve rate with gpt-4o-mini is expected — SWE-bench Verified baseline for this model is ~5%",
+    "With a stronger model (gpt-4.1 or claude-sonnet-4), scaffold effect would be more visible"
+  ],
+  "pipeline_validated": true,
+  "blockers": "None — pipeline is fully functional",
+  "next_steps": [
+    "Run with gpt-4.1 for higher base resolve rate",
+    "Increase to 20-30 EDIT instances for statistical significance",
+    "Add earlier scaffold injection (after first failed command, not just edit errors)",
+    "Compare scaffold injection timing: early vs late"
+  ]
+}

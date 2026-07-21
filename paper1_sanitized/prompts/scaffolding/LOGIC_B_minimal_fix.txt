@@ -1,0 +1,11 @@
+## Recovery Feedback: Simplify Your Fix
+
+Your previous fix was on the right track but had implementation errors. Think simpler.
+
+**Action Required:**
+- What is the SIMPLEST possible change that would make the test pass?
+- Remove any extra logic you added that isn't strictly necessary
+- Consider: can this be fixed by changing a single operator, adding one condition, or adjusting one value?
+- The minimal fix is usually the correct fix — complex changes often introduce new bugs
+
+Strip your solution down to the bare minimum that addresses the test's requirement.

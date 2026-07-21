@@ -1,0 +1,11 @@
+## Recovery Feedback: You Misunderstood the Requirement
+
+Your fix addresses a different problem than what the issue actually describes. Re-read carefully.
+
+**Action Required:**
+- Re-read the issue description from the beginning
+- State in ONE sentence: what exact behavior change is being requested?
+- Now read the test assertions — do they match your understanding?
+- If there's a mismatch between your understanding and the test, TRUST THE TEST
+
+Focus on what the issue is actually asking for, not what you assumed it was asking for.

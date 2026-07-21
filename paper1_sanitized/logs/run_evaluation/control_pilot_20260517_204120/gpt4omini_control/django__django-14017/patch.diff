@@ -1,0 +1,15 @@
+diff --git a/django/db/models/expressions.py b/django/db/models/expressions.py
+index ffc3a7fda5..41179073d8 100644
+--- a/django/db/models/expressions.py
++++ b/django/db/models/expressions.py
+@@ -1148,6 +1148,11 @@ class Subquery(Expression):
+ 
+ 
+ class Exists(Subquery):
++    def __rand__(self, other):
++        if isinstance(other, Q):
++            return other._combine(self, Q.AND)
++        raise TypeError(f"Unsupported operand type(s) for &: 'Q' and '{type(self).__name__}'")
++
+     template = 'EXISTS(%(subquery)s)'
+     output_field = fields.BooleanField()

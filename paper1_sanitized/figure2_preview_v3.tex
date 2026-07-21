@@ -1,0 +1,94 @@
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{times}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\definecolor{softrose}{HTML}{D8A7B3}
+\definecolor{softrose2}{HTML}{E7BCC6}
+\definecolor{mistblue}{HTML}{8BB7D6}
+\definecolor{mistblue2}{HTML}{A9CBDD}
+\definecolor{mistblue3}{HTML}{BDDCE6}
+\definecolor{softink}{HTML}{5E6770}
+\definecolor{softgrid}{HTML}{D9E1E6}
+\definecolor{softline}{HTML}{C7D1D8}
+\definecolor{softhilite}{HTML}{F1F7F8}
+
+\begin{document}
+\begin{tikzpicture}[
+  x=1mm,
+  y=1mm,
+  every node/.style={font=\rmfamily},
+]
+\path[use as bounding box] (-18,0) rectangle (114,62);
+
+% Layout.
+\def\xscale{55} % mm per delta unit
+\def\xzero{58}
+
+\newcommand{\dotpos}[3]{%
+  \pgfmathsetmacro{\xx}{\xzero + (#1)*\xscale}
+  \filldraw[fill=#3, draw=white, line width=0.4pt] (\xx,#2) circle (2.0);
+}
+
+% Step-back row highlight.
+\fill[softhilite] (6,8) rectangle (108,18);
+
+% Plot region.
+\draw[softline, rounded corners=1pt] (6,8) rectangle (108,54);
+\foreach \yy in {18,28,38,48} {
+  \draw[softgrid] (6,\yy) -- (108,\yy);
+}
+\foreach \d/\lab in {-0.8/-0.8,-0.4/-0.4,0/0,+0.4/+0.4,+0.8/+0.8} {
+  \pgfmathsetmacro{\xx}{\xzero + (\d)*\xscale}
+  \draw[softgrid] (\xx,8) -- (\xx,54);
+  \node[font=\scriptsize, anchor=north, text=softink] at (\xx,6.8) {\lab};
+}
+\draw[softink, line width=0.55pt] (\xzero,8) -- (\xzero,54);
+\node[font=\scriptsize, anchor=north, text=softink] at (58,2.8) {$\Delta$ vs. target-type control};
+
+% Minimal legend.
+\fill[softrose] (76,58) circle (1.2);
+\node[font=\scriptsize, anchor=west, text=softink] at (79,58) {below control};
+\fill[mistblue] (96,58) circle (1.2);
+\node[font=\scriptsize, anchor=west, text=softink] at (99,58) {above control};
+
+% Row labels.
+\node[font=\bfseries\small, anchor=east, align=right, text=softink] at (3.5,49) {\textsc{Edit}\\{\scriptsize reread\_file}};
+\node[font=\bfseries\small, anchor=east, align=right, text=softink] at (3.5,39) {\textsc{Loc}\\{\scriptsize broaden\_search}};
+\node[font=\bfseries\small, anchor=east, align=right, text=softink] at (3.5,29) {\textsc{Logic}\\{\scriptsize minimal\_fix}};
+\node[font=\bfseries\small, anchor=east, align=right, text=softink] at (3.5,13) {\textsc{Plan}\\{\scriptsize step\_back}};
+
+% Explicit x positions for selected labels.
+\pgfmathsetmacro{\xEditP}{\xzero + (-0.76)*\xscale}
+\pgfmathsetmacro{\xLogicL}{\xzero + (-0.50)*\xscale}
+\pgfmathsetmacro{\xPlanE}{\xzero + (0.92)*\xscale}
+\pgfmathsetmacro{\xPlanG}{\xzero + (0.36)*\xscale}
+
+% Off-diagonal transfers only.
+% Edit strategy.
+\dotpos{-0.70}{49}{softrose}
+\dotpos{-0.64}{49}{softrose2}
+\dotpos{-0.76}{49}{softrose}
+\node[font=\scriptsize, anchor=east, text=softink] at (\xEditP - 3.2,49) {P};
+
+% Loc strategy.
+\dotpos{-0.29}{39}{softrose2}
+\dotpos{-0.17}{39}{softrose2}
+\dotpos{-0.38}{39}{softrose}
+
+% Logic strategy.
+\dotpos{-0.26}{29}{softrose2}
+\dotpos{-0.50}{27.7}{softrose}
+\node[font=\scriptsize, anchor=east, text=softink] at (\xLogicL - 3.2,27.7) {L};
+\dotpos{-0.50}{30.3}{softrose}
+
+% Plan strategy.
+\dotpos{+0.92}{13}{mistblue}
+\node[font=\scriptsize, anchor=west, text=softink] at (\xPlanE + 3.2,13) {E};
+\dotpos{+0.30}{13}{mistblue3}
+\dotpos{+0.36}{13}{mistblue2}
+\node[font=\scriptsize, anchor=west, text=softink] at (\xPlanG + 3.2,13) {G};
+
+\end{tikzpicture}
+\end{document}

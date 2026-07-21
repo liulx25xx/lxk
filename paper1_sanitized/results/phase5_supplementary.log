@@ -1,0 +1,130 @@
+======================================================================
+Phase 5: Supplementary Experiments
+API delay: 3.5s, Max calls: 500, Threads: 2
+Started: 2026-05-17T20:54:37.240723
+======================================================================
+
+[Loading data...]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  Annotations: 143 total
+    EDIT: 28
+    LOC: 37
+    LOGIC: 70
+    PLAN: 8
+  Gold map: 500 entries
+  Traj map: 495 entries
+
+══════════════════════════════════════════════════════════════════════
+EXPERIMENT 1: DeepSeek V4 Cross-Family Validation
+Model: deepseek-v4-pro, 15 instances/type (8 for PLAN)
+══════════════════════════════════════════════════════════════════════
+
+============================================================
+Summary: Experiment 1: DeepSeek V4 Cross-Family Validation
+============================================================
+
+--- LOC (n=30) ---
+  scaffold              : 1.67  file_hit=67%  (n=15)
+  reread_issue          : 2.53  file_hit=93%  (n=15)
+  → Best: reread_issue (Δ=+0.87 vs control)
+
+--- EDIT (n=30) ---
+  scaffold              : 1.53  file_hit=53%  (n=15)
+  reread_file           : 2.27  file_hit=73%  (n=15)
+  → Best: reread_file (Δ=+0.73 vs control)
+
+--- LOGIC (n=30) ---
+  scaffold              : 2.33  file_hit=60%  (n=15)
+  minimal_fix           : 2.40  file_hit=93%  (n=15)
+  → Best: minimal_fix (Δ=+0.07 vs control)
+
+--- PLAN (n=16) ---
+  scaffold              : 1.88  file_hit=88%  (n=8)
+  step_back             : 1.50  file_hit=75%  (n=8)
+  → Best: step_back (Δ=-0.38 vs control)
+
+Overall avg score: 2.06 (n=106)
+
+  Total API calls so far: 106
+
+══════════════════════════════════════════════════════════════════════
+EXPERIMENT 2: Full-Sample Scaffold (all 143 instances)
+Model: gpt-4o-mini, best strategy + control per type
+══════════════════════════════════════════════════════════════════════
+  Running LOC: 37 instances × 2 strategies = 74 calls
+  Running EDIT: 28 instances × 2 strategies = 56 calls
+  Running LOGIC: 70 instances × 2 strategies = 140 calls
+  Running PLAN: 8 instances × 2 strategies = 16 calls
+
+============================================================
+Summary: Experiment 2: Full-Sample Scaffold
+============================================================
+
+--- LOC (n=74) ---
+  scaffold              : 1.54  file_hit=43%  (n=37)
+  reread_issue          : 2.03  file_hit=70%  (n=37)
+  → Best: reread_issue (Δ=+0.49 vs control)
+
+--- EDIT (n=56) ---
+  scaffold              : 1.61  file_hit=71%  (n=28)
+  reread_file           : 2.64  file_hit=86%  (n=28)
+  → Best: reread_file (Δ=+1.04 vs control)
+
+--- LOGIC (n=140) ---
+  scaffold              : 2.01  file_hit=86%  (n=70)
+  minimal_fix           : 2.14  file_hit=89%  (n=70)
+  → Best: minimal_fix (Δ=+0.13 vs control)
+
+--- PLAN (n=16) ---
+  scaffold              : 1.88  file_hit=88%  (n=8)
+  step_back             : 2.75  file_hit=100%  (n=8)
+  → Best: step_back (Δ=+0.88 vs control)
+
+Overall avg score: 2.02 (n=286)
+
+  Total API calls so far: 392
+
+══════════════════════════════════════════════════════════════════════
+EXPERIMENT 3: GPT-5.5 Ceiling Analysis
+Model: gpt-5.5 (reasoning), 5 instances/type, best strategy + control
+══════════════════════════════════════════════════════════════════════
+  Running LOC: 5 instances × 2 strategies
+  Running EDIT: 5 instances × 2 strategies
+  Running LOGIC: 5 instances × 2 strategies
+  Running PLAN: 5 instances × 2 strategies
+
+============================================================
+Summary: Experiment 3: GPT-5.5 Ceiling Analysis
+============================================================
+
+--- LOC (n=10) ---
+  scaffold              : 0.80  file_hit=40%  (n=5)
+  reread_issue          : 2.40  file_hit=100%  (n=5)
+  → Best: reread_issue (Δ=+1.60 vs control)
+
+--- EDIT (n=10) ---
+  scaffold              : 1.00  file_hit=40%  (n=5)
+  reread_file           : 2.20  file_hit=100%  (n=5)
+  → Best: reread_file (Δ=+1.20 vs control)
+
+--- LOGIC (n=10) ---
+  scaffold              : 1.60  file_hit=60%  (n=5)
+  minimal_fix           : 1.20  file_hit=40%  (n=5)
+  → Best: minimal_fix (Δ=-0.40 vs control)
+
+--- PLAN (n=10) ---
+  scaffold              : 1.60  file_hit=100%  (n=5)
+  step_back             : 1.40  file_hit=80%  (n=5)
+  → Best: step_back (Δ=-0.20 vs control)
+
+Overall avg score: 1.52 (n=40)
+
+══════════════════════════════════════════════════════════════════════
+ALL EXPERIMENTS COMPLETE
+══════════════════════════════════════════════════════════════════════
+  Total time: 36.6 minutes
+  Total API calls: 432
+  Exp 1 (DeepSeek V4): 106 results
+  Exp 2 (Full Sample): 286 results
+  Exp 3 (GPT-5.5):     40 results
+  Finished: 2026-05-17T21:31:20.568457

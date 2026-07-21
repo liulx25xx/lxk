@@ -1,0 +1,62 @@
+2026-05-17 21:14:01,388 - INFO - Creating container for django__django-16502...
+2026-05-17 21:14:01,418 - INFO - Container for django__django-16502 created: b3a4d19870751f388134868268525ea1fe16d11feab3ea32e06e3e17673339fc
+2026-05-17 21:14:01,596 - INFO - Container for django__django-16502 started: b3a4d19870751f388134868268525ea1fe16d11feab3ea32e06e3e17673339fc
+2026-05-17 21:14:01,596 - INFO - Intermediate patch for django__django-16502 written to logs/run_evaluation/scaffold_pilot_20260517_204120/gpt4omini_scaffold/django__django-16502/patch.diff, now applying to container...
+2026-05-17 21:14:01,694 - INFO - Failed to apply patch to container: git apply --verbose
+2026-05-17 21:14:01,746 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-05-17 21:14:01,801 - INFO - >>>>> Applied Patch:
+patching file django/core/servers/basehttp.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 208 with fuzz 1.
+
+2026-05-17 21:14:02,544 - INFO - Git diff before:
+diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py
+index fef5532e58..3ef91f2fcc 100644
+--- a/django/core/servers/basehttp.py
++++ b/django/core/servers/basehttp.py
+@@ -208,6 +208,14 @@ class WSGIRequestHandler(simple_server.WSGIRequestHandler):
+             pass
+ 
+     def handle_one_request(self):
++        self.raw_requestline = self.rfile.readline(65537)
++        if not self.parse_request(): return
++        if self.command == "HEAD":
++            self.wfile.write(b"")
++        if self.raw_requestline.startswith(b"HEAD "):
++            self.wfile.write(b"")
++        if self.command == "HEAD":
++            self.wfile.write(b"")
+         """Copy of WSGIRequestHandler.handle() but with different ServerHandler"""
+         self.raw_requestline = self.rfile.readline(65537)
+         if len(self.raw_requestline) > 65536:
+2026-05-17 21:14:02,545 - INFO - Eval script for django__django-16502 written to logs/run_evaluation/scaffold_pilot_20260517_204120/gpt4omini_scaffold/django__django-16502/eval.sh; copying to container...
+2026-05-17 21:14:11,547 - INFO - Test runtime: 8.95 seconds
+2026-05-17 21:14:11,547 - INFO - Test output for django__django-16502 written to logs/run_evaluation/scaffold_pilot_20260517_204120/gpt4omini_scaffold/django__django-16502/test_output.txt
+2026-05-17 21:14:11,605 - INFO - Git diff after:
+diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py
+index fef5532e58..3ef91f2fcc 100644
+--- a/django/core/servers/basehttp.py
++++ b/django/core/servers/basehttp.py
+@@ -208,6 +208,14 @@ class WSGIRequestHandler(simple_server.WSGIRequestHandler):
+             pass
+ 
+     def handle_one_request(self):
++        self.raw_requestline = self.rfile.readline(65537)
++        if not self.parse_request(): return
++        if self.command == "HEAD":
++            self.wfile.write(b"")
++        if self.raw_requestline.startswith(b"HEAD "):
++            self.wfile.write(b"")
++        if self.command == "HEAD":
++            self.wfile.write(b"")
+         """Copy of WSGIRequestHandler.handle() but with different ServerHandler"""
+         self.raw_requestline = self.rfile.readline(65537)
+         if len(self.raw_requestline) > 65536:
+2026-05-17 21:14:11,605 - INFO - Grading answer for django__django-16502...
+2026-05-17 21:14:11,606 - INFO - report: {'django__django-16502': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_no_body_returned_for_head_requests (servers.test_basehttp.WSGIRequestHandlerTestCase.test_no_body_returned_for_head_requests)']}, 'PASS_TO_PASS': {'success': ['test_https (servers.test_basehttp.WSGIRequestHandlerTestCase.test_https)', 'test_log_message (servers.test_basehttp.WSGIRequestHandlerTestCase.test_log_message)', 'WSGIServer handles broken pipe errors.'], 'failure': ['WSGIRequestHandler ignores headers containing underscores.']}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16502: resolved: False
+2026-05-17 21:14:11,606 - INFO - Attempting to stop container sweb.eval.django__django-16502.scaffold_pilot_20260517_204120...
+2026-05-17 21:14:28,401 - INFO - Attempting to remove container sweb.eval.django__django-16502.scaffold_pilot_20260517_204120...
+2026-05-17 21:14:29,632 - INFO - Container sweb.eval.django__django-16502.scaffold_pilot_20260517_204120 removed.
+2026-05-17 21:14:29,632 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16502:latest...
+2026-05-17 21:14:32,217 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16502:latest removed.

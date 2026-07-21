@@ -1,0 +1,17 @@
+diff --git a/django/core/servers/basehttp.py b/django/core/servers/basehttp.py
+index fef5532e58..449ce0a005 100644
+--- a/django/core/servers/basehttp.py
++++ b/django/core/servers/basehttp.py
+@@ -143,6 +143,12 @@ class ServerHandler(simple_server.ServerHandler):
+         if self.headers.get("Connection") == "close":
+             self.request_handler.close_connection = True
+ 
++    def finish_response(self):
++        self.send_headers()
++        if self.environ.get('REQUEST_METHOD') != 'HEAD':
++            for data in self.result:
++                self.write(data)
++
+     def close(self):
+         self.get_stdin().read()
+         super().close()

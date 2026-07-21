@@ -1,0 +1,258 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 23:00:51,465 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:00:59,476 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:10,961 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:17,688 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:27,953 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:34,716 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:41,422 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:48,062 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:01:56,054 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:02:02,222 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:02:09,660 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:02:16,446 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:02:22,792 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:02:34,308 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:02:43,033 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:03:54,980 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:04:02,709 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:04:11,761 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:04:20,632 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:04:32,266 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:04:39,035 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:05:02,142 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:05:08,381 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:05:15,219 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:06:33,188 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:06:40,993 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:06:47,188 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:06:57,109 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:08,703 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:16,760 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:23,729 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:29,940 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:35,329 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:42,788 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:48,653 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:07:53,995 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:08:00,173 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:08:06,150 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:08:12,438 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:08:50,289 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:08:57,260 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:05,536 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:11,174 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:19,132 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:25,997 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:33,266 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:41,680 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:48,592 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:09:56,911 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:10:16,329 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:10:24,600 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:10:30,278 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:10:39,730 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:10:49,422 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:11:34,977 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:11:47,601 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:11:54,699 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:12:01,893 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:12:11,213 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:12:19,064 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:12:27,316 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:12:33,645 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:06,223 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:12,957 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:23,312 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:30,241 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:36,791 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:42,736 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:13:55,337 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:04,338 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:10,828 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:19,731 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:28,733 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:39,466 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:45,277 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:14:51,066 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:15:46,809 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:15:53,219 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:05,306 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:14,706 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:20,698 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:31,609 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:38,006 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:45,466 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:16:51,777 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:17:34,472 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:17:41,217 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:17:47,787 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:17:53,674 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:00,150 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:06,427 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:17,990 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:29,286 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:41,439 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:48,332 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:18:58,557 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:19:05,375 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:19:11,924 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:19:18,190 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:19:24,544 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:19:59,283 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:20:05,946 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:20:13,129 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:20:33,289 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:20:42,155 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:20:48,748 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:20:59,883 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:06,232 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:15,218 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:27,876 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:35,309 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:42,595 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:50,036 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:21:56,974 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:22:02,772 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:22:43,367 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:22:49,521 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:22:55,194 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:05,764 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:12,506 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:19,385 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:28,501 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:36,619 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:43,645 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:51,938 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:23:57,288 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:24:03,607 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:24:09,577 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:24:15,589 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 23:24:21,571 - httpx - INFO - HTTP Request: POST <REDACTED_URL>/chat/completions "HTTP/1.1 200 OK"
+======================================================================
+E2E SCAFFOLD PILOT EXPERIMENT
+Run ID: pilot_20260517_225954
+Instances: 5 (EDIT-type, django)
+Model: gpt-4.1 via Venus API
+Max steps: 15, Rate limit: 3.5s
+Budget: 1000 API calls
+======================================================================
+
+Loading instances...
+  Loaded 5 instances
+
+============================================================
+  MODE: CONTROL
+============================================================
+
+  [control 1/5] django__django-11206
+    Budget: 0/1000 calls used
+    Container: swe_django_django_11206_control
+    Image: sweb.env.py.x86_64.2baaea72acc974f6c02079:latest
+    → done=False, patch=42 lines, calls=15, scaffold=N/A
+
+  [control 2/5] django__django-13406
+    Budget: 15/1000 calls used
+    Container: swe_django_django_13406_control
+    Image: sweb.env.py.x86_64.e83e37f52c09532c62acfb:latest
+    → done=True, patch=0 lines, calls=9, scaffold=N/A
+
+  [control 3/5] django__django-14017
+    Budget: 24/1000 calls used
+    Container: swe_django_django_14017_control
+    Image: sweb.env.py.x86_64.297af196949a2a635bce66:latest
+    → done=False, patch=0 lines, calls=15, scaffold=N/A
+
+  [control 4/5] django__django-11885
+    Budget: 39/1000 calls used
+    Container: swe_django_django_11885_control
+    Image: sweb.env.py.x86_64.a18371b03f944585b4f08c:latest
+    → done=False, patch=0 lines, calls=15, scaffold=N/A
+
+  [control 5/5] django__django-16502
+    Budget: 54/1000 calls used
+    Container: swe_django_django_16502_control
+    Image: sweb.env.py.x86_64.c70909fdac4897d1c685df:latest
+    → done=True, patch=0 lines, calls=8, scaffold=N/A
+
+============================================================
+  MODE: SCAFFOLD
+============================================================
+
+  [scaffold 1/5] django__django-11206
+    Budget: 62/1000 calls used
+    Container: swe_django_django_11206_scaffold
+    Image: sweb.env.py.x86_64.2baaea72acc974f6c02079:latest
+      ★ SCAFFOLD INJECTED at step 4
+    → done=True, patch=30 lines, calls=14, scaffold=step 4
+
+  [scaffold 2/5] django__django-13406
+    Budget: 76/1000 calls used
+    Container: swe_django_django_13406_scaffold
+    Image: sweb.env.py.x86_64.e83e37f52c09532c62acfb:latest
+    → done=True, patch=0 lines, calls=9, scaffold=N/A
+
+  [scaffold 3/5] django__django-14017
+    Budget: 85/1000 calls used
+    Container: swe_django_django_14017_scaffold
+    Image: sweb.env.py.x86_64.297af196949a2a635bce66:latest
+    → done=False, patch=0 lines, calls=15, scaffold=N/A
+
+  [scaffold 4/5] django__django-11885
+    Budget: 100/1000 calls used
+    Container: swe_django_django_11885_scaffold
+    Image: sweb.env.py.x86_64.a18371b03f944585b4f08c:latest
+      ★ SCAFFOLD INJECTED at step 3
+    → done=True, patch=27 lines, calls=15, scaffold=step 3
+
+  [scaffold 5/5] django__django-16502
+    Budget: 115/1000 calls used
+    Container: swe_django_django_16502_scaffold
+    Image: sweb.env.py.x86_64.c70909fdac4897d1c685df:latest
+      ★ SCAFFOLD INJECTED at step 6
+    → done=True, patch=16 lines, calls=15, scaffold=step 6
+
+  Predictions (control): /data/home/xiankunlin/project/emnlp/paper1/results/e2e_scaffold/pilot_20260517_225954/predictions_control.json
+
+  Predictions (scaffold): /data/home/xiankunlin/project/emnlp/paper1/results/e2e_scaffold/pilot_20260517_225954/predictions_scaffold.json
+
+======================================================================
+SWEBENCH EVALUATION
+======================================================================
+
+  Running swebench harness for control_pilot_20260517_225954...
+  Harness exit code: 0
+  control: 0/1 resolved
+
+  Running swebench harness for scaffold_pilot_20260517_225954...
+  Harness exit code: 0
+  scaffold: 0/3 resolved
+
+======================================================================
+FINAL RESULTS
+======================================================================
+
+  Control:  0/5 resolved (0%)
+  Scaffold: 0/5 resolved (0%)
+  Delta:    +0
+
+  API calls used: 130/1000
+  Output: /data/home/xiankunlin/project/emnlp/paper1/results/e2e_scaffold/pilot_20260517_225954
+
+  Per-instance:
+
+    CONTROL:
+      django__django-11206                     patch= 42L done=False err=None
+      django__django-13406                     patch=  0L done=True  err=None
+      django__django-14017                     patch=  0L done=False err=None
+      django__django-11885                     patch=  0L done=False err=None
+      django__django-16502                     patch=  0L done=True  err=None
+
+    SCAFFOLD:
+      django__django-11206                     patch= 30L done=True  err=None
+      django__django-13406                     patch=  0L done=True  err=None
+      django__django-14017                     patch=  0L done=False err=None
+      django__django-11885                     patch= 27L done=True  err=None
+      django__django-16502                     patch= 16L done=True  err=None
+
+  Report: /data/home/xiankunlin/project/emnlp/paper1/results/e2e_scaffold/pilot_20260517_225954/final_report.json

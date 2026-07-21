@@ -1,0 +1,1826 @@
+{
+  "metadata": {
+    "source": "princeton-nlp/SWE-bench_Verified",
+    "total_available": 500,
+    "selected": 200,
+    "selection_method": "stratified_by_repo_proportional",
+    "random_seed": 42,
+    "repos_covered": 12
+  },
+  "repo_distribution": {
+    "django/django": 92,
+    "sympy/sympy": 30,
+    "sphinx-doc/sphinx": 17,
+    "matplotlib/matplotlib": 14,
+    "scikit-learn/scikit-learn": 12,
+    "astropy/astropy": 9,
+    "pydata/xarray": 9,
+    "pytest-dev/pytest": 8,
+    "pylint-dev/pylint": 4,
+    "psf/requests": 3,
+    "mwaskom/seaborn": 1,
+    "pallets/flask": 1
+  },
+  "instances": [
+    {
+      "instance_id": "astropy__astropy-12907",
+      "repo": "astropy/astropy",
+      "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+      "version": "4.3",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-03-03T15:14:54Z",
+      "problem_statement_preview": "Modeling's `separability_matrix` does not compute separability correctly for nested CompoundModels\nConsider the following model:\r\n\r\n```python\r\nfrom astropy.modeling import models as m\r\nfrom astropy.mo"
+    },
+    {
+      "instance_id": "astropy__astropy-13033",
+      "repo": "astropy/astropy",
+      "base_commit": "298ccb478e6bf092953bca67a3d29dc6c35f6752",
+      "version": "4.3",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-03-31T23:28:27Z",
+      "problem_statement_preview": "TimeSeries: misleading exception when required column check fails.\n<!-- This comments are hidden when you submit the issue,\r\nso you do not need to remove them! -->\r\n\r\n<!-- Please be sure to check out "
+    },
+    {
+      "instance_id": "astropy__astropy-13398",
+      "repo": "astropy/astropy",
+      "base_commit": "6500928dc0e57be8f06d1162eacc3ba5e2eff692",
+      "version": "5.0",
+      "difficulty": "1-4 hours",
+      "created_at": "2022-06-24T15:22:11Z",
+      "problem_statement_preview": "A direct approach to ITRS to Observed transformations that stays within the ITRS.\n<!-- This comments are hidden when you submit the issue,\r\nso you do not need to remove them! -->\r\n\r\n<!-- Please be sur"
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "repo": "astropy/astropy",
+      "base_commit": "19cc80471739bcb67b7e8099246b391c355023ee",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-07-14T10:04:40Z",
+      "problem_statement_preview": "ASCII table output to HTML does not support supplied \"formats\"\n<!-- This comments are hidden when you submit the issue,\r\nso you do not need to remove them! -->\r\n\r\n<!-- Please be sure to check out our "
+    },
+    {
+      "instance_id": "astropy__astropy-14096",
+      "repo": "astropy/astropy",
+      "base_commit": "1a4462d72eb03f30dc83a879b1dd57aac8b2c18b",
+      "version": "5.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-12-04T17:06:07Z",
+      "problem_statement_preview": "Subclassed SkyCoord gives misleading attribute access message\nI'm trying to subclass `SkyCoord`, and add some custom properties. This all seems to be working fine, but when I have a custom property (`"
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "repo": "astropy/astropy",
+      "base_commit": "a5917978be39d13cd90b517e1de4e7a539ffaa48",
+      "version": "5.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-12-16T11:13:37Z",
+      "problem_statement_preview": "Please support header rows in RestructuredText output\n### Description\r\n\r\nIt would be great if the following would work:\r\n\r\n```Python\r\n>>> from astropy.table import QTable\r\n>>> import astropy.units as "
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "repo": "astropy/astropy",
+      "base_commit": "fa4e8d1cd279acf9b24560813c8652494ccd5922",
+      "version": "5.1",
+      "difficulty": "1-4 hours",
+      "created_at": "2023-02-06T21:56:51Z",
+      "problem_statement_preview": "Incorrect units read from MRT (CDS format) files with astropy.table\n### Description\n\nWhen reading MRT files (formatted according to the CDS standard which is also the format recommended by AAS/ApJ) wi"
+    },
+    {
+      "instance_id": "astropy__astropy-7336",
+      "repo": "astropy/astropy",
+      "base_commit": "732d89c2940156bdc0e200bb36dc38b5e424bcba",
+      "version": "1.3",
+      "difficulty": "<15 min fix",
+      "created_at": "2018-03-28T15:31:32Z",
+      "problem_statement_preview": "units.quantity_input decorator fails for constructors with type hinted return value -> None\n### Summary\r\nI am using the `units.quantity_input` decorator with typing hints for constructors, however whe"
+    },
+    {
+      "instance_id": "astropy__astropy-8707",
+      "repo": "astropy/astropy",
+      "base_commit": "a85a0747c54bac75e9c3b2fe436b105ea029d6cf",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-05-15T13:21:19Z",
+      "problem_statement_preview": "Header.fromstring does not accept Python 3 bytes\nAccording to [the docs](http://docs.astropy.org/en/stable/_modules/astropy/io/fits/header.html#Header.fromstring), the method `Header.fromstring` \"...c"
+    },
+    {
+      "instance_id": "django__django-10554",
+      "repo": "django/django",
+      "base_commit": "14d026cccb144c6877294ba4cd4e03ebf0842498",
+      "version": "3.0",
+      "difficulty": "1-4 hours",
+      "created_at": "2018-10-24T14:24:45Z",
+      "problem_statement_preview": "Union queryset with ordering breaks on ordering with derived querysets\nDescription\n\t \n\t\t(last modified by Sergei Maertens)\n\t \nMay be related to #29692\nSimple reproduction (the exact models are not rel"
+    },
+    {
+      "instance_id": "django__django-11066",
+      "repo": "django/django",
+      "base_commit": "4b45b6c8e4d7c9701a332e80d3b1c84209dc36e2",
+      "version": "3.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-03-09T13:03:14Z",
+      "problem_statement_preview": "RenameContentType._rename() doesn't save the content type on the correct database\nDescription\n\t\nThe commit in question:\n\u200bhttps://github.com/django/django/commit/f179113e6cbc8ba0a8d4e87e1d4410fb61d63e7"
+    },
+    {
+      "instance_id": "django__django-11087",
+      "repo": "django/django",
+      "base_commit": "8180ffba21bf10f4be905cb0d4890dc2bcff2788",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-03-16T22:59:57Z",
+      "problem_statement_preview": "Optimize .delete() to use only required fields.\nDescription\n\t\nHi!\nWe're in the process of upgrading our Django 1.11 installation from Python 2.7 to Python 3.6, however are hitting an unexpected Unicod"
+    },
+    {
+      "instance_id": "django__django-11095",
+      "repo": "django/django",
+      "base_commit": "7d49ad76562e8c0597a0eb66046ab423b12888d8",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-03-19T15:17:28Z",
+      "problem_statement_preview": "add ModelAdmin.get_inlines() hook to allow set inlines based on the request or model instance.\nDescription\n\t\nadd ModelAdmin.get_inlines() hook to allow set inlines based on the request or model instan"
+    },
+    {
+      "instance_id": "django__django-11133",
+      "repo": "django/django",
+      "base_commit": "879cc3da6249e920b8d54518a0ae06de835d7373",
+      "version": "3.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-03-27T06:48:09Z",
+      "problem_statement_preview": "HttpResponse doesn't handle memoryview objects\nDescription\n\t\nI am trying to write a BinaryField retrieved from the database into a HttpResponse. When the database is Sqlite this works correctly, but P"
+    },
+    {
+      "instance_id": "django__django-11149",
+      "repo": "django/django",
+      "base_commit": "e245046bb6e8b32360aa48b8a41fb7050f0fc730",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-03-30T18:14:35Z",
+      "problem_statement_preview": "Admin inlines for auto-created ManyToManyFields are editable if the user only has the view permission\nDescription\n\t\nFrom https://code.djangoproject.com/ticket/8060#comment:34\nReplying to Will Gordon:\n"
+    },
+    {
+      "instance_id": "django__django-11206",
+      "repo": "django/django",
+      "base_commit": "571ab44e8a8936014c22e7eebe4948d9611fd7ce",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-04-13T10:19:38Z",
+      "problem_statement_preview": "utils.numberformat.format renders small decimals in exponential notation.\nDescription\n\t\nWhen using utils.number_format with decimal_pos, extremely small numbers get displayed using exponential notatio"
+    },
+    {
+      "instance_id": "django__django-11211",
+      "repo": "django/django",
+      "base_commit": "ba726067604ce5a8ca3919edf653496722b433ab",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-04-13T12:01:14Z",
+      "problem_statement_preview": "Prefetch related is not working when used GFK for model that uses UUID field as PK.\nDescription\n\t\nHow to reproduce:\ncreate model with UUID as primary key\nclass Foo(models.Model):\n\tid = models.UUIDFiel"
+    },
+    {
+      "instance_id": "django__django-11265",
+      "repo": "django/django",
+      "base_commit": "21aa2a5e785eef1f47beb1c3760fdd7d8915ae09",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-04-21T12:57:28Z",
+      "problem_statement_preview": "Using exclude on annotated FilteredRelation doesn't work\nDescription\n\t\nIt looks like using exclude on queryset with annotated FilteredRelation give a FieldError on the annotation name.\nFor exemple, in"
+    },
+    {
+      "instance_id": "django__django-11292",
+      "repo": "django/django",
+      "base_commit": "eb16c7260e573ec513d84cb586d96bdf508f3173",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-04-27T14:23:07Z",
+      "problem_statement_preview": "Add --skip-checks option to management commands.\nDescription\n\t\nManagement commands already have skip_checks stealth option. I propose exposing this option on the command line. This would allow users t"
+    },
+    {
+      "instance_id": "django__django-11299",
+      "repo": "django/django",
+      "base_commit": "6866c91b638de5368c18713fa851bfe56253ea55",
+      "version": "3.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-04-28T11:15:08Z",
+      "problem_statement_preview": "CheckConstraint with OR operator generates incorrect SQL on SQLite and Oracle.\nDescription\n\t \n\t\t(last modified by Michael Spallino)\n\t \nDjango is incorrectly including the fully qualified field name(e."
+    },
+    {
+      "instance_id": "django__django-11333",
+      "repo": "django/django",
+      "base_commit": "55b68de643b5c2d5f0a8ea7587ab3b2966021ccc",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-05-06T21:00:53Z",
+      "problem_statement_preview": "Optimization: Multiple URLResolvers may be unintentionally be constructed by calls to `django.urls.resolvers.get_resolver`\nDescription\n\t\nMultiple URLResolvers may be constructed by django.urls.resolve"
+    },
+    {
+      "instance_id": "django__django-11400",
+      "repo": "django/django",
+      "base_commit": "1f8382d34d54061eddc41df6994e20ee38c60907",
+      "version": "3.0",
+      "difficulty": "1-4 hours",
+      "created_at": "2019-05-22T11:30:39Z",
+      "problem_statement_preview": "Ordering problem in admin.RelatedFieldListFilter and admin.RelatedOnlyFieldListFilter\nDescription\n\t\nRelatedFieldListFilter doesn't fall back to the ordering defined in Model._meta.ordering. \nOrdering "
+    },
+    {
+      "instance_id": "django__django-11433",
+      "repo": "django/django",
+      "base_commit": "21b1d239125f1228e579b1ce8d94d4d5feadd2a6",
+      "version": "3.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-05-31T17:06:20Z",
+      "problem_statement_preview": "Allow `cleaned_data` to overwrite fields' default values.\nDescription\n\t\nSee comments here: \u200bhttps://github.com/django/django/pull/7068/files#r289432409\nCurrently, when submitting a form, if 'some_fiel"
+    },
+    {
+      "instance_id": "django__django-11551",
+      "repo": "django/django",
+      "base_commit": "7991111af12056ec9a856f35935d273526338c1f",
+      "version": "3.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-07-09T22:28:45Z",
+      "problem_statement_preview": "admin.E108 is raised on fields accessible only via instance.\nDescription\n\t \n\t\t(last modified by ajcsimons)\n\t \nAs part of startup django validates the ModelAdmin's list_display list/tuple for correctne"
+    },
+    {
+      "instance_id": "django__django-11815",
+      "repo": "django/django",
+      "base_commit": "e02f67ef2d03d48128e7a118bf75f0418e24e8ac",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-09-24T21:45:36Z",
+      "problem_statement_preview": "Migrations uses value of enum object instead of its name.\nDescription\n\t \n\t\t(last modified by oasl)\n\t \nWhen using Enum object as a default value for a CharField, the generated migration file uses the v"
+    },
+    {
+      "instance_id": "django__django-11820",
+      "repo": "django/django",
+      "base_commit": "c2678e49759e5c4c329bff0eeca2886267005d21",
+      "version": "3.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-09-26T08:37:14Z",
+      "problem_statement_preview": "models.E015 is raised when Meta.ordering contains \"pk\" of a related field.\nDescription\n\t\nmodels.E015 is raised when Meta.ordering contains __pk of a related field, e.g.:\ntest_app.SomeModel: (models.E0"
+    },
+    {
+      "instance_id": "django__django-11848",
+      "repo": "django/django",
+      "base_commit": "f0adf3b9b7a19cdee05368ff0c0c2d087f011180",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-09-28T04:28:22Z",
+      "problem_statement_preview": "django.utils.http.parse_http_date two digit year check is incorrect\nDescription\n\t \n\t\t(last modified by Ad Timmering)\n\t \nRFC 850 does not mention this, but in RFC 7231 (and there's something similar in"
+    },
+    {
+      "instance_id": "django__django-11885",
+      "repo": "django/django",
+      "base_commit": "04ac9b45a34440fa447feb6ae934687aacbfc5f4",
+      "version": "3.1",
+      "difficulty": "1-4 hours",
+      "created_at": "2019-10-08T15:22:07Z",
+      "problem_statement_preview": "Combine fast delete queries\nDescription\n\t\nWhen emulating ON DELETE CASCADE via on_delete=models.CASCADE the deletion.Collector will try to perform fast queries which are DELETE FROM table WHERE table."
+    },
+    {
+      "instance_id": "django__django-12125",
+      "repo": "django/django",
+      "base_commit": "89d41cba392b759732ba9f1db4ff29ed47da6a56",
+      "version": "3.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-11-22T12:55:45Z",
+      "problem_statement_preview": "makemigrations produces incorrect path for inner classes\nDescription\n\t\nWhen you define a subclass from django.db.models.Field as an inner class of some other class, and use this field inside a django."
+    },
+    {
+      "instance_id": "django__django-12143",
+      "repo": "django/django",
+      "base_commit": "5573a54d409bb98b5c5acdb308310bed02d392c2",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-11-25T14:38:30Z",
+      "problem_statement_preview": "Possible data loss in admin changeform view when using regex special characters in formset prefix\nDescription\n\t \n\t\t(last modified by Baptiste Mispelon)\n\t \nWhile browsing the code in admin/options.py ["
+    },
+    {
+      "instance_id": "django__django-12209",
+      "repo": "django/django",
+      "base_commit": "5a68f024987e6d16c2626a31bf653a2edddea579",
+      "version": "3.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-12-12T04:11:05Z",
+      "problem_statement_preview": "Change in behaviour when saving a model instance with an explcit pk value if the pk field has a default\nDescription\n\t \n\t\t(last modified by Reupen Shah)\n\t \nConsider the following model:\nfrom uuid impor"
+    },
+    {
+      "instance_id": "django__django-12273",
+      "repo": "django/django",
+      "base_commit": "927c903f3cd25c817c21738328b53991c035b415",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-01-03T18:47:56Z",
+      "problem_statement_preview": "Resetting primary key for a child model doesn't work.\nDescription\n\t\nIn the attached example code setting the primary key to None does not work (so that the existing object is overwritten on save()).\nT"
+    },
+    {
+      "instance_id": "django__django-12276",
+      "repo": "django/django",
+      "base_commit": "53d8646f799de7f92ab9defe9dc56c6125448102",
+      "version": "3.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-01-05T08:04:40Z",
+      "problem_statement_preview": "FileInput shouldn't display required attribute when initial data exists.\nDescription\n\t \n\t\t(last modified by thenewguy)\n\t \nI think that ClearableFileInput.use_required_attribute() (\u200bhttps://github.com/"
+    },
+    {
+      "instance_id": "django__django-12308",
+      "repo": "django/django",
+      "base_commit": "2e0f04507b17362239ba49830d26fec504d46978",
+      "version": "3.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-01-12T04:21:15Z",
+      "problem_statement_preview": "JSONField are not properly displayed in admin when they are readonly.\nDescription\n\t\nJSONField values are displayed as dict when readonly in the admin.\nFor example, {\"foo\": \"bar\"} would be displayed as"
+    },
+    {
+      "instance_id": "django__django-12325",
+      "repo": "django/django",
+      "base_commit": "29c126bb349526b5f1cd78facbe9f25906f18563",
+      "version": "3.1",
+      "difficulty": "1-4 hours",
+      "created_at": "2020-01-15T14:02:25Z",
+      "problem_statement_preview": "pk setup for MTI to parent get confused by multiple OneToOne references.\nDescription\n\t\nclass Document(models.Model):\n\tpass\nclass Picking(Document):\n\tdocument_ptr = models.OneToOneField(Document, on_de"
+    },
+    {
+      "instance_id": "django__django-12663",
+      "repo": "django/django",
+      "base_commit": "fa5e7e46d875d4143510944f19d79df7b1739bab",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-04-04T18:58:49Z",
+      "problem_statement_preview": "Using SimpleLazyObject with a nested subquery annotation fails.\nDescription\n\t \n\t\t(last modified by Jordan Ephron)\n\t \nPrior to 35431298226165986ad07e91f9d3aca721ff38ec it was possible to use a SimpleLa"
+    },
+    {
+      "instance_id": "django__django-12774",
+      "repo": "django/django",
+      "base_commit": "67f9d076cfc1858b94f9ed6d1a5ce2327dcc8d0d",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-04-22T11:02:30Z",
+      "problem_statement_preview": "Allow QuerySet.in_bulk() for fields with total UniqueConstraints.\nDescription\n\t\nIf a field is unique by UniqueConstraint instead of unique=True running in_bulk() on that field will fail.\nConsider:\ncla"
+    },
+    {
+      "instance_id": "django__django-12858",
+      "repo": "django/django",
+      "base_commit": "f2051eb8a7febdaaa43bd33bf5a6108c5f428e59",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-05-05T04:49:02Z",
+      "problem_statement_preview": "models.E015 is raised when ordering uses lookups that are not transforms.\nDescription\n\t\n./manage.py check\nSystemCheckError: System check identified some issues:\nERRORS:\napp.Stock: (models.E015) 'order"
+    },
+    {
+      "instance_id": "django__django-12965",
+      "repo": "django/django",
+      "base_commit": "437196da9a386bd4cc62b0ce3f2de4aba468613d",
+      "version": "3.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-05-24T13:20:03Z",
+      "problem_statement_preview": "Model.objects.all().delete() subquery usage performance regression\nDescription\n\t\nLock tests are failing with Django-MySQL on Django 3.1: \u200bhttps://github.com/adamchainz/django-mysql/pull/660 .\nThe test"
+    },
+    {
+      "instance_id": "django__django-13023",
+      "repo": "django/django",
+      "base_commit": "f83b44075dafa429d59e8755aa47e15577cc49f9",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-06-04T20:40:44Z",
+      "problem_statement_preview": "DecimalField.to_python() raises TypeError on dict values.\nDescription\n\t\nA call to DecimalField.to_python() with a dictionary as the value parameter produces TypeError instead of ValidationError. This "
+    },
+    {
+      "instance_id": "django__django-13089",
+      "repo": "django/django",
+      "base_commit": "27c09043da52ca1f02605bf28600bfd5ace95ae4",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-06-20T07:36:10Z",
+      "problem_statement_preview": "cache.backends.db._cull sometimes fails with 'NoneType' object is not subscriptable\nDescription\n\t \n\t\t(last modified by Guillermo Bonveh\u00ed)\n\t \nI'm sporadically getting some cache errors using database b"
+    },
+    {
+      "instance_id": "django__django-13109",
+      "repo": "django/django",
+      "base_commit": "fbe82f82555bc25dccb476c749ca062f0b522be3",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-06-25T08:36:45Z",
+      "problem_statement_preview": "ForeignKey.validate() should validate using the base manager.\nDescription\n\t\nForeignKey.validate() should validate using the base manager instead of the default manager.\nConsider the models:\nclass Arti"
+    },
+    {
+      "instance_id": "django__django-13195",
+      "repo": "django/django",
+      "base_commit": "156a2138db20abc89933121e4ff2ee2ce56a173a",
+      "version": "3.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-07-15T11:00:07Z",
+      "problem_statement_preview": "HttpResponse.delete_cookie() should preserve cookie's samesite.\nDescription\n\t\nWe noticed we were getting this warning message from Firefox:\n'Cookie \u201cmessages\u201d will be soon rejected because it has the "
+    },
+    {
+      "instance_id": "django__django-13297",
+      "repo": "django/django",
+      "base_commit": "8954f255bbf5f4ee997fd6de62cb50fc9b5dd697",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-08-12T11:20:33Z",
+      "problem_statement_preview": "TemplateView.get_context_data()'s kwargs returns SimpleLazyObjects that causes a crash when filtering.\nDescription\n\t\nExample Code that works in 3.0, but not in 3.1:\nclass OfferView(TemplateView):\n\ttem"
+    },
+    {
+      "instance_id": "django__django-13344",
+      "repo": "django/django",
+      "base_commit": "e39e727ded673e74016b5d3658d23cbe20234d11",
+      "version": "3.2",
+      "difficulty": "1-4 hours",
+      "created_at": "2020-08-24T20:50:35Z",
+      "problem_statement_preview": "Coroutine passed to the first middleware's process_response() instead of HttpResponse.\nDescription\n\t\nLike the title says, using ASGI (+ uvicorn in my case), the first middleware (according to the list"
+    },
+    {
+      "instance_id": "django__django-13346",
+      "repo": "django/django",
+      "base_commit": "9c92924cd5d164701e2514e1c2d6574126bd7cc2",
+      "version": "3.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-08-25T06:25:31Z",
+      "problem_statement_preview": "On MySQL, Oracle, and SQLite, __in lookup doesn't work on key transforms.\nDescription\n\t\nI am currently rewriting our app where we will start using models.JSONField instead of django_mysql.models.JSONF"
+    },
+    {
+      "instance_id": "django__django-13363",
+      "repo": "django/django",
+      "base_commit": "76e0151ea0e0f56dca66cee846a78b89346d2c4c",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-08-29T18:59:41Z",
+      "problem_statement_preview": "Add support for tzinfo parameter to TruncDate() and TruncTime().\nDescription\n\t \n\t\t(last modified by Joe Jackson)\n\t \nDescription\nTruncDate inherits from TruncBase, which includes the TimeZone mixin. Th"
+    },
+    {
+      "instance_id": "django__django-13406",
+      "repo": "django/django",
+      "base_commit": "84609b3205905097d7d3038d32e6101f012c0619",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-09-10T12:38:11Z",
+      "problem_statement_preview": "Queryset with values()/values_list() crashes when recreated from a pickled query.\nDescription\n\t\nI am pickling query objects (queryset.query) for later re-evaluation as per \u200bhttps://docs.djangoproject."
+    },
+    {
+      "instance_id": "django__django-13410",
+      "repo": "django/django",
+      "base_commit": "580a4341cb0b4cbfc215a70afc004875a7e815f4",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-09-11T09:58:41Z",
+      "problem_statement_preview": "Bug in posix implementation of django/core/files/locks.py\nDescription\n\t\nThe posix version of locks (the version which supports import fcntl) has a bug. The code attempts to return True to indicate suc"
+    },
+    {
+      "instance_id": "django__django-13417",
+      "repo": "django/django",
+      "base_commit": "71ae1ab0123582cc5bfe0f7d5f4cc19a9412f396",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-09-14T07:49:15Z",
+      "problem_statement_preview": "QuerySet.ordered property is incorrect for GROUP BY queries on models with Meta.ordering.\nDescription\n\t\nUsing the annotate function on a queryset doesn't keep the default ordering set in model's meta "
+    },
+    {
+      "instance_id": "django__django-13449",
+      "repo": "django/django",
+      "base_commit": "2a55431a5678af52f669ffe7dff3dd0bd21727f8",
+      "version": "3.2",
+      "difficulty": "1-4 hours",
+      "created_at": "2020-09-22T13:04:03Z",
+      "problem_statement_preview": "Lag() with DecimalField crashes on SQLite.\nDescription\n\t\nOn Django 3.0.7 with a SQLite database using the following model:\nfrom django.db import models\nclass LagTest(models.Model):\n\tmodified = models."
+    },
+    {
+      "instance_id": "django__django-13512",
+      "repo": "django/django",
+      "base_commit": "b79088306513d5ed76d31ac40ab3c15f858946ea",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-10-08T13:52:57Z",
+      "problem_statement_preview": "Admin doesn't display properly unicode chars in JSONFields.\nDescription\n\t \n\t\t(last modified by ZhaoQi99)\n\t \n>>> import json\n>>> print json.dumps('\u4e2d\u56fd')\n\"\\u4e2d\\u56fd\"\njson.dumps use ASCII encoding by d"
+    },
+    {
+      "instance_id": "django__django-13516",
+      "repo": "django/django",
+      "base_commit": "b7da588e883e12b8ac3bb8a486e654e30fc1c6c8",
+      "version": "3.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-10-08T19:00:01Z",
+      "problem_statement_preview": "flush() on self.stdout/stderr management commands doesn't work.\nDescription\n\t\nflush() is notably called during migrate command; it doesn't work, and a long migration effectively prints to stderr no re"
+    },
+    {
+      "instance_id": "django__django-13551",
+      "repo": "django/django",
+      "base_commit": "7f9e4524d6b23424cf44fbe1bf1f4e70f6bb066e",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-10-17T17:22:01Z",
+      "problem_statement_preview": "Changing user's email could invalidate password reset tokens\nDescription\n\t\nSequence:\nHave account with email address foo@\u2026\nPassword reset request for that email (unused)\nfoo@\u2026 account changes their em"
+    },
+    {
+      "instance_id": "django__django-13670",
+      "repo": "django/django",
+      "base_commit": "c448e614c60cc97c6194c62052363f4f501e0953",
+      "version": "3.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-11-12T11:45:51Z",
+      "problem_statement_preview": "dateformat.y() doesn't support years < 1000.\nDescription\n\t \n\t\t(last modified by Sam)\n\t \nWhen using the the dateformat of django with a date before 999 (or 99 and 9 for similar matters) and the format "
+    },
+    {
+      "instance_id": "django__django-13809",
+      "repo": "django/django",
+      "base_commit": "bef6f7584280f1cc80e5e2d80b7ad073a93d26ec",
+      "version": "4.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-12-24T15:31:35Z",
+      "problem_statement_preview": "Add --skip-checks option to the runserver command.\nDescription\n\t\nRationale:\nIt would be consistent with other management commands performing system checks\nIt would help people like me who would rather"
+    },
+    {
+      "instance_id": "django__django-13810",
+      "repo": "django/django",
+      "base_commit": "429d089d0a8fbd400e0c010708df4f0d16218970",
+      "version": "3.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-12-26T12:31:18Z",
+      "problem_statement_preview": "MiddlewareNotUsed leaves undesired side effects when loading middleware in ASGI context\nDescription\n\t\nI experienced strange issues when working with \u200bASGI , \u200bdjango-debug-toolbar and my own small midd"
+    },
+    {
+      "instance_id": "django__django-13964",
+      "repo": "django/django",
+      "base_commit": "f39634ff229887bf7790c069d0c411b38494ca38",
+      "version": "4.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-02-02T17:07:43Z",
+      "problem_statement_preview": "Saving parent object after setting on child leads to data loss for parents with non-numeric primary key.\nDescription\n\t \n\t\t(last modified by Charlie DeTar)\n\t \nGiven a model with a foreign key relation "
+    },
+    {
+      "instance_id": "django__django-14011",
+      "repo": "django/django",
+      "base_commit": "e4430f22c8e3d29ce5d9d0263fba57121938d06d",
+      "version": "4.0",
+      "difficulty": "1-4 hours",
+      "created_at": "2021-02-15T06:15:21Z",
+      "problem_statement_preview": "LiveServerTestCase's ThreadedWSGIServer doesn't close database connections after each thread\nDescription\n\t\nIn Django 2.2.17, I'm seeing the reappearance of #22414 after it was fixed in 1.11. #22414 is"
+    },
+    {
+      "instance_id": "django__django-14017",
+      "repo": "django/django",
+      "base_commit": "466920f6d726eee90d5566e0a9948e92b33a122e",
+      "version": "4.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-02-18T13:05:27Z",
+      "problem_statement_preview": "Q(...) & Exists(...) raises a TypeError\nDescription\n\t\nExists(...) & Q(...) works, but Q(...) & Exists(...) raise a TypeError\nHere's a minimal example:\nIn [3]: Exists(Product.objects.all()) & Q()\nOut[3"
+    },
+    {
+      "instance_id": "django__django-14034",
+      "repo": "django/django",
+      "base_commit": "db1fc5cd3c5d36cdb5d0fe4404efd6623dd3e8fb",
+      "version": "4.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-02-22T19:32:50Z",
+      "problem_statement_preview": "MultiValueField ignores a required value of a sub field\nDescription\n\t \n\t\t(last modified by Takayuki Hirai)\n\t \nA field and a form definition:\nfrom django.forms import (\n\tForm,\n\tCharField,\n\tMultiValueFi"
+    },
+    {
+      "instance_id": "django__django-14351",
+      "repo": "django/django",
+      "base_commit": "06fd4df41afb5aa1d681b853c3c08d8c688ca3a5",
+      "version": "4.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-05-05T03:50:44Z",
+      "problem_statement_preview": "Q object __or__ appears to get all dunder related's default columns and queryset raises ProgrammingError.\nDescription\n\t\nThere appears to be a difference in how Q object aliases are setup, when OR'd. T"
+    },
+    {
+      "instance_id": "django__django-14534",
+      "repo": "django/django",
+      "base_commit": "910ecd1b8df7678f45c3d507dde6bcb1faafa243",
+      "version": "4.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-06-17T15:37:34Z",
+      "problem_statement_preview": "BoundWidget.id_for_label ignores id set by ChoiceWidget.options\nDescription\n\t\nIf you look at the implementation of BoundField.subwidgets\nclass BoundField:\n\t...\n\tdef subwidgets(self):\n\t\tid_ = self.fiel"
+    },
+    {
+      "instance_id": "django__django-14539",
+      "repo": "django/django",
+      "base_commit": "6a5ef557f80a8eb6a758ebe99c8bb477ca47459e",
+      "version": "4.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-06-19T11:31:16Z",
+      "problem_statement_preview": "urlize() does not handle html escaped string and trailing punctuation correctly\nDescription\n\t\nExample:\nurlize('Search for google.com/?q=1&lt! and see.')\n# expected output\n'Search for <a href=\"http://g"
+    },
+    {
+      "instance_id": "django__django-14580",
+      "repo": "django/django",
+      "base_commit": "36fa071d6ebd18a61c4d7f1b5c9d17106134bd44",
+      "version": "4.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-07-01T07:38:03Z",
+      "problem_statement_preview": "Missing import statement in generated migration (NameError: name 'models' is not defined)\nDescription\n\t\nI found a bug in Django's latest release: 3.2.4. \nGiven the following contents of models.py:\nfro"
+    },
+    {
+      "instance_id": "django__django-14631",
+      "repo": "django/django",
+      "base_commit": "84400d2e9db7c51fee4e9bb04c028f665b8e7624",
+      "version": "4.0",
+      "difficulty": "1-4 hours",
+      "created_at": "2021-07-13T09:16:48Z",
+      "problem_statement_preview": "BaseForm's _clean_fields() and changed_data should access values via BoundField\nDescription\n\t \n\t\t(last modified by Chris Jerdonek)\n\t \nWhile working on #32917, I noticed that \u200bBaseForm._clean_fields() "
+    },
+    {
+      "instance_id": "django__django-14672",
+      "repo": "django/django",
+      "base_commit": "00ea883ef56fb5e092cbe4a6f7ff2e7470886ac4",
+      "version": "4.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-07-20T10:47:34Z",
+      "problem_statement_preview": "Missing call `make_hashable` on `through_fields` in `ManyToManyRel`\nDescription\n\t\nIn 3.2 identity property has been added to all ForeignObjectRel to make it possible to compare them. A hash is derived"
+    },
+    {
+      "instance_id": "django__django-14725",
+      "repo": "django/django",
+      "base_commit": "0af9a5fc7d765aa05ea784e2c3237675f3bb4b49",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-08-01T21:24:36Z",
+      "problem_statement_preview": "Provide a way for model formsets to disallow new object creation\nDescription\n\t\nModel formsets don't provide a way to create an \"edit only\" view of objects. We see users trying to use extra=0 to accomp"
+    },
+    {
+      "instance_id": "django__django-14787",
+      "repo": "django/django",
+      "base_commit": "004b4620f6f4ad87261e149898940f2dcd5757ef",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-08-23T12:59:59Z",
+      "problem_statement_preview": "method_decorator() should preserve wrapper assignments\nDescription\n\t\nthe function that is passed to the decorator is a partial object and does not have any of the attributes expected from a function i"
+    },
+    {
+      "instance_id": "django__django-14915",
+      "repo": "django/django",
+      "base_commit": "903aaa35e5ceaa33bfc9b19b7f6da65ce5a91dd4",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-09-29T22:00:15Z",
+      "problem_statement_preview": "ModelChoiceIteratorValue is not hashable.\nDescription\n\t\nRecently I migrated from Django 3.0 to Django 3.1. In my code, I add custom data-* attributes to the select widget options. After the upgrade so"
+    },
+    {
+      "instance_id": "django__django-14999",
+      "repo": "django/django",
+      "base_commit": "a754b82dac511475b6276039471ccd17cc64aeb8",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-10-16T09:31:21Z",
+      "problem_statement_preview": "RenameModel with db_table should be a noop.\nDescription\n\t\nA RenameModel operation that already has db_table defined must be a noop.\nIn Postgres, it drops and recreates foreign key constraints. In sqli"
+    },
+    {
+      "instance_id": "django__django-15098",
+      "repo": "django/django",
+      "base_commit": "2c7846d992ca512d36a73f518205015c88ed088c",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-11-17T21:30:07Z",
+      "problem_statement_preview": "Internationalisation didn't support language locale containing both script and region.\nDescription\n\t\nThe i18n_patterns didn't work with locale contains both script and region, like en-latn-us.\nGiven s"
+    },
+    {
+      "instance_id": "django__django-15104",
+      "repo": "django/django",
+      "base_commit": "a7e7043c8746933dafce652507d3b821801cdc7d",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-11-19T20:46:58Z",
+      "problem_statement_preview": "KeyError with migration autodetector and FK field with hardcoded reference\nDescription\n\t\nHi,\nI encountered this issue on an old Django project (probably 10 years old) with tons of models and probably "
+    },
+    {
+      "instance_id": "django__django-15128",
+      "repo": "django/django",
+      "base_commit": "cb383753c0e0eb52306e1024d32a782549c27e61",
+      "version": "4.1",
+      "difficulty": "1-4 hours",
+      "created_at": "2021-11-25T15:50:24Z",
+      "problem_statement_preview": "Query.change_aliases raises an AssertionError\nDescription\n\t\nPython Version: 3.9.2\nDjango Version: 2.2.24, 3.2.9 (reproduced using two different versions) \nCode to Reproduce\n# models.py\nfrom django.db "
+    },
+    {
+      "instance_id": "django__django-15252",
+      "repo": "django/django",
+      "base_commit": "361bb8f786f112ee275be136795c0b1ecefff928",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-12-28T15:51:06Z",
+      "problem_statement_preview": "MigrationRecorder does not obey db_router allow_migrate rules\nDescription\n\t\nHi,\nWe have a multi-db setup. We have one connection that is for the django project, and several connections that talk to ot"
+    },
+    {
+      "instance_id": "django__django-15280",
+      "repo": "django/django",
+      "base_commit": "973fa566521037ac140dcece73fceae50ee522f1",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-01-04T11:16:35Z",
+      "problem_statement_preview": "Deferred fields incorrect when following prefetches back to the \"parent\" object\nDescription\n\t\nGiven the following models:\nclass User(models.Model):\n\temail = models.EmailField()\n\tkind = models.CharFiel"
+    },
+    {
+      "instance_id": "django__django-15368",
+      "repo": "django/django",
+      "base_commit": "e972620ada4f9ed7bc57f28e133e85c85b0a7b20",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-01-27T13:44:35Z",
+      "problem_statement_preview": "bulk_update() does not work with plain F('...') expressions.\nDescription\n\t\nRepro:\nassign plain F(...) to some model instance field\nsave with bulk_update\nExample:\nCode highlighting:\n>>> from exampleapp"
+    },
+    {
+      "instance_id": "django__django-15382",
+      "repo": "django/django",
+      "base_commit": "770d3e6a4ce8e0a91a9e27156036c1985e74d4a3",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-02-01T18:29:41Z",
+      "problem_statement_preview": "filter on exists-subquery with empty queryset removes whole WHERE block\nDescription\n\t \n\t\t(last modified by Tobias Bengfort)\n\t \n>>> qs = MyModel.objects.filter(~models.Exists(MyModel.objects.none()), n"
+    },
+    {
+      "instance_id": "django__django-15467",
+      "repo": "django/django",
+      "base_commit": "e0442a628eb480eac6a7888aed5a86f83499e299",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-02-27T03:00:31Z",
+      "problem_statement_preview": "ModelAdmin with defined radio_fields override empty_label\nDescription\n\t\nModelAdmin drops my \"empty_label\" and set \"default_empty_label\". For example:\nclass MyModelAdmin(ModelAdmin):\n\tradio_fields = 'm"
+    },
+    {
+      "instance_id": "django__django-15525",
+      "repo": "django/django",
+      "base_commit": "fbacaa58ffc5a62456ee68b90efa13957f761ce4",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-03-18T10:39:26Z",
+      "problem_statement_preview": "loaddata fails on non-default database when natural keys uses foreign keys.\nDescription\n\t \n\t\t(last modified by Fran\u00e7ois Granade)\n\t \nI've got a one-to-many relationship between two models Book and Auth"
+    },
+    {
+      "instance_id": "django__django-15569",
+      "repo": "django/django",
+      "base_commit": "884b4c27f506b3c29d58509fc83a35c30ea10d94",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-04-08T06:55:17Z",
+      "problem_statement_preview": "RegisterLookupMixin._unregister_lookup() should clear the lookup cache.\nDescription\n\t \n\t\t(last modified by Himanshu Balasamanta)\n\t \nIn current source code, in the _unregister_lookup method, \u200bhttps://g"
+    },
+    {
+      "instance_id": "django__django-15572",
+      "repo": "django/django",
+      "base_commit": "0b31e024873681e187b574fe1c4afe5e48aeeecf",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-04-09T09:38:31Z",
+      "problem_statement_preview": "Django 3.2.4+ autoreload breaks on empty string in TEMPLATES DIRS.\nDescription\n\t\nDjango versions > 3.2.3 changes the way template dirs are handled, they are now normalized using pathlib.Path.\nPeople h"
+    },
+    {
+      "instance_id": "django__django-15629",
+      "repo": "django/django",
+      "base_commit": "694cf458f16b8d340a3195244196980b2dec34fd",
+      "version": "4.1",
+      "difficulty": "1-4 hours",
+      "created_at": "2022-04-23T21:58:24Z",
+      "problem_statement_preview": "Errors with db_collation \u2013 no propagation to foreignkeys\nDescription\n\t \n\t\t(last modified by typonaut)\n\t \nUsing db_collation with a pk that also has referenced fks in other models causes foreign key co"
+    },
+    {
+      "instance_id": "django__django-15695",
+      "repo": "django/django",
+      "base_commit": "647480166bfe7532e8c471fef0146e3a17e6c0c9",
+      "version": "4.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-05-16T07:58:51Z",
+      "problem_statement_preview": "RenameIndex() crashes when unnamed index is moving backward and forward.\nDescription\n\t\nRenameIndex() should restore the old auto-generated name when an unnamed index for unique_together is moving back"
+    },
+    {
+      "instance_id": "django__django-15741",
+      "repo": "django/django",
+      "base_commit": "8c0886b068ba4e224dd78104b93c9638b860b398",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-05-28T09:52:42Z",
+      "problem_statement_preview": "django.utils.formats.get_format should allow lazy parameter\nDescription\n\t\nCommit [659d2421c7adb] (fixing #20296) triggered a regression when the date template filter (possibly others are affected too)"
+    },
+    {
+      "instance_id": "django__django-15851",
+      "repo": "django/django",
+      "base_commit": "b4817d20b9e55df30be0b1b2ca8c8bb6d61aab07",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-07-18T01:36:33Z",
+      "problem_statement_preview": "dbshell additional parameters should be passed before dbname on PostgreSQL.\nDescription\n\t\npsql expects all options to proceed the database name, if provided. So, if doing something like `./manage.py d"
+    },
+    {
+      "instance_id": "django__django-15957",
+      "repo": "django/django",
+      "base_commit": "f387d024fc75569d2a4a338bfda76cc2f328f627",
+      "version": "4.2",
+      "difficulty": "1-4 hours",
+      "created_at": "2022-08-13T06:18:25Z",
+      "problem_statement_preview": "Prefetch objects don't work with slices\nDescription\n\t\n\u200bPrefetch() objects does not work with sliced querysets. For example the following code results in AssertionError: Cannot filter a query once a sl"
+    },
+    {
+      "instance_id": "django__django-15987",
+      "repo": "django/django",
+      "base_commit": "7e6b537f5b92be152779fc492bb908d27fe7c52a",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-08-23T10:07:03Z",
+      "problem_statement_preview": "Fixture dirs duplicates undetected if dir is Path instance\nDescription\n\t\nWhen FIXTURE_DIRS contains Path instances, the duplicate check in loaddata does not detect duplicates.\n"
+    },
+    {
+      "instance_id": "django__django-16100",
+      "repo": "django/django",
+      "base_commit": "c6350d594c359151ee17b0c4f354bb44f28ff69e",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-09-24T13:32:02Z",
+      "problem_statement_preview": "Add transaction handling to Changelist list_editable processing.\nDescription\n\t\nIt seems that changelist_view in Django admin is missing a transaction. Since the view may change data in database, it sh"
+    },
+    {
+      "instance_id": "django__django-16116",
+      "repo": "django/django",
+      "base_commit": "5d36a8266c7d5d1994d7a7eeb4016f80d9cb0401",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-09-25T23:54:49Z",
+      "problem_statement_preview": "makemigrations --check generating migrations is inconsistent with other uses of --check\nDescription\n\t\nTo script a check for missing migrations but without actually intending to create the migrations, "
+    },
+    {
+      "instance_id": "django__django-16145",
+      "repo": "django/django",
+      "base_commit": "93d4c9ea1de24eb391cb2b3561b6703fd46374df",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-10-03T05:09:14Z",
+      "problem_statement_preview": "`runserver 0`'s \"Starting development server at <address>\" doesn't work\nDescription\n\t\nAccording to \u200btutorial running \npython manage.py runserver 0:8000\nis the same as \npython manage.py runserver 0.0.0"
+    },
+    {
+      "instance_id": "django__django-16454",
+      "repo": "django/django",
+      "base_commit": "1250483ebf73f7a82ff820b94092c63ce4238264",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-01-15T09:23:24Z",
+      "problem_statement_preview": "Management command subparsers don\u2019t retain error formatting\nDescription\n\t\nDjango management commands use a subclass of argparse.ArgumentParser, CommandParser, that takes some extra arguments to improv"
+    },
+    {
+      "instance_id": "django__django-16502",
+      "repo": "django/django",
+      "base_commit": "246eb4836a6fb967880f838aa0d22ecfdca8b6f1",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-01-26T09:21:31Z",
+      "problem_statement_preview": "After #26052 runserver returns response body for HTTP HEAD requests\nDescription\n\t\nFor compliance with RFC 2616, section 4.3, response bodies must not be returned for HEAD requests.\nIn #26052, the stri"
+    },
+    {
+      "instance_id": "django__django-16662",
+      "repo": "django/django",
+      "base_commit": "0eb3e9bd754e4c9fac8b616b705178727fc8031e",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-03-18T18:07:18Z",
+      "problem_statement_preview": "Migration import ordering violates coding style and isort defaults\nDescription\n\t\nNew migration files are generated with imports sorted by module, independent of import style. For example:\nimport datet"
+    },
+    {
+      "instance_id": "django__django-16801",
+      "repo": "django/django",
+      "base_commit": "3b62d8c83e3e48d2ed61cfa32a61c56d9e030293",
+      "version": "5.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2023-04-26T07:23:56Z",
+      "problem_statement_preview": "ImageField unnecessarily adds a post_init signal handler to the model\nDescription\n\t\nWhile debugging some performance issues in a Django app, I found a codepath where most of the time was being spent o"
+    },
+    {
+      "instance_id": "django__django-16819",
+      "repo": "django/django",
+      "base_commit": "0b0998dc151feb77068e2387c34cc50ef6b356ae",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-05-01T15:20:04Z",
+      "problem_statement_preview": "Reduce Add/RemoveIndex migration operations.\nDescription\n\t\nWe should reduce AddIndex/RemoveIndex operations when optimizing migration operations.\n"
+    },
+    {
+      "instance_id": "django__django-16877",
+      "repo": "django/django",
+      "base_commit": "98f6ada0e2058d67d91fb6c16482411ec2ca0967",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-05-19T23:11:10Z",
+      "problem_statement_preview": "New template filter `escapeseq`\nDescription\n\t\nFollowing #34574, and after some conversations within the security team, it seems appropriate to provide a new template filter escapeseq which would be to"
+    },
+    {
+      "instance_id": "django__django-16901",
+      "repo": "django/django",
+      "base_commit": "ee36e101e8f8c0acde4bb148b738ab7034e902a0",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-05-30T05:08:34Z",
+      "problem_statement_preview": "On databases lacking XOR, Q(\u2026) ^ Q(\u2026) ^ Q(\u2026) wrongly interpreted as exactly-one rather than parity\nDescription\n\t\nOn databases that don\u2019t natively support XOR, such as PostgreSQL, Django generates inco"
+    },
+    {
+      "instance_id": "django__django-16938",
+      "repo": "django/django",
+      "base_commit": "1136aa5005f0ae70fea12796b7e37d6f027b9263",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-06-03T11:18:11Z",
+      "problem_statement_preview": "Serialization of m2m relation fails with custom manager using select_related\nDescription\n\t\nSerialization of many to many relation with custom manager using select_related cause FieldError: Field canno"
+    },
+    {
+      "instance_id": "django__django-17084",
+      "repo": "django/django",
+      "base_commit": "f8c43aca467b7b0c4bb0a7fa41362f90b610b8df",
+      "version": "5.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-07-17T16:54:19Z",
+      "problem_statement_preview": "Cannot use aggregate over window functions since 4.2\nDescription\n\t \n\t\t(last modified by younes-chaoui)\n\t \nAfter upgrading to Django 4.2, I encountered an exception when executing ORM queries that invo"
+    },
+    {
+      "instance_id": "django__django-17087",
+      "repo": "django/django",
+      "base_commit": "4a72da71001f154ea60906a2f74898d32b7322a7",
+      "version": "5.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2023-07-17T20:28:41Z",
+      "problem_statement_preview": "Class methods from nested classes cannot be used as Field.default.\nDescription\n\t \n\t\t(last modified by Mariusz Felisiak)\n\t \nGiven the following model:\n \nclass Profile(models.Model):\n\tclass Capability(m"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "a0d2e399729d36499a1924e5ca5bc067c8396810",
+      "version": "3.4",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-08-11T06:23:50Z",
+      "problem_statement_preview": "ax.clear() adds extra ticks, un-hides shared-axis tick labels\n### Bug report\r\n\r\n**Bug summary**\r\n\r\nWhen using shared axes (e.g. from `plt.subplots(2, 2, sharex=True, sharey=True)`), calling `ax.clear("
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "f0632c0fc7339f68e992ed63ae4cfac76cd41aad",
+      "version": "3.4",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-11-08T18:41:08Z",
+      "problem_statement_preview": "[Bug]: Datetime axis with usetex is unclear\n### Bug summary\n\nThe spacing for a datetime axis when using `usetex=True` is unclear in matplotlib version 3.4 when comparing it to 3.3.\n\n### Code for repro"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22719",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "a2a1b0a11b993fe5f8fab64b6161e99243a6393c",
+      "version": "3.5",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-03-28T14:42:28Z",
+      "problem_statement_preview": "[Bug]: Confusing deprecation warning when empty data passed to axis with category units\n### Bug summary\r\n\r\nI'm seeing a `MatplotlibDeprecationWarning` when using calling axes methods on empty data str"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "c6c7ec1978c22ae2c704555a873d0ec6e1e2eaa8",
+      "version": "3.5",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-04-20T15:15:11Z",
+      "problem_statement_preview": "[Bug]: Colorbar with drawedges=True and extend='both' does not draw edges at extremities\n### Bug summary\n\nWhen creating a matplotlib colorbar, it is possible to set drawedges to True which separates t"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23412",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "f06c2c3abdaf4b90285ce5ca7fedbb8ace715911",
+      "version": "3.5",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-07-11T01:41:11Z",
+      "problem_statement_preview": "[Bug]: offset dash linestyle has no effect in patch objects\n### Bug summary\n\nWhen setting the linestyle on a patch object using a dash tuple the offset has no effect.\n\n### Code for reproduction\n\n```py"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23476",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "33a0599711d26dc2b79f851c6daed4947df7c167",
+      "version": "3.5",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-07-22T18:58:22Z",
+      "problem_statement_preview": "[Bug]: DPI of a figure is doubled after unpickling on M1 Mac\n### Bug summary\r\n\r\nWhen a figure is unpickled, it's dpi is doubled. This behaviour happens every time and if done in a loop it can cause an"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24026",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "14c96b510ebeba40f573e512299b1976f35b620e",
+      "version": "3.6",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-09-28T02:45:01Z",
+      "problem_statement_preview": "stackplot should not change Axes cycler\nUsecase: I am producing various types of plots (some use rectangle collections, some regular plot-lines, some stacked plots) and wish to keep the colors synchro"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "af39f1edffcd828f05cfdd04f2e59506bb4a27bc",
+      "version": "3.6",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-10-12T22:00:54Z",
+      "problem_statement_preview": "[Bug]: ax.bar raises for all-nan data on matplotlib 3.6.1 \n### Bug summary\n\n`ax.bar` raises an exception in 3.6.1 when passed only nan data. This irrevocably breaks seaborn's histogram function (which"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "8f0003ae902952372824c9917975fb372c026a42",
+      "version": "3.6",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-11-30T15:50:17Z",
+      "problem_statement_preview": "[Bug]: `align` in `HPacker` is reversed\n### Bug summary\n\nFor the `align` parameter in `HPacker`, the options `top` and `bottom` seems reversed\n\n### Code for reproduction\n\n```python\nimport matplotlib.p"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "6091437be9776139d3672cde28a19cbe6c09dcd5",
+      "version": "3.6",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-01-02T20:37:49Z",
+      "problem_statement_preview": "[ENH]: Auto-detect bool arrays passed to contour()?\n### Problem\n\nI find myself fairly regularly calling\r\n```python\r\nplt.contour(boolean_2d_array, levels=[.5], ...)\r\n```\r\nto draw the boundary line betw"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-25311",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "430fb1db88843300fb4baae3edc499bbfe073b0c",
+      "version": "3.7",
+      "difficulty": "<15 min fix",
+      "created_at": "2023-02-23T21:04:12Z",
+      "problem_statement_preview": "[Bug]: Unable to pickle figure with draggable legend\n### Bug summary\r\n\r\nI am unable to pickle figure with draggable legend. Same error comes for draggable annotations.\r\n\r\n\r\n\r\n\r\n\r\n### Code for reproduc"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "5ca694b38d861c0e24cd8743753427dda839b90b",
+      "version": "3.7",
+      "difficulty": "<15 min fix",
+      "created_at": "2023-06-12T18:56:33Z",
+      "problem_statement_preview": "Inconsistent behavior of hexbins mincnt parameter, depending on C parameter\n<!--To help us understand and resolve your issue, please fill out the form to the best of your ability.-->\r\n<!--You can feel"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26291",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "fa68f46289adf4a8a4bc7ba97ded8258ec9d079c",
+      "version": "3.7",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-07-12T04:29:07Z",
+      "problem_statement_preview": "[Bug]: Error while creating inset axes using `mpl_toolkits.axes_grid1.inset_locator.inset_axes`\n### Bug summary\r\n\r\nUnable to create the inset axes in a plot using the code (following the first example"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26466",
+      "repo": "matplotlib/matplotlib",
+      "base_commit": "3dd06a46750d174f821df5377996f493f1af4ebb",
+      "version": "3.7",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-08-07T19:30:22Z",
+      "problem_statement_preview": "Updating an array passed as the xy parameter to annotate updates the anottation\n### Bug report\r\n\r\n**Bug summary**\r\nWhen an array is used as the _xy_ kwarg for an annotation that includes arrows, chang"
+    },
+    {
+      "instance_id": "mwaskom__seaborn-3187",
+      "repo": "mwaskom/seaborn",
+      "base_commit": "22cdfb0c93f8ec78492d87edb810f10cb7f57a31",
+      "version": "0.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-12-18T00:04:22Z",
+      "problem_statement_preview": "Wrong legend values of large ranges\nAs of 0.12.1, legends describing large numbers that were created using `ScalarFormatter` with an offset are formatted without their multiplicative offset value. An "
+    },
+    {
+      "instance_id": "pallets__flask-5014",
+      "repo": "pallets/flask",
+      "base_commit": "7ee9ceb71e868944a46e1ff00b506772a53a4f1d",
+      "version": "2.3",
+      "difficulty": "<15 min fix",
+      "created_at": "2023-03-04T18:36:21Z",
+      "problem_statement_preview": "Require a non-empty name for Blueprints\nThings do not work correctly if a Blueprint is given an empty name (e.g. #4944).\r\nIt would be helpful if a `ValueError` was raised when trying to do that.\n"
+    },
+    {
+      "instance_id": "psf__requests-1724",
+      "repo": "psf/requests",
+      "base_commit": "1ba83c47ce7b177efe90d5f51f7760680f72eda0",
+      "version": "2.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2013-11-04T09:37:00Z",
+      "problem_statement_preview": "Unicode method names cause UnicodeDecodeError for some requests in Python 2.7.2\nThe following example works fine:\n\n```\nfiles = {u'file': open(u'/usr/bin/diff', u'rb')}\nresponse = requests.request(meth"
+    },
+    {
+      "instance_id": "psf__requests-1766",
+      "repo": "psf/requests",
+      "base_commit": "847735553aeda6e6633f2b32e14ba14ba86887a4",
+      "version": "2.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2013-11-29T08:38:09Z",
+      "problem_statement_preview": "quote qop options in Digest Auth\nBased on RFC2617 (http://tools.ietf.org/html/rfc2617), the value of\n'qop-options' directive should be quoted with double quotes:\n\n```\nqop-options\n     This directive i"
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "repo": "psf/requests",
+      "base_commit": "39d0fdd9096f7dceccbc8f82e1eda7dd64717a8e",
+      "version": "2.26",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-04-05T16:52:04Z",
+      "problem_statement_preview": "Getting http://.example.com raises UnicodeError\nAttempting to get e.g. `http://.example.com` results in a `UnicodeError`. It seems like the intention so far has been to raise `InvalidUrl` instead (see"
+    },
+    {
+      "instance_id": "pydata__xarray-3095",
+      "repo": "pydata/xarray",
+      "base_commit": "1757dffac2fa493d7b9a074b84cf8c830a706688",
+      "version": "0.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-07-11T13:16:16Z",
+      "problem_statement_preview": "REGRESSION: copy(deep=True) casts unicode indices to object\nDataset.copy(deep=True) and DataArray.copy (deep=True/False) accidentally cast IndexVariable's with dtype='<U*' to object. Same applies to c"
+    },
+    {
+      "instance_id": "pydata__xarray-3151",
+      "repo": "pydata/xarray",
+      "base_commit": "118f4d996e7711c9aced916e6049af9f28d5ec66",
+      "version": "0.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-07-20T12:31:14Z",
+      "problem_statement_preview": "xr.combine_by_coords raises ValueError if identical coordinates are non-monotonic\n#### MCVE Code Sample\r\n<!-- In order for the maintainers to efficiently understand and prioritize issues, we ask you p"
+    },
+    {
+      "instance_id": "pydata__xarray-3305",
+      "repo": "pydata/xarray",
+      "base_commit": "69c7e01e5167a3137c285cb50d1978252bb8bcbf",
+      "version": "0.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-09-12T19:27:14Z",
+      "problem_statement_preview": "DataArray.quantile does not honor `keep_attrs`\n#### MCVE Code Sample\r\n<!-- In order for the maintainers to efficiently understand and prioritize issues, we ask you post a \"Minimal, Complete and Verifi"
+    },
+    {
+      "instance_id": "pydata__xarray-3677",
+      "repo": "pydata/xarray",
+      "base_commit": "ef6e6a7b86f8479b9a1fecf15ad5b88a2326b31e",
+      "version": "0.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-01-09T16:07:14Z",
+      "problem_statement_preview": "Merging dataArray into dataset using dataset method fails\nWhile it's possible to merge a dataset and a dataarray object using the top-level `merge()` function, if you try the same thing with the `ds.m"
+    },
+    {
+      "instance_id": "pydata__xarray-4687",
+      "repo": "pydata/xarray",
+      "base_commit": "d3b6aa6d8b997df115a53c001d00222a0f92f63a",
+      "version": "0.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-12-13T20:42:40Z",
+      "problem_statement_preview": "xr.where not preserving attributes\n<!-- Please include a self-contained copy-pastable example that generates the issue if possible.\r\n\r\nPlease be concise with code posted. See guidelines below on how t"
+    },
+    {
+      "instance_id": "pydata__xarray-6721",
+      "repo": "pydata/xarray",
+      "base_commit": "cc183652bf6e1273e985e1c4b3cba79c896c1193",
+      "version": "2022.06",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-06-24T18:45:45Z",
+      "problem_statement_preview": "Accessing chunks on zarr backed xarray seems to load entire array into memory\n### What happened?\n\nWhen running the following example it appears the entire dataset is loaded into memory when accessing "
+    },
+    {
+      "instance_id": "pydata__xarray-6744",
+      "repo": "pydata/xarray",
+      "base_commit": "7cc6cc991e586a6158bb656b8001234ccda25407",
+      "version": "2022.06",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-07-02T16:36:00Z",
+      "problem_statement_preview": "\"center\" kwarg ignored when manually iterating over DataArrayRolling\n### Discussed in https://github.com/pydata/xarray/discussions/6738\r\n\r\n<div type='discussions-op-text'>\r\n\r\n<sup>Originally posted by"
+    },
+    {
+      "instance_id": "pydata__xarray-6992",
+      "repo": "pydata/xarray",
+      "base_commit": "45c0a114e2b7b27b83c9618bc05b36afac82183c",
+      "version": "2022.06",
+      "difficulty": ">4 hours",
+      "created_at": "2022-09-05T15:07:43Z",
+      "problem_statement_preview": "index refactor: more `_coord_names` than `_variables` on Dataset\n### What happened?\n\n`xr.core.dataset.DataVariables` assumes that everything that is in `ds._dataset._variables` and not in `self._datas"
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "repo": "pydata/xarray",
+      "base_commit": "41fef6f1352be994cd90056d47440fe9aa4c068f",
+      "version": "2022.09",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-12-20T04:34:24Z",
+      "problem_statement_preview": "stack casts int32 dtype coordinate to int64\n### What happened?\n\nThe code example below results in `False`, because the data type of the `a` coordinate is changed from 'i4' to 'i8'.\n\n### What did you e"
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4604",
+      "repo": "pylint-dev/pylint",
+      "base_commit": "1e55ae64624d28c5fe8b63ad7979880ee2e6ef3f",
+      "version": "2.9",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-06-22T10:44:14Z",
+      "problem_statement_preview": "unused-import false positive for a module used in a type comment\n### Steps to reproduce\r\n\r\n```python\r\n\"\"\"Docstring.\"\"\"\r\n\r\nimport abc\r\nfrom abc import ABC\r\n\r\nX = ...  # type: abc.ABC\r\nY = ...  # type: "
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4970",
+      "repo": "pylint-dev/pylint",
+      "base_commit": "40cc2ffd7887959157aaf469e09585ec2be7f528",
+      "version": "2.10",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-09-05T19:44:07Z",
+      "problem_statement_preview": "Setting `min-similarity-lines` to `0` should stop pylint from checking duplicate code\n### Current problem\n\nSetting `min-similarity-lines` to `0` in the rcfile doesn't disable checking for duplicate co"
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "repo": "pylint-dev/pylint",
+      "base_commit": "ca80f03a43bc39e4cc2c67dc99817b3c9f13b8a6",
+      "version": "2.15",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-06-09T19:43:36Z",
+      "problem_statement_preview": "Running pylint in Kubernetes Pod with --jobs=0 fails\n### Bug description\n\nI run pylint in multiple parallel stages with Jenkins at a Kubernets agent with `--jobs=0`. \r\n\r\nThe newly introduced function "
+    },
+    {
+      "instance_id": "pylint-dev__pylint-8898",
+      "repo": "pylint-dev/pylint",
+      "base_commit": "1f8c4d9eb185c16a2c1d881c054f015e1c2eb334",
+      "version": "3.0",
+      "difficulty": "1-4 hours",
+      "created_at": "2023-07-29T21:53:59Z",
+      "problem_statement_preview": "bad-names-rgxs mangles regular expressions with commas\n### Bug description\r\n\r\nSince pylint splits on commas in this option, instead of taking a list of strings, if there are any commas in the regular "
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "aa55975c7d3f6c9f6d7f68accc41bb7cadf0eb9a",
+      "version": "7.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-06-15T17:39:53Z",
+      "problem_statement_preview": "caplog.get_records and caplog.clear conflict\n# Description\r\n\r\n`caplog.get_records()` gets decoupled from actual caplog records when `caplog.clear()` is called. As a result, after `caplog.clear()` is c"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10081",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "da9a2b584eb7a6c7e924b2621ed0ddaeca0a7bea",
+      "version": "7.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-06-26T13:53:24Z",
+      "problem_statement_preview": "unittest.TestCase.tearDown executed for classes marked with `unittest.skip` when running --pdb\n<!--\r\nThanks for submitting an issue!\r\n\r\nQuick check-list while reporting bugs:\r\n-->\r\n\r\n- [x] a detailed "
+    },
+    {
+      "instance_id": "pytest-dev__pytest-6197",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "e856638ba086fcf5bebf1bebea32d5cf78de87b4",
+      "version": "5.2",
+      "difficulty": "1-4 hours",
+      "created_at": "2019-11-15T16:37:22Z",
+      "problem_statement_preview": "Regression in 5.2.3: pytest tries to collect random __init__.py files\nThis was caught by our build server this morning.  It seems that pytest 5.2.3 tries to import any `__init__.py` file under the cur"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "5e7f1ab4bf58e473e5d7f878eb2b499d7deabd29",
+      "version": "5.4",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-05-09T11:25:58Z",
+      "problem_statement_preview": "BytesWarning when using --setup-show with bytes parameter\nWith Python 3.8.2, pytest 5.4.1 (or latest master; stacktraces are from there) and this file:\r\n\r\n```python\r\nimport pytest\r\n\r\n@pytest.mark.para"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7236",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "c98bc4cd3d687fe9b392d8eecd905627191d4f06",
+      "version": "5.4",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-05-21T19:53:14Z",
+      "problem_statement_preview": "unittest.TestCase.tearDown executed on skipped tests when running --pdb\n\r\nWith this minimal test:\r\n```python\r\nimport unittest\r\n\r\nclass MyTestCase(unittest.TestCase):\r\n    def setUp(self):\r\n        xxx"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7490",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "7f7a36478abe7dd1fa993b115d22606aa0e35e88",
+      "version": "6.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-07-13T22:20:10Z",
+      "problem_statement_preview": "Pytest 6: Dynamically adding xfail marker in test no longer ignores failure\n<!--\r\nThanks for submitting an issue!\r\n\r\nHere's a quick checklist for what to provide:\r\n-->\r\n\r\n## Description\r\n\r\nWith pytest"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "422685d0bdc110547535036c1ff398b5e1c44145",
+      "version": "6.0",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-07-29T12:00:47Z",
+      "problem_statement_preview": "caplog fixture doesn't restore log level after test\nFrom the documentation at https://docs.pytest.org/en/6.0.0/logging.html#caplog-fixture, \"The log levels set are restored automatically at the end of"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-8399",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "6e7dc8bac831cd8cf7a53b08efa366bd84f0c0fe",
+      "version": "6.3",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-03-04T17:52:17Z",
+      "problem_statement_preview": "Starting v6.2.0, unittest setUpClass fixtures are no longer \"private\"\n<!--\r\nThanks for submitting an issue!\r\n\r\nQuick check-list while reporting bugs:\r\n-->\r\nMinimal example:\r\n```\r\nimport unittest\r\n\r\ncl"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10297",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "b90661d6a46aa3619d3eec94d5281f5888add501",
+      "version": "0.20",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2017-12-12T22:07:47Z",
+      "problem_statement_preview": "linear_model.RidgeClassifierCV's Parameter store_cv_values issue\n#### Description\r\nParameter store_cv_values error on sklearn.linear_model.RidgeClassifierCV\r\n\r\n#### Steps/Code to Reproduce\r\nimport num"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11310",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "553b5fb8f84ba05c8397f26dd079deece2b05029",
+      "version": "0.20",
+      "difficulty": "<15 min fix",
+      "created_at": "2018-06-18T12:10:19Z",
+      "problem_statement_preview": "Retrieving time to refit the estimator in BaseSearchCV\nBasically, I'm trying to figure out how much time it takes to refit the best model on the full data after doing grid/random search. What I can so"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12585",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "bfc4a566423e036fbdc9fb02765fd893e4860c85",
+      "version": "0.21",
+      "difficulty": "<15 min fix",
+      "created_at": "2018-11-14T13:20:30Z",
+      "problem_statement_preview": "clone fails for parameters that are estimator types\n#### Description\r\n\r\n`clone` fails when one or more instance parameters are estimator types (i.e. not instances, but classes). \r\n\r\nI know this is a s"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "9f0b959a8c9195d1b6e203f08b698e052b426ca9",
+      "version": "0.21",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-02-09T02:15:23Z",
+      "problem_statement_preview": "sklearn.model_selection.StratifiedKFold either shuffling is wrong or documentation is misleading\n<!--\r\nIf your issue is a usage question, submit it here instead:\r\n- StackOverflow with the scikit-learn"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13135",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "a061ada48efccf0845acae17009553e01764452b",
+      "version": "0.21",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-02-11T21:34:25Z",
+      "problem_statement_preview": "KBinsDiscretizer: kmeans fails due to unsorted bin_edges\n#### Description\r\n`KBinsDiscretizer` with `strategy='kmeans` fails in certain situations, due to centers and consequently bin_edges being unsor"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "1c8668b0a021832386470ddf740d834e02c66f69",
+      "version": "0.21",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-02-12T14:32:37Z",
+      "problem_statement_preview": "GaussianMixture predict and fit_predict disagree when n_init>1\n#### Description\r\nWhen `n_init` is specified in GaussianMixture, the results of fit_predict(X) and predict(X) are often different.  The `"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "3aefc834dce72e850bff48689bea3c7dff5f3fad",
+      "version": "0.21",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-03-23T09:46:59Z",
+      "problem_statement_preview": "Expose warm_start in Isolation forest\nIt seems to me that `sklearn.ensemble.IsolationForest` supports incremental addition of new trees with the `warm_start` parameter of its parent class, `sklearn.en"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "b34751b7ed02b2cfcc36037fb729d4360480a299",
+      "version": "0.22",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-05-03T13:24:57Z",
+      "problem_statement_preview": "Voting estimator will fail at fit if weights are passed and an estimator is None\nBecause we don't check for an estimator to be `None` in `sample_weight` support, `fit` is failing`.\r\n\r\n```python\r\n    X"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14087",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "a5743ed36fbd3fbc8e351bdab16561fbfca7dfa1",
+      "version": "0.22",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-06-13T20:09:22Z",
+      "problem_statement_preview": "IndexError thrown with LogisticRegressionCV and refit=False\n#### Description\r\nThe following error is thrown when trying to estimate a regularization parameter via cross-validation, *without* refitting"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "3d997697fdd166eff428ea9fd35734b6a8ba113e",
+      "version": "0.22",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-06-21T20:53:37Z",
+      "problem_statement_preview": "Add joblib in show_versions\njoblib should be added to the dependencies listed in show_versions or added to the issue template when sklearn version is > 0.20.\n"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14710",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "4b6273b87442a4437d8b3873ea3022ae163f4fdf",
+      "version": "0.22",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-08-21T16:29:47Z",
+      "problem_statement_preview": "HistGradientBoostingClassifier does not work with string target when early stopping turned on\n<!--\r\nIf your issue is a usage question, submit it here instead:\r\n- StackOverflow with the scikit-learn ta"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "repo": "scikit-learn/scikit-learn",
+      "base_commit": "f9a1cf072da9d7375d6c2163f68a6038b13b310f",
+      "version": "1.3",
+      "difficulty": "1-4 hours",
+      "created_at": "2022-12-02T20:03:37Z",
+      "problem_statement_preview": "Preserving dtypes for DataFrame output by transformers that do not modify the input values\n### Describe the workflow you want to enable\r\n\r\nIt would be nice to optionally preserve the dtypes of the inp"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10323",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "31eba1a76dd485dc633cae48227b46879eda5df4",
+      "version": "5.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-04-02T14:42:24Z",
+      "problem_statement_preview": "Use of literalinclude prepend results in incorrect indent formatting for code eamples\n### Describe the bug\r\n\r\nCannot determine a mechanism to use literalinclude directive with `prepend` or `append` to"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "71db08c05197545944949d5aa76cd340e7143627",
+      "version": "7.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2023-05-28T19:15:07Z",
+      "problem_statement_preview": "Using rst_prolog removes top level headings containing a domain directive\n### Describe the bug\r\n\r\nIf `rst_prolog` is set, then any documents that contain a domain directive as the first heading (eg `:"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7454",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "aca3f825f2e4a8817190f3c885a242a285aa0dba",
+      "version": "3.0",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-04-09T17:08:30Z",
+      "problem_statement_preview": "Inconsistent handling of None by `autodoc_typehints`\n**Describe the bug**\r\nWith `autodoc_typehints='description'`, a function that returns `None` generates a clickable link to [None's documentation](h"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7462",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "b3e26a6c851133b82b50f4b68b53692076574d13",
+      "version": "3.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-04-12T04:10:05Z",
+      "problem_statement_preview": "`IndexError: pop from empty list` for empty tuple type annotation\n**Describe the bug**\r\nFollowing notation for empty tuple from [this mypy issue](https://github.com/python/mypy/issues/4211) like\r\n```p"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7590",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "2e506c5ab457cba743bb47eb5b8c8eb9dd51d23d",
+      "version": "3.1",
+      "difficulty": ">4 hours",
+      "created_at": "2020-05-01T18:29:11Z",
+      "problem_statement_preview": "C++ User Defined Literals not supported\nThe code as below\r\n\r\n```cpp\r\nnamespace units::si {\r\n\r\ninline constexpr auto planck_constant = 6.62607015e-34q_J * 1q_s;\r\n\r\n}\r\n```\r\n\r\ncauses the following error:"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "9988d5ce267bf0df4791770b469431b1fb00dcdd",
+      "version": "3.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-05-30T06:41:07Z",
+      "problem_statement_preview": "autodoc_docstring_signature with overloaded methods\nWhen using swig to wrap C++ classes for python, if they have overloaded methods, I believe the convention is to place the signatures for each of the"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7910",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "27ac10de04697e2372d31db5548e56a7c6d9265d",
+      "version": "3.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-07-04T01:08:20Z",
+      "problem_statement_preview": "Decorated __init__ doesn't show up in docs\nSubject: Decorated __init__ won't be documented. I'm working on [tensorpack](github.com/ppwwyyxx/tensorpack)\r\n\r\n### Problem\r\n- I have `napoleon_include_init_"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8120",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "795747bdb6b8fb7d717d5bbfc2c3316869e66a73",
+      "version": "3.3",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-08-14T07:23:34Z",
+      "problem_statement_preview": "locale/<language>/LC_MESSAGES/sphinx.po translation ignored\n**Describe the bug**\r\nI read [1] as it should be possible to add a file ``locale/<language>/LC_MESSAGES/sphinx.mo`` to the source dir (same "
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "b428cd2404675475a5c3dc2a2b0790ba57676202",
+      "version": "3.3",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-10-03T03:06:00Z",
+      "problem_statement_preview": "docstring default arg is broken\n**Describe the bug**\r\ndocstring default arg is broken in html.\r\nPython class method\r\n>     def add_lines(self, lines, color=(1, 1, 1), width=5, label=None, name=None):\r"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8475",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "3ea1ec84cc610f7a9f4f6b354e264565254923ff",
+      "version": "3.4",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-11-22T16:54:19Z",
+      "problem_statement_preview": "Extend linkchecker GET fallback logic to handle Too Many Redirects\nSubject: linkcheck - fallback to GET requests when HEAD requests returns Too Many Redirects\r\n\r\n### Feature or Bugfix\r\n\r\n- Bugfix\r\n\r\n#"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "07983a5a8704ad91ae855218ecbda1c8598200ca",
+      "version": "3.5",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-12-27T02:41:20Z",
+      "problem_statement_preview": "autodoc: `:meta public:` does not effect to variables\n**Describe the bug**\r\nautodoc: `:meta public:` does not effect to variables.\r\n\r\n**To Reproduce**\r\n\r\n```\r\n# example.py\r\n_foo = None  #: :meta publi"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "567ff22716ac258b9edd2c1711d766b440ac0b11",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-05-15T11:33:05Z",
+      "problem_statement_preview": "Doc rendering is incorrect when :param has datatype dict(str,str)\n**Describe the bug**\r\nI have a parameter defined under docstring of a method as:-\r\n:param dict(str, str) opc_meta: (optional)\r\n\r\nWhich"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "06107f838c28ab6ca6bfc2cc208e15997fcb2146",
+      "version": "4.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-05-21T16:56:41Z",
+      "problem_statement_preview": "[RFE] Support union types specification using | (vertical bar/pipe)\nPlease add a support for specifying multiple types acceptable for a parameter/attribute/variable.\nUse case:\nImagine that there is a "
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9591",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "9ed054279aeffd5b1d0642e2d24a8800389de29f",
+      "version": "4.2",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-08-29T15:26:24Z",
+      "problem_statement_preview": "Cross-references don't work in property's type annotations\n### Describe the bug\r\n\r\nA documented type in property's type annotation does not get cross-referenced:\r\n```py\r\nfrom typing import Optional\r\n\r"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9602",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "6c38f68dae221e8cfc70c137974b8b88bd3baaab",
+      "version": "4.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-09-01T17:26:58Z",
+      "problem_statement_preview": "Nitpick flags Literal annotation values as missing py:class\n### Describe the bug\n\nWhen a value is present in a type annotation as `Literal`, sphinx will treat the value as a `py:class`. With nitpick e"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "232dbe41c5250eb7d559d40438c4743483e95f15",
+      "version": "4.3",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-09-20T17:04:23Z",
+      "problem_statement_preview": "Inherited classes not correctly documented when mocked\n### Describe the bug\r\n\r\nWe're experiencing an issue when documenting classes that inherit mocked classes. However, classes which inherit other cl"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9711",
+      "repo": "sphinx-doc/sphinx",
+      "base_commit": "81a4fd973d4cfcb25d01a7b0be62cdb28f82406d",
+      "version": "4.3",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-10-06T15:08:03Z",
+      "problem_statement_preview": "needs_extensions checks versions using strings\n### Describe the bug\r\n\r\nThe `needs_extensions` check is handy for verifying minimum extension versions, but it only checks versions in a 'string-like' ma"
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "repo": "sympy/sympy",
+      "base_commit": "30379ea6e225e37833a764ac2da7b7fadf5fe374",
+      "version": "1.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2017-09-30T16:05:48Z",
+      "problem_statement_preview": "UnboundLocalError in evalf\n```\r\n>>> Mul(x, Max(0, y), evaluate=False).evalf()\r\nx*Max(0, y)\r\n>>> Mul(Max(0, y), x, evaluate=False).evalf()\r\nTraceback (most recent call last):\r\n  File \"./sympy/core/eval"
+    },
+    {
+      "instance_id": "sympy__sympy-13480",
+      "repo": "sympy/sympy",
+      "base_commit": "f57fe3f4b3f2cab225749e1b3b38ae1bf80b62f0",
+      "version": "1.1",
+      "difficulty": "<15 min fix",
+      "created_at": "2017-10-18T17:27:03Z",
+      "problem_statement_preview": ".subs on coth(log(tan(x))) errors for certain integral values\n    >>> from sympy import *\r\n    >>> x = Symbol('x')\r\n    >>> e = coth(log(tan(x)))\r\n    >>> print(e.subs(x, 2))\r\n    ...\r\n    File \"C:\\Us"
+    },
+    {
+      "instance_id": "sympy__sympy-13615",
+      "repo": "sympy/sympy",
+      "base_commit": "50d8a102f0735da8e165a0369bbb994c7d0592a6",
+      "version": "1.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2017-11-17T08:59:51Z",
+      "problem_statement_preview": "Complement doesn't work when input is a mixture of Symbols and numbers\n```\r\n>>> a=FiniteSet(x,y,2)\r\n>>> b=Interval(-10,10)\r\n>>> Complement(a,b)\r\n{x, y}\r\n```\r\n`{x, y} \\ [-10,10]` is expected as output."
+    },
+    {
+      "instance_id": "sympy__sympy-13757",
+      "repo": "sympy/sympy",
+      "base_commit": "a5e6a101869e027e7930e694f8b1cfb082603453",
+      "version": "1.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2017-12-17T11:08:44Z",
+      "problem_statement_preview": "Multiplying an expression by a Poly does not evaluate when the expression is on the left side of the multiplication\nTested in Python 3.4 64-bit and 3.6 64-bit\r\nVersion: 1.1.2.dev0\r\n```\r\n>>> Poly(x)*x\r"
+    },
+    {
+      "instance_id": "sympy__sympy-13798",
+      "repo": "sympy/sympy",
+      "base_commit": "7121bdf1facdd90d05b6994b4c2e5b2865a4638a",
+      "version": "1.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2017-12-26T18:12:43Z",
+      "problem_statement_preview": "latex() and mul_symbol\nThe `latex()` pretty-printing function accepts a `mul_symbol` kwarg that must be one of four choices. I would like to be able to supply my own choice which is not in the list. S"
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "repo": "sympy/sympy",
+      "base_commit": "7b127bdf71a36d85216315f80c1b54d22b060818",
+      "version": "1.1",
+      "difficulty": ">4 hours",
+      "created_at": "2018-01-10T07:00:58Z",
+      "problem_statement_preview": "Precompute the CDF of several distributions where integration doesn't work well\nThe way [continuous distributions](http://docs.sympy.org/dev/modules/stats.html#continuous-types) are implemented is tha"
+    },
+    {
+      "instance_id": "sympy__sympy-14531",
+      "repo": "sympy/sympy",
+      "base_commit": "205da797006360fc629110937e39a19c9561313e",
+      "version": "1.1",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2018-03-18T18:15:33Z",
+      "problem_statement_preview": "StrPrinter setting are not respected by certain subexpressions\nFor example, \r\n```\r\n>>> sstr(x + S(1)/2, sympy_integers=True)\r\n'x + S(1)/2'\r\n>>> sstr(Eq(x, S(1)/2), sympy_integers=True)\r\n'Eq(x, 1/2)'\r\n"
+    },
+    {
+      "instance_id": "sympy__sympy-14976",
+      "repo": "sympy/sympy",
+      "base_commit": "9cbea134220b0b951587e11b63e2c832c7246cbc",
+      "version": "1.2",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2018-07-25T17:38:07Z",
+      "problem_statement_preview": "lambdify(modules='mpmath') doesn't wrap rationals\n```py\r\n>>> eqn = Eq(rf(18,x), 77 + S(1)/3)\r\n>>> f = lambdify(x, eqn.lhs - eqn.rhs, 'mpmath')\r\n>>> print(inspect.getsource(f))\r\ndef _lambdifygenerated("
+    },
+    {
+      "instance_id": "sympy__sympy-15345",
+      "repo": "sympy/sympy",
+      "base_commit": "9ef28fba5b4d6d0168237c9c005a550e6dc27d81",
+      "version": "1.4",
+      "difficulty": "<15 min fix",
+      "created_at": "2018-10-05T06:00:31Z",
+      "problem_statement_preview": "mathematica_code gives wrong output with Max\nIf I run the code\r\n\r\n```\r\nx = symbols('x')\r\nmathematica_code(Max(x,2))\r\n```\r\n\r\nthen I would expect the output `'Max[x,2]'` which is valid Mathematica code "
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "repo": "sympy/sympy",
+      "base_commit": "5e17a90c19f7eecfa10c1ab872648ae7e2131323",
+      "version": "1.4",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2018-12-06T17:45:49Z",
+      "problem_statement_preview": "Mod(3*i, 2) unchanged\n`Mod(3*i, 2)` should reduce to `Mod(i, 2)` (as reported in [this post](https://stackoverflow.com/questions/53302669/sympify-does-not-simplify-remainder-as-expected)) and will do "
+    },
+    {
+      "instance_id": "sympy__sympy-15875",
+      "repo": "sympy/sympy",
+      "base_commit": "b506169ad727ee39cb3d60c8b3ff5e315d443d8e",
+      "version": "1.4",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-01-29T03:18:51Z",
+      "problem_statement_preview": "is_zero is incorrect on complex integer\n`is_zero` should return `None` if it cannot decide, but should never give the wrong answer. However:\r\n\r\n```\r\n>>> e = -2*I + (1 + I)**2\r\n>>> e.is_zero\r\nFalse\r\n>>"
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "repo": "sympy/sympy",
+      "base_commit": "701441853569d370506514083b995d11f9a130bd",
+      "version": "1.4",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2019-02-13T15:02:37Z",
+      "problem_statement_preview": "A symbol ending with a number is made invisible when printing with MathML\nA variable with a number, such as x1, is made invisible when printing in a MathML format.\r\n`import sympy\r\nfrom sympy.printing."
+    },
+    {
+      "instance_id": "sympy__sympy-16597",
+      "repo": "sympy/sympy",
+      "base_commit": "6fd65310fa3167b9626c38a5487e171ca407d988",
+      "version": "1.5",
+      "difficulty": "1-4 hours",
+      "created_at": "2019-04-08T12:49:10Z",
+      "problem_statement_preview": "a.is_even does not imply a.is_finite\nI'm not sure what the right answer is here:\r\n```julia\r\nIn [1]: m = Symbol('m', even=True)                                                                          "
+    },
+    {
+      "instance_id": "sympy__sympy-16886",
+      "repo": "sympy/sympy",
+      "base_commit": "c50643a49811e9fe2f4851adff4313ad46f7325e",
+      "version": "1.5",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-05-25T05:55:25Z",
+      "problem_statement_preview": "Morse encoding for \"1\" is not correct\nThe current Morse mapping in simpy.crypto.crypto contains an incorrect mapping of \r\n`\"----\": \"1\"`   \r\n\r\nThe correct mapping is `\".----\": \"1\"`.\r\n\r\n\n"
+    },
+    {
+      "instance_id": "sympy__sympy-17139",
+      "repo": "sympy/sympy",
+      "base_commit": "1d3327b8e90a186df6972991963a5ae87053259d",
+      "version": "1.5",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-07-01T19:17:18Z",
+      "problem_statement_preview": "simplify(cos(x)**I): Invalid comparison of complex I (fu.py)\n```\r\n>>> from sympy import *\r\n>>> x = Symbol('x')\r\n>>> print(simplify(cos(x)**I))\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", li"
+    },
+    {
+      "instance_id": "sympy__sympy-18189",
+      "repo": "sympy/sympy",
+      "base_commit": "1923822ddf8265199dbd9ef9ce09641d3fd042b9",
+      "version": "1.6",
+      "difficulty": "<15 min fix",
+      "created_at": "2019-12-31T15:45:24Z",
+      "problem_statement_preview": "diophantine: incomplete results depending on syms order with permute=True\n```\r\nIn [10]: diophantine(n**4 + m**4 - 2**4 - 3**4, syms=(m,n), permute=True)\r\nOut[10]: {(-3, -2), (-3, 2), (-2, -3), (-2, 3)"
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "repo": "sympy/sympy",
+      "base_commit": "ba80d1e493f21431b4bf729b3e0452cd47eb9566",
+      "version": "1.6",
+      "difficulty": "1-4 hours",
+      "created_at": "2020-01-01T19:08:59Z",
+      "problem_statement_preview": "nthroot_mod function misses one root of x = 0 mod p.\nWhen in the equation x**n = a mod p , when a % p == 0. Then x = 0 mod p is also a root of this equation. But right now `nthroot_mod` does not check"
+    },
+    {
+      "instance_id": "sympy__sympy-18698",
+      "repo": "sympy/sympy",
+      "base_commit": "3dff1b98a78f28c953ae2140b69356b8391e399c",
+      "version": "1.6",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-02-21T05:46:56Z",
+      "problem_statement_preview": "sqf and sqf_list output is not consistant\nThe example below is wrong in the sense that we should have (x*_2 - 5_x + 6, 3) and not 2 factors of multiplicity 3.\n\n```\n>  sqf_list(  (x**2 + 1)  * (x - 1)*"
+    },
+    {
+      "instance_id": "sympy__sympy-18763",
+      "repo": "sympy/sympy",
+      "base_commit": "70381f282f2d9d039da860e391fe51649df2779d",
+      "version": "1.5",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-03-03T03:40:06Z",
+      "problem_statement_preview": "Incorrect parenthesizing of Subs\nHere is an example.\r\n```python\r\n>>> from sympy import Subs\r\n>>> from sympy.abc import x,y\r\n>>> 3*Subs(-x+y, (x,),(1,))\r\n```\r\nLaTeX printing of this gives:  \r\n```python"
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "repo": "sympy/sympy",
+      "base_commit": "94fb720696f5f5d12bad8bc813699fd696afd2fb",
+      "version": "1.7",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2020-05-17T12:23:33Z",
+      "problem_statement_preview": "srepr not printing dict and set properly\n`srepr` prints the element in `list` and `tuple` correctly.\r\n```python\r\n>>> from sympy import srepr\r\n>>> from sympy.abc import x,y\r\n>>> srepr([x,y])\r\n[Symbol('"
+    },
+    {
+      "instance_id": "sympy__sympy-19495",
+      "repo": "sympy/sympy",
+      "base_commit": "25fbcce5b1a4c7e3956e6062930f4a44ce95a632",
+      "version": "1.7",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-06-05T11:53:09Z",
+      "problem_statement_preview": "Strange/wrong? behaviour of subs with ConditionSet / ImageSet\nI'm not sure what to think of the following:\r\n```\r\nIn [71]: solveset_real(Abs(x) - y, x)\r\nOut[71]: {x | x \u220a {-y, y} \u2227 (y \u2208 [0, \u221e))}\r\n\r\nIn "
+    },
+    {
+      "instance_id": "sympy__sympy-19637",
+      "repo": "sympy/sympy",
+      "base_commit": "63f8f465d48559fecb4e4bf3c48b75bf15a3e0ef",
+      "version": "1.7",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-06-24T13:08:57Z",
+      "problem_statement_preview": "kernS: 'kern' referenced before assignment\nfrom sympy.core.sympify import kernS\r\n\r\ntext = \"(2*x)/(x-1)\"\r\nexpr = kernS(text)  \r\n//  hit = kern in s\r\n// UnboundLocalError: local variable 'kern' referenc"
+    },
+    {
+      "instance_id": "sympy__sympy-19954",
+      "repo": "sympy/sympy",
+      "base_commit": "6f54459aa0248bf1467ad12ee6333d8bc924a642",
+      "version": "1.7",
+      "difficulty": "<15 min fix",
+      "created_at": "2020-08-12T06:07:32Z",
+      "problem_statement_preview": "sylow_subgroup() IndexError \nI use sympy 1.6.1, with numpy 1.18.5, scipy 1.4.1, under Python '3.8.5 (default, Aug  5 2020, 09:44:06) [MSC v.1916 64 bit (AMD64)]'. \r\n\r\nThe code that I run as the follow"
+    },
+    {
+      "instance_id": "sympy__sympy-21379",
+      "repo": "sympy/sympy",
+      "base_commit": "624217179aaf8d094e6ff75b7493ad1ee47599b0",
+      "version": "1.9",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-04-24T19:49:52Z",
+      "problem_statement_preview": "Unexpected `PolynomialError` when using simple `subs()` for particular expressions\nI am seeing weird behavior with `subs` for particular expressions with hyperbolic sinusoids with piecewise arguments."
+    },
+    {
+      "instance_id": "sympy__sympy-22080",
+      "repo": "sympy/sympy",
+      "base_commit": "3f8c8c2377cb8e0daaf8073e8d03ac7d87580813",
+      "version": "1.10",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2021-09-12T07:11:33Z",
+      "problem_statement_preview": "Mod function lambdify bug\nDescription:\r\nWhen lambdifying any function of structure like `expr * Mod(a, b)` sympy moves the multiplier into the first argument of Mod, like `Mod(expr * a, b)`, WHEN we s"
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "repo": "sympy/sympy",
+      "base_commit": "3ff4717b6aef6086e78f01cdfa06f64ae23aed7e",
+      "version": "1.10",
+      "difficulty": "<15 min fix",
+      "created_at": "2021-12-19T18:54:36Z",
+      "problem_statement_preview": "simpify gives `Imaginary coordinates are not permitted.` with evaluate(False)\n## Issue\r\n`with evaluate(False)` crashes unexpectedly with `Point2D`\r\n\r\n## Code\r\n```python\r\nimport sympy as sp\r\nwith sp.ev"
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "repo": "sympy/sympy",
+      "base_commit": "10de1a18a0efac0b19b611e40c928250dda688bf",
+      "version": "1.11",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-04-23T23:40:41Z",
+      "problem_statement_preview": "bug with HNF removing rows\nI expect\r\n`np.flip (hermite_normal_form (Matrix (np.flip (np.array ([[5, 8, 12], [0, 0, 1]]))).T).T))`\r\nto give\r\n`[[5,  8, 0], [0,  0, 1]]`\r\nbut instead I get\r\n`[[5,  8, 0]]"
+    },
+    {
+      "instance_id": "sympy__sympy-23534",
+      "repo": "sympy/sympy",
+      "base_commit": "832c24fec1046eaa544a4cab4c69e3af3e651759",
+      "version": "1.11",
+      "difficulty": "<15 min fix",
+      "created_at": "2022-05-22T00:12:33Z",
+      "problem_statement_preview": "Using symbols to create functions doesn't work if there is an extra layer of parentheses\nSympy version == 1.10.1\r\n\r\nUsing `symbols` to create symbol-like objects like instances of `Function` as shown "
+    },
+    {
+      "instance_id": "sympy__sympy-24213",
+      "repo": "sympy/sympy",
+      "base_commit": "e8c22f6eac7314be8d92590bfff92ced79ee03e2",
+      "version": "1.12",
+      "difficulty": "15 min - 1 hour",
+      "created_at": "2022-11-03T14:00:09Z",
+      "problem_statement_preview": "collect_factor_and_dimension does not detect equivalent dimensions in addition\nCode to reproduce:\r\n```python\r\nfrom sympy.physics import units\r\nfrom sympy.physics.units.systems.si import SI\r\n\r\nv1 = uni"
+    },
+    {
+      "instance_id": "sympy__sympy-24562",
+      "repo": "sympy/sympy",
+      "base_commit": "b1cb676cf92dd1a48365b731979833375b188bf2",
+      "version": "1.12",
+      "difficulty": "<15 min fix",
+      "created_at": "2023-01-21T12:06:36Z",
+      "problem_statement_preview": "Rational calc value error\npython 3.11, sympy 1.11.1\r\nwhen calc Rational('0.5', '100'), the value is 1/100100; but Rational(0.5, 100) the value is 1/200, this value is the true value, and the version o"
+    }
+  ]
+}

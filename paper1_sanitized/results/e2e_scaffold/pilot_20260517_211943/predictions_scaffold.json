@@ -1,0 +1,27 @@
+[
+  {
+    "instance_id": "django__django-11206",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-13406",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-14017",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-11885",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-16502",
+    "model_name_or_path": "gpt4omini_scaffold",
+    "model_patch": ""
+  }
+]

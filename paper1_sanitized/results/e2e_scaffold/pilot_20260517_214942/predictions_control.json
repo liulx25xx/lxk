@@ -1,0 +1,27 @@
+[
+  {
+    "instance_id": "django__django-11206",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": "diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py\nindex 88b35fc435..292bcb23d0 100644\n--- a/django/utils/numberformat.py\n+++ b/django/utils/numberformat.py\n@@ -30,7 +30,7 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',\n         # Format values with more than 200 digits (an arbitrary cutoff) using\n         # scientific notation to avoid high memory usage in {:f}'.format().\n         _, digits, exponent = number.as_tuple()\n-        if abs(exponent) + len(digits) > 200:\n+        if abs(exponent) + len(digits) > 200 and decimal_pos is not None: return '0.' + '0' * decimal_pos\n             number = '{:e}'.format(number)\n             coefficient, exponent = number.split('e')\n             # Format the coefficient."
+  },
+  {
+    "instance_id": "django__django-13406",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-14017",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-11885",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": "diff --git a/tests/delete/tests.py b/tests/delete/tests.py\nindex 505fd843d7..6ae85ecc97 100644\n--- a/tests/delete/tests.py\n+++ b/tests/delete/tests.py\n@@ -490,6 +490,24 @@ class DeletionTests(TestCase):\n \n \n class FastDeleteTests(TestCase):\n+    from delete_regress.models import Person  # Import Person model\n+\n+    def test_fast_delete_combined_relationships(self):\n+        user = User.objects.create()\n+        person = Person.objects.create()\n+        person.friends.add(user)\n+        self.assertNumQueries(3, person.delete)\n+        self.assertFalse(User.objects.filter(pk=user.pk).exists())\n+        self.assertFalse(Person.objects.filter(pk=person.pk).exists())\n+\n+    def test_fast_delete_combined_relationships(self):\n+        user = User.objects.create()\n+        person = Person.objects.create()\n+        person.friends.add(user)\n+        self.assertNumQueries(3, person.delete)\n+        self.assertFalse(User.objects.filter(pk=user.pk).exists())\n+        self.assertFalse(Person.objects.filter(pk=person.pk).exists())\n+\n \n     def test_fast_delete_fk(self):\n         u = User.objects.create("
+  },
+  {
+    "instance_id": "django__django-16502",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": "diff --git a/django/http/response.py b/django/http/response.py\nindex f62dec8ce9..c93614feae 100644\n--- a/django/http/response.py\n+++ b/django/http/response.py\n@@ -424,7 +424,10 @@ class HttpResponse(HttpResponseBase):\n         else:\n             content = self.make_bytes(value)\n         # Create a list of properly encoded bytestrings to support write().\n-        self._container = [content]\n+        if request.method == \"HEAD\":\n+    self._container = []\n+else:\n+    self._container = [content]\n \n     def __iter__(self):\n         return iter(self._container)"
+  }
+]

@@ -1,0 +1,64 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+============================================================
+Phase 4 Exp1: GPT-4.1 Cross-Model Validation
+Model: gpt-4.1, Delay: 3.5s, Workers: 2
+Strategies: best-per-type + control
+============================================================
+Loading SWE-bench gold patches...
+Loading trajectory data...
+
+Expected calls: ~106
+Estimated time: ~3.1 min
+
+  [checkpoint] 10 results saved, 10 calls
+  [checkpoint] 20 results saved, 20 calls
+  [LOC] reread_issue          : 2.07 (n=15)
+  [checkpoint] 30 results saved, 30 calls
+  [EDIT] reread_file           : 2.40 (n=15)
+  [checkpoint] 40 results saved, 40 calls
+  [checkpoint] 50 results saved, 50 calls
+  [LOC] scaffold              : 2.27 (n=15)
+  [checkpoint] 60 results saved, 60 calls
+  [EDIT] scaffold              : 1.80 (n=15)
+  [checkpoint] 70 results saved, 70 calls
+  [PLAN] step_back             : 1.50 (n=8)
+  [checkpoint] 80 results saved, 80 calls
+  [PLAN] scaffold              : 1.88 (n=8)
+  [checkpoint] 90 results saved, 90 calls
+  [LOGIC] minimal_fix           : 2.33 (n=15)
+  [checkpoint] 100 results saved, 100 calls
+  [LOGIC] scaffold              : 2.33 (n=15)
+
+============================================================
+PHASE 4 EXP1 COMPLETE — 8.0 min, 106 API calls
+Model: gpt-4.1
+============================================================
+
+--- LOC ---
+  scaffold              : 2.27  file_hit=100%  (n=15)
+  reread_issue          : 2.07  file_hit=93%  (n=15)
+  → Scaffold vs control: Δ=-0.20
+
+--- EDIT ---
+  scaffold              : 1.80  file_hit=93%  (n=15)
+  reread_file           : 2.40  file_hit=93%  (n=15)
+  → Scaffold vs control: Δ=+0.60
+
+--- LOGIC ---
+  scaffold              : 2.33  file_hit=93%  (n=15)
+  minimal_fix           : 2.33  file_hit=100%  (n=15)
+  → Scaffold vs control: Δ=0.00
+
+--- PLAN ---
+  scaffold              : 1.88  file_hit=100%  (n=8)
+  step_back             : 1.50  file_hit=100%  (n=8)
+  → Scaffold vs control: Δ=-0.38
+
+============================================================
+OVERALL (gpt-4.1):
+  Scaffold avg: 2.15  file_hit: 96%  (n=53)
+  Control  avg: 2.09  file_hit: 96%  (n=53)
+  Delta:        +0.06
+============================================================
+
+Results saved to: /data/home/xiankunlin/project/emnlp/paper1/results/phase4_gpt41_validation/results.json

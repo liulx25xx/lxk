@@ -1,0 +1,11 @@
+## Recovery Feedback: Look at How Similar Bugs Were Fixed
+
+Your approach doesn't match how this codebase typically handles such issues.
+
+**Action Required:**
+- Search the git history for similar past fixes: `git log --oneline --all | grep -i "<keyword>"`
+- Look at similar functions in the same module — how do they handle the same concern?
+- Check if there's a pattern or utility already available that addresses your kind of fix
+- Follow the established patterns of this codebase rather than inventing a new approach
+
+The codebase likely has precedents for fixing this type of issue. Find and follow them.

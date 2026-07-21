@@ -1,0 +1,50 @@
+2026-05-17 20:40:33,947 - INFO - Creating container for django__django-11206...
+2026-05-17 20:40:33,974 - INFO - Container for django__django-11206 created: 32a6b486eeb20b2de0a12fed3b1c6d11b79a6921c413e1318a313a924460b214
+2026-05-17 20:40:34,147 - INFO - Container for django__django-11206 started: 32a6b486eeb20b2de0a12fed3b1c6d11b79a6921c413e1318a313a924460b214
+2026-05-17 20:40:34,147 - INFO - Intermediate patch for django__django-11206 written to logs/run_evaluation/single_django__django-11206_control/gpt4omini_django__django-11206_control/django__django-11206/patch.diff, now applying to container...
+2026-05-17 20:40:34,249 - INFO - Failed to apply patch to container: git apply --verbose
+2026-05-17 20:40:34,298 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-05-17 20:40:34,345 - INFO - >>>>> Applied Patch:
+patching file django/utils/numberformat.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 27 with fuzz 1.
+
+2026-05-17 20:40:35,021 - INFO - Git diff before:
+diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py
+index 88b35fc435..7d0da74dab 100644
+--- a/django/utils/numberformat.py
++++ b/django/utils/numberformat.py
+@@ -27,6 +27,8 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',
+     # sign
+     sign = ''
+     if isinstance(number, Decimal):
++        if abs(number) < Decimal("1e-{0}") and decimal_pos is not None:
++            return "0." + "0" * decimal_pos
+         # Format values with more than 200 digits (an arbitrary cutoff) using
+         # scientific notation to avoid high memory usage in {:f}'.format().
+         _, digits, exponent = number.as_tuple()
+2026-05-17 20:40:35,021 - INFO - Eval script for django__django-11206 written to logs/run_evaluation/single_django__django-11206_control/gpt4omini_django__django-11206_control/django__django-11206/eval.sh; copying to container...
+2026-05-17 20:40:41,087 - INFO - Test runtime: 6.01 seconds
+2026-05-17 20:40:41,087 - INFO - Test output for django__django-11206 written to logs/run_evaluation/single_django__django-11206_control/gpt4omini_django__django-11206_control/django__django-11206/test_output.txt
+2026-05-17 20:40:41,145 - INFO - Git diff after:
+diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py
+index 88b35fc435..7d0da74dab 100644
+--- a/django/utils/numberformat.py
++++ b/django/utils/numberformat.py
+@@ -27,6 +27,8 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',
+     # sign
+     sign = ''
+     if isinstance(number, Decimal):
++        if abs(number) < Decimal("1e-{0}") and decimal_pos is not None:
++            return "0." + "0" * decimal_pos
+         # Format values with more than 200 digits (an arbitrary cutoff) using
+         # scientific notation to avoid high memory usage in {:f}'.format().
+         _, digits, exponent = number.as_tuple()
+2026-05-17 20:40:41,145 - INFO - Grading answer for django__django-11206...
+2026-05-17 20:40:41,146 - INFO - report: {'django__django-11206': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_decimal_numbers (utils_tests.test_numberformat.TestNumberFormat)', 'test_decimal_subclass (utils_tests.test_numberformat.TestNumberFormat)']}, 'PASS_TO_PASS': {'success': ['test_float_numbers (utils_tests.test_numberformat.TestNumberFormat)', 'test_format_number (utils_tests.test_numberformat.TestNumberFormat)', 'test_format_string (utils_tests.test_numberformat.TestNumberFormat)', 'test_large_number (utils_tests.test_numberformat.TestNumberFormat)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11206: resolved: False
+2026-05-17 20:40:41,146 - INFO - Attempting to stop container sweb.eval.django__django-11206.single_django__django-11206_control...
+2026-05-17 20:40:56,650 - INFO - Attempting to remove container sweb.eval.django__django-11206.single_django__django-11206_control...
+2026-05-17 20:40:57,265 - INFO - Container sweb.eval.django__django-11206.single_django__django-11206_control removed.
+2026-05-17 20:40:57,265 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11206:latest...
+2026-05-17 20:41:00,240 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11206:latest removed.

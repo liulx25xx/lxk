@@ -1,0 +1,15 @@
+diff --git a/django/middleware/cache.py b/django/middleware/cache.py
+index 0fdffe1bbe..f454babb1e 100644
+--- a/django/middleware/cache.py
++++ b/django/middleware/cache.py
+@@ -88,7 +88,9 @@ class UpdateCacheMiddleware(MiddlewareMixin):
+         if response.streaming or response.status_code not in (200, 304):
+             return response
+ 
+-        # Don't cache responses that set a user-specific (and maybe security
++        # Don't cache responses that set a user-specific
++        if request.method == "HEAD":
++            response.content = b""  # Strip the response body for HEAD requests (and maybe security
+         # sensitive) cookie in response to a cookie-less request.
+         if (
+             not request.COOKIES

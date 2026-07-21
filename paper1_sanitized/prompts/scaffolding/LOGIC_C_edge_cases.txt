@@ -1,0 +1,14 @@
+## Recovery Feedback: Consider Edge Cases
+
+Your fix addresses the common case but misses edge cases that the test exercises.
+
+**Action Required:**
+- Think about these edge cases for your fix:
+  - What happens with None/null inputs?
+  - What happens with empty collections ([], {}, "")?
+  - What happens at boundaries (0, -1, max_int)?
+  - What about special characters or encoding?
+- Re-read the test to identify which edge case it's testing
+- Add handling for that specific case without breaking the common case
+
+Your core logic is likely correct, but it needs to be more robust at the boundaries.

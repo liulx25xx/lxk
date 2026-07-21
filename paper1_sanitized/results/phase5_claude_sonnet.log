@@ -1,0 +1,43 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+============================================================
+Phase 5: Claude Sonnet 4.6 Validation
+Model: claude-sonnet-4-6, Delay: 3.5s, Threads: 2
+Best strategies: ['LOC_B_reread_issue', 'EDIT_A_reread_file', 'LOGIC_B_minimal_fix', 'PLAN_A_step_back']
+============================================================
+  [EDIT] reread_file           : 2.71 (n=28)
+  [LOC] reread_issue          : 2.63 (n=30)
+  [EDIT] scaffold              : 2.79 (n=28)
+  [LOC] scaffold              : 2.50 (n=30)
+  [PLAN] step_back             : 2.12 (n=8)
+  [LOGIC] minimal_fix           : 2.50 (n=30)
+  [PLAN] scaffold              : 2.00 (n=8)
+  [LOGIC] scaffold              : 2.50 (n=30)
+
+============================================================
+DONE in 20.1 min, 192 calls
+Model: claude-sonnet-4-6
+============================================================
+
+--- LOC ---
+  scaffold              : 2.50  file=90%  act=100%  rel=60%  (n=30)
+  reread_issue          : 2.63  file=97%  act=100%  rel=67%  (n=30)
+  → Δ = +0.13 (scaffold vs control)
+
+--- EDIT ---
+  scaffold              : 2.79  file=96%  act=100%  rel=82%  (n=28)
+  reread_file           : 2.71  file=96%  act=100%  rel=75%  (n=28)
+  → Δ = -0.07 (scaffold vs control)
+
+--- LOGIC ---
+  scaffold              : 2.50  file=100%  act=100%  rel=50%  (n=30)
+  minimal_fix           : 2.50  file=100%  act=100%  rel=50%  (n=30)
+  → Δ = +0.00 (scaffold vs control)
+
+--- PLAN ---
+  scaffold              : 2.00  file=100%  act=100%  rel=0%  (n=8)
+  step_back             : 2.12  file=100%  act=100%  rel=12%  (n=8)
+  → Δ = +0.12 (scaffold vs control)
+
+============================================================
+Compare with Phase 3 (gpt-4o-mini) to show model-agnostic scaffold benefit.
+============================================================
