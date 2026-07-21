@@ -1,0 +1,19 @@
+{
+  "model_name": "deepseek-ai/deepseek-math-7b-instruct",
+  "reward_mode": "accuracy",
+  "alpha": 1.0,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lr": 5e-06,
+  "max_steps": 300,
+  "group_size": 8,
+  "batch_size": 4,
+  "lora_rank": 64,
+  "output_dir": "/path/to/paper3_judge_rl/results/GRPO_deepseek7b_unbalanced",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "swap_data": "/path/to/paper3_judge_rl/data/train/judge_swap.json",
+  "seed": 42,
+  "start_time": "2026-05-17T20:25:29.966990",
+  "gpu": "NVIDIA H200",
+  "end_time": "2026-05-17T23:03:38.267863"
+}

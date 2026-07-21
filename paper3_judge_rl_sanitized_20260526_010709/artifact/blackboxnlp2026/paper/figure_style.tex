@@ -1,0 +1,32 @@
+% Shared publication style for every quantitative and conceptual figure.
+% Color semantics are fixed across the paper:
+%   blue = balanced / position-robust behavior
+%   coral = confounded / shortcut-sensitive behavior
+%   sand = transition or intermediate state
+%   gray = reference or secondary diagnostic
+\definecolor{fig-balanced}{HTML}{4E8D96}
+\definecolor{fig-confounded}{HTML}{C96F5F}
+\definecolor{fig-transition}{HTML}{D8C58D}
+\definecolor{fig-neutral}{HTML}{8C8C96}
+\definecolor{fig-ink}{HTML}{303840}
+\definecolor{fig-light}{HTML}{F4F7F8}
+
+\usetikzlibrary{arrows.meta,positioning,calc}
+\pgfplotsset{
+    compat=1.18,
+    expplot/.style={
+        width=\columnwidth,
+        tick label style={font=\footnotesize, text=fig-ink},
+        xlabel style={font=\footnotesize, text=fig-ink},
+        ylabel style={font=\footnotesize, text=fig-ink},
+        legend style={font=\footnotesize, draw=none, cells={anchor=west}},
+        every axis plot/.append style={line width=1.0pt, mark size=2.6pt},
+        tick style={draw=fig-ink, line width=0.45pt},
+        axis line style={draw=fig-ink, line width=0.55pt},
+        axis lines=left,
+    },
+    expgrid/.style={
+        ymajorgrids=true,
+        grid style={draw=fig-neutral!18, line width=0.4pt},
+    },
+}

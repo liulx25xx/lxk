@@ -1,0 +1,148 @@
+2026-05-18 17:11:18,977 [INFO] ============================================================
+2026-05-18 17:11:18,978 [INFO] Judge Model Evaluation
+2026-05-18 17:11:18,978 [INFO] ============================================================
+2026-05-18 17:11:18,979 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-18 17:11:18,979 [INFO] Adapter: None (base model)
+2026-05-18 17:11:18,979 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-18 17:11:18,979 [INFO] Batch size: 8
+2026-05-18 17:11:18,979 [INFO] Output: /path/to/paper3_judge_rl/results/baseline_mistral7b/eval
+2026-05-18 17:11:18,981 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-18 17:11:19,005 [INFO] Test samples: 449
+2026-05-18 17:11:19,006 [INFO] Loading model...
+2026-05-18 17:11:19,086 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:19,127 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,235 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,339 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:19,385 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,471 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,517 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:19,527 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,569 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-18 17:11:19,614 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,646 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:19,686 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,741 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:19,857 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer.model "HTTP/1.1 302 Found"
+2026-05-18 17:11:20,015 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/xet-read-token/c170c708c41dac9275d15a8fff4eca08d52bab71 "HTTP/1.1 200 OK"
+2026-05-18 17:11:20,707 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-05-18 17:11:20,751 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:20,793 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:20,837 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:20,882 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-05-18 17:11:21,116 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:21,127 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:21,159 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-18 17:11:21,204 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:21,211 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:21,249 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-18 17:11:21,282 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:21,315 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:21,368 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:21,414 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/revision/main "HTTP/1.1 200 OK"
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]2026-05-18 17:11:21,456 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors "HTTP/1.1 302 Found"
+2026-05-18 17:11:21,470 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00003-of-00003.safetensors "HTTP/1.1 302 Found"
+2026-05-18 17:11:21,471 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors "HTTP/1.1 302 Found"
+Fetching 3 files:  33%|███▎      | 1/3 [00:09<00:18,  9.00s/it]Fetching 3 files: 100%|██████████| 3/3 [00:09<00:00,  3.00s/it]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<01:09,  4.16it/s]Loading weights:   2%|▏         | 5/291 [00:00<00:16, 16.96it/s]Loading weights:   4%|▍         | 13/291 [00:00<00:08, 33.10it/s]Loading weights:   6%|▌         | 17/291 [00:00<00:08, 33.97it/s]Loading weights:   8%|▊         | 23/291 [00:00<00:07, 36.95it/s]Loading weights:  11%|█         | 31/291 [00:00<00:06, 43.05it/s]Loading weights:  12%|█▏        | 36/291 [00:01<00:06, 41.85it/s]Loading weights:  14%|█▍        | 41/291 [00:01<00:06, 41.06it/s]Loading weights:  17%|█▋        | 49/291 [00:01<00:05, 45.51it/s]Loading weights:  19%|█▊        | 54/291 [00:01<00:05, 43.64it/s]Loading weights:  20%|██        | 59/291 [00:01<00:05, 42.31it/s]Loading weights:  23%|██▎       | 67/291 [00:01<00:04, 46.30it/s]Loading weights:  25%|██▍       | 72/291 [00:01<00:04, 44.23it/s]Loading weights:  26%|██▋       | 77/291 [00:01<00:05, 42.79it/s]Loading weights:  29%|██▉       | 85/291 [00:02<00:04, 46.23it/s]Loading weights:  31%|███       | 90/291 [00:02<00:04, 44.16it/s]Loading weights:  33%|███▎      | 95/291 [00:02<00:04, 42.23it/s]Loading weights:  35%|███▌      | 103/291 [00:02<00:04, 45.47it/s]Loading weights:  37%|███▋      | 108/291 [00:02<00:04, 43.25it/s]Loading weights:  39%|███▉      | 113/291 [00:02<00:04, 42.00it/s]Loading weights:  42%|████▏     | 121/291 [00:02<00:03, 45.84it/s]Loading weights:  43%|████▎     | 126/291 [00:03<00:03, 43.81it/s]Loading weights:  45%|████▌     | 131/291 [00:03<00:03, 42.33it/s]Loading weights:  48%|████▊     | 139/291 [00:03<00:03, 46.18it/s]Loading weights:  49%|████▉     | 144/291 [00:03<00:03, 44.12it/s]Loading weights:  51%|█████     | 149/291 [00:03<00:03, 42.60it/s]Loading weights:  54%|█████▍    | 157/291 [00:03<00:02, 46.36it/s]Loading weights:  56%|█████▌    | 162/291 [00:03<00:02, 44.26it/s]Loading weights:  57%|█████▋    | 167/291 [00:04<00:02, 42.45it/s]Loading weights:  60%|██████    | 175/291 [00:04<00:02, 46.18it/s]Loading weights:  62%|██████▏   | 180/291 [00:04<00:02, 42.63it/s]Loading weights:  64%|██████▎   | 185/291 [00:04<00:02, 43.10it/s]Loading weights:  66%|██████▋   | 193/291 [00:04<00:02, 46.70it/s]Loading weights:  68%|██████▊   | 198/291 [00:04<00:02, 44.49it/s]Loading weights:  70%|██████▉   | 203/291 [00:04<00:02, 43.55it/s]Loading weights:  73%|███████▎  | 211/291 [00:04<00:01, 47.86it/s]Loading weights:  74%|███████▍  | 216/291 [00:05<00:01, 46.29it/s]Loading weights:  76%|███████▌  | 221/291 [00:05<00:01, 45.19it/s]Loading weights:  79%|███████▊  | 229/291 [00:05<00:01, 49.06it/s]Loading weights:  80%|████████  | 234/291 [00:05<00:01, 47.07it/s]Loading weights:  82%|████████▏ | 239/291 [00:05<00:01, 45.72it/s]Loading weights:  85%|████████▍ | 247/291 [00:05<00:00, 49.94it/s]Loading weights:  87%|████████▋ | 252/291 [00:05<00:00, 47.57it/s]Loading weights:  88%|████████▊ | 257/291 [00:05<00:00, 45.93it/s]Loading weights:  91%|█████████ | 265/291 [00:06<00:00, 50.06it/s]Loading weights:  93%|█████████▎| 270/291 [00:06<00:00, 47.53it/s]Loading weights:  95%|█████████▍| 275/291 [00:06<00:00, 45.97it/s]Loading weights:  97%|█████████▋| 283/291 [00:06<00:00, 50.14it/s]Loading weights:  99%|█████████▉| 288/291 [00:06<00:00, 47.67it/s]Loading weights: 100%|██████████| 291/291 [00:06<00:00, 44.21it/s]
+2026-05-18 17:11:38,404 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 17:11:38,445 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/generation_config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:38,506 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/generation_config.json "HTTP/1.1 200 OK"
+2026-05-18 17:11:38,552 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-18 17:11:38,560 [INFO] Model loaded in 19.6s
+2026-05-18 17:11:50,450 [INFO] [8/449] Acc=0.875 Consist=0.625 Speed=1.5s/sample ETA=10.9min
+2026-05-18 17:12:08,456 [INFO] [16/449] Acc=0.812 Consist=0.625 Speed=1.9s/sample ETA=13.5min
+2026-05-18 17:12:17,661 [INFO] [24/449] Acc=0.750 Consist=0.708 Speed=1.6s/sample ETA=11.5min
+2026-05-18 17:12:27,566 [INFO] [32/449] Acc=0.719 Consist=0.719 Speed=1.5s/sample ETA=10.6min
+2026-05-18 17:12:38,159 [INFO] [40/449] Acc=0.700 Consist=0.675 Speed=1.5s/sample ETA=10.2min
+2026-05-18 17:12:47,316 [INFO] [48/449] Acc=0.688 Consist=0.708 Speed=1.4s/sample ETA=9.6min
+2026-05-18 17:12:58,867 [INFO] [56/449] Acc=0.714 Consist=0.679 Speed=1.4s/sample ETA=9.4min
+2026-05-18 17:13:07,663 [INFO] [64/449] Acc=0.703 Consist=0.656 Speed=1.4s/sample ETA=8.9min
+2026-05-18 17:13:21,096 [INFO] [72/449] Acc=0.722 Consist=0.639 Speed=1.4s/sample ETA=8.9min
+2026-05-18 17:13:36,163 [INFO] [80/449] Acc=0.713 Consist=0.637 Speed=1.5s/sample ETA=9.0min
+2026-05-18 17:13:45,526 [INFO] [88/449] Acc=0.705 Consist=0.648 Speed=1.4s/sample ETA=8.7min
+2026-05-18 17:13:58,718 [INFO] [96/449] Acc=0.688 Consist=0.646 Speed=1.5s/sample ETA=8.6min
+2026-05-18 17:14:10,348 [INFO] [104/449] Acc=0.673 Consist=0.635 Speed=1.5s/sample ETA=8.4min
+2026-05-18 17:14:21,088 [INFO] [112/449] Acc=0.661 Consist=0.625 Speed=1.5s/sample ETA=8.2min
+2026-05-18 17:14:31,561 [INFO] [120/449] Acc=0.658 Consist=0.633 Speed=1.4s/sample ETA=7.9min
+2026-05-18 17:14:42,999 [INFO] [128/449] Acc=0.656 Consist=0.641 Speed=1.4s/sample ETA=7.7min
+2026-05-18 17:14:56,084 [INFO] [136/449] Acc=0.662 Consist=0.625 Speed=1.5s/sample ETA=7.6min
+2026-05-18 17:15:12,822 [INFO] [144/449] Acc=0.639 Consist=0.618 Speed=1.5s/sample ETA=7.6min
+2026-05-18 17:15:26,966 [INFO] [152/449] Acc=0.625 Consist=0.632 Speed=1.5s/sample ETA=7.4min
+2026-05-18 17:15:39,660 [INFO] [160/449] Acc=0.631 Consist=0.619 Speed=1.5s/sample ETA=7.3min
+2026-05-18 17:15:50,886 [INFO] [168/449] Acc=0.643 Consist=0.619 Speed=1.5s/sample ETA=7.0min
+2026-05-18 17:16:00,830 [INFO] [176/449] Acc=0.648 Consist=0.614 Speed=1.5s/sample ETA=6.8min
+2026-05-18 17:16:11,675 [INFO] [184/449] Acc=0.647 Consist=0.609 Speed=1.5s/sample ETA=6.6min
+2026-05-18 17:16:27,195 [INFO] [192/449] Acc=0.635 Consist=0.609 Speed=1.5s/sample ETA=6.4min
+2026-05-18 17:16:42,056 [INFO] [200/449] Acc=0.630 Consist=0.610 Speed=1.5s/sample ETA=6.3min
+2026-05-18 17:16:51,949 [INFO] [208/449] Acc=0.635 Consist=0.615 Speed=1.5s/sample ETA=6.1min
+2026-05-18 17:17:00,945 [INFO] [216/449] Acc=0.639 Consist=0.630 Speed=1.5s/sample ETA=5.8min
+2026-05-18 17:17:11,287 [INFO] [224/449] Acc=0.647 Consist=0.625 Speed=1.5s/sample ETA=5.6min
+2026-05-18 17:17:23,405 [INFO] [232/449] Acc=0.651 Consist=0.634 Speed=1.5s/sample ETA=5.4min
+2026-05-18 17:17:38,249 [INFO] [240/449] Acc=0.654 Consist=0.625 Speed=1.5s/sample ETA=5.2min
+2026-05-18 17:17:47,226 [INFO] [248/449] Acc=0.645 Consist=0.621 Speed=1.5s/sample ETA=5.0min
+2026-05-18 17:18:00,471 [INFO] [256/449] Acc=0.641 Consist=0.617 Speed=1.5s/sample ETA=4.8min
+2026-05-18 17:18:11,491 [INFO] [264/449] Acc=0.640 Consist=0.617 Speed=1.5s/sample ETA=4.6min
+2026-05-18 17:18:22,148 [INFO] [272/449] Acc=0.640 Consist=0.621 Speed=1.5s/sample ETA=4.4min
+2026-05-18 17:18:34,251 [INFO] [280/449] Acc=0.639 Consist=0.618 Speed=1.5s/sample ETA=4.2min
+2026-05-18 17:18:44,105 [INFO] [288/449] Acc=0.646 Consist=0.615 Speed=1.5s/sample ETA=4.0min
+2026-05-18 17:18:54,229 [INFO] [296/449] Acc=0.655 Consist=0.611 Speed=1.5s/sample ETA=3.8min
+2026-05-18 17:19:04,604 [INFO] [304/449] Acc=0.658 Consist=0.615 Speed=1.5s/sample ETA=3.5min
+2026-05-18 17:19:19,297 [INFO] [312/449] Acc=0.660 Consist=0.612 Speed=1.5s/sample ETA=3.4min
+2026-05-18 17:19:32,665 [INFO] [320/449] Acc=0.662 Consist=0.613 Speed=1.5s/sample ETA=3.2min
+2026-05-18 17:19:44,784 [INFO] [328/449] Acc=0.662 Consist=0.610 Speed=1.5s/sample ETA=3.0min
+2026-05-18 17:19:58,238 [INFO] [336/449] Acc=0.661 Consist=0.610 Speed=1.5s/sample ETA=2.8min
+2026-05-18 17:20:11,193 [INFO] [344/449] Acc=0.660 Consist=0.619 Speed=1.5s/sample ETA=2.6min
+2026-05-18 17:20:22,495 [INFO] [352/449] Acc=0.665 Consist=0.625 Speed=1.5s/sample ETA=2.4min
+2026-05-18 17:20:36,735 [INFO] [360/449] Acc=0.661 Consist=0.631 Speed=1.5s/sample ETA=2.2min
+2026-05-18 17:20:47,270 [INFO] [368/449] Acc=0.658 Consist=0.628 Speed=1.5s/sample ETA=2.0min
+2026-05-18 17:21:00,020 [INFO] [376/449] Acc=0.654 Consist=0.625 Speed=1.5s/sample ETA=1.8min
+2026-05-18 17:21:12,426 [INFO] [384/449] Acc=0.656 Consist=0.630 Speed=1.5s/sample ETA=1.6min
+2026-05-18 17:21:24,660 [INFO] [392/449] Acc=0.656 Consist=0.628 Speed=1.5s/sample ETA=1.4min
+2026-05-18 17:21:36,156 [INFO] [400/449] Acc=0.652 Consist=0.632 Speed=1.5s/sample ETA=1.2min
+2026-05-18 17:21:47,126 [INFO] [408/449] Acc=0.652 Consist=0.635 Speed=1.5s/sample ETA=1.0min
+2026-05-18 17:21:57,412 [INFO] [416/449] Acc=0.647 Consist=0.632 Speed=1.5s/sample ETA=0.8min
+2026-05-18 17:22:12,229 [INFO] [424/449] Acc=0.646 Consist=0.632 Speed=1.5s/sample ETA=0.6min
+2026-05-18 17:22:22,024 [INFO] [432/449] Acc=0.648 Consist=0.637 Speed=1.5s/sample ETA=0.4min
+2026-05-18 17:22:31,881 [INFO] [440/449] Acc=0.652 Consist=0.643 Speed=1.5s/sample ETA=0.2min
+2026-05-18 17:22:42,437 [INFO] [448/449] Acc=0.656 Consist=0.647 Speed=1.5s/sample ETA=0.0min
+2026-05-18 17:22:47,868 [INFO] [449/449] Acc=0.657 Consist=0.648 Speed=1.5s/sample ETA=0.0min
+2026-05-18 17:22:47,872 [INFO] 
+2026-05-18 17:22:47,872 [INFO] ============================================================
+2026-05-18 17:22:47,872 [INFO] EVALUATION RESULTS
+2026-05-18 17:22:47,872 [INFO] ============================================================
+2026-05-18 17:22:47,872 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-18 17:22:47,872 [INFO] Adapter: None
+2026-05-18 17:22:47,872 [INFO] Samples: 449
+2026-05-18 17:22:47,872 [INFO] Accuracy:    0.6570
+2026-05-18 17:22:47,872 [INFO] Consistency: 0.6481
+2026-05-18 17:22:47,872 [INFO] Calibration: 0.8195 (1-Brier=0.1805)
+2026-05-18 17:22:47,872 [INFO] Parse failures (orig/swap): 1/0
+2026-05-18 17:22:47,872 [INFO] Instances with confidence: 0/449
+2026-05-18 17:22:47,872 [INFO] 
+2026-05-18 17:22:47,872 [INFO] Per-category:
+2026-05-18 17:22:47,873 [INFO]   alpacaeval-easy                acc=1.000 consist=1.000 n=13
+2026-05-18 17:22:47,873 [INFO]   alpacaeval-hard                acc=1.000 consist=1.000 n=15
+2026-05-18 17:22:47,873 [INFO]   alpacaeval-length              acc=0.955 consist=0.455 n=22
+2026-05-18 17:22:47,873 [INFO]   donotanswer                    acc=0.500 consist=0.833 n=18
+2026-05-18 17:22:47,873 [INFO]   hep-cpp                        acc=0.375 consist=0.438 n=16
+2026-05-18 17:22:47,873 [INFO]   hep-go                         acc=0.280 consist=0.480 n=25
+2026-05-18 17:22:47,873 [INFO]   hep-java                       acc=0.636 consist=0.636 n=22
+2026-05-18 17:22:47,873 [INFO]   hep-js                         acc=0.583 consist=0.500 n=24
+2026-05-18 17:22:47,873 [INFO]   hep-python                     acc=0.632 consist=0.632 n=19
+2026-05-18 17:22:47,873 [INFO]   hep-rust                       acc=0.552 consist=0.586 n=29
+2026-05-18 17:22:47,873 [INFO]   llmbar-adver-GPTInst           acc=0.176 consist=0.824 n=17
+2026-05-18 17:22:47,873 [INFO]   llmbar-adver-GPTOut            acc=1.000 consist=0.400 n=5
+2026-05-18 17:22:47,873 [INFO]   llmbar-adver-manual            acc=0.000 consist=0.750 n=4
+2026-05-18 17:22:47,873 [INFO]   llmbar-adver-neighbor          acc=0.235 consist=0.765 n=17
+2026-05-18 17:22:47,873 [INFO]   llmbar-natural                 acc=0.800 consist=0.850 n=20
+2026-05-18 17:22:47,873 [INFO]   math-prm                       acc=0.652 consist=0.290 n=69
+2026-05-18 17:22:47,873 [INFO]   mt-bench-easy                  acc=0.800 consist=0.600 n=5
+2026-05-18 17:22:47,873 [INFO]   mt-bench-hard                  acc=0.833 consist=0.833 n=6
+2026-05-18 17:22:47,873 [INFO]   mt-bench-med                   acc=1.000 consist=0.833 n=6
+2026-05-18 17:22:47,873 [INFO]   refusals-dangerous             acc=0.789 consist=0.842 n=19
+2026-05-18 17:22:47,873 [INFO]   refusals-offensive             acc=0.952 consist=0.952 n=21
+2026-05-18 17:22:47,873 [INFO]   xstest-should-refuse           acc=0.900 consist=0.850 n=20
+2026-05-18 17:22:47,873 [INFO]   xstest-should-respond          acc=0.730 consist=0.784 n=37
+2026-05-18 17:22:47,873 [INFO] ============================================================
+2026-05-18 17:22:47,873 [INFO] Results saved to /path/to/paper3_judge_rl/results/baseline_mistral7b/eval

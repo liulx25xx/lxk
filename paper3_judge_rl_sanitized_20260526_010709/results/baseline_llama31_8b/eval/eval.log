@@ -1,0 +1,39 @@
+2026-05-18 15:06:23,799 [INFO] ============================================================
+2026-05-18 15:06:23,806 [INFO] Judge Model Evaluation
+2026-05-18 15:06:23,806 [INFO] ============================================================
+2026-05-18 15:06:23,806 [INFO] Model: meta-llama/Llama-3.1-8B-Instruct
+2026-05-18 15:06:23,806 [INFO] Adapter: None (base model)
+2026-05-18 15:06:23,806 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-18 15:06:23,806 [INFO] Batch size: 8
+2026-05-18 15:06:23,806 [INFO] Output: /path/to/paper3_judge_rl/results/baseline_llama31_8b/eval
+2026-05-18 15:06:23,816 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-18 15:06:23,847 [INFO] Test samples: 449
+2026-05-18 15:06:23,848 [INFO] Loading model...
+2026-05-18 15:06:23,913 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 401 Unauthorized"
+2026-05-18 15:06:23,973 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 401 Unauthorized"
+2026-05-18 16:00:36,800 [INFO] ============================================================
+2026-05-18 16:00:36,802 [INFO] Judge Model Evaluation
+2026-05-18 16:00:36,802 [INFO] ============================================================
+2026-05-18 16:00:36,802 [INFO] Model: meta-llama/Llama-3.1-8B-Instruct
+2026-05-18 16:00:36,802 [INFO] Adapter: None (base model)
+2026-05-18 16:00:36,802 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-18 16:00:36,802 [INFO] Batch size: 8
+2026-05-18 16:00:36,802 [INFO] Output: /path/to/paper3_judge_rl/results/baseline_llama31_8b/eval
+2026-05-18 16:00:36,804 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-18 16:00:36,837 [INFO] Test samples: 449
+2026-05-18 16:00:36,837 [INFO] Loading model...
+2026-05-18 16:00:36,905 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 403 Forbidden"
+2026-05-18 16:00:36,950 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 403 Forbidden"
+2026-05-18 17:08:13,201 [INFO] ============================================================
+2026-05-18 17:08:13,203 [INFO] Judge Model Evaluation
+2026-05-18 17:08:13,203 [INFO] ============================================================
+2026-05-18 17:08:13,203 [INFO] Model: meta-llama/Llama-3.1-8B-Instruct
+2026-05-18 17:08:13,203 [INFO] Adapter: None (base model)
+2026-05-18 17:08:13,203 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-18 17:08:13,203 [INFO] Batch size: 8
+2026-05-18 17:08:13,203 [INFO] Output: /path/to/paper3_judge_rl/results/baseline_llama31_8b/eval
+2026-05-18 17:08:13,206 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-18 17:08:13,239 [INFO] Test samples: 449
+2026-05-18 17:08:13,239 [INFO] Loading model...
+2026-05-18 17:08:13,352 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 403 Forbidden"
+2026-05-18 17:08:13,406 [INFO] HTTP Request: HEAD https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json "HTTP/1.1 403 Forbidden"

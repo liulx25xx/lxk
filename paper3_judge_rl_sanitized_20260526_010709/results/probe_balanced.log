@@ -1,0 +1,50 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+=== Hidden State Probing: Balanced_GRPO_bal ===
+Model: Qwen/Qwen2.5-7B-Instruct
+Adapter: results/EXP-009b_full_balanced/final_model
+Layer: -1
+
+Total prompts: 200 (100 original + 100 swapped)
+
+Loading model...
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<02:41,  2.10it/s]Loading weights:   1%|          | 2/339 [00:00<02:46,  2.02it/s]Loading weights:   1%|▏         | 5/339 [00:01<01:02,  5.31it/s]Loading weights:   5%|▌         | 17/339 [00:01<00:15, 20.77it/s]Loading weights:   8%|▊         | 28/339 [00:01<00:09, 32.14it/s]Loading weights:  10%|▉         | 33/339 [00:01<00:09, 33.59it/s]Loading weights:  12%|█▏        | 41/339 [00:01<00:07, 38.41it/s]Loading weights:  15%|█▌        | 52/339 [00:02<00:06, 41.93it/s]Loading weights:  19%|█▉        | 64/339 [00:02<00:05, 51.00it/s]Loading weights:  21%|██        | 70/339 [00:02<00:05, 48.00it/s]Loading weights:  23%|██▎       | 77/339 [00:02<00:05, 47.51it/s]Loading weights:  26%|██▌       | 87/339 [00:02<00:04, 52.31it/s]Loading weights:  27%|██▋       | 93/339 [00:02<00:04, 49.89it/s]Loading weights:  30%|██▉       | 101/339 [00:02<00:04, 49.70it/s]Loading weights:  33%|███▎      | 112/339 [00:03<00:04, 55.02it/s]Loading weights:  35%|███▍      | 118/339 [00:03<00:04, 51.67it/s]Loading weights:  37%|███▋      | 125/339 [00:03<00:04, 50.00it/s]Loading weights:  40%|████      | 136/339 [00:03<00:04, 44.53it/s]Loading weights:  43%|████▎     | 147/339 [00:03<00:03, 51.14it/s]Loading weights:  47%|████▋     | 160/339 [00:04<00:02, 59.73it/s]Loading weights:  49%|████▉     | 167/339 [00:04<00:03, 54.88it/s]Loading weights:  51%|█████     | 173/339 [00:04<00:03, 52.36it/s]Loading weights:  53%|█████▎    | 180/339 [00:04<00:02, 56.02it/s]Loading weights:  55%|█████▍    | 186/339 [00:04<00:03, 45.90it/s]Loading weights:  58%|█████▊    | 196/339 [00:04<00:02, 51.25it/s]Loading weights:  60%|██████    | 204/339 [00:04<00:02, 57.09it/s]Loading weights:  62%|██████▏   | 211/339 [00:05<00:02, 48.35it/s]Loading weights:  65%|██████▌   | 221/339 [00:05<00:02, 51.91it/s]Loading weights:  68%|██████▊   | 232/339 [00:05<00:02, 50.36it/s]Loading weights:  72%|███████▏  | 243/339 [00:05<00:01, 55.39it/s]Loading weights:  73%|███████▎  | 249/339 [00:05<00:01, 53.01it/s]Loading weights:  76%|███████▌  | 257/339 [00:05<00:01, 52.12it/s]Loading weights:  78%|███████▊  | 264/339 [00:06<00:01, 55.84it/s]Loading weights:  80%|███████▉  | 270/339 [00:06<00:01, 45.75it/s]Loading weights:  83%|████████▎ | 281/339 [00:06<00:01, 53.14it/s]Loading weights:  86%|████████▌ | 292/339 [00:06<00:00, 58.34it/s]Loading weights:  88%|████████▊ | 299/339 [00:06<00:00, 53.41it/s]Loading weights:  90%|████████▉ | 305/339 [00:06<00:00, 50.49it/s]Loading weights:  93%|█████████▎| 315/339 [00:06<00:00, 54.37it/s]Loading weights:  95%|█████████▍| 321/339 [00:07<00:00, 51.00it/s]Loading weights:  97%|█████████▋| 329/339 [00:07<00:00, 50.46it/s]Loading weights: 100%|██████████| 339/339 [00:07<00:00, 45.85it/s]
+/path/to/env/judge_rl/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/path/to/env/judge_rl/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Loading adapter: results/EXP-009b_full_balanced/final_model
+
+Extracting hidden states (layer -1)...
+  Extracted 4/200 hidden states
+  Extracted 44/200 hidden states
+  Extracted 84/200 hidden states
+  Extracted 124/200 hidden states
+  Extracted 164/200 hidden states
+Hidden state shape: (200, 3584)
+
+Training position probe (5-fold CV)...
+
+Position probe accuracy: 0.5750 ± 0.0570
+  (50% = position not encoded, 100% = perfectly encoded)
+
+Results saved to results/probe_balanced/probe_results.json
+
+============================================================
+SUMMARY: Balanced_GRPO_bal
+Position probe accuracy: 57.5% ± 5.7%
+→ Position NOT encoded (content-based representations)
+============================================================

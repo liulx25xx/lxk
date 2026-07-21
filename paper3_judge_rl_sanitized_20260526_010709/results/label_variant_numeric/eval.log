@@ -1,0 +1,142 @@
+2026-05-23 19:57:37,713 [INFO] Label variant: numeric — Response 1/2 instead of A/B
+2026-05-23 19:57:37,748 [INFO] Test samples: 449
+2026-05-23 19:57:37,755 [INFO] Sample transformed prompt (first 300 chars):
+Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as 
+2026-05-23 19:57:37,755 [INFO] Loading model...
+2026-05-23 19:57:37,807 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 19:57:37,808 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-23 19:57:37,814 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json "HTTP/1.1 200 OK"
+2026-05-23 19:57:37,870 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 19:57:37,877 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 19:57:38,150 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-23 19:57:38,194 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-23 19:57:38,524 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct "HTTP/1.1 200 OK"
+2026-05-23 19:57:38,555 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 19:57:38,562 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json "HTTP/1.1 200 OK"
+2026-05-23 19:57:38,606 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 19:57:38,622 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json "HTTP/1.1 200 OK"
+2026-05-23 19:58:37,896 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 19:58:37,904 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/generation_config.json "HTTP/1.1 200 OK"
+2026-05-23 19:58:37,932 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-23 19:58:38,839 [INFO] Model loaded in 61.1s
+2026-05-23 19:58:43,645 [INFO] [4/449] Acc=1.000 Consist=1.000 Fallbacks=0
+2026-05-23 19:58:48,044 [INFO] [8/449] Acc=1.000 Consist=0.625 Fallbacks=0
+2026-05-23 19:58:52,817 [INFO] [12/449] Acc=1.000 Consist=0.750 Fallbacks=0
+2026-05-23 19:58:57,656 [INFO] [16/449] Acc=0.938 Consist=0.625 Fallbacks=0
+2026-05-23 19:59:01,197 [INFO] [20/449] Acc=0.950 Consist=0.600 Fallbacks=0
+2026-05-23 19:59:06,842 [INFO] [24/449] Acc=0.958 Consist=0.583 Fallbacks=0
+2026-05-23 19:59:09,970 [INFO] [28/449] Acc=0.964 Consist=0.607 Fallbacks=0
+2026-05-23 19:59:14,099 [INFO] [32/449] Acc=0.969 Consist=0.594 Fallbacks=0
+2026-05-23 19:59:20,598 [INFO] [36/449] Acc=0.944 Consist=0.583 Fallbacks=0
+2026-05-23 19:59:25,725 [INFO] [40/449] Acc=0.950 Consist=0.600 Fallbacks=0
+2026-05-23 19:59:30,831 [INFO] [44/449] Acc=0.932 Consist=0.568 Fallbacks=0
+2026-05-23 19:59:35,293 [INFO] [48/449] Acc=0.938 Consist=0.604 Fallbacks=0
+2026-05-23 19:59:41,007 [INFO] [52/449] Acc=0.942 Consist=0.577 Fallbacks=0
+2026-05-23 19:59:47,288 [INFO] [56/449] Acc=0.929 Consist=0.554 Fallbacks=0
+2026-05-23 19:59:51,920 [INFO] [60/449] Acc=0.917 Consist=0.567 Fallbacks=0
+2026-05-23 19:59:57,058 [INFO] [64/449] Acc=0.906 Consist=0.578 Fallbacks=0
+2026-05-23 20:00:01,399 [INFO] [68/449] Acc=0.912 Consist=0.588 Fallbacks=0
+2026-05-23 20:00:09,411 [INFO] [72/449] Acc=0.903 Consist=0.597 Fallbacks=0
+2026-05-23 20:00:14,912 [INFO] [76/449] Acc=0.908 Consist=0.605 Fallbacks=0
+2026-05-23 20:00:20,546 [INFO] [80/449] Acc=0.887 Consist=0.613 Fallbacks=0
+2026-05-23 20:00:25,771 [INFO] [84/449] Acc=0.893 Consist=0.595 Fallbacks=0
+2026-05-23 20:00:30,241 [INFO] [88/449] Acc=0.898 Consist=0.614 Fallbacks=0
+2026-05-23 20:00:35,102 [INFO] [92/449] Acc=0.902 Consist=0.598 Fallbacks=0
+2026-05-23 20:00:40,009 [INFO] [96/449] Acc=0.906 Consist=0.594 Fallbacks=0
+2026-05-23 20:00:43,893 [INFO] [100/449] Acc=0.910 Consist=0.600 Fallbacks=0
+2026-05-23 20:00:50,656 [INFO] [104/449] Acc=0.894 Consist=0.615 Fallbacks=0
+2026-05-23 20:00:57,331 [INFO] [108/449] Acc=0.898 Consist=0.620 Fallbacks=0
+2026-05-23 20:01:01,754 [INFO] [112/449] Acc=0.902 Consist=0.625 Fallbacks=0
+2026-05-23 20:01:06,600 [INFO] [116/449] Acc=0.905 Consist=0.629 Fallbacks=0
+2026-05-23 20:01:11,702 [INFO] [120/449] Acc=0.908 Consist=0.633 Fallbacks=0
+2026-05-23 20:01:17,549 [INFO] [124/449] Acc=0.911 Consist=0.629 Fallbacks=0
+2026-05-23 20:01:24,314 [INFO] [128/449] Acc=0.906 Consist=0.625 Fallbacks=0
+2026-05-23 20:01:29,874 [INFO] [132/449] Acc=0.909 Consist=0.614 Fallbacks=0
+2026-05-23 20:01:36,626 [INFO] [136/449] Acc=0.912 Consist=0.596 Fallbacks=0
+2026-05-23 20:01:44,265 [INFO] [140/449] Acc=0.914 Consist=0.593 Fallbacks=0
+2026-05-23 20:01:49,358 [INFO] [144/449] Acc=0.910 Consist=0.597 Fallbacks=0
+2026-05-23 20:01:54,096 [INFO] [148/449] Acc=0.905 Consist=0.608 Fallbacks=0
+2026-05-23 20:01:59,552 [INFO] [152/449] Acc=0.901 Consist=0.612 Fallbacks=0
+2026-05-23 20:02:05,450 [INFO] [156/449] Acc=0.904 Consist=0.615 Fallbacks=0
+2026-05-23 20:02:11,269 [INFO] [160/449] Acc=0.906 Consist=0.619 Fallbacks=0
+2026-05-23 20:02:16,283 [INFO] [164/449] Acc=0.909 Consist=0.622 Fallbacks=0
+2026-05-23 20:02:22,643 [INFO] [168/449] Acc=0.911 Consist=0.619 Fallbacks=0
+2026-05-23 20:02:28,273 [INFO] [172/449] Acc=0.913 Consist=0.622 Fallbacks=0
+2026-05-23 20:02:33,286 [INFO] [176/449] Acc=0.915 Consist=0.614 Fallbacks=0
+2026-05-23 20:02:41,241 [INFO] [180/449] Acc=0.917 Consist=0.617 Fallbacks=0
+2026-05-23 20:02:48,205 [INFO] [184/449] Acc=0.918 Consist=0.609 Fallbacks=0
+2026-05-23 20:02:53,235 [INFO] [188/449] Acc=0.920 Consist=0.601 Fallbacks=0
+2026-05-23 20:02:58,410 [INFO] [192/449] Acc=0.917 Consist=0.599 Fallbacks=0
+2026-05-23 20:03:03,086 [INFO] [196/449] Acc=0.918 Consist=0.597 Fallbacks=0
+2026-05-23 20:03:08,089 [INFO] [200/449] Acc=0.920 Consist=0.595 Fallbacks=0
+2026-05-23 20:03:13,422 [INFO] [204/449] Acc=0.922 Consist=0.598 Fallbacks=0
+2026-05-23 20:03:19,059 [INFO] [208/449] Acc=0.923 Consist=0.596 Fallbacks=0
+2026-05-23 20:03:25,314 [INFO] [212/449] Acc=0.925 Consist=0.594 Fallbacks=0
+2026-05-23 20:03:29,633 [INFO] [216/449] Acc=0.926 Consist=0.602 Fallbacks=0
+2026-05-23 20:03:36,478 [INFO] [220/449] Acc=0.927 Consist=0.600 Fallbacks=0
+2026-05-23 20:03:41,251 [INFO] [224/449] Acc=0.929 Consist=0.607 Fallbacks=0
+2026-05-23 20:03:46,489 [INFO] [228/449] Acc=0.930 Consist=0.614 Fallbacks=0
+2026-05-23 20:03:50,483 [INFO] [232/449] Acc=0.931 Consist=0.616 Fallbacks=0
+2026-05-23 20:03:55,630 [INFO] [236/449] Acc=0.932 Consist=0.619 Fallbacks=0
+2026-05-23 20:04:01,046 [INFO] [240/449] Acc=0.933 Consist=0.608 Fallbacks=0
+2026-05-23 20:04:06,377 [INFO] [244/449] Acc=0.934 Consist=0.611 Fallbacks=0
+2026-05-23 20:04:11,697 [INFO] [248/449] Acc=0.935 Consist=0.613 Fallbacks=0
+2026-05-23 20:04:18,968 [INFO] [252/449] Acc=0.933 Consist=0.615 Fallbacks=0
+2026-05-23 20:04:23,450 [INFO] [256/449] Acc=0.934 Consist=0.613 Fallbacks=0
+2026-05-23 20:04:29,735 [INFO] [260/449] Acc=0.935 Consist=0.608 Fallbacks=0
+2026-05-23 20:04:35,613 [INFO] [264/449] Acc=0.936 Consist=0.610 Fallbacks=0
+2026-05-23 20:04:40,721 [INFO] [268/449] Acc=0.937 Consist=0.604 Fallbacks=0
+2026-05-23 20:04:45,695 [INFO] [272/449] Acc=0.938 Consist=0.610 Fallbacks=0
+2026-05-23 20:04:51,515 [INFO] [276/449] Acc=0.938 Consist=0.605 Fallbacks=0
+2026-05-23 20:05:00,775 [INFO] [280/449] Acc=0.939 Consist=0.600 Fallbacks=0
+2026-05-23 20:05:04,572 [INFO] [284/449] Acc=0.940 Consist=0.606 Fallbacks=0
+2026-05-23 20:05:09,105 [INFO] [288/449] Acc=0.938 Consist=0.608 Fallbacks=0
+2026-05-23 20:05:15,975 [INFO] [292/449] Acc=0.938 Consist=0.610 Fallbacks=0
+2026-05-23 20:05:22,492 [INFO] [296/449] Acc=0.939 Consist=0.608 Fallbacks=0
+2026-05-23 20:05:27,559 [INFO] [300/449] Acc=0.940 Consist=0.610 Fallbacks=0
+2026-05-23 20:05:31,473 [INFO] [304/449] Acc=0.941 Consist=0.615 Fallbacks=0
+2026-05-23 20:05:36,865 [INFO] [308/449] Acc=0.942 Consist=0.614 Fallbacks=0
+2026-05-23 20:05:42,516 [INFO] [312/449] Acc=0.942 Consist=0.609 Fallbacks=0
+2026-05-23 20:05:48,030 [INFO] [316/449] Acc=0.943 Consist=0.614 Fallbacks=0
+2026-05-23 20:05:52,574 [INFO] [320/449] Acc=0.944 Consist=0.613 Fallbacks=0
+2026-05-23 20:05:56,614 [INFO] [324/449] Acc=0.944 Consist=0.608 Fallbacks=0
+2026-05-23 20:06:02,611 [INFO] [328/449] Acc=0.945 Consist=0.607 Fallbacks=0
+2026-05-23 20:06:09,142 [INFO] [332/449] Acc=0.943 Consist=0.608 Fallbacks=0
+2026-05-23 20:06:16,396 [INFO] [336/449] Acc=0.943 Consist=0.607 Fallbacks=0
+2026-05-23 20:06:21,582 [INFO] [340/449] Acc=0.944 Consist=0.603 Fallbacks=0
+2026-05-23 20:06:25,818 [INFO] [344/449] Acc=0.945 Consist=0.602 Fallbacks=0
+2026-05-23 20:06:30,665 [INFO] [348/449] Acc=0.945 Consist=0.601 Fallbacks=0
+2026-05-23 20:06:34,846 [INFO] [352/449] Acc=0.946 Consist=0.602 Fallbacks=0
+2026-05-23 20:06:41,050 [INFO] [356/449] Acc=0.947 Consist=0.604 Fallbacks=0
+2026-05-23 20:06:46,533 [INFO] [360/449] Acc=0.944 Consist=0.600 Fallbacks=0
+2026-05-23 20:06:52,110 [INFO] [364/449] Acc=0.942 Consist=0.599 Fallbacks=0
+2026-05-23 20:06:59,749 [INFO] [368/449] Acc=0.943 Consist=0.595 Fallbacks=0
+2026-05-23 20:07:04,520 [INFO] [372/449] Acc=0.941 Consist=0.594 Fallbacks=0
+2026-05-23 20:07:10,521 [INFO] [376/449] Acc=0.941 Consist=0.593 Fallbacks=0
+2026-05-23 20:07:16,267 [INFO] [380/449] Acc=0.942 Consist=0.592 Fallbacks=0
+2026-05-23 20:07:21,846 [INFO] [384/449] Acc=0.943 Consist=0.594 Fallbacks=0
+2026-05-23 20:07:26,680 [INFO] [388/449] Acc=0.943 Consist=0.595 Fallbacks=0
+2026-05-23 20:07:33,506 [INFO] [392/449] Acc=0.944 Consist=0.592 Fallbacks=0
+2026-05-23 20:07:37,914 [INFO] [396/449] Acc=0.944 Consist=0.593 Fallbacks=0
+2026-05-23 20:07:44,127 [INFO] [400/449] Acc=0.943 Consist=0.595 Fallbacks=0
+2026-05-23 20:07:50,134 [INFO] [404/449] Acc=0.943 Consist=0.597 Fallbacks=0
+2026-05-23 20:07:55,140 [INFO] [408/449] Acc=0.944 Consist=0.596 Fallbacks=0
+2026-05-23 20:07:59,487 [INFO] [412/449] Acc=0.944 Consist=0.595 Fallbacks=0
+2026-05-23 20:08:06,108 [INFO] [416/449] Acc=0.945 Consist=0.591 Fallbacks=0
+2026-05-23 20:08:12,056 [INFO] [420/449] Acc=0.945 Consist=0.595 Fallbacks=0
+2026-05-23 20:08:17,399 [INFO] [424/449] Acc=0.946 Consist=0.597 Fallbacks=0
+2026-05-23 20:08:23,719 [INFO] [428/449] Acc=0.944 Consist=0.596 Fallbacks=0
+2026-05-23 20:08:27,505 [INFO] [432/449] Acc=0.944 Consist=0.597 Fallbacks=0
+2026-05-23 20:08:31,417 [INFO] [436/449] Acc=0.945 Consist=0.599 Fallbacks=0
+2026-05-23 20:08:36,242 [INFO] [440/449] Acc=0.945 Consist=0.602 Fallbacks=0
+2026-05-23 20:08:41,126 [INFO] [444/449] Acc=0.946 Consist=0.604 Fallbacks=0
+2026-05-23 20:08:44,172 [INFO] [448/449] Acc=0.946 Consist=0.607 Fallbacks=0
+2026-05-23 20:08:48,257 [INFO] [449/449] Acc=0.947 Consist=0.608 Fallbacks=0
+2026-05-23 20:08:48,269 [INFO] ============================================================
+2026-05-23 20:08:48,269 [INFO] RESULTS — Label variant: numeric
+2026-05-23 20:08:48,269 [INFO] Accuracy:    0.9465
+2026-05-23 20:08:48,269 [INFO] Consistency: 0.6080
+2026-05-23 20:08:48,269 [INFO] A-selection: 0.9465
+2026-05-23 20:08:48,269 [INFO] Parse fails: 0
+2026-05-23 20:08:48,269 [INFO] Fallback to A/B parsing: 0
+2026-05-23 20:08:48,269 [INFO] ============================================================

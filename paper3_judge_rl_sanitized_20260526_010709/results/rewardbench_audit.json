@@ -1,0 +1,13 @@
+{
+  "rewardbench_audit": {
+    "train_total": 2089,
+    "train_labels": {
+      "A": 2089
+    },
+    "test_total": 449,
+    "test_labels": {
+      "A": 449
+    },
+    "position_confound": "100% gold=A in both train and test"
+  }
+}

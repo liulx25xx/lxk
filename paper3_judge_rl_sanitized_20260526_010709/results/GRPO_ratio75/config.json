@@ -1,0 +1,18 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "reward_mode": "full",
+  "alpha": 1.0,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lr": 5e-06,
+  "max_steps": 500,
+  "group_size": 8,
+  "batch_size": 4,
+  "lora_rank": 64,
+  "output_dir": "results/GRPO_ratio75",
+  "train_data": "data/train/judge_train_ratio75.json",
+  "swap_data": "/path/to/paper3_judge_rl/data/train/judge_swap.json",
+  "seed": 42,
+  "start_time": "2026-05-23T21:07:21.263609",
+  "gpu": "NVIDIA H200"
+}

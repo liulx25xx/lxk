@@ -1,0 +1,19 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "reward_mode": "accuracy",
+  "alpha": 1.0,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lr": 5e-06,
+  "max_steps": 500,
+  "group_size": 8,
+  "batch_size": 4,
+  "lora_rank": 64,
+  "output_dir": "/path/to/paper3_judge_rl/results/EXP-006b_accuracy_balanced_s3",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train_balanced.json",
+  "swap_data": "/path/to/paper3_judge_rl/data/train/judge_swap.json",
+  "seed": 456,
+  "start_time": "2026-05-17T14:28:49.524928",
+  "gpu": "NVIDIA H200",
+  "end_time": "2026-05-17T16:33:49.423881"
+}

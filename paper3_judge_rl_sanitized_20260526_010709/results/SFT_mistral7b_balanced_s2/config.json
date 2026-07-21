@@ -1,0 +1,15 @@
+{
+  "model_name": "mistralai/Mistral-7B-Instruct-v0.3",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train_balanced.json",
+  "output_dir": "/path/to/paper3_judge_rl/results/SFT_mistral7b_balanced_s2",
+  "lr": 5e-05,
+  "max_steps": 500,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "lora_rank": 64,
+  "max_length": 2048,
+  "seed": 123,
+  "start_time": "2026-05-23T01:36:21.911038",
+  "gpu": "NVIDIA H200",
+  "trainer_type": "SFT"
+}

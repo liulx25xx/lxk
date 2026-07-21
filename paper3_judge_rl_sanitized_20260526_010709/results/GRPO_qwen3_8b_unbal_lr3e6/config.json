@@ -1,0 +1,19 @@
+{
+  "model_name": "Qwen/Qwen3-8B",
+  "reward_mode": "accuracy",
+  "alpha": 1.0,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lr": 3e-06,
+  "max_steps": 300,
+  "group_size": 8,
+  "batch_size": 4,
+  "lora_rank": 64,
+  "output_dir": "/path/to/paper3_judge_rl/results/GRPO_qwen3_8b_unbal_lr3e6",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "swap_data": "/path/to/paper3_judge_rl/data/train/judge_swap.json",
+  "seed": 42,
+  "start_time": "2026-05-18T02:26:37.089970",
+  "gpu": "NVIDIA H200",
+  "end_time": "2026-05-18T08:17:04.633434"
+}

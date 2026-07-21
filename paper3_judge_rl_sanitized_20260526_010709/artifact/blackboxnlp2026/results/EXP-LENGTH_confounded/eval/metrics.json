@@ -1,0 +1,153 @@
+{
+  "n_samples": 449,
+  "accuracy": 0.799554565701559,
+  "consistency": 0.7839643652561247,
+  "avg_brier_score": 0.1455011135857461,
+  "calibration_score": 0.8544988864142539,
+  "parse_failures_orig": 0,
+  "parse_failures_swap": 0,
+  "has_confidence_count": 0,
+  "per_category": {
+    "alpacaeval-easy": {
+      "accuracy": 1.0,
+      "consistency": 1.0,
+      "avg_brier": 0.03999999999999999,
+      "n": 13
+    },
+    "alpacaeval-hard": {
+      "accuracy": 1.0,
+      "consistency": 1.0,
+      "avg_brier": 0.03999999999999997,
+      "n": 15
+    },
+    "alpacaeval-length": {
+      "accuracy": 1.0,
+      "consistency": 0.8181818181818182,
+      "avg_brier": 0.03999999999999998,
+      "n": 22
+    },
+    "donotanswer": {
+      "accuracy": 0.6111111111111112,
+      "consistency": 0.6666666666666666,
+      "avg_brier": 0.2733333333333334,
+      "n": 18
+    },
+    "hep-cpp": {
+      "accuracy": 0.8125,
+      "consistency": 0.6875,
+      "avg_brier": 0.10375,
+      "n": 16
+    },
+    "hep-go": {
+      "accuracy": 0.72,
+      "consistency": 0.72,
+      "avg_brier": 0.1144,
+      "n": 25
+    },
+    "hep-java": {
+      "accuracy": 0.9545454545454546,
+      "consistency": 0.8636363636363636,
+      "avg_brier": 0.06727272727272726,
+      "n": 22
+    },
+    "hep-js": {
+      "accuracy": 0.7916666666666666,
+      "consistency": 0.75,
+      "avg_brier": 0.09999999999999999,
+      "n": 24
+    },
+    "hep-python": {
+      "accuracy": 0.8947368421052632,
+      "consistency": 0.7894736842105263,
+      "avg_brier": 0.06210526315789472,
+      "n": 19
+    },
+    "hep-rust": {
+      "accuracy": 0.9310344827586207,
+      "consistency": 0.8275862068965517,
+      "avg_brier": 0.05448275862068964,
+      "n": 29
+    },
+    "llmbar-adver-GPTInst": {
+      "accuracy": 0.29411764705882354,
+      "consistency": 0.7647058823529411,
+      "avg_brier": 0.46352941176470597,
+      "n": 17
+    },
+    "llmbar-adver-GPTOut": {
+      "accuracy": 0.8,
+      "consistency": 0.6,
+      "avg_brier": 0.08199999999999999,
+      "n": 5
+    },
+    "llmbar-adver-manual": {
+      "accuracy": 0.25,
+      "consistency": 0.5,
+      "avg_brier": 0.4900000000000001,
+      "n": 4
+    },
+    "llmbar-adver-neighbor": {
+      "accuracy": 0.17647058823529413,
+      "consistency": 0.5882352941176471,
+      "avg_brier": 0.5341176470588236,
+      "n": 17
+    },
+    "llmbar-natural": {
+      "accuracy": 0.9,
+      "consistency": 0.85,
+      "avg_brier": 0.1,
+      "n": 20
+    },
+    "math-prm": {
+      "accuracy": 0.7971014492753623,
+      "consistency": 0.5942028985507246,
+      "avg_brier": 0.1617391304347826,
+      "n": 69
+    },
+    "mt-bench-easy": {
+      "accuracy": 1.0,
+      "consistency": 1.0,
+      "avg_brier": 0.03999999999999998,
+      "n": 5
+    },
+    "mt-bench-hard": {
+      "accuracy": 0.8333333333333334,
+      "consistency": 1.0,
+      "avg_brier": 0.14,
+      "n": 6
+    },
+    "mt-bench-med": {
+      "accuracy": 1.0,
+      "consistency": 1.0,
+      "avg_brier": 0.03999999999999998,
+      "n": 6
+    },
+    "refusals-dangerous": {
+      "accuracy": 0.8421052631578947,
+      "consistency": 0.8947368421052632,
+      "avg_brier": 0.13473684210526315,
+      "n": 19
+    },
+    "refusals-offensive": {
+      "accuracy": 0.9523809523809523,
+      "consistency": 0.9523809523809523,
+      "avg_brier": 0.06857142857142856,
+      "n": 21
+    },
+    "xstest-should-refuse": {
+      "accuracy": 0.95,
+      "consistency": 0.95,
+      "avg_brier": 0.06999999999999998,
+      "n": 20
+    },
+    "xstest-should-respond": {
+      "accuracy": 0.7027027027027027,
+      "consistency": 0.8108108108108109,
+      "avg_brier": 0.21837837837837837,
+      "n": 37
+    }
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter": "<redacted-machine-path>",
+  "elapsed_seconds": 705.1270756721497
+}

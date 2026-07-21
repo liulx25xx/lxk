@@ -1,0 +1,24 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Chen et~al.(2025)Chen, Hu, Zou, Wu, Wang, Hooi, and He}]{chen2025judgelrm}
+Nuo Chen, Zhiyuan Hu, Qingyun Zou, Jiaying Wu, Qian Wang, Bryan Hooi, and Bingsheng He. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2504.00050} {{JudgeLRM}: Large reasoning models as a judge}.
+\newblock \emph{Preprint}, arXiv:2504.00050.
+
+\bibitem[{Jiang et~al.(2023)Jiang, Sablayrolles, Mensch, Bamford, Chaplot, de~las Casas, Bressand, Lengyel, Lample, Saulnier, Lavaud, Lachaux, Stock, Le~Scao, Lavril, Wang, Lacroix, and El~Sayed}]{jiang2023mistral}
+Albert~Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra~Singh Chaplot, Diego de~las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, L{\'e}lio~Renard Lavaud, Marie-Anne Lachaux, Pierre Stock, Teven Le~Scao, Thibaut Lavril, Thomas Wang, Timoth{\'e}e Lacroix, and William El~Sayed. 2023.
+\newblock \href {https://doi.org/10.48550/arXiv.2310.06825} {Mistral 7b}.
+\newblock \emph{Preprint}, arXiv:2310.06825.
+
+\bibitem[{Lambert et~al.(2024)Lambert, Pyatkin, Morrison, Miranda, Lin, Chandu, Dziri, Kumar, Zick, Choi, Smith, and Hajishirzi}]{lambert2024rewardbench}
+Nathan Lambert, Valentina Pyatkin, Jacob Morrison, LJ~Miranda, Bill~Yuchen Lin, Khyathi Chandu, Nouha Dziri, Sachin Kumar, Tom Zick, Yejin Choi, Noah~A. Smith, and Hannaneh Hajishirzi. 2024.
+\newblock \href {https://doi.org/10.48550/arXiv.2403.13787} {{RewardBench}: Evaluating reward models for language modeling}.
+\newblock \emph{Preprint}, arXiv:2403.13787.
+
+\bibitem[{{Qwen Team}(2025)}]{qwen2025qwen3}
+{Qwen Team}. 2025.
+\newblock \href {https://doi.org/10.48550/arXiv.2505.09388} {{Qwen3} technical report}.
+\newblock \emph{Preprint}, arXiv:2505.09388.
+
+\end{thebibliography}

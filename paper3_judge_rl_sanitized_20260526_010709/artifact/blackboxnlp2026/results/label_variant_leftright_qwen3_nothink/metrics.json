@@ -1,0 +1,12 @@
+{
+  "variant": "leftright",
+  "variant_desc": "Response Left/Right instead of A/B",
+  "n_samples": 449,
+  "accuracy": 0.8574610244988864,
+  "consistency": 0.8374164810690423,
+  "a_selection_rate": 0.8574610244988864,
+  "parse_failures": 5,
+  "fallback_to_ab": 0,
+  "model": "Qwen/Qwen3-8B",
+  "adapter": "results/GRPO_qwen3_8b_unbalanced/final_model"
+}

@@ -1,0 +1,57 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+=== Judge GRPO Training ===
+Mode: accuracy
+Model: Qwen/Qwen3.5-9B
+Output: /path/to/paper3_judge_rl/results/GRPO_qwen35_9b_unbalanced
+Steps: 300
+
+Loading training data...
+Training samples: 2089
+Initializing GRPOTrainer...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 2155.07it/s]
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:16<3:23:55, 16.12s/it]Loading weights:   0%|          | 2/760 [00:16<1:27:41,  6.94s/it]Loading weights:  18%|█▊        | 133/760 [00:17<00:41, 15.02it/s]Loading weights:  19%|█▉        | 148/760 [00:18<00:44, 13.84it/s]Loading weights:  21%|██        | 157/760 [00:19<00:45, 13.31it/s]Loading weights:  23%|██▎       | 172/760 [00:20<00:43, 13.45it/s]Loading weights:  24%|██▍       | 186/760 [00:21<00:44, 13.02it/s]Loading weights:  26%|██▌       | 199/760 [00:22<00:35, 15.73it/s]Loading weights:  27%|██▋       | 203/760 [00:23<00:49, 11.34it/s]Loading weights:  27%|██▋       | 206/760 [00:24<00:55,  9.91it/s]Loading weights:  29%|██▉       | 222/760 [00:24<00:35, 15.02it/s]Loading weights:  30%|██▉       | 226/760 [00:25<00:44, 12.11it/s]Loading weights:  30%|███       | 229/760 [00:25<00:43, 12.32it/s]Loading weights:  31%|███▏      | 239/760 [00:26<00:41, 12.61it/s]Loading weights:  32%|███▏      | 241/760 [00:26<00:40, 12.95it/s]Loading weights:  33%|███▎      | 253/760 [00:27<00:49, 10.31it/s]Loading weights:  34%|███▍      | 259/760 [00:28<00:57,  8.76it/s]Loading weights:  36%|███▌      | 274/760 [00:28<00:31, 15.37it/s]Loading weights:  37%|███▋      | 279/760 [00:29<00:39, 12.06it/s]Loading weights:  37%|███▋      | 283/760 [00:30<00:38, 12.28it/s]Loading weights:  38%|███▊      | 292/760 [00:30<00:33, 13.78it/s]Loading weights:  39%|███▉      | 295/760 [00:30<00:38, 12.13it/s]Loading weights:  40%|████      | 306/760 [00:31<00:38, 11.82it/s]Loading weights:  41%|████      | 311/760 [00:32<00:33, 13.28it/s]Loading weights:  41%|████      | 313/760 [00:32<00:40, 10.95it/s]Loading weights:  43%|████▎     | 328/760 [00:32<00:20, 20.96it/s]Loading weights:  44%|████▎     | 332/760 [00:33<00:38, 11.11it/s]Loading weights:  45%|████▌     | 342/760 [00:34<00:25, 16.23it/s]Loading weights:  46%|████▌     | 346/760 [00:34<00:34, 12.07it/s]Loading weights:  47%|████▋     | 356/760 [00:34<00:22, 18.12it/s]Loading weights:  48%|████▊     | 361/760 [00:36<00:41,  9.61it/s]Loading weights:  48%|████▊     | 365/760 [00:36<00:40,  9.71it/s]Loading weights:  50%|█████     | 380/760 [00:37<00:22, 16.60it/s]Loading weights:  51%|█████     | 384/760 [00:37<00:24, 15.06it/s]Loading weights:  51%|█████     | 387/760 [00:37<00:29, 12.53it/s]Loading weights:  52%|█████▏    | 398/760 [00:38<00:28, 12.72it/s]Loading weights:  53%|█████▎    | 400/760 [00:38<00:29, 12.24it/s]Loading weights:  54%|█████▍    | 412/760 [00:40<00:33, 10.39it/s]Loading weights:  55%|█████▌    | 418/760 [00:40<00:33, 10.32it/s]Loading weights:  57%|█████▋    | 435/760 [00:41<00:17, 18.81it/s]Loading weights:  60%|██████    | 459/760 [00:41<00:08, 34.73it/s]Loading weights:  63%|██████▎   | 481/760 [00:41<00:05, 49.82it/s]Loading weights:  66%|██████▋   | 505/760 [00:41<00:03, 66.51it/s]Loading weights:  70%|██████▉   | 529/760 [00:41<00:02, 82.52it/s]Loading weights:  73%|███████▎  | 553/760 [00:41<00:02, 97.46it/s]Loading weights:  75%|███████▍  | 567/760 [00:41<00:01, 104.28it/s]Loading weights:  78%|███████▊  | 589/760 [00:42<00:01, 117.73it/s]Loading weights:  80%|████████  | 611/760 [00:42<00:01, 137.57it/s]Loading weights:  83%|████████▎ | 628/760 [00:42<00:01, 124.40it/s]Loading weights:  85%|████████▍ | 643/760 [00:42<00:00, 123.14it/s]Loading weights:  87%|████████▋ | 661/760 [00:42<00:00, 119.90it/s]Loading weights:  90%|█████████ | 685/760 [00:42<00:00, 132.21it/s]Loading weights:  92%|█████████▏| 699/760 [00:42<00:00, 129.27it/s]Loading weights:  95%|█████████▌| 723/760 [00:43<00:00, 134.28it/s]Loading weights:  98%|█████████▊| 745/760 [00:43<00:00, 149.36it/s]Loading weights: 100%|██████████| 760/760 [00:43<00:00, 17.51it/s] 
+[transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+Traceback (most recent call last):
+  File "/path/to/paper3_judge_rl/scripts/train_judge_grpo.py", line 287, in <module>
+    main()
+    ~~~~^^
+  File "/path/to/paper3_judge_rl/scripts/train_judge_grpo.py", line 260, in main
+    trainer = GRPOTrainer(
+        model=args.model_name,
+    ...<3 lines>...
+        peft_config=peft_config,
+    )
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/trl/trainer/grpo_trainer.py", line 316, in __init__
+    processing_class = AutoProcessor.from_pretrained(
+        get_config_model_id(model.config), truncation_side="left", padding_side="left"
+    )
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 436, in from_pretrained
+    return processor_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/transformers/processing_utils.py", line 1429, in from_pretrained
+    args = cls._get_arguments_from_pretrained(pretrained_model_name_or_path, processor_dict, **kwargs)
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/transformers/processing_utils.py", line 1558, in _get_arguments_from_pretrained
+    sub_processor = auto_processor_class.from_pretrained(
+        pretrained_model_name_or_path, subfolder=subfolder, **kwargs
+    )
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/transformers/models/auto/image_processing_auto.py", line 632, in from_pretrained
+    return image_processor_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/transformers/utils/import_utils.py", line 2054, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/transformers/utils/import_utils.py", line 2040, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+Qwen2VLImageProcessor requires the PIL library but it was not found in your environment. You can install it with pip:
+`pip install pillow`. Please note that you may need to restart your runtime after installation.
+
+Qwen2VLImageProcessor requires the Torchvision library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+

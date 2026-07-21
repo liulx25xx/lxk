@@ -1,0 +1,127 @@
+2026-05-17 13:38:25,239 [INFO] ============================================================
+2026-05-17 13:38:25,239 [INFO] Judge Model Evaluation
+2026-05-17 13:38:25,239 [INFO] ============================================================
+2026-05-17 13:38:25,239 [INFO] Model: Qwen/Qwen2.5-7B-Instruct
+2026-05-17 13:38:25,239 [INFO] Adapter: /path/to/paper3_judge_rl/results/EXP-006_accuracy_s3/checkpoints/checkpoint-500
+2026-05-17 13:38:25,239 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-17 13:38:25,239 [INFO] Batch size: 8
+2026-05-17 13:38:25,239 [INFO] Output: /path/to/paper3_judge_rl/results/EXP-006_accuracy_s3/eval
+2026-05-17 13:38:25,241 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-17 13:38:25,265 [INFO] Test samples: 449
+2026-05-17 13:38:25,265 [INFO] Loading model...
+2026-05-17 13:38:25,317 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 13:38:25,324 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json "HTTP/1.1 200 OK"
+2026-05-17 13:38:25,359 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 13:38:25,360 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 13:38:25,366 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-17 13:38:25,394 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-17 13:38:25,425 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-17 13:38:25,782 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-7B-Instruct "HTTP/1.1 200 OK"
+2026-05-17 13:38:25,815 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 13:38:25,821 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json "HTTP/1.1 200 OK"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-17 13:38:25,854 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 13:38:25,860 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:01<11:04,  1.97s/it]Loading weights:   1%|          | 4/339 [00:02<02:35,  2.16it/s]Loading weights:   1%|▏         | 5/339 [00:02<02:25,  2.30it/s]Loading weights:   2%|▏         | 6/339 [00:03<02:19,  2.39it/s]Loading weights:   4%|▎         | 12/339 [00:03<00:45,  7.22it/s]Loading weights:   5%|▍         | 16/339 [00:03<00:45,  7.15it/s]Loading weights:   5%|▌         | 18/339 [00:12<05:55,  1.11s/it]Loading weights:  12%|█▏        | 39/339 [00:13<01:20,  3.72it/s]Loading weights:  12%|█▏        | 42/339 [00:14<01:33,  3.18it/s]Loading weights:  16%|█▌        | 53/339 [00:15<01:02,  4.57it/s]Loading weights:  17%|█▋        | 58/339 [00:18<01:18,  3.59it/s]Loading weights:  23%|██▎       | 78/339 [00:18<00:35,  7.38it/s]Loading weights:  24%|██▍       | 81/339 [00:20<00:50,  5.09it/s]Loading weights:  32%|███▏      | 108/339 [00:21<00:20, 11.44it/s]Loading weights:  34%|███▎      | 114/339 [00:26<00:46,  4.88it/s]Loading weights:  47%|████▋     | 159/339 [00:26<00:15, 11.85it/s]Loading weights:  49%|████▊     | 165/339 [00:27<00:15, 10.95it/s]Loading weights:  51%|█████     | 173/339 [00:27<00:13, 12.76it/s]Loading weights:  53%|█████▎    | 178/339 [00:28<00:12, 12.72it/s]Loading weights:  54%|█████▍    | 184/339 [00:28<00:11, 13.97it/s]Loading weights:  55%|█████▌    | 188/339 [00:29<00:16,  9.35it/s]Loading weights:  58%|█████▊    | 197/339 [00:30<00:14, 10.07it/s]Loading weights:  60%|█████▉    | 202/339 [00:30<00:11, 11.71it/s]Loading weights:  61%|██████▏   | 208/339 [00:30<00:10, 12.56it/s]Loading weights:  62%|██████▏   | 211/339 [00:31<00:13,  9.84it/s]Loading weights:  64%|██████▎   | 216/339 [00:31<00:10, 12.14it/s]Loading weights:  65%|██████▍   | 220/339 [00:31<00:10, 11.69it/s]Loading weights:  65%|██████▌   | 222/339 [00:32<00:14,  8.20it/s]Loading weights:  67%|██████▋   | 228/339 [00:32<00:09, 11.72it/s]Loading weights:  68%|██████▊   | 232/339 [00:33<00:11,  9.10it/s]Loading weights:  69%|██████▉   | 234/339 [00:33<00:12,  8.30it/s]Loading weights:  71%|███████   | 239/339 [00:34<00:08, 11.37it/s]Loading weights:  72%|███████▏  | 244/339 [00:34<00:07, 12.07it/s]Loading weights:  73%|███████▎  | 246/339 [00:35<00:11,  7.83it/s]Loading weights:  74%|███████▍  | 252/339 [00:35<00:07, 11.72it/s]Loading weights:  76%|███████▌  | 256/339 [00:35<00:07, 11.42it/s]Loading weights:  76%|███████▌  | 258/339 [00:36<00:10,  7.96it/s]Loading weights:  78%|███████▊  | 264/339 [00:36<00:06, 12.30it/s]Loading weights:  79%|███████▉  | 269/339 [00:36<00:05, 12.48it/s]Loading weights:  80%|████████  | 272/339 [00:37<00:05, 12.15it/s]Loading weights:  81%|████████▏ | 276/339 [00:37<00:04, 15.29it/s]Loading weights:  83%|████████▎ | 280/339 [00:37<00:03, 18.11it/s]Loading weights:  83%|████████▎ | 283/339 [00:37<00:04, 11.50it/s]Loading weights:  85%|████████▍ | 288/339 [00:37<00:03, 16.00it/s]Loading weights:  86%|████████▌ | 292/339 [00:38<00:03, 14.39it/s]Loading weights:  87%|████████▋ | 295/339 [00:38<00:04,  9.52it/s]Loading weights:  88%|████████▊ | 298/339 [00:39<00:03, 11.19it/s]Loading weights:  90%|████████▉ | 304/339 [00:39<00:02, 13.48it/s]Loading weights:  90%|█████████ | 306/339 [00:40<00:03,  8.45it/s]Loading weights:  92%|█████████▏| 311/339 [00:40<00:02, 11.89it/s]Loading weights:  93%|█████████▎| 315/339 [00:40<00:02,  9.09it/s]Loading weights:  94%|█████████▍| 318/339 [00:41<00:02,  9.15it/s]Loading weights:  96%|█████████▌| 324/339 [00:41<00:01, 13.96it/s]Loading weights:  97%|█████████▋| 328/339 [00:41<00:00, 11.20it/s]Loading weights:  98%|█████████▊| 331/339 [00:42<00:00, 10.79it/s]Loading weights:  99%|█████████▊| 334/339 [00:42<00:00, 12.77it/s]Loading weights: 100%|██████████| 339/339 [00:42<00:00,  8.02it/s]
+2026-05-17 13:39:12,791 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 13:39:12,797 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/generation_config.json "HTTP/1.1 200 OK"
+2026-05-17 13:39:12,831 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-17 13:39:12,834 [INFO] Loading LoRA adapter from /path/to/paper3_judge_rl/results/EXP-006_accuracy_s3/checkpoints/checkpoint-500
+2026-05-17 13:39:17,347 [INFO] Model loaded in 52.1s
+2026-05-17 13:39:27,739 [INFO] [8/449] Acc=1.000 Consist=0.875 Speed=1.3s/sample ETA=9.5min
+2026-05-17 13:39:51,453 [INFO] [16/449] Acc=0.938 Consist=0.750 Speed=2.1s/sample ETA=15.4min
+2026-05-17 13:40:09,283 [INFO] [24/449] Acc=0.958 Consist=0.750 Speed=2.2s/sample ETA=15.3min
+2026-05-17 13:40:26,377 [INFO] [32/449] Acc=0.969 Consist=0.750 Speed=2.2s/sample ETA=15.0min
+2026-05-17 13:40:48,564 [INFO] [40/449] Acc=0.950 Consist=0.725 Speed=2.3s/sample ETA=15.5min
+2026-05-17 13:41:06,527 [INFO] [48/449] Acc=0.938 Consist=0.708 Speed=2.3s/sample ETA=15.2min
+2026-05-17 13:41:31,851 [INFO] [56/449] Acc=0.946 Consist=0.679 Speed=2.4s/sample ETA=15.7min
+2026-05-17 13:41:55,963 [INFO] [64/449] Acc=0.922 Consist=0.703 Speed=2.5s/sample ETA=15.9min
+2026-05-17 13:42:15,778 [INFO] [72/449] Acc=0.931 Consist=0.694 Speed=2.5s/sample ETA=15.6min
+2026-05-17 13:42:40,698 [INFO] [80/449] Acc=0.912 Consist=0.700 Speed=2.5s/sample ETA=15.6min
+2026-05-17 13:42:59,400 [INFO] [88/449] Acc=0.909 Consist=0.705 Speed=2.5s/sample ETA=15.2min
+2026-05-17 13:43:23,072 [INFO] [96/449] Acc=0.917 Consist=0.677 Speed=2.6s/sample ETA=15.1min
+2026-05-17 13:43:38,326 [INFO] [104/449] Acc=0.904 Consist=0.692 Speed=2.5s/sample ETA=14.4min
+2026-05-17 13:44:03,675 [INFO] [112/449] Acc=0.911 Consist=0.705 Speed=2.6s/sample ETA=14.4min
+2026-05-17 13:44:19,665 [INFO] [120/449] Acc=0.917 Consist=0.708 Speed=2.5s/sample ETA=13.8min
+2026-05-17 13:44:45,980 [INFO] [128/449] Acc=0.914 Consist=0.695 Speed=2.6s/sample ETA=13.7min
+2026-05-17 13:45:19,640 [INFO] [136/449] Acc=0.919 Consist=0.684 Speed=2.7s/sample ETA=13.9min
+2026-05-17 13:45:58,510 [INFO] [144/449] Acc=0.917 Consist=0.681 Speed=2.8s/sample ETA=14.2min
+2026-05-17 13:46:17,557 [INFO] [152/449] Acc=0.914 Consist=0.671 Speed=2.8s/sample ETA=13.7min
+2026-05-17 13:46:37,804 [INFO] [160/449] Acc=0.919 Consist=0.675 Speed=2.8s/sample ETA=13.3min
+2026-05-17 13:47:00,253 [INFO] [168/449] Acc=0.923 Consist=0.685 Speed=2.8s/sample ETA=12.9min
+2026-05-17 13:47:19,578 [INFO] [176/449] Acc=0.926 Consist=0.682 Speed=2.7s/sample ETA=12.5min
+2026-05-17 13:47:38,738 [INFO] [184/449] Acc=0.924 Consist=0.685 Speed=2.7s/sample ETA=12.0min
+2026-05-17 13:48:06,644 [INFO] [192/449] Acc=0.922 Consist=0.677 Speed=2.8s/sample ETA=11.8min
+2026-05-17 13:48:28,141 [INFO] [200/449] Acc=0.920 Consist=0.675 Speed=2.8s/sample ETA=11.4min
+2026-05-17 13:48:54,149 [INFO] [208/449] Acc=0.923 Consist=0.673 Speed=2.8s/sample ETA=11.1min
+2026-05-17 13:49:14,053 [INFO] [216/449] Acc=0.926 Consist=0.676 Speed=2.8s/sample ETA=10.7min
+2026-05-17 13:49:34,178 [INFO] [224/449] Acc=0.929 Consist=0.683 Speed=2.8s/sample ETA=10.3min
+2026-05-17 13:49:51,275 [INFO] [232/449] Acc=0.931 Consist=0.690 Speed=2.7s/sample ETA=9.9min
+2026-05-17 13:50:17,021 [INFO] [240/449] Acc=0.933 Consist=0.688 Speed=2.7s/sample ETA=9.6min
+2026-05-17 13:50:33,624 [INFO] [248/449] Acc=0.935 Consist=0.694 Speed=2.7s/sample ETA=9.1min
+2026-05-17 13:50:57,653 [INFO] [256/449] Acc=0.934 Consist=0.691 Speed=2.7s/sample ETA=8.8min
+2026-05-17 13:51:19,652 [INFO] [264/449] Acc=0.932 Consist=0.689 Speed=2.7s/sample ETA=8.4min
+2026-05-17 13:51:37,976 [INFO] [272/449] Acc=0.934 Consist=0.691 Speed=2.7s/sample ETA=8.0min
+2026-05-17 13:52:10,992 [INFO] [280/449] Acc=0.936 Consist=0.679 Speed=2.8s/sample ETA=7.8min
+2026-05-17 13:52:28,343 [INFO] [288/449] Acc=0.934 Consist=0.684 Speed=2.7s/sample ETA=7.4min
+2026-05-17 13:53:03,526 [INFO] [296/449] Acc=0.936 Consist=0.679 Speed=2.8s/sample ETA=7.1min
+2026-05-17 13:53:29,562 [INFO] [304/449] Acc=0.938 Consist=0.681 Speed=2.8s/sample ETA=6.8min
+2026-05-17 13:53:53,215 [INFO] [312/449] Acc=0.936 Consist=0.676 Speed=2.8s/sample ETA=6.4min
+2026-05-17 13:54:13,767 [INFO] [320/449] Acc=0.934 Consist=0.681 Speed=2.8s/sample ETA=6.0min
+2026-05-17 13:54:35,544 [INFO] [328/449] Acc=0.936 Consist=0.674 Speed=2.8s/sample ETA=5.6min
+2026-05-17 13:54:58,807 [INFO] [336/449] Acc=0.935 Consist=0.673 Speed=2.8s/sample ETA=5.3min
+2026-05-17 13:55:21,575 [INFO] [344/449] Acc=0.936 Consist=0.669 Speed=2.8s/sample ETA=4.9min
+2026-05-17 13:55:44,777 [INFO] [352/449] Acc=0.938 Consist=0.668 Speed=2.8s/sample ETA=4.5min
+2026-05-17 13:56:06,215 [INFO] [360/449] Acc=0.939 Consist=0.667 Speed=2.8s/sample ETA=4.2min
+2026-05-17 13:56:35,787 [INFO] [368/449] Acc=0.938 Consist=0.666 Speed=2.8s/sample ETA=3.8min
+2026-05-17 13:57:06,912 [INFO] [376/449] Acc=0.936 Consist=0.660 Speed=2.8s/sample ETA=3.5min
+2026-05-17 13:57:26,941 [INFO] [384/449] Acc=0.938 Consist=0.659 Speed=2.8s/sample ETA=3.1min
+2026-05-17 13:57:54,643 [INFO] [392/449] Acc=0.939 Consist=0.658 Speed=2.9s/sample ETA=2.7min
+2026-05-17 13:58:16,011 [INFO] [400/449] Acc=0.938 Consist=0.662 Speed=2.8s/sample ETA=2.3min
+2026-05-17 13:58:32,935 [INFO] [408/449] Acc=0.939 Consist=0.662 Speed=2.8s/sample ETA=1.9min
+2026-05-17 13:58:54,816 [INFO] [416/449] Acc=0.940 Consist=0.656 Speed=2.8s/sample ETA=1.6min
+2026-05-17 13:59:16,612 [INFO] [424/449] Acc=0.941 Consist=0.658 Speed=2.8s/sample ETA=1.2min
+2026-05-17 13:59:40,911 [INFO] [432/449] Acc=0.940 Consist=0.657 Speed=2.8s/sample ETA=0.8min
+2026-05-17 14:00:00,219 [INFO] [440/449] Acc=0.941 Consist=0.661 Speed=2.8s/sample ETA=0.4min
+2026-05-17 14:00:18,129 [INFO] [448/449] Acc=0.942 Consist=0.667 Speed=2.8s/sample ETA=0.0min
+2026-05-17 14:00:29,092 [INFO] [449/449] Acc=0.942 Consist=0.668 Speed=2.8s/sample ETA=0.0min
+2026-05-17 14:00:29,095 [INFO] 
+2026-05-17 14:00:29,095 [INFO] ============================================================
+2026-05-17 14:00:29,095 [INFO] EVALUATION RESULTS
+2026-05-17 14:00:29,095 [INFO] ============================================================
+2026-05-17 14:00:29,095 [INFO] Model: Qwen/Qwen2.5-7B-Instruct
+2026-05-17 14:00:29,095 [INFO] Adapter: /path/to/paper3_judge_rl/results/EXP-006_accuracy_s3/checkpoints/checkpoint-500
+2026-05-17 14:00:29,095 [INFO] Samples: 449
+2026-05-17 14:00:29,095 [INFO] Accuracy:    0.9421
+2026-05-17 14:00:29,095 [INFO] Consistency: 0.6682
+2026-05-17 14:00:29,095 [INFO] Calibration: 0.9287 (1-Brier=0.0713)
+2026-05-17 14:00:29,095 [INFO] Parse failures (orig/swap): 0/0
+2026-05-17 14:00:29,095 [INFO] Instances with confidence: 0/449
+2026-05-17 14:00:29,095 [INFO] 
+2026-05-17 14:00:29,095 [INFO] Per-category:
+2026-05-17 14:00:29,095 [INFO]   alpacaeval-easy                acc=1.000 consist=0.923 n=13
+2026-05-17 14:00:29,095 [INFO]   alpacaeval-hard                acc=1.000 consist=1.000 n=15
+2026-05-17 14:00:29,095 [INFO]   alpacaeval-length              acc=1.000 consist=0.545 n=22
+2026-05-17 14:00:29,095 [INFO]   donotanswer                    acc=0.944 consist=0.278 n=18
+2026-05-17 14:00:29,095 [INFO]   hep-cpp                        acc=1.000 consist=0.688 n=16
+2026-05-17 14:00:29,095 [INFO]   hep-go                         acc=1.000 consist=0.520 n=25
+2026-05-17 14:00:29,095 [INFO]   hep-java                       acc=1.000 consist=0.591 n=22
+2026-05-17 14:00:29,095 [INFO]   hep-js                         acc=0.917 consist=0.833 n=24
+2026-05-17 14:00:29,095 [INFO]   hep-python                     acc=0.947 consist=0.684 n=19
+2026-05-17 14:00:29,095 [INFO]   hep-rust                       acc=0.966 consist=0.724 n=29
+2026-05-17 14:00:29,095 [INFO]   llmbar-adver-GPTInst           acc=0.706 consist=0.529 n=17
+2026-05-17 14:00:29,095 [INFO]   llmbar-adver-GPTOut            acc=1.000 consist=0.600 n=5
+2026-05-17 14:00:29,095 [INFO]   llmbar-adver-manual            acc=0.500 consist=0.750 n=4
+2026-05-17 14:00:29,095 [INFO]   llmbar-adver-neighbor          acc=0.706 consist=0.706 n=17
+2026-05-17 14:00:29,095 [INFO]   llmbar-natural                 acc=0.950 consist=0.850 n=20
+2026-05-17 14:00:29,095 [INFO]   math-prm                       acc=0.971 consist=0.290 n=69
+2026-05-17 14:00:29,096 [INFO]   mt-bench-easy                  acc=1.000 consist=1.000 n=5
+2026-05-17 14:00:29,096 [INFO]   mt-bench-hard                  acc=1.000 consist=0.500 n=6
+2026-05-17 14:00:29,096 [INFO]   mt-bench-med                   acc=1.000 consist=0.833 n=6
+2026-05-17 14:00:29,096 [INFO]   refusals-dangerous             acc=1.000 consist=0.895 n=19
+2026-05-17 14:00:29,096 [INFO]   refusals-offensive             acc=1.000 consist=0.952 n=21
+2026-05-17 14:00:29,096 [INFO]   xstest-should-refuse           acc=1.000 consist=1.000 n=20
+2026-05-17 14:00:29,096 [INFO]   xstest-should-respond          acc=0.838 consist=0.838 n=37
+2026-05-17 14:00:29,096 [INFO] ============================================================
+2026-05-17 14:00:29,096 [INFO] Results saved to /path/to/paper3_judge_rl/results/EXP-006_accuracy_s3/eval

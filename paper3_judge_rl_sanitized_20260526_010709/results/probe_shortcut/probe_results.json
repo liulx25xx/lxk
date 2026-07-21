@@ -1,0 +1,18 @@
+{
+  "model_name": "Shortcut_GRPO_unbal",
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": "results/EXP-009_full_composite/final_model",
+  "layer": -1,
+  "n_samples": 200,
+  "hidden_dim": 3584,
+  "position_probe_accuracy": 0.575,
+  "position_probe_std": 0.05477225575051661,
+  "position_probe_cv_scores": [
+    0.6,
+    0.6,
+    0.525,
+    0.5,
+    0.65
+  ],
+  "interpretation": "High accuracy (>80%) = model's hidden states encode positional information, confirming the shortcut operates at the representation level. Near-chance (50-55%) = position not encoded in hidden states."
+}

@@ -1,0 +1,19 @@
+{
+  "model_name": "mistralai/Mistral-7B-Instruct-v0.3",
+  "reward_mode": "accuracy",
+  "alpha": 1.0,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lr": 5e-06,
+  "max_steps": 200,
+  "group_size": 8,
+  "batch_size": 4,
+  "lora_rank": 64,
+  "output_dir": "/path/to/paper3_judge_rl/results/GRPO_mistral7b_unbal_s3",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "swap_data": "/path/to/paper3_judge_rl/data/train/judge_swap.json",
+  "seed": 456,
+  "start_time": "2026-05-22T23:48:38.469511",
+  "gpu": "NVIDIA H200",
+  "end_time": "2026-05-23T01:01:36.377124"
+}

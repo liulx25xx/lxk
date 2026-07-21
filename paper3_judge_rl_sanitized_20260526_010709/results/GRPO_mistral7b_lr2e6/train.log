@@ -1,0 +1,9 @@
+usage: train_judge_grpo.py [-h] [--model_name MODEL_NAME]
+                           [--reward_mode {accuracy,acc_consist,acc_calib,full}]
+                           [--alpha ALPHA] [--beta BETA] [--gamma GAMMA]
+                           [--lr LR] [--max_steps MAX_STEPS]
+                           [--group_size GROUP_SIZE] [--batch_size BATCH_SIZE]
+                           [--lora_rank LORA_RANK] --output_dir OUTPUT_DIR
+                           [--train_data TRAIN_DATA] [--swap_data SWAP_DATA]
+                           [--seed SEED]
+train_judge_grpo.py: error: unrecognized arguments: --learning_rate 2e-6

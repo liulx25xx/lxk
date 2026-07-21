@@ -1,0 +1,12 @@
+{
+  "variant": "numeric",
+  "variant_desc": "Response 1/2 instead of A/B",
+  "n_samples": 449,
+  "accuracy": 0.9465478841870824,
+  "consistency": 0.6080178173719376,
+  "a_selection_rate": 0.9465478841870824,
+  "parse_failures": 0,
+  "fallback_to_ab": 0,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter": "results/EXP-009_full_composite/final_model"
+}

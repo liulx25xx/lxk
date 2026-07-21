@@ -1,0 +1,18 @@
+{
+  "model_name": "Baseline",
+  "model_path": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": null,
+  "layer": -1,
+  "n_samples": 200,
+  "hidden_dim": 3584,
+  "position_probe_accuracy": 0.5549999999999999,
+  "position_probe_std": 0.05099019513592784,
+  "position_probe_cv_scores": [
+    0.575,
+    0.575,
+    0.525,
+    0.475,
+    0.625
+  ],
+  "interpretation": "High accuracy (>80%) = model's hidden states encode positional information, confirming the shortcut operates at the representation level. Near-chance (50-55%) = position not encoded in hidden states."
+}

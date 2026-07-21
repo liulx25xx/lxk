@@ -1,0 +1,80 @@
+{
+  "analysis": "Post-hoc swap average analysis",
+  "description": "Computes post-hoc position debiasing by averaging original and swapped predictions",
+  "method": "For each pair: if original prediction flips correctly when inputs are swapped (consistent), use that prediction. If inconsistent, either abstain or random fallback.",
+  "results": [
+    {
+      "name": "Baseline (Qwen2.5-7B-Instruct)",
+      "total": 449,
+      "overall_accuracy": 80.2,
+      "consistent_pairs": 366,
+      "inconsistent_pairs": 83,
+      "coverage": 81.5,
+      "consistency_rate": 81.5,
+      "posthoc_accuracy_consistent_only": 84.2,
+      "posthoc_accuracy_with_random_fallback": 77.5,
+      "inconsistent_orig_correct": 52
+    },
+    {
+      "name": "SFT Unbalanced",
+      "total": 449,
+      "overall_accuracy": 100.0,
+      "consistent_pairs": 0,
+      "inconsistent_pairs": 449,
+      "coverage": 0.0,
+      "consistency_rate": 0.0,
+      "posthoc_accuracy_consistent_only": 0,
+      "posthoc_accuracy_with_random_fallback": 53.2,
+      "inconsistent_orig_correct": 449
+    },
+    {
+      "name": "SFT Balanced",
+      "total": 449,
+      "overall_accuracy": 91.3,
+      "consistent_pairs": 391,
+      "inconsistent_pairs": 58,
+      "coverage": 87.1,
+      "consistency_rate": 87.1,
+      "posthoc_accuracy_consistent_only": 96.2,
+      "posthoc_accuracy_with_random_fallback": 90.4,
+      "inconsistent_orig_correct": 34
+    },
+    {
+      "name": "GRPO Accuracy-Only (Unbalanced)",
+      "total": 449,
+      "overall_accuracy": 94.4,
+      "consistent_pairs": 273,
+      "inconsistent_pairs": 176,
+      "coverage": 60.8,
+      "consistency_rate": 60.8,
+      "posthoc_accuracy_consistent_only": 92.3,
+      "posthoc_accuracy_with_random_fallback": 78.4,
+      "inconsistent_orig_correct": 172
+    },
+    {
+      "name": "GRPO Full Composite (Unbalanced)",
+      "total": 449,
+      "overall_accuracy": 94.0,
+      "consistent_pairs": 277,
+      "inconsistent_pairs": 172,
+      "coverage": 61.7,
+      "consistency_rate": 61.7,
+      "posthoc_accuracy_consistent_only": 91.7,
+      "posthoc_accuracy_with_random_fallback": 77.7,
+      "inconsistent_orig_correct": 168
+    },
+    {
+      "name": "GRPO Full Balanced",
+      "total": 449,
+      "overall_accuracy": 84.6,
+      "consistent_pairs": 383,
+      "inconsistent_pairs": 66,
+      "coverage": 85.3,
+      "consistency_rate": 85.3,
+      "posthoc_accuracy_consistent_only": 89.3,
+      "posthoc_accuracy_with_random_fallback": 84.6,
+      "inconsistent_orig_correct": 38
+    }
+  ],
+  "key_finding": "Post-hoc swap only works on consistent subset, losing coverage. Training-time balanced data fix achieves higher accuracy on full test set."
+}

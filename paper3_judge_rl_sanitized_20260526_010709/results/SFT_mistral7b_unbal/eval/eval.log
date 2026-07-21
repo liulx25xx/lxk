@@ -1,0 +1,124 @@
+2026-05-18 22:13:41,942 [INFO] ============================================================
+2026-05-18 22:13:41,944 [INFO] Judge Model Evaluation
+2026-05-18 22:13:41,944 [INFO] ============================================================
+2026-05-18 22:13:41,944 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-18 22:13:41,944 [INFO] Adapter: /path/to/paper3_judge_rl/results/SFT_mistral7b_unbal/checkpoints/checkpoint-500
+2026-05-18 22:13:41,944 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-18 22:13:41,944 [INFO] Batch size: 8
+2026-05-18 22:13:41,944 [INFO] Output: /path/to/paper3_judge_rl/results/SFT_mistral7b_unbal/eval
+2026-05-18 22:13:41,947 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-18 22:13:41,977 [INFO] Test samples: 449
+2026-05-18 22:13:41,977 [INFO] Loading model...
+2026-05-18 22:13:42,072 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 22:13:42,081 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 22:13:42,147 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 22:13:42,155 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 22:13:42,200 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 22:13:42,210 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-18 22:13:42,252 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-18 22:13:42,296 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-18 22:13:42,523 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 22:13:42,531 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 22:13:42,573 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 22:13:42,584 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-18 22:14:25,982 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-18 22:14:25,989 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/generation_config.json "HTTP/1.1 200 OK"
+2026-05-18 22:14:26,030 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-18 22:14:26,033 [INFO] Loading LoRA adapter from /path/to/paper3_judge_rl/results/SFT_mistral7b_unbal/checkpoints/checkpoint-500
+2026-05-18 22:14:28,070 [INFO] Model loaded in 46.1s
+2026-05-18 22:14:31,364 [INFO] [8/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=3.0min
+2026-05-18 22:14:35,156 [INFO] [16/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=3.2min
+2026-05-18 22:14:37,877 [INFO] [24/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.9min
+2026-05-18 22:14:40,577 [INFO] [32/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.7min
+2026-05-18 22:14:43,398 [INFO] [40/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.6min
+2026-05-18 22:14:46,087 [INFO] [48/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.5min
+2026-05-18 22:14:49,134 [INFO] [56/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.5min
+2026-05-18 22:14:51,938 [INFO] [64/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.4min
+2026-05-18 22:14:54,569 [INFO] [72/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.3min
+2026-05-18 22:14:57,443 [INFO] [80/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.3min
+2026-05-18 22:15:00,136 [INFO] [88/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.2min
+2026-05-18 22:15:02,922 [INFO] [96/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.1min
+2026-05-18 22:15:05,669 [INFO] [104/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.1min
+2026-05-18 22:15:08,320 [INFO] [112/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.0min
+2026-05-18 22:15:11,072 [INFO] [120/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.0min
+2026-05-18 22:15:14,293 [INFO] [128/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.9min
+2026-05-18 22:15:17,468 [INFO] [136/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.9min
+2026-05-18 22:15:23,358 [INFO] [144/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=2.0min
+2026-05-18 22:15:26,084 [INFO] [152/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.9min
+2026-05-18 22:15:28,880 [INFO] [160/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.8min
+2026-05-18 22:15:31,760 [INFO] [168/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.8min
+2026-05-18 22:15:34,578 [INFO] [176/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.7min
+2026-05-18 22:15:37,414 [INFO] [184/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.7min
+2026-05-18 22:15:40,372 [INFO] [192/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.6min
+2026-05-18 22:15:43,045 [INFO] [200/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.6min
+2026-05-18 22:15:45,742 [INFO] [208/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.5min
+2026-05-18 22:15:48,414 [INFO] [216/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.4min
+2026-05-18 22:15:51,125 [INFO] [224/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.4min
+2026-05-18 22:15:53,936 [INFO] [232/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.3min
+2026-05-18 22:15:56,700 [INFO] [240/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.3min
+2026-05-18 22:15:59,346 [INFO] [248/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.2min
+2026-05-18 22:16:02,095 [INFO] [256/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.2min
+2026-05-18 22:16:04,859 [INFO] [264/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.1min
+2026-05-18 22:16:07,510 [INFO] [272/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.1min
+2026-05-18 22:16:10,561 [INFO] [280/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.0min
+2026-05-18 22:16:13,298 [INFO] [288/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=1.0min
+2026-05-18 22:16:16,233 [INFO] [296/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.9min
+2026-05-18 22:16:19,403 [INFO] [304/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.9min
+2026-05-18 22:16:22,356 [INFO] [312/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.8min
+2026-05-18 22:16:25,193 [INFO] [320/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.8min
+2026-05-18 22:16:28,142 [INFO] [328/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.7min
+2026-05-18 22:16:30,897 [INFO] [336/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.7min
+2026-05-18 22:16:33,590 [INFO] [344/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.6min
+2026-05-18 22:16:36,597 [INFO] [352/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.6min
+2026-05-18 22:16:39,447 [INFO] [360/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.5min
+2026-05-18 22:16:42,618 [INFO] [368/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.5min
+2026-05-18 22:16:46,060 [INFO] [376/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.4min
+2026-05-18 22:16:48,599 [INFO] [384/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.4min
+2026-05-18 22:16:51,446 [INFO] [392/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.3min
+2026-05-18 22:16:54,029 [INFO] [400/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.3min
+2026-05-18 22:16:56,739 [INFO] [408/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.2min
+2026-05-18 22:16:59,380 [INFO] [416/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.2min
+2026-05-18 22:17:02,196 [INFO] [424/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.2min
+2026-05-18 22:17:04,944 [INFO] [432/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.1min
+2026-05-18 22:17:07,733 [INFO] [440/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.1min
+2026-05-18 22:17:10,475 [INFO] [448/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.0min
+2026-05-18 22:17:12,461 [INFO] [449/449] Acc=1.000 Consist=0.000 Speed=0.4s/sample ETA=0.0min
+2026-05-18 22:17:12,464 [INFO] 
+2026-05-18 22:17:12,464 [INFO] ============================================================
+2026-05-18 22:17:12,465 [INFO] EVALUATION RESULTS
+2026-05-18 22:17:12,465 [INFO] ============================================================
+2026-05-18 22:17:12,465 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-18 22:17:12,465 [INFO] Adapter: /path/to/paper3_judge_rl/results/SFT_mistral7b_unbal/checkpoints/checkpoint-500
+2026-05-18 22:17:12,465 [INFO] Samples: 449
+2026-05-18 22:17:12,465 [INFO] Accuracy:    1.0000
+2026-05-18 22:17:12,465 [INFO] Consistency: 0.0000
+2026-05-18 22:17:12,465 [INFO] Calibration: 0.9600 (1-Brier=0.0400)
+2026-05-18 22:17:12,465 [INFO] Parse failures (orig/swap): 0/0
+2026-05-18 22:17:12,465 [INFO] Instances with confidence: 0/449
+2026-05-18 22:17:12,465 [INFO] 
+2026-05-18 22:17:12,465 [INFO] Per-category:
+2026-05-18 22:17:12,465 [INFO]   alpacaeval-easy                acc=1.000 consist=0.000 n=13
+2026-05-18 22:17:12,465 [INFO]   alpacaeval-hard                acc=1.000 consist=0.000 n=15
+2026-05-18 22:17:12,465 [INFO]   alpacaeval-length              acc=1.000 consist=0.000 n=22
+2026-05-18 22:17:12,465 [INFO]   donotanswer                    acc=1.000 consist=0.000 n=18
+2026-05-18 22:17:12,465 [INFO]   hep-cpp                        acc=1.000 consist=0.000 n=16
+2026-05-18 22:17:12,465 [INFO]   hep-go                         acc=1.000 consist=0.000 n=25
+2026-05-18 22:17:12,465 [INFO]   hep-java                       acc=1.000 consist=0.000 n=22
+2026-05-18 22:17:12,465 [INFO]   hep-js                         acc=1.000 consist=0.000 n=24
+2026-05-18 22:17:12,465 [INFO]   hep-python                     acc=1.000 consist=0.000 n=19
+2026-05-18 22:17:12,465 [INFO]   hep-rust                       acc=1.000 consist=0.000 n=29
+2026-05-18 22:17:12,465 [INFO]   llmbar-adver-GPTInst           acc=1.000 consist=0.000 n=17
+2026-05-18 22:17:12,465 [INFO]   llmbar-adver-GPTOut            acc=1.000 consist=0.000 n=5
+2026-05-18 22:17:12,465 [INFO]   llmbar-adver-manual            acc=1.000 consist=0.000 n=4
+2026-05-18 22:17:12,465 [INFO]   llmbar-adver-neighbor          acc=1.000 consist=0.000 n=17
+2026-05-18 22:17:12,465 [INFO]   llmbar-natural                 acc=1.000 consist=0.000 n=20
+2026-05-18 22:17:12,465 [INFO]   math-prm                       acc=1.000 consist=0.000 n=69
+2026-05-18 22:17:12,465 [INFO]   mt-bench-easy                  acc=1.000 consist=0.000 n=5
+2026-05-18 22:17:12,465 [INFO]   mt-bench-hard                  acc=1.000 consist=0.000 n=6
+2026-05-18 22:17:12,465 [INFO]   mt-bench-med                   acc=1.000 consist=0.000 n=6
+2026-05-18 22:17:12,465 [INFO]   refusals-dangerous             acc=1.000 consist=0.000 n=19
+2026-05-18 22:17:12,465 [INFO]   refusals-offensive             acc=1.000 consist=0.000 n=21
+2026-05-18 22:17:12,465 [INFO]   xstest-should-refuse           acc=1.000 consist=0.000 n=20
+2026-05-18 22:17:12,465 [INFO]   xstest-should-respond          acc=1.000 consist=0.000 n=37
+2026-05-18 22:17:12,465 [INFO] ============================================================
+2026-05-18 22:17:12,465 [INFO] Results saved to /path/to/paper3_judge_rl/results/SFT_mistral7b_unbal/eval

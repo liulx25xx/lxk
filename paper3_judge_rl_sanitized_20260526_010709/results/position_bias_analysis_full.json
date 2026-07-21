@@ -1,0 +1,155 @@
+{
+  "finding": "RL accuracy gain is primarily position shortcut exploitation",
+  "mechanism": "Training data gold=A 100% \u2192 RL learns \"always output A\" \u2192 high acc but position-biased",
+  "evidence": {
+    "gold_distribution": "Test: A=449/449 (100%); Train: A=2089/2089 (100%)",
+    "correlation_acc_vs_consistency": -0.5971784252944821,
+    "correlation_acc_vs_predA_rate": 1.0,
+    "correlation_predA_vs_consistency": -0.5971784252944821,
+    "baseline_predA_rate": 80.17817371937639,
+    "rl_mean_predA_rate": 94.89606533036378
+  },
+  "implications": [
+    "Need balanced gold distribution (include swap pairs in training)",
+    "Or need reward that explicitly penalizes position bias",
+    "Post-hoc swap correction should work since accuracy gain is real for some samples"
+  ],
+  "models": [
+    {
+      "name": "EXP-006_accuracy_only",
+      "accuracy": 94.43207126948775,
+      "consistency": 60.801781737193764,
+      "pred_A_rate": 94.43207126948775,
+      "swap_A_rate": 40.31180400890869,
+      "n": 449
+    },
+    {
+      "name": "EXP-006_accuracy_s2",
+      "accuracy": 95.54565701559021,
+      "consistency": 51.67037861915368,
+      "pred_A_rate": 95.54565701559021,
+      "swap_A_rate": 48.55233853006681,
+      "n": 449
+    },
+    {
+      "name": "EXP-006_accuracy_s3",
+      "accuracy": 92.87305122494432,
+      "consistency": 68.59688195991092,
+      "pred_A_rate": 92.87305122494432,
+      "swap_A_rate": 34.521158129175944,
+      "n": 449
+    },
+    {
+      "name": "EXP-007a_acc_decisive",
+      "accuracy": 94.65478841870824,
+      "consistency": 61.69265033407573,
+      "pred_A_rate": 94.65478841870824,
+      "swap_A_rate": 40.31180400890869,
+      "n": 449
+    },
+    {
+      "name": "EXP-007a_acc_decisive_s2",
+      "accuracy": 93.0957683741648,
+      "consistency": 70.8240534521158,
+      "pred_A_rate": 93.0957683741648,
+      "swap_A_rate": 32.071269487750556,
+      "n": 449
+    },
+    {
+      "name": "EXP-008_acc_calib",
+      "accuracy": 95.10022271714922,
+      "consistency": 61.69265033407573,
+      "pred_A_rate": 95.10022271714922,
+      "swap_A_rate": 38.084632516703785,
+      "n": 449
+    },
+    {
+      "name": "EXP-008_acc_calib_s2",
+      "accuracy": 95.54565701559021,
+      "consistency": 51.67037861915368,
+      "pred_A_rate": 95.54565701559021,
+      "swap_A_rate": 47.88418708240535,
+      "n": 449
+    },
+    {
+      "name": "EXP-009_full_composite",
+      "accuracy": 93.98663697104676,
+      "consistency": 61.69265033407573,
+      "pred_A_rate": 93.98663697104676,
+      "swap_A_rate": 40.75723830734967,
+      "n": 449
+    },
+    {
+      "name": "EXP-009_full_composite_s2",
+      "accuracy": 95.99109131403118,
+      "consistency": 45.43429844097995,
+      "pred_A_rate": 95.99109131403118,
+      "swap_A_rate": 53.89755011135857,
+      "n": 449
+    },
+    {
+      "name": "EXP-009_full_composite_s3",
+      "accuracy": 93.98663697104676,
+      "consistency": 63.91982182628062,
+      "pred_A_rate": 93.98663697104676,
+      "swap_A_rate": 38.30734966592428,
+      "n": 449
+    },
+    {
+      "name": "EXP-009_full_lr1e5",
+      "accuracy": 98.88641425389754,
+      "consistency": 38.084632516703785,
+      "pred_A_rate": 98.88641425389754,
+      "swap_A_rate": 62.1380846325167,
+      "n": 449
+    },
+    {
+      "name": "EXP-009_full_lr1e6",
+      "accuracy": 82.18262806236079,
+      "consistency": 79.28730512249443,
+      "pred_A_rate": 82.18262806236079,
+      "swap_A_rate": 19.599109131403118,
+      "n": 449
+    },
+    {
+      "name": "EXP-009_full_s4",
+      "accuracy": 94.65478841870824,
+      "consistency": 64.14253897550111,
+      "pred_A_rate": 94.65478841870824,
+      "swap_A_rate": 37.639198218262806,
+      "n": 449
+    },
+    {
+      "name": "baseline_qwen3_8b",
+      "accuracy": 36.080178173719375,
+      "consistency": 78.39643652561247,
+      "pred_A_rate": 36.080178173719375,
+      "swap_A_rate": 2.2271714922048997,
+      "n": 449
+    },
+    {
+      "name": "baseline_qwen7b",
+      "accuracy": 80.17817371937639,
+      "consistency": 81.51447661469933,
+      "pred_A_rate": 80.17817371937639,
+      "swap_A_rate": 18.485523385300667,
+      "n": 449
+    },
+    {
+      "name": "baseline_qwen7b_244",
+      "accuracy": 79.9554565701559,
+      "consistency": 81.29175946547885,
+      "pred_A_rate": 79.9554565701559,
+      "swap_A_rate": 18.262806236080177,
+      "n": 449
+    },
+    {
+      "name": "pilot",
+      "accuracy": 81.51447661469933,
+      "consistency": 81.51447661469933,
+      "pred_A_rate": 81.51447661469933,
+      "swap_A_rate": 18.93095768374165,
+      "n": 449
+    }
+  ]
+}

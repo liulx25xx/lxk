@@ -1,0 +1,172 @@
+[
+  {
+    "model": "EXP-006_accuracy_only",
+    "orig_accuracy": 94.43207126948775,
+    "consistency": 60.801781737193764,
+    "consistent_accuracy": 92.3076923076923,
+    "consistent_n": 273,
+    "corrected_accuracy_use_orig": 94.43207126948775,
+    "corrected_accuracy_random": 75.7238307349666,
+    "corrected_accuracy_use_swap": 56.792873051224944
+  },
+  {
+    "model": "EXP-006_accuracy_s2",
+    "orig_accuracy": 95.54565701559021,
+    "consistency": 51.67037861915368,
+    "consistent_accuracy": 93.10344827586206,
+    "consistent_n": 232,
+    "corrected_accuracy_use_orig": 95.54565701559021,
+    "corrected_accuracy_random": 72.271714922049,
+    "corrected_accuracy_use_swap": 48.775055679287306
+  },
+  {
+    "model": "EXP-006_accuracy_s3",
+    "orig_accuracy": 92.87305122494432,
+    "consistency": 68.59688195991092,
+    "consistent_accuracy": 90.25974025974025,
+    "consistent_n": 308,
+    "corrected_accuracy_use_orig": 92.87305122494432,
+    "corrected_accuracy_random": 77.61692650334075,
+    "corrected_accuracy_use_swap": 62.360801781737194
+  },
+  {
+    "model": "EXP-007a_acc_decisive",
+    "orig_accuracy": 94.65478841870824,
+    "consistency": 61.69265033407573,
+    "consistent_accuracy": 92.05776173285199,
+    "consistent_n": 277,
+    "corrected_accuracy_use_orig": 94.65478841870824,
+    "corrected_accuracy_random": 75.94654788418708,
+    "corrected_accuracy_use_swap": 57.23830734966593
+  },
+  {
+    "model": "EXP-007a_acc_decisive_s2",
+    "orig_accuracy": 93.0957683741648,
+    "consistency": 70.8240534521158,
+    "consistent_accuracy": 90.88050314465409,
+    "consistent_n": 318,
+    "corrected_accuracy_use_orig": 93.0957683741648,
+    "corrected_accuracy_random": 78.9532293986637,
+    "corrected_accuracy_use_swap": 64.81069042316258
+  },
+  {
+    "model": "EXP-008_acc_calib",
+    "orig_accuracy": 95.10022271714922,
+    "consistency": 61.69265033407573,
+    "consistent_accuracy": 93.50180505415162,
+    "consistent_n": 277,
+    "corrected_accuracy_use_orig": 95.10022271714922,
+    "corrected_accuracy_random": 76.83741648106904,
+    "corrected_accuracy_use_swap": 58.35189309576837
+  },
+  {
+    "model": "EXP-008_acc_calib_s2",
+    "orig_accuracy": 95.54565701559021,
+    "consistency": 51.67037861915368,
+    "consistent_accuracy": 93.10344827586206,
+    "consistent_n": 232,
+    "corrected_accuracy_use_orig": 95.54565701559021,
+    "corrected_accuracy_random": 72.271714922049,
+    "corrected_accuracy_use_swap": 48.775055679287306
+  },
+  {
+    "model": "EXP-009_full_composite",
+    "orig_accuracy": 93.98663697104676,
+    "consistency": 61.69265033407573,
+    "consistent_accuracy": 91.69675090252709,
+    "consistent_n": 277,
+    "corrected_accuracy_use_orig": 93.98663697104676,
+    "corrected_accuracy_random": 75.7238307349666,
+    "corrected_accuracy_use_swap": 57.23830734966593
+  },
+  {
+    "model": "EXP-009_full_composite_s2",
+    "orig_accuracy": 95.99109131403118,
+    "consistency": 45.43429844097995,
+    "consistent_accuracy": 92.64705882352942,
+    "consistent_n": 204,
+    "corrected_accuracy_use_orig": 95.99109131403118,
+    "corrected_accuracy_random": 69.37639198218262,
+    "corrected_accuracy_use_swap": 42.53897550111358
+  },
+  {
+    "model": "EXP-009_full_composite_s3",
+    "orig_accuracy": 93.98663697104676,
+    "consistency": 63.91982182628062,
+    "consistent_accuracy": 91.63763066202091,
+    "consistent_n": 287,
+    "corrected_accuracy_use_orig": 93.98663697104676,
+    "corrected_accuracy_random": 76.61469933184856,
+    "corrected_accuracy_use_swap": 59.24276169265033
+  },
+  {
+    "model": "EXP-009_full_lr1e5",
+    "orig_accuracy": 98.88641425389754,
+    "consistency": 38.084632516703785,
+    "consistent_accuracy": 97.07602339181285,
+    "consistent_n": 171,
+    "corrected_accuracy_use_orig": 98.88641425389754,
+    "corrected_accuracy_random": 67.92873051224944,
+    "corrected_accuracy_use_swap": 36.97104677060133
+  },
+  {
+    "model": "EXP-009_full_lr1e6",
+    "orig_accuracy": 82.18262806236079,
+    "consistency": 79.28730512249443,
+    "consistent_accuracy": 86.51685393258427,
+    "consistent_n": 356,
+    "corrected_accuracy_use_orig": 82.18262806236079,
+    "corrected_accuracy_random": 78.9532293986637,
+    "corrected_accuracy_use_swap": 75.05567928730513
+  },
+  {
+    "model": "EXP-009_full_s4",
+    "orig_accuracy": 94.65478841870824,
+    "consistency": 64.14253897550111,
+    "consistent_accuracy": 93.05555555555556,
+    "consistent_n": 288,
+    "corrected_accuracy_use_orig": 94.65478841870824,
+    "corrected_accuracy_random": 77.61692650334075,
+    "corrected_accuracy_use_swap": 60.35634743875279
+  },
+  {
+    "model": "baseline_qwen3_8b",
+    "orig_accuracy": 36.080178173719375,
+    "consistency": 78.39643652561247,
+    "consistent_accuracy": 32.10227272727273,
+    "consistent_n": 352,
+    "corrected_accuracy_use_orig": 36.080178173719375,
+    "corrected_accuracy_random": 35.96881959910913,
+    "corrected_accuracy_use_swap": 33.630289532293986
+  },
+  {
+    "model": "baseline_qwen7b",
+    "orig_accuracy": 80.17817371937639,
+    "consistency": 81.51447661469933,
+    "consistent_accuracy": 84.15300546448088,
+    "consistent_n": 366,
+    "corrected_accuracy_use_orig": 80.17817371937639,
+    "corrected_accuracy_random": 77.83964365256125,
+    "corrected_accuracy_use_swap": 75.27839643652561
+  },
+  {
+    "model": "baseline_qwen7b_244",
+    "orig_accuracy": 79.9554565701559,
+    "consistency": 81.29175946547885,
+    "consistent_accuracy": 84.93150684931507,
+    "consistent_n": 365,
+    "corrected_accuracy_use_orig": 79.9554565701559,
+    "corrected_accuracy_random": 78.39643652561247,
+    "corrected_accuracy_use_swap": 75.94654788418708
+  },
+  {
+    "model": "pilot",
+    "orig_accuracy": 81.51447661469933,
+    "consistency": 81.51447661469933,
+    "consistent_accuracy": 86.0655737704918,
+    "consistent_n": 366,
+    "corrected_accuracy_use_orig": 81.51447661469933,
+    "corrected_accuracy_random": 79.39866369710468,
+    "corrected_accuracy_use_swap": 76.61469933184856
+  }
+]

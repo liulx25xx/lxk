@@ -1,0 +1,17 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "output_dir": "/path/to/paper3_judge_rl/results/DPO_unbalanced",
+  "lr": 5e-06,
+  "max_steps": 500,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "lora_rank": 64,
+  "beta": 0.1,
+  "max_length": 2048,
+  "seed": 42,
+  "start_time": "2026-05-17T16:47:15.385586",
+  "gpu": "NVIDIA H200",
+  "trainer_type": "DPO",
+  "end_time": "2026-05-17T17:31:13.141527"
+}

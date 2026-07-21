@@ -1,0 +1,50 @@
+2026-05-23 22:21:22,941 [INFO] ============================================================
+2026-05-23 22:21:22,942 [INFO] Judge Model Evaluation
+2026-05-23 22:21:22,943 [INFO] ============================================================
+2026-05-23 22:21:22,943 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-23 22:21:22,943 [INFO] Adapter: results/GRPO_mistral7b_balanced/final_model
+2026-05-23 22:21:22,943 [INFO] Test data: data/eval/rewardbench_test.json
+2026-05-23 22:21:22,943 [INFO] Batch size: 4
+2026-05-23 22:21:22,943 [INFO] Output: results/GRPO_mistral7b_balanced/eval_unbal_test
+2026-05-23 22:21:22,970 [INFO] Test samples: 449
+2026-05-23 22:21:22,970 [INFO] Loading model...
+2026-05-23 22:21:23,054 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 22:21:23,062 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 22:21:23,122 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 22:21:23,129 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 22:21:23,172 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 22:21:23,179 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 22:21:23,211 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-23 22:21:23,247 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-23 22:21:23,447 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 22:21:23,456 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 22:21:23,504 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 22:21:23,512 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 22:23:06,517 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 22:23:06,525 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/generation_config.json "HTTP/1.1 200 OK"
+2026-05-23 22:23:06,574 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-23 22:23:06,576 [INFO] Loading LoRA adapter from results/GRPO_mistral7b_balanced/final_model
+2026-05-23 22:23:11,626 [INFO] Model loaded in 108.7s
+2026-05-23 22:23:21,789 [INFO] [4/449] Acc=0.750 Consist=0.250 Speed=2.5s/sample ETA=18.8min
+2026-05-23 22:23:27,878 [INFO] [8/449] Acc=0.875 Consist=0.125 Speed=2.0s/sample ETA=14.9min
+2026-05-23 22:23:36,987 [INFO] [12/449] Acc=0.917 Consist=0.083 Speed=2.1s/sample ETA=15.4min
+2026-05-23 22:23:46,269 [INFO] [16/449] Acc=0.750 Consist=0.062 Speed=2.2s/sample ETA=15.6min
+2026-05-23 22:23:53,595 [INFO] [20/449] Acc=0.750 Consist=0.050 Speed=2.1s/sample ETA=15.0min
+2026-05-23 22:24:02,809 [INFO] [24/449] Acc=0.750 Consist=0.042 Speed=2.1s/sample ETA=15.1min
+2026-05-23 22:24:09,218 [INFO] [28/449] Acc=0.750 Consist=0.036 Speed=2.1s/sample ETA=14.4min
+2026-05-23 22:24:19,362 [INFO] [32/449] Acc=0.781 Consist=0.062 Speed=2.1s/sample ETA=14.7min
+2026-05-23 22:24:28,465 [INFO] [36/449] Acc=0.778 Consist=0.056 Speed=2.1s/sample ETA=14.7min
+2026-05-23 22:24:41,236 [INFO] [40/449] Acc=0.775 Consist=0.075 Speed=2.2s/sample ETA=15.3min
+2026-05-23 22:24:49,440 [INFO] [44/449] Acc=0.773 Consist=0.091 Speed=2.2s/sample ETA=15.0min
+2026-05-23 22:24:59,799 [INFO] [48/449] Acc=0.792 Consist=0.083 Speed=2.3s/sample ETA=15.1min
+2026-05-23 22:25:08,965 [INFO] [52/449] Acc=0.808 Consist=0.077 Speed=2.3s/sample ETA=14.9min
+2026-05-23 22:25:18,780 [INFO] [56/449] Acc=0.804 Consist=0.071 Speed=2.3s/sample ETA=14.9min
+2026-05-23 22:25:23,869 [INFO] [60/449] Acc=0.800 Consist=0.067 Speed=2.2s/sample ETA=14.3min
+2026-05-23 22:25:30,638 [INFO] [64/449] Acc=0.797 Consist=0.062 Speed=2.2s/sample ETA=13.9min
+2026-05-23 22:25:38,740 [INFO] [68/449] Acc=0.794 Consist=0.059 Speed=2.2s/sample ETA=13.7min
+2026-05-23 22:25:49,472 [INFO] [72/449] Acc=0.806 Consist=0.069 Speed=2.2s/sample ETA=13.8min
+2026-05-23 22:25:57,454 [INFO] [76/449] Acc=0.816 Consist=0.066 Speed=2.2s/sample ETA=13.6min
+2026-05-23 22:26:05,635 [INFO] [80/449] Acc=0.800 Consist=0.062 Speed=2.2s/sample ETA=13.4min
+2026-05-23 22:26:13,548 [INFO] [84/449] Acc=0.798 Consist=0.060 Speed=2.2s/sample ETA=13.2min
+2026-05-23 22:26:21,196 [INFO] [88/449] Acc=0.807 Consist=0.057 Speed=2.2s/sample ETA=13.0min
+2026-05-23 22:26:29,921 [INFO] [92/449] Acc=0.804 Consist=0.054 Speed=2.2s/sample ETA=12.8min

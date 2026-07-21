@@ -1,0 +1,16 @@
+{
+  "model_name": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "output_dir": "/path/to/paper3_judge_rl/results/SFT_coder7b_unbalanced",
+  "lr": 5e-05,
+  "max_steps": 200,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "lora_rank": 64,
+  "max_length": 2048,
+  "seed": 42,
+  "start_time": "2026-05-18T15:04:02.373705",
+  "gpu": "NVIDIA H200",
+  "trainer_type": "SFT",
+  "end_time": "2026-05-18T15:14:22.428466"
+}
