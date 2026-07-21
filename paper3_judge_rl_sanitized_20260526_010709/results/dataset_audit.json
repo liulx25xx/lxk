@@ -1,0 +1,60 @@
+[
+  {
+    "name": "RewardBench",
+    "status": "success",
+    "total": 2985,
+    "checked": 2985,
+    "format": "chosen/rejected",
+    "chosen_first_pct": 100.0,
+    "explanation": "chosen column is always mapped to position A in judge prompt conversion"
+  },
+  {
+    "name": "HH-RLHF",
+    "status": "success",
+    "total": 160800,
+    "checked": 10000,
+    "format": "chosen/rejected",
+    "chosen_first_pct": 100.0,
+    "explanation": "chosen column is always mapped to position A in judge prompt conversion"
+  },
+  {
+    "name": "UltraFeedback",
+    "status": "success",
+    "total": 63967,
+    "checked": 5000,
+    "format": "non-standard",
+    "columns": [
+      "source",
+      "instruction",
+      "models",
+      "completions",
+      "correct_answers",
+      "incorrect_answers"
+    ]
+  },
+  {
+    "name": "PKU-SafeRLHF",
+    "status": "success",
+    "total": 73907,
+    "checked": 5000,
+    "format": "non-standard",
+    "columns": [
+      "prompt",
+      "response_0",
+      "response_1",
+      "prompt_source",
+      "response_0_source",
+      "response_1_source",
+      "is_response_0_safe",
+      "is_response_1_safe",
+      "response_0_harm_category",
+      "response_1_harm_category",
+      "response_0_severity_level",
+      "response_1_severity_level",
+      "better_response_id",
+      "safer_response_id",
+      "response_0_sha256",
+      "response_1_sha256"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "variant": "numeric",
+  "variant_desc": "Response 1/2 instead of A/B",
+  "n_samples": 449,
+  "accuracy": 0.9955456570155902,
+  "consistency": 0.12026726057906459,
+  "a_selection_rate": 0.9955456570155902,
+  "parse_failures": 0,
+  "fallback_to_ab": 0,
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "adapter": "results/GRPO_mistral7b_unbal/final_model"
+}

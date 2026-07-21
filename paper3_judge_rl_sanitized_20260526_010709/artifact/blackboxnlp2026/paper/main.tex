@@ -1,0 +1,430 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{dblfloatfix}
+\usepackage{pgfplots}
+\input{figure_style}
+
+\newcommand{\acc}{\textsc{Acc}}
+\newcommand{\con}{\textsc{Con}}
+\newcommand{\ccal}{\textsc{Cal}}
+\newcommand{\multirow}[3]{#3}
+\newcommand{\FloatBarrier}{}
+
+\title{When Accuracy Follows Position: Diagnosing Training-Induced Shortcuts in LLM Judges}
+
+\author{Anonymous}
+
+\begin{document}
+\tolerance=1500
+\emergencystretch=3em
+\hbadness=3000
+\maketitle
+
+\begin{abstract}
+Pairwise LLM judges increasingly provide both evaluation scores and reward signals, yet their training behavior is often assessed from accuracy under a single response order. We show that this observable can conceal a learned position shortcut introduced by preference-data preprocessing: if a \texttt{chosen} response is always rendered as Response A, response position perfectly predicts the gold verdict. We apply response-order swap as a controlled behavioral intervention that preserves the compared content while changing its slot identity. On Qwen2.5-7B, full GRPO raises original-order accuracy from 80.2\% to 94.7\%, while mean order-averaged accuracy falls from 77.7\% to 74.7\% and position-swap consistency falls from 81.5\% to 58.7\%. Balancing preferred responses across positions instead yields 82.6\% order-averaged accuracy and 84.0\% position-swap consistency; balanced SFT reaches 90.2\% order-averaged accuracy. The same qualitative failure appears across training objectives, proxy rewards, label schemes, learning rates, and model families, although its severity is model-dependent. These results identify a training-induced failure that single-order accuracy cannot detect and motivate response-order intervention as a standard behavioral audit for trained judges.
+\end{abstract}
+
+% ===========================================================================
+\section{Introduction}
+% ===========================================================================
+
+LLM judges are increasingly trained to evaluate pairwise preferences and to provide reward signals in post-training pipelines~\citep{zheng2023judging,zheng2024arena}. These judges are usually optimized and reported by accuracy: whether their verdict matches a gold preference label. Accuracy, however, only identifies the selected label; it does not identify the decision rule that produced it. If prompt construction introduces an artifact that predicts the label, optimization can amplify that artifact while appearing to improve judgment. This creates a basic interpretability question for trained judges: when accuracy improves, has the model learned to compare the responses, or has it learned a shortcut in the training interface?
+
+We identify one such shortcut created by deterministic preference-data preprocessing. Preference datasets often store examples as \texttt{chosen}/\texttt{rejected}. When a conversion script renders \texttt{chosen} as Response A and \texttt{rejected} as Response B, the preferred response becomes Response A for every training instance. Position therefore becomes a perfect predictor of the training label under that prompt construction. Any objective that rewards label matching can exploit this regularity by learning a positional policy rather than comparing the responses: apparent accuracy rises, while position-swap consistency collapses (Figure~\ref{fig:mechanism}).
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.96\textwidth]{figure1.pdf}
+\caption{The training-interface shortcut and the data-level intervention. Fixed-order conversion makes position perfectly predictive of the gold verdict, so optimization can raise original-order accuracy while reducing position-swap consistency. Balanced conversion removes this global position-label correlation and forces gains to rely on information beyond a constant slot rule.}
+\label{fig:mechanism}
+\end{figure*}
+
+We diagnose this failure with a controlled behavioral intervention: for each pair, we swap the two responses while preserving their content, then require the judge to give the logically equivalent verdict. This counterfactual perturbation separates apparent accuracy from position-invariant judgment and provides a functional test of whether the verdict follows response content or slot identity. Across SFT, DPO, and GRPO; accuracy-only, decisiveness, confidence-proxy, and composite rewards; and prompt, label, learning-rate, and model-family controls, we find the same accuracy-consistency dissociation. Optimization makes judges look better under the original ordering while making them less stable under position swap. In the strongest failure mode, high original-order accuracy is explained almost entirely by an elevated first-position rate rather than content comparison. The controls change the severity but do not remove the shortcut in our experiments, pointing to the training data layout as the structural source.
+
+This points to a data-level intervention: balance the training data so that preferred responses appear equally often in both positions. The contrast is clearest in order-averaged accuracy, which gives equal weight to the original and swapped orientations. Under full GRPO, fixed-order training raises original-order accuracy to 94.7\% but lowers order-averaged accuracy to 74.7\%, below the 77.7\% baseline. Balanced GRPO reaches 82.6\% order-averaged accuracy, while balanced SFT reaches 90.2\%. Thus the apparent gain under the confounded order is not evidence of improved comparison unless it survives response-order averaging.
+
+Our contributions:
+\begin{itemize}
+\item We identify a training-interface shortcut in pairwise LLM judge training: naive \texttt{chosen}/\texttt{rejected}-to-A/B preprocessing can make response position a perfect predictor of the gold verdict, allowing trained judges to improve apparent accuracy without learning the intended comparison.
+\item We apply position swap as a controlled behavioral intervention to trace how this training-time confound changes judge behavior, revealing a repeated gap between single-order and order-averaged accuracy across algorithms, rewards, prompts, labels, learning rates, and model families.
+\item We trace the failure to the position-label correlation through training controls and a stylized slot-bias analysis, then show that balanced response positions cancel the first-order shortcut gradient and restore both order-averaged accuracy and consistency.
+\end{itemize}
+
+% ===========================================================================
+\section{Related Work}
+% ===========================================================================
+
+\paragraph{Bias and Consistency in LLM Judges.}
+Prior work has shown that LLM judges are sensitive to where candidate responses appear in a pairwise prompt~\citep{zheng2023judging,wang2024largelanguagemodels,zhu2024judgebench}. This position bias interacts with broader evaluator biases, including length preference, self-preference, and reliance on surface features~\citep{wu2024style,koo2024benchmarking,li2024quantifying,park2024disentangling,singhal2024long}. Existing work therefore develops metrics and protocols for measuring or mitigating inconsistent judgments, such as swap-based consistency analysis, BT-$\sigma$~\citep{btsigma2026}, inference-time consistency checks~\citep{trustjudge2026}, permutation-aware RL objectives~\citep{eisgrpo2026,pagrpo2026}, and selective abstention for uncertain pairwise judgments~\citep{scope2026}. Our contribution is not the swap test itself or the observation that position bias exists. We use this established intervention to identify a training-time source: deterministic preference-data conversion can make response position a rewarded feature, and optimization can amplify that feature while single-order accuracy appears to improve.
+
+\paragraph{RL Training for Preference Judges.}
+Preference learning has long used human judgments to train language models~\citep{christiano2017deep,stiennon2020learning,ouyang2022training,bai2022training}, and recent work applies similar optimization recipes to the judges themselves. JudgeLRM~\citep{chen2025judgelrm} trains reasoning judges with GRPO~\citep{shao2024deepseekmath}; FairJudge~\citep{fairjudge2026} combines SFT, DPO~\citep{rafailov2023direct}, and GRPO with consistency-oriented objectives. These approaches treat reward design or algorithmic consistency constraints as the main levers for improving judge behavior. We instead ask whether the data layout makes a non-semantic feature predictive of reward. Under a position confound, even a correct label reward can be maximized by selecting the first response, so reported accuracy gains must be checked against position-swap consistency.
+
+\paragraph{Behavioral Analysis and Shortcut Learning.}
+Shortcut learning is a well-documented failure mode in which models exploit spurious data correlations rather than acquiring task-relevant features~\citep{geirhos2020shortcut,mccoy2019right,tu2020empirical}. When a confound perfectly predicts the label, models may learn the confound. Standard mitigations include data augmentation, adversarial training, and causal intervention. In the RLHF setting, reward hacking~\citep{skalse2022defining,gao2023scaling,pan2024spontaneous} describes a related failure where models exploit flaws in the reward model, and constrained RL~\citep{moskovitz2024confronting} proposes multi-objective solutions. Our setting highlights a complementary case: the label-matching reward can be correct with respect to the annotation, yet still reinforce a non-semantic route to that label. We show that the tested proxy rewards do not resolve the data-level position confound, while balancing response positions removes the simplest positional reward path.
+
+% ===========================================================================
+\section{Behavioral Diagnostic Framework}
+% ===========================================================================
+
+\subsection{Pairwise Judge Training and the Position Confound}
+
+We study LLM judges as black-box decision systems trained to evaluate pairwise preferences. Given a query $q$ and two candidate responses, the judge produces a rationale and a verdict $v \in \{A, B, \text{tie}\}$. The intended behavior is comparative judgment: the verdict should follow evidence about which response better satisfies the prompt, not incidental artifacts of the prompt interface.
+
+The artifact we study is response position. The position confound arises when preference data are converted into pairwise judge prompts. In standard \texttt{chosen}/\texttt{rejected} datasets, the preferred response is stored in the \texttt{chosen} field. In our RewardBench-to-judge-prompt conversion~\citep{lambert2024rewardbench}, \texttt{chosen} is rendered as Response A and \texttt{rejected} as Response B, so the gold label is ``A'' for every training instance. Position therefore perfectly predicts reward: selecting Response A always earns the maximum accuracy reward.
+
+This makes apparent accuracy ambiguous. A trained judge can improve by learning comparison-relevant evidence, by learning the positional feature, or by mixing both. Evaluation on the same ordering cannot separate these sources, because the shortcut and the intended task produce the same label. The position confound is therefore not an artificial perturbation introduced only at evaluation time; it is inherited from the prompt-construction rule used to build the judge-training data.
+
+\subsection{Training Conditions}
+
+We compare two training conditions. In the \emph{unbalanced} condition, the prompt conversion renders \texttt{chosen} as Response A for every training pair, so the gold verdict is always ``A.'' We then vary the optimization recipe while keeping this confound fixed: SFT, DPO, GRPO with an accuracy reward, and GRPO with decisiveness, confidence-proxy, and composite reward variants. These variants are stress tests for whether common proxy rewards are sufficient to induce comparative judgment under a fixed position-label correlation.
+
+In the \emph{balanced} condition, preferred responses appear in position A for half of the training instances and position B for the other half. Unless otherwise stated, we create this condition by adding a swapped mirror of each training pair and flipping the gold label. We verify in the appendix that the effect is not due to dataset duplication. Once position A is correct exactly half the time, a global first-position rule cannot explain gains over the untrained model.
+
+We use Qwen2.5-7B-Instruct~\citep{qwen2025qwen25} as the primary model and replicate key conditions on Qwen3-8B~\citep{qwen2025qwen3} and Mistral-7B-Instruct-v0.3~\citep{jiang2023mistral}. The primary Qwen2.5 GRPO runs use LoRA~\citep{hu2022lora} over attention projections for 500 steps. Full construction details, reward definitions, cross-model schedules, hyperparameters, and seeds appear in the appendix.
+
+\subsection{Position Swap as a Behavioral Intervention}
+
+We evaluate each model on 449 held-out test instances, generating responses with temperature 0.1 and max 512 new tokens. For each instance, we generate judgments on both the original and position-swapped order. The intervention preserves the query and response texts while changing only which response occupies each slot. A content-following judge should therefore flip its A/B verdict, whereas a slot-following judge should repeat it. This directly tests whether the verdict follows response content or position.
+
+We report six metrics:
+\begin{itemize}
+\item \textbf{Original-order accuracy}: agreement with gold labels on the original ordering.
+\item \textbf{Swap accuracy}: agreement with the flipped gold label after response swapping.
+\item \textbf{Order-averaged accuracy}: the mean of original-order and swap accuracy, giving the two orientations equal weight.
+\item \textbf{Position-swap consistency}: the fraction of instances where the verdict is logically equivalent under position swap. If the model predicts A on the original order, it should predict B on the swapped order, and vice versa. Ties are self-consistent.
+\item \textbf{First-position rate}: the fraction of original and swapped judgments that select the first-listed response.
+\item \textbf{Position bias}: the percentage-point gap between always-first and always-second inconsistent predictions.
+\end{itemize}
+
+Position-swap consistency and order-averaged accuracy are the critical diagnostics because they distinguish performance that survives response order from apparent accuracy under the confounded orientation. In our original-order test set, the preferred response is always first, so original-order accuracy alone is numerically identical to the rate of selecting that preferred slot. We treat ties as self-consistent because a tie verdict is unchanged by swapping response order. Paired tie-only cases are not the driver of the effect: under a stricter tie-as-inconsistent check, the key trained-model consistency comparisons move by at most about one point and conclusions are unchanged. For multi-seed conditions, tables report mean $\pm$ standard deviation across seeds. Order-averaged accuracy is computed from the displayed orientation means.
+
+\begin{figure*}[!b]
+\centering
+\begin{minipage}[t]{0.485\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    expplot,
+    expgrid,
+    width=0.98\linewidth,
+    height=4.35cm,
+    xlabel={Training steps},
+    ylabel={Metric (\%)},
+    xmin=-20, xmax=540,
+    ymin=50, ymax=100,
+    xtick={0,100,300,500},
+    ytick={50,60,70,80,90,100},
+    legend style={at={(0.5,1.04)}, anchor=south, legend columns=2},
+    clip=false,
+]
+\addplot[fig-confounded, mark=square*, mark options={fill=fig-confounded!65, draw=fig-confounded}] coordinates {(0,80.2) (100,86.0) (200,89.1) (300,92.2) (500,94.4)};
+\addlegendentry{Original-order acc.}
+\addplot[fig-balanced, mark=*, mark options={fill=fig-balanced!65, draw=fig-balanced}] coordinates {(0,81.5) (100,80.8) (200,76.8) (300,65.3) (500,60.8)};
+\addlegendentry{Swap consistency}
+\node[font=\bfseries\small, anchor=north west, fill=white, inner sep=1pt] at (rel axis cs:0.01,0.99) {(a)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    expplot,
+    expgrid,
+    width=0.98\linewidth,
+    height=4.35cm,
+    xlabel={Learning rate ($\times 10^{-6}$)},
+    ylabel={Metric (\%)},
+    xmode=log,
+    xmin=7e-7, xmax=1.5e-5,
+    ymin=30, ymax=105,
+    xtick={1e-6,2e-6,3e-6,5e-6,1e-5},
+    xticklabels={1,2,3,5,10},
+    ytick={40,60,80,100},
+    clip=false,
+]
+\addplot[fig-confounded, mark=square*, mark options={fill=fig-confounded!65, draw=fig-confounded}] coordinates {(1e-6,83.7) (2e-6,85.7) (3e-6,90.0) (5e-6,94.0) (1e-5,98.9)};
+\addplot[fig-balanced, mark=*, mark options={fill=fig-balanced!65, draw=fig-balanced}] coordinates {(1e-6,83.3) (2e-6,81.1) (3e-6,75.7) (5e-6,61.7) (1e-5,38.1)};
+\addplot[fig-neutral!65, dashed, forget plot] coordinates {(3e-6,30) (3e-6,105)};
+\node[font=\scriptsize, anchor=south, text=fig-neutral, fill=white, inner sep=1pt] at (axis cs:3e-6,32) {observed transition};
+\node[font=\bfseries\small, anchor=north west, fill=white, inner sep=1pt] at (rel axis cs:0.01,0.99) {(b)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\caption{Optimization pressure amplifies the position shortcut in single-seed Qwen2.5 GRPO diagnostics. (a) As training proceeds under the accuracy reward, original-order accuracy rises while position-swap consistency falls. (b) The same tradeoff sharpens across the full-reward learning-rate sweep. The dashed marker denotes an observed transition in the tested grid, not an estimated universal threshold. Detailed checkpoint values and controls are in the~appendix.}
+\label{fig:optimization-pressure}
+\end{figure*}
+
+% ===========================================================================
+\section{Experiments}
+% ===========================================================================
+
+\subsection{Unbalanced Training Creates an Accuracy-Consistency Split}
+
+We first ask whether RL training exploits the prompt artifact created by the standard conversion from preference data to judge prompts, where every training label is ``A.''
+
+Table~\ref{tab:unbalanced} shows the central dissociation. Training improves original-order accuracy, but this is the orientation on which the preferred response is always first. When both orientations receive equal weight, full GRPO has a lower mean than the untrained model (74.7\% versus 77.7\%) and substantial seed variation ($\pm$3.7), alongside lower position-swap consistency and a sharp increase in the first-position rate. The methods differ in how completely the shortcut takes over: SFT reaches the degenerate endpoint of 100\% original-order accuracy but only 50\% order-averaged accuracy and zero consistency, while DPO and GRPO retain more comparison signal but still move toward stronger position dependence.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.0pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} & \textbf{Orig} $\uparrow$ & \textbf{Swap} $\uparrow$ & \textbf{Avg} $\uparrow$ & \textbf{Con} $\uparrow$ & \textbf{First} & \textbf{Bias} $\downarrow$ \\
+\midrule
+Baseline (no training) & 80.2 & 75.3 & 77.7 & 81.5 & 49.3 & 2.4 \\
+\midrule
+SFT & 100.0 & 0.0 & 50.0 & 0.0 & 100.0 & 100.0 \\
+DPO & 94.2 & 50.3 & 72.3 & 54.3 & 69.4 & 40.8 \\
+GRPO Acc-only & 94.7{\scriptsize$\pm$0.7} & 55.7{\scriptsize$\pm$6.4} & 75.2{\scriptsize$\pm$2.9} & 59.8{\scriptsize$\pm$7.6} & 68.1{\scriptsize$\pm$3.6} & 37.5{\scriptsize$\pm$7.9} \\
+\quad + Decisive & 93.9{\scriptsize$\pm$1.1} & 61.0{\scriptsize$\pm$5.4} & 77.4{\scriptsize$\pm$2.1} & 66.3{\scriptsize$\pm$6.5} & 65.0{\scriptsize$\pm$3.5} & 31.3{\scriptsize$\pm$6.8} \\
+\quad + Conf. proxy & 95.4{\scriptsize$\pm$0.5} & 53.1{\scriptsize$\pm$7.4} & 74.3{\scriptsize$\pm$3.5} & 56.1{\scriptsize$\pm$7.9} & 69.4{\scriptsize$\pm$4.0} & 40.3{\scriptsize$\pm$7.9} \\
+\quad + Both (Full) & 94.7{\scriptsize$\pm$0.9} & 54.8{\scriptsize$\pm$8.3} & 74.7{\scriptsize$\pm$3.7} & 58.7{\scriptsize$\pm$9.1} & 68.8{\scriptsize$\pm$4.3} & 38.6{\scriptsize$\pm$9.1} \\
+\midrule
+GRPO Full (lr=1e-5) & 98.9 & 37.0 & 67.9 & 38.1 & 80.5 & 61.5 \\
+GRPO Full (lr=1e-6) & 83.7 & 76.2 & 80.0 & 83.3 & 51.0 & 5.6 \\
+\bottomrule
+\end{tabular}
+}
+\caption{Unbalanced training (gold = ``A''). Orig is accuracy under the confounded orientation; Avg averages original and swapped accuracy. Multi-seed entries report mean $\pm$ seed standard deviation, including Avg. Training can raise Orig while Avg and consistency fall.}
+\label{tab:unbalanced}
+\vspace{-0.8em}
+\end{table}
+
+Reward variants and learning rate changes modulate this tradeoff without removing it in our experiments. The best tested reward-only mitigation improves consistency only partially and remains below the untrained baseline. Similarly, conservative learning rates can mask the shortcut by limiting optimization pressure, while the tested Qwen2.5 sweep shows a sharp transition: at larger learning rates, original-order accuracy increases as swap accuracy and position-swap consistency fall (Figure~\ref{fig:optimization-pressure}). These interventions change when and how strongly the shortcut appears; they do not remove the underlying confound.
+
+These results point back to the data: under the tested training methods, proxy rewards, and learning rates, the most reliable mitigation is to remove the position-label correlation before optimization.
+
+\subsection{Balanced Data Restores Position-Invariant Judgment}
+
+We therefore train with balanced data (Table~\ref{tab:balanced}), assigning preferred responses equally across both~slots.
+
+Balanced training reverses the pattern. Models trained on balanced data keep consistency and position bias near the untrained baseline, rather than trading consistency for apparent original-order accuracy (Figure~\ref{fig:fix}). Full GRPO reaches 82.6\% order-averaged accuracy, 7.9 points above its unbalanced counterpart and 4.9 points above the untrained model. Balanced SFT reaches 90.2\%, showing that direct supervision becomes effective once the target label can no longer be predicted from a single global slot rule.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.0pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} & \textbf{Orig} $\uparrow$ & \textbf{Swap} $\uparrow$ & \textbf{Avg} $\uparrow$ & \textbf{Con} $\uparrow$ & \textbf{First} & \textbf{Bias} $\downarrow$ \\
+\midrule
+Baseline (no training) & 80.2 & 75.3 & 77.7 & 81.5 & 49.3 & 2.4 \\
+\midrule
+SFT Balanced & 91.3 & 89.1 & 90.2 & 87.1 & 51.1 & 2.2 \\
+GRPO Acc-only Bal. & 84.0{\scriptsize$\pm$1.8} & 80.8{\scriptsize$\pm$1.4} & 82.4{\scriptsize$\pm$1.5} & 84.4{\scriptsize$\pm$0.4} & 50.3{\scriptsize$\pm$0.5} & 2.3{\scriptsize$\pm$1.2} \\
+GRPO Decisive Bal. & 82.9{\scriptsize$\pm$0.6} & 79.9{\scriptsize$\pm$1.5} & 81.4{\scriptsize$\pm$0.8} & 83.4{\scriptsize$\pm$1.4} & 50.1{\scriptsize$\pm$0.5} & 2.4{\scriptsize$\pm$1.5} \\
+GRPO Conf.-proxy Bal. & 83.4{\scriptsize$\pm$1.1} & 79.5{\scriptsize$\pm$1.0} & 81.5{\scriptsize$\pm$0.9} & 83.0{\scriptsize$\pm$1.3} & 50.5{\scriptsize$\pm$0.5} & 3.0{\scriptsize$\pm$0.8} \\
+GRPO Full Balanced & 83.7{\scriptsize$\pm$1.1} & 81.4{\scriptsize$\pm$1.6} & 82.6{\scriptsize$\pm$0.8} & 84.0{\scriptsize$\pm$0.8} & 50.0{\scriptsize$\pm$1.0} & 1.5{\scriptsize$\pm$2.2} \\
+\bottomrule
+\end{tabular}
+}
+\caption{Balanced training (gold = 50\% A, 50\% B). Multi-seed entries report mean $\pm$ seed standard deviation. Data deconfounding keeps the first-position rate near 50\%, restores position-swap consistency, and improves order-averaged accuracy over the baseline.}
+\label{tab:balanced}
+\end{table}
+
+The same comparison also reinterprets the failure of SFT and high-learning-rate GRPO. SFT is catastrophic under unbalanced labels but becomes the strongest balanced-data learner, suggesting that it was efficiently learning the easiest available signal rather than being intrinsically position-biased. High learning rates show the same pattern: harmful under the confound, but useful once the confound is removed. Position preference supports this interpretation. The baseline model is close to position-neutral (49\% first-position rate), unbalanced training raises this rate to 69\% under full GRPO and 100\% under SFT, and balanced training keeps it near 50\%. Domain-level breakdowns are reported in the appendix.
+
+\subsection{Robustness Summary}
+
+We test whether the shortcut is merely an artifact of training duration, inference procedure, prompt wording, label tokens, or generic spurious-feature learning. The same pattern persists across duration, filtering, prompt, and label controls, while a length-confounded control stays near baseline (79.7\% consistency, 50.6\% first-position rate), suggesting that the severe collapse is specific to the order confound. Checkpoint evaluation shows a transition: early training improves original-order accuracy with little consistency loss, while later optimization trades consistency for a higher first-position rate (Figure~\ref{fig:optimization-pressure}a). Evaluation-time swap filtering detects but does not repair the failure, and prompt reminders change consistency only marginally (+2.2 pp on Qwen2.5 and -1.1 pp on Mistral).
+
+Changing the output labels from A/B to 1/2 or Left/Right also fails to remove the shortcut (Appendix Table~\ref{tab:labels-app}). On the original-order prompts, where the preferred response is first-listed, the model continues to select the first-listed response at nearly the same rate under each label scheme, while position-swap consistency remains depressed. The model emits the requested symbols, such as ``[[1]]'' or ``[[Left]],'' rather than reverting to ``[[A]].'' This control rules out a narrow explanation based only on memorizing the literal A token.
+
+\subsection{Cross-Model Replication}
+
+The shortcut is not specific to the primary Qwen2.5 model. Figure~\ref{fig:crossmodel-main} extends the unbalanced-versus-balanced comparison to Qwen3-8B and Mistral-7B. Severity is model-dependent: Mistral is most affected (98.4\% accuracy, 23.0\% consistency), Qwen2.5 is intermediate (94.7\%/58.7\%), and Qwen3 shows only mild GRPO consistency loss (80.4\% baseline, 80.0\% unbalanced, 82.2\% balanced). Qwen3 is less affected in our tested setup, but this three-model comparison does not identify model capability as the cause. Auditing remains necessary: unbalanced Qwen3 training gives a larger apparent original-order gain than balanced GRPO, and unbalanced Qwen3 SFT collapses in the appendix.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    expplot,
+    width=0.93\columnwidth,
+    height=4.6cm,
+    xlabel={Position-swap consistency (\%)},
+    xmin=-3, xmax=101,
+    xtick={0,20,40,60,80,100},
+    ymin=0.55, ymax=3.45,
+    ytick={1,2,3},
+    yticklabels={SFT, GRPO-A, GRPO-F},
+    xmajorgrids=true,
+    grid style={draw=fig-neutral!18, line width=0.4pt},
+    legend style={at={(0.5,1.05)}, anchor=south, legend columns=2},
+    clip=false,
+]
+\addplot[fig-neutral!45, line width=0.8pt, forget plot] coordinates {(0.0,1) (87.1,1)};
+\addplot[fig-neutral!45, line width=0.8pt, forget plot] coordinates {(59.8,2) (84.4,2)};
+\addplot[fig-neutral!45, line width=0.8pt, forget plot] coordinates {(58.7,3) (84.0,3)};
+\addplot[fig-neutral, dashed, line width=0.7pt, forget plot] coordinates {(81.5,0.65) (81.5,3.35)};
+\node[font=\scriptsize, text=fig-neutral, anchor=south west] at (axis cs:82.2,3.14) {baseline 81.5};
+\addplot[only marks, mark=*, mark size=2.8pt, color=fig-confounded] coordinates {(0.0,1) (59.8,2) (58.7,3)};
+\addlegendentry{Unbalanced}
+\addplot[only marks, mark=diamond*, mark size=3.2pt, color=fig-balanced] coordinates {(87.1,1) (84.4,2) (84.0,3)};
+\addlegendentry{Balanced}
+\end{axis}
+\end{tikzpicture}
+\caption{Position-swap consistency under matched unbalanced and balanced data constructions. Coral circles and blue diamonds show the two conditions; connecting segments isolate the data intervention within each training objective. The dashed line is the untrained baseline. GRPO-A and GRPO-F denote accuracy-only and full-composite GRPO.}
+\label{fig:fix}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    expplot,
+    width=0.94\columnwidth,
+    height=4.45cm,
+    xlabel={Position-swap consistency (\%)},
+    xmin=15, xmax=90,
+    xtick={20,40,60,80},
+    ymin=0.55, ymax=3.45,
+    ytick={1,2,3},
+    yticklabels={Mistral-7B,Qwen2.5-7B,Qwen3-8B},
+    xmajorgrids=true,
+    grid style={draw=fig-neutral!18, line width=0.4pt},
+    legend style={at={(0.5,1.05)}, anchor=south, legend columns=3},
+    clip=false,
+]
+\addplot[fig-neutral!45, line width=0.8pt, forget plot] coordinates {(23.0,1) (68.3,1)};
+\addplot[fig-neutral!45, line width=0.8pt, forget plot] coordinates {(58.7,2) (84.0,2)};
+\addplot[fig-neutral!45, line width=0.8pt, forget plot] coordinates {(80.0,3) (82.2,3)};
+\addplot[only marks, mark=square*, mark size=2.5pt, color=fig-neutral] coordinates {(64.8,1) (81.5,2) (80.4,3)};
+\addlegendentry{Baseline}
+\addplot[only marks, mark=*, mark size=2.8pt, color=fig-confounded] coordinates {(23.0,1) (58.7,2) (80.0,3)};
+\addlegendentry{Unbalanced}
+\addplot[only marks, mark=diamond*, mark size=3.2pt, color=fig-balanced] coordinates {(68.3,1) (84.0,2) (82.2,3)};
+\addlegendentry{Balanced}
+\end{axis}
+\end{tikzpicture}
+\caption{Cross-model GRPO replication. Unbalanced training reduces consistency most strongly on Mistral and Qwen2.5, while balanced data restores or improves consistency across all three tested model families. Exact accuracy values and full controls are in \mbox{Appendix Table~\ref{tab:crossmodel}}.}
+\label{fig:crossmodel-main}
+\end{figure}
+
+% ===========================================================================
+\section{Functional Analysis of the Shortcut}
+% ===========================================================================
+
+\subsection{Why Label Rewards Can Prefer the Shortcut}
+
+The experiments above show that the tested reward variants change shortcut severity but do not remove the shortcut. We analyze the mechanism at the functional level: which observable feature can carry predictive signal to the verdict under the training distribution. The data contains two predictive routes to the gold label: comparison evidence $E$ about which response better satisfies the prompt, and response position $P$ (the confound). When $P$ perfectly predicts the gold label, the model has two reward paths: a comparison path ($E \to v^*$) and a positional path ($P \to v^*$). A scalar reward that only checks whether the verdict matches $v^*$ does not identify which path produced the answer.
+
+A stylized slot-bias model illustrates this pressure. It is not a derivation of the GRPO update, but a local analysis of how label imbalance creates a direct optimization direction for a position feature. Let $y \in \{+1,-1\}$ indicate whether the first or second response is preferred, and let $f_\theta(x)=d_\theta(x)+b$, where $d_\theta(x)$ is a comparison score and $b$ is a global first-position bias. Under logistic loss, near $d_\theta(x)=b=0$,
+\[
+\frac{\partial \mathcal{L}}{\partial b}
+\approx -\tfrac{1}{2}(2\alpha-1),
+\qquad \alpha=\Pr(y=+1).
+\]
+Thus fully unbalanced data ($\alpha=1$) induces a first-order gradient toward choosing the first response, while balanced data ($\alpha=0.5$) cancels this shortcut gradient. Appendix~\ref{app:slotbias} gives the full derivation.
+
+This also clarifies why the tested proxy rewards fail. Decisiveness penalizes ties but does not require position invariance. Our confidence proxy applies a Brier-shaped score to a fixed fallback confidence when no confidence is emitted; it therefore remains largely aligned with verdict correctness and does not make position dependence costly. The composite reward remains satisfiable by the shortcut. Balanced data changes the training distribution instead: it removes the global $P \to v^*$ correlation, so position no longer reliably predicts reward.
+
+The confound-ratio diagnostic in Appendix~\ref{app:dose} provides a boundary check. Intermediate single-seed ratios are noisy and non-monotonic, but the fully unbalanced endpoint shows a much larger consistency loss than the balanced reference.
+
+\subsection{Single-Order and Order-Averaged Accuracy}
+
+Original-order accuracy and order-averaged accuracy answer different questions in this setting. The former evaluates only the orientation used by the confounded conversion, where the preferred response is always first. The latter averages the two logically equivalent orientations and therefore prevents an always-first policy from scoring above chance. This is a descriptive contrast, not a causal decomposition of model knowledge.
+
+For Qwen2.5, the distinction reverses the apparent conclusion. Full GRPO raises original-order accuracy from 80.2\% to 94.7\%, yet its order-averaged accuracy is 74.7\%, below the 77.7\% untrained baseline. After data balancing, full GRPO reaches 82.6\% and SFT reaches 90.2\% order-averaged accuracy. The result isolates the paper's practical claim: an accuracy gain is credible only when it persists across both response orders.
+
+\subsection{A Qualitative Black-Box Trace}
+
+One inconsistent prediction exposes the same failure at the level of generated rationales (Table~\ref{tab:case}). After the two physical responses are exchanged, the judge correctly describes the newly assigned slot contents but still selects Response A. The example does not establish frequency; it shows why a fluent, content-aware rationale is not by itself evidence that the verdict is position-invariant.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.14\columnwidth}p{0.68\columnwidth}c}
+\toprule
+\textbf{Order} & \textbf{Rationale excerpt} & \textbf{Verdict} \\
+\midrule
+Original & ``Assistant A's response is more directly relevant \ldots{} Assistant B's answer discusses environmental protection laws broadly.'' & A \\
+Swapped & ``Assistant A provides a more detailed and structured response \ldots{} broader environmental protection context. Assistant B's response \ldots{} directly addresses animal welfare.'' & A \\
+\bottomrule
+\end{tabular}
+\caption{Illustrative inconsistent prediction from full GRPO (example 2790). The same physical answers are swapped, but the verdict remains A.}
+\label{tab:case}
+\end{table}
+
+\subsection{External Check on Published RL-Trained Judges}
+
+As an external check, we evaluate JudgeLRM's publicly released checkpoints~\citep{chen2025judgelrm} with the same position-swap diagnostic (Table~\ref{tab:judgelrm}). JudgeLRM-7B drops from 81.3\% original-order accuracy to 66.1\% swap accuracy, while JudgeLRM-3B drops from 76.8\% to 55.9\%. Their two-order first-position rates are close to neutral, but positive bias gaps indicate that inconsistent predictions more often favor the first position than the second.
+
+These results do not imply that all gains in prior judge training are shortcuts. They show that standard accuracy can hide a position-dependent component even for independently released RL-trained judges, motivating swap-consistency reporting.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Orig Acc} & \textbf{Swap Acc} & \textbf{Con} & \textbf{First-pos} & \textbf{Bias} \\
+\midrule
+JudgeLRM-7B & 81.3 & 66.1 & 75.7 & 53.1 & 13.4 \\
+JudgeLRM-3B & 76.8 & 55.9 & 67.9 & 56.7 & 15.4 \\
+\bottomrule
+\end{tabular}
+}
+\caption{External check on public RL-trained judges. Both checkpoints show an original/swap accuracy gap and positive first-position bias among \mbox{inconsistent predictions}.}
+\label{tab:judgelrm}
+\end{table}
+
+% ===========================================================================
+\section{Discussion}
+\label{sec:discussion}
+% ===========================================================================
+
+The position shortcut highlights a failure mode that is easy to miss when judge training is evaluated only by accuracy. The reward need not be noisy or misspecified with respect to the annotation: a label-matching reward can reinforce the wrong feature when the prompt construction makes that feature perfectly predictive. In this sense, the failure is related to reward hacking~\citep{skalse2022defining,gao2023scaling} but not identical to it. The policy is not exploiting a flawed reward model; it is exploiting a confounded route to the correct reward.
+
+Our diagnosis is behavioral rather than circuit-level. Position swap establishes a functional dependence of the verdict on slot identity, while data balancing intervenes on the source of that dependence. Together with the learning-rate and confound-ratio trajectories, these interventions explain when the shortcut becomes reward-predictive and how strongly training exploits it, without claiming a unique internal representation or circuit.
+
+This distinction matters for mitigation. Adding reward terms can help only if those terms make the shortcut costly. In our setting, decisiveness and the fixed-confidence proxy remain compatible with always choosing the rewarded position, so they do not distinguish comparison-based judgments from positional ones. Data balancing removes the global position-label correlation before optimization by making each position correct equally often. Algorithm-level methods such as EIS-GRPO~\citep{eisgrpo2026} and PA-GRPO~\citep{pagrpo2026}, as well as evaluation-time methods such as SCOPE~\citep{scope2026}, are complementary: they can enforce or test permutation awareness, while data deconfounding removes the simplest positional reward path at the source.
+
+The practical implication is straightforward. Pairwise judge training should randomize or balance response order before any supervised, preference, or RL objective is applied, and reported accuracy should be paired with position-swap consistency. This recommendation is not specific to our RewardBench conversion. Any pipeline that converts \texttt{chosen}/\texttt{rejected} data into fixed-order judge prompts can introduce the same confound unless it explicitly randomizes position. Since LLM judges are increasingly used as both evaluators and reward signals, failing to audit this confound can propagate ordering bias into downstream model selection and post-training loops.
+
+\subsection{A Minimal Audit Protocol}
+
+A minimal audit has four steps: (1) measure position--label association after data conversion; (2) evaluate paired held-out examples in both orientations under identical decoding; (3) report the five diagnostics for untrained and trained checkpoints; and (4) rerun the same recipe with balanced positions. Swapping reveals positional dependence, while balancing tests whether the training-time correlation induced it.
+
+Interpret the metrics jointly. Robust gains improve both orientations without sacrificing consistency. Original-only gains with falling swap accuracy and consistency, plus a rising first-position rate, indicate position dependence; high consistency with low order-averaged accuracy can still be wrong. Use order-averaged accuracy for selection. Because balancing cannot exclude other shortcuts, repeat the paired audit after mitigation.
+
+\section*{Limitations}
+
+Our experiments use 7--9B parameter open-source models from three families (Qwen2.5, Qwen3, Mistral) with LoRA training. We have not tested frontier closed-source models or full fine-tuning. We validate primarily on RewardBench converted into pairwise judge prompts, so empirical validation on additional training and evaluation suites would strengthen external validity. The position confound can arise in any pipeline that maps a \texttt{chosen} field to a fixed prompt position, but the severity of shortcut learning may depend on the dataset, prompt template, model, and optimization recipe. Our analysis identifies functional reliance on response position but does not localize the internal representation or circuit that implements it. We do not compare against permutation-aware RL methods (EIS-GRPO, PA-GRPO) which address position bias at the algorithm level rather than the data level. Position-swap consistency measures positional robustness but does not directly measure alignment with human judgment quality. Each orientation is generated once at temperature 0.1, so measured consistency also contains residual sampling variability; the large collapses are unlikely to be explained by this alone, but small cross-model differences should be interpreted cautiously.
+
+% ===========================================================================
+\vspace{-0.8em}
+\section{Conclusion}
+% ===========================================================================
+
+We showed that accuracy is not, by itself, a certificate of judgment ability for trained LLM judges. When preference data are converted into fixed-order pairwise prompts, response position can become a perfectly reward-predictive artifact. Standard optimization can then improve apparent accuracy by exploiting the training interface rather than comparing the responses. Response-order intervention makes this otherwise hidden decision rule observable. In our experiments, the position shortcut appears across SFT, DPO, and GRPO, persists under the tested reward variants, prompt instructions, label changes, and learning-rate controls, with substantial variation across three model families.
+
+The remedy is simple but diagnostic: remove the position-label correlation before optimization. Balanced response positions cancel the shortcut gradient, restore position-swap consistency, and retain non-positional accuracy gains in our setting. More broadly, our results suggest that RL-trained judge evaluations should report not only accuracy but also whether the verdict is invariant to swapping response order. Because this audit only requires evaluating the same examples after a response-order swap, it is cheap relative to training and practical to report by default. We therefore recommend response-order invariance, alongside order-averaged accuracy, as a release criterion for pairwise judge checkpoints and as a routine diagnostic throughout data conversion, model training, and checkpoint selection. At minimum, a release audit should verify training-prompt position--label balance, compare paired original and swapped judgments under identical decoding, and repeat the check after checkpoint selection. These tests separate stable comparison gains from presentation-order artifacts. For pairwise judges, accuracy is evidence only when it survives swapping.
+
+\clearpage
+\bibliography{custom}
+
+\clearpage
+\def\blackboxappendix{1}
+\input{supplement}
+
+\end{document}

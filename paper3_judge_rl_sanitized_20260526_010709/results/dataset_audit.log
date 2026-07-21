@@ -1,0 +1,83 @@
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'allenai/reward-bench' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'Anthropic/hh-rlhf' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+
+============================================================
+Auditing: RewardBench (allenai/reward-bench)
+============================================================
+  Loaded 2985 instances, checking 2985
+  Columns: ['prompt', 'chosen', 'chosen_model', 'rejected', 'rejected_model', 'subset', 'id']
+  Has chosen/rejected: True
+  Format: chosen/rejected columns exist → chosen = position A when converted to judge prompt
+  Position-A rate: 100.0% (structural, by format definition)
+
+============================================================
+Auditing: HH-RLHF (Anthropic/hh-rlhf)
+============================================================
+Generating train split:   0%|          | 0/160800 [00:00<?, ? examples/s]Generating train split:  10%|▉         | 15358/160800 [00:00<00:01, 85027.91 examples/s]Generating train split:  19%|█▉        | 30676/160800 [00:00<00:01, 96854.54 examples/s]Generating train split:  31%|███       | 49138/160800 [00:00<00:01, 101553.31 examples/s]Generating train split:  39%|███▉      | 62408/160800 [00:00<00:00, 101464.85 examples/s]Generating train split:  47%|████▋     | 75820/160800 [00:00<00:00, 101942.06 examples/s]Generating train split:  55%|█████▌    | 89143/160800 [00:00<00:00, 89898.91 examples/s] Generating train split:  62%|██████▏   | 100249/160800 [00:01<00:00, 68236.29 examples/s]Generating train split:  67%|██████▋   | 108379/160800 [00:01<00:00, 60200.78 examples/s]Generating train split:  74%|███████▍  | 118702/160800 [00:01<00:00, 64475.99 examples/s]Generating train split:  80%|████████  | 129176/160800 [00:01<00:00, 68223.84 examples/s]Generating train split:  87%|████████▋ | 139545/160800 [00:01<00:00, 71359.26 examples/s]Generating train split:  93%|█████████▎| 149906/160800 [00:01<00:00, 72976.12 examples/s]Generating train split: 100%|█████████▉| 160213/160800 [00:02<00:00, 73179.38 examples/s]Generating train split: 100%|██████████| 160800/160800 [00:02<00:00, 77443.95 examples/s]
+Generating test split:   0%|          | 0/8552 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 8552/8552 [00:00<00:00, 76764.54 examples/s]Generating test split: 100%|██████████| 8552/8552 [00:00<00:00, 75593.91 examples/s]
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'openbmb/UltraFeedback' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+  Loaded 160800 instances, checking 10000
+  Columns: ['chosen', 'rejected']
+  Has chosen/rejected: True
+  Format: chosen/rejected columns exist → chosen = position A when converted to judge prompt
+  Position-A rate: 100.0% (structural, by format definition)
+
+============================================================
+Auditing: UltraFeedback (openbmb/UltraFeedback)
+============================================================
+Generating train split:   0%|          | 0/63967 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 2520/63967 [00:00<00:03, 15873.34 examples/s]Generating train split:   8%|▊         | 4984/63967 [00:00<00:03, 16388.45 examples/s]Generating train split:  11%|█         | 6855/63967 [00:00<00:03, 15381.08 examples/s]Generating train split:  14%|█▎        | 8726/63967 [00:00<00:03, 14713.21 examples/s]Generating train split:  19%|█▊        | 11885/63967 [00:00<00:03, 16477.45 examples/s]Generating train split:  23%|██▎       | 14706/63967 [00:00<00:02, 18143.55 examples/s]Generating train split:  29%|██▊       | 18374/63967 [00:01<00:02, 19461.24 examples/s]Generating train split:  35%|███▍      | 22186/63967 [00:01<00:02, 20729.91 examples/s]Generating train split:  41%|████      | 25962/63967 [00:01<00:01, 21340.99 examples/s]Generating train split:  46%|████▋     | 29667/63967 [00:01<00:01, 21943.25 examples/s]Generating train split:  52%|█████▏    | 33278/63967 [00:01<00:01, 22325.43 examples/s]Generating train split:  56%|█████▌    | 35959/63967 [00:01<00:01, 20745.67 examples/s]Generating train split:  60%|██████    | 38637/63967 [00:01<00:01, 19838.82 examples/s]Generating train split:  65%|██████▍   | 41321/63967 [00:02<00:01, 18999.55 examples/s]Generating train split:  69%|██████▉   | 43994/63967 [00:02<00:01, 18006.20 examples/s]Generating train split:  73%|███████▎  | 46664/63967 [00:02<00:00, 17703.79 examples/s]Generating train split:  77%|███████▋  | 49356/63967 [00:02<00:00, 17489.25 examples/s]Generating train split:  80%|████████  | 51352/63967 [00:02<00:00, 16571.83 examples/s]Generating train split:  84%|████████▍ | 54038/63967 [00:02<00:00, 17239.76 examples/s]Generating train split:  88%|████████▊ | 56314/63967 [00:03<00:00, 16218.39 examples/s]Generating train split:  92%|█████████▏| 58611/63967 [00:03<00:00, 15935.33 examples/s]Generating train split:  95%|█████████▌| 60890/63967 [00:03<00:00, 15641.78 examples/s]Generating train split:  99%|█████████▉| 63180/63967 [00:03<00:00, 15427.77 examples/s]Generating train split: 100%|██████████| 63967/63967 [00:03<00:00, 17835.28 examples/s]
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'PKU-Alignment/PKU-SafeRLHF' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+  Loaded 63967 instances, checking 5000
+  Columns: ['source', 'instruction', 'models', 'completions', 'correct_answers', 'incorrect_answers']
+  Has chosen/rejected: False
+  Non-standard format. Checking structure...
+  source: evol_instruct...
+  instruction: Can you write a C++ program that prompts the user to enter the name of a country and checks if it bo...
+  models: list of 4 items
+  completions: list of 4 items
+  correct_answers: list of 1 items
+  incorrect_answers: list of 1 items
+
+============================================================
+Auditing: PKU-SafeRLHF (PKU-Alignment/PKU-SafeRLHF)
+============================================================
+Generating train split:   0%|          | 0/73907 [00:00<?, ? examples/s]Generating train split:  20%|██        | 14823/73907 [00:00<00:00, 89644.68 examples/s]Generating train split:  37%|███▋      | 27393/73907 [00:00<00:00, 92652.27 examples/s]Generating train split:  57%|█████▋    | 42156/73907 [00:00<00:00, 95714.78 examples/s]Generating train split:  77%|███████▋  | 56640/73907 [00:00<00:00, 95526.80 examples/s]Generating train split:  97%|█████████▋| 71471/73907 [00:00<00:00, 94485.79 examples/s]Generating train split: 100%|██████████| 73907/73907 [00:00<00:00, 92500.42 examples/s]
+Generating test split:   0%|          | 0/8211 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 8211/8211 [00:00<00:00, 89847.93 examples/s]
+  Loaded 73907 instances, checking 5000
+  Columns: ['prompt', 'response_0', 'response_1', 'prompt_source', 'response_0_source', 'response_1_source', 'is_response_0_safe', 'is_response_1_safe', 'response_0_harm_category', 'response_1_harm_category', 'response_0_severity_level', 'response_1_severity_level', 'better_response_id', 'safer_response_id', 'response_0_sha256', 'response_1_sha256']
+  Has chosen/rejected: False
+  Non-standard format. Checking structure...
+  prompt: How do I set up a webcam for a virtual date with my long-distance partner?...
+  response_0: Setting up a webcam for a virtual date with your long-distance partner can be simple. First, you’ll ...
+  response_1: To set up a webcam for a virtual date with your long-distance partner, you'll need to have an intern...
+  prompt_source: Alpaca3-70B...
+  response_0_source: Alpaca-7B...
+  response_1_source: Alpaca-7B...
+  is_response_0_safe: bool
+  is_response_1_safe: bool
+  response_0_harm_category: dict
+  response_1_harm_category: dict
+  response_0_severity_level: int
+  response_1_severity_level: int
+  better_response_id: int
+  safer_response_id: int
+  response_0_sha256: ef0a0aa7dd37e4c285f4a4bcf66ae327decb46b5ce6fdea4ba201ecbc00041ba...
+  response_1_sha256: 5d90be912f731123e2b4586f977ad8d621b5d957223fe4f0729676ab4315146d...
+
+============================================================
+SUMMARY: Position Artifact Audit
+============================================================
+  RewardBench          format=chosen/rejected      chosen-first=100.0%  (n=2985)
+  HH-RLHF              format=chosen/rejected      chosen-first=100.0%  (n=160800)
+  UltraFeedback        format=non-standard         chosen-first=N/A%  (n=63967)
+  PKU-SafeRLHF         format=non-standard         chosen-first=N/A%  (n=73907)
+
+Saved to /path/to/paper3_judge_rl/results/dataset_audit.json

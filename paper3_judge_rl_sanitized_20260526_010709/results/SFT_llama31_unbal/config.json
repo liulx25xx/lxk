@@ -1,0 +1,15 @@
+{
+  "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "output_dir": "/path/to/paper3_judge_rl/results/SFT_llama31_unbal",
+  "lr": 5e-05,
+  "max_steps": 500,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "lora_rank": 64,
+  "max_length": 2048,
+  "seed": 42,
+  "start_time": "2026-05-18T17:08:44.818475",
+  "gpu": "NVIDIA H200",
+  "trainer_type": "SFT"
+}

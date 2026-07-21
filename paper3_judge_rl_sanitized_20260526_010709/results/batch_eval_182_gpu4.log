@@ -1,0 +1,16 @@
+17:59:06 Evaluating: balanced_full_lr1e6 (checkpoint: checkpoint-500)
+2026-05-17 18:06:56,004 [INFO] Results saved to /path/to/paper3_judge_rl/results/balanced_full_lr1e6/eval
+  -> Acc=0.822 Con=0.831
+18:06:56 Evaluating: balanced_full_s5 (checkpoint: checkpoint-500)
+2026-05-17 18:18:06,892 [INFO] Results saved to /path/to/paper3_judge_rl/results/balanced_full_s5/eval
+  -> Acc=0.844 Con=0.840
+18:18:07 Evaluating: length_confounded_s2 (checkpoint: checkpoint-300)
+2026-05-17 18:25:53,344 [INFO] Results saved to /path/to/paper3_judge_rl/results/length_confounded_s2/eval
+  -> Acc=0.813 Con=0.813
+18:25:54 Evaluating: length_confounded_s3 (checkpoint: checkpoint-300)
+2026-05-17 18:34:15,774 [INFO] Results saved to /path/to/paper3_judge_rl/results/length_confounded_s3/eval
+  -> Acc=0.815 Con=0.795
+18:34:16 Evaluating: pilot (checkpoint: checkpoint-50)
+2026-05-17 18:41:21,936 [INFO] Results saved to /path/to/paper3_judge_rl/results/pilot/eval
+  -> Acc=0.817 Con=0.820
+18:41:22 Batch eval complete.

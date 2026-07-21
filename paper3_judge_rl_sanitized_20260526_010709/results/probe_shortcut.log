@@ -1,0 +1,68 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+=== Hidden State Probing: Shortcut_GRPO_unbal ===
+Model: Qwen/Qwen2.5-7B-Instruct
+Adapter: results/EXP-009_full_composite/final_model
+Layer: -1
+
+Total prompts: 200 (100 original + 100 swapped)
+
+Loading model...
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:01<05:54,  1.05s/it]Loading weights:   1%|          | 4/339 [00:01<01:18,  4.26it/s]Loading weights:   5%|▍         | 16/339 [00:01<00:18, 17.39it/s]Loading weights:   8%|▊         | 28/339 [00:01<00:11, 27.23it/s]Loading weights:  12%|█▏        | 40/339 [00:01<00:07, 37.62it/s]Loading weights:  14%|█▎        | 46/339 [00:01<00:07, 38.27it/s]Loading weights:  16%|█▌        | 53/339 [00:02<00:07, 40.50it/s]Loading weights:  19%|█▉        | 64/339 [00:02<00:05, 48.10it/s]Loading weights:  21%|██        | 70/339 [00:02<00:05, 46.23it/s]Loading weights:  23%|██▎       | 77/339 [00:02<00:05, 46.58it/s]Loading weights:  26%|██▌       | 88/339 [00:02<00:04, 53.24it/s]Loading weights:  28%|██▊       | 94/339 [00:02<00:04, 49.87it/s]Loading weights:  30%|██▉       | 101/339 [00:03<00:04, 49.40it/s]Loading weights:  33%|███▎      | 112/339 [00:03<00:04, 55.37it/s]Loading weights:  35%|███▍      | 118/339 [00:03<00:04, 51.20it/s]Loading weights:  37%|███▋      | 125/339 [00:03<00:04, 50.21it/s]Loading weights:  40%|████      | 136/339 [00:03<00:03, 56.09it/s]Loading weights:  42%|████▏     | 142/339 [00:03<00:03, 51.83it/s]Loading weights:  44%|████▍     | 149/339 [00:03<00:03, 50.60it/s]Loading weights:  47%|████▋     | 160/339 [00:04<00:03, 56.34it/s]Loading weights:  49%|████▉     | 166/339 [00:04<00:03, 50.63it/s]Loading weights:  51%|█████     | 173/339 [00:04<00:03, 50.90it/s]Loading weights:  54%|█████▍    | 184/339 [00:04<00:02, 56.47it/s]Loading weights:  56%|█████▌    | 190/339 [00:04<00:02, 51.83it/s]Loading weights:  58%|█████▊    | 197/339 [00:04<00:02, 50.58it/s]Loading weights:  61%|██████▏   | 208/339 [00:04<00:02, 56.24it/s]Loading weights:  63%|██████▎   | 214/339 [00:05<00:02, 51.77it/s]Loading weights:  65%|██████▌   | 221/339 [00:05<00:02, 44.60it/s]Loading weights:  69%|██████▊   | 233/339 [00:05<00:01, 53.22it/s]Loading weights:  72%|███████▏  | 244/339 [00:05<00:01, 57.51it/s]Loading weights:  74%|███████▎  | 250/339 [00:05<00:01, 52.79it/s]Loading weights:  76%|███████▌  | 256/339 [00:05<00:01, 49.43it/s]Loading weights:  79%|███████▉  | 268/339 [00:06<00:01, 57.16it/s]Loading weights:  81%|████████  | 274/339 [00:06<00:01, 52.54it/s]Loading weights:  83%|████████▎ | 281/339 [00:06<00:01, 51.11it/s]Loading weights:  86%|████████▌ | 291/339 [00:06<00:00, 48.23it/s]Loading weights:  90%|████████▉ | 304/339 [00:06<00:00, 57.37it/s]Loading weights:  91%|█████████▏| 310/339 [00:06<00:00, 51.58it/s]Loading weights:  93%|█████████▎| 316/339 [00:07<00:00, 49.22it/s]Loading weights:  96%|█████████▋| 327/339 [00:07<00:00, 54.88it/s]Loading weights:  98%|█████████▊| 333/339 [00:07<00:00, 51.66it/s]Loading weights: 100%|██████████| 339/339 [00:07<00:00, 45.61it/s]
+/path/to/env/judge_rl/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/path/to/env/judge_rl/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/path/to/env/judge_rl/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+/path/to/env/judge_rl/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Loading adapter: results/EXP-009_full_composite/final_model
+
+Extracting hidden states (layer -1)...
+  Extracted 4/200 hidden states
+  Extracted 44/200 hidden states
+  Extracted 84/200 hidden states
+  Extracted 124/200 hidden states
+  Extracted 164/200 hidden states
+Hidden state shape: (200, 3584)
+
+Training position probe (5-fold CV)...
+
+Position probe accuracy: 0.5750 ± 0.0548
+  (50% = position not encoded, 100% = perfectly encoded)
+
+Results saved to results/probe_shortcut/probe_results.json
+
+============================================================
+SUMMARY: Shortcut_GRPO_unbal
+Position probe accuracy: 57.5% ± 5.5%
+→ Position NOT encoded (content-based representations)
+============================================================

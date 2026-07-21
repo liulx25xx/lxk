@@ -1,0 +1,57 @@
+2026-05-23 21:16:12,261 [INFO] ============================================================
+2026-05-23 21:16:12,262 [INFO] Judge Model Evaluation
+2026-05-23 21:16:12,262 [INFO] ============================================================
+2026-05-23 21:16:12,262 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-23 21:16:12,262 [INFO] Adapter: results/GRPO_mistral7b_calib_unbal/final_model
+2026-05-23 21:16:12,262 [INFO] Test data: data/eval/rewardbench_test.json
+2026-05-23 21:16:12,262 [INFO] Batch size: 4
+2026-05-23 21:16:12,262 [INFO] Output: results/GRPO_mistral7b_calib_unbal/eval
+2026-05-23 21:16:12,264 [INFO] Auto-detected swap data: data/eval/rewardbench_test_swap.json
+2026-05-23 21:16:12,293 [INFO] Test samples: 449
+2026-05-23 21:16:12,294 [INFO] Loading model...
+2026-05-23 21:16:12,385 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:16:12,396 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:16:12,427 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:16:12,436 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:18:03,470 [INFO] ============================================================
+2026-05-23 21:18:03,471 [INFO] Judge Model Evaluation
+2026-05-23 21:18:03,471 [INFO] ============================================================
+2026-05-23 21:18:03,471 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-23 21:18:03,471 [INFO] Adapter: results/GRPO_mistral7b_calib_unbal/final_model
+2026-05-23 21:18:03,471 [INFO] Test data: data/eval/rewardbench_test.json
+2026-05-23 21:18:03,471 [INFO] Batch size: 4
+2026-05-23 21:18:03,471 [INFO] Output: results/GRPO_mistral7b_calib_unbal/eval
+2026-05-23 21:18:03,471 [INFO] Auto-detected swap data: data/eval/rewardbench_test_swap.json
+2026-05-23 21:18:03,493 [INFO] Test samples: 449
+2026-05-23 21:18:03,493 [INFO] Loading model...
+2026-05-23 21:18:03,549 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:18:03,556 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:18:03,588 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:18:03,596 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,441 [INFO] ============================================================
+2026-05-23 21:19:57,442 [INFO] Judge Model Evaluation
+2026-05-23 21:19:57,442 [INFO] ============================================================
+2026-05-23 21:19:57,442 [INFO] Model: mistralai/Mistral-7B-Instruct-v0.3
+2026-05-23 21:19:57,442 [INFO] Adapter: results/GRPO_mistral7b_calib_unbal/final_model
+2026-05-23 21:19:57,442 [INFO] Test data: data/eval/rewardbench_test.json
+2026-05-23 21:19:57,442 [INFO] Batch size: 4
+2026-05-23 21:19:57,442 [INFO] Output: results/GRPO_mistral7b_calib_unbal/eval
+2026-05-23 21:19:57,442 [INFO] Auto-detected swap data: data/eval/rewardbench_test_swap.json
+2026-05-23 21:19:57,464 [INFO] Test samples: 449
+2026-05-23 21:19:57,464 [INFO] Loading model...
+2026-05-23 21:19:57,519 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,527 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,583 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,591 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,642 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,651 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,684 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-23 21:19:57,719 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,934 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,943 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,983 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,991 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:22:04,802 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:22:04,809 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/generation_config.json "HTTP/1.1 200 OK"
+2026-05-23 21:22:04,881 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-23 21:22:04,883 [INFO] Loading LoRA adapter from results/GRPO_mistral7b_calib_unbal/final_model

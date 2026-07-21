@@ -1,0 +1,8 @@
+# Training/evaluation dependencies. Versions are not pinned because the exact
+# original environment was not retained in the saved run metadata.
+torch
+transformers
+datasets
+accelerate
+peft
+trl

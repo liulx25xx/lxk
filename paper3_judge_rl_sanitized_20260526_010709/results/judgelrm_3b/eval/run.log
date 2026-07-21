@@ -1,0 +1,208 @@
+2026-05-24 02:17:18,904 [INFO] ============================================================
+2026-05-24 02:17:18,906 [INFO] Judge Model Evaluation
+2026-05-24 02:17:18,906 [INFO] ============================================================
+2026-05-24 02:17:18,906 [INFO] Model: nuojohnchen/JudgeLRM-3B
+2026-05-24 02:17:18,906 [INFO] Adapter: None (base model)
+2026-05-24 02:17:18,906 [INFO] Test data: data/eval/rewardbench_test.json
+2026-05-24 02:17:18,906 [INFO] Batch size: 4
+2026-05-24 02:17:18,906 [INFO] Output: results/judgelrm_3b/eval
+2026-05-24 02:17:18,907 [INFO] Auto-detected swap data: data/eval/rewardbench_test_swap.json
+2026-05-24 02:17:18,934 [INFO] Test samples: 449
+2026-05-24 02:17:18,935 [INFO] Loading model...
+2026-05-24 02:17:19,029 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:19,070 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,163 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,244 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:19,286 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,411 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,480 [INFO] HTTP Request: GET https://huggingface.co/api/models/nuojohnchen/JudgeLRM-3B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-24 02:17:19,538 [INFO] HTTP Request: GET https://huggingface.co/api/models/nuojohnchen/JudgeLRM-3B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,607 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:19,645 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/vocab.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,701 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/vocab.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:19,917 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:19,958 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/merges.txt "HTTP/1.1 200 OK"
+2026-05-24 02:17:20,068 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/merges.txt "HTTP/1.1 200 OK"
+2026-05-24 02:17:20,293 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-05-24 02:17:20,414 [INFO] HTTP Request: GET https://huggingface.co/api/models/nuojohnchen/JudgeLRM-3B/xet-read-token/3a79827c921919f777533523bdb3c5b1189f54b2 "HTTP/1.1 200 OK"
+2026-05-24 02:17:21,003 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/added_tokens.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:21,042 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/added_tokens.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:21,101 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/added_tokens.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:21,161 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:21,250 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:21,560 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:21,608 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-05-24 02:17:22,026 [INFO] HTTP Request: GET https://huggingface.co/api/models/nuojohnchen/JudgeLRM-3B "HTTP/1.1 200 OK"
+2026-05-24 02:17:22,061 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:22,075 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:22,118 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-24 02:17:22,167 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:22,174 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:22,217 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-24 02:17:22,257 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:22,293 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:22,343 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:22,390 [INFO] HTTP Request: GET https://huggingface.co/api/models/nuojohnchen/JudgeLRM-3B/revision/main "HTTP/1.1 200 OK"
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]2026-05-24 02:17:22,437 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/3a79827c921919f777533523bdb3c5b1189f54b2/model-00001-of-00003.safetensors "HTTP/1.1 302 Found"
+2026-05-24 02:17:22,443 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/3a79827c921919f777533523bdb3c5b1189f54b2/model-00003-of-00003.safetensors "HTTP/1.1 302 Found"
+2026-05-24 02:17:22,575 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/3a79827c921919f777533523bdb3c5b1189f54b2/model-00002-of-00003.safetensors "HTTP/1.1 302 Found"
+Fetching 3 files:  33%|███▎      | 1/3 [00:11<00:23, 11.73s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:13<00:05,  5.69s/it]Fetching 3 files: 100%|██████████| 3/3 [00:13<00:00,  3.35s/it]Fetching 3 files: 100%|██████████| 3/3 [00:13<00:00,  4.59s/it]
+Loading weights:   0%|          | 0/435 [00:00<?, ?it/s]Loading weights:   0%|          | 1/435 [00:00<06:05,  1.19it/s]Loading weights:   0%|          | 2/435 [00:01<03:31,  2.05it/s]Loading weights:  12%|█▏        | 52/435 [00:01<00:05, 73.44it/s]Loading weights:  17%|█▋        | 72/435 [00:01<00:04, 90.43it/s]Loading weights:  21%|██        | 91/435 [00:01<00:03, 87.17it/s]Loading weights:  24%|██▍       | 106/435 [00:01<00:03, 95.21it/s]Loading weights:  28%|██▊       | 120/435 [00:01<00:03, 100.37it/s]Loading weights:  31%|███       | 134/435 [00:01<00:03, 100.16it/s]Loading weights:  34%|███▍      | 148/435 [00:02<00:03, 87.50it/s] Loading weights:  40%|███▉      | 172/435 [00:02<00:02, 102.68it/s]Loading weights:  42%|████▏     | 184/435 [00:02<00:02, 100.53it/s]Loading weights:  45%|████▌     | 196/435 [00:02<00:02, 103.55it/s]Loading weights:  48%|████▊     | 208/435 [00:02<00:02, 103.70it/s]Loading weights:  50%|█████     | 219/435 [00:02<00:02, 81.75it/s] Loading weights:  53%|█████▎    | 230/435 [00:03<00:03, 51.93it/s]Loading weights:  56%|█████▌    | 244/435 [00:03<00:03, 59.96it/s]Loading weights:  58%|█████▊    | 254/435 [00:03<00:03, 55.75it/s]Loading weights:  61%|██████    | 266/435 [00:03<00:02, 63.90it/s]Loading weights:  64%|██████▍   | 278/435 [00:04<00:02, 56.60it/s]Loading weights:  67%|██████▋   | 290/435 [00:04<00:02, 66.36it/s]Loading weights:  69%|██████▉   | 302/435 [00:04<00:01, 73.21it/s]Loading weights:  72%|███████▏  | 314/435 [00:04<00:01, 78.14it/s]Loading weights:  75%|███████▍  | 326/435 [00:04<00:01, 84.44it/s]Loading weights:  78%|███████▊  | 340/435 [00:04<00:01, 80.25it/s]Loading weights:  81%|████████  | 353/435 [00:04<00:00, 89.85it/s]Loading weights:  84%|████████▍ | 366/435 [00:04<00:00, 98.79it/s]Loading weights:  87%|████████▋ | 377/435 [00:05<00:00, 98.18it/s]Loading weights:  89%|████████▉ | 388/435 [00:05<00:00, 96.13it/s]Loading weights:  92%|█████████▏| 400/435 [00:05<00:00, 97.86it/s]Loading weights:  95%|█████████▍| 412/435 [00:05<00:00, 98.46it/s]Loading weights:  97%|█████████▋| 424/435 [00:05<00:00, 98.46it/s]Loading weights: 100%|██████████| 435/435 [00:05<00:00, 78.20it/s]
+2026-05-24 02:17:43,041 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 02:17:43,139 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/generation_config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:43,191 [INFO] HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nuojohnchen/JudgeLRM-3B/3a79827c921919f777533523bdb3c5b1189f54b2/generation_config.json "HTTP/1.1 200 OK"
+2026-05-24 02:17:43,242 [INFO] HTTP Request: HEAD https://huggingface.co/nuojohnchen/JudgeLRM-3B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-24 02:17:43,249 [INFO] Model loaded in 24.3s
+2026-05-24 02:17:52,515 [INFO] [4/449] Acc=0.750 Consist=0.750 Speed=2.3s/sample ETA=17.2min
+2026-05-24 02:18:01,189 [INFO] [8/449] Acc=0.750 Consist=0.625 Speed=2.2s/sample ETA=16.5min
+2026-05-24 02:18:09,969 [INFO] [12/449] Acc=0.833 Consist=0.667 Speed=2.2s/sample ETA=16.2min
+2026-05-24 02:18:20,306 [INFO] [16/449] Acc=0.750 Consist=0.625 Speed=2.3s/sample ETA=16.7min
+2026-05-24 02:18:28,195 [INFO] [20/449] Acc=0.750 Consist=0.650 Speed=2.2s/sample ETA=16.1min
+2026-05-24 02:18:37,665 [INFO] [24/449] Acc=0.750 Consist=0.708 Speed=2.3s/sample ETA=16.1min
+2026-05-24 02:18:45,943 [INFO] [28/449] Acc=0.750 Consist=0.714 Speed=2.2s/sample ETA=15.7min
+2026-05-24 02:18:55,676 [INFO] [32/449] Acc=0.781 Consist=0.688 Speed=2.3s/sample ETA=15.7min
+2026-05-24 02:19:07,561 [INFO] [36/449] Acc=0.778 Consist=0.694 Speed=2.3s/sample ETA=16.1min
+2026-05-24 02:19:20,598 [INFO] [40/449] Acc=0.800 Consist=0.675 Speed=2.4s/sample ETA=16.6min
+2026-05-24 02:19:30,433 [INFO] [44/449] Acc=0.773 Consist=0.659 Speed=2.4s/sample ETA=16.4min
+2026-05-24 02:19:37,594 [INFO] [48/449] Acc=0.792 Consist=0.667 Speed=2.4s/sample ETA=15.9min
+2026-05-24 02:19:48,721 [INFO] [52/449] Acc=0.788 Consist=0.673 Speed=2.4s/sample ETA=16.0min
+2026-05-24 02:20:00,163 [INFO] [56/449] Acc=0.786 Consist=0.661 Speed=2.4s/sample ETA=16.0min
+2026-05-24 02:20:09,135 [INFO] [60/449] Acc=0.783 Consist=0.667 Speed=2.4s/sample ETA=15.8min
+2026-05-24 02:20:17,654 [INFO] [64/449] Acc=0.781 Consist=0.688 Speed=2.4s/sample ETA=15.5min
+2026-05-24 02:20:25,190 [INFO] [68/449] Acc=0.794 Consist=0.706 Speed=2.4s/sample ETA=15.1min
+2026-05-24 02:20:33,138 [INFO] [72/449] Acc=0.792 Consist=0.722 Speed=2.4s/sample ETA=14.8min
+2026-05-24 02:20:45,150 [INFO] [76/449] Acc=0.803 Consist=0.724 Speed=2.4s/sample ETA=14.9min
+2026-05-24 02:20:55,161 [INFO] [80/449] Acc=0.787 Consist=0.725 Speed=2.4s/sample ETA=14.8min
+2026-05-24 02:21:08,601 [INFO] [84/449] Acc=0.774 Consist=0.738 Speed=2.4s/sample ETA=14.9min
+2026-05-24 02:21:16,151 [INFO] [88/449] Acc=0.784 Consist=0.716 Speed=2.4s/sample ETA=14.6min
+2026-05-24 02:21:28,613 [INFO] [92/449] Acc=0.783 Consist=0.685 Speed=2.4s/sample ETA=14.6min
+2026-05-24 02:21:40,768 [INFO] [96/449] Acc=0.781 Consist=0.688 Speed=2.5s/sample ETA=14.6min
+2026-05-24 02:21:48,818 [INFO] [100/449] Acc=0.770 Consist=0.690 Speed=2.5s/sample ETA=14.3min
+2026-05-24 02:21:56,976 [INFO] [104/449] Acc=0.779 Consist=0.702 Speed=2.4s/sample ETA=14.0min
+2026-05-24 02:22:09,065 [INFO] [108/449] Acc=0.787 Consist=0.713 Speed=2.5s/sample ETA=14.0min
+2026-05-24 02:22:18,631 [INFO] [112/449] Acc=0.795 Consist=0.714 Speed=2.5s/sample ETA=13.8min
+2026-05-24 02:22:27,118 [INFO] [116/449] Acc=0.802 Consist=0.716 Speed=2.4s/sample ETA=13.6min
+2026-05-24 02:22:36,066 [INFO] [120/449] Acc=0.800 Consist=0.708 Speed=2.4s/sample ETA=13.4min
+2026-05-24 02:22:46,675 [INFO] [124/449] Acc=0.806 Consist=0.702 Speed=2.4s/sample ETA=13.3min
+2026-05-24 02:22:55,436 [INFO] [128/449] Acc=0.797 Consist=0.711 Speed=2.4s/sample ETA=13.0min
+2026-05-24 02:23:05,314 [INFO] [132/449] Acc=0.803 Consist=0.697 Speed=2.4s/sample ETA=12.9min
+2026-05-24 02:23:15,050 [INFO] [136/449] Acc=0.809 Consist=0.699 Speed=2.4s/sample ETA=12.7min
+2026-05-24 02:23:25,032 [INFO] [140/449] Acc=0.807 Consist=0.707 Speed=2.4s/sample ETA=12.6min
+2026-05-24 02:23:33,629 [INFO] [144/449] Acc=0.799 Consist=0.708 Speed=2.4s/sample ETA=12.4min
+2026-05-24 02:23:42,052 [INFO] [148/449] Acc=0.804 Consist=0.696 Speed=2.4s/sample ETA=12.2min
+2026-05-24 02:23:52,459 [INFO] [152/449] Acc=0.803 Consist=0.697 Speed=2.4s/sample ETA=12.0min
+2026-05-24 02:24:03,079 [INFO] [156/449] Acc=0.808 Consist=0.686 Speed=2.4s/sample ETA=11.9min
+2026-05-24 02:24:13,181 [INFO] [160/449] Acc=0.806 Consist=0.688 Speed=2.4s/sample ETA=11.7min
+2026-05-24 02:24:23,021 [INFO] [164/449] Acc=0.811 Consist=0.689 Speed=2.4s/sample ETA=11.6min
+2026-05-24 02:24:33,336 [INFO] [168/449] Acc=0.810 Consist=0.679 Speed=2.4s/sample ETA=11.4min
+2026-05-24 02:24:43,336 [INFO] [172/449] Acc=0.814 Consist=0.680 Speed=2.4s/sample ETA=11.3min
+2026-05-24 02:24:53,169 [INFO] [176/449] Acc=0.807 Consist=0.670 Speed=2.4s/sample ETA=11.1min
+2026-05-24 02:25:03,346 [INFO] [180/449] Acc=0.806 Consist=0.672 Speed=2.4s/sample ETA=11.0min
+2026-05-24 02:25:14,452 [INFO] [184/449] Acc=0.799 Consist=0.668 Speed=2.5s/sample ETA=10.8min
+2026-05-24 02:25:27,089 [INFO] [188/449] Acc=0.798 Consist=0.670 Speed=2.5s/sample ETA=10.7min
+2026-05-24 02:25:34,919 [INFO] [192/449] Acc=0.797 Consist=0.661 Speed=2.5s/sample ETA=10.5min
+2026-05-24 02:25:45,109 [INFO] [196/449] Acc=0.796 Consist=0.658 Speed=2.5s/sample ETA=10.4min
+2026-05-24 02:25:57,474 [INFO] [200/449] Acc=0.795 Consist=0.655 Speed=2.5s/sample ETA=10.3min
+2026-05-24 02:26:07,225 [INFO] [204/449] Acc=0.794 Consist=0.652 Speed=2.5s/sample ETA=10.1min
+2026-05-24 02:26:21,706 [INFO] [208/449] Acc=0.788 Consist=0.654 Speed=2.5s/sample ETA=10.0min
+2026-05-24 02:26:29,376 [INFO] [212/449] Acc=0.788 Consist=0.651 Speed=2.5s/sample ETA=9.8min
+2026-05-24 02:26:38,234 [INFO] [216/449] Acc=0.792 Consist=0.653 Speed=2.5s/sample ETA=9.6min
+2026-05-24 02:26:49,321 [INFO] [220/449] Acc=0.791 Consist=0.655 Speed=2.5s/sample ETA=9.5min
+2026-05-24 02:27:01,178 [INFO] [224/449] Acc=0.790 Consist=0.656 Speed=2.5s/sample ETA=9.3min
+2026-05-24 02:27:10,320 [INFO] [228/449] Acc=0.794 Consist=0.662 Speed=2.5s/sample ETA=9.2min
+2026-05-24 02:27:19,970 [INFO] [232/449] Acc=0.789 Consist=0.668 Speed=2.5s/sample ETA=9.0min
+2026-05-24 02:27:30,312 [INFO] [236/449] Acc=0.792 Consist=0.661 Speed=2.5s/sample ETA=8.8min
+2026-05-24 02:27:39,451 [INFO] [240/449] Acc=0.787 Consist=0.658 Speed=2.5s/sample ETA=8.7min
+2026-05-24 02:27:51,171 [INFO] [244/449] Acc=0.791 Consist=0.660 Speed=2.5s/sample ETA=8.5min
+2026-05-24 02:28:00,811 [INFO] [248/449] Acc=0.786 Consist=0.661 Speed=2.5s/sample ETA=8.3min
+2026-05-24 02:28:09,207 [INFO] [252/449] Acc=0.786 Consist=0.667 Speed=2.5s/sample ETA=8.2min
+2026-05-24 02:28:19,216 [INFO] [256/449] Acc=0.789 Consist=0.664 Speed=2.5s/sample ETA=8.0min
+2026-05-24 02:28:29,036 [INFO] [260/449] Acc=0.785 Consist=0.669 Speed=2.5s/sample ETA=7.8min
+2026-05-24 02:28:40,812 [INFO] [264/449] Acc=0.788 Consist=0.667 Speed=2.5s/sample ETA=7.7min
+2026-05-24 02:28:49,125 [INFO] [268/449] Acc=0.791 Consist=0.664 Speed=2.5s/sample ETA=7.5min
+2026-05-24 02:28:58,888 [INFO] [272/449] Acc=0.794 Consist=0.662 Speed=2.5s/sample ETA=7.3min
+2026-05-24 02:29:08,202 [INFO] [276/449] Acc=0.790 Consist=0.667 Speed=2.5s/sample ETA=7.2min
+2026-05-24 02:29:24,933 [INFO] [280/449] Acc=0.789 Consist=0.671 Speed=2.5s/sample ETA=7.1min
+2026-05-24 02:29:32,041 [INFO] [284/449] Acc=0.792 Consist=0.665 Speed=2.5s/sample ETA=6.9min
+2026-05-24 02:29:40,509 [INFO] [288/449] Acc=0.792 Consist=0.667 Speed=2.5s/sample ETA=6.7min
+2026-05-24 02:29:52,277 [INFO] [292/449] Acc=0.788 Consist=0.668 Speed=2.5s/sample ETA=6.5min
+2026-05-24 02:30:03,885 [INFO] [296/449] Acc=0.787 Consist=0.662 Speed=2.5s/sample ETA=6.4min
+2026-05-24 02:30:14,337 [INFO] [300/449] Acc=0.790 Consist=0.663 Speed=2.5s/sample ETA=6.2min
+2026-05-24 02:30:22,350 [INFO] [304/449] Acc=0.793 Consist=0.661 Speed=2.5s/sample ETA=6.0min
+2026-05-24 02:30:32,137 [INFO] [308/449] Acc=0.792 Consist=0.659 Speed=2.5s/sample ETA=5.9min
+2026-05-24 02:30:44,880 [INFO] [312/449] Acc=0.792 Consist=0.660 Speed=2.5s/sample ETA=5.7min
+2026-05-24 02:30:54,897 [INFO] [316/449] Acc=0.791 Consist=0.665 Speed=2.5s/sample ETA=5.6min
+2026-05-24 02:31:02,952 [INFO] [320/449] Acc=0.784 Consist=0.669 Speed=2.5s/sample ETA=5.4min
+2026-05-24 02:31:13,778 [INFO] [324/449] Acc=0.787 Consist=0.664 Speed=2.5s/sample ETA=5.2min
+2026-05-24 02:31:29,649 [INFO] [328/449] Acc=0.790 Consist=0.665 Speed=2.5s/sample ETA=5.1min
+2026-05-24 02:31:38,993 [INFO] [332/449] Acc=0.786 Consist=0.669 Speed=2.5s/sample ETA=4.9min
+2026-05-24 02:31:52,326 [INFO] [336/449] Acc=0.783 Consist=0.670 Speed=2.5s/sample ETA=4.8min
+2026-05-24 02:32:03,490 [INFO] [340/449] Acc=0.779 Consist=0.668 Speed=2.5s/sample ETA=4.6min
+2026-05-24 02:32:12,261 [INFO] [344/449] Acc=0.779 Consist=0.672 Speed=2.5s/sample ETA=4.4min
+2026-05-24 02:32:24,767 [INFO] [348/449] Acc=0.779 Consist=0.672 Speed=2.5s/sample ETA=4.3min
+2026-05-24 02:32:34,613 [INFO] [352/449] Acc=0.776 Consist=0.673 Speed=2.5s/sample ETA=4.1min
+2026-05-24 02:32:44,142 [INFO] [356/449] Acc=0.778 Consist=0.674 Speed=2.5s/sample ETA=3.9min
+2026-05-24 02:32:53,654 [INFO] [360/449] Acc=0.775 Consist=0.675 Speed=2.5s/sample ETA=3.8min
+2026-05-24 02:33:02,191 [INFO] [364/449] Acc=0.775 Consist=0.676 Speed=2.5s/sample ETA=3.6min
+2026-05-24 02:33:14,844 [INFO] [368/449] Acc=0.777 Consist=0.674 Speed=2.5s/sample ETA=3.4min
+2026-05-24 02:33:24,677 [INFO] [372/449] Acc=0.772 Consist=0.675 Speed=2.5s/sample ETA=3.2min
+2026-05-24 02:33:36,415 [INFO] [376/449] Acc=0.771 Consist=0.676 Speed=2.5s/sample ETA=3.1min
+2026-05-24 02:33:45,918 [INFO] [380/449] Acc=0.771 Consist=0.676 Speed=2.5s/sample ETA=2.9min
+2026-05-24 02:33:54,136 [INFO] [384/449] Acc=0.768 Consist=0.680 Speed=2.5s/sample ETA=2.7min
+2026-05-24 02:34:05,703 [INFO] [388/449] Acc=0.765 Consist=0.678 Speed=2.5s/sample ETA=2.6min
+2026-05-24 02:34:15,299 [INFO] [392/449] Acc=0.768 Consist=0.679 Speed=2.5s/sample ETA=2.4min
+2026-05-24 02:34:23,256 [INFO] [396/449] Acc=0.765 Consist=0.679 Speed=2.5s/sample ETA=2.2min
+2026-05-24 02:34:33,405 [INFO] [400/449] Acc=0.765 Consist=0.680 Speed=2.5s/sample ETA=2.1min
+2026-05-24 02:34:41,603 [INFO] [404/449] Acc=0.765 Consist=0.681 Speed=2.5s/sample ETA=1.9min
+2026-05-24 02:34:50,974 [INFO] [408/449] Acc=0.765 Consist=0.679 Speed=2.5s/sample ETA=1.7min
+2026-05-24 02:35:01,429 [INFO] [412/449] Acc=0.765 Consist=0.680 Speed=2.5s/sample ETA=1.6min
+2026-05-24 02:35:12,167 [INFO] [416/449] Acc=0.764 Consist=0.678 Speed=2.5s/sample ETA=1.4min
+2026-05-24 02:35:21,313 [INFO] [420/449] Acc=0.762 Consist=0.676 Speed=2.5s/sample ETA=1.2min
+2026-05-24 02:35:30,196 [INFO] [424/449] Acc=0.764 Consist=0.677 Speed=2.5s/sample ETA=1.0min
+2026-05-24 02:35:43,127 [INFO] [428/449] Acc=0.759 Consist=0.673 Speed=2.5s/sample ETA=0.9min
+2026-05-24 02:35:52,493 [INFO] [432/449] Acc=0.762 Consist=0.674 Speed=2.5s/sample ETA=0.7min
+2026-05-24 02:36:01,079 [INFO] [436/449] Acc=0.764 Consist=0.677 Speed=2.5s/sample ETA=0.5min
+2026-05-24 02:36:10,781 [INFO] [440/449] Acc=0.766 Consist=0.677 Speed=2.5s/sample ETA=0.4min
+2026-05-24 02:36:22,249 [INFO] [444/449] Acc=0.766 Consist=0.676 Speed=2.5s/sample ETA=0.2min
+2026-05-24 02:36:29,272 [INFO] [448/449] Acc=0.768 Consist=0.679 Speed=2.5s/sample ETA=0.0min
+2026-05-24 02:36:34,748 [INFO] [449/449] Acc=0.768 Consist=0.679 Speed=2.5s/sample ETA=0.0min
+2026-05-24 02:36:34,754 [INFO] 
+2026-05-24 02:36:34,754 [INFO] ============================================================
+2026-05-24 02:36:34,754 [INFO] EVALUATION RESULTS
+2026-05-24 02:36:34,754 [INFO] ============================================================
+2026-05-24 02:36:34,754 [INFO] Model: nuojohnchen/JudgeLRM-3B
+2026-05-24 02:36:34,754 [INFO] Adapter: None
+2026-05-24 02:36:34,754 [INFO] Samples: 449
+2026-05-24 02:36:34,754 [INFO] Accuracy:    0.7684
+2026-05-24 02:36:34,754 [INFO] Consistency: 0.6793
+2026-05-24 02:36:34,754 [INFO] Calibration: 0.8323 (1-Brier=0.1677)
+2026-05-24 02:36:34,754 [INFO] Parse failures (orig/swap): 0/0
+2026-05-24 02:36:34,754 [INFO] Instances with confidence: 0/449
+2026-05-24 02:36:34,754 [INFO] 
+2026-05-24 02:36:34,754 [INFO] Per-category:
+2026-05-24 02:36:34,754 [INFO]   alpacaeval-easy                acc=1.000 consist=1.000 n=13
+2026-05-24 02:36:34,754 [INFO]   alpacaeval-hard                acc=1.000 consist=1.000 n=15
+2026-05-24 02:36:34,754 [INFO]   alpacaeval-length              acc=1.000 consist=0.591 n=22
+2026-05-24 02:36:34,754 [INFO]   donotanswer                    acc=0.500 consist=0.667 n=18
+2026-05-24 02:36:34,754 [INFO]   hep-cpp                        acc=0.812 consist=0.438 n=16
+2026-05-24 02:36:34,754 [INFO]   hep-go                         acc=0.960 consist=0.360 n=25
+2026-05-24 02:36:34,754 [INFO]   hep-java                       acc=0.864 consist=0.545 n=22
+2026-05-24 02:36:34,754 [INFO]   hep-js                         acc=0.875 consist=0.583 n=24
+2026-05-24 02:36:34,754 [INFO]   hep-python                     acc=0.789 consist=0.368 n=19
+2026-05-24 02:36:34,754 [INFO]   hep-rust                       acc=0.966 consist=0.483 n=29
+2026-05-24 02:36:34,754 [INFO]   llmbar-adver-GPTInst           acc=0.176 consist=0.882 n=17
+2026-05-24 02:36:34,754 [INFO]   llmbar-adver-GPTOut            acc=0.800 consist=0.600 n=5
+2026-05-24 02:36:34,754 [INFO]   llmbar-adver-manual            acc=0.250 consist=1.000 n=4
+2026-05-24 02:36:34,755 [INFO]   llmbar-adver-neighbor          acc=0.412 consist=0.882 n=17
+2026-05-24 02:36:34,755 [INFO]   llmbar-natural                 acc=0.900 consist=0.600 n=20
+2026-05-24 02:36:34,755 [INFO]   math-prm                       acc=0.609 consist=0.696 n=69
+2026-05-24 02:36:34,755 [INFO]   mt-bench-easy                  acc=0.800 consist=0.600 n=5
+2026-05-24 02:36:34,755 [INFO]   mt-bench-hard                  acc=0.833 consist=0.833 n=6
+2026-05-24 02:36:34,755 [INFO]   mt-bench-med                   acc=1.000 consist=1.000 n=6
+2026-05-24 02:36:34,755 [INFO]   refusals-dangerous             acc=0.632 consist=0.737 n=19
+2026-05-24 02:36:34,755 [INFO]   refusals-offensive             acc=0.857 consist=0.905 n=21
+2026-05-24 02:36:34,755 [INFO]   xstest-should-refuse           acc=0.500 consist=0.850 n=20
+2026-05-24 02:36:34,755 [INFO]   xstest-should-respond          acc=0.973 consist=0.757 n=37
+2026-05-24 02:36:34,755 [INFO] ============================================================
+2026-05-24 02:36:34,755 [INFO] Results saved to results/judgelrm_3b/eval

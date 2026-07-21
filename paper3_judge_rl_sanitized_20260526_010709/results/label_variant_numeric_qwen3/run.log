@@ -1,0 +1,143 @@
+2026-05-24 00:27:59,117 [INFO] Label variant: numeric — Response 1/2 instead of A/B
+2026-05-24 00:27:59,147 [INFO] Test samples: 449
+2026-05-24 00:27:59,154 [INFO] Sample transformed prompt (first 300 chars):
+Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as 
+2026-05-24 00:27:59,154 [INFO] Loading model...
+2026-05-24 00:27:59,259 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 00:27:59,266 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-05-24 00:27:59,344 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 00:27:59,351 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-24 00:27:59,396 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-24 00:27:59,429 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-24 00:27:59,872 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK"
+2026-05-24 00:27:59,908 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 00:27:59,916 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-24 00:27:59,968 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 00:27:59,976 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:07<46:52,  7.07s/it]Loading weights:   1%|          | 2/399 [00:07<22:00,  3.33s/it]Loading weights:   1%|▏         | 5/399 [00:08<06:40,  1.02s/it]Loading weights:   2%|▏         | 9/399 [00:08<02:53,  2.25it/s]Loading weights:   4%|▍         | 15/399 [00:08<01:36,  3.99it/s]Loading weights:   4%|▍         | 17/399 [00:10<02:08,  2.97it/s]Loading weights:   5%|▌         | 21/399 [00:10<01:30,  4.20it/s]Loading weights:   7%|▋         | 26/399 [00:11<01:17,  4.84it/s]Loading weights:   7%|▋         | 28/399 [00:11<01:16,  4.86it/s]Loading weights:   8%|▊         | 32/399 [00:11<00:58,  6.27it/s]Loading weights:   9%|▊         | 34/399 [00:12<00:55,  6.62it/s]Loading weights:   9%|▉         | 37/399 [00:12<01:06,  5.48it/s]Loading weights:  10%|▉         | 38/399 [00:13<01:29,  4.05it/s]Loading weights:  10%|▉         | 39/399 [00:14<01:48,  3.33it/s]Loading weights:  11%|█         | 43/399 [00:14<01:09,  5.13it/s]Loading weights:  12%|█▏        | 47/399 [00:15<01:09,  5.08it/s]Loading weights:  12%|█▏        | 49/399 [00:15<01:18,  4.48it/s]Loading weights:  13%|█▎        | 50/399 [00:16<01:41,  3.44it/s]Loading weights:  14%|█▎        | 54/399 [00:16<01:08,  5.04it/s]Loading weights:  14%|█▍        | 56/399 [00:17<01:00,  5.70it/s]Loading weights:  15%|█▍        | 59/399 [00:17<01:09,  4.92it/s]Loading weights:  15%|█▌        | 60/399 [00:18<01:32,  3.67it/s]Loading weights:  15%|█▌        | 61/399 [00:19<02:03,  2.74it/s]Loading weights:  16%|█▋        | 65/399 [00:19<01:17,  4.32it/s]Loading weights:  18%|█▊        | 70/399 [00:20<00:56,  5.87it/s]Loading weights:  18%|█▊        | 71/399 [00:20<01:14,  4.42it/s]Loading weights:  18%|█▊        | 72/399 [00:21<01:32,  3.52it/s]Loading weights:  19%|█▉        | 76/399 [00:21<01:01,  5.26it/s]Loading weights:  19%|█▉        | 77/399 [00:22<01:02,  5.17it/s]Loading weights:  20%|██        | 81/399 [00:22<00:59,  5.35it/s]Loading weights:  21%|██        | 82/399 [00:23<01:14,  4.25it/s]Loading weights:  21%|██        | 83/399 [00:23<01:31,  3.46it/s]Loading weights:  22%|██▏       | 87/399 [00:24<00:56,  5.53it/s]Loading weights:  22%|██▏       | 89/399 [00:24<00:52,  5.95it/s]Loading weights:  23%|██▎       | 92/399 [00:24<00:53,  5.69it/s]Loading weights:  23%|██▎       | 93/399 [00:25<00:50,  6.01it/s]Loading weights:  24%|██▎       | 94/399 [00:25<01:13,  4.16it/s]Loading weights:  24%|██▍       | 97/399 [00:25<00:48,  6.25it/s]Loading weights:  26%|██▌       | 103/399 [00:26<00:39,  7.48it/s]Loading weights:  26%|██▌       | 104/399 [00:27<00:53,  5.48it/s]Loading weights:  26%|██▋       | 105/399 [00:27<01:11,  4.13it/s]Loading weights:  27%|██▋       | 109/399 [00:28<00:49,  5.88it/s]Loading weights:  29%|██▊       | 114/399 [00:28<00:44,  6.41it/s]Loading weights:  29%|██▉       | 115/399 [00:29<01:00,  4.68it/s]Loading weights:  29%|██▉       | 116/399 [00:30<01:17,  3.66it/s]Loading weights:  30%|███       | 120/399 [00:30<00:50,  5.55it/s]Loading weights:  31%|███▏      | 125/399 [00:30<00:44,  6.18it/s]Loading weights:  32%|███▏      | 126/399 [00:31<00:56,  4.83it/s]Loading weights:  32%|███▏      | 127/399 [00:32<01:10,  3.88it/s]Loading weights:  33%|███▎      | 131/399 [00:32<00:45,  5.83it/s]Loading weights:  34%|███▍      | 136/399 [00:33<00:41,  6.34it/s]Loading weights:  34%|███▍      | 137/399 [00:33<00:55,  4.76it/s]Loading weights:  35%|███▍      | 138/399 [00:34<01:06,  3.90it/s]Loading weights:  36%|███▌      | 142/399 [00:34<00:44,  5.81it/s]Loading weights:  36%|███▌      | 143/399 [00:34<00:45,  5.63it/s]Loading weights:  37%|███▋      | 147/399 [00:35<00:42,  5.95it/s]Loading weights:  37%|███▋      | 149/399 [00:35<00:49,  5.03it/s]Loading weights:  38%|███▊      | 153/399 [00:36<00:38,  6.39it/s]Loading weights:  40%|███▉      | 158/399 [00:36<00:31,  7.71it/s]Loading weights:  40%|███▉      | 159/399 [00:37<00:42,  5.62it/s]Loading weights:  40%|████      | 160/399 [00:37<00:55,  4.30it/s]Loading weights:  41%|████      | 164/399 [00:38<00:37,  6.31it/s]Loading weights:  42%|████▏     | 166/399 [00:38<00:33,  6.94it/s]Loading weights:  42%|████▏     | 169/399 [00:39<00:47,  4.84it/s]Loading weights:  43%|████▎     | 171/399 [00:39<00:39,  5.82it/s]Loading weights:  44%|████▍     | 175/399 [00:39<00:27,  8.10it/s]Loading weights:  44%|████▍     | 177/399 [00:39<00:26,  8.43it/s]Loading weights:  45%|████▌     | 180/399 [00:40<00:33,  6.55it/s]Loading weights:  45%|████▌     | 181/399 [00:41<00:45,  4.76it/s]Loading weights:  46%|████▌     | 182/399 [00:41<00:59,  3.64it/s]Loading weights:  47%|████▋     | 186/399 [00:42<00:38,  5.47it/s]Loading weights:  48%|████▊     | 190/399 [00:42<00:37,  5.57it/s]Loading weights:  48%|████▊     | 192/399 [00:43<00:41,  4.99it/s]Loading weights:  48%|████▊     | 193/399 [00:43<00:52,  3.90it/s]Loading weights:  49%|████▉     | 197/399 [00:44<00:34,  5.89it/s]Loading weights:  51%|█████     | 202/399 [00:44<00:30,  6.36it/s]Loading weights:  51%|█████     | 203/399 [00:45<00:40,  4.80it/s]Loading weights:  51%|█████     | 204/399 [00:46<00:50,  3.83it/s]Loading weights:  52%|█████▏    | 208/399 [00:46<00:30,  6.31it/s]Loading weights:  53%|█████▎    | 210/399 [00:46<00:27,  6.88it/s]Loading weights:  53%|█████▎    | 213/399 [00:47<00:39,  4.71it/s]Loading weights:  54%|█████▍    | 215/399 [00:47<00:32,  5.73it/s]Loading weights:  55%|█████▍    | 219/399 [00:47<00:22,  7.95it/s]Loading weights:  56%|█████▌    | 224/399 [00:48<00:23,  7.59it/s]Loading weights:  57%|█████▋    | 226/399 [00:49<00:40,  4.29it/s]Loading weights:  58%|█████▊    | 230/399 [00:50<00:30,  5.60it/s]Loading weights:  58%|█████▊    | 232/399 [00:50<00:27,  6.03it/s]Loading weights:  59%|█████▊    | 234/399 [00:51<00:35,  4.67it/s]Loading weights:  59%|█████▉    | 236/399 [00:51<00:40,  4.04it/s]Loading weights:  59%|█████▉    | 237/399 [00:52<00:49,  3.27it/s]Loading weights:  60%|██████    | 241/399 [00:52<00:33,  4.70it/s]Loading weights:  62%|██████▏   | 246/399 [00:53<00:25,  6.09it/s]Loading weights:  62%|██████▏   | 247/399 [00:53<00:32,  4.69it/s]Loading weights:  62%|██████▏   | 248/399 [00:54<00:41,  3.63it/s]Loading weights:  63%|██████▎   | 252/399 [00:54<00:28,  5.15it/s]Loading weights:  64%|██████▍   | 257/399 [00:55<00:21,  6.48it/s]Loading weights:  65%|██████▍   | 258/399 [00:56<00:29,  4.76it/s]Loading weights:  65%|██████▍   | 259/399 [00:56<00:36,  3.80it/s]Loading weights:  66%|██████▌   | 263/399 [00:57<00:24,  5.62it/s]Loading weights:  66%|██████▋   | 265/399 [00:57<00:21,  6.13it/s]Loading weights:  67%|██████▋   | 268/399 [00:57<00:23,  5.53it/s]Loading weights:  67%|██████▋   | 269/399 [00:58<00:37,  3.46it/s]Loading weights:  68%|██████▊   | 270/399 [00:59<00:43,  2.97it/s]Loading weights:  69%|██████▊   | 274/399 [00:59<00:26,  4.74it/s]Loading weights:  70%|██████▉   | 279/399 [01:00<00:24,  4.97it/s]Loading weights:  70%|███████   | 281/399 [01:00<00:20,  5.71it/s]Loading weights:  71%|███████▏  | 285/399 [01:01<00:14,  7.99it/s]Loading weights:  72%|███████▏  | 287/399 [01:01<00:13,  8.11it/s]Loading weights:  73%|███████▎  | 290/399 [01:02<00:18,  5.96it/s]Loading weights:  73%|███████▎  | 292/399 [01:02<00:20,  5.10it/s]Loading weights:  74%|███████▍  | 295/399 [01:02<00:17,  6.10it/s]Loading weights:  75%|███████▌  | 301/399 [01:03<00:12,  7.56it/s]Loading weights:  76%|███████▌  | 302/399 [01:04<00:16,  5.84it/s]Loading weights:  76%|███████▌  | 303/399 [01:04<00:22,  4.20it/s]Loading weights:  77%|███████▋  | 307/399 [01:05<00:15,  5.99it/s]Loading weights:  77%|███████▋  | 308/399 [01:05<00:15,  5.82it/s]Loading weights:  78%|███████▊  | 312/399 [01:05<00:14,  5.91it/s]Loading weights:  79%|███████▊  | 314/399 [01:06<00:16,  5.15it/s]Loading weights:  80%|███████▉  | 318/399 [01:06<00:11,  7.14it/s]Loading weights:  80%|████████  | 320/399 [01:06<00:10,  7.49it/s]Loading weights:  81%|████████  | 323/399 [01:07<00:11,  6.35it/s]Loading weights:  81%|████████▏ | 325/399 [01:08<00:14,  5.14it/s]Loading weights:  82%|████████▏ | 329/399 [01:08<00:09,  7.06it/s]Loading weights:  83%|████████▎ | 331/399 [01:08<00:09,  7.55it/s]Loading weights:  84%|████████▎ | 334/399 [01:09<00:10,  6.40it/s]Loading weights:  84%|████████▍ | 335/399 [01:09<00:14,  4.46it/s]Loading weights:  84%|████████▍ | 336/399 [01:10<00:18,  3.47it/s]Loading weights:  85%|████████▌ | 340/399 [01:10<00:10,  5.51it/s]Loading weights:  86%|████████▌ | 342/399 [01:10<00:09,  6.20it/s]Loading weights:  86%|████████▋ | 345/399 [01:11<00:09,  5.53it/s]Loading weights:  87%|████████▋ | 347/399 [01:12<00:09,  5.28it/s]Loading weights:  88%|████████▊ | 351/399 [01:12<00:06,  7.46it/s]Loading weights:  88%|████████▊ | 352/399 [01:12<00:06,  6.88it/s]Loading weights:  89%|████████▉ | 356/399 [01:13<00:06,  6.73it/s]Loading weights:  89%|████████▉ | 357/399 [01:13<00:08,  4.80it/s]Loading weights:  90%|████████▉ | 358/399 [01:14<00:11,  3.72it/s]Loading weights:  91%|█████████ | 362/399 [01:14<00:06,  5.80it/s]Loading weights:  91%|█████████ | 364/399 [01:14<00:05,  6.42it/s]Loading weights:  92%|█████████▏| 366/399 [01:15<00:06,  5.25it/s]Loading weights:  92%|█████████▏| 368/399 [01:15<00:06,  4.72it/s]Loading weights:  92%|█████████▏| 369/399 [01:16<00:08,  3.61it/s]Loading weights:  93%|█████████▎| 373/399 [01:16<00:04,  5.87it/s]Loading weights:  95%|█████████▍| 378/399 [01:17<00:03,  6.98it/s]Loading weights:  95%|█████████▌| 380/399 [01:17<00:03,  5.87it/s]Loading weights:  96%|█████████▌| 383/399 [01:17<00:02,  7.57it/s]Loading weights:  97%|█████████▋| 389/399 [01:18<00:01,  8.01it/s]Loading weights:  98%|█████████▊| 391/399 [01:19<00:01,  4.83it/s]Loading weights:  99%|█████████▉| 395/399 [01:20<00:00,  6.35it/s]Loading weights:  99%|█████████▉| 397/399 [01:20<00:00,  6.77it/s]Loading weights: 100%|██████████| 399/399 [01:20<00:00,  4.97it/s]
+2026-05-24 00:29:24,976 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 00:29:24,983 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/generation_config.json "HTTP/1.1 200 OK"
+2026-05-24 00:29:25,020 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-24 00:29:26,780 [INFO] Model loaded in 87.6s
+2026-05-24 00:29:54,728 [INFO] [4/449] Acc=1.000 Consist=1.000 Fallbacks=0
+2026-05-24 00:30:25,234 [INFO] [8/449] Acc=0.625 Consist=0.750 Fallbacks=0
+2026-05-24 00:30:56,039 [INFO] [12/449] Acc=0.667 Consist=0.750 Fallbacks=0
+2026-05-24 00:31:36,143 [INFO] [16/449] Acc=0.562 Consist=0.688 Fallbacks=0
+2026-05-24 00:32:02,079 [INFO] [20/449] Acc=0.600 Consist=0.700 Fallbacks=0
+2026-05-24 00:32:33,173 [INFO] [24/449] Acc=0.583 Consist=0.708 Fallbacks=0
+2026-05-24 00:33:03,469 [INFO] [28/449] Acc=0.607 Consist=0.750 Fallbacks=0
+2026-05-24 00:33:34,417 [INFO] [32/449] Acc=0.594 Consist=0.781 Fallbacks=0
+2026-05-24 00:34:06,744 [INFO] [36/449] Acc=0.556 Consist=0.806 Fallbacks=0
+2026-05-24 00:34:38,367 [INFO] [40/449] Acc=0.525 Consist=0.800 Fallbacks=0
+2026-05-24 00:35:08,432 [INFO] [44/449] Acc=0.500 Consist=0.795 Fallbacks=0
+2026-05-24 00:35:36,463 [INFO] [48/449] Acc=0.542 Consist=0.812 Fallbacks=0
+2026-05-24 00:36:10,804 [INFO] [52/449] Acc=0.519 Consist=0.808 Fallbacks=0
+2026-05-24 00:36:42,972 [INFO] [56/449] Acc=0.518 Consist=0.804 Fallbacks=0
+2026-05-24 00:37:13,423 [INFO] [60/449] Acc=0.533 Consist=0.817 Fallbacks=0
+2026-05-24 00:37:45,560 [INFO] [64/449] Acc=0.531 Consist=0.812 Fallbacks=0
+2026-05-24 00:38:16,038 [INFO] [68/449] Acc=0.529 Consist=0.794 Fallbacks=0
+2026-05-24 00:38:47,117 [INFO] [72/449] Acc=0.542 Consist=0.778 Fallbacks=0
+2026-05-24 00:39:17,576 [INFO] [76/449] Acc=0.553 Consist=0.776 Fallbacks=0
+2026-05-24 00:39:51,861 [INFO] [80/449] Acc=0.550 Consist=0.787 Fallbacks=0
+2026-05-24 00:40:25,444 [INFO] [84/449] Acc=0.536 Consist=0.798 Fallbacks=0
+2026-05-24 00:40:59,098 [INFO] [88/449] Acc=0.523 Consist=0.784 Fallbacks=0
+2026-05-24 00:41:33,378 [INFO] [92/449] Acc=0.500 Consist=0.783 Fallbacks=0
+2026-05-24 00:42:07,043 [INFO] [96/449] Acc=0.500 Consist=0.792 Fallbacks=0
+2026-05-24 00:42:33,803 [INFO] [100/449] Acc=0.520 Consist=0.790 Fallbacks=0
+2026-05-24 00:43:07,697 [INFO] [104/449] Acc=0.519 Consist=0.798 Fallbacks=0
+2026-05-24 00:43:41,311 [INFO] [108/449] Acc=0.509 Consist=0.796 Fallbacks=0
+2026-05-24 00:44:14,872 [INFO] [112/449] Acc=0.509 Consist=0.795 Fallbacks=0
+2026-05-24 00:44:48,214 [INFO] [116/449] Acc=0.509 Consist=0.793 Fallbacks=0
+2026-05-24 00:45:22,132 [INFO] [120/449] Acc=0.508 Consist=0.783 Fallbacks=0
+2026-05-24 00:45:59,018 [INFO] [124/449] Acc=0.508 Consist=0.782 Fallbacks=0
+2026-05-24 00:46:32,894 [INFO] [128/449] Acc=0.508 Consist=0.781 Fallbacks=0
+2026-05-24 00:47:07,117 [INFO] [132/449] Acc=0.492 Consist=0.780 Fallbacks=0
+2026-05-24 00:47:43,439 [INFO] [136/449] Acc=0.500 Consist=0.772 Fallbacks=0
+2026-05-24 00:48:29,734 [INFO] [140/449] Acc=0.500 Consist=0.771 Fallbacks=0
+2026-05-24 00:49:00,492 [INFO] [144/449] Acc=0.507 Consist=0.771 Fallbacks=0
+2026-05-24 00:49:34,245 [INFO] [148/449] Acc=0.507 Consist=0.777 Fallbacks=0
+2026-05-24 00:50:07,763 [INFO] [152/449] Acc=0.513 Consist=0.776 Fallbacks=0
+2026-05-24 00:50:41,814 [INFO] [156/449] Acc=0.513 Consist=0.782 Fallbacks=0
+2026-05-24 00:51:15,445 [INFO] [160/449] Acc=0.519 Consist=0.781 Fallbacks=0
+2026-05-24 00:51:51,745 [INFO] [164/449] Acc=0.524 Consist=0.780 Fallbacks=0
+2026-05-24 00:52:26,603 [INFO] [168/449] Acc=0.512 Consist=0.774 Fallbacks=0
+2026-05-24 00:53:00,818 [INFO] [172/449] Acc=0.512 Consist=0.779 Fallbacks=0
+2026-05-24 00:53:34,490 [INFO] [176/449] Acc=0.517 Consist=0.778 Fallbacks=0
+2026-05-24 00:54:09,905 [INFO] [180/449] Acc=0.517 Consist=0.778 Fallbacks=0
+2026-05-24 00:54:43,588 [INFO] [184/449] Acc=0.516 Consist=0.783 Fallbacks=0
+2026-05-24 00:55:19,247 [INFO] [188/449] Acc=0.511 Consist=0.787 Fallbacks=0
+2026-05-24 00:55:54,017 [INFO] [192/449] Acc=0.510 Consist=0.792 Fallbacks=0
+2026-05-24 00:56:28,682 [INFO] [196/449] Acc=0.505 Consist=0.791 Fallbacks=0
+2026-05-24 00:57:02,994 [INFO] [200/449] Acc=0.500 Consist=0.790 Fallbacks=0
+2026-05-24 00:57:36,409 [INFO] [204/449] Acc=0.495 Consist=0.789 Fallbacks=0
+2026-05-24 00:58:10,779 [INFO] [208/449] Acc=0.490 Consist=0.793 Fallbacks=0
+2026-05-24 00:58:44,644 [INFO] [212/449] Acc=0.495 Consist=0.797 Fallbacks=0
+2026-05-24 00:59:12,176 [INFO] [216/449] Acc=0.500 Consist=0.796 Fallbacks=0
+2026-05-24 00:59:45,910 [INFO] [220/449] Acc=0.500 Consist=0.800 Fallbacks=0
+2026-05-24 01:00:19,313 [INFO] [224/449] Acc=0.496 Consist=0.804 Fallbacks=0
+2026-05-24 01:00:40,090 [INFO] [228/449] Acc=0.504 Consist=0.807 Fallbacks=0
+2026-05-24 01:01:13,537 [INFO] [232/449] Acc=0.509 Consist=0.806 Fallbacks=0
+2026-05-24 01:01:46,858 [INFO] [236/449] Acc=0.508 Consist=0.801 Fallbacks=0
+2026-05-24 01:02:20,971 [INFO] [240/449] Acc=0.508 Consist=0.800 Fallbacks=0
+2026-05-24 01:02:55,100 [INFO] [244/449] Acc=0.512 Consist=0.803 Fallbacks=0
+2026-05-24 01:03:28,438 [INFO] [248/449] Acc=0.516 Consist=0.806 Fallbacks=0
+2026-05-24 01:04:02,517 [INFO] [252/449] Acc=0.516 Consist=0.806 Fallbacks=0
+2026-05-24 01:04:36,400 [INFO] [256/449] Acc=0.520 Consist=0.809 Fallbacks=0
+2026-05-24 01:05:10,791 [INFO] [260/449] Acc=0.519 Consist=0.812 Fallbacks=0
+2026-05-24 01:05:44,418 [INFO] [264/449] Acc=0.523 Consist=0.811 Fallbacks=0
+2026-05-24 01:06:17,981 [INFO] [268/449] Acc=0.526 Consist=0.810 Fallbacks=0
+2026-05-24 01:06:51,860 [INFO] [272/449] Acc=0.526 Consist=0.812 Fallbacks=0
+2026-05-24 01:07:25,935 [INFO] [276/449] Acc=0.522 Consist=0.808 Fallbacks=0
+2026-05-24 01:08:02,691 [INFO] [280/449] Acc=0.518 Consist=0.807 Fallbacks=0
+2026-05-24 01:08:35,085 [INFO] [284/449] Acc=0.525 Consist=0.806 Fallbacks=0
+2026-05-24 01:09:09,090 [INFO] [288/449] Acc=0.524 Consist=0.809 Fallbacks=0
+2026-05-24 01:09:43,092 [INFO] [292/449] Acc=0.524 Consist=0.812 Fallbacks=0
+2026-05-24 01:10:19,556 [INFO] [296/449] Acc=0.527 Consist=0.814 Fallbacks=0
+2026-05-24 01:10:54,827 [INFO] [300/449] Acc=0.530 Consist=0.817 Fallbacks=0
+2026-05-24 01:11:26,327 [INFO] [304/449] Acc=0.536 Consist=0.816 Fallbacks=0
+2026-05-24 01:11:57,643 [INFO] [308/449] Acc=0.542 Consist=0.815 Fallbacks=0
+2026-05-24 01:12:33,950 [INFO] [312/449] Acc=0.535 Consist=0.817 Fallbacks=0
+2026-05-24 01:13:00,762 [INFO] [316/449] Acc=0.541 Consist=0.820 Fallbacks=0
+2026-05-24 01:13:34,828 [INFO] [320/449] Acc=0.541 Consist=0.822 Fallbacks=0
+2026-05-24 01:14:10,135 [INFO] [324/449] Acc=0.543 Consist=0.815 Fallbacks=0
+2026-05-24 01:14:43,832 [INFO] [328/449] Acc=0.540 Consist=0.811 Fallbacks=0
+2026-05-24 01:15:18,214 [INFO] [332/449] Acc=0.539 Consist=0.813 Fallbacks=0
+2026-05-24 01:15:52,357 [INFO] [336/449] Acc=0.536 Consist=0.815 Fallbacks=0
+2026-05-24 01:16:26,784 [INFO] [340/449] Acc=0.535 Consist=0.815 Fallbacks=0
+2026-05-24 01:17:00,752 [INFO] [344/449] Acc=0.538 Consist=0.817 Fallbacks=0
+2026-05-24 01:17:36,097 [INFO] [348/449] Acc=0.543 Consist=0.816 Fallbacks=0
+2026-05-24 01:18:07,246 [INFO] [352/449] Acc=0.540 Consist=0.810 Fallbacks=0
+2026-05-24 01:18:41,900 [INFO] [356/449] Acc=0.539 Consist=0.809 Fallbacks=0
+2026-05-24 01:19:15,755 [INFO] [360/449] Acc=0.539 Consist=0.808 Fallbacks=0
+2026-05-24 01:19:53,811 [INFO] [364/449] Acc=0.538 Consist=0.810 Fallbacks=0
+2026-05-24 01:20:27,575 [INFO] [368/449] Acc=0.538 Consist=0.812 Fallbacks=0
+2026-05-24 01:21:01,260 [INFO] [372/449] Acc=0.538 Consist=0.806 Fallbacks=0
+2026-05-24 01:21:40,201 [INFO] [376/449] Acc=0.537 Consist=0.806 Fallbacks=0
+2026-05-24 01:22:13,183 [INFO] [380/449] Acc=0.537 Consist=0.805 Fallbacks=0
+2026-05-24 01:22:46,635 [INFO] [384/449] Acc=0.539 Consist=0.807 Fallbacks=0
+2026-05-24 01:23:21,286 [INFO] [388/449] Acc=0.539 Consist=0.807 Fallbacks=0
+2026-05-24 01:23:55,468 [INFO] [392/449] Acc=0.538 Consist=0.809 Fallbacks=0
+2026-05-24 01:24:22,900 [INFO] [396/449] Acc=0.540 Consist=0.808 Fallbacks=0
+2026-05-24 01:24:56,171 [INFO] [400/449] Acc=0.540 Consist=0.810 Fallbacks=0
+2026-05-24 01:25:30,188 [INFO] [404/449] Acc=0.542 Consist=0.807 Fallbacks=0
+2026-05-24 01:26:02,064 [INFO] [408/449] Acc=0.542 Consist=0.806 Fallbacks=0
+2026-05-24 01:26:33,172 [INFO] [412/449] Acc=0.541 Consist=0.803 Fallbacks=0
+2026-05-24 01:27:06,883 [INFO] [416/449] Acc=0.538 Consist=0.805 Fallbacks=0
+2026-05-24 01:27:41,014 [INFO] [420/449] Acc=0.538 Consist=0.807 Fallbacks=0
+2026-05-24 01:28:16,147 [INFO] [424/449] Acc=0.538 Consist=0.809 Fallbacks=0
+2026-05-24 01:28:50,607 [INFO] [428/449] Acc=0.535 Consist=0.811 Fallbacks=0
+2026-05-24 01:29:24,533 [INFO] [432/449] Acc=0.535 Consist=0.810 Fallbacks=0
+2026-05-24 01:29:55,498 [INFO] [436/449] Acc=0.539 Consist=0.812 Fallbacks=0
+2026-05-24 01:30:29,964 [INFO] [440/449] Acc=0.541 Consist=0.809 Fallbacks=0
+2026-05-24 01:31:01,625 [INFO] [444/449] Acc=0.541 Consist=0.806 Fallbacks=0
+2026-05-24 01:31:30,624 [INFO] [448/449] Acc=0.545 Consist=0.808 Fallbacks=0
+2026-05-24 01:32:00,248 [INFO] [449/449] Acc=0.543 Consist=0.808 Fallbacks=0
+2026-05-24 01:32:00,268 [INFO] ============================================================
+2026-05-24 01:32:00,269 [INFO] RESULTS — Label variant: numeric
+2026-05-24 01:32:00,269 [INFO] Accuracy:    0.5434
+2026-05-24 01:32:00,269 [INFO] Consistency: 0.8085
+2026-05-24 01:32:00,269 [INFO] A-selection: 0.5434
+2026-05-24 01:32:00,269 [INFO] Parse fails: 189
+2026-05-24 01:32:00,269 [INFO] Fallback to A/B parsing: 0
+2026-05-24 01:32:00,269 [INFO] ============================================================

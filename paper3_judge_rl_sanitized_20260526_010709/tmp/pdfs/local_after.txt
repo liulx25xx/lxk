@@ -1,0 +1,911 @@
+Position Shortcut: How Reinforcement Learning Teaches LLM Judges to
+Cheat
+Anonymous ACL submission
+001 Abstract match the label for the same reason the label was 044
+assigned, namely evidence that one response better 045
+002 LLM judges are increasingly trained to evalu-
+satisfies the prompt. If prompt construction intro- 046
+003 ate pairwise preferences and to provide reward
+duces artifacts that also predict the label, standard 047
+004 signals in post-training pipelines. These judges
+005 are typically optimized and reported by accu- optimization can amplify those artifacts instead. 048
+006 racy, but accuracy is only meaningful if the gold This creates a basic question for trained judges: 049
+007 label is predicted from evidence about which when accuracy improves, has the model learned to 050
+008 response better satisfies the prompt rather than compare the responses, or has it learned a shortcut 051
+009 from artifacts of prompt construction. We in the training interface? 052
+010 identify a simple but consequential failure of We identify one such shortcut created by stan- 053
+011 this assumption: standard chosen/rejected
+dard preference-data preprocessing. Preference 054
+012 datasets place the preferred response first, so
+013 a naive conversion to pairwise judge prompts datasets store examples as chosen/rejected, with 055
+014 makes response position a perfect predictor of the preferred response first. When these datasets 056
+015 the gold verdict. Trained judges can therefore are naively converted into pairwise judge prompts, 057
+016 learn a position shortcut, achieving high ap- the preferred response becomes Response A for 058
+017 parent accuracy by selecting the first response every training instance. Position therefore becomes 059
+018 rather than comparing the responses. We di- a perfect predictor of the training label. Any ob- 060
+019 agnose this failure with position-swap evalua-
+jective that rewards label matching can exploit this 061
+020 tion across SFT, DPO, GRPO, reward designs,
+regularity by learning a positional policy rather 062
+021 label schemes, learning rates, and model fam-
+022 ilies. On unbalanced data, training improves than comparing the responses: apparent accuracy 063
+023 accuracy while degrading position-swap con- rises, while position-swap consistency collapses. 064
+024 sistency; in the most extreme case, a judge Figure 1 gives the intuition. 065
+025 reaches 99% accuracy by almost always choos- We diagnose this failure with position-swap eval- 066
+026 ing the first response. The shortcut persists uation: for each pair, the judge must give logically 067
+027 under composite rewards, prompt instructions, equivalent verdicts before and after the two re- 068
+028 relabeling, and model scaling. A simple data-
+sponses are swapped. This separates apparent accu- 069
+029 level fix—balancing preferred responses across
+030 positions—removes the confound, restores con- racy from position-invariant judgment. Across SFT, 070
+031 sistency, and preserves genuine accuracy gains. DPO, and GRPO; accuracy-only, decisiveness, cal- 071
+032 Our results show that accuracy can conflate ibration, and composite rewards; and prompt, la- 072
+033 judgment ability with positional exploitation, bel, learning-rate, and model-family controls, we 073
+034 motivating position-swap consistency as a stan- find the same accuracy-consistency dissociation: 074
+035 dard diagnostic for RL-trained judges. optimization makes judges look better under the 075
+original ordering while making them less stable 076
+1 Introduction
+036
+under position swap. In the strongest failure mode, 077
+037 LLM judges are increasingly trained to evaluate high accuracy is explained almost entirely by first- 078
+038 pairwise preferences and to provide reward sig- position selection rather than content comparison. 079
+039 nals in post-training pipelines (Zheng et al., 2023; The controls change the severity but do not remove 080
+040 Chiang et al., 2024). These judges are usually opti- the shortcut, pointing to the data layout itself as the 081
+041 mized and reported by accuracy: whether their ver- structural source. 082
+042 dict matches a gold preference label. This metric This points to a data-level intervention: balance 083
+043 carries an implicit assumption: the model should the training data so that preferred responses appear 084
+1
+Confounded training data Balanced training data
+A: chosen reward = 1 A: chosen B: rejected
+Judge
+ Judge
+
+model model
+B: rejected reward = 0 A: rejected B: chosen
+high accuracy
+ accuracy gain
+ position cancels;
+
+shortcut first is best
+low consistency consistency intact content remains
+standard evaluation rewards
+ the label is balanced,
+
+the same positions so shortcut reward vanishes
+Figure 1: The position shortcut and the data-level fix. When the preferred response is always placed first, RL can
+obtain high reward by learning a positional rule rather than comparing response quality. Balancing response order
+removes this shortcut and forces the judge to rely on content.
+085 equally often in both positions. Balanced training where candidate responses appear in a pairwise 119
+086 removes the position-reward correlation, restores prompt (Zheng et al., 2023; Wang et al., 2024; 120
+087 consistency to the untrained baseline range, and Shi et al., 2024). This position bias interacts with 121
+088 preserves genuine accuracy gains. Comparing un- broader evaluator biases, including length prefer- 122
+089 balanced and balanced training further decomposes ence, self-preference, and reliance on surface fea- 123
+090 apparent improvement into content-based gain and tures (Wu and Aji, 2023; Koo et al., 2024; Ye et al., 124
+091 shortcut gain, showing that position exploitation 2024; Park et al., 2024; Singhal et al., 2024). Ex- 125
+092 accounts for 11.0 percentage points in the primary isting work therefore develops metrics and proto- 126
+093 Qwen2.5-7B setting and 17.3 percentage points for cols for measuring or mitigating inconsistent judg- 127
+094 Mistral-7B. ments, such as swap-based consistency analysis, 128
+095 Our contributions: BT-σ (Qian et al., 2026), inference-time consis- 129
+tency checks (Wang et al., 2025), permutation- 130
+096 • We identify a training-interface shortcut
+aware RL objectives (Xu et al., 2025; Zheng et al., 131
+097 in pairwise LLM judge training: standard
+098 chosen/rejected preprocessing can make 2026), and selective abstention for uncertain pair- 132
+wise judgments (Badshah et al., 2026). These 133
+099 response position a perfect predictor of the
+studies establish that position sensitivity matters. 134
+100 gold verdict, allowing trained judges to
+Our focus is the training-time source: standard 135
+101 improve apparent accuracy without learning
+preference-data conversion can make response posi- 136
+102 the intended comparison.
+tion a rewarded feature before any evaluation-time 137
+103 • We introduce position-swap evaluation as a correction is applied. 138
+104 diagnostic for separating apparent accuracy
+105 from position-invariant judgment, and show RL Training for Preference Judges. Preference 139
+106 a robust accuracy-consistency dissociation learning has long used human judgments to 140
+107 across training algorithms, reward designs, train language models (Christiano et al., 2017; 141
+108 prompt and label controls, learning rates, and Stiennon et al., 2020; Ouyang et al., 2022; Bai 142
+109 model families. et al., 2022), and recent work applies similar 143
+optimization recipes to the judges themselves. 144
+110 • We validate balanced response positions as JudgeLRM (Chen et al., 2025) trains reason- 145
+111 a data-level causal intervention that removes ing judges with GRPO (Shao et al., 2024); 146
+112 the shortcut gradient, restores position-swap FairJudge (Yang et al., 2026) combines SFT, 147
+113 consistency, and enables a decomposition of DPO (Rafailov et al., 2023), and GRPO with 148
+114 apparent accuracy into genuine judgment gain consistency-oriented objectives. These approaches 149
+115 and positional shortcut gain. treat reward design or algorithmic consistency 150
+constraints as the main levers for improving judge 151
+2 Related Work
+116
+behavior. We instead ask whether the data layout 152
+117 Bias and Consistency in LLM Judges. Prior makes a non-semantic feature predictive of reward. 153
+118 work has shown that LLM judges are sensitive to Under a position confound, even a correct label 154
+2
+155 reward can be maximized by selecting the first ture, or by mixing both. Standard evaluation on 205
+156 response, so reported accuracy gains must be the same ordering cannot separate these sources, 206
+157 checked against position-swap consistency. because the shortcut and the intended task produce 207
+the same label. The position confound is therefore 208
+158 Shortcut Learning in Neural Networks. Short-
+not an artificial perturbation introduced by our eval- 209
+159 cut learning is a well-documented failure mode
+uation; it is inherited from the data format used to 210
+160 in which models exploit spurious data corre-
+construct judge-training prompts. 211
+161 lations rather than acquiring task-relevant fea-
+162 tures (Geirhos et al., 2020; McCoy et al., 2019; Tu 3.2 Reward Stress Tests and Data 212
+163 et al., 2020). When a confound perfectly predicts Deconfounding 213
+164 the label, the model learns the confound. Standard
+165 mitigations include data augmentation, adversar- We compare two ways of training under this con- 214
+166 ial training, and causal intervention. In the RLHF found. First, we vary the reward objective while 215
+167 setting, reward hacking (Skalse et al., 2022; Gao keeping the unbalanced data fixed. These rewards 216
+168 et al., 2023; Pan et al., 2024) describes a related are not proposed as new objectives; they are stress 217
+169 failure where models exploit flaws in the reward tests for the claim that reward engineering alone 218
+170 model, and constrained RL (Moskovitz et al., 2023) can force comparative judgment. 219
+171 proposes multi-objective solutions. These works as- Accuracy reward. Binary match with gold label: 220
+172 sume that improving the reward signal suffices. The R acc = ⊮[v = v∗]. This is the standard reward 221
+173 judge training setting violates this assumption: the used in JudgeLRM (Chen et al., 2025). 222
+174 accuracy reward is a perfect oracle (binary match
+175 with ground truth), yet the shortcut persists because Decisiveness reward. A proxy for consistency 223
+176 the confound is in the data layout, not the reward that penalizes tie verdicts: R dec = ⊮[v ̸= tie]. This 224
+177 function. We show that multi-objective rewards encourages commitment to a winner but does not 225
+178 cannot fix a data-level confound and that causal require position invariance. 226
+179 deconfounding at the data level is both necessary
+180 and sufficient. Calibration reward. Brier score between stated 227
+confidence and correctness indicator: R cal = 1 − 228
+181 3 Diagnostic Framework (c − ⊮[v = v∗])2, where ⊮[·] is the indicator func- 229
+tion. 230
+182 3.1 Pairwise Judge Training and the Position
+183 Confound Composite reward. R = α · R acc + β · R dec + 231
+184 We study LLM judges trained to evaluate pairwise γ · R cal with α = 1.0, β = 0.5, γ = 0.3. 232
+185 preferences. Given a query q and two candidate Second, we remove the confound at the data 233
+186 responses, the judge produces a rationale, a verdict level by balancing the training data so that the pre- 234
+187 v ∈ {A, B, tie}, and a confidence score c ∈ [0, 1]. ferred response appears in position A for 50% of in- 235
+188 The intended behavior is comparative judgment: stances and position B for the remaining 50%. Un- 236
+189 the verdict should follow evidence about which less otherwise stated, balanced training uses both 237
+190 response better satisfies the prompt, not incidental orientations of each pair: the original instance and 238
+191 artifacts of the prompt interface. a mirror version where the responses are swapped 239
+192 The artifact we study is response position. The and the gold label becomes “B.” We separately ver- 240
+193 position confound arises when preference data are ify that the effect does not depend on duplicating 241
+194 converted into pairwise judge prompts. In standard the dataset (Appendix K). Once position A is cor- 242
+195 chosen/rejected datasets, the preferred response rect exactly half the time, a policy based only on 243
+196 is stored first. In RewardBench (Lambert et al., position cannot exceed chance accuracy; any im- 244
+197 2024), this means the gold label is “A” for every provement over the untrained model can no longer 245
+198 training instance after conversion to Response A/B come from a global first-position shortcut. 246
+199 prompts. Position is therefore perfectly correlated We use GRPO (Shao et al., 2024) with 247
+200 with reward: under an accuracy reward, selecting LoRA (Hu et al., 2022) (rank 64, α = 128) applied 248
+201 Response A always receives maximum reward. to all attention projections. Training uses group 249
+202 This makes apparent accuracy ambiguous. A size G = 8, batch size 4 with gradient accumula- 250
+203 trained judge can improve by learning comparison- tion 4, and cosine learning rate decay over 500 251
+204 relevant evidence, by learning the positional fea- steps. We train on Qwen2.5-7B-Instruct (Qwen 252
+3
+253 Team, 2025a) as the primary model, with cross-
+254 model validation on Qwen3-8B (Qwen Team, 100
+255 2025b) and Mistral-7B-Instruct-v0.3 (Jiang et al.,
+256 2023) to test generalization across model families 80
+257 and pre-training corpora.
+60
+258 We run each configuration with multiple seeds
+259 (3–4) and report means with standard deviations. 40
+threshold
+260 3.3 Position-Swap Evaluation 1 2 3 5 10
+261 We evaluate each model on 449 held-out test in- Learning Rate (×10−6)
+262 stances, generating responses with temperature
+263 0.1 and max 512 new tokens. For each instance,
+264 we generate judgments on both the original and
+265 position-swapped order. This creates a direct test of
+266 whether the judge’s verdict follows the compared
+267 responses or their positions.
+268 We report three metrics:
+269 • Accuracy: agreement with gold labels on the
+270 evaluated order.
+271 • Position consistency: the fraction of in-
+272 stances where the verdict is logically equiva-
+273 lent under position swap. If the model predicts
+274 A on the original order, it should predict B on
+275 the swapped order, and vice versa. Ties are
+276 self-consistent.
+277 • Position bias: the percentage-point gap be-
+278 tween always-first and always-second incon-
+279 sistent predictions.
+280 Position consistency is the critical metric be-
+281 cause it distinguishes position-invariant judgment
+282 from position-dependent shortcut use. We treat ties
+283 as self-consistent because a tie verdict is unchanged
+284 by swapping response order. Tie rates are below
+285 3% across all models and conditions; treating ties
+286 as inconsistent changes reported consistency by
+287 less than 1 pp and does not affect any conclusions.
+4 Experiments
+288
+289 4.1 Unbalanced Training Creates an
+290 Accuracy-Consistency Split
+291 We first ask whether RL training exploits the
+292 prompt artifact created by the standard conversion
+293 from preference data to judge prompts, where every
+294 training label is “A.”
+295 Table 1 shows the central dissociation. Train-
+296 ing improves apparent accuracy, but the gain is
+297 accompanied by a large loss in position-swap con-
+298 sistency and a sharp increase in first-position bias.
+299 The methods differ in how completely the shortcut
+)%(erocS
+Accuracy Consistency
+Figure 2: Learning rate controls shortcut activation.
+Consistency remains high at conservative rates, then
+drops sharply once optimization reaches the marked
+threshold.
+Method Acc ↑ Con ↑ Bias ↓
+Baseline (no training) 80.2 83.3 2.4
+SFT 100.0 0.0 100.0
+DPO 94.2 54.3 40.8
+GRPO Acc-only 94.7±0.6 59.8±6.2 36.9
++ Decisive 93.9 66.3 31.3
++ Calibration 95.3 56.7 40.0
++ Both (Full) 94.7±0.8 58.7±7.9 38.2
+GRPO (lr=1e-5) 98.9 38.1 61.5
+GRPO (lr=1e-6) 82.2 79.3 6.0
+Table 1: Unbalanced training (gold = “A”). All methods
+increase apparent accuracy while losing position-swap
+consistency and developing first-position bias. Position
+bias is the percentage-point gap between always-first
+and always-second inconsistent predictions.
+takes over: SFT reaches the degenerate endpoint of 300
+perfect accuracy with zero consistency, while DPO 301
+and GRPO retain more comparison signal but still 302
+move toward stronger position dependence. 303
+Reward variants and learning rate changes mod- 304
+ulate this tradeoff without removing it. The best 305
+reward-only mitigation improves consistency only 306
+partially and remains below the untrained baseline. 307
+Similarly, conservative learning rates can mask the 308
+shortcut by limiting optimization pressure, but once 309
+the learning rate crosses the threshold in Figure 2, 310
+accuracy increases by trading off position-swap 311
+consistency. These interventions change when and 312
+how strongly the shortcut appears; they do not re- 313
+move the underlying confound. 314
+These results point back to the data: if training 315
+method, reward design, and learning-rate choice 316
+cannot reliably prevent the shortcut, the confound 317
+must be removed before optimization. 318
+4
+Method Acc ↑ Con ↑ Bias ↓
+Baseline (no training) 80.2 83.3 2.4
+SFT Balanced 91.3 87.1 2.2
+GRPO Full Balanced 83.7±1.0 84.0±0.7 1.6
+GRPO Decisive Bal. 83.5 81.7 3.8
+GRPO Calibration Bal. 84.6 82.6 3.8
+GRPO Acc-only Bal. 82.6 84.0 2.3
+Table 2: Balanced training (gold = 50% A, 50% B). Data
+deconfounding restores consistency and keeps position
+bias near the untrained baseline while retaining genuine
+accuracy gains.
+100
+80
+60
+40
+20
+0
+Baseline SFT GRPO-A GRPO-F
+)%(ycnetsisnoC
+content shortcut shortcut
+learning takeover saturation
+0 100 300 500
+training steps
+Acc +5.8 Acc +6.2 Acc +2.2
+Con −2.5 Con −15.5 Con −4.5
+composite reward follows the same collapse
+(83.3→61.7 consistency)
+Figure 4: Training dynamics as phases. Early training
+improves content-based accuracy with little consistency
+loss; mid-training is the shortcut takeover window; late
+training saturates the positional policy.
+Unbalanced Balanced
+preference (55%), unbalanced training amplifies it 343
+into a dominant first-position strategy (94–99% A- 344
+selection), and balanced training keeps A-selection 345
+near 50%. Domain-level breakdowns appear in 346
+Appendix J. 347
+4.3 Robustness Controls 348
+Figure 3: Balanced data restores consistency. Red We next test whether the shortcut is merely an 349
+bars show unbalanced training; light-blue bars show artifact of training duration, inference procedure, 350
+balanced training, with the baseline repeated for refer- prompt wording, or label tokens. 351
+ence. The SFT red tick marks 0% consistency. GRPO-A
+and GRPO-F denote accuracy-only and full-composite Training dynamics. The shortcut emerges as a 352
+GRPO. phase transition (Figure 4; full checkpoint curves in 353
+Appendix I). Steps 0–100: genuine content learning 354
+dominates (accuracy up, consistency stable). Steps 355
+319 4.2 Balanced Data Restores 100–300: the shortcut overtakes content learning 356
+320 Position-Invariant Judgment (accuracy continues rising, consistency collapses). 357
+321 We therefore train with balanced data where pre- Steps 300–500: the shortcut saturates. The com- 358
+322 ferred responses appear equally in both positions posite reward follows the same trajectory, confirm- 359
+323 (Table 2). ing that all reward components are simultaneously 360
+satisfiable by the shortcut. This temporal pattern 361
+324 Balanced training reverses the pattern. Mod-
+means early stopping could partially mitigate the 362
+325 els trained on balanced data keep consistency and
+problem by catching the model before the short- 363
+326 position bias near the untrained baseline, rather
+cut fully activates, but the window is narrow and 364
+327 than trading consistency for apparent accuracy (Fig-
+model-dependent. Only balanced data eliminates 365
+328 ure 3). The accuracy gap between unbalanced and
+the shortcut regardless of training duration. 366
+329 balanced GRPO quantifies the shortcut’s contribu-
+330 tion directly: approximately 10 percentage points Inference and prompt controls. Evaluation- 367
+331 of the unbalanced model’s accuracy come from time swap filtering detects the shortcut but covers 368
+332 position exploitation rather than genuine judgment. only 60% of test pairs (SFT: 0% coverage). Bal- 369
+333 The same comparison also reinterprets the fail- anced training achieves full coverage with compa- 370
+334 ure of SFT and high-learning-rate GRPO. SFT is rable accuracy. The filtering approach discards the 371
+335 catastrophic under unbalanced labels but becomes very instances where the shortcut is most active, 372
+336 the strongest balanced-data learner, suggesting that which are exactly the instances where a genuine 373
+337 it was efficiently learning the easiest available sig- judge would be most informative. 374
+338 nal rather than being intrinsically position-biased. Prompt-level mitigation (“evaluate based on con- 375
+339 High learning rates show the same pattern: catas- tent quality only; ordering is random”) raises con- 376
+340 trophic under the confound, but beneficial once the sistency by less than 2 pp on Qwen2.5 and produces 377
+341 confound is removed. Position preference confirms zero improvement on Mistral. The shortcut is en- 378
+342 the mechanism. The baseline model has a mild A- coded in the model’s weights, not its instruction- 379
+5
+380 following behavior. RL training has reshaped in- 5 Causal Analysis 410
+381 ternal representations to route through positional
+5.1 Why Reward Signals Cannot Identify the 411
+382 features regardless of what the prompt says. The
+Right Feature 412
+383 problem must be addressed during training.
+The experiments above show that reward engineer- 413
+ing changes shortcut severity but does not remove 414
+the shortcut. The reason is structural. The training 415
+data contains two predictive routes to the gold la- 416
+384 Label controls. One might hypothesize that the bel: comparison evidence E about which response 417
+385 shortcut merely memorizes the token “A” as a better satisfies the prompt, and response position P 418
+386 reward-correlated surface feature. If so, changing (the confound). When P perfectly predicts the gold 419
+387 the label scheme during evaluation should disrupt it. label, the model has two reward paths: a compari- 420
+388 We test this by evaluating unbalanced-GRPO mod- son path (E → v∗) and a positional path (P → v∗). 421
+389 els with alternative label schemes: “Response 1/2” A scalar reward that only checks whether the ver- 422
+390 and “Response Left/Right” (Table 3). The short- dict matches v∗ cannot tell which path produced 423
+391 cut replicates identically across all label schemes the answer. 424
+392 and both model families. Zero parse failures con- A simple slot-bias model makes this pressure 425
+393 firm both models correctly follow the relabeled for- explicit. Let y ∈ {+1, −1} denote whether the 426
+394 mat. They output “[[1]]” or “[[Left]]” as instructed first or second response is preferred, and let the 427
+395 rather than reverting to “[[A]].” judge’s logit be f θ (x) = d θ (x) + b, where d θ (x) is 428
+a comparison score and b is a global first-position 429
+396 The model has learned that the structurally first-
+bias. Under the logistic loss 430
+397 listed response in the prompt correlates with re-
+398 ward, and it applies this heuristic regardless of L = E (x,y) [log (1 + exp (−y(d θ (x) + b)))] , 431
+399 how that position is labeled. The severity gradient
+the gradient on the position-bias parameter is 432
+400 reappears across models: Mistral’s weaker content
+4 4 0 0 1 2 r p e o p s r it e i s o e n n a t l a f t e io a n tu s re o , ff r e e r su e l v ti e n n g l i e n ss ne c a o r m -c p o e m ti p ti l o et n e t d o o t m he i- ∂ ∂ L b = −E (x,y) [y · σ (−y(d θ (x) + b))] . 433
+403 nation of first-position selection. Qwen3-8B shows Near initialization, with d θ (x) ≈ 0 and b ≈ 0, this 434
+404 the mildest form of the shortcut (88% first-position becomes 435
+405 selection vs 99% for Mistral), consistent with its ∂L 1
+406 stronger baseline judge capability providing more ≈ − (2α − 1), α = Pr(y = +1). 436
+∂b 2
+407 competition to the positional feature. This cross-
+408 model replication shows that the mechanism is not Thus fully unbalanced data (α = 1) induces a first- 437
+409 tied to a particular label token or model family. order gradient toward choosing the first response, 438
+while balanced data (α = 0.5) cancels this shortcut 439
+gradient. 440
+This explains why multi-objective rewards fail. 441
+Decisiveness penalizes ties but does not require po- 442
+Model Labels Acc Con First-pos
+sition invariance; calibration penalizes misplaced 443
+Qwen2.5-7B A / B 94.0 61.7 94.0 confidence only when the verdict is wrong. On 444
+1 / 2 94.7 60.8 94.7
+Left / Right 94.2 59.9 94.2 confounded data, confident first-position predic- 445
+tions are rewarded, not penalized. The composite 446
+Qwen3-8B A / B 89.1 79.5 88.4
+1 / 2 88.4 81.7 88.4 reward therefore remains satisfiable by the shortcut. 447
+Left / Right 85.7 83.7 85.7 Balanced data changes the causal graph instead: it 448
+Mistral-7B A / B 98.9 20.0 98.9 removes the P → v∗ edge, so position no longer 449
+1 / 2 99.6 12.0 99.6 gives a reliable route to reward. 450
+Left / Right 99.1 15.6 99.1
+We validate this causal view with a dose- 451
+Table 3: The position shortcut is label-agnostic across response experiment. Training at intermediate con- 452
+all three model families. Each model selects the first- found ratios (60%–95% position-A) produces dif- 453
+listed response at near-identical rates regardless of label ferent shortcut severities, with consistency loss in- 454
+tokens. Severity gradient persists: Mistral (99%+) > creasing as the data approaches the fully unbal- 455
+Qwen2.5 (94%) > Qwen3 (88%). anced setting (Figure 5). 456
+6
+Model Baseline Unbal Bal Genuine Shortcut
+Qwen2.5-7B 80.2 94.7 83.7 +3.5 +11.0
+Qwen3-8B 81.7 89.1 88.0 +6.3 +1.1
+Mistral-7B 65.7 98.4 81.1 +15.4 +17.3
+Table 4: Accuracy decomposition. Genuine = balanced
+− baseline. Shortcut = unbalanced − balanced.
+25.3
+25
+20
+15
+10
+5
+reference
+0
+50 60 75 80 90 95 100
+Position-A Ratio in Training Data (%)
+)pp(ssolycnetsisnoC
+Model Acc Con A-rate Gap
+JudgeLRM-7B 81.3 75.7 81.3 5.6
+JudgeLRM-3B 76.8 67.9 76.8 8.9
+Table 5: Published RL-trained judges also show posi-
+tion reliance. A-selection rate equals accuracy, and the
+smaller model has the larger accuracy-consistency gap.
+These results do not imply that all gains in prior 486
+judge training are shortcuts. They show that stan- 487
+dard accuracy can hide a position-dependent com- 488
+ponent, and that the gap is larger for the smaller 489
+checkpoint. Position-swap consistency is therefore 490
+necessary for interpreting reported gains from RL- 491
+trained judges. 492
+6 Discussion
+493
+Figure 5: Dose-response as consistency loss from the
+balanced reference. X ticks are the tested position-A
+The position shortcut highlights a failure mode that 494
+ratios. Bar height is 84.0 − consistency, so larger bars
+is easy to miss when judge training is evaluated 495
+indicate stronger shortcut damage.
+only by accuracy. The reward need not be noisy or 496
+misspecified: even a correct label reward can rein- 497
+457 5.2 Decomposing Apparent Accuracy force the wrong feature when the data layout makes 498
+458 Balanced training provides a counterfactual for sep- that feature perfectly predictive. In this sense, the 499
+459 arating genuine judgment gains from shortcut gains. failure is related to reward hacking (Skalse et al., 500
+460 We define genuine gain as balanced accuracy minus 2022; Gao et al., 2023) but not identical to it. The 501
+461 the untrained baseline, and shortcut gain as unbal- policy is not exploiting a flawed reward model; 502
+462 anced accuracy minus balanced accuracy. This it is exploiting a confounded route to the correct 503
+463 decomposition is conservative: it attributes to the reward. 504
+464 shortcut only the accuracy that disappears when the This distinction matters for mitigation. Adding 505
+465 position-reward correlation is removed. reward terms can only help if those terms make 506
+466 Table 4 shows that the shortcut contribution the shortcut costly. In our setting, decisiveness and 507
+467 is substantial but model-dependent. In the pri- calibration remain compatible with always choos- 508
+468 mary Qwen2.5-7B setting, 11.0 percentage points ing the rewarded position, so they do not distin- 509
+469 of apparent accuracy come from the shortcut. guish comparison-based judgments from positional 510
+470 For Mistral-7B, more than half of the apparent ones. Data balancing removes the confound be- 511
+471 33 pp gain is positional. Qwen3-8B shows a fore optimization by making each position correct 512
+472 much smaller shortcut component, consistent with equally often. Algorithm-level methods such as 513
+473 stronger comparison ability competing more effec- EIS-GRPO (Xu et al., 2025) and PA-GRPO (Zheng 514
+474 tively against the positional feature. et al., 2026), as well as evaluation-time methods 515
+such as SCOPE (Badshah et al., 2026), are com- 516
+475 5.3 External Check on Published RL-Trained plementary: they can enforce or test permutation 517
+476 Judges awareness, while data deconfounding removes the 518
+477 As an external check, we evaluate JudgeLRM’s simplest positional reward path at the source. 519
+478 publicly released checkpoints (Chen et al., 2025) The practical implication is straightforward. 520
+479 with the same position-swap diagnostic (Table 5). Pairwise judge training should randomize or bal- 521
+480 JudgeLRM-7B achieves 81.3% accuracy with ance response order before any supervised, pref- 522
+481 75.7% consistency, while JudgeLRM-3B achieves erence, or RL objective is applied, and reported 523
+482 76.8% accuracy with 67.9% consistency. In both accuracy should be paired with position-swap 524
+483 cases, the A-selection rate equals accuracy, indi- consistency. This recommendation is not spe- 525
+484 cating that correct predictions are strongly aligned cific to RewardBench. Any pipeline that con- 526
+485 with first-position preference on this evaluation. verts chosen/rejected data into fixed-order judge 527
+7
+528 prompts can introduce the same confound unless it than the data level. Position-swap consistency mea- 577
+529 explicitly randomizes position. Since LLM judges sures positional robustness but does not directly 578
+530 are increasingly used as both evaluators and reward measure alignment with human judgment quality. 579
+531 signals, failing to audit this confound can propagate
+532 ordering bias into downstream model selection and
+References
+533 post-training loops. 580
+Sher Badshah, Ali Emami, and Hassan Sajjad. 2026. 581
+534 7 Conclusion SCOPE: Selective conformal optimized pairwise 582
+LLM judging. Preprint, arXiv:2602.13110. 583
+535 We showed that accuracy is not, by itself, a certifi-
+Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda 584
+536 cate of judgment ability for trained LLM judges. Askell, Anna Chen, Nova DasSarma, Dawn Drain, 585
+537 When preference data are converted into fixed- Stanislav Fort, Deep Ganguli, Tom Henighan, 586
+538 order pairwise prompts, response position can be- Nicholas Joseph, Saurav Kadavath, Jackson Kernion, 587
+539 come a perfectly reward-predictive artifact. Stan- Tom Conerly, Sheer El-Showk, Nelson Elhage, Zac 588
+Hatfield-Dodds, Danny Hernandez, Tristan Hume, 589
+540 dard optimization can then improve apparent accu- and 12 others. 2022. Training a helpful and harmless 590
+541 racy by exploiting the training interface rather than assistant with reinforcement learning from human 591
+542 comparing the responses. This position shortcut feedback. Preprint, arXiv:2204.05862. 592
+543 appears across SFT, DPO, and GRPO, persists un- Nuo Chen, Zhiyuan Hu, Qingyun Zou, Jiaying Wu, 593
+544 der reward engineering, prompt instructions, label Qian Wang, Bryan Hooi, and Bingsheng He. 2025. 594
+545 changes, and learning-rate controls, and becomes JudgeLRM: Large reasoning models as a judge. 595
+546 weaker but not absent in models with stronger com- Preprint, arXiv:2504.00050. 596
+547 parison ability. Wei-Lin Chiang, Lianmin Zheng, Ying Sheng, Anasta- 597
+548 The remedy is simple but diagnostic: remove the sios Nikolas Angelopoulos, Tianle Li, Dacheng Li, 598
+549 position-label correlation before optimization. Bal- Banghua Zhu, Hao Zhang, Michael Jordan, Joseph E. 599
+Gonzalez, and Ion Stoica. 2024. Chatbot arena: An 600
+550 anced response positions cancel the shortcut gra- open platform for evaluating LLMs by human pref- 601
+551 dient, restore position-swap consistency, and pre- erence. In Proceedings of the 41st International 602
+552 serve genuine accuracy gains. More broadly, our Conference on Machine Learning, volume 235 of 603
+553 results suggest that RL-trained judge evaluations Proceedings of Machine Learning Research, pages 604
+8359–8388. PMLR. 605
+554 should report not only accuracy but also whether
+555 the verdict is invariant to swapping response or- Paul F. Christiano, Jan Leike, Tom Brown, Miljan Mar- 606
+556 der. For pairwise judges, accuracy should count tic, Shane Legg, and Dario Amodei. 2017. Deep 607
+reinforcement learning from human preferences. In 608
+557 as evidence of judgment only when it survives the
+Advances in Neural Information Processing Systems. 609
+558 comparison-interface change.
+Leo Gao, John Schulman, and Jacob Hilton. 2023. Scal- 610
+Limitations ing laws for reward model overoptimization. In Pro- 611
+559
+ceedings of the 40th International Conference on 612
+560 Our experiments use 7–9B parameter open-source Machine Learning. 613
+561 models from three families (Qwen2.5, Qwen3, Mis- Robert Geirhos, J"orn-Henrik Jacobsen, Claudio 614
+562 tral) with LoRA training. We have not tested Michaelis, Richard Zemel, Wieland Brendel, 615
+563 frontier closed-source models or full fine-tuning, Matthias Bethge, and Felix A. Wichmann. 2020. 616
+Shortcut learning in deep neural networks. Nature 617
+564 though we expect the confound mechanism to ap- Machine Intelligence, 2:665–673. 618
+565 ply regardless of parameterization since it operates
+566 through the data and reward signal. We validate Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan 619
+Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and 620
+567 primarily on RewardBench, the standard judge eval- Weizhu Chen. 2022. LoRA: Low-rank adaptation of 621
+568 uation benchmark. The position confound is struc- large language models. In International Conference 622
+569 tural to the chosen/rejected data format used on Learning Representations. 623
+570 across community datasets (HH-RLHF, UltraFeed-
+Albert Q. Jiang, Alexandre Sablayrolles, Arthur Men- 624
+571 back), so the mechanism generalizes beyond our sch, Chris Bamford, Devendra Singh Chaplot, Diego 625
+572 specific test set, but empirical validation on addi- de las Casas, Florian Bressand, Gianna Lengyel, Guil- 626
+573 tional evaluation suites would strengthen external laume Lample, Lucile Saulnier, Lélio Renard Lavaud, 627
+Marie-Anne Lachaux, Pierre Stock, Teven Le Scao, 628
+574 validity. We do not compare against permutation-
+Thibaut Lavril, Thomas Wang, Timothée Lacroix, 629
+575 aware RL methods (EIS-GRPO, PA-GRPO) which and William El Sayed. 2023. Mistral 7b. Preprint, 630
+576 address position bias at the algorithm level rather arXiv:2310.06825. 631
+8
+632 Ryan Koo, Minhwa Lee, Vipul Raheja, Jong Inn Park, Lin Shi, Chiyu Ma, Wenhua Liang, Xingjian Diao, We- 688
+633 Zae Myung Kim, and Dongyeop Kang. 2024. Bench- icheng Ma, and Soroush Vosoughi. 2024. Judging the 689
+634 marking cognitive biases in large language models as judges: A systematic study of position bias in LLM- 690
+635 evaluators. Preprint, arXiv:2309.17012. Published as-a-judge. Preprint, arXiv:2406.07791. AACL- 691
+636 at ACL 2024. IJCNLP 2025. 692
+637 Nathan Lambert, Valentina Pyatkin, Jacob Morrison, Prasann Singhal, Tanya Goyal, Jiacheng Xu, and Greg 693
+638 LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Durrett. 2024. A long way to go: Investigating length 694
+639 Nouha Dziri, Sachin Kumar, Tom Zick, Yejin Choi, correlations in RLHF. In Conference on Language 695
+640 Noah A. Smith, and Hannaneh Hajishirzi. 2024. Re- Modeling. 696
+641 wardBench: Evaluating reward models for language
+Joar Skalse, Nikolaus Howe, Dmitrii Krasheninnikov, 697
+642 modeling. Preprint, arXiv:2403.13787.
+and David Krueger. 2022. Defining and characteriz- 698
+643 R. Thomas McCoy, Ellie Pavlick, and Tal Linzen. 2019. ing reward hacking. In Advances in Neural Informa- 699
+644 Right for the wrong reasons: Diagnosing syntactic tion Processing Systems. 700
+645 heuristics in natural language inference. In Proceed-
+Nisan Stiennon, Long Ouyang, Jeff Wu, Daniel M. 701
+646 ings of the 57th Annual Meeting of the Association
+Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, 702
+647 for Computational Linguistics.
+Dario Amodei, and Paul Christiano. 2020. Learning 703
+648 Ted Moskovitz, Aaditya K. Singh, DJ Strouse, Tuomas to summarize from human feedback. In Advances in 704
+649 Sandholm, Ruslan Salakhutdinov, Anca D. Dragan, Neural Information Processing Systems. 705
+650 and Stephen McAleer. 2023. Confronting reward Lifu Tu, Garima Lalwani, Spandana Gella, and He He. 706
+651 model overoptimization with constrained RLHF. 2020. An empirical study on robustness to spuri- 707
+652 Preprint, arXiv:2310.04373. ous correlations using pre-trained language models. 708
+653 Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Car- Transactions of the Association for Computational 709
+654 roll L. Wainwright, Pamela Mishkin, Chong Zhang, Linguistics, 8:621–633. 710
+655 Sandhini Agarwal, Katarina Slama, Alex Ray, John Peiyi Wang, Lei Li, Liang Chen, Zefan Cai, Dawei Zhu, 711
+656 Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Binghuai Lin, Yunbo Cao, Qi Liu, Tianyu Liu, and 712
+657 Maddie Simens, Amanda Askell, Peter Welinder, Zhifang Sui. 2024. Large language models are not 713
+658 Paul Christiano, Jan Leike, and Ryan Lowe. 2022. fair evaluators. In Proceedings of the 62nd Annual 714
+659 Training language models to follow instructions with Meeting of the Association for Computational Lin- 715
+660 human feedback. In Advances in Neural Information guistics. 716
+661 Processing Systems.
+Yidong Wang, Yunze Song, Tingyuan Zhu, Xuanwang 717
+662 Jane Pan, Tianyu Shih, Cameron Goldie, and Robert Zhang, Zhuohao Yu, Hao Chen, Chiyu Song, Qi- 718
+663 Geirhos. 2024. Spontaneous reward hacking in itera- ufeng Wang, Cunxiang Wang, Zhen Wu, Xinyu Dai, 719
+664 tive self-refinement. Preprint, arXiv:2407.04549. Yue Zhang, Wei Ye, and Shikun Zhang. 2025. Trust- 720
+Judge: Inconsistencies of LLM-as-a-judge and how 721
+665 Ryan Park, Rafael Rafailov, Stefano Ermon, and
+to alleviate them. Preprint, arXiv:2509.21117. 722
+666 Chelsea Finn. 2024. Disentangling length from
+667 quality in direct preference optimization. Preprint, Minghao Wu and Alham Fikri Aji. 2023. Style over sub- 723
+668 arXiv:2403.19159. stance: Evaluation biases for large language models. 724
+Preprint, arXiv:2307.03025. 725
+669 Mengjie Qian, Guangzhi Sun, Mark J. F. Gales, and
+670 Kate M. Knill. 2026. Who can we trust? LLM- Austin Xu, Yilun Zhou, Xuan-Phi Nguyen, Caiming 726
+671 as-a-jury for comparative assessment. Preprint, Xiong, and Shafiq Joty. 2025. J4R: Learning to judge 727
+672 arXiv:2602.16610. with equivalent initial state group relative policy opti- 728
+mization. Preprint, arXiv:2505.13346. 729
+673 Qwen Team. 2025a. Qwen2.5 technical report.
+674 Preprint, arXiv:2412.15115. Bo Yang, Lanfei Feng, Yunkui Chen, Yu Zhang, Xiao 730
+Xu, and Shijian Li. 2026. FairJudge: An adaptive, 731
+675 Qwen Team. 2025b. Qwen3 technical report. Preprint, debiased, and consistent LLM-as-a-judge. Preprint, 732
+676 arXiv:2505.09388. arXiv:2602.06625. 733
+677 Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Jiayi Ye, Yanbo Wang, Yue Huang, Dongping Chen, 734
+678 Ermon, Christopher D. Manning, and Chelsea Finn. Qihui Zhang, Nuno Moniz, Tian Gao, Werner Geyer, 735
+679 2023. Direct preference optimization: Your language Chao Huang, Pin-Yu Chen, Nitesh V. Chawla, and 736
+680 model is secretly a reward model. In Advances in Xiangliang Zhang. 2024. Justice or prejudice? 737
+681 Neural Information Processing Systems. quantifying biases in LLM-as-a-judge. Preprint, 738
+arXiv:2410.02736. 739
+682 Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu,
+683 Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan Jinquan Zheng, Jia Yuan, Jiacheng Yao, Chenyang Gu, 740
+684 Zhang, Y. K. Li, Y. Wu, and Daya Guo. 2024. Pujun Zheng, and Guoxiu He. 2026. Mitigating se- 741
+685 DeepSeekMath: Pushing the limits of mathemati- lection bias in large language models via permutation- 742
+686 cal reasoning in open language models. Preprint, aware GRPO. Preprint, arXiv:2603.21016. Ac- 743
+687 arXiv:2402.03300. cepted to ACL 2026 Main Conference. 744
+9
+745 Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Dataset Size Pos-A Format
+746 Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin,
+RewardBench 2,985 100% chosen/rejected
+747 Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang, HH-RLHF 160,800 100% chosen/rejected
+748 Joseph E. Gonzalez, and Ion Stoica. 2023. Judging UltraFeedback 63,967 varies completions list
+749 LLM-as-a-judge with MT-Bench and chatbot arena. PKU-SafeRLHF 73,907 50% randomized IDs
+750 Preprint, arXiv:2306.05685.
+Table 7: Position artifact audit. Datasets using the
+A Training Details
+751 chosen/rejected convention always place the pre-
+ferred response first. Converting to “Response A/B”
+752 Table 6 lists the shared training hyperparameters
+judge prompts without randomization inherits the 100%
+753 used unless otherwise stated. confound.
+Hyperparameter Value
+Base model Qwen2.5-7B-Instruct ferred response first. When converted to pairwise 778
+LoRA rank / α 64 / 128 judge training data with “Response A” and “Re- 779
+Target modules q, k, v, o projections
+GRPO group size 8 sponse B” labels, the preferred response defaults 780
+Batch size 4 (grad accum 4) to position A unless explicit randomization is ap- 781
+Learning rate 5 × 10−6 (default) plied. Our balanced data construction is a general- 782
+LR scheduler Cosine decay
+Max prompt / response 2048 / 1024 tokens purpose fix applicable to any such dataset. 783
+Training steps 500 For SFT experiments, we construct supervised 784
+Reward weights 1.0, 0.5, 0.3
+targets by pairing each judge prompt with a gold 785
+Seeds 42, 123, 456, 789
+Hardware 1× H200 (143GB) per run output that contains a brief rationale followed by 786
+Training time ∼2.5h per run the correct verdict in the format “[[A]]” or “[[B]]”. 787
+The rationale is generated by the base model and 788
+Table 6: Training hyperparameters. Only reward
+filtered for correct verdict match. For DPO, we 789
+weights and learning rates differ across conditions. For
+the learning rate study, we additionally test 1 × 10−5, construct preference pairs where the chosen out- 790
+3 × 10−6, 2 × 10−6, and 1 × 10−6. put contains the correct verdict and the rejected 791
+contains the opposite. 792
+SFT 100% accuracy sanity check. The SFT 793
+754 B Data Construction result (100% accuracy, 0% consistency on unbal- 794
+anced data) is extreme but expected. The SFT tar- 795
+755 RewardBench (Lambert et al., 2024) provides gets encode the correct verdict directly. In unbal- 796
+756 2,985 preference pairs with gold labels across four anced data, this is always “[[A]].” The model learns 797
+757 domains: chat, reasoning, safety, and coding. We to always output “[[A]]” because that is the only 798
+758 split into 2,089 training, 447 validation (used for pattern in its training targets. This is the same 799
+759 early stopping and hyperparameter selection), and position confound operating through supervised 800
+760 449 test instances using a 70/15/15 stratified split. learning rather than RL: the model memorizes the 801
+761 In the original data, the preferred response occupies positional regularity in the gold outputs. The ra- 802
+762 position A for 100% of instances in all splits. tionales do not contain position-encoding artifacts 803
+763 For unbalanced training, we use this data as-is. (they are content-based and filtered for quality), but 804
+764 For balanced training, we include both orientations the verdict labels themselves are the confound. Bal- 805
+765 of each training pair: the original instance with anced SFT breaks this: with 50% “[[A]]” and 50% 806
+766 gold label A and a swapped mirror with gold label “[[B]]” targets, the model must learn content-based 807
+767 B. This yields 4,178 balanced training prompts judgment to predict the correct verdict. 808
+768 and ensures that position A is preferred in exactly For evaluation, we always test both the original 809
+769 half the training instances. We also run a non- and position-swapped version of each test instance, 810
+770 duplicated balanced control with 2,089 prompts in using the swap rate as our consistency metric. 811
+771 Appendix K.
+772 Position bias in preference datasets. The “al- C Prompt Template 812
+773 ways A” artifact is not unique to RewardBench. We
+You are an expert judge. Given a user 813
+774 audited multiple widely-used preference datasets query and two AI responses, evaluate 814
+775 (Table 7): which response is better. 815
+816
+776 Datasets following the Anthropic HH-RLHF for- [Query] {query} 817
+777 mat (Bai et al., 2022) structurally place the pre- [Response A] {response_a} 818
+10
+819 [Response B] {response_b} Method Data Acc Con
+820
+Qwen2.5-7B-Instruct (primary)
+821 Provide your analysis, then give your
+Baseline — 80.2 83.3
+822 verdict and confidence in the format:
+SFT unbal 100.0 0.0
+823 [[winner, confidence]]
+DPO unbal 94.2 54.3
+824 where winner is A, B, or tie, and
+825 confidence is a number between 0 and 1.
+GRPO unbal 94.7±0.8 58.7±7.9
+SFT bal 91.3 87.1
+826 Output parsing and format handling. We GRPO bal 83.7±1.0 84.0±0.7
+827 extract the verdict and confidence from the Qwen3-8B (cross-generation)
+828 model’s output using a regex matching [[winner, Baseline — 81.7 86.0
+SFT unbal 100.0 0.0
+829 confidence]]. If the output does not match the DPO unbal 89.3 81.3
+830 expected format, we treat it as a parse failure GRPO unbal 89.1±1.0 79.5±1.0
+831 and assign the response as incorrect for accuracy SFT bal 88.6 89.1
+DPO bal 88.6 85.3
+832 and inconsistent for swap testing. Parse failure GRPO bal 88.0 82.6
+833 rates are below 3% for Qwen2.5-7B and below
+Mistral-7B-Instruct-v0.3 (cross-family)
+834 5% for Qwen3-8B (with thinking disabled). Baseline — 65.7 64.8
+835 For calibration rewards during training, parse SFT unbal 100.0 0.0
+SFT bal 92.2 84.9
+836 failures receive zero reward. Ties are treated as GRPO unbal 98.4±0.3 23.0±2.9
+837 self-consistent (a model predicting “tie” on both GRPO bal 81.1±0.9 68.3±3.6
+838 orderings is position-invariant).
+Table 8: Cross-model validation across three model
+839 D Cross-Model Validation families. The position shortcut replicates on all mod-
+els. Shortcut severity inversely correlates with baseline
+840 To verify that our findings generalize beyond a capability: Mistral (weakest baseline) shows the most
+841 single model family, we replicate experiments extreme collapse.
+842 on Qwen3-8B (Qwen Team, 2025b) (a newer-
+843 generation Qwen model) and Mistral-7B-Instruct-
+844 v0.3 (Jiang et al., 2023) (a completely different nated by step 100 (98.7% accuracy, 20.3% con- 871
+845 architecture and pre-training corpus from Mistral sistency, virtually identical to its final step-500 val- 872
+846 AI). Table 8 reports the full cross-model compari- ues), while Qwen2.5-7B shows gradual degrada- 873
+847 son. tion through all 500 steps (84.6%/81.7% at step 874
+848 A clear severity gradient emerges that inversely 100 → 94.0%/61.7% at step 500). The weaker 875
+849 correlates with model capability. Mistral-7B, model’s content representations offer so little com- 876
+850 with the weakest baseline judge ability (65.7%), petition that the shortcut captures nearly all reward- 877
+851 is almost completely dominated by the short- predictive variance within the first training epoch. 878
+852 cut after training (98.4% accuracy, 23.0% con- This temporal difference has direct practical im- 879
+853 sistency). Qwen2.5-7B (baseline 80.2%) shows plications: practitioners monitoring Mistral-class 880
+854 a moderate shortcut (94.7%/58.7%). Qwen3-8B judges would need to detect the problem within 881
+855 (baseline 81.7%) retains most of its consistency the first few dozen steps, while Qwen-class judges 882
+856 (89.1%/79.5%). The positional feature and con- provide a longer window for early stopping or di- 883
+857 tent features compete for representational capacity agnostic intervention. 884
+858 during RL optimization, and the outcome depends The learning rate threshold effect also replicates 885
+859 on the relative strength of the content signal at ini- on Qwen3-8B, though with a shifted critical point. 886
+860 tialization. In weaker models, pre-trained content Consistency remains above 81% through lr=3e-6 887
+861 representations are insufficiently robust to resist on Qwen3-8B (Table 9), compared to the sharp 888
+862 the simpler, more reliable positional feature. The drop at the same rate on Qwen2.5-7B (75.7%). 889
+863 balanced data fix restores genuine judgment across The stronger model resists the shortcut at moderate 890
+864 all three families, with the magnitude of recovery learning rates but still succumbs at aggressive ones 891
+865 proportional to the severity of collapse. The short- (lr=1e-5: 78.6% consistency, down from 86.0% 892
+866 cut displaces but does not destroy underlying judge baseline). 893
+867 capability. Multi-objective rewards also fail on Qwen3-8B: 894
+868 The severity gradient extends to the speed of the decisiveness reward raises consistency by 2 pp 895
+869 shortcut emergence. Checkpoint-level evaluation (vs 6 pp on Qwen2.5) while the calibration proxy 896
+870 reveals that Mistral-7B is already fully domi- lowers it (78.0%, below acc-only). The composite 897
+11
+LR Qwen2.5-7B Qwen3-8B 100% accuracy with 0% consistency. DPO falls be- 913
+Acc Con Acc Con tween SFT and GRPO in severity (94.2%/54.3%). 914
+GRPO retains partial consistency (60%). The or- 915
+1e-6 83.7 83.3 89.1 82.4
+2e-6 85.7 81.1 87.8 81.5 dering SFT > DPO > GRPO in shortcut severity 916
+3e-6 90.0 75.7 87.8 82.6 mirrors their degree of implicit regularization. 917
+5e-6 94.0 61.7 89.8 80.2
+1e-5 98.9 38.1 90.0 78.6 When given balanced data, SFT achieves higher 918
+accuracy (91.3% vs 84.6% for GRPO) because it 919
+Table 9: Cross-model LR sensitivity. The threshold is more data-efficient when data quality can be 920
+effect is sharper on Qwen2.5-7B (con drops 45 pp across guaranteed, while GRPO is more robust to resid- 921
+lr range) than Qwen3-8B (8 pp), but both show the same
+ual confounds. SFT’s direct likelihood maximiza- 922
+monotonic tradeoff.
+tion makes it both the strongest learner AND the 923
+most vulnerable to data confounds, while GRPO’s 924
+898 reward does not help. This confirms that proxy exploration-based optimization provides implicit 925
+899 rewards cannot fix a data-level confound regardless regularization that partially resists shortcuts. 926
+900 of model generation.
+901 All experiments use NVIDIA H200 GPUs G Cross-Model Learning Rate Sensitivity
+927
+902 (143GB). Total compute: approximately 200 H200-
+903 GPU-hours across all experiments.
+Figure 6 shows that the threshold effect replicates 928
+E Multi-Seed Stability on Qwen3-8B but with a shifted critical learning 929
+904
+rate, suggesting that the activation point depends 930
+905 All findings are stable across random seeds. Ta- on model capability. 931
+906 ble 10 reports individual seed results for the two
+907 key conditions.
+90
+Method Seed Acc Con
+80
+Acc-only (unbal) s1 94.4 60.8
+s2 95.6 51.7 70
+s3 94.2 66.8
+60
+Full (unbal) s1 94.0 61.7
+s2 96.0 45.2 50
+s3 94.2 63.7
+40
+s4 94.4 64.4
+1e-6 2e-6 3e-6 5e-6 1e-5
+Table 10: Per-seed results confirm the accuracy-
+consistency pattern is stable across runs. Learning Rate
+F Learning Rate Sensitivity
+908
+909 The complete learning rate data is shown in Ta-
+910 ble 11. The main text Figure 2 visualizes this data.
+Learning Rate Acc Con Pred-A %
+Baseline 80.2 83.3 ∼55
+1e-6 83.7 83.3 ∼60
+2e-6 85.7 81.1 ∼65
+3e-6 90.0 75.7 ∼82
+5e-6 (standard) 94.0 61.7 ∼94
+1e-5 98.9 38.1 ∼99
+Table 11: Full learning rate sweep with Pred-A rate con-
+firming position exploitation increases monotonically
+with training intensity.
+911 The position shortcut is not specific to any train-
+912 ing paradigm. SFT on unbalanced data achieves
+)%(ycnetsisnoC
+Qwen3-8B Qwen2.5-7B
+Figure 6: Consistency as a function of learning rate
+for two model generations. Qwen2.5-7B shows a sharp
+threshold at lr=3e-6, losing 45 pp of consistency across
+the range. Qwen3-8B shows a gradual decline of only 8
+pp. Stronger models have higher shortcut resistance but
+are not immune.
+The contrast between the two curves quantifies 932
+an important practical insight: model capability 933
+acts as a partial buffer against shortcut learning. 934
+Qwen3-8B’s stronger internal representations main- 935
+tain position-invariant judgment even under mod- 936
+erate optimization pressure. However, at aggres- 937
+sive learning rates, even the stronger model begins 938
+to exploit the confound. This implies that scal- 939
+ing alone cannot eliminate the position shortcut 940
+problem. Data deconfounding remains necessary 941
+regardless of model capability. 942
+12
+943 H Multi-Objective Reward Analysis understanding the task demands (Table 14). Rea- 967
+soning tasks have clean, verifiable gold answers 968
+944 A key question is whether reward engineering can where position alone suffices for high accuracy, 969
+945 substitute for data deconfounding. We test three so the model abandons content judgment entirely. 970
+946 reward configurations on both models (all on un- Safety evaluation requires understanding harmful 971
+947 balanced data): intent, which position cannot approximate. Code 972
+evaluation falls between these extremes. 973
+Reward Qwen2.5-7B Qwen3-8B
+Acc Con Acc Con Method Chat Reas. Safe Code Adv.
+Accuracy only 94.7 59.8 88.5 80.4 Baseline A 98.0 80.9 76.0 85.9 32.6
++ Decisive 93.9 66.3 88.9 82.4 C 92.0 70.8 86.7 83.7 76.7
++ Calibration 95.3 56.7 89.1 78.0
+Unbal. A 100 98.9 92.0 97.0 69.8
+Full composite 94.7 58.7 88.9 81.3
+C 66.0 30.3 70.7 64.4 62.8
+Bal. A 96.0 85.4 78.7 92.6 41.9
+Table 12: Reward ablation across models. No proxy
+C 88.0 76.4 89.3 84.4 83.7
+reward matches the effectiveness of balanced data
+(Qwen2.5 GRPO balanced: 84.0% con, Qwen3 GRPO
+Table 14: Per-domain accuracy (A) and consistency (C).
+balanced: 82.6% con). The calibration proxy lowers
+Reasoning suffers the most severe consistency collapse
+consistency on both models.
+(70.8→30.3). Balanced training restores consistency
+across all domains.
+948 Proxy rewards fail because the shortcut satisfies
+949 every component simultaneously (Table 12). The
+950 decisiveness reward improves consistency slightly K Dose-Response and Data Duplication 974
+951 by penalizing tie hedging, but it cannot distinguish Control 975
+952 between a model that is decisive because it under-
+We verify that the balanced training fix does not 976
+953 stands the content and one that is decisive because
+depend on data duplication. Our standard balanced 977
+954 it always picks A. The calibration proxy actually
+construction creates a mirror of each instance with 978
+955 lowers consistency on both models, because confi-
+swapped positions, doubling the dataset from 2,089 979
+956 dence in A is not penalized when the training data
+to 4,178 training pairs. To control for this size 980
+957 always rewards A. No reward component creates
+difference, we also train on non-duplicated bal- 981
+958 gradient pressure away from the shortcut.
+anced data (2,089 instances, each randomly as- 982
+I Training Dynamics Details signed to either its original or swapped position 983
+959
+with equal probability). The non-duplicated ver- 984
+960 Table 13 gives the full checkpoint-level data for the sion yields near-identical results (83.1%/82.6% vs 985
+961 training dynamics experiment. Accuracy increases 83.7%/84.0%), confirming that deconfounding, not 986
+962 monotonically while consistency decreases, and data augmentation or increased training samples, 987
+963 the composite reward does not slow the shortcut. drives the improvement. 988
+L Threshold Effect Analysis
+Steps Acc-only Full 989
+Acc Con Acc Con The learning rate sweep shows that shortcut activa- 990
+0 (base) 80.2 83.3 80.2 83.3 tion exhibits threshold behavior rather than gradual 991
+100 86.0 80.8 84.6 81.7 degradation (Figure 2). At low learning rates, the 992
+200 89.1 76.8 90.9 74.6
+300 92.2 65.3 93.5 65.9 model’s pre-trained attention patterns for content 993
+500 94.4 60.8 94.0 61.7 understanding are not significantly disrupted, and 994
+position-based features remain dormant. Once opti- 995
+Table 13: Training dynamics. Accuracy increases mono- mization pressure crosses a critical point, the much 996
+tonically while consistency decreases. The composite
+simpler position feature (one token at one location) 997
+reward does not slow the shortcut.
+receives disproportionate gradient signal compared 998
+to the distributed content features. The model’s 999
+J Per-Domain Analysis internal representation reorganizes around position 1000
+964
+rather than content. 1001
+965 Each domain’s vulnerability to the shortcut cor- Cross-model validation on Qwen3-8B confirms 1002
+966 relates inversely with how much genuine content this interpretation. A stronger model with more 1003
+13
+1004 robust internal representations requires higher opti-
+1005 mization pressure to trigger the shortcut. Qwen3-
+1006 8B maintains consistency above 80% across all
+1007 tested learning rates (Table 9), while Qwen2.5-7B
+1008 collapses at aggressive rates. The shortcut is not
+1009 eliminated by model capability. It is merely harder
+1010 to activate. Practitioners using newer, stronger
+1011 models may not observe the problem at standard
+1012 learning rates, yet it remains latent and can emerge
+1013 with minor hyperparameter changes.
+14

@@ -1,0 +1,12 @@
+{
+  "variant": "leftright",
+  "variant_desc": "Response Left/Right instead of A/B",
+  "n_samples": 449,
+  "accuracy": 0.9420935412026726,
+  "consistency": 0.5991091314031181,
+  "a_selection_rate": 0.9420935412026726,
+  "parse_failures": 0,
+  "fallback_to_ab": 0,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter": "results/EXP-009_full_composite/final_model"
+}

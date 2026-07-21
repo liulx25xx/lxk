@@ -1,0 +1,17 @@
+run_name,n_variants,path,n,orig_acc_pct,consistency_pct,parse_fail_rate_pct
+baseline_qwen3_8b,2,results/baseline_qwen3_8b/eval/eval_results.json,449,85.96881959910914,80.40089086859689,2.338530066815145
+baseline_qwen3_8b,2,results/baseline_qwen3_8b/eval_results.json,449,36.080178173719375,78.39643652561247,63.14031180400891
+eval_ckpt100,5,results/EXP-006_accuracy_only/eval_ckpt100/eval_results.json,449,85.96881959910914,80.84632516703786,0.0
+eval_ckpt100,5,results/EXP-007a_acc_decisive/eval_ckpt100/eval_results.json,449,85.30066815144765,81.29175946547885,0.0
+eval_ckpt100,5,results/EXP-007a_acc_decisive_s2/eval_ckpt100/eval_results.json,449,83.07349665924276,82.40534521158129,0.0
+eval_ckpt100,5,results/EXP-009_full_composite/eval_ckpt100/eval_results.json,449,84.63251670378618,81.73719376391982,0.0
+eval_ckpt100,5,results/GRPO_qwen3_8b_unbalanced/eval_ckpt100/eval_results.json,449,49.88864142538976,80.17817371937639,50.445434298440986
+eval_ckpt200,5,results/EXP-006_accuracy_only/eval_ckpt200/eval_results.json,449,89.086859688196,76.83741648106904,0.0
+eval_ckpt200,5,results/EXP-007a_acc_decisive/eval_ckpt200/eval_results.json,449,89.97772828507794,75.94654788418708,0.0
+eval_ckpt200,5,results/EXP-007a_acc_decisive_s2/eval_ckpt200/eval_results.json,449,88.19599109131403,75.05567928730513,0.0
+eval_ckpt200,5,results/EXP-009_full_composite/eval_ckpt200/eval_results.json,449,90.8685968819599,74.61024498886414,0.0
+eval_ckpt200,5,results/GRPO_qwen3_8b_unbalanced/eval_ckpt200/eval_results.json,449,89.75501113585747,80.17817371937639,0.0
+eval_ckpt300,4,results/EXP-006_accuracy_only/eval_ckpt300/eval_results.json,449,92.20489977728286,65.25612472160356,0.0
+eval_ckpt300,4,results/EXP-007a_acc_decisive/eval_ckpt300/eval_results.json,449,93.54120267260579,65.47884187082406,0.0
+eval_ckpt300,4,results/EXP-007a_acc_decisive_s2/eval_ckpt300/eval_results.json,449,90.64587973273942,74.83296213808464,0.0
+eval_ckpt300,4,results/EXP-009_full_composite/eval_ckpt300/eval_results.json,449,93.54120267260579,65.92427616926503,0.0

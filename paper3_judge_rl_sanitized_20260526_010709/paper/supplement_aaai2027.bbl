@@ -1,0 +1,29 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Bai et~al.(2022)Bai, Jones, Ndousse, Askell, Chen, DasSarma, Drain, Fort, Ganguli, Henighan, Joseph, Kadavath, Kernion, Conerly, El-Showk, Elhage, Hatfield-Dodds, Hernandez, Hume, Johnston, Kravec, Lovitt, Nanda, Olsson, Amodei, Brown, Clark, McCandlish, Olah, Mann, and Kaplan}]{bai2022training}
+Bai, Y.; Jones, A.; Ndousse, K.; Askell, A.; Chen, A.; DasSarma, N.; Drain, D.; Fort, S.; Ganguli, D.; Henighan, T.; Joseph, N.; Kadavath, S.; Kernion, J.; Conerly, T.; El-Showk, S.; Elhage, N.; Hatfield-Dodds, Z.; Hernandez, D.; Hume, T.; Johnston, S.; Kravec, S.; Lovitt, L.; Nanda, N.; Olsson, C.; Amodei, D.; Brown, T.; Clark, J.; McCandlish, S.; Olah, C.; Mann, B.; and Kaplan, J. 2022.
+\newblock Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback.
+\newblock arXiv:2204.05862.
+
+\bibitem[{Chen et~al.(2025)Chen, Hu, Zou, Wu, Wang, Hooi, and He}]{chen2025judgelrm}
+Chen, N.; Hu, Z.; Zou, Q.; Wu, J.; Wang, Q.; Hooi, B.; and He, B. 2025.
+\newblock {JudgeLRM}: Large Reasoning Models as a Judge.
+\newblock arXiv:2504.00050.
+
+\bibitem[{Jiang et~al.(2023)Jiang, Sablayrolles, Mensch, Bamford, Chaplot, de~las Casas, Bressand, Lengyel, Lample, Saulnier, Lavaud, Lachaux, Stock, Le~Scao, Lavril, Wang, Lacroix, and El~Sayed}]{jiang2023mistral}
+Jiang, A.~Q.; Sablayrolles, A.; Mensch, A.; Bamford, C.; Chaplot, D.~S.; de~las Casas, D.; Bressand, F.; Lengyel, G.; Lample, G.; Saulnier, L.; Lavaud, L.~R.; Lachaux, M.-A.; Stock, P.; Le~Scao, T.; Lavril, T.; Wang, T.; Lacroix, T.; and El~Sayed, W. 2023.
+\newblock Mistral 7B.
+\newblock arXiv:2310.06825.
+
+\bibitem[{Lambert et~al.(2024)Lambert, Pyatkin, Morrison, Miranda, Lin, Chandu, Dziri, Kumar, Zick, Choi, Smith, and Hajishirzi}]{lambert2024rewardbench}
+Lambert, N.; Pyatkin, V.; Morrison, J.; Miranda, L.; Lin, B.~Y.; Chandu, K.; Dziri, N.; Kumar, S.; Zick, T.; Choi, Y.; Smith, N.~A.; and Hajishirzi, H. 2024.
+\newblock {RewardBench}: Evaluating Reward Models for Language Modeling.
+\newblock arXiv:2403.13787.
+
+\bibitem[{{Qwen Team}(2025)}]{qwen2025qwen3}
+{Qwen Team}. 2025.
+\newblock {Qwen3} Technical Report.
+\newblock arXiv:2505.09388.
+
+\end{thebibliography}

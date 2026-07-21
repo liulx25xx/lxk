@@ -1,0 +1,15 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "train_data": "../data/train/judge_train.json",
+  "output_dir": "../results/SFT_unbalanced_test",
+  "lr": 5e-05,
+  "max_steps": 2,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "lora_rank": 64,
+  "max_length": 2048,
+  "seed": 42,
+  "start_time": "2026-05-17T14:43:49.316688",
+  "gpu": "NVIDIA H200",
+  "trainer_type": "SFT"
+}

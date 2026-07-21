@@ -1,0 +1,12 @@
+{
+  "variant": "leftright",
+  "variant_desc": "Response Left/Right instead of A/B",
+  "n_samples": 449,
+  "accuracy": 0.9910913140311804,
+  "consistency": 0.155902004454343,
+  "a_selection_rate": 0.9910913140311804,
+  "parse_failures": 0,
+  "fallback_to_ab": 0,
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "adapter": "results/GRPO_mistral7b_unbal/final_model"
+}

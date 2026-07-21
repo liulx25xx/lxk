@@ -1,0 +1,19 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "reward_mode": "acc_calib",
+  "alpha": 1.0,
+  "beta": 0.5,
+  "gamma": 0.3,
+  "lr": 5e-06,
+  "max_steps": 500,
+  "group_size": 8,
+  "batch_size": 4,
+  "lora_rank": 64,
+  "output_dir": "/path/to/paper3_judge_rl/results/EXP-008_acc_calib_s2",
+  "train_data": "/path/to/paper3_judge_rl/data/train/judge_train.json",
+  "swap_data": "/path/to/paper3_judge_rl/data/train/judge_swap.json",
+  "seed": 123,
+  "start_time": "2026-05-17T01:37:09.112452",
+  "gpu": "NVIDIA H200",
+  "end_time": "2026-05-17T04:43:38.977690"
+}

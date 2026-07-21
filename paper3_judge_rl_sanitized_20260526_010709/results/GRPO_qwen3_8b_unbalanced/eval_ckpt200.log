@@ -1,0 +1,72 @@
+2026-05-17 22:02:53,528 [INFO] ============================================================
+2026-05-17 22:02:53,529 [INFO] Judge Model Evaluation
+2026-05-17 22:02:53,529 [INFO] ============================================================
+2026-05-17 22:02:53,529 [INFO] Model: Qwen/Qwen3-8B
+2026-05-17 22:02:53,529 [INFO] Adapter: /path/to/paper3_judge_rl/results/GRPO_qwen3_8b_unbalanced/checkpoints/checkpoint-200
+2026-05-17 22:02:53,530 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-17 22:02:53,530 [INFO] Batch size: 8
+2026-05-17 22:02:53,530 [INFO] Output: /path/to/paper3_judge_rl/results/GRPO_qwen3_8b_unbalanced/eval_ckpt200
+2026-05-17 22:02:53,532 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-17 22:02:53,561 [INFO] Test samples: 449
+2026-05-17 22:02:53,561 [INFO] Loading model...
+2026-05-17 22:02:53,655 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 22:02:53,663 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-05-17 22:02:53,723 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 22:02:53,723 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 22:02:53,730 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-17 22:02:53,780 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-17 22:02:53,816 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-17 22:02:54,213 [INFO] HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK"
+2026-05-17 22:02:54,248 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 22:02:54,262 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-17 22:02:54,304 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 22:02:54,312 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:02<09:14,  1.40s/it]Loading weights:   2%|▏         | 7/399 [00:02<02:09,  3.03it/s]Loading weights:   3%|▎         | 12/399 [00:03<01:06,  5.84it/s]Loading weights:   4%|▍         | 15/399 [00:03<01:01,  6.22it/s]Loading weights:   4%|▍         | 17/399 [00:03<01:03,  6.03it/s]Loading weights:   5%|▍         | 19/399 [00:03<00:52,  7.23it/s]Loading weights:   6%|▌         | 23/399 [00:04<00:37, 10.07it/s]Loading weights:   7%|▋         | 27/399 [00:04<00:37, 10.04it/s]Loading weights:   7%|▋         | 29/399 [00:04<00:39,  9.41it/s]Loading weights:   9%|▊         | 34/399 [00:05<00:29, 12.47it/s]Loading weights:  10%|▉         | 38/399 [00:05<00:32, 11.03it/s]Loading weights:  10%|█         | 40/399 [00:05<00:34, 10.41it/s]Loading weights:  11%|█▏        | 45/399 [00:05<00:23, 14.96it/s]Loading weights:  12%|█▏        | 48/399 [00:06<00:26, 13.17it/s]Loading weights:  13%|█▎        | 50/399 [00:06<00:49,  7.02it/s]Loading weights:  14%|█▎        | 54/399 [00:07<00:37,  9.11it/s]Loading weights:  15%|█▍        | 59/399 [00:07<00:31, 10.89it/s]Loading weights:  15%|█▌        | 61/399 [00:08<00:46,  7.29it/s]Loading weights:  17%|█▋        | 67/399 [00:08<00:29, 11.22it/s]Loading weights:  17%|█▋        | 69/399 [00:08<00:33,  9.77it/s]Loading weights:  18%|█▊        | 71/399 [00:08<00:30, 10.71it/s]Loading weights:  18%|█▊        | 73/399 [00:09<00:31, 10.39it/s]Loading weights:  19%|█▉        | 76/399 [00:09<00:24, 13.13it/s]Loading weights:  20%|█▉        | 79/399 [00:09<00:20, 15.43it/s]Loading weights:  21%|██        | 82/399 [00:10<00:47,  6.68it/s]Loading weights:  21%|██        | 84/399 [00:10<00:45,  6.91it/s]Loading weights:  23%|██▎       | 92/399 [00:10<00:24, 12.45it/s]Loading weights:  24%|██▎       | 94/399 [00:11<00:37,  8.12it/s]Loading weights:  25%|██▍       | 98/399 [00:11<00:28, 10.46it/s]Loading weights:  26%|██▌       | 103/399 [00:12<00:30,  9.82it/s]Loading weights:  26%|██▋       | 105/399 [00:12<00:37,  7.89it/s]Loading weights:  27%|██▋       | 109/399 [00:12<00:28, 10.05it/s]Loading weights:  28%|██▊       | 111/399 [00:12<00:27, 10.35it/s]Loading weights:  29%|██▊       | 114/399 [00:13<00:30,  9.23it/s]Loading weights:  29%|██▉       | 116/399 [00:13<00:41,  6.78it/s]Loading weights:  30%|███       | 120/399 [00:14<00:32,  8.71it/s]Loading weights:  31%|███       | 122/399 [00:14<00:28,  9.66it/s]Loading weights:  31%|███       | 124/399 [00:14<00:30,  8.94it/s]Loading weights:  32%|███▏      | 126/399 [00:15<00:47,  5.69it/s]Loading weights:  33%|███▎      | 131/399 [00:15<00:32,  8.14it/s]Loading weights:  34%|███▍      | 136/399 [00:16<00:31,  8.22it/s]Loading weights:  35%|███▍      | 138/399 [00:16<00:35,  7.30it/s]Loading weights:  36%|███▌      | 142/399 [00:16<00:27,  9.42it/s]Loading weights:  36%|███▌      | 144/399 [00:17<00:26,  9.68it/s]Loading weights:  37%|███▋      | 146/399 [00:17<00:36,  6.96it/s]Loading weights:  37%|███▋      | 148/399 [00:18<00:43,  5.72it/s]Loading weights:  37%|███▋      | 149/399 [00:18<00:52,  4.78it/s]Loading weights:  40%|███▉      | 158/399 [00:19<00:25,  9.41it/s]Loading weights:  40%|████      | 160/399 [00:19<00:37,  6.31it/s]Loading weights:  41%|████      | 164/399 [00:20<00:28,  8.16it/s]Loading weights:  42%|████▏     | 167/399 [00:20<00:25,  9.16it/s]Loading weights:  43%|████▎     | 171/399 [00:20<00:18, 12.11it/s]Loading weights:  77%|███████▋  | 308/399 [00:20<00:00, 182.46it/s]Loading weights:  88%|████████▊ | 351/399 [00:20<00:00, 212.22it/s]Loading weights: 100%|██████████| 399/399 [00:20<00:00, 19.33it/s] 
+2026-05-17 22:04:12,005 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 22:04:12,012 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/generation_config.json "HTTP/1.1 200 OK"
+2026-05-17 22:04:12,056 [INFO] HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-17 22:04:12,088 [WARNING] Some parameters are on the meta device because they were offloaded to the cpu.
+2026-05-17 22:04:12,088 [INFO] Loading LoRA adapter from /path/to/paper3_judge_rl/results/GRPO_qwen3_8b_unbalanced/checkpoints/checkpoint-200
+2026-05-17 22:04:13,425 [INFO] We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2026-05-17 22:04:13,516 [WARNING] Some parameters are on the meta device because they were offloaded to the cpu.
+Traceback (most recent call last):
+  File "/path/to/paper3_judge_rl/scripts/eval_judge.py", line 402, in <module>
+    main()
+    ~~~~^^
+  File "/path/to/paper3_judge_rl/scripts/eval_judge.py", line 274, in main
+    model = model.merge_and_unload()
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 726, in merge_and_unload
+    return self._unload_and_optionally_merge(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        progressbar=progressbar, safe_merge=safe_merge, adapter_names=adapter_names
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 654, in _unload_and_optionally_merge
+    with onload_layer(target):
+         ~~~~~~~~~~~~^^^^^^^^
+  File "/path/to/env/miniconda3/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/peft/tuners/tuners_utils.py", line 94, in onload_layer
+    module._hf_hook.pre_forward(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/accelerate/hooks.py", line 50, in wrapper
+    return wrapper._compiled_fn(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py", line 1298, in _fn
+    return fn(*args, **kwargs)
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/accelerate/hooks.py", line 378, in pre_forward
+    set_module_tensor_to_device(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        module,
+        ^^^^^^^
+    ...<4 lines>...
+        tied_params_map=self.tied_params_map,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/path/to/env/judge_rl/lib/python3.13/site-packages/accelerate/utils/modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 23.94 MiB is free. Process 1293970 has 518.00 MiB memory in use. Including non-PyTorch memory, this process has 14.19 GiB memory in use. Process 1300199 has 125.06 GiB memory in use. Of the allocated memory 13.50 GiB is allocated by PyTorch, and 95.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

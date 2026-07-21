@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/path/to/paper3_judge_rl/scripts/probe_hidden_states.py", line 35, in <module>
+    from sklearn.linear_model import LogisticRegression
+ModuleNotFoundError: No module named 'sklearn'

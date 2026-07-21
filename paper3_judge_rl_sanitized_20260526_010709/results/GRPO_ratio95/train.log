@@ -1,0 +1,11 @@
+=== Judge GRPO Training ===
+Mode: full
+Model: Qwen/Qwen2.5-7B-Instruct
+Output: results/GRPO_ratio95
+Steps: 500
+
+Loading training data...
+Training samples: 2089
+Initializing GRPOTrainer...
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 72944.42it/s]
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]

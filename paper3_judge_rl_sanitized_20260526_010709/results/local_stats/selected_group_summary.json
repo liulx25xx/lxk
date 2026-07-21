@@ -1,0 +1,2194 @@
+[
+  {
+    "section": "primary_unbalanced",
+    "name": "Baseline (Qwen2.5-7B)",
+    "requested_runs": [
+      "baseline_qwen7b"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "baseline_qwen7b"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8017817371937639,
+        "seed_std": null,
+        "values": [
+          0.8017817371937639
+        ],
+        "ci95_low": 0.7624149303477403,
+        "ci95_high": 0.8360285087882167
+      },
+      "swap_acc": {
+        "mean": 0.7527839643652561,
+        "seed_std": null,
+        "values": [
+          0.7527839643652561
+        ],
+        "ci95_low": 0.7108490333051233,
+        "ci95_high": 0.7904301574102354
+      },
+      "order_avg_acc": {
+        "mean": 0.77728285077951,
+        "seed_std": null,
+        "values": [
+          0.77728285077951
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.8151447661469933,
+        "seed_std": null,
+        "values": [
+          0.8151447661469933
+        ],
+        "ci95_low": 0.7766189284073141,
+        "ci95_high": 0.8483238512069878
+      },
+      "strict_consistency": {
+        "mean": 0.7928730512249443,
+        "seed_std": null,
+        "values": [
+          0.7928730512249443
+        ],
+        "ci95_low": 0.7529814136530244,
+        "ci95_high": 0.8277957984973692
+      },
+      "first_pos_rate": {
+        "mean": 0.4933184855233853,
+        "seed_std": null,
+        "values": [
+          0.4933184855233853
+        ],
+        "ci95_low": 0.4607171481038426,
+        "ci95_high": 0.5259767437297708
+      },
+      "orig_first_rate": {
+        "mean": 0.8017817371937639,
+        "seed_std": null,
+        "values": [
+          0.8017817371937639
+        ],
+        "ci95_low": 0.7624149303477403,
+        "ci95_high": 0.8360285087882167
+      },
+      "swap_first_rate": {
+        "mean": 0.18485523385300667,
+        "seed_std": null,
+        "values": [
+          0.18485523385300667
+        ],
+        "ci95_low": 0.15167614879301217,
+        "ci95_high": 0.22338107159268594
+      },
+      "position_bias": {
+        "mean": 0.024498886414253896,
+        "seed_std": null,
+        "values": [
+          0.024498886414253896
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.051224944320712694,
+        "seed_std": null,
+        "values": [
+          0.051224944320712694
+        ],
+        "ci95_low": 0.03862194041901209,
+        "ci95_high": 0.06765112773869114
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_unbalanced",
+    "name": "SFT",
+    "requested_runs": [
+      "SFT_unbalanced"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "SFT_unbalanced"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 1.0,
+        "seed_std": null,
+        "values": [
+          1.0
+        ],
+        "ci95_low": 0.9915169895647404,
+        "ci95_high": 1.0
+      },
+      "swap_acc": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 8.673617379884035e-19,
+        "ci95_high": 0.008483010435259591
+      },
+      "order_avg_acc": {
+        "mean": 0.5,
+        "seed_std": null,
+        "values": [
+          0.5
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 8.673617379884035e-19,
+        "ci95_high": 0.008483010435259591
+      },
+      "strict_consistency": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 8.673617379884035e-19,
+        "ci95_high": 0.008483010435259591
+      },
+      "first_pos_rate": {
+        "mean": 1.0,
+        "seed_std": null,
+        "values": [
+          1.0
+        ],
+        "ci95_low": 0.9957404277845938,
+        "ci95_high": 1.0
+      },
+      "orig_first_rate": {
+        "mean": 1.0,
+        "seed_std": null,
+        "values": [
+          1.0
+        ],
+        "ci95_low": 0.9915169895647404,
+        "ci95_high": 1.0
+      },
+      "swap_first_rate": {
+        "mean": 1.0,
+        "seed_std": null,
+        "values": [
+          1.0
+        ],
+        "ci95_low": 0.9915169895647404,
+        "ci95_high": 1.0
+      },
+      "position_bias": {
+        "mean": 1.0,
+        "seed_std": null,
+        "values": [
+          1.0
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_unbalanced",
+    "name": "DPO",
+    "requested_runs": [
+      "DPO_unbalanced"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "DPO_unbalanced"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9420935412026726,
+        "seed_std": null,
+        "values": [
+          0.9420935412026726
+        ],
+        "ci95_low": 0.9165065711769282,
+        "ci95_high": 0.9601799429816509
+      },
+      "swap_acc": {
+        "mean": 0.5033407572383074,
+        "seed_std": null,
+        "values": [
+          0.5033407572383074
+        ],
+        "ci95_low": 0.4572618069670318,
+        "ci95_high": 0.5493630281525546
+      },
+      "order_avg_acc": {
+        "mean": 0.72271714922049,
+        "seed_std": null,
+        "values": [
+          0.72271714922049
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.5434298440979956,
+        "seed_std": null,
+        "values": [
+          0.5434298440979956
+        ],
+        "ci95_low": 0.49718236881249317,
+        "ci95_high": 0.5889404877421278
+      },
+      "strict_consistency": {
+        "mean": 0.5300668151447662,
+        "seed_std": null,
+        "values": [
+          0.5300668151447662
+        ],
+        "ci95_low": 0.48384275861389353,
+        "ci95_high": 0.5757807574623826
+      },
+      "first_pos_rate": {
+        "mean": 0.6937639198218263,
+        "seed_std": null,
+        "values": [
+          0.6937639198218263
+        ],
+        "ci95_low": 0.6628445335465539,
+        "ci95_high": 0.7230326032786561
+      },
+      "orig_first_rate": {
+        "mean": 0.9420935412026726,
+        "seed_std": null,
+        "values": [
+          0.9420935412026726
+        ],
+        "ci95_low": 0.9165065711769282,
+        "ci95_high": 0.9601799429816509
+      },
+      "swap_first_rate": {
+        "mean": 0.44543429844098,
+        "seed_std": null,
+        "values": [
+          0.44543429844098
+        ],
+        "ci95_low": 0.4001182609219904,
+        "ci95_high": 0.49167609879143453
+      },
+      "position_bias": {
+        "mean": 0.40757238307349664,
+        "seed_std": null,
+        "values": [
+          0.40757238307349664
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.0378619153674833,
+        "seed_std": null,
+        "values": [
+          0.0378619153674833
+        ],
+        "ci95_low": 0.027219145454854862,
+        "ci95_high": 0.05244170637007525
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_unbalanced",
+    "name": "GRPO Acc-only",
+    "requested_runs": [
+      "EXP-006_accuracy_only",
+      "EXP-006_accuracy_s2",
+      "EXP-006_accuracy_s3"
+    ],
+    "missing_runs": [],
+    "n_runs": 3,
+    "runs": [
+      "EXP-006_accuracy_only",
+      "EXP-006_accuracy_s2",
+      "EXP-006_accuracy_s3"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.947290274684484,
+        "seed_std": 0.007159354685221198,
+        "values": [
+          0.9443207126948775,
+          0.955456570155902,
+          0.9420935412026726
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.5567928730512249,
+        "seed_std": 0.06420282986814954,
+        "values": [
+          0.5679287305122495,
+          0.48775055679287305,
+          0.6146993318485523
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.7520415738678545,
+        "seed_std": 0.02861575927573581,
+        "values": [
+          0.7561247216035635,
+          0.7216035634743875,
+          0.7783964365256125
+        ]
+      },
+      "consistency": {
+        "mean": 0.5976243504083147,
+        "seed_std": 0.07625691219699895,
+        "values": [
+          0.6080178173719376,
+          0.5167037861915368,
+          0.6681514476614699
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.5887156644394952,
+        "seed_std": 0.07981647359823729,
+        "values": [
+          0.6013363028953229,
+          0.5033407572383074,
+          0.6614699331848553
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.6811432813659986,
+        "seed_std": 0.036210091754290095,
+        "values": [
+          0.6737193763919822,
+          0.720489977728285,
+          0.6492204899777283
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.947290274684484,
+        "seed_std": 0.007159354685221198,
+        "values": [
+          0.9443207126948775,
+          0.955456570155902,
+          0.9420935412026726
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.414996288047513,
+        "seed_std": 0.06540203263322056,
+        "values": [
+          0.40311804008908686,
+          0.48552338530066813,
+          0.35634743875278396
+        ]
+      },
+      "position_bias": {
+        "mean": 0.3749072011878248,
+        "seed_std": 0.07850055514274487,
+        "values": [
+          0.35634743875278396,
+          0.4610244988864143,
+          0.30734966592427615
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.021158129175946547,
+        "seed_std": 0.0029462709477333956,
+        "values": [
+          0.0200445434298441,
+          0.024498886414253896,
+          0.01893095768374165
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_unbalanced",
+    "name": "GRPO + Decisive",
+    "requested_runs": [
+      "EXP-007a_acc_decisive",
+      "EXP-007a_acc_decisive_s2"
+    ],
+    "missing_runs": [],
+    "n_runs": 2,
+    "runs": [
+      "EXP-007a_acc_decisive",
+      "EXP-007a_acc_decisive_s2"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9387527839643652,
+        "seed_std": 0.011023936455024088,
+        "values": [
+          0.9465478841870824,
+          0.9309576837416481
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.6102449888641426,
+        "seed_std": 0.05354483421011717,
+        "values": [
+          0.5723830734966593,
+          0.6481069042316259
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.7744988864142539,
+        "seed_std": 0.021260448877546464,
+        "values": [
+          0.7594654788418709,
+          0.7895322939866369
+        ]
+      },
+      "consistency": {
+        "mean": 0.6625835189309577,
+        "seed_std": 0.06456877066514126,
+        "values": [
+          0.6169265033407573,
+          0.7082405345211581
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.6547884187082406,
+        "seed_std": 0.06299392260013784,
+        "values": [
+          0.6102449888641426,
+          0.6993318485523385
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.6503340757238307,
+        "seed_std": 0.03464665743007584,
+        "values": [
+          0.6748329621380846,
+          0.6258351893095768
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.9387527839643652,
+        "seed_std": 0.011023936455024088,
+        "values": [
+          0.9465478841870824,
+          0.9309576837416481
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.3619153674832962,
+        "seed_std": 0.05826937840512751,
+        "values": [
+          0.40311804008908686,
+          0.3207126948775056
+        ]
+      },
+      "position_bias": {
+        "mean": 0.3129175946547884,
+        "seed_std": 0.06771846679514817,
+        "values": [
+          0.36080178173719374,
+          0.2650334075723831
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.020044543429844096,
+        "seed_std": 0.0031496961300068937,
+        "values": [
+          0.017817371937639197,
+          0.022271714922048998
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_unbalanced",
+    "name": "GRPO + Conf. proxy",
+    "requested_runs": [
+      "EXP-008_acc_calib",
+      "EXP-008_acc_calib_s2"
+    ],
+    "missing_runs": [],
+    "n_runs": 2,
+    "runs": [
+      "EXP-008_acc_calib",
+      "EXP-008_acc_calib_s2"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9543429844097995,
+        "seed_std": 0.004724544195010335,
+        "values": [
+          0.9510022271714922,
+          0.9576837416481069
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.5311804008908686,
+        "seed_std": 0.07401785905516198,
+        "values": [
+          0.5835189309576837,
+          0.47884187082405344
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.7427616926503341,
+        "seed_std": 0.03464665743007584,
+        "values": [
+          0.767260579064588,
+          0.7182628062360802
+        ]
+      },
+      "consistency": {
+        "mean": 0.5612472160356348,
+        "seed_std": 0.07874240325017234,
+        "values": [
+          0.6169265033407573,
+          0.5055679287305123
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.5523385300668151,
+        "seed_std": 0.0787424032501723,
+        "values": [
+          0.6080178173719376,
+          0.49665924276169265
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.6943207126948776,
+        "seed_std": 0.04015862565758788,
+        "values": [
+          0.6659242761692651,
+          0.72271714922049
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.9543429844097995,
+        "seed_std": 0.004724544195010335,
+        "values": [
+          0.9510022271714922,
+          0.9576837416481069
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.43429844097995546,
+        "seed_std": 0.07559270712016543,
+        "values": [
+          0.38084632516703787,
+          0.48775055679287305
+        ]
+      },
+      "position_bias": {
+        "mean": 0.40311804008908686,
+        "seed_std": 0.07874240325017234,
+        "values": [
+          0.34743875278396436,
+          0.45879732739420936
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.025612472160356347,
+        "seed_std": 0.001574848065003448,
+        "values": [
+          0.026726057906458798,
+          0.024498886414253896
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_unbalanced",
+    "name": "GRPO Full",
+    "requested_runs": [
+      "EXP-009_full_composite",
+      "EXP-009_full_composite_s2",
+      "EXP-009_full_composite_s3",
+      "EXP-009_full_s4"
+    ],
+    "missing_runs": [],
+    "n_runs": 4,
+    "runs": [
+      "EXP-009_full_composite",
+      "EXP-009_full_composite_s2",
+      "EXP-009_full_composite_s3",
+      "EXP-009_full_s4"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9465478841870825,
+        "seed_std": 0.00909238954262504,
+        "values": [
+          0.9398663697104677,
+          0.9599109131403119,
+          0.9420935412026726,
+          0.9443207126948775
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.5484409799554566,
+        "seed_std": 0.0831618200501051,
+        "values": [
+          0.5723830734966593,
+          0.42538975501113585,
+          0.5902004454342984,
+          0.6057906458797327
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.7474944320712695,
+        "seed_std": 0.03737154609031143,
+        "values": [
+          0.7561247216035635,
+          0.6926503340757239,
+          0.7661469933184856,
+          0.7750556792873051
+        ]
+      },
+      "consistency": {
+        "mean": 0.5874164810690423,
+        "seed_std": 0.0909125292288901,
+        "values": [
+          0.6169265033407573,
+          0.4521158129175947,
+          0.6369710467706013,
+          0.643652561247216
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.5812917594654788,
+        "seed_std": 0.09284928100523757,
+        "values": [
+          0.6102449888641426,
+          0.44320712694877507,
+          0.6347438752783965,
+          0.6369710467706013
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.688195991091314,
+        "seed_std": 0.04336793409631743,
+        "values": [
+          0.6737193763919822,
+          0.7527839643652561,
+          0.6648106904231625,
+          0.6614699331848553
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.9465478841870825,
+        "seed_std": 0.00909238954262504,
+        "values": [
+          0.9398663697104677,
+          0.9599109131403119,
+          0.9420935412026726,
+          0.9443207126948775
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.4298440979955456,
+        "seed_std": 0.07815224844050574,
+        "values": [
+          0.40757238307349664,
+          0.5456570155902004,
+          0.38752783964365256,
+          0.37861915367483295
+        ]
+      },
+      "position_bias": {
+        "mean": 0.38585746102449886,
+        "seed_std": 0.09071225104610768,
+        "values": [
+          0.35412026726057905,
+          0.5211581291759465,
+          0.3363028953229399,
+          0.33184855233853006
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.016146993318485525,
+        "seed_std": 0.004116754456722129,
+        "values": [
+          0.014476614699331848,
+          0.022271714922048998,
+          0.013363028953229399,
+          0.014476614699331848
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_lr",
+    "name": "GRPO Full lr=1e-6",
+    "requested_runs": [
+      "EXP-009_full_lr1e6"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "EXP-009_full_lr1e6"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8374164810690423,
+        "seed_std": null,
+        "values": [
+          0.8374164810690423
+        ],
+        "ci95_low": 0.8004491053127845,
+        "ci95_high": 0.8686592417654257
+      },
+      "swap_acc": {
+        "mean": 0.7616926503340757,
+        "seed_std": null,
+        "values": [
+          0.7616926503340757
+        ],
+        "ci95_low": 0.7201695489447756,
+        "ci95_high": 0.7987758687561465
+      },
+      "order_avg_acc": {
+        "mean": 0.799554565701559,
+        "seed_std": null,
+        "values": [
+          0.799554565701559
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.8329621380846325,
+        "seed_std": null,
+        "values": [
+          0.8329621380846325
+        ],
+        "ci95_low": 0.7956662971063326,
+        "ci95_high": 0.8646089364790959
+      },
+      "strict_consistency": {
+        "mean": 0.8084632516703786,
+        "seed_std": null,
+        "values": [
+          0.8084632516703786
+        ],
+        "ci95_low": 0.7695086288804976,
+        "ci95_high": 0.8421844804946318
+      },
+      "first_pos_rate": {
+        "mean": 0.5100222717149221,
+        "seed_std": null,
+        "values": [
+          0.5100222717149221
+        ],
+        "ci95_low": 0.477353410346654,
+        "ci95_high": 0.5426057519029258
+      },
+      "orig_first_rate": {
+        "mean": 0.8374164810690423,
+        "seed_std": null,
+        "values": [
+          0.8374164810690423
+        ],
+        "ci95_low": 0.8004491053127845,
+        "ci95_high": 0.8686592417654257
+      },
+      "swap_first_rate": {
+        "mean": 0.18262806236080179,
+        "seed_std": null,
+        "values": [
+          0.18262806236080179
+        ],
+        "ci95_low": 0.14963349742864457,
+        "ci95_high": 0.22100716621066274
+      },
+      "position_bias": {
+        "mean": 0.0556792873051225,
+        "seed_std": null,
+        "values": [
+          0.0556792873051225
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.0467706013363029,
+        "seed_std": null,
+        "values": [
+          0.0467706013363029
+        ],
+        "ci95_low": 0.03478599092862925,
+        "ci95_high": 0.06261633845148293
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_lr",
+    "name": "GRPO Full lr=2e-6",
+    "requested_runs": [
+      "EXP-009_full_lr2e6"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "EXP-009_full_lr2e6"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8574610244988864,
+        "seed_std": null,
+        "values": [
+          0.8574610244988864
+        ],
+        "ci95_low": 0.8220867191012977,
+        "ci95_high": 0.8867706386944298
+      },
+      "swap_acc": {
+        "mean": 0.732739420935412,
+        "seed_std": null,
+        "values": [
+          0.732739420935412
+        ],
+        "ci95_low": 0.6899588900708727,
+        "ci95_high": 0.7715712899269686
+      },
+      "order_avg_acc": {
+        "mean": 0.7951002227171492,
+        "seed_std": null,
+        "values": [
+          0.7951002227171492
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.8106904231625836,
+        "seed_std": null,
+        "values": [
+          0.8106904231625836
+        ],
+        "ci95_low": 0.7718768516358507,
+        "ci95_high": 0.8442328144856697
+      },
+      "strict_consistency": {
+        "mean": 0.7973273942093542,
+        "seed_std": null,
+        "values": [
+          0.7973273942093542
+        ],
+        "ci95_low": 0.7576947091209028,
+        "ci95_high": 0.8319156165222725
+      },
+      "first_pos_rate": {
+        "mean": 0.5434298440979956,
+        "seed_std": null,
+        "values": [
+          0.5434298440979956
+        ],
+        "ci95_low": 0.5107349595357431,
+        "ci95_high": 0.5757547435457695
+      },
+      "orig_first_rate": {
+        "mean": 0.8574610244988864,
+        "seed_std": null,
+        "values": [
+          0.8574610244988864
+        ],
+        "ci95_low": 0.8220867191012977,
+        "ci95_high": 0.8867706386944298
+      },
+      "swap_first_rate": {
+        "mean": 0.22939866369710468,
+        "seed_std": null,
+        "values": [
+          0.22939866369710468
+        ],
+        "ci95_low": 0.19290174478422537,
+        "ci95_high": 0.27048661052928935
+      },
+      "position_bias": {
+        "mean": 0.111358574610245,
+        "seed_std": null,
+        "values": [
+          0.111358574610245
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.030066815144766147,
+        "seed_std": null,
+        "values": [
+          0.030066815144766147
+        ],
+        "ci95_low": 0.020744752707568228,
+        "ci95_high": 0.04339230625657757
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_lr",
+    "name": "GRPO Full lr=3e-6",
+    "requested_runs": [
+      "EXP-009_full_lr3e6"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "EXP-009_full_lr3e6"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8997772828507795,
+        "seed_std": null,
+        "values": [
+          0.8997772828507795
+        ],
+        "ci95_low": 0.8685205237178215,
+        "ci95_high": 0.9242514122593317
+      },
+      "swap_acc": {
+        "mean": 0.7015590200445434,
+        "seed_std": null,
+        "values": [
+          0.7015590200445434
+        ],
+        "ci95_low": 0.6576704658013321,
+        "ci95_high": 0.7420279197470376
+      },
+      "order_avg_acc": {
+        "mean": 0.8006681514476615,
+        "seed_std": null,
+        "values": [
+          0.8006681514476615
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.7572383073496659,
+        "seed_std": null,
+        "values": [
+          0.7572383073496659
+        ],
+        "ci95_low": 0.7155064303783799,
+        "ci95_high": 0.7946058738297604
+      },
+      "strict_consistency": {
+        "mean": 0.7527839643652561,
+        "seed_std": null,
+        "values": [
+          0.7527839643652561
+        ],
+        "ci95_low": 0.7108490333051233,
+        "ci95_high": 0.7904301574102354
+      },
+      "first_pos_rate": {
+        "mean": 0.5824053452115813,
+        "seed_std": null,
+        "values": [
+          0.5824053452115813
+        ],
+        "ci95_low": 0.5498659656453508,
+        "ci95_high": 0.6142427017400833
+      },
+      "orig_first_rate": {
+        "mean": 0.8997772828507795,
+        "seed_std": null,
+        "values": [
+          0.8997772828507795
+        ],
+        "ci95_low": 0.8685205237178215,
+        "ci95_high": 0.9242514122593317
+      },
+      "swap_first_rate": {
+        "mean": 0.2650334075723831,
+        "seed_std": null,
+        "values": [
+          0.2650334075723831
+        ],
+        "ci95_low": 0.2263279278809029,
+        "ci95_high": 0.30772533537486507
+      },
+      "position_bias": {
+        "mean": 0.17371937639198218,
+        "seed_std": null,
+        "values": [
+          0.17371937639198218
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.021158129175946547,
+        "seed_std": null,
+        "values": [
+          0.021158129175946547
+        ],
+        "ci95_low": 0.013586446842624375,
+        "ci95_high": 0.032809134566339354
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_lr",
+    "name": "GRPO Full lr=5e-6",
+    "requested_runs": [
+      "EXP-009_full_composite"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "EXP-009_full_composite"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9398663697104677,
+        "seed_std": null,
+        "values": [
+          0.9398663697104677
+        ],
+        "ci95_low": 0.9139232144227625,
+        "ci95_high": 0.9583467429894257
+      },
+      "swap_acc": {
+        "mean": 0.5723830734966593,
+        "seed_std": null,
+        "values": [
+          0.5723830734966593
+        ],
+        "ci95_low": 0.5261983929588119,
+        "ci95_high": 0.6173397012988902
+      },
+      "order_avg_acc": {
+        "mean": 0.7561247216035635,
+        "seed_std": null,
+        "values": [
+          0.7561247216035635
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.6169265033407573,
+        "seed_std": null,
+        "values": [
+          0.6169265033407573
+        ],
+        "ci95_low": 0.5711489207933231,
+        "ci95_high": 0.6607203083921953
+      },
+      "strict_consistency": {
+        "mean": 0.6102449888641426,
+        "seed_std": null,
+        "values": [
+          0.6102449888641426
+        ],
+        "ci95_low": 0.5643817806692337,
+        "ci95_high": 0.6542377782771123
+      },
+      "first_pos_rate": {
+        "mean": 0.6737193763919822,
+        "seed_std": null,
+        "values": [
+          0.6737193763919822
+        ],
+        "ci95_low": 0.6423706910140962,
+        "ci95_high": 0.7035881213119543
+      },
+      "orig_first_rate": {
+        "mean": 0.9398663697104677,
+        "seed_std": null,
+        "values": [
+          0.9398663697104677
+        ],
+        "ci95_low": 0.9139232144227625,
+        "ci95_high": 0.9583467429894257
+      },
+      "swap_first_rate": {
+        "mean": 0.40757238307349664,
+        "seed_std": null,
+        "values": [
+          0.40757238307349664
+        ],
+        "ci95_low": 0.3630916912636766,
+        "ci95_high": 0.45362120376110415
+      },
+      "position_bias": {
+        "mean": 0.35412026726057905,
+        "seed_std": null,
+        "values": [
+          0.35412026726057905
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.014476614699331848,
+        "seed_std": null,
+        "values": [
+          0.014476614699331848
+        ],
+        "ci95_low": 0.008479463819163684,
+        "ci95_high": 0.02461000942341349
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_lr",
+    "name": "GRPO Full lr=1e-5",
+    "requested_runs": [
+      "EXP-009_full_lr1e5"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "EXP-009_full_lr1e5"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9888641425389755,
+        "seed_std": null,
+        "values": [
+          0.9888641425389755
+        ],
+        "ci95_low": 0.9741998990447701,
+        "ci95_high": 0.9952343067880162
+      },
+      "swap_acc": {
+        "mean": 0.36971046770601335,
+        "seed_std": null,
+        "values": [
+          0.36971046770601335
+        ],
+        "ci95_low": 0.326341317972974,
+        "ci95_high": 0.41529011236316277
+      },
+      "order_avg_acc": {
+        "mean": 0.6792873051224945,
+        "seed_std": null,
+        "values": [
+          0.6792873051224945
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.38084632516703787,
+        "seed_std": null,
+        "values": [
+          0.38084632516703787
+        ],
+        "ci95_low": 0.33712081399484634,
+        "ci95_high": 0.4265934000732446
+      },
+      "strict_consistency": {
+        "mean": 0.37639198218262804,
+        "seed_std": null,
+        "values": [
+          0.37639198218262804
+        ],
+        "ci95_low": 0.3328060268906592,
+        "ci95_high": 0.42207507368465
+      },
+      "first_pos_rate": {
+        "mean": 0.8051224944320713,
+        "seed_std": null,
+        "values": [
+          0.8051224944320713
+        ],
+        "ci95_low": 0.7779381126764188,
+        "ci95_high": 0.8297074935885672
+      },
+      "orig_first_rate": {
+        "mean": 0.9888641425389755,
+        "seed_std": null,
+        "values": [
+          0.9888641425389755
+        ],
+        "ci95_low": 0.9741998990447701,
+        "ci95_high": 0.9952343067880162
+      },
+      "swap_first_rate": {
+        "mean": 0.621380846325167,
+        "seed_std": null,
+        "values": [
+          0.621380846325167
+        ],
+        "ci95_low": 0.5756652673184286,
+        "ci95_high": 0.6650370753598713
+      },
+      "position_bias": {
+        "mean": 0.6146993318485523,
+        "seed_std": null,
+        "values": [
+          0.6146993318485523
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.0066815144766146995,
+        "seed_std": null,
+        "values": [
+          0.0066815144766146995
+        ],
+        "ci95_low": 0.003065690144914669,
+        "ci95_high": 0.014499990236878195
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_balanced",
+    "name": "SFT Balanced",
+    "requested_runs": [
+      "SFT_balanced"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "SFT_balanced"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.9131403118040089,
+        "seed_std": null,
+        "values": [
+          0.9131403118040089
+        ],
+        "ci95_low": 0.8834609670431136,
+        "ci95_high": 0.9358103094123845
+      },
+      "swap_acc": {
+        "mean": 0.89086859688196,
+        "seed_std": null,
+        "values": [
+          0.89086859688196
+        ],
+        "ci95_low": 0.8586439080901583,
+        "ci95_high": 0.9164618009014317
+      },
+      "order_avg_acc": {
+        "mean": 0.9020044543429844,
+        "seed_std": null,
+        "values": [
+          0.9020044543429844
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.8708240534521158,
+        "seed_std": null,
+        "values": [
+          0.8708240534521158
+        ],
+        "ci95_low": 0.8366276609099905,
+        "ci95_high": 0.8987290373640819
+      },
+      "strict_consistency": {
+        "mean": 0.8708240534521158,
+        "seed_std": null,
+        "values": [
+          0.8708240534521158
+        ],
+        "ci95_low": 0.8366276609099905,
+        "ci95_high": 0.8987290373640819
+      },
+      "first_pos_rate": {
+        "mean": 0.5111358574610245,
+        "seed_std": null,
+        "values": [
+          0.5111358574610245
+        ],
+        "ci95_low": 0.47846378422962804,
+        "ci95_high": 0.5437130627143495
+      },
+      "orig_first_rate": {
+        "mean": 0.9131403118040089,
+        "seed_std": null,
+        "values": [
+          0.9131403118040089
+        ],
+        "ci95_low": 0.8834609670431136,
+        "ci95_high": 0.9358103094123845
+      },
+      "swap_first_rate": {
+        "mean": 0.1091314031180401,
+        "seed_std": null,
+        "values": [
+          0.1091314031180401
+        ],
+        "ci95_low": 0.08353819909856833,
+        "ci95_high": 0.14135609190984177
+      },
+      "position_bias": {
+        "mean": 0.022271714922048998,
+        "seed_std": null,
+        "values": [
+          0.022271714922048998
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  },
+  {
+    "section": "primary_balanced",
+    "name": "GRPO Acc-only Balanced",
+    "requested_runs": [
+      "EXP-006b_accuracy_balanced",
+      "EXP-006b_accuracy_balanced_s2",
+      "EXP-006b_accuracy_balanced_s3"
+    ],
+    "missing_runs": [],
+    "n_runs": 3,
+    "runs": [
+      "EXP-006b_accuracy_balanced",
+      "EXP-006b_accuracy_balanced_s2",
+      "EXP-006b_accuracy_balanced_s3"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8396436525612472,
+        "seed_std": 0.017677625686400425,
+        "values": [
+          0.8596881959910914,
+          0.8262806236080178,
+          0.8329621380846325
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.8084632516703786,
+        "seed_std": 0.013547355301332354,
+        "values": [
+          0.8240534521158129,
+          0.8017817371937639,
+          0.799554565701559
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.8240534521158129,
+        "seed_std": 0.015470427605177972,
+        "values": [
+          0.8418708240534521,
+          0.8140311804008908,
+          0.8162583518930958
+        ]
+      },
+      "consistency": {
+        "mean": 0.844097995545657,
+        "seed_std": 0.0044543429844098315,
+        "values": [
+          0.8485523385300668,
+          0.8396436525612472,
+          0.844097995545657
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.8351893095768375,
+        "seed_std": 0.0022271714922049157,
+        "values": [
+          0.8374164810690423,
+          0.8329621380846325,
+          0.8351893095768375
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.5029695619896065,
+        "seed_std": 0.004636227170303202,
+        "values": [
+          0.5066815144766147,
+          0.4977728285077951,
+          0.5044543429844098
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.8396436525612472,
+        "seed_std": 0.017677625686400425,
+        "values": [
+          0.8596881959910914,
+          0.8262806236080178,
+          0.8329621380846325
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.16629547141796586,
+        "seed_std": 0.011428956435293737,
+        "values": [
+          0.15367483296213807,
+          0.16926503340757237,
+          0.1759465478841871
+        ]
+      },
+      "position_bias": {
+        "mean": 0.02301410541945063,
+        "seed_std": 0.012266304114222946,
+        "values": [
+          0.031180400890868598,
+          0.008908685968819599,
+          0.028953229398663696
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.021900519673348183,
+        "seed_std": 0.0032146451513898975,
+        "values": [
+          0.0200445434298441,
+          0.0200445434298441,
+          0.025612472160356347
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_balanced",
+    "name": "GRPO Decisive Balanced",
+    "requested_runs": [
+      "EXP-007b_decisive_balanced",
+      "balanced_decisive_s2",
+      "balanced_decisive_s3"
+    ],
+    "missing_runs": [],
+    "n_runs": 3,
+    "runs": [
+      "EXP-007b_decisive_balanced",
+      "balanced_decisive_s2",
+      "balanced_decisive_s3"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8292501855976244,
+        "seed_std": 0.005604925341700642,
+        "values": [
+          0.8351893095768375,
+          0.8285077951002228,
+          0.8240534521158129
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.7988121752041574,
+        "seed_std": 0.01482923857122356,
+        "values": [
+          0.7951002227171492,
+          0.8151447661469933,
+          0.7861915367483296
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.8140311804008908,
+        "seed_std": 0.008407388012550907,
+        "values": [
+          0.8151447661469933,
+          0.821826280623608,
+          0.8051224944320713
+        ]
+      },
+      "consistency": {
+        "mean": 0.8337045285820341,
+        "seed_std": 0.014318709370442374,
+        "values": [
+          0.8173719376391982,
+          0.844097995545657,
+          0.8396436525612472
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.8233110616184113,
+        "seed_std": 0.014490884406787799,
+        "values": [
+          0.8084632516703786,
+          0.8374164810690423,
+          0.8240534521158129
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.5011135857461024,
+        "seed_std": 0.005103090974338346,
+        "values": [
+          0.5066815144766147,
+          0.49665924276169265,
+          0.5
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.8292501855976244,
+        "seed_std": 0.005604925341700642,
+        "values": [
+          0.8351893095768375,
+          0.8285077951002228,
+          0.8240534521158129
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.17297698589458055,
+        "seed_std": 0.0071593546852212085,
+        "values": [
+          0.17817371937639198,
+          0.16481069042316257,
+          0.1759465478841871
+        ]
+      },
+      "position_bias": {
+        "mean": 0.0244988864142539,
+        "seed_std": 0.014604540143211584,
+        "values": [
+          0.0378619153674833,
+          0.008908685968819599,
+          0.026726057906458798
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.0244988864142539,
+        "seed_std": 0.008030181014396415,
+        "values": [
+          0.022271714922048998,
+          0.017817371937639197,
+          0.0334075723830735
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0003711952487008166,
+        "seed_std": 0.0006429290302779797,
+        "values": [
+          0.0011135857461024498,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_balanced",
+    "name": "GRPO Conf.-proxy Balanced",
+    "requested_runs": [
+      "EXP-008b_calib_balanced",
+      "balanced_calib_s2",
+      "balanced_calib_s3"
+    ],
+    "missing_runs": [],
+    "n_runs": 3,
+    "runs": [
+      "EXP-008b_calib_balanced",
+      "balanced_calib_s2",
+      "balanced_calib_s3"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8344469190794358,
+        "seed_std": 0.010525201840206236,
+        "values": [
+          0.8463251670378619,
+          0.8262806236080178,
+          0.8307349665924276
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.7951002227171492,
+        "seed_std": 0.009708015464455861,
+        "values": [
+          0.8017817371937639,
+          0.7839643652561247,
+          0.799554565701559
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.8147735708982925,
+        "seed_std": 0.0094709360224002,
+        "values": [
+          0.8240534521158129,
+          0.8051224944320713,
+          0.8151447661469933
+        ]
+      },
+      "consistency": {
+        "mean": 0.829992576095026,
+        "seed_std": 0.012664233191708974,
+        "values": [
+          0.8262806236080178,
+          0.8195991091314031,
+          0.844097995545657
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.8195991091314031,
+        "seed_std": 0.013363028953229383,
+        "values": [
+          0.8195991091314031,
+          0.8062360801781737,
+          0.8329621380846325
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.5048255382331106,
+        "seed_std": 0.004636227170303215,
+        "values": [
+          0.5100222717149221,
+          0.5033407572383074,
+          0.5011135857461024
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.8344469190794358,
+        "seed_std": 0.010525201840206236,
+        "values": [
+          0.8463251670378619,
+          0.8262806236080178,
+          0.8307349665924276
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.17520415738678544,
+        "seed_std": 0.004636227170303182,
+        "values": [
+          0.17371937639198218,
+          0.18040089086859687,
+          0.1714922048997773
+        ]
+      },
+      "position_bias": {
+        "mean": 0.030438010393466965,
+        "seed_std": 0.00782156923003173,
+        "values": [
+          0.0378619153674833,
+          0.031180400890868598,
+          0.022271714922048998
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.02524127691165553,
+        "seed_std": 0.004500503211945859,
+        "values": [
+          0.021158129175946547,
+          0.030066815144766147,
+          0.024498886414253896
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "primary_balanced",
+    "name": "GRPO Full Balanced",
+    "requested_runs": [
+      "EXP-009b_full_balanced",
+      "EXP-009b_full_balanced_s2",
+      "EXP-009b_full_balanced_s3",
+      "balanced_full_s4",
+      "balanced_full_s5"
+    ],
+    "missing_runs": [],
+    "n_runs": 5,
+    "runs": [
+      "EXP-009b_full_balanced",
+      "EXP-009b_full_balanced_s2",
+      "EXP-009b_full_balanced_s3",
+      "balanced_full_s4",
+      "balanced_full_s5"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8369710467706013,
+        "seed_std": 0.011068840659054944,
+        "values": [
+          0.8463251670378619,
+          0.821826280623608,
+          0.844097995545657,
+          0.8285077951002228,
+          0.844097995545657
+        ]
+      },
+      "swap_acc": {
+        "mean": 0.8142538975501113,
+        "seed_std": 0.01625987728146458,
+        "values": [
+          0.8240534521158129,
+          0.8307349665924276,
+          0.7884187082405345,
+          0.8106904231625836,
+          0.8173719376391982
+        ]
+      },
+      "order_avg_acc": {
+        "mean": 0.8256124721603564,
+        "seed_std": 0.007779175588673937,
+        "values": [
+          0.8351893095768375,
+          0.8262806236080178,
+          0.8162583518930958,
+          0.8195991091314031,
+          0.8307349665924276
+        ]
+      },
+      "consistency": {
+        "mean": 0.8400890868596882,
+        "seed_std": 0.007618098608680194,
+        "values": [
+          0.8530066815144766,
+          0.8374164810690423,
+          0.8329621380846325,
+          0.8374164810690423,
+          0.8396436525612472
+        ]
+      },
+      "strict_consistency": {
+        "mean": 0.8334075723830735,
+        "seed_std": 0.009885229853528818,
+        "values": [
+          0.8485523385300668,
+          0.8351893095768375,
+          0.821826280623608,
+          0.8285077951002228,
+          0.8329621380846325
+        ]
+      },
+      "first_pos_rate": {
+        "mean": 0.49955456570155904,
+        "seed_std": 0.010374890600313696,
+        "values": [
+          0.5011135857461024,
+          0.48552338530066813,
+          0.5133630289532294,
+          0.49443207126948774,
+          0.5033407572383074
+        ]
+      },
+      "orig_first_rate": {
+        "mean": 0.8369710467706013,
+        "seed_std": 0.011068840659054944,
+        "values": [
+          0.8463251670378619,
+          0.821826280623608,
+          0.844097995545657,
+          0.8285077951002228,
+          0.844097995545657
+        ]
+      },
+      "swap_first_rate": {
+        "mean": 0.16213808463251672,
+        "seed_std": 0.012539588650565028,
+        "values": [
+          0.155902004454343,
+          0.1492204899777283,
+          0.18262806236080179,
+          0.1603563474387528,
+          0.16258351893095768
+        ]
+      },
+      "position_bias": {
+        "mean": 0.014699331848552339,
+        "seed_std": 0.021742030934282015,
+        "values": [
+          0.015590200445434299,
+          -0.013363028953229399,
+          0.0467706013363029,
+          0.0066815144766146995,
+          0.017817371937639197
+        ]
+      },
+      "tie_rate": {
+        "mean": 0.019599109131403118,
+        "seed_std": 0.004495908516299853,
+        "values": [
+          0.01670378619153675,
+          0.01670378619153675,
+          0.024498886414253896,
+          0.024498886414253896,
+          0.015590200445434299
+        ]
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "section": "external",
+    "name": "JudgeLRM-7B",
+    "requested_runs": [
+      "judgelrm_7b"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "judgelrm_7b"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.8129175946547884,
+        "seed_std": null,
+        "values": [
+          0.8129175946547884
+        ],
+        "ci95_low": 0.7742469430443274,
+        "ci95_high": 0.8462792798235838
+      },
+      "swap_acc": {
+        "mean": 0.6614699331848553,
+        "seed_std": null,
+        "values": [
+          0.6614699331848553
+        ],
+        "ci95_low": 0.6164945034835767,
+        "ci95_high": 0.7037058606297582
+      },
+      "order_avg_acc": {
+        "mean": 0.7371937639198218,
+        "seed_std": null,
+        "values": [
+          0.7371937639198218
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.7572383073496659,
+        "seed_std": null,
+        "values": [
+          0.7572383073496659
+        ],
+        "ci95_low": 0.7155064303783799,
+        "ci95_high": 0.7946058738297604
+      },
+      "strict_consistency": {
+        "mean": 0.7193763919821826,
+        "seed_std": null,
+        "values": [
+          0.7193763919821826
+        ],
+        "ci95_low": 0.676091242583963,
+        "ci95_high": 0.7589395969355334
+      },
+      "first_pos_rate": {
+        "mean": 0.5311804008908686,
+        "seed_std": null,
+        "values": [
+          0.5311804008908686
+        ],
+        "ci95_low": 0.49847812973136807,
+        "ci95_high": 0.5636170417117692
+      },
+      "orig_first_rate": {
+        "mean": 0.8129175946547884,
+        "seed_std": null,
+        "values": [
+          0.8129175946547884
+        ],
+        "ci95_low": 0.7742469430443274,
+        "ci95_high": 0.8462792798235838
+      },
+      "swap_first_rate": {
+        "mean": 0.24944320712694878,
+        "seed_std": null,
+        "values": [
+          0.24944320712694878
+        ],
+        "ci95_low": 0.21165981389348554,
+        "ci95_high": 0.29147755213754667
+      },
+      "position_bias": {
+        "mean": 0.133630289532294,
+        "seed_std": null,
+        "values": [
+          0.133630289532294
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.0757238307349666,
+        "seed_std": null,
+        "values": [
+          0.0757238307349666
+        ],
+        "ci95_low": 0.060170408560958455,
+        "ci95_high": 0.09489172287349545
+      },
+      "parse_fail_rate": {
+        "mean": 0.004454342984409799,
+        "seed_std": null,
+        "values": [
+          0.004454342984409799
+        ],
+        "ci95_low": 0.0017335294583041344,
+        "ci95_high": 0.011396781534693212
+      }
+    }
+  },
+  {
+    "section": "external",
+    "name": "JudgeLRM-3B",
+    "requested_runs": [
+      "judgelrm_3b"
+    ],
+    "missing_runs": [],
+    "n_runs": 1,
+    "runs": [
+      "judgelrm_3b"
+    ],
+    "metrics": {
+      "orig_acc": {
+        "mean": 0.7683741648106904,
+        "seed_std": null,
+        "values": [
+          0.7683741648106904
+        ],
+        "ci95_low": 0.7271751931344576,
+        "ci95_high": 0.805019894805637
+      },
+      "swap_acc": {
+        "mean": 0.5590200445434298,
+        "seed_std": null,
+        "values": [
+          0.5590200445434298
+        ],
+        "ci95_low": 0.5127869611467007,
+        "ci95_high": 0.6042517926326559
+      },
+      "order_avg_acc": {
+        "mean": 0.6636971046770601,
+        "seed_std": null,
+        "values": [
+          0.6636971046770601
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "consistency": {
+        "mean": 0.6792873051224945,
+        "seed_std": null,
+        "values": [
+          0.6792873051224945
+        ],
+        "ci95_low": 0.6347502681867332,
+        "ci95_high": 0.7207825498977285
+      },
+      "strict_consistency": {
+        "mean": 0.6659242761692651,
+        "seed_std": null,
+        "values": [
+          0.6659242761692651
+        ],
+        "ci95_low": 0.6210519352076995,
+        "ci95_high": 0.707981542398417
+      },
+      "first_pos_rate": {
+        "mean": 0.566815144766147,
+        "seed_std": null,
+        "values": [
+          0.566815144766147
+        ],
+        "ci95_low": 0.5341892637980028,
+        "ci95_high": 0.5988718178658627
+      },
+      "orig_first_rate": {
+        "mean": 0.7683741648106904,
+        "seed_std": null,
+        "values": [
+          0.7683741648106904
+        ],
+        "ci95_low": 0.7271751931344576,
+        "ci95_high": 0.805019894805637
+      },
+      "swap_first_rate": {
+        "mean": 0.36525612472160357,
+        "seed_std": null,
+        "values": [
+          0.36525612472160357
+        ],
+        "ci95_low": 0.32203653513886626,
+        "ci95_high": 0.4107617817044889
+      },
+      "position_bias": {
+        "mean": 0.15367483296213807,
+        "seed_std": null,
+        "values": [
+          0.15367483296213807
+        ],
+        "ci95_low": null,
+        "ci95_high": null
+      },
+      "tie_rate": {
+        "mean": 0.052338530066815145,
+        "seed_std": null,
+        "values": [
+          0.052338530066815145
+        ],
+        "ci95_low": 0.03958565361907791,
+        "ci95_high": 0.06890509923302307
+      },
+      "parse_fail_rate": {
+        "mean": 0.0,
+        "seed_std": null,
+        "values": [
+          0.0
+        ],
+        "ci95_low": 4.336808689942018e-19,
+        "ci95_high": 0.004259572215406312
+      }
+    }
+  }
+]

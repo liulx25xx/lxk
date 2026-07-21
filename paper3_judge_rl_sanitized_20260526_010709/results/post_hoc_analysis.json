@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "n_samples": 449,
+    "n_agree": 366,
+    "n_disagree": 83,
+    "strategies": {
+      "standard": {
+        "accuracy": 0.8017817371937639,
+        "consistency": 0.8151447661469933
+      },
+      "majority_vote_abstain": {
+        "accuracy": 0.6859688195991092,
+        "consistency": 0.8151447661469933
+      },
+      "majority_vote_use_orig": {
+        "accuracy": 0.8017817371937639,
+        "consistency": 0.8151447661469933
+      },
+      "majority_vote_use_swap": {
+        "accuracy": 0.7527839643652561,
+        "consistency": 0.8151447661469933
+      }
+    },
+    "disagreement_analysis": {
+      "orig_correct": 52,
+      "swap_correct": 30,
+      "neither_correct": 1
+    }
+  }
+}

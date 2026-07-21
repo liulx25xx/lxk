@@ -1,0 +1,135 @@
+2026-05-17 20:25:16,533 [INFO] ============================================================
+2026-05-17 20:25:16,552 [INFO] Judge Model Evaluation
+2026-05-17 20:25:16,553 [INFO] ============================================================
+2026-05-17 20:25:16,553 [INFO] Model: deepseek-ai/deepseek-math-7b-instruct
+2026-05-17 20:25:16,553 [INFO] Adapter: None (base model)
+2026-05-17 20:25:16,553 [INFO] Test data: /path/to/paper3_judge_rl/data/eval/rewardbench_test.json
+2026-05-17 20:25:16,553 [INFO] Batch size: 8
+2026-05-17 20:25:16,553 [INFO] Output: /path/to/paper3_judge_rl/results/baseline_deepseek7b
+2026-05-17 20:25:16,556 [INFO] Auto-detected swap data: /path/to/paper3_judge_rl/data/eval/rewardbench_test_swap.json
+2026-05-17 20:25:16,588 [INFO] Test samples: 449
+2026-05-17 20:25:16,588 [INFO] Loading model...
+2026-05-17 20:25:16,687 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 20:25:16,695 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/0a5828f800a36df0fd7f0ed581b983246c0677ff/config.json "HTTP/1.1 200 OK"
+2026-05-17 20:25:16,757 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 20:25:16,757 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-17 20:25:16,765 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/0a5828f800a36df0fd7f0ed581b983246c0677ff/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-17 20:25:16,810 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-17 20:25:16,855 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-17 20:25:17,168 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct "HTTP/1.1 200 OK"
+2026-05-17 20:25:17,210 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 20:25:17,217 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/0a5828f800a36df0fd7f0ed581b983246c0677ff/config.json "HTTP/1.1 200 OK"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-05-17 20:25:17,264 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 20:25:17,271 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/0a5828f800a36df0fd7f0ed581b983246c0677ff/config.json "HTTP/1.1 200 OK"
+2026-05-17 20:25:17,307 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-17 20:25:17,347 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct "HTTP/1.1 200 OK"
+2026-05-17 20:25:17,398 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct/commits/main "HTTP/1.1 200 OK"
+2026-05-17 20:25:17,441 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-17 20:25:18,174 [INFO] HTTP Request: GET https://huggingface.co/api/models/deepseek-ai/deepseek-math-7b-instruct/commits/refs%2Fpr%2F2 "HTTP/1.1 200 OK"
+2026-05-17 20:25:18,208 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/refs%2Fpr%2F2/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 20:25:18,240 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/8cffe586c7b407e043f521764ef7db24f0acfe6a/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-05-17 20:25:18,274 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/refs%2Fpr%2F2/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 20:25:18,284 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/8cffe586c7b407e043f521764ef7db24f0acfe6a/model.safetensors.index.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/273 [00:00<?, ?it/s]Loading weights:   0%|          | 1/273 [00:01<06:07,  1.35s/it]Loading weights:   1%|          | 2/273 [00:02<06:10,  1.37s/it]Loading weights:   1%|▏         | 4/273 [00:03<03:04,  1.46it/s]Loading weights:   2%|▏         | 5/273 [00:03<02:57,  1.51it/s]Loading weights:   2%|▏         | 6/273 [00:04<02:40,  1.67it/s]Loading weights:   3%|▎         | 8/273 [00:04<01:34,  2.81it/s]Loading weights:   3%|▎         | 9/273 [00:04<01:20,  3.28it/s]Loading weights:   4%|▍         | 11/273 [00:04<00:56,  4.67it/s]Loading weights:   5%|▍         | 13/273 [00:05<00:56,  4.60it/s]Loading weights:   5%|▌         | 14/273 [00:05<01:08,  3.81it/s]Loading weights:   5%|▌         | 15/273 [00:06<01:20,  3.22it/s]Loading weights:   6%|▌         | 17/273 [00:06<00:56,  4.53it/s]Loading weights:   7%|▋         | 18/273 [00:06<00:53,  4.77it/s]Loading weights:   7%|▋         | 20/273 [00:06<00:41,  6.09it/s]Loading weights:   8%|▊         | 22/273 [00:07<00:47,  5.30it/s]Loading weights:   8%|▊         | 23/273 [00:07<00:59,  4.21it/s]Loading weights:   9%|▉         | 24/273 [00:08<01:10,  3.53it/s]Loading weights:  10%|▉         | 26/273 [00:08<00:49,  4.95it/s]Loading weights:  10%|▉         | 27/273 [00:08<00:46,  5.24it/s]Loading weights:  10%|█         | 28/273 [00:08<00:44,  5.50it/s]Loading weights:  11%|█         | 29/273 [00:08<00:42,  5.67it/s]Loading weights:  11%|█▏        | 31/273 [00:09<00:47,  5.15it/s]Loading weights:  12%|█▏        | 32/273 [00:09<01:00,  3.95it/s]Loading weights:  12%|█▏        | 33/273 [00:09<01:11,  3.34it/s]Loading weights:  13%|█▎        | 35/273 [00:10<00:49,  4.85it/s]Loading weights:  13%|█▎        | 36/273 [00:10<00:45,  5.17it/s]Loading weights:  14%|█▎        | 37/273 [00:10<00:43,  5.45it/s]Loading weights:  15%|█▍        | 40/273 [00:11<00:53,  4.39it/s]Loading weights:  15%|█▌        | 41/273 [00:11<01:07,  3.46it/s]Loading weights:  15%|█▌        | 42/273 [00:13<01:55,  1.99it/s]Loading weights:  16%|█▋        | 45/273 [00:13<01:05,  3.48it/s]Loading weights:  17%|█▋        | 47/273 [00:13<00:53,  4.25it/s]Loading weights:  18%|█▊        | 49/273 [00:13<00:51,  4.31it/s]Loading weights:  19%|█▊        | 51/273 [00:14<00:44,  5.03it/s]Loading weights:  20%|██        | 55/273 [00:14<00:28,  7.63it/s]Loading weights:  21%|██        | 58/273 [00:15<00:38,  5.57it/s]Loading weights:  22%|██▏       | 59/273 [00:15<00:40,  5.25it/s]Loading weights:  23%|██▎       | 62/273 [00:15<00:29,  7.25it/s]Loading weights:  23%|██▎       | 64/273 [00:15<00:28,  7.41it/s]Loading weights:  25%|██▍       | 67/273 [00:16<00:24,  8.27it/s]Loading weights:  25%|██▌       | 69/273 [00:16<00:28,  7.05it/s]Loading weights:  26%|██▋       | 72/273 [00:16<00:23,  8.64it/s]Loading weights:  27%|██▋       | 74/273 [00:16<00:20,  9.75it/s]Loading weights:  28%|██▊       | 76/273 [00:17<00:28,  7.02it/s]Loading weights:  29%|██▊       | 78/273 [00:17<00:24,  7.89it/s]Loading weights:  30%|██▉       | 81/273 [00:17<00:18, 10.46it/s]Loading weights:  30%|███       | 83/273 [00:17<00:16, 11.71it/s]Loading weights:  31%|███       | 85/273 [00:19<00:45,  4.16it/s]Loading weights:  33%|███▎      | 90/273 [00:19<00:24,  7.44it/s]Loading weights:  34%|███▎      | 92/273 [00:20<00:36,  4.96it/s]Loading weights:  35%|███▌      | 96/273 [00:20<00:28,  6.27it/s]Loading weights:  36%|███▌      | 98/273 [00:20<00:24,  7.21it/s]Loading weights:  37%|███▋      | 100/273 [00:20<00:22,  7.74it/s]Loading weights:  38%|███▊      | 103/273 [00:21<00:18,  8.99it/s]Loading weights:  38%|███▊      | 105/273 [00:21<00:23,  7.13it/s]Loading weights:  39%|███▉      | 107/273 [00:21<00:19,  8.31it/s]Loading weights:  40%|███▉      | 109/273 [00:21<00:19,  8.42it/s]Loading weights:  41%|████      | 112/273 [00:21<00:14, 11.40it/s]Loading weights:  42%|████▏     | 114/273 [00:22<00:18,  8.77it/s]Loading weights:  43%|████▎     | 117/273 [00:22<00:14, 10.96it/s]Loading weights:  44%|████▎     | 119/273 [00:22<00:14, 10.33it/s]Loading weights:  44%|████▍     | 121/273 [00:23<00:17,  8.70it/s]Loading weights:  45%|████▌     | 123/273 [00:23<00:17,  8.48it/s]Loading weights:  46%|████▌     | 126/273 [00:23<00:14, 10.46it/s]Loading weights:  47%|████▋     | 128/273 [00:23<00:12, 11.76it/s]Loading weights:  48%|████▊     | 130/273 [00:24<00:24,  5.91it/s]Loading weights:  48%|████▊     | 132/273 [00:24<00:20,  6.73it/s]Loading weights:  50%|████▉     | 136/273 [00:24<00:13, 10.06it/s]Loading weights:  51%|█████     | 138/273 [00:24<00:14,  9.29it/s]Loading weights:  51%|█████▏    | 140/273 [00:25<00:22,  6.00it/s]Loading weights:  53%|█████▎    | 145/273 [00:25<00:12, 10.19it/s]Loading weights:  54%|█████▍    | 148/273 [00:26<00:22,  5.63it/s]Loading weights:  55%|█████▍    | 150/273 [00:27<00:19,  6.18it/s]Loading weights:  56%|█████▌    | 153/273 [00:27<00:15,  7.67it/s]Loading weights:  57%|█████▋    | 155/273 [00:27<00:14,  8.19it/s]Loading weights:  58%|█████▊    | 157/273 [00:28<00:26,  4.46it/s]Loading weights:  59%|█████▉    | 162/273 [00:28<00:14,  7.55it/s]Loading weights:  60%|██████    | 164/273 [00:28<00:14,  7.67it/s]Loading weights:  61%|██████    | 166/273 [00:29<00:19,  5.51it/s]Loading weights:  62%|██████▏   | 168/273 [00:29<00:16,  6.31it/s]Loading weights:  62%|██████▏   | 170/273 [00:30<00:27,  3.74it/s]Loading weights:  64%|██████▍   | 176/273 [00:31<00:14,  6.71it/s]Loading weights:  65%|██████▌   | 178/273 [00:31<00:13,  7.30it/s]Loading weights:  66%|██████▌   | 180/273 [00:31<00:11,  8.16it/s]Loading weights:  67%|██████▋   | 182/273 [00:31<00:09,  9.21it/s]Loading weights:  67%|██████▋   | 184/273 [00:32<00:12,  6.93it/s]Loading weights:  68%|██████▊   | 186/273 [00:32<00:11,  7.28it/s]Loading weights:  68%|██████▊   | 187/273 [00:32<00:13,  6.35it/s]Loading weights:  71%|███████   | 193/273 [00:33<00:10,  7.49it/s]Loading weights:  71%|███████▏  | 195/273 [00:33<00:10,  7.64it/s]Loading weights:  73%|███████▎  | 198/273 [00:33<00:07,  9.74it/s]Loading weights:  74%|███████▍  | 202/273 [00:34<00:06, 10.67it/s]Loading weights:  75%|███████▍  | 204/273 [00:34<00:10,  6.80it/s]Loading weights:  77%|███████▋  | 211/273 [00:35<00:06,  9.89it/s]Loading weights:  78%|███████▊  | 213/273 [00:35<00:07,  8.35it/s]Loading weights:  79%|███████▉  | 215/273 [00:35<00:06,  9.35it/s]Loading weights:  79%|███████▉  | 217/273 [00:35<00:05,  9.97it/s]Loading weights:  81%|████████  | 220/273 [00:36<00:05, 10.35it/s]Loading weights:  81%|████████▏ | 222/273 [00:36<00:06,  8.31it/s]Loading weights:  82%|████████▏ | 224/273 [00:36<00:06,  7.99it/s]Loading weights:  83%|████████▎ | 227/273 [00:36<00:04,  9.62it/s]Loading weights:  84%|████████▍ | 229/273 [00:37<00:04, 10.10it/s]Loading weights:  85%|████████▍ | 231/273 [00:37<00:06,  6.81it/s]Loading weights:  86%|████████▌ | 234/273 [00:37<00:04,  9.03it/s]Loading weights:  86%|████████▋ | 236/273 [00:38<00:04,  8.65it/s]Loading weights:  87%|████████▋ | 238/273 [00:38<00:03,  9.31it/s]Loading weights:  88%|████████▊ | 240/273 [00:38<00:03,  8.46it/s]Loading weights:  89%|████████▉ | 243/273 [00:38<00:02, 10.58it/s]Loading weights:  90%|████████▉ | 245/273 [00:39<00:06,  4.47it/s]Loading weights:  91%|█████████ | 249/273 [00:40<00:03,  6.74it/s]Loading weights:  92%|█████████▏| 252/273 [00:40<00:02,  8.35it/s]Loading weights:  93%|█████████▎| 254/273 [00:41<00:03,  5.00it/s]Loading weights:  95%|█████████▍| 258/273 [00:41<00:02,  6.37it/s]Loading weights:  96%|█████████▌| 262/273 [00:41<00:01,  8.54it/s]Loading weights:  97%|█████████▋| 264/273 [00:41<00:00,  9.67it/s]Loading weights:  97%|█████████▋| 266/273 [00:42<00:00,  9.82it/s]Loading weights:  99%|█████████▉| 271/273 [00:42<00:00, 15.30it/s]Loading weights: 100%|██████████| 273/273 [00:42<00:00,  6.47it/s]
+2026-05-17 20:26:03,758 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-17 20:26:03,766 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/deepseek-ai/deepseek-math-7b-instruct/0a5828f800a36df0fd7f0ed581b983246c0677ff/generation_config.json "HTTP/1.1 200 OK"
+2026-05-17 20:26:03,798 [INFO] HTTP Request: HEAD https://huggingface.co/deepseek-ai/deepseek-math-7b-instruct/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-17 20:26:03,806 [INFO] Model loaded in 47.2s
+2026-05-17 20:26:14,245 [INFO] [8/449] Acc=0.875 Consist=0.375 Speed=1.3s/sample ETA=9.6min
+2026-05-17 20:26:33,429 [INFO] [16/449] Acc=0.688 Consist=0.312 Speed=1.9s/sample ETA=13.4min
+2026-05-17 20:26:44,534 [INFO] [24/449] Acc=0.708 Consist=0.292 Speed=1.7s/sample ETA=12.0min
+2026-05-17 20:26:55,936 [INFO] [32/449] Acc=0.719 Consist=0.250 Speed=1.6s/sample ETA=11.3min
+2026-05-17 20:27:10,532 [INFO] [40/449] Acc=0.675 Consist=0.250 Speed=1.7s/sample ETA=11.4min
+2026-05-17 20:27:21,240 [INFO] [48/449] Acc=0.688 Consist=0.208 Speed=1.6s/sample ETA=10.8min
+2026-05-17 20:27:26,786 [INFO] [56/449] Acc=0.661 Consist=0.214 Speed=1.5s/sample ETA=9.7min
+2026-05-17 20:27:43,761 [INFO] [64/449] Acc=0.656 Consist=0.250 Speed=1.6s/sample ETA=10.0min
+2026-05-17 20:28:01,278 [INFO] [72/449] Acc=0.681 Consist=0.250 Speed=1.6s/sample ETA=10.3min
+2026-05-17 20:28:12,590 [INFO] [80/449] Acc=0.688 Consist=0.263 Speed=1.6s/sample ETA=9.9min
+2026-05-17 20:28:24,027 [INFO] [88/449] Acc=0.682 Consist=0.261 Speed=1.6s/sample ETA=9.6min
+2026-05-17 20:28:42,224 [INFO] [96/449] Acc=0.698 Consist=0.250 Speed=1.7s/sample ETA=9.7min
+2026-05-17 20:28:53,115 [INFO] [104/449] Acc=0.702 Consist=0.250 Speed=1.6s/sample ETA=9.4min
+2026-05-17 20:29:11,183 [INFO] [112/449] Acc=0.705 Consist=0.259 Speed=1.7s/sample ETA=9.4min
+2026-05-17 20:29:29,330 [INFO] [120/449] Acc=0.683 Consist=0.258 Speed=1.7s/sample ETA=9.4min
+2026-05-17 20:29:44,940 [INFO] [128/449] Acc=0.703 Consist=0.258 Speed=1.7s/sample ETA=9.2min
+2026-05-17 20:29:57,469 [INFO] [136/449] Acc=0.713 Consist=0.250 Speed=1.7s/sample ETA=9.0min
+2026-05-17 20:30:23,148 [INFO] [144/449] Acc=0.708 Consist=0.250 Speed=1.8s/sample ETA=9.2min
+2026-05-17 20:30:33,304 [INFO] [152/449] Acc=0.724 Consist=0.237 Speed=1.8s/sample ETA=8.8min
+2026-05-17 20:30:51,528 [INFO] [160/449] Acc=0.731 Consist=0.225 Speed=1.8s/sample ETA=8.7min
+2026-05-17 20:31:05,651 [INFO] [168/449] Acc=0.726 Consist=0.214 Speed=1.8s/sample ETA=8.4min
+2026-05-17 20:31:16,239 [INFO] [176/449] Acc=0.722 Consist=0.210 Speed=1.8s/sample ETA=8.1min
+2026-05-17 20:31:34,483 [INFO] [184/449] Acc=0.728 Consist=0.207 Speed=1.8s/sample ETA=7.9min
+2026-05-17 20:31:45,463 [INFO] [192/449] Acc=0.724 Consist=0.208 Speed=1.8s/sample ETA=7.6min
+2026-05-17 20:31:54,406 [INFO] [200/449] Acc=0.725 Consist=0.205 Speed=1.8s/sample ETA=7.3min
+2026-05-17 20:32:13,317 [INFO] [208/449] Acc=0.731 Consist=0.207 Speed=1.8s/sample ETA=7.1min
+2026-05-17 20:32:26,809 [INFO] [216/449] Acc=0.722 Consist=0.218 Speed=1.8s/sample ETA=6.9min
+2026-05-17 20:32:35,122 [INFO] [224/449] Acc=0.714 Consist=0.223 Speed=1.7s/sample ETA=6.6min
+2026-05-17 20:32:43,820 [INFO] [232/449] Acc=0.716 Consist=0.228 Speed=1.7s/sample ETA=6.2min
+2026-05-17 20:32:52,313 [INFO] [240/449] Acc=0.725 Consist=0.225 Speed=1.7s/sample ETA=5.9min
+2026-05-17 20:33:10,729 [INFO] [248/449] Acc=0.730 Consist=0.222 Speed=1.7s/sample ETA=5.8min
+2026-05-17 20:33:27,314 [INFO] [256/449] Acc=0.730 Consist=0.219 Speed=1.7s/sample ETA=5.6min
+2026-05-17 20:33:46,146 [INFO] [264/449] Acc=0.731 Consist=0.212 Speed=1.8s/sample ETA=5.4min
+2026-05-17 20:33:53,570 [INFO] [272/449] Acc=0.739 Consist=0.217 Speed=1.7s/sample ETA=5.1min
+2026-05-17 20:34:00,715 [INFO] [280/449] Acc=0.743 Consist=0.218 Speed=1.7s/sample ETA=4.8min
+2026-05-17 20:34:21,313 [INFO] [288/449] Acc=0.740 Consist=0.212 Speed=1.7s/sample ETA=4.6min
+2026-05-17 20:34:35,308 [INFO] [296/449] Acc=0.743 Consist=0.206 Speed=1.7s/sample ETA=4.4min
+2026-05-17 20:34:49,736 [INFO] [304/449] Acc=0.747 Consist=0.207 Speed=1.7s/sample ETA=4.2min
+2026-05-17 20:35:10,404 [INFO] [312/449] Acc=0.747 Consist=0.205 Speed=1.8s/sample ETA=4.0min
+2026-05-17 20:35:31,068 [INFO] [320/449] Acc=0.744 Consist=0.203 Speed=1.8s/sample ETA=3.8min
+2026-05-17 20:35:49,864 [INFO] [328/449] Acc=0.744 Consist=0.201 Speed=1.8s/sample ETA=3.6min
+2026-05-17 20:36:08,227 [INFO] [336/449] Acc=0.741 Consist=0.202 Speed=1.8s/sample ETA=3.4min
+2026-05-17 20:36:26,424 [INFO] [344/449] Acc=0.741 Consist=0.201 Speed=1.8s/sample ETA=3.2min
+2026-05-17 20:36:44,997 [INFO] [352/449] Acc=0.741 Consist=0.202 Speed=1.8s/sample ETA=2.9min
+2026-05-17 20:37:02,631 [INFO] [360/449] Acc=0.744 Consist=0.197 Speed=1.8s/sample ETA=2.7min
+2026-05-17 20:37:21,327 [INFO] [368/449] Acc=0.739 Consist=0.198 Speed=1.8s/sample ETA=2.5min
+2026-05-17 20:37:32,808 [INFO] [376/449] Acc=0.737 Consist=0.197 Speed=1.8s/sample ETA=2.2min
+2026-05-17 20:37:43,307 [INFO] [384/449] Acc=0.734 Consist=0.201 Speed=1.8s/sample ETA=2.0min
+2026-05-17 20:38:01,765 [INFO] [392/449] Acc=0.732 Consist=0.199 Speed=1.8s/sample ETA=1.7min
+2026-05-17 20:38:10,411 [INFO] [400/449] Acc=0.735 Consist=0.195 Speed=1.8s/sample ETA=1.5min
+2026-05-17 20:38:21,970 [INFO] [408/449] Acc=0.740 Consist=0.196 Speed=1.8s/sample ETA=1.2min
+2026-05-17 20:38:26,653 [INFO] [416/449] Acc=0.738 Consist=0.197 Speed=1.8s/sample ETA=1.0min
+2026-05-17 20:38:32,970 [INFO] [424/449] Acc=0.736 Consist=0.196 Speed=1.8s/sample ETA=0.7min
+2026-05-17 20:38:44,357 [INFO] [432/449] Acc=0.734 Consist=0.197 Speed=1.8s/sample ETA=0.5min
+2026-05-17 20:39:02,738 [INFO] [440/449] Acc=0.736 Consist=0.193 Speed=1.8s/sample ETA=0.3min
+2026-05-17 20:39:08,921 [INFO] [448/449] Acc=0.737 Consist=0.192 Speed=1.8s/sample ETA=0.0min
+2026-05-17 20:39:10,246 [INFO] [449/449] Acc=0.737 Consist=0.192 Speed=1.8s/sample ETA=0.0min
+2026-05-17 20:39:10,250 [INFO] 
+2026-05-17 20:39:10,250 [INFO] ============================================================
+2026-05-17 20:39:10,250 [INFO] EVALUATION RESULTS
+2026-05-17 20:39:10,250 [INFO] ============================================================
+2026-05-17 20:39:10,250 [INFO] Model: deepseek-ai/deepseek-math-7b-instruct
+2026-05-17 20:39:10,251 [INFO] Adapter: None
+2026-05-17 20:39:10,251 [INFO] Samples: 449
+2026-05-17 20:39:10,251 [INFO] Accuracy:    0.7372
+2026-05-17 20:39:10,251 [INFO] Consistency: 0.1915
+2026-05-17 20:39:10,251 [INFO] Calibration: 0.9038 (1-Brier=0.0962)
+2026-05-17 20:39:10,251 [INFO] Parse failures (orig/swap): 73/75
+2026-05-17 20:39:10,251 [INFO] Instances with confidence: 0/449
+2026-05-17 20:39:10,252 [INFO] 
+2026-05-17 20:39:10,252 [INFO] Per-category:
+2026-05-17 20:39:10,252 [INFO]   alpacaeval-easy                acc=0.692 consist=0.000 n=13
+2026-05-17 20:39:10,252 [INFO]   alpacaeval-hard                acc=0.800 consist=0.133 n=15
+2026-05-17 20:39:10,252 [INFO]   alpacaeval-length              acc=0.636 consist=0.045 n=22
+2026-05-17 20:39:10,253 [INFO]   donotanswer                    acc=0.833 consist=0.111 n=18
+2026-05-17 20:39:10,253 [INFO]   hep-cpp                        acc=0.938 consist=0.000 n=16
+2026-05-17 20:39:10,253 [INFO]   hep-go                         acc=0.880 consist=0.040 n=25
+2026-05-17 20:39:10,253 [INFO]   hep-java                       acc=0.909 consist=0.136 n=22
+2026-05-17 20:39:10,253 [INFO]   hep-js                         acc=0.917 consist=0.125 n=24
+2026-05-17 20:39:10,253 [INFO]   hep-python                     acc=0.789 consist=0.263 n=19
+2026-05-17 20:39:10,253 [INFO]   hep-rust                       acc=0.897 consist=0.103 n=29
+2026-05-17 20:39:10,254 [INFO]   llmbar-adver-GPTInst           acc=0.824 consist=0.235 n=17
+2026-05-17 20:39:10,254 [INFO]   llmbar-adver-GPTOut            acc=0.600 consist=0.200 n=5
+2026-05-17 20:39:10,254 [INFO]   llmbar-adver-manual            acc=1.000 consist=0.000 n=4
+2026-05-17 20:39:10,254 [INFO]   llmbar-adver-neighbor          acc=0.882 consist=0.059 n=17
+2026-05-17 20:39:10,254 [INFO]   llmbar-natural                 acc=0.800 consist=0.200 n=20
+2026-05-17 20:39:10,254 [INFO]   math-prm                       acc=0.362 consist=0.377 n=69
+2026-05-17 20:39:10,255 [INFO]   mt-bench-easy                  acc=0.400 consist=0.200 n=5
+2026-05-17 20:39:10,255 [INFO]   mt-bench-hard                  acc=0.833 consist=0.167 n=6
+2026-05-17 20:39:10,255 [INFO]   mt-bench-med                   acc=0.833 consist=0.000 n=6
+2026-05-17 20:39:10,255 [INFO]   refusals-dangerous             acc=0.579 consist=0.211 n=19
+2026-05-17 20:39:10,255 [INFO]   refusals-offensive             acc=0.619 consist=0.286 n=21
+2026-05-17 20:39:10,255 [INFO]   xstest-should-refuse           acc=0.750 consist=0.150 n=20
+2026-05-17 20:39:10,255 [INFO]   xstest-should-respond          acc=0.892 consist=0.405 n=37
+2026-05-17 20:39:10,256 [INFO] ============================================================
+2026-05-17 20:39:10,256 [INFO] Results saved to /path/to/paper3_judge_rl/results/baseline_deepseek7b

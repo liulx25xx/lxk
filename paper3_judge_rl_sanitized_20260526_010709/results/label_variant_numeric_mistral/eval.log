@@ -1,0 +1,160 @@
+2026-05-23 21:16:12,262 [INFO] Label variant: numeric — Response 1/2 instead of A/B
+2026-05-23 21:16:12,294 [INFO] Test samples: 449
+2026-05-23 21:16:12,301 [INFO] Sample transformed prompt (first 300 chars):
+Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as 
+2026-05-23 21:16:12,301 [INFO] Loading model...
+2026-05-23 21:16:12,378 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:16:12,385 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:16:12,415 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:16:12,422 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:18:03,509 [INFO] Label variant: numeric — Response 1/2 instead of A/B
+2026-05-23 21:18:03,531 [INFO] Test samples: 449
+2026-05-23 21:18:03,538 [INFO] Sample transformed prompt (first 300 chars):
+Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as 
+2026-05-23 21:18:03,538 [INFO] Loading model...
+2026-05-23 21:18:03,590 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:18:03,598 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:18:03,636 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:18:03,644 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,493 [INFO] Label variant: numeric — Response 1/2 instead of A/B
+2026-05-23 21:19:57,515 [INFO] Test samples: 449
+2026-05-23 21:19:57,522 [INFO] Sample transformed prompt (first 300 chars):
+Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as 
+2026-05-23 21:19:57,522 [INFO] Loading model...
+2026-05-23 21:19:57,577 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,587 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,626 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,633 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,668 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,674 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,716 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-23 21:19:57,753 [INFO] HTTP Request: GET https://huggingface.co/api/models/mistralai/Mistral-7B-Instruct-v0.3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,939 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,947 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:19:57,985 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:19:57,992 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/config.json "HTTP/1.1 200 OK"
+2026-05-23 21:22:04,806 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-23 21:22:04,814 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mistralai/Mistral-7B-Instruct-v0.3/c170c708c41dac9275d15a8fff4eca08d52bab71/generation_config.json "HTTP/1.1 200 OK"
+2026-05-23 21:22:04,878 [INFO] HTTP Request: HEAD https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-05-23 21:22:06,430 [INFO] Model loaded in 128.9s
+2026-05-23 21:22:16,782 [INFO] [4/449] Acc=1.000 Consist=0.250 Fallbacks=0
+2026-05-23 21:22:24,751 [INFO] [8/449] Acc=1.000 Consist=0.250 Fallbacks=0
+2026-05-23 21:22:35,745 [INFO] [12/449] Acc=1.000 Consist=0.167 Fallbacks=0
+2026-05-23 21:22:47,393 [INFO] [16/449] Acc=1.000 Consist=0.125 Fallbacks=0
+2026-05-23 21:22:58,145 [INFO] [20/449] Acc=1.000 Consist=0.150 Fallbacks=0
+2026-05-23 21:23:08,983 [INFO] [24/449] Acc=1.000 Consist=0.125 Fallbacks=0
+2026-05-23 21:23:17,791 [INFO] [28/449] Acc=1.000 Consist=0.107 Fallbacks=0
+2026-05-23 21:23:32,252 [INFO] [32/449] Acc=1.000 Consist=0.094 Fallbacks=0
+2026-05-23 21:23:43,241 [INFO] [36/449] Acc=1.000 Consist=0.083 Fallbacks=0
+2026-05-23 21:23:54,286 [INFO] [40/449] Acc=1.000 Consist=0.075 Fallbacks=0
+2026-05-23 21:24:03,461 [INFO] [44/449] Acc=1.000 Consist=0.068 Fallbacks=0
+2026-05-23 21:24:15,413 [INFO] [48/449] Acc=1.000 Consist=0.104 Fallbacks=0
+2026-05-23 21:24:29,808 [INFO] [52/449] Acc=1.000 Consist=0.115 Fallbacks=0
+2026-05-23 21:24:39,204 [INFO] [56/449] Acc=1.000 Consist=0.107 Fallbacks=0
+2026-05-23 21:24:48,313 [INFO] [60/449] Acc=1.000 Consist=0.117 Fallbacks=0
+2026-05-23 21:24:56,071 [INFO] [64/449] Acc=1.000 Consist=0.109 Fallbacks=0
+2026-05-23 21:25:05,035 [INFO] [68/449] Acc=1.000 Consist=0.103 Fallbacks=0
+2026-05-23 21:25:18,445 [INFO] [72/449] Acc=1.000 Consist=0.111 Fallbacks=0
+2026-05-23 21:25:28,265 [INFO] [76/449] Acc=1.000 Consist=0.118 Fallbacks=0
+2026-05-23 21:25:40,239 [INFO] [80/449] Acc=1.000 Consist=0.125 Fallbacks=0
+2026-05-23 21:25:51,891 [INFO] [84/449] Acc=1.000 Consist=0.119 Fallbacks=0
+2026-05-23 21:26:02,304 [INFO] [88/449] Acc=1.000 Consist=0.125 Fallbacks=0
+2026-05-23 21:26:16,551 [INFO] [92/449] Acc=1.000 Consist=0.120 Fallbacks=0
+2026-05-23 21:26:27,618 [INFO] [96/449] Acc=1.000 Consist=0.115 Fallbacks=0
+2026-05-23 21:26:36,254 [INFO] [100/449] Acc=1.000 Consist=0.130 Fallbacks=0
+2026-05-23 21:26:45,018 [INFO] [104/449] Acc=1.000 Consist=0.135 Fallbacks=0
+2026-05-23 21:26:55,874 [INFO] [108/449] Acc=1.000 Consist=0.139 Fallbacks=0
+2026-05-23 21:27:06,576 [INFO] [112/449] Acc=1.000 Consist=0.134 Fallbacks=0
+2026-05-23 21:27:18,517 [INFO] [116/449] Acc=1.000 Consist=0.138 Fallbacks=0
+2026-05-23 21:27:26,827 [INFO] [120/449] Acc=1.000 Consist=0.142 Fallbacks=0
+2026-05-23 21:27:38,217 [INFO] [124/449] Acc=1.000 Consist=0.137 Fallbacks=0
+2026-05-23 21:27:48,053 [INFO] [128/449] Acc=1.000 Consist=0.133 Fallbacks=0
+2026-05-23 21:27:58,124 [INFO] [132/449] Acc=1.000 Consist=0.129 Fallbacks=0
+2026-05-23 21:28:07,136 [INFO] [136/449] Acc=1.000 Consist=0.132 Fallbacks=0
+2026-05-23 21:28:20,892 [INFO] [140/449] Acc=1.000 Consist=0.129 Fallbacks=0
+2026-05-23 21:28:33,284 [INFO] [144/449] Acc=1.000 Consist=0.125 Fallbacks=0
+2026-05-23 21:28:44,191 [INFO] [148/449] Acc=1.000 Consist=0.128 Fallbacks=0
+2026-05-23 21:28:55,680 [INFO] [152/449] Acc=1.000 Consist=0.125 Fallbacks=0
+2026-05-23 21:29:07,517 [INFO] [156/449] Acc=1.000 Consist=0.122 Fallbacks=0
+2026-05-23 21:29:23,924 [INFO] [160/449] Acc=1.000 Consist=0.119 Fallbacks=0
+2026-05-23 21:29:36,193 [INFO] [164/449] Acc=1.000 Consist=0.116 Fallbacks=0
+2026-05-23 21:29:48,287 [INFO] [168/449] Acc=1.000 Consist=0.113 Fallbacks=0
+2026-05-23 21:29:58,248 [INFO] [172/449] Acc=1.000 Consist=0.122 Fallbacks=0
+2026-05-23 21:30:07,166 [INFO] [176/449] Acc=1.000 Consist=0.119 Fallbacks=0
+2026-05-23 21:30:16,314 [INFO] [180/449] Acc=1.000 Consist=0.122 Fallbacks=0
+2026-05-23 21:30:27,709 [INFO] [184/449] Acc=0.995 Consist=0.125 Fallbacks=0
+2026-05-23 21:30:40,208 [INFO] [188/449] Acc=0.995 Consist=0.122 Fallbacks=0
+2026-05-23 21:30:51,446 [INFO] [192/449] Acc=0.995 Consist=0.120 Fallbacks=0
+2026-05-23 21:31:00,322 [INFO] [196/449] Acc=0.995 Consist=0.117 Fallbacks=0
+2026-05-23 21:31:12,128 [INFO] [200/449] Acc=0.995 Consist=0.115 Fallbacks=0
+2026-05-23 21:31:21,829 [INFO] [204/449] Acc=0.995 Consist=0.113 Fallbacks=0
+2026-05-23 21:31:32,291 [INFO] [208/449] Acc=0.995 Consist=0.111 Fallbacks=0
+2026-05-23 21:31:39,069 [INFO] [212/449] Acc=0.995 Consist=0.118 Fallbacks=0
+2026-05-23 21:31:48,866 [INFO] [216/449] Acc=0.995 Consist=0.125 Fallbacks=0
+2026-05-23 21:32:02,171 [INFO] [220/449] Acc=0.995 Consist=0.123 Fallbacks=0
+2026-05-23 21:32:10,823 [INFO] [224/449] Acc=0.996 Consist=0.125 Fallbacks=0
+2026-05-23 21:32:22,192 [INFO] [228/449] Acc=0.996 Consist=0.123 Fallbacks=0
+2026-05-23 21:32:31,934 [INFO] [232/449] Acc=0.996 Consist=0.125 Fallbacks=0
+2026-05-23 21:32:41,358 [INFO] [236/449] Acc=0.996 Consist=0.123 Fallbacks=0
+2026-05-23 21:32:54,764 [INFO] [240/449] Acc=0.996 Consist=0.125 Fallbacks=0
+2026-05-23 21:33:06,986 [INFO] [244/449] Acc=0.996 Consist=0.123 Fallbacks=0
+2026-05-23 21:33:15,493 [INFO] [248/449] Acc=0.996 Consist=0.121 Fallbacks=0
+2026-05-23 21:33:24,393 [INFO] [252/449] Acc=0.992 Consist=0.123 Fallbacks=0
+2026-05-23 21:33:37,156 [INFO] [256/449] Acc=0.992 Consist=0.121 Fallbacks=0
+2026-05-23 21:33:47,028 [INFO] [260/449] Acc=0.992 Consist=0.123 Fallbacks=0
+2026-05-23 21:33:58,064 [INFO] [264/449] Acc=0.992 Consist=0.125 Fallbacks=0
+2026-05-23 21:34:09,104 [INFO] [268/449] Acc=0.993 Consist=0.127 Fallbacks=0
+2026-05-23 21:34:19,137 [INFO] [272/449] Acc=0.993 Consist=0.129 Fallbacks=0
+2026-05-23 21:34:31,273 [INFO] [276/449] Acc=0.993 Consist=0.127 Fallbacks=0
+2026-05-23 21:34:41,624 [INFO] [280/449] Acc=0.993 Consist=0.129 Fallbacks=0
+2026-05-23 21:34:52,038 [INFO] [284/449] Acc=0.993 Consist=0.127 Fallbacks=0
+2026-05-23 21:35:02,758 [INFO] [288/449] Acc=0.993 Consist=0.128 Fallbacks=0
+2026-05-23 21:35:13,548 [INFO] [292/449] Acc=0.993 Consist=0.127 Fallbacks=0
+2026-05-23 21:35:24,876 [INFO] [296/449] Acc=0.993 Consist=0.125 Fallbacks=0
+2026-05-23 21:35:35,820 [INFO] [300/449] Acc=0.993 Consist=0.123 Fallbacks=0
+2026-05-23 21:35:44,126 [INFO] [304/449] Acc=0.993 Consist=0.125 Fallbacks=0
+2026-05-23 21:35:53,286 [INFO] [308/449] Acc=0.994 Consist=0.123 Fallbacks=0
+2026-05-23 21:36:07,587 [INFO] [312/449] Acc=0.994 Consist=0.122 Fallbacks=0
+2026-05-23 21:36:19,868 [INFO] [316/449] Acc=0.994 Consist=0.120 Fallbacks=0
+2026-05-23 21:36:36,361 [INFO] [320/449] Acc=0.994 Consist=0.119 Fallbacks=0
+2026-05-23 21:36:49,598 [INFO] [324/449] Acc=0.994 Consist=0.117 Fallbacks=0
+2026-05-23 21:37:07,971 [INFO] [328/449] Acc=0.994 Consist=0.116 Fallbacks=0
+2026-05-23 21:37:18,028 [INFO] [332/449] Acc=0.994 Consist=0.114 Fallbacks=0
+2026-05-23 21:37:28,120 [INFO] [336/449] Acc=0.994 Consist=0.113 Fallbacks=0
+2026-05-23 21:37:38,781 [INFO] [340/449] Acc=0.994 Consist=0.112 Fallbacks=0
+2026-05-23 21:37:48,015 [INFO] [344/449] Acc=0.994 Consist=0.110 Fallbacks=0
+2026-05-23 21:37:58,727 [INFO] [348/449] Acc=0.994 Consist=0.109 Fallbacks=0
+2026-05-23 21:38:06,777 [INFO] [352/449] Acc=0.994 Consist=0.111 Fallbacks=0
+2026-05-23 21:38:20,455 [INFO] [356/449] Acc=0.994 Consist=0.112 Fallbacks=0
+2026-05-23 21:38:29,084 [INFO] [360/449] Acc=0.994 Consist=0.114 Fallbacks=0
+2026-05-23 21:38:41,081 [INFO] [364/449] Acc=0.995 Consist=0.113 Fallbacks=0
+2026-05-23 21:38:49,505 [INFO] [368/449] Acc=0.995 Consist=0.111 Fallbacks=0
+2026-05-23 21:38:57,849 [INFO] [372/449] Acc=0.995 Consist=0.113 Fallbacks=0
+2026-05-23 21:39:09,126 [INFO] [376/449] Acc=0.995 Consist=0.112 Fallbacks=0
+2026-05-23 21:39:18,466 [INFO] [380/449] Acc=0.995 Consist=0.111 Fallbacks=0
+2026-05-23 21:39:27,328 [INFO] [384/449] Acc=0.995 Consist=0.115 Fallbacks=0
+2026-05-23 21:39:37,770 [INFO] [388/449] Acc=0.995 Consist=0.113 Fallbacks=0
+2026-05-23 21:39:48,155 [INFO] [392/449] Acc=0.995 Consist=0.112 Fallbacks=0
+2026-05-23 21:39:56,767 [INFO] [396/449] Acc=0.995 Consist=0.111 Fallbacks=0
+2026-05-23 21:40:05,730 [INFO] [400/449] Acc=0.995 Consist=0.113 Fallbacks=0
+2026-05-23 21:40:15,949 [INFO] [404/449] Acc=0.995 Consist=0.116 Fallbacks=0
+2026-05-23 21:40:27,417 [INFO] [408/449] Acc=0.995 Consist=0.118 Fallbacks=0
+2026-05-23 21:40:36,662 [INFO] [412/449] Acc=0.995 Consist=0.121 Fallbacks=0
+2026-05-23 21:40:45,448 [INFO] [416/449] Acc=0.995 Consist=0.120 Fallbacks=0
+2026-05-23 21:40:55,998 [INFO] [420/449] Acc=0.995 Consist=0.119 Fallbacks=0
+2026-05-23 21:41:05,949 [INFO] [424/449] Acc=0.995 Consist=0.120 Fallbacks=0
+2026-05-23 21:41:15,863 [INFO] [428/449] Acc=0.995 Consist=0.119 Fallbacks=0
+2026-05-23 21:41:25,928 [INFO] [432/449] Acc=0.995 Consist=0.120 Fallbacks=0
+2026-05-23 21:41:36,376 [INFO] [436/449] Acc=0.995 Consist=0.119 Fallbacks=0
+2026-05-23 21:41:46,832 [INFO] [440/449] Acc=0.995 Consist=0.118 Fallbacks=0
+2026-05-23 21:41:58,126 [INFO] [444/449] Acc=0.995 Consist=0.119 Fallbacks=0
+2026-05-23 21:42:08,351 [INFO] [448/449] Acc=0.996 Consist=0.121 Fallbacks=0
+2026-05-23 21:42:20,795 [INFO] [449/449] Acc=0.996 Consist=0.120 Fallbacks=0
+2026-05-23 21:42:20,809 [INFO] ============================================================
+2026-05-23 21:42:20,809 [INFO] RESULTS — Label variant: numeric
+2026-05-23 21:42:20,809 [INFO] Accuracy:    0.9955
+2026-05-23 21:42:20,809 [INFO] Consistency: 0.1203
+2026-05-23 21:42:20,809 [INFO] A-selection: 0.9955
+2026-05-23 21:42:20,809 [INFO] Parse fails: 0
+2026-05-23 21:42:20,809 [INFO] Fallback to A/B parsing: 0
+2026-05-23 21:42:20,809 [INFO] ============================================================
