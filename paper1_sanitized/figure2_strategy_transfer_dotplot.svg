@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1125" viewBox="0 0 1600 1125" role="img" aria-label="Cross-Type Strategy Transfer figure">
+<defs><style><![CDATA[
+  text { font-family: "Times New Roman", Times, serif; }
+  .title { font-size: 44px; font-weight: 700; fill: #09086f; }
+  .subtitle { font-size: 31px; fill: #111; }
+  .tick { font-size: 18px; fill: #111; }
+  .rowHead { font-size: 31px; font-weight: 700; fill: #111; }
+  .rowSub { font-size: 25px; font-weight: 700; fill: #111; }
+  .axis { font-size: 23px; fill: #111; }
+  .findingHead { font-size: 31px; font-weight: 700; fill: #111; }
+  .finding { font-size: 23px; fill: #111; }
+]]></style></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="820.0" y="50.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="title">Cross-Type Strategy Transfer</text>
+<text x="820.0" y="114.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="subtitle">Off-diagonal transfers only: each dot applies a strategy to a different failure type.</text>
+<text x="820.0" y="163.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="subtitle">Dot labels show the target type and Δ versus that target type's control score.</text>
+<rect x="1000.0" y="200.0" width="520.0" height="56.0" rx="10" fill="#fbfbfb" stroke="#d9d9d9" stroke-width="1.3"/>
+<circle cx="1050.0" cy="228.0" r="13.5" fill="#ff7777" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="1080.0" y="228.0" text-anchor="start" dominant-baseline="middle" font-size="18" fill="#111">below control</text>
+<circle cx="1290.0" cy="228.0" r="13.5" fill="#7f7fff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="1320.0" y="228.0" text-anchor="start" dominant-baseline="middle" font-size="18" fill="#111">above control</text>
+<rect x="200.0" y="280.0" width="1320.0" height="690.0" rx="10" fill="#fbfbfb" stroke="#d8d8d8" stroke-width="1.3"/>
+<line x1="240.0" y1="870.0" x2="1480.0" y2="870.0" stroke="#b9b9b9" stroke-width="1.2"/>
+<line x1="276.0" y1="840.0" x2="276.0" y2="330.0" stroke="#dedede" stroke-width="1"/>
+<line x1="276.0" y1="870.0" x2="276.0" y2="883.0" stroke="#9c9c9c" stroke-width="1"/>
+<text x="276.0" y="910.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="tick">-0.8</text>
+<line x1="548.0" y1="840.0" x2="548.0" y2="330.0" stroke="#dedede" stroke-width="1"/>
+<line x1="548.0" y1="870.0" x2="548.0" y2="883.0" stroke="#9c9c9c" stroke-width="1"/>
+<text x="548.0" y="910.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="tick">-0.4</text>
+<line x1="820.0" y1="840.0" x2="820.0" y2="330.0" stroke="#dedede" stroke-width="1"/>
+<line x1="820.0" y1="870.0" x2="820.0" y2="883.0" stroke="#9c9c9c" stroke-width="1"/>
+<text x="820.0" y="910.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="tick">0</text>
+<line x1="1092.0" y1="840.0" x2="1092.0" y2="330.0" stroke="#dedede" stroke-width="1"/>
+<line x1="1092.0" y1="870.0" x2="1092.0" y2="883.0" stroke="#9c9c9c" stroke-width="1"/>
+<text x="1092.0" y="910.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="tick">+0.4</text>
+<line x1="1364.0" y1="840.0" x2="1364.0" y2="330.0" stroke="#dedede" stroke-width="1"/>
+<line x1="1364.0" y1="870.0" x2="1364.0" y2="883.0" stroke="#9c9c9c" stroke-width="1"/>
+<text x="1364.0" y="910.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="tick">+0.8</text>
+<line x1="820.0" y1="840.0" x2="820.0" y2="330.0" stroke="#111" stroke-width="2"/>
+<text x="820.0" y="991.0" text-anchor="middle" dominant-baseline="middle" font-size="18" fill="#111" class="axis">Δ vs. target-type control</text>
+<text x="180.0" y="344.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowHead">Edit</text>
+<text x="180.0" y="391.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowSub">reread_file</text>
+<text x="180.0" y="494.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowHead">Loc</text>
+<text x="180.0" y="541.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowSub">broaden_search</text>
+<text x="180.0" y="644.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowHead">Logic</text>
+<text x="180.0" y="691.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowSub">minimal_fix</text>
+<text x="180.0" y="794.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowHead">Plan</text>
+<text x="180.0" y="841.0" text-anchor="end" dominant-baseline="middle" font-size="18" fill="#111" class="rowSub">step_back</text>
+<line x1="200.0" y1="435.0" x2="1520.0" y2="435.0" stroke="#e8e8e8" stroke-width="1"/>
+<line x1="200.0" y1="585.0" x2="1520.0" y2="585.0" stroke="#e8e8e8" stroke-width="1"/>
+<line x1="200.0" y1="735.0" x2="1520.0" y2="735.0" stroke="#e8e8e8" stroke-width="1"/>
+<circle cx="344.0" cy="360.0" r="18.5" fill="#ff7777" fill-opacity="0.86" stroke="#ff7777" stroke-width="3.5"/>
+<text x="344.0" y="394.0" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#111">Loc -0.70</text>
+<circle cx="384.8" cy="360.0" r="18.5" fill="#ff8080" fill-opacity="0.86" stroke="#ff8080" stroke-width="3.5"/>
+<text x="395.8" y="328.0" text-anchor="start" dominant-baseline="middle" font-size="16" fill="#111">Logic -0.64</text>
+<circle cx="303.2" cy="360.0" r="18.5" fill="#ff6f6f" fill-opacity="0.86" stroke="#ff6f6f" stroke-width="3.5"/>
+<text x="292.2" y="328.0" text-anchor="end" dominant-baseline="middle" font-size="16" fill="#111">Plan -0.76</text>
+<circle cx="622.8" cy="510.0" r="18.5" fill="#ffaaa9" fill-opacity="0.86" stroke="#ffaaa9" stroke-width="3.5"/>
+<text x="612.8" y="478.0" text-anchor="end" dominant-baseline="middle" font-size="16" fill="#111">Edit -0.29</text>
+<circle cx="704.4" cy="510.0" r="18.5" fill="#ffc5c5" fill-opacity="0.86" stroke="#ffc5c5" stroke-width="3.5"/>
+<text x="714.4" y="478.0" text-anchor="start" dominant-baseline="middle" font-size="16" fill="#111">Logic -0.17</text>
+<circle cx="561.6" cy="510.0" r="18.5" fill="#ff9696" fill-opacity="0.86" stroke="#ff9696" stroke-width="3.5"/>
+<text x="561.6" y="542.0" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#111">Plan -0.38</text>
+<circle cx="643.2" cy="660.0" r="18.5" fill="#ffb0af" fill-opacity="0.86" stroke="#ffb0af" stroke-width="3.5"/>
+<text x="643.2" y="628.0" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#111">Edit -0.26</text>
+<circle cx="480.0" cy="674.0" r="18.5" fill="#ff8a8a" fill-opacity="0.86" stroke="#ff8a8a" stroke-width="3.5"/>
+<text x="480.0" y="708.0" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#111">Loc -0.50</text>
+<circle cx="480.0" cy="646.0" r="18.5" fill="#ff8a8a" fill-opacity="0.86" stroke="#ff8a8a" stroke-width="3.5"/>
+<text x="480.0" y="612.0" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#111">Plan -0.50</text>
+<circle cx="1445.6" cy="810.0" r="18.5" fill="#6f6fff" fill-opacity="0.86" stroke="#6f6fff" stroke-width="3.5"/>
+<text x="1445.6" y="778.0" text-anchor="middle" dominant-baseline="middle" font-size="16" fill="#111">Edit +0.92</text>
+<circle cx="1024.0" cy="810.0" r="18.5" fill="#aaaaff" fill-opacity="0.86" stroke="#aaaaff" stroke-width="3.5"/>
+<text x="1013.0" y="842.0" text-anchor="end" dominant-baseline="middle" font-size="16" fill="#111">Loc +0.30</text>
+<circle cx="1064.8" cy="810.0" r="18.5" fill="#a3a3ff" fill-opacity="0.86" stroke="#a3a3ff" stroke-width="3.5"/>
+<text x="1075.8" y="778.0" text-anchor="start" dominant-baseline="middle" font-size="16" fill="#111">Logic +0.36</text>
+<rect x="200.0" y="1028.0" width="1320.0" height="80.0" rx="10" fill="#fbfbfb" stroke="#d1d1d1" stroke-width="1.3"/>
+<text x="230.0" y="1068.0" text-anchor="start" dominant-baseline="middle" font-size="18" fill="#111" class="findingHead">Key finding:</text>
+<text x="460.0" y="1068.0" text-anchor="start" dominant-baseline="middle" font-size="18" fill="#111" class="finding">9/12 mismatched transfers fall below control; <tspan font-style="italic">step_back</tspan> is the only safe cross-type fallback.</text>
+</svg>

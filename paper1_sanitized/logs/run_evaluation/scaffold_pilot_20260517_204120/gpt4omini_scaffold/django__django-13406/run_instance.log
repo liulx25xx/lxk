@@ -1,0 +1,64 @@
+2026-05-17 21:12:06,426 - INFO - Creating container for django__django-13406...
+2026-05-17 21:12:06,456 - INFO - Container for django__django-13406 created: c39d67a8b0207817a7e47689fde825e4c9dc2eef05ec3515745d9f0b6a7338a6
+2026-05-17 21:12:06,634 - INFO - Container for django__django-13406 started: c39d67a8b0207817a7e47689fde825e4c9dc2eef05ec3515745d9f0b6a7338a6
+2026-05-17 21:12:06,634 - INFO - Intermediate patch for django__django-13406 written to logs/run_evaluation/scaffold_pilot_20260517_204120/gpt4omini_scaffold/django__django-13406/patch.diff, now applying to container...
+2026-05-17 21:12:06,732 - INFO - Failed to apply patch to container: git apply --verbose
+2026-05-17 21:12:06,779 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-05-17 21:12:06,832 - INFO - >>>>> Applied Patch:
+patching file django/db/models/query.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 182 with fuzz 1.
+
+2026-05-17 21:12:07,536 - INFO - Git diff before:
+diff --git a/django/db/models/query.py b/django/db/models/query.py
+index b48d0df9c0..c172d7a0ed 100644
+--- a/django/db/models/query.py
++++ b/django/db/models/query.py
+@@ -182,6 +182,15 @@ class FlatValuesListIterable(BaseIterable):
+ 
+ 
+ class QuerySet:
++    def __getstate__(self):
++        state = self.__dict__.copy()
++        state['_iterable_class'] = self._iterable_class
++        return state
++
++    def __setstate__(self, state):
++        self.__dict__.update(state)
++        self._iterable_class = state.get('_iterable_class', ModelIterable)
++
+     """Represent a lazy database lookup for a set of objects."""
+ 
+     def __init__(self, model=None, query=None, using=None, hints=None):
+2026-05-17 21:12:07,536 - INFO - Eval script for django__django-13406 written to logs/run_evaluation/scaffold_pilot_20260517_204120/gpt4omini_scaffold/django__django-13406/eval.sh; copying to container...
+2026-05-17 21:12:14,043 - INFO - Test runtime: 6.46 seconds
+2026-05-17 21:12:14,043 - INFO - Test output for django__django-13406 written to logs/run_evaluation/scaffold_pilot_20260517_204120/gpt4omini_scaffold/django__django-13406/test_output.txt
+2026-05-17 21:12:14,101 - INFO - Git diff after:
+diff --git a/django/db/models/query.py b/django/db/models/query.py
+index b48d0df9c0..c172d7a0ed 100644
+--- a/django/db/models/query.py
++++ b/django/db/models/query.py
+@@ -182,6 +182,15 @@ class FlatValuesListIterable(BaseIterable):
+ 
+ 
+ class QuerySet:
++    def __getstate__(self):
++        state = self.__dict__.copy()
++        state['_iterable_class'] = self._iterable_class
++        return state
++
++    def __setstate__(self, state):
++        self.__dict__.update(state)
++        self._iterable_class = state.get('_iterable_class', ModelIterable)
++
+     """Represent a lazy database lookup for a set of objects."""
+ 
+     def __init__(self, model=None, query=None, using=None, hints=None):
+2026-05-17 21:12:14,101 - INFO - Grading answer for django__django-13406...
+2026-05-17 21:12:14,102 - INFO - report: {'django__django-13406': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_annotation_values (queryset_pickle.tests.PickleabilityTestCase)', 'test_annotation_values_list (queryset_pickle.tests.PickleabilityTestCase)', 'test_annotation_with_callable_default (queryset_pickle.tests.PickleabilityTestCase)']}, 'PASS_TO_PASS': {'success': ['test_in_lookup_query_evaluation (queryset_pickle.tests.InLookupTests)', 'test_in_lookup_queryset_evaluation (queryset_pickle.tests.InLookupTests)', 'test_datetime_callable_default_all (queryset_pickle.tests.PickleabilityTestCase)', 'test_datetime_callable_default_filter (queryset_pickle.tests.PickleabilityTestCase)', 'test_doesnotexist_class (queryset_pickle.tests.PickleabilityTestCase)', 'test_doesnotexist_exception (queryset_pickle.tests.PickleabilityTestCase)', 'test_filter_deferred (queryset_pickle.tests.PickleabilityTestCase)', 'test_filter_reverse_fk (queryset_pickle.tests.PickleabilityTestCase)', 'test_forward_relatedobjectdoesnotexist_class (queryset_pickle.tests.PickleabilityTestCase)', 'test_manager_pickle (queryset_pickle.tests.PickleabilityTestCase)', 'test_missing_django_version_unpickling (queryset_pickle.tests.PickleabilityTestCase)', 'test_model_pickle (queryset_pickle.tests.PickleabilityTestCase)', 'test_model_pickle_dynamic (queryset_pickle.tests.PickleabilityTestCase)', 'test_model_pickle_m2m (queryset_pickle.tests.PickleabilityTestCase)', 'test_multipleobjectsreturned_class (queryset_pickle.tests.PickleabilityTestCase)', 'test_order_by_model_with_abstract_inheritance_and_meta_ordering (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_exists_kwargs_queryset_not_evaluated (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_exists_queryset_not_evaluated (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_exists_queryset_still_usable (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_prefetch_queryset_not_evaluated (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_prefetch_queryset_still_usable (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_prefetch_queryset_usable_outside_of_prefetch (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_prefetch_related_idempotence (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_prefetch_related_with_m2m_and_objects_deletion (queryset_pickle.tests.PickleabilityTestCase)', 'test_pickle_subquery_queryset_not_evaluated (queryset_pickle.tests.PickleabilityTestCase)', 'test_related_field (queryset_pickle.tests.PickleabilityTestCase)', 'test_reverse_one_to_one_relatedobjectdoesnotexist_class (queryset_pickle.tests.PickleabilityTestCase)', 'test_specialized_queryset (queryset_pickle.tests.PickleabilityTestCase)', 'test_standalone_method_as_default (queryset_pickle.tests.PickleabilityTestCase)', 'test_staticmethod_as_default (queryset_pickle.tests.PickleabilityTestCase)', 'test_string_as_default (queryset_pickle.tests.PickleabilityTestCase)', 'test_unsupported_unpickle (queryset_pickle.tests.PickleabilityTestCase)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13406: resolved: False
+2026-05-17 21:12:14,103 - INFO - Attempting to stop container sweb.eval.django__django-13406.scaffold_pilot_20260517_204120...
+2026-05-17 21:12:29,250 - INFO - Attempting to remove container sweb.eval.django__django-13406.scaffold_pilot_20260517_204120...
+2026-05-17 21:12:29,276 - INFO - Container sweb.eval.django__django-13406.scaffold_pilot_20260517_204120 removed.
+2026-05-17 21:12:29,276 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-13406:latest...
+2026-05-17 21:12:30,573 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-13406:latest removed.

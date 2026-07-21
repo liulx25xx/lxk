@@ -1,0 +1,11 @@
+## Recovery Feedback: Your Changes Are Out of Scope
+
+You're modifying modules or systems that are unrelated to the actual bug. Narrow your scope.
+
+**Action Required:**
+- What files does the failing test actually import/exercise?
+- Your fix should ONLY touch files in that direct dependency chain
+- If you're editing configuration, serialization, or other peripheral code — stop
+- The fix almost certainly lives in the same module that the test is testing
+
+Identify the minimal set of files that need to change (usually 1-2 files) and work only there.

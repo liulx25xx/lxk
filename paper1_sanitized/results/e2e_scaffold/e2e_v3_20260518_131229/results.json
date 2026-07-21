@@ -1,0 +1,132 @@
+{
+  "results": [
+    {
+      "instance_id": "django__django-11206",
+      "mode": "control",
+      "steps": 25,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-11206",
+      "mode": "scaffold",
+      "steps": 19,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-13406",
+      "mode": "control",
+      "steps": 25,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-13406",
+      "mode": "scaffold",
+      "steps": 25,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-14017",
+      "mode": "control",
+      "steps": 8,
+      "has_patch": true,
+      "patch_lines": 17,
+      "scaffold_injected": false,
+      "resolved": true
+    },
+    {
+      "instance_id": "django__django-14017",
+      "mode": "scaffold",
+      "steps": 8,
+      "has_patch": true,
+      "patch_lines": 17,
+      "scaffold_injected": false,
+      "resolved": true
+    },
+    {
+      "instance_id": "django__django-16502",
+      "mode": "control",
+      "steps": 22,
+      "has_patch": true,
+      "patch_lines": 17,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-16502",
+      "mode": "scaffold",
+      "steps": 25,
+      "has_patch": false,
+      "patch_lines": 0,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-11433",
+      "mode": "control",
+      "steps": 26,
+      "has_patch": true,
+      "patch_lines": 40,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-11433",
+      "mode": "scaffold",
+      "steps": 26,
+      "has_patch": true,
+      "patch_lines": 32,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-12276",
+      "mode": "control",
+      "steps": 15,
+      "has_patch": true,
+      "patch_lines": 10,
+      "scaffold_injected": false,
+      "resolved": true
+    },
+    {
+      "instance_id": "django__django-12276",
+      "mode": "scaffold",
+      "steps": 10,
+      "has_patch": true,
+      "patch_lines": 24,
+      "scaffold_injected": false,
+      "resolved": true
+    },
+    {
+      "instance_id": "django__django-11885",
+      "mode": "control",
+      "steps": 26,
+      "has_patch": true,
+      "patch_lines": 35,
+      "scaffold_injected": false,
+      "resolved": false
+    },
+    {
+      "instance_id": "django__django-11885",
+      "mode": "scaffold",
+      "steps": 24,
+      "has_patch": true,
+      "patch_lines": 26,
+      "scaffold_injected": false,
+      "resolved": false
+    }
+  ],
+  "api_calls": 275,
+  "model": "gpt-4.1"
+}

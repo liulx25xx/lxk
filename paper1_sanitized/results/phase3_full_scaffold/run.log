@@ -1,0 +1,27 @@
+============================================================
+Phase 3: Full Scaffolding Matrix
+Model: gpt-4o-mini, Budget: 400 calls
+============================================================
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+========================================
+LOC: 30 instances × 4 conditions = 120 calls
+========================================
+  A_broaden_search    : avg=2.13 (n=30)
+  B_reread_issue      : avg=2.00 (n=30)
+  C_test_guided       : avg=0.87 (n=30)
+  no_scaffold         : avg=1.63 (n=30)
+
+========================================
+EDIT: 28 instances × 3 conditions = 84 calls
+========================================
+  A_reread_file       : avg=2.64 (n=28)
+  B_smaller_edit      : avg=1.93 (n=28)
+  no_scaffold         : avg=1.89 (n=28)
+
+========================================
+LOGIC: 30 instances × 4 conditions = 120 calls
+========================================
+  A_test_analysis     : avg=2.10 (n=30)
+  B_minimal_fix       : avg=2.30 (n=30)
+  C_edge_cases        : avg=2.40 (n=30)

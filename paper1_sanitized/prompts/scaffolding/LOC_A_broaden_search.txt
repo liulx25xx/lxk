@@ -1,0 +1,11 @@
+## Recovery Feedback: Broaden Your Search
+
+Your previous attempt failed because you edited the wrong location in the codebase. The file or function you modified is not where the actual bug resides.
+
+**Action Required:**
+- Stop working on your current target file
+- Search more broadly — check related modules, imported files, and parent classes
+- Look at the stack trace (if any) to identify the actual call chain
+- Consider that the bug might be in a different layer (e.g., ORM layer vs view layer, core vs utils)
+
+Re-read the issue description and trace the symptoms to a different code location than what you previously tried.

@@ -1,0 +1,4187 @@
+{
+  "n_judged": 220,
+  "within1": 0.8227272727272728,
+  "pearson_r": 0.28487557425202065,
+  "results": [
+    {
+      "instance_id": "sympy__sympy-18199",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 2,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 0,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-14017",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 0,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7236",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12276",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4970",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 3,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "sympy__sympy-18698",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-19495",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-17139",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16502",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13363",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 1,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-11211",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 0,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-11211",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15280",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 0,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16938",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 0,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-11551",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-15280",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 1,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-14580",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12308",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 1,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14351",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15252",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15128",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 2
+      },
+      "regex_score": 1,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-15128",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13346",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10323",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15128",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "sympy__sympy-23534",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 2,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-13964",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11133",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13670",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 2,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-14787",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 3,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13670",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-11133",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 1
+      },
+      "regex_score": 2,
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-13417",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14787",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 0,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 1,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 0,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 3,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-14534",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 0,
+        "relevant": 1,
+        "total": 2
+      },
+      "regex_score": 3,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-11133",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 0,
+        "total": 2
+      },
+      "regex_score": 2,
+      "llm_score": 2
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13417",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "llm_eval": {
+        "file_hit": 1,
+        "actionable": 1,
+        "relevant": 1,
+        "total": 3
+      },
+      "regex_score": 2,
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15525",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12325",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15280",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16502",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14351",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 0,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11333",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12308",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 0,
+        "actionable": 1,
+        "progress": 0,
+        "total": 1
+      },
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-14017",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-19495",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13195",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11333",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13297",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10081",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-3095",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10081",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-6992",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13670",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12325",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4970",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7590",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14580",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11333",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-18189",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10323",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12663",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11400",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12663",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12965",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-23413",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11433",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16877",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 0,
+        "total": 2
+      },
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-15252",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15695",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12965",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14631",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15128",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11433",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-22080",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13363",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 0,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16938",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16145",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16454",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pylint-dev__pylint-4970",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 0,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12663",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11206",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15957",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 0,
+        "progress": 0,
+        "total": 1
+      },
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-15629",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14034",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-7393",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 0,
+        "total": 2
+      },
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-11211",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16454",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13417",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11149",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13346",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-18698",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15957",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11400",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13344",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12325",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16145",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15695",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7454",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16877",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11400",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9711",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pydata__xarray-3095",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "psf__requests-5414",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11265",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14034",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15525",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11149",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15695",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-17084",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14017",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 0,
+        "actionable": 1,
+        "progress": 0,
+        "total": 1
+      },
+      "llm_score": 1
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7236",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-22080",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-17084",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14580",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-17139",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 0,
+        "total": 2
+      },
+      "llm_score": 2
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11206",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-17084",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 0,
+      "llm_eval": {
+        "file_relevant": 0,
+        "actionable": 1,
+        "progress": 0,
+        "total": 1
+      },
+      "llm_score": 1
+    },
+    {
+      "instance_id": "django__django-13406",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14011",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11265",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16502",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13363",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 0,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13195",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14034",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11820",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13344",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 0,
+        "total": 2
+      },
+      "llm_score": 2
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15098",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-22080",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15098",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12965",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-12308",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16454",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pylint-dev__pylint-8898",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11265",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "regex_score": 0,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15280",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-23534",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-23534",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24870",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11551",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_B_scope_check",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 0,
+        "total": 2
+      },
+      "llm_score": 2
+    },
+    {
+      "instance_id": "django__django-12965",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13406",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_B_smaller_edit",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9711",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-11433",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13297",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-13344",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-14631",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_C_edge_cases",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "failure_type": "LOC",
+      "strategy": "LOC_C_test_guided",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-15525",
+      "failure_type": "LOC",
+      "strategy": "LOC_A_broaden_search",
+      "regex_eval": {
+        "score": 1,
+        "file_hit": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 1,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7205",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "django__django-16938",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "regex_eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "regex_score": 2,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10081",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_A_test_analysis",
+      "regex_eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "regex_score": 3,
+      "llm_eval": {
+        "file_relevant": 1,
+        "actionable": 1,
+        "progress": 1,
+        "total": 3
+      },
+      "llm_score": 3
+    }
+  ]
+}

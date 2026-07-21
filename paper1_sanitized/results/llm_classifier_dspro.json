@@ -1,0 +1,577 @@
+{
+  "accuracy": 0.5734265734265734,
+  "results": [
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "PLAN",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "PLAN",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "EDIT",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "LOGIC"
+    },
+    {
+      "true": "LOC",
+      "pred": "EDIT"
+    },
+    {
+      "true": "LOGIC",
+      "pred": "EDIT"
+    }
+  ]
+}

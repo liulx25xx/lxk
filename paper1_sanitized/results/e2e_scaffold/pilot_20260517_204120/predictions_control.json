@@ -1,0 +1,27 @@
+[
+  {
+    "instance_id": "django__django-11206",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": "diff --git a/django/utils/numberformat.py b/django/utils/numberformat.py\nindex 88b35fc435..fd8c1328bb 100644\n--- a/django/utils/numberformat.py\n+++ b/django/utils/numberformat.py\n@@ -27,6 +27,8 @@ def format(number, decimal_sep, decimal_pos=None, grouping=0, thousand_sep='',\n     # sign\n     sign = ''\n     if isinstance(number, Decimal):\n+        if abs(number) < 10 ** -decimal_pos:\n+            return \"0.\" + \"0\" * decimal_pos\n         # Format values with more than 200 digits (an arbitrary cutoff) using\n         # scientific notation to avoid high memory usage in {:f}'.format().\n         _, digits, exponent = number.as_tuple()"
+  },
+  {
+    "instance_id": "django__django-13406",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-14017",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": "diff --git a/django/db/models/expressions.py b/django/db/models/expressions.py\nindex ffc3a7fda5..41179073d8 100644\n--- a/django/db/models/expressions.py\n+++ b/django/db/models/expressions.py\n@@ -1148,6 +1148,11 @@ class Subquery(Expression):\n \n \n class Exists(Subquery):\n+    def __rand__(self, other):\n+        if isinstance(other, Q):\n+            return other._combine(self, Q.AND)\n+        raise TypeError(f\"Unsupported operand type(s) for &: 'Q' and '{type(self).__name__}'\")\n+\n     template = 'EXISTS(%(subquery)s)'\n     output_field = fields.BooleanField()"
+  },
+  {
+    "instance_id": "django__django-11885",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": ""
+  },
+  {
+    "instance_id": "django__django-16502",
+    "model_name_or_path": "gpt4omini_control",
+    "model_patch": "diff --git a/django/middleware/cache.py b/django/middleware/cache.py\nindex 0fdffe1bbe..f454babb1e 100644\n--- a/django/middleware/cache.py\n+++ b/django/middleware/cache.py\n@@ -88,7 +88,9 @@ class UpdateCacheMiddleware(MiddlewareMixin):\n         if response.streaming or response.status_code not in (200, 304):\n             return response\n \n-        # Don't cache responses that set a user-specific (and maybe security\n+        # Don't cache responses that set a user-specific\n+        if request.method == \"HEAD\":\n+            response.content = b\"\"  # Strip the response body for HEAD requests (and maybe security\n         # sensitive) cookie in response to a cookie-less request.\n         if (\n             not request.COOKIES"
+  }
+]

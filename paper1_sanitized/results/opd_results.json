@@ -1,0 +1,10 @@
+{
+  "policy_accuracy": 0.7342657342657343,
+  "scores": {
+    "oracle": 2.3333333333333335,
+    "policy": 2.1875,
+    "universal": 2.0520833333333335,
+    "control": 1.7604166666666667
+  },
+  "oracle_advantage_captured": 0.48148148148148096
+}

@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-17T21:31:20.567521",
+    "model": "gpt-5.5",
+    "experiment": "GPT-5.5 Ceiling Analysis",
+    "total_calls": 40
+  },
+  "results": [
+    {
+      "instance_id": "django__django-15629",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "grep -R \"db_parameters\\|db_collation\\|_alter_field\\|rel_db_type\" -n django/db/models/fields/related.py django/db/backends/base/schema.py django/db/backends/sqlite3/schema.py django/db/backends/oracle/"
+    },
+    {
+      "instance_id": "django__django-15629",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-15252",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "`python - <<'PY'\nfrom pathlib import Path\np = Path(\"/workspace/django__django__4.1/django/db/migrations/executor.py\")\ns = p.read_text()\ns = s.replace(\n\"\"\"            or not router.allow_migrate(\n     "
+    },
+    {
+      "instance_id": "django__django-15252",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "```bash\napply_patch <<'PATCH'\n*** Begin Patch\n*** Update File: /workspace/django__django__4.1/django/db/migrations/executor.py\n@@\n-from django.db import migrations\n+from django.db import migrations, r"
+    },
+    {
+      "instance_id": "django__django-14034",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "```bash\ngrep -n \"def build_widget_attrs\\|MultiWidget\\|require_all_fields\" /workspace/django__django__4.0/django/forms/boundfield.py\n```"
+    },
+    {
+      "instance_id": "django__django-12308",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\n\np = Path(\"/workspace/django__django__3.1/django/contrib/admin/utils.py\")\ns = p.read_text()\n\ns = s.replace(\"import decimal\\n\", \"import decimal\\nimport json\\n\")"
+    },
+    {
+      "instance_id": "django__django-14034",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "failure_type": "LOC",
+      "strategy": "LOC_B_reread_issue",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "sed -n '1,260p' /workspace/sphinx-doc__sphinx__4.1/sphinx/domains/python.py"
+    },
+    {
+      "instance_id": "django__django-12308",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "cd /workspace/django__django__3.1 && python - <<'PY'\nfrom pathlib import Path\np = Path(\"django/contrib/admin/utils.py\")\ns = p.read_text()\nold = \"\"\"    elif isinstance(field, models.FileField) and valu"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "failure_type": "LOC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "`grep -n -A80 -B20 \"for related in get_candidate_relations_to_delete\" /workspace/django__django__3.1/django/db/models/deletion.py && grep -n -A80 -B20 \"class NestedObjects\" /workspace/django__django__"
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "sed -n '130,190l' /workspace/sympy__sympy__1.10/sympy/geometry/point.py"
+    },
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "sed -n '340,370l' /workspace/astropy__astropy__5.0/astropy/io/ascii/html.py"
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "```bash\npython - <<'PY'\nfrom pathlib import Path\np = Path(\"/workspace/astropy__astropy__5.0/astropy/io/ascii/html.py\")\ns = p.read_text()\nold = '''        if getattr(self.data, \"formats\", None):\n      "
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "sed -n '1,220p' sklearn/feature_selection/_base.py && sed -n '520,700p' sklearn/base.py"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "```bash\ncd /workspace/scikit-learn__scikit-learn__1.3 && nl -ba sklearn/feature_selection/_base.py | sed -n '1,180p' && nl -ba sklearn/base.py | sed -n '820,940p'\n```"
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "failure_type": "EDIT",
+      "strategy": "EDIT_A_reread_file",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "```bash\npython - <<'PY'\nfrom pathlib import Path\n\nroot = Path(\"/workspace/astropy__astropy__5.1\")\nfor rel in [\"astropy/units/format/cds.py\", \"astropy/units/format/cds_parsetab.py\"]:\n    path = root / "
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "failure_type": "EDIT",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-16454",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\np = Path('/workspace/django__django__5.0/django/core/management/base.py')\ns = p.read_text()\nif 'from functools import partial' not in s:\n    s = s.replace('imp"
+    },
+    {
+      "instance_id": "django__django-16454",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\npath = Path(\"/workspace/django__django__5.0/django/core/management/base.py\")\ntext = path.read_text()\nold = \"\"\"    def parse_args(self, args=None, namespace=Non"
+    },
+    {
+      "instance_id": "django__django-12325",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-11149",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\np = Path(\"django/contrib/admin/options.py\")\ns = p.read_text()\nold = \"\"\"    def history_view(self, request, object_id, extra_context=None):\n        \\\"\\\"\\\"The 'h"
+    },
+    {
+      "instance_id": "django__django-12325",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-11149",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "cd /workspace/django__django__3.0 && python - <<'PY'\nfrom pathlib import Path\n\npath = Path(\"django/contrib/admin/options.py\")\ntext = path.read_text()\n\nstart = text.index(\"    def history_view(\")\nold ="
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 3,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "response": "grep -n \"drawedges\\|_drawedges\\|dividers\\|LineCollection\" /workspace/matplotlib__matplotlib__3.5/lib/matplotlib/colorbar.py && sed -n '480,720p' /workspace/matplotlib__matplotlib__3.5/lib/matplotlib/c"
+    },
+    {
+      "instance_id": "django__django-11400",
+      "failure_type": "LOGIC",
+      "strategy": "LOGIC_B_minimal_fix",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-11400",
+      "failure_type": "LOGIC",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-11133",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\np = Path('/workspace/django__django__3.0/django/http/response.py')\ns = p.read_text()\ns = s.replace(\n    \"if isinstance(value, bytes):\\n            return bytes"
+    },
+    {
+      "instance_id": "django__django-11133",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "python3 - <<'PY'\nfrom pathlib import Path\np = Path(\"/workspace/django__django__3.0/django/http/response.py\")\ns = p.read_text()\nold = \"        if isinstance(value, bytes):\\n            return bytes(val"
+    },
+    {
+      "instance_id": "django__django-13417",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\np = Path('/workspace/django__django__3.2/django/db/models/query.py')\ns = p.read_text()\nold = \"\"\"        elif self.query.default_ordering and self.query.get_met"
+    },
+    {
+      "instance_id": "django__django-13417",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": "```bash\ncd /workspace/django__django__3.2 && apply_patch <<'PATCH'\n*** Begin Patch\n*** Update File: django/db/models/query.py\n@@\n-        elif self.query.default_ordering and self.query.get_meta().ord"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\np = Path('/workspace/matplotlib__matplotlib__3.7/lib/matplotlib/axes/_axes.py')\ns = p.read_text()\nold = 'reduce_C_function(acc) if len(acc) > mincnt else np.na"
+    },
+    {
+      "instance_id": "django__django-13670",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": "Replace `return str(self.data.year)[2:]` in `django/utils/dateformat.py` with `return \"%02d\" % (self.data.year % 100)`"
+    },
+    {
+      "instance_id": "django__django-13670",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "python - <<'PY'\nfrom pathlib import Path\n\np = Path('/workspace/django__django__3.2/django/utils/dateformat.py')\ns = p.read_text()\nold = '''    def y(self):\n        \"Year, 2 digits; e.g. '99'\"\n        "
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "failure_type": "PLAN",
+      "strategy": "PLAN_A_step_back",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 2,
+        "file_hit": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "response": "```bash\npython - <<'PY'\nfrom pathlib import Path\np = Path(\"/workspace/matplotlib__matplotlib__3.6/lib/matplotlib/axes/_axes.py\")\ns = p.read_text()\ns = s.replace(\n    \"except (ValueError, TypeError, At"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "failure_type": "PLAN",
+      "strategy": "CONTROL_no_scaffold",
+      "model": "gpt-5.5",
+      "experiment": "gpt55_ceiling",
+      "eval": {
+        "score": 1,
+        "file_hit": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": "perl -0pi -e 's/except \\(ValueError, TypeError, AttributeError\\):\\n(\\s+dx = convert\\(dx\\))/except (ValueError, TypeError, AttributeError, StopIteration):\\n$1/' /workspace/matplotlib__matplotlib__3.6/l"
+    }
+  ]
+}

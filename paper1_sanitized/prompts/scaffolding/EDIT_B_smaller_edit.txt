@@ -1,0 +1,11 @@
+## Recovery Feedback: Make a Smaller Edit
+
+Your edit failed because it was too large or complex to match correctly. Break it down.
+
+**Action Required:**
+- Instead of replacing a large block of code, make one small change at a time
+- Each edit should modify only 1-3 lines
+- Apply changes sequentially — verify each one succeeds before moving to the next
+- If replacing a function, do it line-by-line or in small logical chunks
+
+Smaller, atomic edits are more likely to succeed because there's less text to match.

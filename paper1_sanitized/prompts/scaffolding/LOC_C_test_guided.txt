@@ -1,0 +1,11 @@
+## Recovery Feedback: Let the Test Guide You
+
+Your previous attempt edited the wrong location. Use the test to find the right code.
+
+**Action Required:**
+- Run the failing test first to see the exact error output
+- Read the test source code — what function/class does it import and call?
+- Trace from the test's imports backward to the source code being tested
+- The test is testing specific behavior in specific functions — those functions are where the bug lives
+
+The test is your best guide to localization. Follow its imports.

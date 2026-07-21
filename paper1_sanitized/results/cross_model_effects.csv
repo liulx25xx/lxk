@@ -1,0 +1,10 @@
+model,tier,EDIT,LOC,LOGIC,PLAN
+GPT-4o-mini,mid,1.04,0.49,0.13,0.88
+DS-V4-Flash,mid,0.60,0.40,0.13,0.63
+Qwen 3.5,mid,0.00,0.13,0.07,1.38
+DS-V4-Pro,strong,0.73,0.87,0.07,-0.38
+GPT-4.1,strong,0.60,-0.20,0.00,-0.38
+Claude Son. 4.6,strong,-0.07,0.13,0.00,0.12
+Claude Opus 4.7,frontier,0.13,0.27,0.13,0.00
+o4-mini†,frontier,0.53,1.47,-0.20,0.38
+GPT-5.5†,frontier,1.20,1.60,-0.40,-0.20

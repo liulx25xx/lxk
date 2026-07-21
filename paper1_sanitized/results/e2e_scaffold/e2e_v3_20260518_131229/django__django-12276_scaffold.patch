@@ -1,0 +1,24 @@
+diff --git a/django/forms/widgets.py b/django/forms/widgets.py
+index 338d54d72f..4025d484a0 100644
+--- a/django/forms/widgets.py
++++ b/django/forms/widgets.py
+@@ -372,6 +372,9 @@ class MultipleHiddenInput(HiddenInput):
+ 
+ 
+ class FileInput(Input):
++
++    def use_required_attribute(self, initial):
++        return super().use_required_attribute(initial) and not initial
+     input_type = 'file'
+     needs_multipart_form = True
+     template_name = 'django/forms/widgets/file.html'
+@@ -451,9 +454,6 @@ class ClearableFileInput(FileInput):
+             return False
+         return upload
+ 
+-    def use_required_attribute(self, initial):
+-        return super().use_required_attribute(initial) and not initial
+-
+     def value_omitted_from_data(self, data, files, name):
+         return (
+             super().value_omitted_from_data(data, files, name) and

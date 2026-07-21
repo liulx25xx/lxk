@@ -1,0 +1,49 @@
+============================================================
+Phase 3 Fast: Parallel Scaffold Matrix
+Model: gpt-4o-mini, Delay: 4.0s, Threads: 2
+============================================================
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [EDIT] reread_file           : 2.68 (n=28)
+  [LOC] broaden_search        : 1.93 (n=30)
+  [EDIT] smaller_edit          : 1.86 (n=28)
+  [LOC] reread_issue          : 1.97 (n=30)
+  [EDIT] scaffold              : 1.68 (n=28)
+  [LOC] test_guided           : 0.87 (n=30)
+  [LOGIC] test_analysis         : 2.07 (n=30)
+  [LOC] scaffold              : 1.70 (n=30)
+  [PLAN] step_back             : 2.75 (n=8)
+  [PLAN] scope_check           : 1.88 (n=8)
+  [PLAN] scaffold              : 1.88 (n=8)
+  [LOGIC] minimal_fix           : 2.13 (n=30)
+  [LOGIC] edge_cases            : 2.07 (n=30)
+  [LOGIC] scaffold              : 1.97 (n=30)
+
+============================================================
+DONE in 19.2 min, 348 calls (~¥1.0)
+============================================================
+
+--- LOC ---
+  scaffold              : 1.70  file_hit=53%  (n=30)
+  broaden_search        : 1.93  file_hit=87%  (n=30)
+  reread_issue          : 1.97  file_hit=73%  (n=30)
+  test_guided           : 0.87  file_hit=23%  (n=30)
+  → Best: reread_issue (Δ=+0.27 vs control)
+
+--- EDIT ---
+  scaffold              : 1.68  file_hit=75%  (n=28)
+  reread_file           : 2.68  file_hit=89%  (n=28)
+  smaller_edit          : 1.86  file_hit=89%  (n=28)
+  → Best: reread_file (Δ=+1.00 vs control)
+
+--- LOGIC ---
+  scaffold              : 1.97  file_hit=83%  (n=30)
+  test_analysis         : 2.07  file_hit=87%  (n=30)
+  minimal_fix           : 2.13  file_hit=90%  (n=30)
+  edge_cases            : 2.07  file_hit=90%  (n=30)
+  → Best: minimal_fix (Δ=+0.17 vs control)
+
+--- PLAN ---
+  scaffold              : 1.88  file_hit=88%  (n=8)
+  step_back             : 2.75  file_hit=100%  (n=8)
+  scope_check           : 1.88  file_hit=88%  (n=8)
+  → Best: step_back (Δ=+0.88 vs control)

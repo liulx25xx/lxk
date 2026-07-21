@@ -1,0 +1,804 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-17T17:54:06.970649",
+    "model": "gpt-4o-mini",
+    "total_calls": 76,
+    "samples_per_type": 10
+  },
+  "results": [
+    {
+      "instance_id": "django__django-15629",
+      "failure_type": "LOC",
+      "scaffold_score": 0,
+      "control_score": 0,
+      "scaffold_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npython3 -m unittest discover -s /workspace/django__django__4.1/repro_project/tests -p '*_test.py'\n```",
+      "control_response": "```bash\nsed -i 's/collation is_unsigned/collation is_unsigned,/' /workspace/django__django__4.1/django/db/backends/mysql/introspection.py\n```"
+    },
+    {
+      "instance_id": "django__django-15252",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npytest /workspace/django__django__4.1/tests/test_migrations.py\n```",
+      "control_response": "```bash\nsed -i 's/# Make the table/        from django.db.utils import router\\n        if not router.allow_migrate(\\n            self.connection.alias,\\n            self.Migration._meta.app_label,\\n            model_name=self.Migration._meta.model_name,\\n        ):\\n            return\\n        # Mak"
+    },
+    {
+      "instance_id": "django__django-14034",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npython /workspace/reproduce_mf_bug.py\n```",
+      "control_response": "```bash\nsed -i 's/else:\\n                    return self.compress([])/# else:\\n#                     return self.compress([])/' /workspace/django__django__4.0/django/forms/boundfield.py\n```"
+    },
+    {
+      "instance_id": "django__django-12308",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ncd /workspace/django__django__3.1 && python -m unittest discover -s tests\n```",
+      "control_response": "```bash\nsed -i \"s/class MyModel(models.Model):/class MyModel(models.Model):\\n    class Meta:\\n        app_label = 'myapp'/\" /workspace/django__django__3.1/reproduce_issue.py\n```"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npython -m unittest discover -s /workspace/sphinx-doc__sphinx__4.1/tests -p '*_test.py'\n```",
+      "control_response": "```bash\necho \"def setup(app):\\n    app.add_css_file('custom.css')\" >> /workspace/sphinx-doc__sphinx__4.1/sphinx/domains/python.py\n```"
+    },
+    {
+      "instance_id": "django__django-11551",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npython -m unittest discover -s /workspace/django__django__3.0/tests -p '*_test.py'\n```",
+      "control_response": "```bash\nsed -i 's/from position.fields import PositionField/from positions.fields import PositionField/' /workspace/django__django__3.0/reproduce.py\n```"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 3,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "scaffold_response": "```bash\npytest /workspace/sphinx-doc__sphinx__3.3/tests/test_file.py\n```",
+      "control_response": "```bash\ngrep -n \"parse_parameters\" /workspace/sphinx-doc__sphinx__3.3/sphinx/pycode/ast.py\n```"
+    },
+    {
+      "instance_id": "django__django-13363",
+      "failure_type": "LOC",
+      "scaffold_score": 0,
+      "control_score": 0,
+      "scaffold_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npython3 /workspace/django__django__3.2/tests/test_datetime_functions.py\n```",
+      "control_response": "```bash\nsed -i 's/call_command('\\''migrate'\\''/call_command('\\''makemigrations'\\'', verbosity=1); call_command('\\''migrate'\\'', '\\''--run-syncdb'\\'', verbosity=0)/' /workspace/django__django__3.2/reproduce_error.py\n```"
+    },
+    {
+      "instance_id": "django__django-15098",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npytest /workspace/django__django__4.1/tests/test_translation.py\n```",
+      "control_response": "```bash\nsed -i 's/MIDDLEWARE += \\[/MIDDLEWARE += [\\n    \"django.middleware.locale.LocaleMiddleware\",/' /workspace/django__django__4.1/django/utils/translation/trans_real.py\n```"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "failure_type": "LOC",
+      "scaffold_score": 1,
+      "control_score": 0,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ncat /workspace/matplotlib__matplotlib__3.4/repro.py\n```",
+      "control_response": "```bash\nsed -i 's/spine_visibility = {name: spine.get_visible() for name, spine in self.spines.items()}/        spine_visibility = {name: spine.get_visible() for name, spine in self.spines.items()}/' /workspace/matplotlib__matplotlib__3.4/lib/matplotlib/axes/_base.py\n```"
+    },
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "scaffold_score": 3,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ncat -n /workspace/django__django__3.1/django/db/models/deletion.py | grep -A 10 \"for related in get_candidate_relations_to_delete(model._meta)\"\n```",
+      "control_response": "```bash\npython3 /workspace/django__django__3.1/django/db/models/deletion.py\n```"
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "failure_type": "EDIT",
+      "scaffold_score": 2,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ngrep -A 10 -n \"def \" /workspace/sympy__sympy__1.10/sympy/geometry/point.py\n```",
+      "control_response": "```bash\nsed -i 's/if evaluate != False:/if evaluate is True:/g; s/if any(a.is_number and a.is_real is False for a in coords):/if any(a.is_number and im(a) for a in coords):/g' /workspace/sympy__sympy__1.10/sympy/geometry/point.py\n```"
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/if getattr(self.data, \"formats\", None):\\n        self.data._set_col_formats()/if getattr(self.data, \"formats\", None):\\n    self.data._set_col_formats()/g' /workspace/astropy__astropy__5.0/astropy/io/ascii/html.py\n```",
+      "control_response": "```bash\nsed -i 's/if getattr(self.data, \"formats\", None):\\n        self.data._set_col_formats()/if getattr(self.data, \"formats\", None):\\n    self.data._set_col_formats()/g' /workspace/astropy__astropy__5.0/astropy/io/ascii/html.py\n```"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "failure_type": "EDIT",
+      "scaffold_score": 1,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/def set_output(self, *, transform=None):/def set_output(self, *, transform=None, preserve_dtypes=False):/' /workspace/scikit-learn__scikit-learn__1.3/sklearn/utils/_set_output.py\n```",
+      "control_response": "```bash\nsed -i 's/def set_output(self, *, transform=None):/def set_output(self, *, transform=None, preserve_dtypes=False):/' /workspace/scikit-learn__scikit-learn__1.3/sklearn/feature_selection/_base.py\n```"
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "failure_type": "EDIT",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/        division_of_units : DIVISION unit_expression/        division_of_units : DIVISION unit_expression\\n                          | unit_expression DIVISION combined_units/' /workspace/astropy__astropy__5.1/astropy/units/format/cds.py\n```",
+      "control_response": "```bash\nsed -i '185,193s/    division_of_units : DIVISION unit_expression/    division_of_units : DIVISION unit_expression\\n                      | unit_expression DIVISION combined_units/' /workspace/astropy__astropy__5.1/astropy/units/format/cds.py\n```"
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "failure_type": "EDIT",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/if n == 2:\\n    return sqrt_mod(a, p, all_roots)/if a % p == 0:\\n    if all_roots:\\n        return [0]\\n    else:\\n        return 0/' /workspace/sympy__sympy__1.6/sympy/ntheory/residue_ntheory.py\n```",
+      "control_response": "```bash\nsed -i '771i\\    if a % p == 0:\\n        if all_roots:\\n            return [0]\\n        else:\\n            return 0' /workspace/sympy__sympy__1.6/sympy/ntheory/residue_ntheory.py\n```"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "failure_type": "EDIT",
+      "scaffold_score": 3,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ncd /workspace/pytest-dev__pytest__7.2 && cat -n src/_pytest/logging.py | sed -n '440,460p'\n```",
+      "control_response": "```bash\nsed -i '/def clear(self) -> None:/a\\    stash = self._item.stash.get(caplog_records_key, {})' /workspace/pytest-dev__pytest__7.2/src/_pytest/logging.py\n```"
+    },
+    {
+      "instance_id": "django__django-13406",
+      "failure_type": "EDIT",
+      "scaffold_score": 2,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ngrep -A 10 -B 10 \"def query\" /workspace/django__django__3.2/django/db/models/query.py\n```",
+      "control_response": "```bash\nsed -i 's/self.__dict__.update(state)/self.__dict__.update(state)\\n        if (self.query.values_select or self.query.annotation_select):\\n            if self._fields is None:\\n                self._iterable_class = ValuesIterable/' /workspace/django__django__3.2/django/db/models/query.py\n``"
+    },
+    {
+      "instance_id": "pylint-dev__pylint-6903",
+      "failure_type": "EDIT",
+      "scaffold_score": 2,
+      "control_score": 0,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ncat /workspace/reproduce_error.py\n```",
+      "control_response": "```bash\nsed -i 's/print(f\"\\[Running\\] {cmd}\")/print(\"[Running] {}\".format(cmd))/g' /workspace/reproduce_error.py\n```"
+    },
+    {
+      "instance_id": "django__django-14017",
+      "failure_type": "EDIT",
+      "scaffold_score": 2,
+      "control_score": 0,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 0,
+        "mentions_correct_file": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ncat -n /workspace/django__django__4.0/django/db/models/expressions.py | tail -n 20\n```",
+      "control_response": "```bash\npython3 /workspace/repro_error.py\n```"
+    },
+    {
+      "instance_id": "django__django-16454",
+      "failure_type": "LOGIC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/add_subparsers/add_subparsers(required=True)/' /workspace/django__django__5.0/django/core/management/base.py\n```",
+      "control_response": "```bash\nsed -i 's/add_subparsers/add_subparsers\\n        self.add_arguments()/' /workspace/django__django__5.0/django/core/management/base.py\n```"
+    },
+    {
+      "instance_id": "django__django-12325",
+      "failure_type": "LOGIC",
+      "scaffold_score": 2,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ngrep -n -A 15 -B 15 \"def promote\" /workspace/django__django__3.1/django/db/models/options.py\n```",
+      "control_response": "```bash\nsed -i 's/if self.parent_link: # promote parent link field/if self.parent_link and not any(f.parent_link for f in self.local_fields): # promote parent link field/' /workspace/django__django__3.1/django/db/models/options.py\n```"
+    },
+    {
+      "instance_id": "django__django-11149",
+      "failure_type": "LOGIC",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/from django.contrib.auth.models import User, Permission/from django.contrib.auth.models import User/g; s/from django.contrib.auth import get_user_model//g' /workspace/django__django__3.0/reproduce_issue.py\n```",
+      "control_response": "```bash\nsed -i '/from django.contrib.auth.models import User, Permission/a from django.contrib.auth import get_user_model' /workspace/django__django__3.0/reproduce_issue.py\n```"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "failure_type": "LOGIC",
+      "scaffold_score": 2,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ngrep -n 'drawedges' /workspace/matplotlib__matplotlib__3.5/lib/matplotlib/colorbar.py\n```",
+      "control_response": "```bash\nsed -i 's/if not self.drawedges:/if not self.drawedges: self.drawedges = True/' /workspace/matplotlib__matplotlib__3.5/lib/matplotlib/colorbar.py\n```"
+    },
+    {
+      "instance_id": "django__django-11400",
+      "failure_type": "LOGIC",
+      "scaffold_score": 2,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\npython /workspace/django__django__3.0/manage.py test myapp\n```",
+      "control_response": "```bash\npython /workspace/django__django__3.0/manage.py makemigrations myapp && python /workspace/django__django__3.0/manage.py migrate\n```"
+    },
+    {
+      "instance_id": "sympy__sympy-19346",
+      "failure_type": "LOGIC",
+      "scaffold_score": 3,
+      "control_score": 3,
+      "scaffold_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "scaffold_response": "```bash\nsed -i '/def _print_dict(self, expr):/a \\        # Produces a pythonic dict literal, ensuring each key and value is properly printed by doprint\\n        pairs = []\\n        for k, v in expr.items():\\n            pairs.append(self._print(k) + \": \" + self._print(v))\\n        return \"{\" + \", \".",
+      "control_response": "```bash\nsed -i '/def _print_dict(self, expr):/a \\        # Produces a pythonic dict literal, ensuring each key and value is properly printed by doprint\\n        pairs = []\\n        for k, v in expr.items():\\n            pairs.append(self._print(k) + \": \" + self._print(v))\\n        return \"{\" + \", \"."
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "failure_type": "LOGIC",
+      "scaffold_score": 3,
+      "control_score": 3,
+      "scaffold_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 3,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": true
+      },
+      "scaffold_response": "```bash\necho -e \"def evalf_Max(v, prec, options):\\n    return v.evalf(prec, options)\\n\\n# Register the custom evalf handler\\nfrom sympy import evalf_table\\n\\nevalf_table[Max] = evalf_Max\" >> /workspace/sympy__sympy__1.1/sympy/core/evalf.py\n```",
+      "control_response": "```bash\necho -e \"from sympy.functions.elementary.miscellaneous import Max\\n\\ndef evalf_Max(v, prec, options):\\n    return v.evalf(prec, options)\\n\\nevalf_table[Max] = evalf_Max\" >> /workspace/sympy__sympy__1.1/sympy/core/evalf.py\n```"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-7571",
+      "failure_type": "LOGIC",
+      "scaffold_score": 2,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": true
+      },
+      "scaffold_response": "```bash\nsed -i '349i\\        self._original_handler_level = self.handler.level' /workspace/pytest-dev__pytest__6.0/src/_pytest/logging.py\n```",
+      "control_response": "```bash\nsed -i '349i\\        self._original_handler_level = self.handler.level' /workspace/pytest-dev__pytest__6.0/src/_pytest/logging.py\n```"
+    },
+    {
+      "instance_id": "sympy__sympy-15599",
+      "failure_type": "LOGIC",
+      "scaffold_score": 2,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "<function=str_replace_editor>\n<parameter=command>str_replace</parameter>\n<parameter=path>/workspace/sympy__sympy__1.4/sympy/core/mod.py</parameter>\n<parameter=old_str>\n            was = non_mod_l[:]\n            non_mod_l = [cls(x, q) for x in non_mod_l]\n            changed = was != non_mod_l\n</param",
+      "control_response": "<function=str_replace_editor>\n<parameter=command>str_replace</parameter>\n<parameter=path>/workspace/sympy__sympy__1.4/sympy/core/mod.py</parameter>\n<parameter=old_str>\n            was = non_mod_l[:]\n            non_mod_l = [cls(x, q) for x in non_mod_l]\n            changed = was != non_mod_l\n</param"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24570",
+      "failure_type": "LOGIC",
+      "scaffold_score": 2,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\ngrep -rn \"def _get_aligned_offsets\" /workspace/matplotlib__matplotlib__3.6/lib/matplotlib/offsetbox.py\n```",
+      "control_response": "```bash\nsed -i 's/elif align in \\[\"left\", \"top\"\\]:/elif align in [\"left\", \"bottom\"]:/g' /workspace/matplotlib__matplotlib__3.6/lib/matplotlib/offsetbox.py\n```"
+    },
+    {
+      "instance_id": "django__django-11133",
+      "failure_type": "PLAN",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/if isinstance(value, bytes):/if isinstance(value, (bytes, memoryview)):/g' /workspace/django__django__3.0/django/http/response.py\n```",
+      "control_response": "```bash\nsed -i 's/if isinstance(value, bytes):/if isinstance(value, (bytes, memoryview)):/g' /workspace/django__django__3.0/django/http/response.py\n```"
+    },
+    {
+      "instance_id": "django__django-13417",
+      "failure_type": "PLAN",
+      "scaffold_score": 2,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/def ordered(self):/def ordered(self):\\n        if self.query.order_by:/' /workspace/django__django__3.2/django/db/models/query.py\n```",
+      "control_response": "```bash\nsed -i 's/def ordered(self):/def ordered(self):\\n        if self.query.extra_order_by or self.query.order_by:/g' /workspace/django__django__3.2/django/db/models/query.py\n```"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-26113",
+      "failure_type": "PLAN",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/reduce_C_function(acc) if len(acc) > mincnt else np.nan/reduce_C_function(acc) if len(acc) >= mincnt else np.nan/' /workspace/matplotlib__matplotlib__3.7/lib/matplotlib/axes/_axes.py\n```",
+      "control_response": "```bash\nsed -i 's/reduce_C_function(acc) if len(acc) > mincnt else np.nan/reduce_C_function(acc) if len(acc) >= mincnt else np.nan/' /workspace/matplotlib__matplotlib__3.7/lib/matplotlib/axes/_axes.py\n```"
+    },
+    {
+      "instance_id": "django__django-13670",
+      "failure_type": "PLAN",
+      "scaffold_score": 2,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/    def y(self):\\n        \"Year, 2 digits; e.g. '\\''99'\\''\"\\n        return str(self.data.year)[2:]/    def y(self):\\n        \"Year, 2 digits; e.g. '\\''99'\\''\"\\n        return \"%02d\" % (self.data.year % 100)/' /workspace/django__django__3.2/django/utils/dateformat.py\n```",
+      "control_response": "```bash\nsed -i 's/    def y(self):\\n        \"Year, 2 digits; e.g. '\\''99'\\''\"\\n        return str(self.data.year)[2:]/    def y(self):\\n        \"Year, 2 digits; e.g. '\\''99'\\''\"\\n        return \"%02d\" % (self.data.year % 100)/' /workspace/django__django__3.2/django/utils/dateformat.py\n```"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "failure_type": "PLAN",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/except (TypeError, IndexError, KeyError):/except (TypeError, IndexError, KeyError, StopIteration):/' /workspace/matplotlib__matplotlib__3.6/lib/matplotlib/axes/_axes.py\n```",
+      "control_response": "```bash\nsed -i 's/except (TypeError, IndexError, KeyError):/except (TypeError, IndexError, KeyError, StopIteration):/' /workspace/matplotlib__matplotlib__3.6/lib/matplotlib/axes/_axes.py\n```"
+    },
+    {
+      "instance_id": "django__django-14534",
+      "failure_type": "PLAN",
+      "scaffold_score": 2,
+      "control_score": 2,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i \"s/@property\\n    def id_for_label(self):\\n        return 'id_%s_%s' % (self.data['name'], self.data['index'])/@property\\n    def id_for_label(self):\\n        return self.data['attrs']['id']/\" /workspace/django__django__4.0/django/forms/boundfield.py\n```",
+      "control_response": "```bash\nsed -i \"s/@property\\n    def id_for_label(self):\\n        return 'id_%s_%s' % (self.data['name'], self.data['index'])/@property\\n    def id_for_label(self):\\n        return self.data['attrs']['id']/\" /workspace/django__django__4.0/django/forms/boundfield.py\n```"
+    },
+    {
+      "instance_id": "django__django-14787",
+      "failure_type": "PLAN",
+      "scaffold_score": 1,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": true,
+        "actionable": false,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/bound_method = partial(method.__get__(self, type(self)))/bound_method = wraps(method)(partial(method.__get__(self, type(self))))/' /workspace/django__django__4.1/django/utils/decorators.py\n```",
+      "control_response": "```bash\nsed -i 's/bound_method = partial(method.__get__(self, type(self)))/bound_method = wraps(method)(partial(method.__get__(self, type(self))))/' /workspace/django__django__4.1/django/utils/decorators.py\n```"
+    },
+    {
+      "instance_id": "astropy__astropy-14182",
+      "failure_type": "PLAN",
+      "scaffold_score": 2,
+      "control_score": 1,
+      "scaffold_eval": {
+        "score": 2,
+        "mentions_correct_file": true,
+        "actionable": true,
+        "relevant": false
+      },
+      "control_eval": {
+        "score": 1,
+        "mentions_correct_file": false,
+        "actionable": true,
+        "relevant": false
+      },
+      "scaffold_response": "```bash\nsed -i 's/def __init__(self):/def __init__(self, col_starts=None, col_ends=None, delimiter_pad=None, bookend=False, header_rows=None):/' /workspace/astropy__astropy__5.1/astropy/io/ascii/rst.py\n```",
+      "control_response": "```python\ndef __init__(self, col_starts=None, col_ends=None, delimiter_pad=None, bookend=False, header_rows=None):\n    super().__init__(col_starts=col_starts, col_ends=col_ends, delimiter_pad=delimiter_pad, bookend=bookend)\n    self.header_rows = header_rows\n```"
+    }
+  ],
+  "summary": {
+    "LOC": {
+      "n": 10,
+      "scaffold_avg_score": 0.8,
+      "control_avg_score": 1.0,
+      "delta": -0.2,
+      "scaffold_file_rate": 0.0,
+      "control_file_rate": 40.0
+    },
+    "EDIT": {
+      "n": 10,
+      "scaffold_avg_score": 1.8,
+      "control_avg_score": 1.1,
+      "delta": 0.7,
+      "scaffold_file_rate": 70.0,
+      "control_file_rate": 80.0
+    },
+    "LOGIC": {
+      "n": 10,
+      "scaffold_avg_score": 2.0,
+      "control_avg_score": 1.6,
+      "delta": 0.4,
+      "scaffold_file_rate": 80.0,
+      "control_file_rate": 80.0
+    },
+    "PLAN": {
+      "n": 8,
+      "scaffold_avg_score": 1.5,
+      "control_avg_score": 1.38,
+      "delta": 0.12,
+      "scaffold_file_rate": 100.0,
+      "control_file_rate": 87.5
+    }
+  }
+}

@@ -1,0 +1,11 @@
+## Recovery Feedback: Focus on the Delta
+
+You're trying to change too much. Focus only on the difference between current and expected behavior.
+
+**Action Required:**
+- What is the CURRENT behavior (before any fix)?
+- What is the EXPECTED behavior (what the test wants)?
+- What is the precise DELTA between these two?
+- Your fix should address ONLY that delta — nothing more
+
+Don't redesign or restructure. Find the minimal semantic difference between "broken" and "correct."

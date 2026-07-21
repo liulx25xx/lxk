@@ -1,0 +1,13 @@
+## Recovery Feedback: Use a Different Editing Approach
+
+Your str_replace edit keeps failing. Try a different method to apply your change.
+
+**Action Required:**
+- Instead of str_replace, consider:
+  1. Use `sed -i` to make the replacement by line number
+  2. Write the entire corrected function using `cat << 'EOF' > tmpfile && ...`
+  3. Use Python to programmatically modify the file
+- First, confirm the exact line numbers of what you want to change using `open_file`
+- Then apply your change using an alternative tool
+
+The logic of your fix may be right — you just need a different way to apply it to the file.

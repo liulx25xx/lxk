@@ -1,0 +1,41 @@
+{
+  "run_id": "pilot_20260517_225954",
+  "timestamp": "20260517_225954",
+  "config": {
+    "model": "gpt-4.1",
+    "max_steps": 15,
+    "rate_limit": 3.5,
+    "instances": [
+      "django__django-11206",
+      "django__django-13406",
+      "django__django-14017",
+      "django__django-11885",
+      "django__django-16502"
+    ]
+  },
+  "results": {
+    "control_resolved": 0,
+    "scaffold_resolved": 0,
+    "total": 5,
+    "delta": 0
+  },
+  "api_calls_total": 130,
+  "eval_results": {
+    "control": {
+      "run_id": "control_pilot_20260517_225954",
+      "resolved": 0,
+      "total": 1,
+      "resolve_rate": 0.0,
+      "report_file": null,
+      "report_data": {}
+    },
+    "scaffold": {
+      "run_id": "scaffold_pilot_20260517_225954",
+      "resolved": 0,
+      "total": 3,
+      "resolve_rate": 0.0,
+      "report_file": null,
+      "report_data": {}
+    }
+  }
+}

@@ -1,0 +1,738 @@
+{
+  "heldout_strategy_selection": {
+    "bootstrap_unit": "project",
+    "by_type": {
+      "EDIT": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.7916666666666666,
+          1.1923076923076923
+        ],
+        "mean_delta": 1,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      },
+      "LOC": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.8571428571428571,
+          0.3333333333333333
+        ],
+        "mean_delta": 0.13333333333333333,
+        "n": 30,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "LOGIC": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.08333333333333333,
+          0.47619047619047616
+        ],
+        "mean_delta": 0.1,
+        "n": 30,
+        "n_projects": 6,
+        "resamples": 10000
+      },
+      "PLAN": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.8,
+          1
+        ],
+        "mean_delta": 0.875,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      }
+    },
+    "ci_95": [
+      0.3333333333333333,
+      0.6739130434782609
+    ],
+    "mean_control_score": 1.7916666666666667,
+    "mean_delta": 0.4375,
+    "mean_scaffold_score": 2.2291666666666665,
+    "n": 96,
+    "n_folds": 10,
+    "n_projects": 10,
+    "resamples": 10000,
+    "selection_counts": {
+      "EDIT": {
+        "EDIT_A_reread_file": 10
+      },
+      "LOC": {
+        "LOC_A_broaden_search": 2,
+        "LOC_B_reread_issue": 8
+      },
+      "LOGIC": {
+        "LOGIC_A_test_analysis": 1,
+        "LOGIC_B_minimal_fix": 9
+      },
+      "PLAN": {
+        "PLAN_A_step_back": 10
+      }
+    }
+  },
+  "llm_judge_sensitivity": {
+    "by_type": {
+      "EDIT": {
+        "llm_judge": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            -0.2222222222222222,
+            0.3076923076923077
+          ],
+          "mean_delta": 0.06666666666666667,
+          "n": 15,
+          "n_projects": 7,
+          "resamples": 10000
+        },
+        "regex": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            0.45454545454545453,
+            1.434782608695652
+          ],
+          "mean_delta": 1,
+          "n": 15,
+          "n_projects": 7,
+          "resamples": 10000
+        }
+      },
+      "LOC": {
+        "llm_judge": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            0,
+            0.1
+          ],
+          "mean_delta": 0.08333333333333333,
+          "n": 12,
+          "n_projects": 3,
+          "resamples": 10000
+        },
+        "regex": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            0,
+            0.5
+          ],
+          "mean_delta": 0.4166666666666667,
+          "n": 12,
+          "n_projects": 3,
+          "resamples": 10000
+        }
+      },
+      "LOGIC": {
+        "llm_judge": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            -0.25,
+            0
+          ],
+          "mean_delta": -0.16666666666666666,
+          "n": 6,
+          "n_projects": 3,
+          "resamples": 10000
+        },
+        "regex": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            0,
+            0
+          ],
+          "mean_delta": 0,
+          "n": 6,
+          "n_projects": 3,
+          "resamples": 10000
+        }
+      },
+      "PLAN": {
+        "llm_judge": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            0,
+            1.3333333333333333
+          ],
+          "mean_delta": 1,
+          "n": 4,
+          "n_projects": 2,
+          "resamples": 10000
+        },
+        "regex": {
+          "bootstrap_unit": "project",
+          "ci_95": [
+            0.6666666666666666,
+            2
+          ],
+          "mean_delta": 1,
+          "n": 4,
+          "n_projects": 2,
+          "resamples": 10000
+        }
+      }
+    },
+    "llm_judge": {
+      "bootstrap_unit": "project",
+      "ci_95": [
+        -0.15789473684210525,
+        0.24
+      ],
+      "mean_delta": 0.13513513513513514,
+      "n": 37,
+      "n_projects": 9,
+      "resamples": 10000
+    },
+    "regex": {
+      "bootstrap_unit": "project",
+      "ci_95": [
+        0.4,
+        0.8461538461538461
+      ],
+      "mean_delta": 0.6486486486486487,
+      "n": 37,
+      "n_projects": 9,
+      "resamples": 10000
+    }
+  },
+  "metadata": {
+    "api_calls": 0,
+    "bootstrap_resamples": 10000,
+    "cross_type_rows": 183,
+    "llm_judged_rows": 220,
+    "phase3_instances": 96,
+    "phase3_rows": 348,
+    "seed": 20260715
+  },
+  "paired_cross_type": {
+    "EDIT->LOC": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -2,
+          -0.75
+        ],
+        "mean_delta": -1.0666666666666667,
+        "n": 15,
+        "n_projects": 4,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          -0.25
+        ],
+        "mean_delta": -0.6,
+        "n": 15,
+        "n_projects": 4,
+        "resamples": 10000
+      }
+    },
+    "EDIT->LOGIC": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1.2,
+          -0.125
+        ],
+        "mean_delta": -0.6666666666666666,
+        "n": 15,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0.07142857142857142
+        ],
+        "mean_delta": -0.5333333333333333,
+        "n": 15,
+        "n_projects": 5,
+        "resamples": 10000
+      }
+    },
+    "EDIT->PLAN": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0
+        ],
+        "mean_delta": -0.75,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0
+        ],
+        "mean_delta": -0.75,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      }
+    },
+    "LOC->EDIT": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.5925925925925926,
+          0
+        ],
+        "mean_delta": -0.2857142857142857,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.5652173913043478,
+          0.05
+        ],
+        "mean_delta": -0.25,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      }
+    },
+    "LOC->LOGIC": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.8,
+          0.16666666666666666
+        ],
+        "mean_delta": -0.2,
+        "n": 15,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.7,
+          0.22727272727272727
+        ],
+        "mean_delta": -0.06666666666666667,
+        "n": 15,
+        "n_projects": 5,
+        "resamples": 10000
+      }
+    },
+    "LOC->PLAN": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0
+        ],
+        "mean_delta": -0.375,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0
+        ],
+        "mean_delta": -0.375,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      }
+    },
+    "LOGIC->EDIT": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.5,
+          0.058823529411764705
+        ],
+        "mean_delta": -0.23076923076923078,
+        "n": 26,
+        "n_projects": 8,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.5263157894736842,
+          0
+        ],
+        "mean_delta": -0.2692307692307692,
+        "n": 26,
+        "n_projects": 8,
+        "resamples": 10000
+      }
+    },
+    "LOGIC->LOC": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -2,
+          -0.5833333333333334
+        ],
+        "mean_delta": -0.8666666666666667,
+        "n": 15,
+        "n_projects": 4,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          -0.1875
+        ],
+        "mean_delta": -0.4,
+        "n": 15,
+        "n_projects": 4,
+        "resamples": 10000
+      }
+    },
+    "LOGIC->PLAN": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0
+        ],
+        "mean_delta": -0.5,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0
+        ],
+        "mean_delta": -0.5,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      }
+    },
+    "PLAN->EDIT": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.7272727272727273,
+          1.1428571428571428
+        ],
+        "mean_delta": 1,
+        "n": 15,
+        "n_projects": 7,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.25,
+          0.46153846153846156
+        ],
+        "mean_delta": 0.13333333333333333,
+        "n": 15,
+        "n_projects": 7,
+        "resamples": 10000
+      }
+    },
+    "PLAN->LOC": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1,
+          0.16666666666666666
+        ],
+        "mean_delta": -0.06666666666666667,
+        "n": 15,
+        "n_projects": 4,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.4,
+          0.2857142857142857
+        ],
+        "mean_delta": -0.13333333333333333,
+        "n": 15,
+        "n_projects": 4,
+        "resamples": 10000
+      }
+    },
+    "PLAN->LOGIC": {
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.45454545454545453,
+          0.8235294117647058
+        ],
+        "mean_delta": 0.3333333333333333,
+        "n": 15,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.9090909090909091,
+          -0.07142857142857142
+        ],
+        "mean_delta": -0.4,
+        "n": 15,
+        "n_projects": 5,
+        "resamples": 10000
+      }
+    },
+    "summary": {
+      "n_pairs": 12,
+      "negative_ci_full": 3,
+      "negative_ci_no_relevance": 3,
+      "negative_mean_full": 10,
+      "negative_mean_no_relevance": 11
+    }
+  },
+  "proxy_sensitivity": {
+    "EDIT": {
+      "actionable_only": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0,
+          0.22
+        ],
+        "mean_delta": 0.10714285714285714,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      },
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.782608695652174,
+          1.1923076923076923
+        ],
+        "mean_delta": 1,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      },
+      "no_file_hit": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.6666666666666666,
+          1.0476190476190477
+        ],
+        "mean_delta": 0.8571428571428571,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.07692307692307693,
+          0.35135135135135137
+        ],
+        "mean_delta": 0.25,
+        "n": 28,
+        "n_projects": 9,
+        "resamples": 10000
+      }
+    },
+    "LOC": {
+      "actionable_only": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.7083333333333334,
+          -0.3
+        ],
+        "mean_delta": -0.6,
+        "n": 30,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.8571428571428571,
+          0.65
+        ],
+        "mean_delta": 0.26666666666666666,
+        "n": 30,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "no_file_hit": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.2857142857142857,
+          0.26666666666666666
+        ],
+        "mean_delta": 0.06666666666666667,
+        "n": 30,
+        "n_projects": 5,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -1.1428571428571428,
+          0.047619047619047616
+        ],
+        "mean_delta": -0.4,
+        "n": 30,
+        "n_projects": 5,
+        "resamples": 10000
+      }
+    },
+    "LOGIC": {
+      "actionable_only": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.018867924528301886,
+          0.29411764705882354
+        ],
+        "mean_delta": 0.1,
+        "n": 30,
+        "n_projects": 6,
+        "resamples": 10000
+      },
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.018867924528301886,
+          0.5454545454545454
+        ],
+        "mean_delta": 0.16666666666666666,
+        "n": 30,
+        "n_projects": 6,
+        "resamples": 10000
+      },
+      "no_file_hit": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.03636363636363636,
+          0.3684210526315789
+        ],
+        "mean_delta": 0.1,
+        "n": 30,
+        "n_projects": 6,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.023809523809523808,
+          0.5
+        ],
+        "mean_delta": 0.16666666666666666,
+        "n": 30,
+        "n_projects": 6,
+        "resamples": 10000
+      }
+    },
+    "PLAN": {
+      "actionable_only": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.5,
+          0
+        ],
+        "mean_delta": -0.125,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      },
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.8,
+          1
+        ],
+        "mean_delta": 0.875,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      },
+      "no_file_hit": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.5,
+          1
+        ],
+        "mean_delta": 0.75,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0,
+          0
+        ],
+        "mean_delta": 0,
+        "n": 8,
+        "n_projects": 3,
+        "resamples": 10000
+      }
+    },
+    "aggregate": {
+      "actionable_only": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.21341463414634146,
+          0.058823529411764705
+        ],
+        "mean_delta": -0.13541666666666666,
+        "n": 96,
+        "n_projects": 10,
+        "resamples": 10000
+      },
+      "full": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.3925233644859813,
+          0.75
+        ],
+        "mean_delta": 0.5,
+        "n": 96,
+        "n_projects": 10,
+        "resamples": 10000
+      },
+      "no_file_hit": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          0.2727272727272727,
+          0.6052631578947368
+        ],
+        "mean_delta": 0.3645833333333333,
+        "n": 96,
+        "n_projects": 10,
+        "resamples": 10000
+      },
+      "no_relevance": {
+        "bootstrap_unit": "project",
+        "ci_95": [
+          -0.08791208791208792,
+          0.2037037037037037
+        ],
+        "mean_delta": 0,
+        "n": 96,
+        "n_projects": 10,
+        "resamples": 10000
+      }
+    }
+  }
+}

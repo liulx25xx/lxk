@@ -1,0 +1,102 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+============================================================
+Phase 4 Exp2: Cascade-Aware Scaffold Selection
+Model: gpt-4o-mini, Delay: 3.5s, Workers: 2
+Conditions: oracle / fixed / control
+============================================================
+Loading SWE-bench gold patches...
+Loading trajectory data...
+  LOC: 30 instances
+  EDIT: 28 instances
+  LOGIC: 30 instances
+  PLAN: 8 instances
+
+Total instances: 96
+Conditions: 3
+Expected calls: ~288
+Estimated time: ~8.4 min
+
+  [checkpoint] 10 results saved, 10 calls
+  [checkpoint] 20 results saved, 20 calls
+  [checkpoint] 30 results saved, 30 calls
+  [checkpoint] 40 results saved, 40 calls
+  [checkpoint] 50 results saved, 50 calls
+  [checkpoint] 60 results saved, 60 calls
+  [checkpoint] 70 results saved, 70 calls
+  [checkpoint] 80 results saved, 80 calls
+  [checkpoint] 90 results saved, 90 calls
+  [checkpoint] 100 results saved, 100 calls
+  [checkpoint] 110 results saved, 110 calls
+  [checkpoint] 120 results saved, 120 calls
+  [checkpoint] 130 results saved, 130 calls
+  [checkpoint] 140 results saved, 140 calls
+  [checkpoint] 150 results saved, 150 calls
+  [checkpoint] 160 results saved, 160 calls
+  [checkpoint] 170 results saved, 170 calls
+  [checkpoint] 180 results saved, 180 calls
+  [  fixed] LOC: avg=1.57 (n=30)
+  [  fixed] EDIT: avg=2.64 (n=28)
+  [  fixed] LOGIC: avg=1.97 (n=30)
+  [  fixed] PLAN: avg=2.00 (n=8)
+
+  ✓ Condition 'fixed' done.
+  [checkpoint] 190 results saved, 190 calls
+  [ oracle] LOC: avg=2.03 (n=30)
+  [ oracle] EDIT: avg=2.68 (n=28)
+  [ oracle] LOGIC: avg=2.17 (n=30)
+  [ oracle] PLAN: avg=2.88 (n=8)
+
+  ✓ Condition 'oracle' done.
+  [checkpoint] 200 results saved, 200 calls
+  [checkpoint] 210 results saved, 210 calls
+  [checkpoint] 220 results saved, 220 calls
+  [checkpoint] 230 results saved, 230 calls
+  [checkpoint] 240 results saved, 240 calls
+  [checkpoint] 250 results saved, 250 calls
+  [checkpoint] 260 results saved, 260 calls
+  [checkpoint] 270 results saved, 270 calls
+  [checkpoint] 280 results saved, 280 calls
+  [control] LOC: avg=1.70 (n=30)
+  [control] EDIT: avg=1.61 (n=28)
+  [control] LOGIC: avg=1.93 (n=30)
+  [control] PLAN: avg=1.88 (n=8)
+
+  ✓ Condition 'control' done.
+
+============================================================
+PHASE 4 EXP2 COMPLETE — 16.1 min, 288 API calls
+Model: gpt-4o-mini
+============================================================
+
+--- LOC ---
+  oracle    : 2.03  file_hit=70%  (n=30)
+  fixed     : 1.57  file_hit=43%  (n=30)
+  control   : 1.70  file_hit=53%  (n=30)
+
+--- EDIT ---
+  oracle    : 2.68  file_hit=86%  (n=28)
+  fixed     : 2.64  file_hit=86%  (n=28)
+  control   : 1.61  file_hit=71%  (n=28)
+
+--- LOGIC ---
+  oracle    : 2.17  file_hit=90%  (n=30)
+  fixed     : 1.97  file_hit=90%  (n=30)
+  control   : 1.93  file_hit=87%  (n=30)
+
+--- PLAN ---
+  oracle    : 2.88  file_hit=100%  (n=8)
+  fixed     : 2.00  file_hit=100%  (n=8)
+  control   : 1.88  file_hit=88%  (n=8)
+
+============================================================
+OVERALL CONDITION COMPARISON:
+  oracle    : avg=2.33  file_hit=83%  actionable=78%  relevant=72%  (n=96)
+  fixed     : avg=2.04  file_hit=75%  actionable=98%  relevant=31%  (n=96)
+  control   : avg=1.76  file_hit=72%  actionable=89%  relevant=16%  (n=96)
+
+  Oracle vs Fixed:   +0.29
+  Oracle vs Control: +0.57
+  Fixed  vs Control: +0.28
+============================================================
+
+Results saved to: /data/home/xiankunlin/project/emnlp/paper1/results/phase4_cascade_selection/results.json

@@ -1,0 +1,14 @@
+## Recovery Feedback: Reconsider Your Approach
+
+Your overall strategy is wrong. You're working in the wrong direction entirely.
+
+**Action Required:**
+- STOP. Do not continue down your current path.
+- List 3 DIFFERENT strategies to fix this issue:
+  1. Strategy A: [your current approach — acknowledge it failed]
+  2. Strategy B: [a fundamentally different approach]
+  3. Strategy C: [yet another angle]
+- For each strategy, evaluate: "Is this consistent with how other similar fixes work in this codebase?"
+- Choose the strategy that is most likely to work and start fresh
+
+Your first approach was fundamentally wrong. A different strategy is needed.

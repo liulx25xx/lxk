@@ -1,0 +1,109 @@
+{
+  "n": 8,
+  "results": [
+    {
+      "instance_id": "django__django-11885",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "sympy__sympy-22714",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "astropy__astropy-13453",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "astropy__astropy-14369",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "sympy__sympy-18199",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "pytest-dev__pytest-10051",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    },
+    {
+      "instance_id": "django__django-13406",
+      "failure_type": "EDIT",
+      "model": "deepseek-v4-0324",
+      "dose": "strong",
+      "eval": {
+        "score": 0,
+        "file_hit": false,
+        "actionable": false,
+        "relevant": false
+      },
+      "response": ""
+    }
+  ]
+}
