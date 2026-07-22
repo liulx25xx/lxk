@@ -16,8 +16,7 @@
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand*\HyPL@Entry[1]{}
-\citation{deepseekr1}
-\citation{shao2024deepseekmath}
+\citation{shao2024deepseekmath,deepseekr1}
 \citation{yu2025dapo}
 \citation{med_rlvr}
 \citation{r1_re}
@@ -57,11 +56,11 @@
 \@LN{30}{0}
 \@LN{31}{0}
 \@LN{32}{0}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@LN{33}{0}
 \@LN{34}{0}
 \@LN{35}{0}
 \@LN{36}{0}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@LN{37}{0}
 \@LN{38}{0}
 \@LN{39}{0}
@@ -110,26 +109,27 @@
 \@LN{81}{0}
 \@LN{82}{0}
 \@LN{83}{0}
-\citation{deepseekr1}
-\citation{shao2024deepseekmath}
+\citation{shao2024deepseekmath,deepseekr1}
 \citation{yu2025dapo}
-\citation{lightman2024letsverify,wang2023mathshepherd}
 \citation{med_rlvr}
 \citation{r1_re}
 \citation{eventrl}
 \citation{wei2022cot}
-\citation{sft_memorizes_rl_generalizes}
-\citation{rl_squeezes_sft_expands}
-\citation{yue2025doesrl}
-\citation{quagmires2026}
-\citation{retu2026}
-\citation{rafailov2023dpo}
-\citation{yuan2024selfrewarding,singh2024restem}
+\citation{sft_memorizes_rl_generalizes,rl_squeezes_sft_expands,yue2025doesrl}
 \citation{delay_plateau_collapse}
 \citation{gao2023scaling}
 \citation{zhou2024lima}
-\citation{med_rlvr}
-\citation{singhal2023medpalm,nori2023gpt4medicine}
+\citation{cobbe2021gsm8k}
+\citation{clark2018arc}
+\citation{jin2021medqa}
+\citation{guha2024legalbench}
+\citation{cobbe2021gsm8k}
+\citation{clark2018arc}
+\citation{jin2021medqa}
+\citation{guha2024legalbench}
+\citation{qwen25}
+\citation{hu2022lora}
+\citation{qwen3}
 \@LN@col{1}
 \@LN{84}{1}
 \@LN{85}{1}
@@ -158,6 +158,7 @@
 \@LN{108}{1}
 \@LN{109}{1}
 \@LN{110}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
 \@LN{111}{1}
 \@LN{112}{1}
 \@LN{113}{1}
@@ -177,11 +178,10 @@
 \@LN{127}{1}
 \@LN{128}{1}
 \@LN{129}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
 \@LN{130}{1}
 \@LN{131}{1}
-\@LN@col{2}
 \@LN{132}{1}
+\@LN@col{2}
 \@LN{133}{1}
 \@LN{134}{1}
 \@LN{135}{1}
@@ -209,6 +209,7 @@
 \@LN{157}{1}
 \@LN{158}{1}
 \@LN{159}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Setup}{2}{section.3}\protected@file@percent }
 \@LN{160}{1}
 \@LN{161}{1}
 \@LN{162}{1}
@@ -216,6 +217,7 @@
 \@LN{164}{1}
 \@LN{165}{1}
 \@LN{166}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Domain Selection}{2}{subsection.3.1}\protected@file@percent }
 \@LN{167}{1}
 \@LN{168}{1}
 \@LN{169}{1}
@@ -224,30 +226,21 @@
 \@LN{172}{1}
 \@LN{173}{1}
 \@LN{174}{1}
-\@LN{175}{1}
-\@LN{176}{1}
-\@LN{177}{1}
-\@LN{178}{1}
-\@LN{179}{1}
-\@LN{180}{1}
-\@LN{181}{1}
-\@LN{182}{1}
-\@LN{183}{1}
-\citation{cobbe2021gsm8k}
-\citation{clark2018arc}
-\citation{jin2021medqa}
-\citation{guha2024legalbench}
-\citation{cobbe2021gsm8k}
-\citation{clark2018arc}
-\citation{jin2021medqa}
-\citation{guha2024legalbench}
-\citation{qwen25}
-\citation{hu2022lora}
-\citation{bai2023qwen}
-\citation{dettmers2023qlora}
-\citation{kwon2023vllm}
 \citation{shao2024deepseekmath}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Domain overview. N\textsubscript  {SFT} is the maximum supervised/filtered-self-training data size swept; N\textsubscript  {RL} is the GRPO prompt budget. The methods draw from the same source-prompt pool, but filtering changes the number of retained supervised examples. Law is a micro-data stress test ($N$=31), not a like-for-like domain comparison. Benchmarks: GSM8K \citep  {cobbe2021gsm8k}, ARC \citep  {clark2018arc}, MedQA \citep  {jin2021medqa}, and LegalBench \citep  {guha2024legalbench}.\relax }}{3}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:domains}{{1}{3}{Domain overview. N\textsubscript {SFT} is the maximum supervised/filtered-self-training data size swept; N\textsubscript {RL} is the GRPO prompt budget. The methods draw from the same source-prompt pool, but filtering changes the number of retained supervised examples. Law is a micro-data stress test ($N$=31), not a like-for-like domain comparison. Benchmarks: GSM8K \citep {cobbe2021gsm8k}, ARC \citep {clark2018arc}, MedQA \citep {jin2021medqa}, and LegalBench \citep {guha2024legalbench}.\relax }{table.caption.1}{}}
 \@LN@col{1}
+\@LN{175}{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Training Methods}{3}{subsection.3.2}\protected@file@percent }
+\@LN{176}{2}
+\@LN{177}{2}
+\@LN{178}{2}
+\@LN{179}{2}
+\@LN{180}{2}
+\@LN{181}{2}
+\@LN{182}{2}
+\@LN{183}{2}
 \@LN{184}{2}
 \@LN{185}{2}
 \@LN{186}{2}
@@ -267,7 +260,6 @@
 \@LN{200}{2}
 \@LN{201}{2}
 \@LN{202}{2}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Setup}{3}{section.3}\protected@file@percent }
 \@LN{203}{2}
 \@LN{204}{2}
 \@LN{205}{2}
@@ -277,12 +269,11 @@
 \@LN{209}{2}
 \@LN{210}{2}
 \@LN{211}{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Domain Selection}{3}{subsection.3.1}\protected@file@percent }
 \@LN{212}{2}
 \@LN{213}{2}
+\@LN@col{2}
 \@LN{214}{2}
 \@LN{215}{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Training Methods}{3}{subsection.3.2}\protected@file@percent }
 \@LN{216}{2}
 \@LN{217}{2}
 \@LN{218}{2}
@@ -293,10 +284,10 @@
 \@LN{223}{2}
 \@LN{224}{2}
 \@LN{225}{2}
-\@LN@col{2}
 \@LN{226}{2}
 \@LN{227}{2}
 \@LN{228}{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Fairness Protocol}{3}{subsection.3.3}\protected@file@percent }
 \@LN{229}{2}
 \@LN{230}{2}
 \@LN{231}{2}
@@ -316,39 +307,37 @@
 \@LN{245}{2}
 \@LN{246}{2}
 \@LN{247}{2}
-\@LN{248}{2}
-\@LN{249}{2}
-\@LN{250}{2}
-\@LN{251}{2}
-\@LN{252}{2}
-\@LN{253}{2}
-\@LN{254}{2}
-\@LN{255}{2}
-\@LN{256}{2}
-\@LN{257}{2}
-\@LN{258}{2}
-\@LN{259}{2}
-\@LN{260}{2}
-\@LN{261}{2}
-\@LN{262}{2}
-\@LN{263}{2}
-\@LN{264}{2}
-\@LN{265}{2}
-\@LN{266}{2}
-\@LN{267}{2}
-\@LN{268}{2}
-\@LN{269}{2}
-\@LN{270}{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Fairness Protocol}{3}{subsection.3.3}\protected@file@percent }
-\@LN{271}{2}
-\@LN{272}{2}
-\@LN{273}{2}
-\@LN{274}{2}
-\citation{shao2024deepseekmath}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Domain overview. N\textsubscript  {SFT} is the maximum SFT data size swept. N\textsubscript  {RL} is the fixed GRPO training set size. SFT and GRPO use the same source prompts. SFT additionally requires correct demonstrations generated via rejection sampling from the base model. Law serves as a micro-data stress test ($N$=31) rather than a full domain comparison. Benchmarks: GSM8K \citep  {cobbe2021gsm8k}, ARC \citep  {clark2018arc}, MedQA \citep  {jin2021medqa}, LegalBench \citep  {guha2024legalbench}.\relax }}{4}{table.caption.1}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:domains}{{1}{4}{Domain overview. N\textsubscript {SFT} is the maximum SFT data size swept. N\textsubscript {RL} is the fixed GRPO training set size. SFT and GRPO use the same source prompts. SFT additionally requires correct demonstrations generated via rejection sampling from the base model. Law serves as a micro-data stress test ($N$=31) rather than a full domain comparison. Benchmarks: GSM8K \citep {cobbe2021gsm8k}, ARC \citep {clark2018arc}, MedQA \citep {jin2021medqa}, LegalBench \citep {guha2024legalbench}.\relax }{table.caption.1}{}}
 \@LN@col{1}
+\@LN{248}{3}
+\@LN{249}{3}
+\@LN{250}{3}
+\@LN{251}{3}
+\@LN{252}{3}
+\@LN{253}{3}
+\@LN{254}{3}
+\@LN{255}{3}
+\@LN{256}{3}
+\@LN{257}{3}
+\@LN{258}{3}
+\@LN{259}{3}
+\@LN{260}{3}
+\@LN{261}{3}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}\protected@file@percent }
+\newlabel{sec:results}{{4}{4}{Results}{section.4}{}}
+\@LN{262}{3}
+\@LN{263}{3}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Conservative LoRA-GRPO Often Under-Updates}{4}{subsection.4.1}\protected@file@percent }
+\@LN{264}{3}
+\@LN{265}{3}
+\@LN{266}{3}
+\@LN{267}{3}
+\@LN{268}{3}
+\@LN{269}{3}
+\@LN{270}{3}
+\@LN{271}{3}
+\@LN{272}{3}
+\@LN{273}{3}
+\@LN{274}{3}
 \@LN{275}{3}
 \@LN{276}{3}
 \@LN{277}{3}
@@ -372,25 +361,21 @@
 \@LN{295}{3}
 \@LN{296}{3}
 \@LN{297}{3}
+\@LN@col{2}
 \@LN{298}{3}
 \@LN{299}{3}
 \@LN{300}{3}
 \@LN{301}{3}
 \@LN{302}{3}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}\protected@file@percent }
-\newlabel{sec:results}{{4}{4}{Results}{section.4}{}}
 \@LN{303}{3}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Standard GRPO Fails Everywhere}{4}{subsection.4.1}\protected@file@percent }
 \@LN{304}{3}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Learning Rate Changes the LoRA-GRPO Regime}{4}{subsection.4.2}\protected@file@percent }
 \@LN{305}{3}
 \@LN{306}{3}
 \@LN{307}{3}
 \@LN{308}{3}
 \@LN{309}{3}
 \@LN{310}{3}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Main result heatmap showing accuracy across five domains and four training configurations. Cell colors encode delta from base accuracy (diverging scale). GRPO-best (lr=2e-5) achieves +7--25\% gains across MCQ domains, while the standard recipe (lr=5e-7) produces negligible improvement.\relax }}{4}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:lr_sweep}{{1}{4}{Main result heatmap showing accuracy across five domains and four training configurations. Cell colors encode delta from base accuracy (diverging scale). GRPO-best (lr=2e-5) achieves +7--25\% gains across MCQ domains, while the standard recipe (lr=5e-7) produces negligible improvement.\relax }{figure.caption.3}{}}
 \@LN{311}{3}
 \@LN{312}{3}
 \@LN{313}{3}
@@ -410,26 +395,30 @@
 \@LN{327}{3}
 \@LN{328}{3}
 \@LN{329}{3}
-\citation{rl_squeezes_sft_expands}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces In-distribution accuracy (\%, multi-seed averages). Standard GRPO (lr=5e-7) fails in every domain. With properly tuned learning rate, GRPO matches or exceeds SFT in all five domains. On-policy self-distillation (OPD), evaluated separately on the full test set, produces no meaningful improvement over base in the three domains tested (Appendix\nobreakspace  {}\ref  {sec:opd_results}).\relax }}{5}{table.caption.2}\protected@file@percent }
-\newlabel{tab:main}{{2}{5}{In-distribution accuracy (\%, multi-seed averages). Standard GRPO (lr=5e-7) fails in every domain. With properly tuned learning rate, GRPO matches or exceeds SFT in all five domains. On-policy self-distillation (OPD), evaluated separately on the full test set, produces no meaningful improvement over base in the three domains tested (Appendix~\ref {sec:opd_results}).\relax }{table.caption.2}{}}
+\@LN{330}{3}
+\@LN{331}{3}
+\@LN{332}{3}
+\@LN{333}{3}
+\@LN{334}{3}
+\@LN{335}{3}
+\@LN{336}{3}
+\@LN{337}{3}
+\@LN{338}{3}
+\@LN{339}{3}
+\@LN{340}{3}
+\@LN{341}{3}
+\@LN{342}{3}
+\@LN{343}{3}
+\citation{yu2025dapo}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Descriptive accuracy (\%) reconstructed from saved evaluation artifacts. Parentheses give the number of saved runs and error terms are standard deviations across those runs; training-seed provenance must be verified before treating them as independent replications. The higher-rate point is 2e-5 except for Law (5e-6). It improves four primary domains but has high variability on Commonsense; Law remains comparable to RFT. Component-benchmark and dev-selected results are required for the final comparison.\relax }}{5}{table.caption.2}\protected@file@percent }
+\newlabel{tab:main}{{2}{5}{Descriptive accuracy (\%) reconstructed from saved evaluation artifacts. Parentheses give the number of saved runs and error terms are standard deviations across those runs; training-seed provenance must be verified before treating them as independent replications. The higher-rate point is 2e-5 except for Law (5e-6). It improves four primary domains but has high variability on Commonsense; Law remains comparable to RFT. Component-benchmark and dev-selected results are required for the final comparison.\relax }{table.caption.2}{}}
 \@LN@col{1}
-\@LN{330}{4}
-\@LN{331}{4}
-\@LN{332}{4}
-\@LN{333}{4}
-\@LN{334}{4}
-\@LN{335}{4}
-\@LN{336}{4}
-\@LN{337}{4}
-\@LN{338}{4}
-\@LN{339}{4}
-\@LN{340}{4}
-\@LN{341}{4}
-\@LN{342}{4}
-\@LN{343}{4}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Descriptive LoRA-GRPO learning-rate sweep on Medicine. The number of saved runs differs by condition. Performance improves from the conservative setting to 2e-5, but variability at 2e-5 is non-negligible; 1e-4 collapses. A dev-selected, balanced-seed comparison is required for an unbiased headline result.\relax }}{5}{table.caption.3}\protected@file@percent }
+\newlabel{tab:lr_sweep}{{3}{5}{Descriptive LoRA-GRPO learning-rate sweep on Medicine. The number of saved runs differs by condition. Performance improves from the conservative setting to 2e-5, but variability at 2e-5 is non-negligible; 1e-4 collapses. A dev-selected, balanced-seed comparison is required for an unbiased headline result.\relax }{table.caption.3}{}}
 \@LN{344}{4}
 \@LN{345}{4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}SFT Data Scaling: The Inverted-U}{5}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:data_scaling}{{4.3}{5}{SFT Data Scaling: The Inverted-U}{subsection.4.3}{}}
 \@LN{346}{4}
 \@LN{347}{4}
 \@LN{348}{4}
@@ -437,7 +426,6 @@
 \@LN{350}{4}
 \@LN{351}{4}
 \@LN{352}{4}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Learning Rate Unlocks GRPO on Knowledge Domains}{5}{subsection.4.2}\protected@file@percent }
 \@LN{353}{4}
 \@LN{354}{4}
 \@LN{355}{4}
@@ -445,17 +433,18 @@
 \@LN{357}{4}
 \@LN{358}{4}
 \@LN{359}{4}
+\@LN@col{2}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Exploratory comparison of training-data perplexity and the observed supervised/RFT scaling pattern. The three points are insufficient for correlation or threshold claims and are confounded by dataset, response construction, and task format.\relax }}{5}{table.caption.4}\protected@file@percent }
+\newlabel{tab:perplexity}{{4}{5}{Exploratory comparison of training-data perplexity and the observed supervised/RFT scaling pattern. The three points are insufficient for correlation or threshold claims and are confounded by dataset, response construction, and task format.\relax }{table.caption.4}{}}
 \@LN{360}{4}
 \@LN{361}{4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Exploratory Association with Training-Data Perplexity}{5}{subsection.4.4}\protected@file@percent }
 \@LN{362}{4}
 \@LN{363}{4}
 \@LN{364}{4}
 \@LN{365}{4}
 \@LN{366}{4}
 \@LN{367}{4}
-\@LN@col{2}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces GRPO learning rate sweep on Medicine (2-seed avg for lr=2e-5). The standard recipe (5e-7) slightly degrades performance. Raising the rate 40$\times $ to 2e-5 produces +7.4\% improvement, far outperforming the best SFT result (59.5\%). At 1e-4, training collapses.\relax }}{5}{table.caption.4}\protected@file@percent }
-\newlabel{tab:lr_sweep}{{3}{5}{GRPO learning rate sweep on Medicine (2-seed avg for lr=2e-5). The standard recipe (5e-7) slightly degrades performance. Raising the rate 40$\times $ to 2e-5 produces +7.4\% improvement, far outperforming the best SFT result (59.5\%). At 1e-4, training collapses.\relax }{table.caption.4}{}}
 \@LN{368}{4}
 \@LN{369}{4}
 \@LN{370}{4}
@@ -463,6 +452,7 @@
 \@LN{372}{4}
 \@LN{373}{4}
 \@LN{374}{4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}An Exploratory Reward-Variance Diagnostic}{5}{subsection.4.5}\protected@file@percent }
 \@LN{375}{4}
 \@LN{376}{4}
 \@LN{377}{4}
@@ -475,16 +465,18 @@
 \@LN{384}{4}
 \@LN{385}{4}
 \@LN{386}{4}
-\@LN{387}{4}
-\@LN{388}{4}
-\@LN{389}{4}
-\@LN{390}{4}
-\@LN{391}{4}
-\@LN{392}{4}
-\@LN{393}{4}
+\citation{bae2025difficulty}
+\citation{yue2025doesrl}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces GRPO reward trajectories on Medicine at different learning rates. At standard lr=5e-7 (gray), reward remains trapped near initialization, the mode-seeking trap. Higher learning rates progressively escape this trap, with lr=2e-5 (rose) achieving reward 0.94 and translating to +7.4\% test accuracy. Translucent band shows multi-seed variance.\relax }}{6}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:reward_traj}{{2}{6}{GRPO reward trajectories on Medicine at different learning rates. At standard lr=5e-7 (gray), reward remains trapped near initialization, the mode-seeking trap. Higher learning rates progressively escape this trap, with lr=2e-5 (rose) achieving reward 0.94 and translating to +7.4\% test accuracy. Translucent band shows multi-seed variance.\relax }{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Exploratory cross-domain transfer. Each row trains on the source domain and evaluates on the target benchmark. GRPO is higher on two pairs and RFT is higher on Math$\to $Science. Standard deviations summarize the saved evaluations where available; the table does not control for source-data format or evaluation-prompt effects.\relax }}{6}{table.caption.5}\protected@file@percent }
+\newlabel{tab:cross_domain}{{5}{6}{Exploratory cross-domain transfer. Each row trains on the source domain and evaluates on the target benchmark. GRPO is higher on two pairs and RFT is higher on Math$\to $Science. Standard deviations summarize the saved evaluations where available; the table does not control for source-data format or evaluation-prompt effects.\relax }{table.caption.5}{}}
+\@LN{387}{5}
+\@LN{388}{5}
+\@LN{389}{5}
+\@LN{390}{5}
+\@LN{391}{5}
+\@LN{392}{5}
+\@LN{393}{5}
 \@LN{394}{5}
 \@LN{395}{5}
 \@LN{396}{5}
@@ -493,12 +485,12 @@
 \@LN{399}{5}
 \@LN{400}{5}
 \@LN{401}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}SFT Data Scaling: The Inverted-U}{6}{subsection.4.3}\protected@file@percent }
-\newlabel{sec:data_scaling}{{4.3}{6}{SFT Data Scaling: The Inverted-U}{subsection.4.3}{}}
 \@LN{402}{5}
 \@LN{403}{5}
 \@LN{404}{5}
 \@LN{405}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Domain Transfer}{6}{subsection.4.6}\protected@file@percent }
+\newlabel{sec:cross_domain}{{4.6}{6}{Cross-Domain Transfer}{subsection.4.6}{}}
 \@LN{406}{5}
 \@LN{407}{5}
 \@LN{408}{5}
@@ -510,16 +502,13 @@
 \@LN{414}{5}
 \@LN{415}{5}
 \@LN{416}{5}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces SFT data scaling across three domains (small multiples). Math shows a sharp inverted-U peaking at $N$=100 then declining below base. Science rises monotonically. Medicine remains flat regardless of data size. These three patterns correspond to high, moderate, and low base-model accuracy respectively. Full multi-seed results in Appendix\nobreakspace  {}\ref  {sec:full_sft}.\relax }}{6}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:sft_scaling}{{3}{6}{SFT data scaling across three domains (small multiples). Math shows a sharp inverted-U peaking at $N$=100 then declining below base. Science rises monotonically. Medicine remains flat regardless of data size. These three patterns correspond to high, moderate, and low base-model accuracy respectively. Full multi-seed results in Appendix~\ref {sec:full_sft}.\relax }{figure.caption.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces SFT data perplexity under the base model correlates with observed scaling behavior. High-perplexity data (Math, 4.34) indicates a large distribution gap, causing early saturation and steep degradation. Low-perplexity data (Medicine, 2.46) is already within the model's distribution, making SFT ineffective regardless of data amount.\relax }}{6}{table.caption.7}\protected@file@percent }
-\newlabel{tab:perplexity}{{4}{6}{SFT data perplexity under the base model correlates with observed scaling behavior. High-perplexity data (Math, 4.34) indicates a large distribution gap, causing early saturation and steep degradation. Low-perplexity data (Medicine, 2.46) is already within the model's distribution, making SFT ineffective regardless of data amount.\relax }{table.caption.7}{}}
 \@LN{417}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Perplexity Correlates with Degradation}{6}{subsection.4.4}\protected@file@percent }
+\@LN@col{2}
 \@LN{418}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Analysis and Discussion}{6}{section.5}\protected@file@percent }
 \@LN{419}{5}
 \@LN{420}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Under-Update Hypothesis and Alternative Explanations}{6}{subsection.5.1}\protected@file@percent }
 \@LN{421}{5}
 \@LN{422}{5}
 \@LN{423}{5}
@@ -537,39 +526,50 @@
 \@LN{435}{5}
 \@LN{436}{5}
 \@LN{437}{5}
-\citation{bae2025difficulty}
+\@LN{438}{5}
+\@LN{439}{5}
+\@LN{440}{5}
+\@LN{441}{5}
+\@LN{442}{5}
+\@LN{443}{5}
+\@LN{444}{5}
+\@LN{445}{5}
+\@LN{446}{5}
+\@LN{447}{5}
+\@LN{448}{5}
+\@LN{449}{5}
+\@LN{450}{5}
+\@LN{451}{5}
+\@LN{452}{5}
+\@LN{453}{5}
+\@LN{454}{5}
+\@LN{455}{5}
+\@LN{456}{5}
+\@LN{457}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}What Does Higher-Rate GRPO Change?}{6}{subsection.5.2}\protected@file@percent }
+\@LN{458}{5}
+\@LN{459}{5}
+\@LN{460}{5}
+\@LN{461}{5}
+\@LN{462}{5}
+\@LN{463}{5}
+\@LN{464}{5}
+\@LN{465}{5}
+\@LN{466}{5}
+\@LN{467}{5}
+\bibdata{references}
+\bibcite{r1_re}{{1}{2025}{{Anonymous}}{{}}}
+\bibcite{bae2025difficulty}{{2}{2025}{{Bae et~al.}}{{}}}
+\bibcite{sft_memorizes_rl_generalizes}{{3}{2025}{{Chu et~al.}}{{}}}
+\bibcite{clark2018arc}{{4}{2018}{{Clark et~al.}}{{Clark, Cowhey, Etzioni, Khot, Sabharwal, Schoenick, and Tafjord}}}
+\bibcite{cobbe2021gsm8k}{{5}{2021}{{Cobbe et~al.}}{{Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano et~al.}}}
+\bibcite{deepseekr1}{{6}{2025}{{DeepSeek-AI}}{{}}}
+\bibcite{delay_plateau_collapse}{{7}{2026}{{Egashira et~al.}}{{Egashira, Vero, Dekoninck, Dorner, Staab, and Vechev}}}
+\bibcite{eventrl}{{8}{2024}{{Gao et~al.}}{{Gao, Zhao, Rui et~al.}}}
+\bibcite{gao2023scaling}{{9}{2023}{{Gao et~al.}}{{Gao, Schulman, and Hilton}}}
+\bibcite{guha2024legalbench}{{10}{2024}{{Guha et~al.}}{{Guha, Nyarko, Ho, Ré, Chilton, Chami et~al.}}}
+\bibcite{hu2022lora}{{11}{2022}{{Hu et~al.}}{{Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen}}}
 \@LN@col{1}
-\@LN{438}{6}
-\@LN{439}{6}
-\@LN{440}{6}
-\@LN{441}{6}
-\@LN{442}{6}
-\@LN{443}{6}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}A Pre-Training Diagnostic: Predicting Learning Quality}{7}{subsection.4.5}\protected@file@percent }
-\@LN{444}{6}
-\@LN{445}{6}
-\@LN{446}{6}
-\@LN{447}{6}
-\@LN{448}{6}
-\@LN{449}{6}
-\@LN{450}{6}
-\@LN{451}{6}
-\@LN{452}{6}
-\@LN{453}{6}
-\@LN{454}{6}
-\@LN{455}{6}
-\@LN{456}{6}
-\@LN{457}{6}
-\@LN{458}{6}
-\@LN{459}{6}
-\@LN{460}{6}
-\@LN{461}{6}
-\@LN{462}{6}
-\@LN{463}{6}
-\@LN{464}{6}
-\@LN{465}{6}
-\@LN{466}{6}
-\@LN{467}{6}
 \@LN{468}{6}
 \@LN{469}{6}
 \@LN{470}{6}
@@ -581,20 +581,17 @@
 \@LN{476}{6}
 \@LN{477}{6}
 \@LN{478}{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Practical Recipe Framework}{7}{subsection.5.3}\protected@file@percent }
 \@LN{479}{6}
 \@LN{480}{6}
 \@LN{481}{6}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Cross-Domain Transfer}{7}{subsection.4.6}\protected@file@percent }
-\newlabel{sec:cross_domain}{{4.6}{7}{Cross-Domain Transfer}{subsection.4.6}{}}
 \@LN{482}{6}
 \@LN{483}{6}
 \@LN{484}{6}
 \@LN{485}{6}
 \@LN{486}{6}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Phase diagram of GRPO learning rate on Medicine, revealing three regimes. \textbf  {Mode-seeking trap} (lr$\leq $2e-6): accuracy stagnates, KL stays near zero. \textbf  {Consolidation zone} (5e-6 to 2e-5): accuracy peaks at 66.6\%, KL rises moderately. \textbf  {Collapse} ($\geq $5e-5): KL explodes while accuracy drops sharply. The optimal lr produces a controlled 2.45 nats KL shift, enough for genuine distribution movement without catastrophic drift.\relax }}{7}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:regime}{{4}{7}{Phase diagram of GRPO learning rate on Medicine, revealing three regimes. \textbf {Mode-seeking trap} (lr$\leq $2e-6): accuracy stagnates, KL stays near zero. \textbf {Consolidation zone} (5e-6 to 2e-5): accuracy peaks at 66.6\%, KL rises moderately. \textbf {Collapse} ($\geq $5e-5): KL explodes while accuracy drops sharply. The optimal lr produces a controlled 2.45 nats KL shift, enough for genuine distribution movement without catastrophic drift.\relax }{figure.caption.8}{}}
 \@LN{487}{6}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}\protected@file@percent }
 \@LN{488}{6}
 \@LN{489}{6}
 \@LN{490}{6}
@@ -606,10 +603,8 @@
 \@LN{496}{6}
 \@LN{497}{6}
 \@LN{498}{6}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Analysis and Discussion}{7}{section.5}\protected@file@percent }
 \@LN{499}{6}
 \@LN{500}{6}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Forward KL vs Reverse KL: Why Recipes Differ}{7}{subsection.5.1}\protected@file@percent }
 \@LN{501}{6}
 \@LN{502}{6}
 \@LN{503}{6}
@@ -623,67 +618,71 @@
 \@LN{511}{6}
 \@LN{512}{6}
 \@LN{513}{6}
-\citation{yue2025doesrl}
-\citation{bae2025difficulty}
-\citation{yue2025doesrl}
-\@LN@col{1}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Cross-domain transfer (multi-seed, lr=2e-5). Each row trains on the source domain and evaluates on the target domain's test set. GRPO outperforms SFT on 2/3 domain pairs by +7--10pp. OPD transfers poorly, consistent with the absence of external training signal.\relax }}{8}{table.caption.9}\protected@file@percent }
-\newlabel{tab:cross_domain}{{5}{8}{Cross-domain transfer (multi-seed, lr=2e-5). Each row trains on the source domain and evaluates on the target domain's test set. GRPO outperforms SFT on 2/3 domain pairs by +7--10pp. OPD transfers poorly, consistent with the absence of external training signal.\relax }{table.caption.9}{}}
-\@LN{514}{7}
-\@LN{515}{7}
-\@LN{516}{7}
-\@LN{517}{7}
-\@LN{518}{7}
-\@LN{519}{7}
-\@LN{520}{7}
-\@LN{521}{7}
-\@LN{522}{7}
-\@LN{523}{7}
-\@LN{524}{7}
-\@LN{525}{7}
-\@LN{526}{7}
-\@LN{527}{7}
-\@LN{528}{7}
-\@LN{529}{7}
-\@LN{530}{7}
-\@LN{531}{7}
-\@LN{532}{7}
-\@LN{533}{7}
-\@LN{534}{7}
-\@LN{535}{7}
-\@LN{536}{7}
-\@LN{537}{7}
-\@LN{538}{7}
-\@LN{539}{7}
-\@LN{540}{7}
-\@LN{541}{7}
-\@LN{542}{7}
-\@LN{543}{7}
-\@LN{544}{7}
-\@LN{545}{7}
-\@LN{546}{7}
-\@LN{547}{7}
-\@LN{548}{7}
-\@LN{549}{7}
+\@LN{514}{6}
+\@LN{515}{6}
 \@LN@col{2}
-\@LN{550}{7}
-\@LN{551}{7}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}What Does High-LR GRPO Actually Learn?}{8}{subsection.5.2}\protected@file@percent }
-\@LN{552}{7}
-\@LN{553}{7}
-\@LN{554}{7}
-\@LN{555}{7}
-\@LN{556}{7}
-\@LN{557}{7}
-\@LN{558}{7}
-\@LN{559}{7}
-\@LN{560}{7}
-\@LN{561}{7}
-\@LN{562}{7}
-\@LN{563}{7}
-\@LN{564}{7}
-\@LN{565}{7}
-\@LN{566}{7}
+\@LN{516}{6}
+\@LN{517}{6}
+\@LN{518}{6}
+\@LN{519}{6}
+\@LN{520}{6}
+\@LN{521}{6}
+\@LN{522}{6}
+\@LN{523}{6}
+\@LN{524}{6}
+\@LN{525}{6}
+\@LN{526}{6}
+\@LN{527}{6}
+\@LN{528}{6}
+\@LN{529}{6}
+\@LN{530}{6}
+\@LN{531}{6}
+\@LN{532}{6}
+\@LN{533}{6}
+\@LN{534}{6}
+\@LN{535}{6}
+\@LN{536}{6}
+\@LN{537}{6}
+\@LN{538}{6}
+\@LN{539}{6}
+\@LN{540}{6}
+\@LN{541}{6}
+\@LN{542}{6}
+\@LN{543}{6}
+\@LN{544}{6}
+\@LN{545}{6}
+\@LN{546}{6}
+\@LN{547}{6}
+\@LN{548}{6}
+\@LN{549}{6}
+\@LN{550}{6}
+\@LN{551}{6}
+\@LN{552}{6}
+\@LN{553}{6}
+\@LN{554}{6}
+\@LN{555}{6}
+\@LN{556}{6}
+\@LN{557}{6}
+\@LN{558}{6}
+\@LN{559}{6}
+\@LN{560}{6}
+\@LN{561}{6}
+\@LN{562}{6}
+\@LN{563}{6}
+\@LN{564}{6}
+\@LN{565}{6}
+\@LN{566}{6}
+\bibcite{jin2021medqa}{{12}{2021}{{Jin et~al.}}{{Jin, Pan, Oufattole, Weng, Fang, and Szolovits}}}
+\bibcite{med_rlvr}{{13}{2025}{{Lai et~al.}}{{}}}
+\bibcite{qwen25}{{14}{2024}{{Qwen Team}}{{}}}
+\bibcite{shao2024deepseekmath}{{15}{2024}{{Shao et~al.}}{{Shao, Wang, Zhu, Xu, Song, Zhang, Li, Wu, and Guo}}}
+\bibcite{rl_squeezes_sft_expands}{{16}{2026}{{Wang et~al.}}{{}}}
+\bibcite{wei2022cot}{{17}{2022}{{Wei et~al.}}{{Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le, and Zhou}}}
+\bibcite{qwen3}{{18}{2025}{{Yang et~al.}}{{Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang, Lv et~al.}}}
+\bibcite{yu2025dapo}{{19}{2025}{{Yu et~al.}}{{}}}
+\bibcite{yue2025doesrl}{{20}{2025}{{Yue et~al.}}{{Yue, Chen, Lu, Zhao, Guan, Li, Liu, Peng, Shen, Chen et~al.}}}
+\bibcite{zhou2024lima}{{21}{2024}{{Zhou et~al.}}{{Zhou, Liu, Xu, Iyer, Sun, Mao, Ma, Efrat, Yu, Yu et~al.}}}
+\@LN@col{1}
 \@LN{567}{7}
 \@LN{568}{7}
 \@LN{569}{7}
@@ -699,7 +698,6 @@
 \@LN{579}{7}
 \@LN{580}{7}
 \@LN{581}{7}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Practical Recipe Framework}{8}{subsection.5.3}\protected@file@percent }
 \@LN{582}{7}
 \@LN{583}{7}
 \@LN{584}{7}
@@ -710,7 +708,6 @@
 \@LN{589}{7}
 \@LN{590}{7}
 \@LN{591}{7}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{8}{section.6}\protected@file@percent }
 \@LN{592}{7}
 \@LN{593}{7}
 \@LN{594}{7}
@@ -718,80 +715,76 @@
 \@LN{596}{7}
 \@LN{597}{7}
 \@LN{598}{7}
-\bibdata{references}
-\bibcite{r1_re}{{1}{2025}{{Anonymous}}{{}}}
-\bibcite{bae2025difficulty}{{2}{2025}{{Bae et~al.}}{{}}}
-\bibcite{bai2023qwen}{{3}{2023}{{Bai et~al.}}{{Bai, Bai, Chu, Cui, Dang, Deng, Fan, Ge, Han, Huang et~al.}}}
-\bibcite{sft_memorizes_rl_generalizes}{{4}{2025}{{Chu et~al.}}{{}}}
-\bibcite{clark2018arc}{{5}{2018}{{Clark et~al.}}{{Clark, Cowhey, Etzioni, Khot, Sabharwal, Schoenick, and Tafjord}}}
-\bibcite{cobbe2021gsm8k}{{6}{2021}{{Cobbe et~al.}}{{Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano et~al.}}}
-\bibcite{deepseekr1}{{7}{2025}{{DeepSeek-AI}}{{}}}
-\bibcite{dettmers2023qlora}{{8}{2023}{{Dettmers et~al.}}{{Dettmers, Pagnoni, Holtzman, and Zettlemoyer}}}
-\bibcite{retu2026}{{9}{2026}{{Ding et~al.}}{{}}}
-\bibcite{delay_plateau_collapse}{{10}{2026}{{Egashira et~al.}}{{Egashira, Vero, Dekoninck, Dorner, Staab, and Vechev}}}
-\bibcite{eventrl}{{11}{2024}{{Gao et~al.}}{{Gao, Zhao, Rui et~al.}}}
-\bibcite{gao2023scaling}{{12}{2023}{{Gao et~al.}}{{Gao, Schulman, and Hilton}}}
-\bibcite{guha2024legalbench}{{13}{2024}{{Guha et~al.}}{{Guha, Nyarko, Ho, Ré, Chilton, Chami et~al.}}}
-\bibcite{hu2022lora}{{14}{2022}{{Hu et~al.}}{{Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen}}}
-\bibcite{jin2021medqa}{{15}{2021}{{Jin et~al.}}{{Jin, Pan, Oufattole, Weng, Fang, and Szolovits}}}
-\bibcite{quagmires2026}{{16}{2026}{{Kang et~al.}}{{Kang, Kuchnik, Padthe, Vlastelica, Jia, Wu, and Ardalani}}}
-\bibcite{kwon2023vllm}{{17}{2023}{{Kwon et~al.}}{{Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang, and Stoica}}}
+\@LN{599}{7}
+\@LN{600}{7}
+\@LN{601}{7}
+\@LN{602}{7}
+\@LN{603}{7}
+\@LN{604}{7}
+\@LN{605}{7}
+\@LN{606}{7}
+\@LN{607}{7}
+\@LN{608}{7}
+\@LN{609}{7}
+\@LN{610}{7}
+\@LN{611}{7}
+\@LN{612}{7}
+\@LN{613}{7}
+\@LN{614}{7}
+\@LN{615}{7}
+\@LN{616}{7}
+\@LN{617}{7}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Practical Reporting Guide}{8}{appendix.A}\protected@file@percent }
+\newlabel{sec:recipe_guide}{{A}{8}{Practical Reporting Guide}{appendix.A}{}}
+\@LN{618}{7}
+\@LN{619}{7}
+\@LN@col{2}
+\@LN{620}{7}
+\@LN{621}{7}
+\@LN{622}{7}
+\@LN{623}{7}
+\@LN{624}{7}
+\@LN{625}{7}
+\@LN{626}{7}
+\@LN{627}{7}
+\@LN{628}{7}
+\@LN{629}{7}
+\@LN{630}{7}
+\@LN{631}{7}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Hyperparameters}{8}{appendix.B}\protected@file@percent }
+\newlabel{sec:hyperparams}{{B}{8}{Hyperparameters}{appendix.B}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Training hyperparameters for LoRA-GRPO and supervised/RFT runs. We use 5e-7 as a conservative LoRA baseline and evaluate larger rates as sensitivity points. The sweep does not establish a universal optimum.\relax }}{8}{table.caption.8}\protected@file@percent }
+\newlabel{tab:hyperparams}{{6}{8}{Training hyperparameters for LoRA-GRPO and supervised/RFT runs. We use 5e-7 as a conservative LoRA baseline and evaluate larger rates as sensitivity points. The sweep does not establish a universal optimum.\relax }{table.caption.8}{}}
+\@LN{632}{7}
+\@writefile{toc}{\contentsline {section}{\numberline {C}SFT Data Scaling Details}{8}{appendix.C}\protected@file@percent }
+\newlabel{sec:sft_scaling}{{C}{8}{SFT Data Scaling Details}{appendix.C}{}}
+\@LN{633}{7}
+\@LN{634}{7}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces SFT accuracy at different data sizes. Math peaks at N=100 with steep degradation beyond. Medicine peaks at N=2000 with gentler slopes. Base accuracy: Math 84.4\%, Medicine 59.2\%.\relax }}{8}{table.caption.9}\protected@file@percent }
+\newlabel{tab:sft_scaling}{{7}{8}{SFT accuracy at different data sizes. Math peaks at N=100 with steep degradation beyond. Medicine peaks at N=2000 with gentler slopes. Base accuracy: Math 84.4\%, Medicine 59.2\%.\relax }{table.caption.9}{}}
+\@LN{635}{7}
+\@LN{636}{7}
+\@LN{637}{7}
+\@LN{638}{7}
 \@LN@col{1}
-\@LN{599}{8}
-\@LN{600}{8}
-\@LN{601}{8}
-\@LN{602}{8}
-\@LN{603}{8}
-\@LN{604}{8}
-\@LN{605}{8}
-\@LN{606}{8}
-\@LN{607}{8}
-\@LN{608}{8}
-\@LN{609}{8}
-\@LN{610}{8}
-\@LN{611}{8}
-\@LN{612}{8}
-\@LN{613}{8}
-\@LN{614}{8}
-\@LN{615}{8}
-\@LN{616}{8}
-\@LN{617}{8}
-\@LN{618}{8}
-\@LN{619}{8}
-\@LN{620}{8}
-\@LN{621}{8}
-\@LN{622}{8}
-\@LN{623}{8}
-\@LN{624}{8}
-\@LN{625}{8}
-\@LN{626}{8}
-\@LN{627}{8}
-\@LN{628}{8}
-\@LN{629}{8}
-\@LN{630}{8}
-\@LN{631}{8}
-\@LN{632}{8}
-\@LN{633}{8}
-\@LN{634}{8}
-\@LN{635}{8}
-\@LN{636}{8}
-\@LN{637}{8}
-\@LN{638}{8}
 \@LN{639}{8}
 \@LN{640}{8}
 \@LN{641}{8}
 \@LN{642}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Reward Function Details}{9}{appendix.D}\protected@file@percent }
+\newlabel{sec:rewards}{{D}{9}{Reward Function Details}{appendix.D}{}}
 \@LN{643}{8}
 \@LN{644}{8}
 \@LN{645}{8}
 \@LN{646}{8}
 \@LN{647}{8}
-\@LN@col{2}
 \@LN{648}{8}
 \@LN{649}{8}
 \@LN{650}{8}
 \@LN{651}{8}
 \@LN{652}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {E}SFT Data Construction}{9}{appendix.E}\protected@file@percent }
+\newlabel{sec:sft_data}{{E}{9}{SFT Data Construction}{appendix.E}{}}
 \@LN{653}{8}
 \@LN{654}{8}
 \@LN{655}{8}
@@ -807,6 +800,8 @@
 \@LN{665}{8}
 \@LN{666}{8}
 \@LN{667}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Full SFT Data Scaling Results}{9}{appendix.F}\protected@file@percent }
+\newlabel{sec:full_sft}{{F}{9}{Full SFT Data Scaling Results}{appendix.F}{}}
 \@LN{668}{8}
 \@LN{669}{8}
 \@LN{670}{8}
@@ -815,6 +810,8 @@
 \@LN{673}{8}
 \@LN{674}{8}
 \@LN{675}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {G}GRPO Learning Rate Sweep Details}{9}{appendix.G}\protected@file@percent }
+\newlabel{sec:grpo_lr}{{G}{9}{GRPO Learning Rate Sweep Details}{appendix.G}{}}
 \@LN{676}{8}
 \@LN{677}{8}
 \@LN{678}{8}
@@ -825,11 +822,14 @@
 \@LN{683}{8}
 \@LN{684}{8}
 \@LN{685}{8}
+\@LN@col{2}
 \@LN{686}{8}
 \@LN{687}{8}
 \@LN{688}{8}
 \@LN{689}{8}
 \@LN{690}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {H}Cross-Model Validation: Qwen3-8B}{9}{appendix.H}\protected@file@percent }
+\newlabel{sec:cross_model}{{H}{9}{Cross-Model Validation: Qwen3-8B}{appendix.H}{}}
 \@LN{691}{8}
 \@LN{692}{8}
 \@LN{693}{8}
@@ -840,41 +840,41 @@
 \@LN{698}{8}
 \@LN{699}{8}
 \@LN{700}{8}
-\bibcite{med_rlvr}{{18}{2025}{{Lai et~al.}}{{}}}
-\bibcite{lightman2024letsverify}{{19}{2024}{{Lightman et~al.}}{{Lightman, Kosaraju, Burda, Edwards, Baker, Lee, Leike, Schulman, Sutskever, and Cobbe}}}
-\bibcite{nori2023gpt4medicine}{{20}{2023}{{Nori et~al.}}{{Nori, Lee, Zhang, Carignan, Edgar, Fusi, King, Larson, Li, Liu et~al.}}}
-\bibcite{rafailov2023dpo}{{21}{2023}{{Rafailov et~al.}}{{Rafailov, Sharma, Mitchell, Ermon, Manning, and Finn}}}
-\bibcite{shao2024deepseekmath}{{22}{2024}{{Shao et~al.}}{{Shao, Wang, Zhu, Xu, Song, Zhang, Li, Wu, and Guo}}}
-\bibcite{singh2024restem}{{23}{2024}{{Singh et~al.}}{{Singh, Co-Reyes, Agarwal, Anand, Patil, Garcia, Liu, Harrison, Lee, Xu et~al.}}}
-\bibcite{singhal2023medpalm}{{24}{2023}{{Singhal et~al.}}{{Singhal, Azizi, Tu, Mahdavi, Wei, Chung, Scales, Tanwani, Cole-Lewis, Pfohl et~al.}}}
-\bibcite{qwen25}{{25}{2024}{{Team}}{{}}}
-\bibcite{wang2023mathshepherd}{{26}{2023}{{Wang et~al.}}{{Wang, Li, Shao, Xu, Dai, Li, Chen, Wu, and Sui}}}
-\bibcite{rl_squeezes_sft_expands}{{27}{2026}{{Wang et~al.}}{{}}}
-\bibcite{wei2022cot}{{28}{2022}{{Wei et~al.}}{{Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le, and Zhou}}}
-\bibcite{yu2025dapo}{{29}{2025}{{Yu et~al.}}{{}}}
-\bibcite{yuan2024selfrewarding}{{30}{2024}{{Yuan et~al.}}{{Yuan, Pang, Cho, Sukhbaatar, Xu, and Weston}}}
-\bibcite{yue2025doesrl}{{31}{2025}{{Yue et~al.}}{{Yue, Chen, Lu, Zhao, Guan, Li, Liu, Peng, Shen, Chen et~al.}}}
-\bibcite{zhou2024lima}{{32}{2024}{{Zhou et~al.}}{{Zhou, Liu, Xu, Iyer, Sun, Mao, Ma, Efrat, Yu, Yu et~al.}}}
-\bibstyle{acl_natbib}
+\@LN{701}{8}
+\@LN{702}{8}
+\@LN{703}{8}
+\@LN{704}{8}
+\@LN{705}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Training Dynamics: Reward Trajectories}{9}{appendix.I}\protected@file@percent }
+\newlabel{sec:training_dynamics}{{I}{9}{Training Dynamics: Reward Trajectories}{appendix.I}{}}
+\@LN{706}{8}
+\@LN{707}{8}
+\@LN{708}{8}
+\@LN{709}{8}
+\@LN{710}{8}
+\@LN{711}{8}
+\@LN{712}{8}
+\@LN{713}{8}
+\@LN{714}{8}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Approximate compute ledger, including exploratory and failed runs. The category counts are not a complete model inventory and should not be interpreted as independent evidence. Final reporting will be regenerated from run manifests.\relax }}{9}{table.13}\protected@file@percent }
+\newlabel{tab:compute}{{13}{9}{Approximate compute ledger, including exploratory and failed runs. The category counts are not a complete model inventory and should not be interpreted as independent evidence. Final reporting will be regenerated from run manifests.\relax }{table.13}{}}
+\@LN{715}{8}
+\@writefile{toc}{\contentsline {section}{\numberline {J}SFT$\to $GRPO Hybrid Details}{9}{appendix.J}\protected@file@percent }
+\newlabel{sec:hybrid_details}{{J}{9}{SFT$\to $GRPO Hybrid Details}{appendix.J}{}}
+\@LN{716}{8}
+\@LN{717}{8}
+\@LN{718}{8}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Math SFT (\%). Base: 84.4. Peak at $N$=100, steep degradation beyond.\relax }}{10}{table.caption.10}\protected@file@percent }
+\newlabel{tab:full_sft_math}{{8}{10}{Math SFT (\%). Base: 84.4. Peak at $N$=100, steep degradation beyond.\relax }{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Medicine RFT (\%). Base: 59.2. The mean is approximately flat and individual runs vary across $N$.\relax }}{10}{table.caption.10}\protected@file@percent }
+\newlabel{tab:full_sft_med}{{9}{10}{Medicine RFT (\%). Base: 59.2. The mean is approximately flat and individual runs vary across $N$.\relax }{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Science RFT (\%). Base: 71.1. The saved means increase across the evaluated sizes.\relax }}{10}{table.caption.10}\protected@file@percent }
+\newlabel{tab:full_sft_sci}{{10}{10}{Science RFT (\%). Base: 71.1. The saved means increase across the evaluated sizes.\relax }{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Descriptive LoRA-GRPO accuracy (\%) across saved learning-rate runs. Higher-rate means improve Math, Science, and Medicine; Law prefers the lower 5e-6 point in this small-data stress test. Uneven replication and test-based sweep selection preclude a universal optimum claim.\relax }}{10}{table.caption.11}\protected@file@percent }
+\newlabel{tab:full_grpo_lr}{{11}{10}{Descriptive LoRA-GRPO accuracy (\%) across saved learning-rate runs. Higher-rate means improve Math, Science, and Medicine; Law prefers the lower 5e-6 point in this small-data stress test. Uneven replication and test-based sweep selection preclude a universal optimum claim.\relax }{table.caption.11}{}}
 \@LN@col{1}
-\@LN{701}{9}
-\@LN{702}{9}
-\@LN{703}{9}
-\@LN{704}{9}
-\@LN{705}{9}
-\@LN{706}{9}
-\@LN{707}{9}
-\@LN{708}{9}
-\@LN{709}{9}
-\@LN{710}{9}
-\@LN{711}{9}
-\@LN{712}{9}
-\@LN{713}{9}
-\@LN{714}{9}
-\@LN{715}{9}
-\@LN{716}{9}
-\@LN{717}{9}
-\@LN{718}{9}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces High-rate GRPO spot checks on two model generations. Values for Qwen3 are single saved checkpoints; Qwen2.5 GRPO values are saved-run means. Both tables compare against each model's base and best reported supervised/RFT configuration, but only Qwen2.5 has a learning-rate sweep.\relax }}{10}{table.caption.12}\protected@file@percent }
+\newlabel{tab:cross_model_full}{{12}{10}{High-rate GRPO spot checks on two model generations. Values for Qwen3 are single saved checkpoints; Qwen2.5 GRPO values are saved-run means. Both tables compare against each model's base and best reported supervised/RFT configuration, but only Qwen2.5 has a learning-rate sweep.\relax }{table.caption.12}{}}
 \@LN{719}{9}
 \@LN{720}{9}
 \@LN{721}{9}
@@ -882,7 +882,12 @@
 \@LN{723}{9}
 \@LN{724}{9}
 \@LN{725}{9}
+\@LN@col{2}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces SFT$\to $GRPO hybrid results on Math. Seed coverage is shown explicitly. The saved hybrid scores are below the saved GRPO-only run, but the comparison is not compute matched and the $N$=5000 hybrid has one run.\relax }}{10}{table.caption.13}\protected@file@percent }
+\newlabel{tab:hybrid_full}{{14}{10}{SFT$\to $GRPO hybrid results on Math. Seed coverage is shown explicitly. The saved hybrid scores are below the saved GRPO-only run, but the comparison is not compute matched and the $N$=5000 hybrid has one run.\relax }{table.caption.13}{}}
 \@LN{726}{9}
+\@writefile{toc}{\contentsline {section}{\numberline {K}KL Penalty and Group Size Ablation}{10}{appendix.K}\protected@file@percent }
+\newlabel{sec:kl_ablation}{{K}{10}{KL Penalty and Group Size Ablation}{appendix.K}{}}
 \@LN{727}{9}
 \@LN{728}{9}
 \@LN{729}{9}
@@ -894,287 +899,66 @@
 \@LN{735}{9}
 \@LN{736}{9}
 \@LN{737}{9}
-\@LN{738}{9}
-\@LN{739}{9}
-\@LN{740}{9}
-\@LN{741}{9}
-\@LN{742}{9}
-\@LN{743}{9}
-\@LN{744}{9}
-\@LN{745}{9}
-\@LN{746}{9}
-\@LN{747}{9}
-\@LN{748}{9}
-\@LN{749}{9}
-\@LN{750}{9}
-\@LN{751}{9}
-\@LN{752}{9}
-\@LN{753}{9}
-\@LN{754}{9}
-\@LN{755}{9}
-\@LN{756}{9}
-\@LN@col{2}
-\@LN{757}{9}
-\@LN{758}{9}
-\@LN{759}{9}
-\@LN{760}{9}
-\@LN{761}{9}
-\@LN{762}{9}
-\@LN{763}{9}
-\@LN{764}{9}
-\@LN{765}{9}
-\@LN{766}{9}
-\@LN{767}{9}
-\@LN{768}{9}
-\@LN{769}{9}
-\@LN{770}{9}
-\@LN{771}{9}
-\@LN{772}{9}
-\@LN{773}{9}
-\@LN{774}{9}
-\@LN{775}{9}
-\@LN{776}{9}
-\@LN{777}{9}
-\@LN{778}{9}
-\@LN{779}{9}
-\@LN{780}{9}
-\@LN{781}{9}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Practical Recipe Guide}{10}{appendix.A}\protected@file@percent }
-\newlabel{sec:recipe_guide}{{A}{10}{Practical Recipe Guide}{appendix.A}{}}
-\@LN{782}{9}
-\@LN{783}{9}
-\@LN{784}{9}
-\@LN{785}{9}
-\@LN{786}{9}
-\@LN{787}{9}
-\@LN{788}{9}
-\@LN{789}{9}
-\@LN{790}{9}
-\@LN{791}{9}
-\@LN{792}{9}
-\@LN{793}{9}
-\@LN{794}{9}
-\@LN{795}{9}
-\@LN{796}{9}
-\@LN{797}{9}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Hyperparameters}{10}{appendix.B}\protected@file@percent }
-\newlabel{sec:hyperparams}{{B}{10}{Hyperparameters}{appendix.B}{}}
-\@LN{798}{9}
-\@writefile{toc}{\contentsline {section}{\numberline {C}SFT Data Scaling Details}{10}{appendix.C}\protected@file@percent }
-\newlabel{sec:sft_scaling}{{C}{10}{SFT Data Scaling Details}{appendix.C}{}}
-\@LN{799}{9}
-\@LN{800}{9}
-\@LN{801}{9}
-\@LN{802}{9}
-\@LN{803}{9}
-\@LN{804}{9}
-\@LN{805}{9}
-\@LN{806}{9}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Exploratory KL-coefficient and group-size ablations on Medicine. Rows are saved single runs and do not form a complete learning-rate $\times $ KL $\times $ group-size design; differences may include seed variation.\relax }}{11}{table.caption.14}\protected@file@percent }
+\newlabel{tab:kl_ablation}{{15}{11}{Exploratory KL-coefficient and group-size ablations on Medicine. Rows are saved single runs and do not form a complete learning-rate $\times $ KL $\times $ group-size design; differences may include seed variation.\relax }{table.caption.14}{}}
 \@LN@col{1}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Training hyperparameters for GRPO and SFT. GRPO learning rate is swept across four values (5e-7, 5e-6, 2e-5, 1e-4) per domain. The standard recipe uses 5e-7. Our results show 2e-5 is optimal for knowledge domains.\relax }}{11}{table.caption.12}\protected@file@percent }
-\newlabel{tab:hyperparams}{{6}{11}{Training hyperparameters for GRPO and SFT. GRPO learning rate is swept across four values (5e-7, 5e-6, 2e-5, 1e-4) per domain. The standard recipe uses 5e-7. Our results show 2e-5 is optimal for knowledge domains.\relax }{table.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces SFT accuracy at different data sizes. Math peaks at N=100 with steep degradation beyond. Medicine peaks at N=2000 with gentler slopes. Base accuracy: Math 84.4\%, Medicine 59.2\%.\relax }}{11}{table.caption.13}\protected@file@percent }
-\newlabel{tab:sft_scaling}{{7}{11}{SFT accuracy at different data sizes. Math peaks at N=100 with steep degradation beyond. Medicine peaks at N=2000 with gentler slopes. Base accuracy: Math 84.4\%, Medicine 59.2\%.\relax }{table.caption.13}{}}
-\@LN{807}{10}
-\@LN{808}{10}
-\@LN{809}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Reward Function Details}{11}{appendix.D}\protected@file@percent }
-\newlabel{sec:rewards}{{D}{11}{Reward Function Details}{appendix.D}{}}
-\@LN{810}{10}
-\@LN{811}{10}
-\@LN{812}{10}
-\@LN{813}{10}
-\@LN{814}{10}
-\@LN{815}{10}
-\@LN{816}{10}
-\@LN{817}{10}
-\@LN{818}{10}
-\@LN{819}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {E}SFT Data Construction}{11}{appendix.E}\protected@file@percent }
-\newlabel{sec:sft_data}{{E}{11}{SFT Data Construction}{appendix.E}{}}
-\@LN{820}{10}
-\@LN{821}{10}
-\@LN{822}{10}
-\@LN{823}{10}
-\@LN{824}{10}
-\@LN{825}{10}
-\@LN{826}{10}
+\@LN{738}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {L}Cross-Model Validation}{11}{appendix.L}\protected@file@percent }
+\newlabel{sec:cross_model_appendix}{{L}{11}{Cross-Model Validation}{appendix.L}{}}
+\@LN{739}{10}
+\@LN{740}{10}
+\@LN{741}{10}
+\@LN{742}{10}
+\@LN{743}{10}
+\@LN{744}{10}
+\@LN{745}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {M}Out-of-Distribution Transfer}{11}{appendix.M}\protected@file@percent }
+\newlabel{sec:ood_transfer}{{M}{11}{Out-of-Distribution Transfer}{appendix.M}{}}
+\@LN{746}{10}
+\@LN{747}{10}
+\@LN{748}{10}
+\@LN{749}{10}
+\@LN{750}{10}
+\@LN{751}{10}
+\@LN{752}{10}
+\@LN{753}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {N}Exploratory Reverse-Transfer Control}{11}{appendix.N}\protected@file@percent }
+\newlabel{sec:sft_reverse_transfer}{{N}{11}{Exploratory Reverse-Transfer Control}{appendix.N}{}}
+\@LN{754}{10}
+\@LN{755}{10}
+\@LN{756}{10}
+\@LN{757}{10}
+\@LN{758}{10}
+\@LN{759}{10}
+\@LN{760}{10}
+\@LN{761}{10}
+\@LN{762}{10}
+\@LN{763}{10}
+\@LN{764}{10}
+\@LN{765}{10}
+\@LN{766}{10}
+\@LN{767}{10}
+\@LN{768}{10}
+\@LN{769}{10}
+\@LN{770}{10}
+\@writefile{toc}{\contentsline {section}{\numberline {O}Filtered Self-Training Results}{11}{appendix.O}\protected@file@percent }
+\newlabel{sec:opd_results}{{O}{11}{Filtered Self-Training Results}{appendix.O}{}}
+\@LN{771}{10}
+\@LN{772}{10}
+\@LN{773}{10}
+\@LN{774}{10}
 \@LN@col{2}
-\@LN{827}{10}
-\@LN{828}{10}
-\@LN{829}{10}
-\@LN{830}{10}
-\@LN{831}{10}
-\@LN{832}{10}
-\@LN{833}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {F}Full SFT Data Scaling Results}{11}{appendix.F}\protected@file@percent }
-\newlabel{sec:full_sft}{{F}{11}{Full SFT Data Scaling Results}{appendix.F}{}}
-\@LN{834}{10}
-\@LN{835}{10}
-\@LN{836}{10}
-\@LN{837}{10}
-\@LN{838}{10}
-\@LN{839}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {G}GRPO Learning Rate Sweep Details}{11}{appendix.G}\protected@file@percent }
-\newlabel{sec:grpo_lr}{{G}{11}{GRPO Learning Rate Sweep Details}{appendix.G}{}}
-\@LN{840}{10}
-\@LN{841}{10}
-\@LN{842}{10}
-\@LN{843}{10}
-\@LN{844}{10}
-\@LN{845}{10}
-\@LN{846}{10}
-\@LN{847}{10}
-\@LN{848}{10}
-\@LN{849}{10}
-\@LN{850}{10}
-\@LN{851}{10}
-\@LN{852}{10}
-\@LN{853}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {H}Cross-Model Validation: Qwen3-8B}{11}{appendix.H}\protected@file@percent }
-\newlabel{sec:cross_model}{{H}{11}{Cross-Model Validation: Qwen3-8B}{appendix.H}{}}
-\@LN{854}{10}
-\@LN{855}{10}
-\@LN{856}{10}
-\@LN{857}{10}
-\@LN{858}{10}
-\@LN{859}{10}
-\@LN{860}{10}
-\@LN{861}{10}
-\@LN{862}{10}
-\@LN{863}{10}
-\@LN{864}{10}
-\@LN{865}{10}
-\@LN{866}{10}
-\@LN{867}{10}
-\@writefile{toc}{\contentsline {section}{\numberline {I}Training Dynamics: Reward Trajectories}{11}{appendix.I}\protected@file@percent }
-\newlabel{sec:training_dynamics}{{I}{11}{Training Dynamics: Reward Trajectories}{appendix.I}{}}
-\@LN{868}{10}
-\@LN{869}{10}
-\@LN{870}{10}
-\@LN{871}{10}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Math SFT (\%). Base: 84.4. Peak at $N$=100, steep degradation beyond.\relax }}{12}{table.caption.14}\protected@file@percent }
-\newlabel{tab:full_sft_math}{{8}{12}{Math SFT (\%). Base: 84.4. Peak at $N$=100, steep degradation beyond.\relax }{table.caption.14}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Medicine SFT (\%). Base: 59.2. Flat at all $N$. s42 peak is noise ($\sigma $=1.5).\relax }}{12}{table.caption.14}\protected@file@percent }
-\newlabel{tab:full_sft_med}{{9}{12}{Medicine SFT (\%). Base: 59.2. Flat at all $N$. s42 peak is noise ($\sigma $=1.5).\relax }{table.caption.14}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Science SFT (\%). Base: 71.1. Monotonic improvement, no degradation.\relax }}{12}{table.caption.14}\protected@file@percent }
-\newlabel{tab:full_sft_sci}{{10}{12}{Science SFT (\%). Base: 71.1. Monotonic improvement, no degradation.\relax }{table.caption.14}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces GRPO accuracy (\%) across learning rates and domains. MCQ domains (Math, Science, Medicine) peak at lr=2e-5. Law (binary reward, 31 examples) peaks at lr=5e-6. The optimal lr is dataset-size dependent.\relax }}{12}{table.caption.15}\protected@file@percent }
-\newlabel{tab:full_grpo_lr}{{11}{12}{GRPO accuracy (\%) across learning rates and domains. MCQ domains (Math, Science, Medicine) peak at lr=2e-5. Law (binary reward, 31 examples) peaks at lr=5e-6. The optimal lr is dataset-size dependent.\relax }{table.caption.15}{}}
-\@LN@col{1}
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Cross-model validation across three domains. GRPO lr=2e-5 outperforms SFT on both model generations for all three domains. On Qwen3-8B, Math GRPO reaches 90.5\% (+9.0\%), Science 78.7\% (+4.8\%), and Medicine 62.9\% (+12.4\%), all surpassing SFT.\relax }}{12}{table.caption.16}\protected@file@percent }
-\newlabel{tab:cross_model_full}{{12}{12}{Cross-model validation across three domains. GRPO lr=2e-5 outperforms SFT on both model generations for all three domains. On Qwen3-8B, Math GRPO reaches 90.5\% (+9.0\%), Science 78.7\% (+4.8\%), and Medicine 62.9\% (+12.4\%), all surpassing SFT.\relax }{table.caption.16}{}}
-\@LN{872}{11}
-\@LN{873}{11}
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces GRPO training dynamics on Medicine. lr=2e-5 raises reward to 0.83 (+7.4\% test). lr=5e-7 is flat.\relax }}{12}{table.13}\protected@file@percent }
+\@LN{775}{10}
+\@LN{776}{10}
+\@LN{777}{10}
+\@LN{778}{10}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces High-rate GRPO spot checks on five model checkpoints from four organizations. The 2e-5 runs improve over each checkpoint's base score in the reported tasks. Most rows are single-run and lack a matched conservative-rate control, so the table does not establish cross-model learning-rate sensitivity.\relax }}{12}{table.caption.15}\protected@file@percent }
+\newlabel{tab:cross_model_appendix}{{16}{12}{High-rate GRPO spot checks on five model checkpoints from four organizations. The 2e-5 runs improve over each checkpoint's base score in the reported tasks. Most rows are single-run and lack a matched conservative-rate control, so the table does not establish cross-model learning-rate sensitivity.\relax }{table.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Exploratory transfer results from the saved evaluation artifacts. Transfer ratio is $\Delta $OOD/$\Delta $ID and can exceed one because the ID and OOD suites have different scales and difficulty. The three rows are insufficient to validate frac\_reward\_zero\_std as a predictor.\relax }}{12}{table.caption.16}\protected@file@percent }
+\newlabel{tab:ood_transfer}{{17}{12}{Exploratory transfer results from the saved evaluation artifacts. Transfer ratio is $\Delta $OOD/$\Delta $ID and can exceed one because the ID and OOD suites have different scales and difficulty. The three rows are insufficient to validate frac\_reward\_zero\_std as a predictor.\relax }{table.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Exploratory evaluation of a math-supervised checkpoint on three benchmarks. The accuracy changes are compatible with response-format effects, but do not uniquely identify them. Three saved runs are reported.\relax }}{12}{table.caption.17}\protected@file@percent }
+\newlabel{tab:sft_reverse}{{18}{12}{Exploratory evaluation of a math-supervised checkpoint on three benchmarks. The accuracy changes are compatible with response-format effects, but do not uniquely identify them. Three saved runs are reported.\relax }{table.caption.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces Filtered self-training results on Science and Medicine. Parentheses give the number of saved runs. The small mean changes are descriptive; a matched-prompt, matched-token RFT/FST experiment is required to attribute the difference to response provenance or selection.\relax }}{12}{table.caption.18}\protected@file@percent }
+\newlabel{tab:opd_results}{{19}{12}{Filtered self-training results on Science and Medicine. Parentheses give the number of saved runs. The small mean changes are descriptive; a matched-prompt, matched-token RFT/FST experiment is required to attribute the difference to response provenance or selection.\relax }{table.caption.18}{}}
 \@LN@col{2}
-\newlabel{tab:reward_dynamics}{{13}{12}{GRPO training dynamics on Medicine. lr=2e-5 raises reward to 0.83 (+7.4\% test). lr=5e-7 is flat.\relax }{table.13}{}}
-\@LN{874}{11}
-\@LN{875}{11}
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Compute budget. $\sim $200 H200 GPU-hours across 200+ models. LoRA kept memory below 35GB, enabling single-GPU parallelism.\relax }}{12}{table.14}\protected@file@percent }
-\newlabel{tab:compute}{{14}{12}{Compute budget. $\sim $200 H200 GPU-hours across 200+ models. LoRA kept memory below 35GB, enabling single-GPU parallelism.\relax }{table.14}{}}
-\@LN{876}{11}
-\@writefile{toc}{\contentsline {section}{\numberline {J}SFT$\to $GRPO Hybrid Details}{12}{appendix.J}\protected@file@percent }
-\newlabel{sec:hybrid_details}{{J}{12}{SFT$\to $GRPO Hybrid Details}{appendix.J}{}}
-\@LN{877}{11}
-\@LN{878}{11}
-\@LN{879}{11}
-\@LN{880}{11}
-\@LN{881}{11}
-\@LN{882}{11}
-\citation{bae2025difficulty}
-\citation{bae2025difficulty}
-\@LN@col{1}
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces SFT$\to $GRPO hybrid results on Math (\%, seed 42). Pure GRPO at lr=2e-5 achieves 92.8\% (seed 42, multi-seed avg 92.2\%), outperforming both the hybrid SFT(100)$\to $GRPO (89.3\%, 2-seed avg) and SFT alone (88.2\%). Excessive SFT ($n$=5000) before GRPO degrades below base because over-SFT destroys the diversity GRPO needs.\relax }}{13}{table.caption.17}\protected@file@percent }
-\newlabel{tab:hybrid_full}{{15}{13}{SFT$\to $GRPO hybrid results on Math (\%, seed 42). Pure GRPO at lr=2e-5 achieves 92.8\% (seed 42, multi-seed avg 92.2\%), outperforming both the hybrid SFT(100)$\to $GRPO (89.3\%, 2-seed avg) and SFT alone (88.2\%). Excessive SFT ($n$=5000) before GRPO degrades below base because over-SFT destroys the diversity GRPO needs.\relax }{table.caption.17}{}}
-\@LN{883}{12}
-\@LN{884}{12}
-\@LN{885}{12}
-\@LN{886}{12}
-\@LN{887}{12}
-\@LN{888}{12}
-\@LN{889}{12}
-\@LN{890}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {K}KL Penalty and Group Size Ablation}{13}{appendix.K}\protected@file@percent }
-\newlabel{sec:kl_ablation}{{K}{13}{KL Penalty and Group Size Ablation}{appendix.K}{}}
-\@LN{891}{12}
-\@LN{892}{12}
-\@LN{893}{12}
-\@LN{894}{12}
-\@LN{895}{12}
-\@LN{896}{12}
-\@LN{897}{12}
-\@LN{898}{12}
-\@LN{899}{12}
-\@LN{900}{12}
-\@LN{901}{12}
-\@LN{902}{12}
-\@LN{903}{12}
-\@LN{904}{12}
-\@LN{905}{12}
-\@LN{906}{12}
-\@LN{907}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {L}Cross-Model Validation}{13}{appendix.L}\protected@file@percent }
-\newlabel{sec:cross_model_appendix}{{L}{13}{Cross-Model Validation}{appendix.L}{}}
-\@LN{908}{12}
-\@LN{909}{12}
-\@LN{910}{12}
-\@LN{911}{12}
-\@LN{912}{12}
-\@LN{913}{12}
-\@LN{914}{12}
-\@LN@col{2}
-\@LN{915}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {M}Out-of-Distribution Transfer}{13}{appendix.M}\protected@file@percent }
-\newlabel{sec:ood_transfer}{{M}{13}{Out-of-Distribution Transfer}{appendix.M}{}}
-\@LN{916}{12}
-\@LN{917}{12}
-\@LN{918}{12}
-\@LN{919}{12}
-\@LN{920}{12}
-\@LN{921}{12}
-\@LN{922}{12}
-\@LN{923}{12}
-\@LN{924}{12}
-\@LN{925}{12}
-\@LN{926}{12}
-\@LN{927}{12}
-\@LN{928}{12}
-\@LN{929}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {N}SFT Learns Format, Not Domain Knowledge}{13}{appendix.N}\protected@file@percent }
-\newlabel{sec:sft_reverse_transfer}{{N}{13}{SFT Learns Format, Not Domain Knowledge}{appendix.N}{}}
-\@LN{930}{12}
-\@LN{931}{12}
-\@LN{932}{12}
-\@LN{933}{12}
-\@LN{934}{12}
-\@LN{935}{12}
-\@LN{936}{12}
-\@LN{937}{12}
-\@LN{938}{12}
-\@LN{939}{12}
-\@LN{940}{12}
-\@LN{941}{12}
-\@LN{942}{12}
-\@LN{943}{12}
-\@LN{944}{12}
-\@LN{945}{12}
-\@LN{946}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {O}On-Policy Self-Distillation (OPD) Results}{13}{appendix.O}\protected@file@percent }
-\newlabel{sec:opd_results}{{O}{13}{On-Policy Self-Distillation (OPD) Results}{appendix.O}{}}
-\@LN{947}{12}
-\@LN{948}{12}
-\@LN{949}{12}
-\@LN{950}{12}
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces KL penalty ($\beta $) and group size ($K$) ablation on Medicine. Increasing $\beta $ from 0.001 to 0.1 progressively constrains policy shift, reducing gain from +7.4\% to +1.0\%. Removing KL entirely at standard lr ($\beta $=0, first row) causes \emph  {degradation} below base: KL stabilizes training when lr is too low to provide directional signal. Learning rate remains the primary lever in all settings.\relax }}{14}{table.caption.18}\protected@file@percent }
-\newlabel{tab:kl_ablation}{{16}{14}{KL penalty ($\beta $) and group size ($K$) ablation on Medicine. Increasing $\beta $ from 0.001 to 0.1 progressively constrains policy shift, reducing gain from +7.4\% to +1.0\%. Removing KL entirely at standard lr ($\beta $=0, first row) causes \emph {degradation} below base: KL stabilizes training when lr is too low to provide directional signal. Learning rate remains the primary lever in all settings.\relax }{table.caption.18}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Cross-model validation of GRPO lr=2e-5 across five architecturally distinct model families from four research labs. All models show positive improvement (+6 to +12pp on Medicine, consistent multi-point gains on Science). The absolute gain is consistent across models regardless of base accuracy, showing that the lr sensitivity phenomenon holds across all tested architectures. Models span 2023--2025 releases with different pretraining corpora, vocabulary sizes, and attention mechanisms.\relax }}{14}{table.caption.19}\protected@file@percent }
-\newlabel{tab:cross_model_appendix}{{17}{14}{Cross-model validation of GRPO lr=2e-5 across five architecturally distinct model families from four research labs. All models show positive improvement (+6 to +12pp on Medicine, consistent multi-point gains on Science). The absolute gain is consistent across models regardless of base accuracy, showing that the lr sensitivity phenomenon holds across all tested architectures. Models span 2023--2025 releases with different pretraining corpora, vocabulary sizes, and attention mechanisms.\relax }{table.caption.19}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Out-of-distribution transfer evaluation. Transfer Ratio = $\Delta $OOD / $\Delta $ID measures how much of the in-distribution gain generalizes. Medicine achieves near-complete transfer (ratio $>$1), meaning genuine knowledge consolidation. Math and Commonsense show minimal transfer despite large ID gains, meaning format-specific optimization. The frac\_reward\_zero\_std diagnostic at training onset predicts this ordering: lower values correspond to stronger OOD transfer, consistent with the theoretical prediction of \citet  {bae2025difficulty}.\relax }}{14}{table.caption.20}\protected@file@percent }
-\newlabel{tab:ood_transfer}{{18}{14}{Out-of-distribution transfer evaluation. Transfer Ratio = $\Delta $OOD / $\Delta $ID measures how much of the in-distribution gain generalizes. Medicine achieves near-complete transfer (ratio $>$1), meaning genuine knowledge consolidation. Math and Commonsense show minimal transfer despite large ID gains, meaning format-specific optimization. The frac\_reward\_zero\_std diagnostic at training onset predicts this ordering: lower values correspond to stronger OOD transfer, consistent with the theoretical prediction of \citet {bae2025difficulty}.\relax }{table.caption.20}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces SFT trained on math data hurts math but improves unrelated domains. The model learns MCQ output format (selecting A/B/C/D cleanly), not mathematical reasoning. 3 seeds, std $<$ 0.2 on all benchmarks.\relax }}{15}{table.caption.21}\protected@file@percent }
-\newlabel{tab:sft_reverse}{{19}{15}{SFT trained on math data hurts math but improves unrelated domains. The model learns MCQ output format (selecting A/B/C/D cleanly), not mathematical reasoning. 3 seeds, std $<$ 0.2 on all benchmarks.\relax }{table.caption.21}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces On-policy self-distillation (OPD) results on Science and Medicine. OPD produces no meaningful improvement over base ($\Delta $ $<$ 1pp in both domains). The null result indicates that self-generated data, without external signal from a teacher (SFT) or reward function (GRPO), cannot push the model beyond its current capability boundary.\relax }}{15}{table.caption.22}\protected@file@percent }
-\newlabel{tab:opd_results}{{20}{15}{On-policy self-distillation (OPD) results on Science and Medicine. OPD produces no meaningful improvement over base ($\Delta $ $<$ 1pp in both domains). The null result indicates that self-generated data, without external signal from a teacher (SFT) or reward function (GRPO), cannot push the model beyond its current capability boundary.\relax }{table.caption.22}{}}
-\@LN@col{2}
-\gdef \@abspage@last{15}
+\gdef \@abspage@last{12}

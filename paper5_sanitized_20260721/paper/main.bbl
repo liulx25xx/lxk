@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Anonymous(2025)}]{r1_re}
@@ -12,13 +12,6 @@ Sanghwan Bae and 1 others. 2025.
 \newblock Online difficulty filtering for reasoning oriented reinforcement
   learning.
 \newblock \emph{arXiv preprint arXiv:2504.03380}.
-
-\bibitem[{Bai et~al.(2023)Bai, Bai, Chu, Cui, Dang, Deng, Fan, Ge, Han, Huang
-  et~al.}]{bai2023qwen}
-Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan,
-  Wenbin Ge, Yu~Han, Fei Huang, and 1 others. 2023.
-\newblock Qwen technical report.
-\newblock \emph{arXiv preprint arXiv:2309.16609}.
 
 \bibitem[{Chu et~al.(2025)}]{sft_memorizes_rl_generalizes}
 Tianzhe Chu and 1 others. 2025.
@@ -47,20 +40,6 @@ DeepSeek-AI. 2025.
 \newblock Deepseek-r1: Incentivizing reasoning capability in llms via
   reinforcement learning.
 \newblock \emph{arXiv preprint arXiv:2501.12948}.
-
-\bibitem[{Dettmers et~al.(2023)Dettmers, Pagnoni, Holtzman, and
-  Zettlemoyer}]{dettmers2023qlora}
-Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. 2023.
-\newblock {QLoRA}: Efficient finetuning of quantized language models.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~36.
-
-\bibitem[{Ding et~al.(2026)}]{retu2026}
-Bowen Ding and 1 others. 2026.
-\newblock Rethinking expert trajectory utilization in llm post-training for
-  mathematical reasoning.
-\newblock \emph{Proceedings of the Annual Meeting of the Association for
-  Computational Linguistics (ACL)}.
 
 \bibitem[{Egashira et~al.(2026)Egashira, Vero, Dekoninck, Dorner, Staab, and
   Vechev}]{delay_plateau_collapse}
@@ -104,54 +83,16 @@ Di~Jin, Eileen Pan, Nassim Oufattole, Wei-Hung Weng, Hanyi Fang, and Peter
   question answering dataset from medical exams.
 \newblock \emph{Applied Sciences}, 11(14).
 
-\bibitem[{Kang et~al.(2026)Kang, Kuchnik, Padthe, Vlastelica, Jia, Wu, and
-  Ardalani}]{quagmires2026}
-Feiyang Kang, Michael Kuchnik, Karthik Padthe, Marin Vlastelica, Ruoxi Jia,
-  Carole-Jean Wu, and Newsha Ardalani. 2026.
-\newblock Quagmires in sft-rl post-training: When high sft scores mislead and
-  what to use instead.
-\newblock \emph{Proceedings of the International Conference on Learning
-  Representations (ICLR)}.
-
-\bibitem[{Kwon et~al.(2023)Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang,
-  and Stoica}]{kwon2023vllm}
-Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody~Hao Yu,
-  Joseph~E Gonzalez, Hao Zhang, and Ion Stoica. 2023.
-\newblock Efficient memory management for large language model serving with
-  {PagedAttention}.
-\newblock In \emph{Proceedings of the 29th Symposium on Operating Systems
-  Principles}.
-
 \bibitem[{Lai et~al.(2025)}]{med_rlvr}
 Jiaxin Lai and 1 others. 2025.
 \newblock Med-rlvr: Emerging medical reasoning from a 3b base model via
   reinforcement learning.
 \newblock \emph{arXiv preprint arXiv:2502.19655}.
 
-\bibitem[{Lightman et~al.(2024)Lightman, Kosaraju, Burda, Edwards, Baker, Lee,
-  Leike, Schulman, Sutskever, and Cobbe}]{lightman2024letsverify}
-Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy
-  Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe. 2024.
-\newblock Let's verify step by step.
-\newblock In \emph{International Conference on Learning Representations}.
-
-\bibitem[{Nori et~al.(2023)Nori, Lee, Zhang, Carignan, Edgar, Fusi, King,
-  Larson, Li, Liu et~al.}]{nori2023gpt4medicine}
-Harsha Nori, Yin~Tat Lee, Sheng Zhang, Dean Carignan, Richard Edgar, Nicolo
-  Fusi, Nicholas King, Jonathan Larson, Yuanzhi Li, Weishung Liu, and 1 others.
-  2023.
-\newblock Can generalist foundation models outperform special-purpose tuning?
-  case study in medicine.
-\newblock \emph{arXiv preprint arXiv:2311.16452}.
-
-\bibitem[{Rafailov et~al.(2023)Rafailov, Sharma, Mitchell, Ermon, Manning, and
-  Finn}]{rafailov2023dpo}
-Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher~D
-  Manning, and Chelsea Finn. 2023.
-\newblock Direct preference optimization: Your language model is secretly a
-  reward model.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~36.
+\bibitem[{{Qwen Team}(2024)}]{qwen25}
+{Qwen Team}. 2024.
+\newblock Qwen2.5 technical report.
+\newblock \emph{arXiv preprint arXiv:2412.15115}.
 
 \bibitem[{Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Zhang, Li, Wu, and
   Guo}]{shao2024deepseekmath}
@@ -160,36 +101,6 @@ Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Mingchuan Zhang,
 \newblock Deepseekmath: Pushing the limits of mathematical reasoning in open
   language models.
 \newblock \emph{arXiv preprint arXiv:2402.03300}.
-
-\bibitem[{Singh et~al.(2024)Singh, Co-Reyes, Agarwal, Anand, Patil, Garcia,
-  Liu, Harrison, Lee, Xu et~al.}]{singh2024restem}
-Avi Singh, John~D Co-Reyes, Rishabh Agarwal, Ankesh Anand, Piyush Patil, Xavier
-  Garcia, Peter~J Liu, James Harrison, Jaehoon Lee, Kelvin Xu, and 1 others.
-  2024.
-\newblock Beyond human data: Scaling self-training for problem-solving with
-  language models.
-\newblock \emph{Transactions on Machine Learning Research}.
-
-\bibitem[{Singhal et~al.(2023)Singhal, Azizi, Tu, Mahdavi, Wei, Chung, Scales,
-  Tanwani, Cole-Lewis, Pfohl et~al.}]{singhal2023medpalm}
-Karan Singhal, Shekoofeh Azizi, Tao Tu, S~Sara Mahdavi, Jason Wei, Hyung~Won
-  Chung, Nathan Scales, Ajay Tanwani, Heather Cole-Lewis, Stephen Pfohl, and 1
-  others. 2023.
-\newblock Large language models encode clinical knowledge.
-\newblock \emph{Nature}, 620(7972):172--180.
-
-\bibitem[{Team(2024)}]{qwen25}
-Qwen Team. 2024.
-\newblock Qwen2.5 technical report.
-\newblock \emph{arXiv preprint arXiv:2412.15115}.
-
-\bibitem[{Wang et~al.(2023)Wang, Li, Shao, Xu, Dai, Li, Chen, Wu, and
-  Sui}]{wang2023mathshepherd}
-Peiyi Wang, Lei Li, Zhihong Shao, R.X. Xu, Damai Dai, Yifei Li, Deli Chen,
-  Y.~Wu, and Zhifang Sui. 2023.
-\newblock Math-shepherd: Verify and reinforce {LLMs} step-by-step without human
-  annotations.
-\newblock \emph{arXiv preprint arXiv:2312.08935}.
 
 \bibitem[{Wang et~al.(2026)}]{rl_squeezes_sft_expands}
 Ziming Wang and 1 others. 2026.
@@ -206,17 +117,17 @@ Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
 \newblock In \emph{Advances in Neural Information Processing Systems},
   volume~35.
 
+\bibitem[{Yang et~al.(2025)Yang, Li, Yang, Zhang, Hui, Zheng, Yu, Gao, Huang,
+  Lv et~al.}]{qwen3}
+An~Yang, Anfeng Li, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo~Zheng, Bowen
+  Yu, Chang Gao, Chengen Huang, Chenxu Lv, and 1 others. 2025.
+\newblock Qwen3 technical report.
+\newblock \emph{arXiv preprint arXiv:2505.09388}.
+
 \bibitem[{Yu et~al.(2025)}]{yu2025dapo}
 Qiying Yu and 1 others. 2025.
 \newblock Dapo: An open-source llm reinforcement learning system.
 \newblock \emph{arXiv preprint arXiv:2503.14476}.
-
-\bibitem[{Yuan et~al.(2024)Yuan, Pang, Cho, Sukhbaatar, Xu, and
-  Weston}]{yuan2024selfrewarding}
-Weizhe Yuan, Richard~Yuanzhe Pang, Kyunghyun Cho, Sainbayar Sukhbaatar, Jing
-  Xu, and Jason Weston. 2024.
-\newblock Self-rewarding language models.
-\newblock \emph{arXiv preprint arXiv:2401.10020}.
 
 \bibitem[{Yue et~al.(2025)Yue, Chen, Lu, Zhao, Guan, Li, Liu, Peng, Shen, Chen
   et~al.}]{yue2025doesrl}

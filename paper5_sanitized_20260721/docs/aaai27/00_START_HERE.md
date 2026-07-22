@@ -1,10 +1,10 @@
 # AAAI-27 实验优先修订：从这里开始
 
-最后更新：2026-07-21
+最后更新：2026-07-22
 
 ## 当前工作方式
 
-本轮修订严格分成两个阶段，避免一边跑实验一边反复改正文。
+本轮修订分成两个阶段。已经能依据现有 artifacts 和审稿意见确定的事实错误、方法命名和过强结论已先在 `paper/main.tex` 中修正；所有 headline 数字、最终主图和机制结论仍等待 Phase A 冻结后再定稿。
 
 ### Phase A：先完成实验和证据链
 
@@ -24,13 +24,13 @@
 - 不使用旧 tracker 中的 “universal”“all five domains”等结论；
 - 不再根据 test 结果追加 LR 或选择 checkpoint。
 
-具体执行顺序见 [`01_PHASE_A_EXPERIMENTS.md`](01_PHASE_A_EXPERIMENTS.md)，结果填写见 [`02_RESULT_TRACKER.md`](02_RESULT_TRACKER.md)。
+具体执行顺序见 [`01_PHASE_A_EXPERIMENTS.md`](01_PHASE_A_EXPERIMENTS.md)，按审稿意见整理的最小实验包见 [`04_REVIEW_DRIVEN_EXPERIMENT_LIST.md`](04_REVIEW_DRIVEN_EXPERIMENT_LIST.md)，结果填写见 [`02_RESULT_TRACKER.md`](02_RESULT_TRACKER.md)。
 
 ### Phase B：实验冻结后再改正文
 
-只有 Phase A 的 Go/No-Go gate 全部通过，才开始：
+只有 Phase A 的 Go/No-Go gate 全部通过，才最终确定：
 
-1. 重写 title、abstract、introduction 和 contributions；
+1. title、abstract、introduction 和 contributions 中的最终主张与 headline 数字；
 2. 根据 dev-selected test 结果重新生成主表和主图；
 3. 删除无原始日志支持的曲线和机制结论；
 4. 切换 AAAI-27 模板并压缩到 7 页正文。

@@ -640,44 +640,81 @@ File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (l3backend-xetex.def
+))) (enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip58
+\enit@outerparindent=\dimen310
+\enit@toks=\toks45
+\enit@inbox=\box67
+\enit@count@id=\count334
+\enitdp@description=\count335
+) (tcolorbox.sty
+Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
+ (verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks46
+\verbatim@line=\toks47
+\verbatim@in@stream=\read3
+)
+(environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box68
+\tcb@upperbox=\box69
+\tcb@lowerbox=\box70
+\tcb@phantombox=\box71
+\c@tcbbreakpart=\count336
+\c@tcblayer=\count337
+\c@tcolorbox@number=\count338
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@temp=\box75
+) (tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '5.0.2'
+\tcb@waterbox=\box76
+(tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'
+)) (l3backend-xetex.def
 File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
-\c__kernel_sys_dvipdfmx_version_int=\count334
-\l__color_backend_stack_int=\count335
-\g__color_backend_stack_int=\count336
-\g__graphics_track_int=\count337
-\l__pdf_internal_box=\box67
-\g__pdf_backend_object_int=\count338
-\g__pdf_backend_annotation_int=\count339
-\g__pdf_backend_link_int=\count340
+\c__kernel_sys_dvipdfmx_version_int=\count339
+\l__color_backend_stack_int=\count340
+\g__color_backend_stack_int=\count341
+\g__graphics_track_int=\count342
+\l__pdf_internal_box=\box77
+\g__pdf_backend_object_int=\count343
+\g__pdf_backend_annotation_int=\count344
+\g__pdf_backend_link_int=\count345
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+9.
  (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -716,7 +753,7 @@ LaTeX Font Info:    ... okay on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 49.
 (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (refcount.sty
@@ -724,20 +761,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count341
+\c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 34.
-Package microtype Info: Applying patch `item' on input line 34.
-Package microtype Info: Applying patch `toc' on input line 34.
-Package microtype Info: Applying patch `eqnum' on input line 34.
-Package microtype Info: Applying patch `footnote' on input line 34.
+LaTeX Info: Redefining \microtypecontext on input line 49.
+Package microtype Info: Applying patch `item' on input line 49.
+Package microtype Info: Applying patch `toc' on input line 49.
+Package microtype Info: Applying patch `eqnum' on input line 49.
+Package microtype Info: Applying patch `footnote' on input line 49.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -757,143 +794,147 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 35
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 50
 .
  (ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
+)
+Underfull \hbox (badness 2591) in paragraph at lines 60--61
+\T1/ptm/m/n/10.95 (RLVR) has be-come a widely used post-
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 60--61
+\T1/ptm/m/n/10.95 Rel-a-tive Pol-icy Op-ti-miza-tion (GRPO) as a
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 60--61
+\T1/ptm/m/n/10.95 prac-ti-cal al-ter-na-tive to actor--critic meth-ods,
+ []
+
+[1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-[]\T1/ptm/m/n/10.95 We de-rive a pre-training di-ag-nos-tic
+Underfull \hbox (badness 2119) in paragraph at lines 74--75
+[]\T1/ptm/m/n/10.95 We clar-ify the bound-aries of this re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-\T1/ptm/m/n/10.95 (\T1/ptm/m/it/10.95 frac_reward_zero_std\T1/ptm/m/n/10.95 ) t
-hat pre-dicts
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\T1/ptm/m/n/10.95 sult through filtered-self-training con-
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 57--58
-\T1/ptm/m/n/10.95 knowl-edge ac-qui-si-tion or surface-level
+Underfull \hbox (badness 1924) in paragraph at lines 74--75
+\T1/ptm/m/n/10.95 trols, benchmark-level trans-fer anal-y-ses,
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 65--67
-\T1/ptm/b/n/10.95 RLVR for LLM Rea-son-ing. \T1/ptm/m/n/10.95 The RLVR
+Underfull \hbox (badness 3679) in paragraph at lines 74--75
+\T1/ptm/m/n/10.95 additional-model spot checks, and an
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 65--67
-\T1/ptm/m/n/10.95 need for demon-stra-tions and sep-a-rate value
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\T1/ptm/m/n/10.95 ex-ploratory reward-variance di-ag-nos-tic,
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 65--67
-\T1/ptm/m/n/10.95 and sweep-ing recipe pa-ram-e-ters across five
+Underfull \hbox (badness 2726) in paragraph at lines 94--95
+\T1/ptm/m/n/10.95 four pri-mary do-mains, two supervised/self-
  []
 
-[2]
-Underfull \hbox (badness 2564) in paragraph at lines 109--110
-[]\T1/ptm/b/n/10.95 SFT. \T1/ptm/m/n/10.95 Su-per-vised fine-tuning on chain-of
--
- []
 
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
+ [2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-17.
+35.
+
 (ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 1325) in paragraph at lines 128--129
+Underfull \hbox (badness 1019) in paragraph at lines 139--140
+[]\T1/ptm/b/n/10.95 Comparable nom-i-nal epochs\T1/ptm/m/n/10.95 : ap-prox-i-
+ []
+
+[3]
+Underfull \hbox (badness 1325) in paragraph at lines 146--147
 []\T1/ptm/m/n/10.95 Full hy-per-pa-ram-e-ters are re-ported in Ap-
  []
 
 
-Overfull \hbox (27.77994pt too wide) in paragraph at lines 217--218
- [][] 
+Underfull \hbox (badness 1478) in paragraph at lines 209--210
+[]\T1/ptm/m/n/10.95 We do not in-clude the pre-vi-ous reward-
  []
 
-[3]
-Underfull \vbox (badness 2065) has occurred while \output is active []
+
+Underfull \hbox (badness 2343) in paragraph at lines 209--210
+\T1/ptm/m/n/10.95 trajectory fig-ure be-cause its plot-ted ar-rays
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 209--210
+\T1/ptm/m/n/10.95 are not re-cov-er-able from the san-i-tized run
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 211--212
+[]\T1/ptm/m/n/10.95 The ap-pro-pri-ate con-clu-sion is there-fore
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 211--212
+\T1/ptm/m/n/10.95 implementation-scoped: LoRA-GRPO should
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-[]\T1/ptm/m/n/10.95 The information-theoretic in-ter-pre-ta-tion:
+[5]
+Underfull \hbox (badness 2080) in paragraph at lines 260--261
+[]\T1/ptm/m/n/10.95 Three do-mains can-not val-i-date pre-dic-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-\T1/ptm/m/n/10.95 min-i-miza-tion (mode-seeking), con-cen-trat-ing
+Underfull \vbox (badness 7814) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 308--309
+\T1/ptm/m/n/10.95 Cross-benchmark trans-fer pro-vides a par-tial
  []
 
 
-Underfull \hbox (badness 3460) in paragraph at lines 301--302
-\T1/ptm/m/n/10.95 prob-a-bil-ity on ex-ist-ing high-reward modes.
+Underfull \hbox (badness 3758) in paragraph at lines 310--311
+[]\T1/ptm/m/n/10.95 Prior the-ory ex-plains why zero-variance
  []
 
 
-Underfull \vbox (badness 1688) has occurred while \output is active []
+Underfull \hbox (badness 1038) in paragraph at lines 310--311
+\T1/ptm/m/n/10.95 re-mains re-in-force-ment learn-ing; the rel-e-vant
+ []
 
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 303.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\to' on input line 303.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 303.
-
-Package pgfplots info on input line 337: Using 'lua backend=false' for axis: xm
-ode=log unsupported (yet).
-
-Underfull \vbox (badness 4454) has occurred while \output is active []
-
- [5]
-Underfull \hbox (badness 5417) in paragraph at lines 368--369
-[]\T1/ptm/b/n/10.95 Science \T1/ptm/m/n/10.95 im-proves mono-ton-i-cally throug
-h
+[6] (main.bbl
+Underfull \hbox (badness 1902) in paragraph at lines 5--9
+[]\T1/ptm/m/n/10 Anonymous. 2025.  [][]R1-re: Cross-domain re-
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 368--369
-\T1/ptm/m/n/10.95 base ac-cu-racy leaves room for knowl-edge
+Underfull \hbox (badness 1748) in paragraph at lines 5--9
+\T1/ptm/m/n/10 la-tion ex-trac-tion with rlvr[][].  \T1/ptm/m/it/10 arXiv prepr
+int
  []
 
-[6]
-Underfull \hbox (badness 3439) in paragraph at lines 408--409
-[]\T1/ptm/m/n/10.95 Quantitatively, ini-tial frac_reward_zero_std
- []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 408--409
-\T1/ptm/m/n/10.95 zero-variance groups pro-duce zero gra-di-ent
- []
-
-File: figures/regime_transition.pdf Graphic file (type pdf)
-<use figures/regime_transition.pdf>
 [7]
-Underfull \hbox (badness 1292) in paragraph at lines 441--442
-\T1/ptm/m/n/10.95 The forward/reverse-KL frame-work makes a
+Underfull \hbox (badness 2359) in paragraph at lines 87--91
+\T1/ptm/m/n/10 via re-in-force-ment learn-ing.  \T1/ptm/m/it/10 arXiv preprint
  []
 
-[8] (main.bbl [9]
-Underfull \hbox (badness 1454) in paragraph at lines 142--147
-\T1/ptm/m/n/10 Car-roll Wain-wright, Pamela Mishkin, Chong
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 183--188
-\T1/ptm/m/n/10 Scales, Ajay Tan-wani, Heather Cole-Lewis,
- []
-
-[10]) [11]
+) [8]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -904,25 +945,36 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (20.92618pt too wide) in paragraph at lines 733--745
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 561.
+See the caption package documentation for explanation.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 771.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\to' on input line 771.
+(hyperref)                removing `\to' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 771.
+(hyperref)                removing `math shift' on input line 565.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 7888) has occurred while \output is active []
+
+ [10]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -935,14 +987,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[11] [12
 
-Underfull \vbox (badness 1342) has occurred while \output is active []
-
- [12]
-[13] [14
-
-] [15] (main.aux)
+] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 067A5FBA1A88216428B77BC1CF828574;5539.
+(rerunfilecheck)             Checksum: 4F9775BFB58AC04081274FC813319927;6267.
  )
-Output written on main.xdv (15 pages, 268860 bytes).
+Output written on main.xdv (12 pages, 163600 bytes).
