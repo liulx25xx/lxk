@@ -27,6 +27,7 @@ The main intervention balances preferred responses across positions during train
 
 ```text
 paper/                 LaTeX source and figures
+AAAI27_REQUIRED_EXPERIMENTS.md  Prioritized, reviewer-oriented experiment plan
 scripts/               Data conversion, training, evaluation, and aggregation
 results/               Raw evaluation records and generated summaries
 results/local_stats/   Recomputed tables, diagnostics, and uncertainty checks

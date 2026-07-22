@@ -1,18 +1,12 @@
-% This file can be compiled on its own or included after the references in
-% main.tex.  BlackboxNLP requires optional appendices to be part of the same
-% PDF, so main.tex defines \blackboxappendix before inputting this file.
-\ifdefined\blackboxappendix
-\newcommand{\finishappendixdocument}{}
-\else
-\documentclass[11pt]{article}
-\usepackage[review]{acl}
-\usepackage{times}
-\usepackage{latexsym}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{microtype}
-\usepackage{inconsolata}
+\documentclass[letterpaper]{article}
+\usepackage[submission]{aaai2027}
+\usepackage[hyphens]{url}
 \usepackage{graphicx}
+\urlstyle{rm}
+\def\UrlFont{\rm}
+\usepackage{natbib}
+\usepackage{caption}
+\frenchspacing
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
@@ -25,11 +19,16 @@
 \newcommand{\con}{\textsc{Con}}
 \newcommand{\ccal}{\textsc{Cal}}
 \newcommand{\multirow}[3]{#3}
+\providecommand{\href}[2]{#2}
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{0}
 
-\title{Appendix: When Accuracy Follows Position}
+\title{Supplementary Material: When Accuracy Follows Position}
 
-\author{Anonymous}
-\newcommand{\finishappendixdocument}{\end{document}}
+\author{Anonymous Submission}
+\affiliations{}
 
 \begin{document}
 \tolerance=1500
@@ -37,9 +36,8 @@
 \hbadness=3000
 \maketitle
 
-\section*{Appendix}
-This appendix provides additional training details, data construction information, robustness controls, cross-model results, and extended analyses for the main paper.
-\fi
+\section*{Supplementary Material}
+This document provides additional training details, data construction information, robustness controls, cross-model results, and extended analyses for the main paper.
 
 \appendix
 \section{Training Details}
@@ -98,25 +96,29 @@ For evaluation, we always test both the original and position-swapped version of
 The following is the training and evaluation template; line breaks are wrapped for display.
 {\scriptsize
 \begin{verbatim}
-Please act as an impartial judge and evaluate the quality
-of the responses provided by two AI assistants to the user
-question displayed below. You should choose the assistant
-that follows the user's instructions and answers the user's
-question better. Your evaluation should consider factors
-such as the helpfulness, relevance, accuracy, depth,
-creativity, and level of detail of their responses.
+Please act as an impartial judge and evaluate the
+quality of the responses provided by two AI
+assistants to the user question displayed below.
+You should choose the assistant that follows the
+user's instructions and answers the user's question
+better. Your evaluation should consider factors
+such as the helpfulness, relevance, accuracy,
+depth, creativity, and level of detail of their
+responses.
 
-Begin your evaluation by comparing the two responses and
-provide a short explanation. Avoid any position biases and
-ensure that the order in which the responses were presented
-does not influence your decision. Do not allow the length of
-the responses to influence your evaluation. Be as objective
-as possible.
+Begin your evaluation by comparing the two
+responses and provide a short explanation. Avoid
+any position biases and ensure that the order in
+which the responses were presented does not
+influence your decision. Do not allow the length
+of the responses to influence your evaluation.
+Be as objective as possible.
 
-After providing your explanation, output your final verdict
-by strictly following this format: "[[A]]" if assistant A is
-better, "[[B]]" if assistant B is better, and "[[C]]" if it
-is a tie or you cannot determine a winner.
+After providing your explanation, output your
+final verdict by strictly following this format:
+"[[A]]" if assistant A is better, "[[B]]" if
+assistant B is better, and "[[C]]" if it is a tie
+or you cannot determine a winner.
 
 [User Question]
 {question}
@@ -688,8 +690,6 @@ The single-seed Qwen2.5 learning-rate sweep shows a sharp transition within the 
 
 The Qwen3-8B accuracy-reward sweep is flatter, maintaining high-70s to low-80s consistency and reaching 78.4\% at the largest rate (Table~\ref{tab:crosslr}). Because the reward setups differ, this is a robustness check rather than a direct attribution to model capability. Practitioners should therefore audit each deployed model--reward--learning-rate combination.
 
-\ifdefined\blackboxappendix
-\else
 \bibliography{custom}
-\fi
-\finishappendixdocument
+
+\end{document}

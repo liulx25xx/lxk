@@ -1,177 +1,174 @@
 \begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 
-\bibitem[{Badshah et~al.(2026)Badshah, Emami, and Sajjad}]{scope2026}
-Sher Badshah, Ali Emami, and Hassan Sajjad. 2026.
-\newblock \href {https://doi.org/10.48550/arXiv.2602.13110} {{SCOPE}: Selective conformal optimized pairwise {LLM} judging}.
-\newblock \emph{Preprint}, arXiv:2602.13110.
+\bibitem[{Badshah, Emami, and Sajjad(2026)}]{scope2026}
+Badshah, S.; Emami, A.; and Sajjad, H. 2026.
+\newblock {SCOPE}: Selective Conformal Optimized Pairwise {LLM} Judging.
+\newblock arXiv:2602.13110.
 
 \bibitem[{Bai et~al.(2022)Bai, Jones, Ndousse, Askell, Chen, DasSarma, Drain, Fort, Ganguli, Henighan, Joseph, Kadavath, Kernion, Conerly, El-Showk, Elhage, Hatfield-Dodds, Hernandez, Hume, Johnston, Kravec, Lovitt, Nanda, Olsson, Amodei, Brown, Clark, McCandlish, Olah, Mann, and Kaplan}]{bai2022training}
-Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, Nicholas Joseph, Saurav Kadavath, Jackson Kernion, Tom Conerly, Sheer El-Showk, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Tristan Hume, and 12 others. 2022.
-\newblock \href {https://doi.org/10.48550/arXiv.2204.05862} {Training a helpful and harmless assistant with reinforcement learning from human feedback}.
-\newblock \emph{Preprint}, arXiv:2204.05862.
+Bai, Y.; Jones, A.; Ndousse, K.; Askell, A.; Chen, A.; DasSarma, N.; Drain, D.; Fort, S.; Ganguli, D.; Henighan, T.; Joseph, N.; Kadavath, S.; Kernion, J.; Conerly, T.; El-Showk, S.; Elhage, N.; Hatfield-Dodds, Z.; Hernandez, D.; Hume, T.; Johnston, S.; Kravec, S.; Lovitt, L.; Nanda, N.; Olsson, C.; Amodei, D.; Brown, T.; Clark, J.; McCandlish, S.; Olah, C.; Mann, B.; and Kaplan, J. 2022.
+\newblock Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback.
+\newblock arXiv:2204.05862.
 
 \bibitem[{Chen et~al.(2025)Chen, Hu, Zou, Wu, Wang, Hooi, and He}]{chen2025judgelrm}
-Nuo Chen, Zhiyuan Hu, Qingyun Zou, Jiaying Wu, Qian Wang, Bryan Hooi, and Bingsheng He. 2025.
-\newblock \href {https://doi.org/10.48550/arXiv.2504.00050} {{JudgeLRM}: Large reasoning models as a judge}.
-\newblock \emph{Preprint}, arXiv:2504.00050.
+Chen, N.; Hu, Z.; Zou, Q.; Wu, J.; Wang, Q.; Hooi, B.; and He, B. 2025.
+\newblock {JudgeLRM}: Large Reasoning Models as a Judge.
+\newblock arXiv:2504.00050.
 
 \bibitem[{Chiang et~al.(2024)Chiang, Zheng, Sheng, Angelopoulos, Li, Li, Zhu, Zhang, Jordan, Gonzalez, and Stoica}]{zheng2024arena}
-Wei-Lin Chiang, Lianmin Zheng, Ying Sheng, Anastasios~Nikolas Angelopoulos, Tianle Li, Dacheng Li, Banghua Zhu, Hao Zhang, Michael Jordan, Joseph~E. Gonzalez, and Ion Stoica. 2024.
-\newblock \href {https://proceedings.mlr.press/v235/chiang24b.html} {Chatbot arena: An open platform for evaluating {LLM}s by human preference}.
-\newblock In \emph{Proceedings of the 41st International Conference on Machine Learning}, volume 235 of \emph{Proceedings of Machine Learning Research}, pages 8359--8388. PMLR.
+Chiang, W.-L.; Zheng, L.; Sheng, Y.; Angelopoulos, A.~N.; Li, T.; Li, D.; Zhu, B.; Zhang, H.; Jordan, M.; Gonzalez, J.~E.; and Stoica, I. 2024.
+\newblock Chatbot Arena: An Open Platform for Evaluating {LLM}s by Human Preference.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine Learning}, volume 235 of \emph{Proceedings of Machine Learning Research}, 8359--8388. PMLR.
 
 \bibitem[{Christiano et~al.(2017)Christiano, Leike, Brown, Martic, Legg, and Amodei}]{christiano2017deep}
-Paul~F. Christiano, Jan Leike, Tom Brown, Miljan Martic, Shane Legg, and Dario Amodei. 2017.
-\newblock Deep reinforcement learning from human preferences.
+Christiano, P.~F.; Leike, J.; Brown, T.; Martic, M.; Legg, S.; and Amodei, D. 2017.
+\newblock Deep Reinforcement Learning from Human Preferences.
 \newblock In \emph{Advances in Neural Information Processing Systems}.
 
-\bibitem[{Gao et~al.(2023)Gao, Schulman, and Hilton}]{gao2023scaling}
-Leo Gao, John Schulman, and Jacob Hilton. 2023.
-\newblock Scaling laws for reward model overoptimization.
+\bibitem[{Gao, Schulman, and Hilton(2023)}]{gao2023scaling}
+Gao, L.; Schulman, J.; and Hilton, J. 2023.
+\newblock Scaling Laws for Reward Model Overoptimization.
 \newblock In \emph{Proceedings of the 40th International Conference on Machine Learning}.
 
 \bibitem[{Geirhos et~al.(2020)Geirhos, Jacobsen, Michaelis, Zemel, Brendel, Bethge, and Wichmann}]{geirhos2020shortcut}
-Robert Geirhos, J{"o}rn-Henrik Jacobsen, Claudio Michaelis, Richard Zemel, Wieland Brendel, Matthias Bethge, and Felix~A. Wichmann. 2020.
-\newblock Shortcut learning in deep neural networks.
-\newblock \emph{Nature Machine Intelligence}, 2:665--673.
+Geirhos, R.; Jacobsen, J.-H.; Michaelis, C.; Zemel, R.; Brendel, W.; Bethge, M.; and Wichmann, F.~A. 2020.
+\newblock Shortcut Learning in Deep Neural Networks.
+\newblock \emph{Nature Machine Intelligence}, 2: 665--673.
 
 \bibitem[{Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen}]{hu2022lora}
-Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu~Wang, and Weizhu Chen. 2022.
-\newblock {LoRA}: Low-rank adaptation of large language models.
+Hu, E.~J.; Shen, Y.; Wallis, P.; Allen-Zhu, Z.; Li, Y.; Wang, S.; Wang, L.; and Chen, W. 2022.
+\newblock {LoRA}: Low-Rank Adaptation of Large Language Models.
 \newblock In \emph{International Conference on Learning Representations}.
 
 \bibitem[{Jiang et~al.(2023)Jiang, Sablayrolles, Mensch, Bamford, Chaplot, de~las Casas, Bressand, Lengyel, Lample, Saulnier, Lavaud, Lachaux, Stock, Le~Scao, Lavril, Wang, Lacroix, and El~Sayed}]{jiang2023mistral}
-Albert~Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra~Singh Chaplot, Diego de~las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, L{\'e}lio~Renard Lavaud, Marie-Anne Lachaux, Pierre Stock, Teven Le~Scao, Thibaut Lavril, Thomas Wang, Timoth{\'e}e Lacroix, and William El~Sayed. 2023.
-\newblock \href {https://doi.org/10.48550/arXiv.2310.06825} {Mistral 7b}.
-\newblock \emph{Preprint}, arXiv:2310.06825.
+Jiang, A.~Q.; Sablayrolles, A.; Mensch, A.; Bamford, C.; Chaplot, D.~S.; de~las Casas, D.; Bressand, F.; Lengyel, G.; Lample, G.; Saulnier, L.; Lavaud, L.~R.; Lachaux, M.-A.; Stock, P.; Le~Scao, T.; Lavril, T.; Wang, T.; Lacroix, T.; and El~Sayed, W. 2023.
+\newblock Mistral 7B.
+\newblock arXiv:2310.06825.
 
 \bibitem[{Koo et~al.(2024)Koo, Lee, Raheja, Park, Kim, and Kang}]{koo2024benchmarking}
-Ryan Koo, Minhwa Lee, Vipul Raheja, Jong~Inn Park, Zae~Myung Kim, and Dongyeop Kang. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2309.17012} {Benchmarking cognitive biases in large language models as evaluators}.
-\newblock \emph{Preprint}, arXiv:2309.17012.
-\newblock Published at ACL 2024.
+Koo, R.; Lee, M.; Raheja, V.; Park, J.~I.; Kim, Z.~M.; and Kang, D. 2024.
+\newblock Benchmarking Cognitive Biases in Large Language Models as Evaluators.
+\newblock Published at ACL 2024, arXiv:2309.17012.
 
 \bibitem[{Lambert et~al.(2024)Lambert, Pyatkin, Morrison, Miranda, Lin, Chandu, Dziri, Kumar, Zick, Choi, Smith, and Hajishirzi}]{lambert2024rewardbench}
-Nathan Lambert, Valentina Pyatkin, Jacob Morrison, LJ~Miranda, Bill~Yuchen Lin, Khyathi Chandu, Nouha Dziri, Sachin Kumar, Tom Zick, Yejin Choi, Noah~A. Smith, and Hannaneh Hajishirzi. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2403.13787} {{RewardBench}: Evaluating reward models for language modeling}.
-\newblock \emph{Preprint}, arXiv:2403.13787.
+Lambert, N.; Pyatkin, V.; Morrison, J.; Miranda, L.; Lin, B.~Y.; Chandu, K.; Dziri, N.; Kumar, S.; Zick, T.; Choi, Y.; Smith, N.~A.; and Hajishirzi, H. 2024.
+\newblock {RewardBench}: Evaluating Reward Models for Language Modeling.
+\newblock arXiv:2403.13787.
 
-\bibitem[{McCoy et~al.(2019)McCoy, Pavlick, and Linzen}]{mccoy2019right}
-R.~Thomas McCoy, Ellie Pavlick, and Tal Linzen. 2019.
-\newblock Right for the wrong reasons: Diagnosing syntactic heuristics in natural language inference.
+\bibitem[{McCoy, Pavlick, and Linzen(2019)}]{mccoy2019right}
+McCoy, R.~T.; Pavlick, E.; and Linzen, T. 2019.
+\newblock Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference.
 \newblock In \emph{Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics}.
 
 \bibitem[{Moskovitz et~al.(2023)Moskovitz, Singh, Strouse, Sandholm, Salakhutdinov, Dragan, and McAleer}]{moskovitz2024confronting}
-Ted Moskovitz, Aaditya~K. Singh, DJ~Strouse, Tuomas Sandholm, Ruslan Salakhutdinov, Anca~D. Dragan, and Stephen McAleer. 2023.
-\newblock \href {https://doi.org/10.48550/arXiv.2310.04373} {Confronting reward model overoptimization with constrained {RLHF}}.
-\newblock \emph{Preprint}, arXiv:2310.04373.
+Moskovitz, T.; Singh, A.~K.; Strouse, D.; Sandholm, T.; Salakhutdinov, R.; Dragan, A.~D.; and McAleer, S. 2023.
+\newblock Confronting Reward Model Overoptimization with Constrained {RLHF}.
+\newblock arXiv:2310.04373.
 
 \bibitem[{Ouyang et~al.(2022)Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin, Zhang, Agarwal, Slama, Ray, Schulman, Hilton, Kelton, Miller, Simens, Askell, Welinder, Christiano, Leike, and Lowe}]{ouyang2022training}
-Long Ouyang, Jeff Wu, Xu~Jiang, Diogo Almeida, Carroll~L. Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda Askell, Peter Welinder, Paul Christiano, Jan Leike, and Ryan Lowe. 2022.
-\newblock Training language models to follow instructions with human feedback.
+Ouyang, L.; Wu, J.; Jiang, X.; Almeida, D.; Wainwright, C.~L.; Mishkin, P.; Zhang, C.; Agarwal, S.; Slama, K.; Ray, A.; Schulman, J.; Hilton, J.; Kelton, F.; Miller, L.; Simens, M.; Askell, A.; Welinder, P.; Christiano, P.; Leike, J.; and Lowe, R. 2022.
+\newblock Training Language Models to Follow Instructions with Human Feedback.
 \newblock In \emph{Advances in Neural Information Processing Systems}.
 
 \bibitem[{Pan et~al.(2024)Pan, Shih, Goldie, and Geirhos}]{pan2024spontaneous}
-Jane Pan, Tianyu Shih, Cameron Goldie, and Robert Geirhos. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2407.04549} {Spontaneous reward hacking in iterative self-refinement}.
-\newblock \emph{Preprint}, arXiv:2407.04549.
+Pan, J.; Shih, T.; Goldie, C.; and Geirhos, R. 2024.
+\newblock Spontaneous Reward Hacking in Iterative Self-Refinement.
+\newblock arXiv:2407.04549.
 
 \bibitem[{Park et~al.(2024)Park, Rafailov, Ermon, and Finn}]{park2024disentangling}
-Ryan Park, Rafael Rafailov, Stefano Ermon, and Chelsea Finn. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2403.19159} {Disentangling length from quality in direct preference optimization}.
-\newblock \emph{Preprint}, arXiv:2403.19159.
+Park, R.; Rafailov, R.; Ermon, S.; and Finn, C. 2024.
+\newblock Disentangling Length from Quality in Direct Preference Optimization.
+\newblock arXiv:2403.19159.
 
 \bibitem[{Qian et~al.(2026)Qian, Sun, Gales, and Knill}]{btsigma2026}
-Mengjie Qian, Guangzhi Sun, Mark J.~F. Gales, and Kate~M. Knill. 2026.
-\newblock \href {https://doi.org/10.48550/arXiv.2602.16610} {Who can we trust? {LLM}-as-a-jury for comparative assessment}.
-\newblock \emph{Preprint}, arXiv:2602.16610.
+Qian, M.; Sun, G.; Gales, M. J.~F.; and Knill, K.~M. 2026.
+\newblock Who Can We Trust? {LLM}-as-a-Jury for Comparative Assessment.
+\newblock arXiv:2602.16610.
 
 \bibitem[{{Qwen Team}(2025{\natexlab{a}})}]{qwen2025qwen25}
 {Qwen Team}. 2025{\natexlab{a}}.
-\newblock \href {https://doi.org/10.48550/arXiv.2412.15115} {{Qwen2.5} technical report}.
-\newblock \emph{Preprint}, arXiv:2412.15115.
+\newblock {Qwen2.5} Technical Report.
+\newblock arXiv:2412.15115.
 
 \bibitem[{{Qwen Team}(2025{\natexlab{b}})}]{qwen2025qwen3}
 {Qwen Team}. 2025{\natexlab{b}}.
-\newblock \href {https://doi.org/10.48550/arXiv.2505.09388} {{Qwen3} technical report}.
-\newblock \emph{Preprint}, arXiv:2505.09388.
+\newblock {Qwen3} Technical Report.
+\newblock arXiv:2505.09388.
 
 \bibitem[{Rafailov et~al.(2023)Rafailov, Sharma, Mitchell, Ermon, Manning, and Finn}]{rafailov2023direct}
-Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher~D. Manning, and Chelsea Finn. 2023.
-\newblock Direct preference optimization: Your language model is secretly a reward model.
+Rafailov, R.; Sharma, A.; Mitchell, E.; Ermon, S.; Manning, C.~D.; and Finn, C. 2023.
+\newblock Direct Preference Optimization: Your Language Model is Secretly a Reward Model.
 \newblock In \emph{Advances in Neural Information Processing Systems}.
 
 \bibitem[{Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu, and Guo}]{shao2024deepseekmath}
-Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan Zhang, Y.~K. Li, Y.~Wu, and Daya Guo. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2402.03300} {{DeepSeekMath}: Pushing the limits of mathematical reasoning in open language models}.
-\newblock \emph{Preprint}, arXiv:2402.03300.
+Shao, Z.; Wang, P.; Zhu, Q.; Xu, R.; Song, J.; Bi, X.; Zhang, H.; Zhang, M.; Li, Y.~K.; Wu, Y.; and Guo, D. 2024.
+\newblock {DeepSeekMath}: Pushing the Limits of Mathematical Reasoning in Open Language Models.
+\newblock arXiv:2402.03300.
 
 \bibitem[{Shi et~al.(2024)Shi, Ma, Liang, Diao, Ma, and Vosoughi}]{zhu2024judgebench}
-Lin Shi, Chiyu Ma, Wenhua Liang, Xingjian Diao, Weicheng Ma, and Soroush Vosoughi. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2406.07791} {Judging the judges: A systematic study of position bias in {LLM}-as-a-judge}.
-\newblock \emph{Preprint}, arXiv:2406.07791.
-\newblock AACL-IJCNLP 2025.
+Shi, L.; Ma, C.; Liang, W.; Diao, X.; Ma, W.; and Vosoughi, S. 2024.
+\newblock Judging the Judges: A Systematic Study of Position Bias in {LLM}-as-a-Judge.
+\newblock AACL-IJCNLP 2025, arXiv:2406.07791.
 
 \bibitem[{Singhal et~al.(2024)Singhal, Goyal, Xu, and Durrett}]{singhal2024long}
-Prasann Singhal, Tanya Goyal, Jiacheng Xu, and Greg Durrett. 2024.
-\newblock \href {https://arxiv.org/abs/2310.03716} {A long way to go: Investigating length correlations in {RLHF}}.
+Singhal, P.; Goyal, T.; Xu, J.; and Durrett, G. 2024.
+\newblock A Long Way to Go: Investigating Length Correlations in {RLHF}.
 \newblock In \emph{Conference on Language Modeling}.
 
 \bibitem[{Skalse et~al.(2022)Skalse, Howe, Krasheninnikov, and Krueger}]{skalse2022defining}
-Joar Skalse, Nikolaus Howe, Dmitrii Krasheninnikov, and David Krueger. 2022.
-\newblock Defining and characterizing reward hacking.
+Skalse, J.; Howe, N.; Krasheninnikov, D.; and Krueger, D. 2022.
+\newblock Defining and Characterizing Reward Hacking.
 \newblock In \emph{Advances in Neural Information Processing Systems}.
 
 \bibitem[{Stiennon et~al.(2020)Stiennon, Ouyang, Wu, Ziegler, Lowe, Voss, Radford, Amodei, and Christiano}]{stiennon2020learning}
-Nisan Stiennon, Long Ouyang, Jeff Wu, Daniel~M. Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, and Paul Christiano. 2020.
-\newblock Learning to summarize from human feedback.
+Stiennon, N.; Ouyang, L.; Wu, J.; Ziegler, D.~M.; Lowe, R.; Voss, C.; Radford, A.; Amodei, D.; and Christiano, P. 2020.
+\newblock Learning to Summarize from Human Feedback.
 \newblock In \emph{Advances in Neural Information Processing Systems}.
 
 \bibitem[{Tu et~al.(2020)Tu, Lalwani, Gella, and He}]{tu2020empirical}
-Lifu Tu, Garima Lalwani, Spandana Gella, and He~He. 2020.
-\newblock An empirical study on robustness to spurious correlations using pre-trained language models.
-\newblock \emph{Transactions of the Association for Computational Linguistics}, 8:621--633.
+Tu, L.; Lalwani, G.; Gella, S.; and He, H. 2020.
+\newblock An Empirical Study on Robustness to Spurious Correlations using Pre-trained Language Models.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 8: 621--633.
 
 \bibitem[{Wang et~al.(2024)Wang, Li, Chen, Cai, Zhu, Lin, Cao, Liu, Liu, and Sui}]{wang2024largelanguagemodels}
-Peiyi Wang, Lei Li, Liang Chen, Zefan Cai, Dawei Zhu, Binghuai Lin, Yunbo Cao, Qi~Liu, Tianyu Liu, and Zhifang Sui. 2024.
-\newblock Large language models are not fair evaluators.
+Wang, P.; Li, L.; Chen, L.; Cai, Z.; Zhu, D.; Lin, B.; Cao, Y.; Liu, Q.; Liu, T.; and Sui, Z. 2024.
+\newblock Large Language Models are not Fair Evaluators.
 \newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics}.
 
 \bibitem[{Wang et~al.(2025)Wang, Song, Zhu, Zhang, Yu, Chen, Song, Wang, Wang, Wu, Dai, Zhang, Ye, and Zhang}]{trustjudge2026}
-Yidong Wang, Yunze Song, Tingyuan Zhu, Xuanwang Zhang, Zhuohao Yu, Hao Chen, Chiyu Song, Qiufeng Wang, Cunxiang Wang, Zhen Wu, Xinyu Dai, Yue Zhang, Wei Ye, and Shikun Zhang. 2025.
-\newblock \href {https://doi.org/10.48550/arXiv.2509.21117} {{TrustJudge}: Inconsistencies of {LLM}-as-a-judge and how to alleviate them}.
-\newblock \emph{Preprint}, arXiv:2509.21117.
+Wang, Y.; Song, Y.; Zhu, T.; Zhang, X.; Yu, Z.; Chen, H.; Song, C.; Wang, Q.; Wang, C.; Wu, Z.; Dai, X.; Zhang, Y.; Ye, W.; and Zhang, S. 2025.
+\newblock {TrustJudge}: Inconsistencies of {LLM}-as-a-Judge and How to Alleviate Them.
+\newblock arXiv:2509.21117.
 
 \bibitem[{Wu and Aji(2023)}]{wu2024style}
-Minghao Wu and Alham~Fikri Aji. 2023.
-\newblock \href {https://doi.org/10.48550/arXiv.2307.03025} {Style over substance: Evaluation biases for large language models}.
-\newblock \emph{Preprint}, arXiv:2307.03025.
+Wu, M.; and Aji, A.~F. 2023.
+\newblock Style Over Substance: Evaluation Biases for Large Language Models.
+\newblock arXiv:2307.03025.
 
 \bibitem[{Xu et~al.(2025)Xu, Zhou, Nguyen, Xiong, and Joty}]{eisgrpo2026}
-Austin Xu, Yilun Zhou, Xuan-Phi Nguyen, Caiming Xiong, and Shafiq Joty. 2025.
-\newblock \href {https://doi.org/10.48550/arXiv.2505.13346} {{J4R}: Learning to judge with equivalent initial state group relative policy optimization}.
-\newblock \emph{Preprint}, arXiv:2505.13346.
+Xu, A.; Zhou, Y.; Nguyen, X.-P.; Xiong, C.; and Joty, S. 2025.
+\newblock {J4R}: Learning to Judge with Equivalent Initial State Group Relative Policy Optimization.
+\newblock arXiv:2505.13346.
 
 \bibitem[{Yang et~al.(2026)Yang, Feng, Chen, Zhang, Xu, and Li}]{fairjudge2026}
-Bo~Yang, Lanfei Feng, Yunkui Chen, Yu~Zhang, Xiao Xu, and Shijian Li. 2026.
-\newblock \href {https://doi.org/10.48550/arXiv.2602.06625} {{FairJudge}: An adaptive, debiased, and consistent {LLM}-as-a-judge}.
-\newblock \emph{Preprint}, arXiv:2602.06625.
+Yang, B.; Feng, L.; Chen, Y.; Zhang, Y.; Xu, X.; and Li, S. 2026.
+\newblock {FairJudge}: An Adaptive, Debiased, and Consistent {LLM}-as-a-Judge.
+\newblock arXiv:2602.06625.
 
 \bibitem[{Ye et~al.(2024)Ye, Wang, Huang, Chen, Zhang, Moniz, Gao, Geyer, Huang, Chen, Chawla, and Zhang}]{li2024quantifying}
-Jiayi Ye, Yanbo Wang, Yue Huang, Dongping Chen, Qihui Zhang, Nuno Moniz, Tian Gao, Werner Geyer, Chao Huang, Pin-Yu Chen, Nitesh~V. Chawla, and Xiangliang Zhang. 2024.
-\newblock \href {https://doi.org/10.48550/arXiv.2410.02736} {Justice or prejudice? quantifying biases in {LLM}-as-a-judge}.
-\newblock \emph{Preprint}, arXiv:2410.02736.
+Ye, J.; Wang, Y.; Huang, Y.; Chen, D.; Zhang, Q.; Moniz, N.; Gao, T.; Geyer, W.; Huang, C.; Chen, P.-Y.; Chawla, N.~V.; and Zhang, X. 2024.
+\newblock Justice or Prejudice? Quantifying Biases in {LLM}-as-a-Judge.
+\newblock arXiv:2410.02736.
 
 \bibitem[{Zheng et~al.(2026)Zheng, Yuan, Yao, Gu, Zheng, and He}]{pagrpo2026}
-Jinquan Zheng, Jia Yuan, Jiacheng Yao, Chenyang Gu, Pujun Zheng, and Guoxiu He. 2026.
-\newblock \href {https://doi.org/10.48550/arXiv.2603.21016} {Mitigating selection bias in large language models via permutation-aware {GRPO}}.
-\newblock \emph{Preprint}, arXiv:2603.21016.
-\newblock Accepted to ACL 2026 Main Conference.
+Zheng, J.; Yuan, J.; Yao, J.; Gu, C.; Zheng, P.; and He, G. 2026.
+\newblock Mitigating Selection Bias in Large Language Models via Permutation-Aware {GRPO}.
+\newblock Accepted to ACL 2026 Main Conference, arXiv:2603.21016.
 
 \bibitem[{Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li, Li, Xing, Zhang, Gonzalez, and Stoica}]{zheng2023judging}
-Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E. Gonzalez, and Ion Stoica. 2023.
-\newblock \href {https://doi.org/10.48550/arXiv.2306.05685} {Judging {LLM}-as-a-judge with {MT-Bench} and chatbot arena}.
-\newblock \emph{Preprint}, arXiv:2306.05685.
+Zheng, L.; Chiang, W.-L.; Sheng, Y.; Zhuang, S.; Wu, Z.; Zhuang, Y.; Lin, Z.; Li, Z.; Li, D.; Xing, E.~P.; Zhang, H.; Gonzalez, J.~E.; and Stoica, I. 2023.
+\newblock Judging {LLM}-as-a-Judge with {MT-Bench} and Chatbot Arena.
+\newblock arXiv:2306.05685.
 
 \end{thebibliography}

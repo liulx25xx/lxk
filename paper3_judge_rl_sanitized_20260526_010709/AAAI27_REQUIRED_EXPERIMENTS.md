@@ -1,10 +1,78 @@
-# AAAI-27 补实验执行清单
+# AAAI-27 版本对齐与补实验执行清单
 
-> 最后整合：2026-07-21  
-> 状态：待执行与跟踪  
-> 对应论文：`paper/main_aaai2027.tex`  
-> 核心目标：补强外部有效性和强基线比较，而不是继续堆叠局部 reward/prompt/label ablation。
+> 最后整合：2026-07-22
+> 状态：待执行与跟踪
+> EMNLP 已投稿基线：`16532_Position_Shortcut_How_Re.pdf`（2026-05-26，14 页）
+> 当前唯一 AAAI 稿：`paper/main.tex` / `paper/main.pdf`
+> 当前唯一补充材料：`paper/supplement.tex` / `paper/supplement.pdf`
+> 核心目标：在已对齐的 AAAI canonical 稿上补强外部有效性和强基线比较；不要继续堆叠低收益的局部 reward/prompt/label ablation。
 > 本文件是当前唯一有效的补实验计划，并取代历史文件 `NEXT_EXPERIMENTS.md`。
+
+## A. 版本基线与 EMNLP 可取内容继承审计
+
+### A.1 版本链结论
+
+当前目录没有可用于逐提交追溯的 Git 历史，因此不能做源码级 ancestry 证明；但根据 PDF 内容、文件时间和章节结构，可以得到足够明确的工作结论：
+
+| 版本 | 时间/规模 | 结论 |
+|---|---|---|
+| EMNLP 已投稿 PDF | 2026-05-26，14 页 | 这是实际投稿基线，标题为 *Position Shortcut: How Reinforcement Learning Teaches LLM Judges to Cheat* |
+| 7 月 17 日 ACL-style `paper/main.tex` | 2026-07-17，配套 PDF 18 页（含参考文献和 appendix） | 保留投稿稿核心实验并吸收大量后续修订；它是本轮 AAAI 迁移的语义源 |
+| 旧 `paper/main_aaai2027.tex` | 2026-07-10，7 页 | 较早 AAAI 分支；其模板设置已迁移，重复文件随后删除 |
+| 当前 canonical `paper/main.tex` | 2026-07-22，9 页 | 最新语义内容与 AAAI 格式已经合并；正文和结论到第 7 页，参考文献为第 8--9 页 |
+| 当前 canonical `paper/supplement.tex` | 2026-07-22，7 页 | 最新 supplementary 内容与 AAAI 格式已经合并 |
+
+因此当前版本链已经收束：**`paper/main.tex` 是唯一主稿，`paper/supplement.tex` 是唯一补充材料；两者都采用 AAAI 格式并保留 EMNLP 投稿稿的有效内容。** 后续实验直接写入这两个 canonical 文件。
+
+### A.2 EMNLP 投稿稿可取内容的继承状态
+
+这里不按审稿回复组织工作。EMNLP 已投稿稿仅作为转投 AAAI 的内容基线：保留其最有说服力的现象、控制实验和实用结论，同时采用 7 月 17 日 `main.tex` 中更严谨的统计与措辞。
+
+| EMNLP 投稿稿的可取之处 | 当前 `main.tex` | AAAI 迁移要求 |
+|---|---|---|
+| “高单顺序 accuracy、低 swap consistency”的核心反差 | ☑ 完整保留，并增加 order-averaged accuracy | 必须继续作为主线，不能只剩普通 position-bias 叙事 |
+| SFT 100/0 的极端、直观失败案例 | ☑ 保留并补充 sanity-check 解释 | 主表保留，明确它是固定标签 shortcut，不把 rationale quality 当结论 |
+| GRPO/DPO/SFT 与 reward/LR/checkpoint controls | ☑ 保留并用更谨慎的边界解释 | 正文保留最能区分主张的结果，其余进入 supplement |
+| Balanced data 是简单、可执行的修复 | ☑ 保留，并加入 non-duplicated control | 作为主要 intervention；正文同时报告修复后的 Avg/Con，而非只报 Orig |
+| Qwen2.5、Qwen3、Mistral 的严重程度差异 | ☑ 保留并改为 model-dependent | 保留跨模型图，不能把差异简单归因于模型能力 |
+| Label、prompt、length-confound、training-dynamics 控制 | ☑ 保留 | 选择一张 optimization-pressure 图进正文，细表留 supplement |
+| JudgeLRM public checkpoints 的外部诊断 | ☑ 保留且表述更克制 | 可作为 external check，不能写成推翻或直接反驳先前工作 |
+| 简单 mechanism 图和 practical takeaway | ☑ 保留并扩展为 minimal audit protocol | Figure 1 与 audit protocol 都应进入 AAAI 的核心叙事 |
+
+与此同时，转投时仍需保留 7 月最新版中对投稿稿过强表述的修正：
+
+| 转投时需要保留或修正的事项 | 当前 `main.tex` 状态 | 证据/剩余问题 |
+|---|---|---|
+| 把 confound 错归因于 RewardBench 本身 | ☑ 已修正 | 当前明确写成“our conversion / conversion script renders chosen as A”，appendix 给出 2,985 条数据及 2,089/447/449 split |
+| 对 JudgeLRM 使用“direct contradiction”等过强表述 | ☑ 已修正 | 当前只作为 external diagnostic，并明确“不代表先前训练收益都是 shortcut” |
+| 笼统声称 reward engineering 不能修复 | ◐ 部分完成 | 已收窄为“tested proxy rewards”；但 true paired/permutation-aware baseline 尚未运行 |
+| Balanced improvement 可能来自数据翻倍 | ☑ 已补控制 | 已有 2,089 条 non-duplicated balanced control，结果接近 mirrored balanced；AAAI 版仍需提升到正文 |
+| Balanced “preserves all accuracy gains” 过强 | ☑ 叙事已校准 | 当前改用 order-averaged accuracy，并区分 SFT 强恢复与 GRPO 较温和的真实收益 |
+| 单模型/单模型族 | ☑ 已改善 | 已有 Qwen2.5、Qwen3、Mistral 三个家族/代际；跨模型严重程度被写成 model-dependent |
+| 单数据集外部有效性 | ☐ 未解决 | 仍主要是 RewardBench-to-judge conversion；第二数据集仍是最高优先级新实验 |
+| 主结果缺少不确定性 | ◐ 部分完成 | GRPO 主条件已有多种子 mean ± std，appendix 有 bootstrap；SFT/DPO headline 条件仍多为单次训练，未做 McNemar |
+| Tie、parse failure、split 去向不清 | ☑ 已修正 | appendix 已写 tie 规则、strict-tie sensitivity、parse-failure 处理及 447 条保留 validation 的去向 |
+| Calibration 定义被过度解释 | ☑ 已重新定性 | 当前明确它是 fixed-confidence proxy，不再当作真实 calibration/ECE 证据；无显式 confidence 时不应硬补 ECE |
+| 缺少 qualitative evidence | ☑ 已补最小版本 | 当前正文有 example 2790 的 black-box trace；若扩展，应预先定义案例筛选规则，避免 cherry-picking |
+| 缺少复现材料 | ☑ 大部分完成 | anonymous artifact 已含 conversion、训练、评估、聚合脚本及 per-example predictions；不含 checkpoint/受限原始样本 |
+| 过强 causal/mechanism/phase-transition 叙事 | ☑ 已显著收窄 | 当前改为 behavioral/functional analysis，并写成 tested-grid 中的 observed transition，不宣称 universal threshold |
+| SFT 为何优于 GRPO 的解释 | ☐ 尚未系统补入 | 可在 Discussion 用“direct MLE signal vs sampled reward optimization”解释，但只能作为与结果一致的解释，不作因果证明 |
+| answer-quality gap、preference fairness、repetition stability、list-wise setting | ☐ 未做 | 不是当前最小可投的首要项；仅在核心 P0 完成且资源允许时再提升优先级 |
+| 2026 引用元数据与可验证性 | ◐ 需最终复核 | 当前 bibliography 已不再出现匿名占位引用，但投稿前仍需逐条核对题名、作者、年份与公开状态 |
+
+### A.3 已完成的 AAAI 语义对齐
+
+本轮已经按“内容迁移而非逐行覆盖”完成：
+
+1. 以 7 月 17 日 `paper/main.tex` 为语义 source of truth，吸收旧 `main_aaai2027.tex` 的 AAAI preamble、模板命令和版面约束。
+2. 逐节迁移最新 abstract、Introduction、metric definitions、主结果分析、Functional Analysis、Discussion、Limitations 和 Conclusion。
+3. 迁移当前正文中的两项新证据：optimization-pressure figure、qualitative black-box trace；不要恢复旧稿中过强的 phase-transition/causal wording。
+4. 用当前 Table 1/2 的 Orig、Swap、Avg、Con、First-pos、Bias 和 mean ± std 替换旧 AAAI 表；旧的 accuracy decomposition 不作为主证据恢复。
+5. 把 non-duplicated balanced control 提升到 AAAI 正文 mitigation comparison；prompt/label 细表继续放 supplement。
+6. 同步 `supplement.tex` 中 split、tie/parser、fixed-confidence proxy、bootstrap、non-duplication control 和谨慎的 threshold wording。
+7. 当前正文和结论结束于第 7 页，已为新增实验保留版面；最终压缩与占满排版放在实验写入之后完成。
+
+---
 
 ## 0. 先看结论
 
@@ -98,7 +166,7 @@
 
 ### 1.6 正文位置
 
-在 `paper/main_aaai2027.tex` 的 **Balanced Data Restores Position-Invariant Judgment** 之后、当前 **Robustness Summary** 之前，新增：
+在 `paper/main.tex` 的 **Balanced Data Restores Position-Invariant Judgment** 之后、当前 **Robustness Summary** 之前，新增：
 
 ```text
 4.3 Cross-Dataset Generalization
@@ -163,7 +231,7 @@
 
 ### 2.6 正文位置
 
-将当前 `paper/main_aaai2027.tex` 的 **Robustness Summary** 改为：
+将当前 `paper/main.tex` 的 **Robustness Summary** 改为：
 
 ```text
 4.4 Comparison with Position-Aware Mitigations
@@ -229,7 +297,7 @@
 
 ### 4.3 正文位置
 
-直接更新 `paper/main_aaai2027.tex` 的 unbalanced/balanced 主表，为 SFT/DPO 填入 mean ± standard deviation。逐 seed 结果放 supplementary，不新增正文小节。
+直接更新 `paper/main.tex` 的 unbalanced/balanced 主表，为 SFT/DPO 填入 mean ± standard deviation。逐 seed 结果放 supplementary，不新增正文小节。
 
 ---
 
@@ -293,7 +361,7 @@ position-A ratio = 0.50, 0.75, 0.90, 1.00
 
 ## 7. AAAI 正文重排方案
 
-当前 `paper/main_aaai2027.pdf` 共 7 页，references 已从第 6 页开始，因此仍有约一页左右 technical-content 空间；但不能把所有新表都直接追加。
+当前 `paper/main.pdf` 共 9 页，其中 technical content 与 Conclusion 结束于第 7 页、references 位于第 8--9 页。第 7 页保留的空白正用于下一轮新增实验；新增结果写入后再统一压缩，使最终 technical content 满足 AAAI 的 7 页限制，并把最终页平衡放在最后一步处理。
 
 推荐结构：
 
@@ -428,6 +496,9 @@ run.log
 
 | ID | 实验 | 优先级 | 状态 | 正文位置 |
 |---|---|---|---|---|
+| V1 | EMNLP 已投稿 PDF → 当前 `main.tex` 内容审计 | P0 | ☑ 已完成 | 本文件 A.1/A.2 |
+| V2 | 最新语义内容 → canonical AAAI `main.tex` | P0 | ☑ 已完成 | 全文 |
+| V3 | 最新 supplement → canonical AAAI `supplement.tex` | P0 | ☑ 已完成 | Supplement |
 | E1 | 第二数据集复现 | P0 | ☐ 未开始 | §4.3 |
 | E2 | Online random order | P0 | ☐ 未开始 | §4.4 |
 | E3 | Paired/permutation-aware baseline | P0/P1 | ☐ 未开始 | §4.4 |

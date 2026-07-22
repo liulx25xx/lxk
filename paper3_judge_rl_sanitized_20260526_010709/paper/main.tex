@@ -1,12 +1,12 @@
-\documentclass[11pt]{article}
-\usepackage[review]{acl}
-\usepackage{times}
-\usepackage{latexsym}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{microtype}
-\usepackage{inconsolata}
+\documentclass[letterpaper]{article}
+\usepackage[submission]{aaai2027}
+\usepackage[hyphens]{url}
 \usepackage{graphicx}
+\urlstyle{rm}
+\def\UrlFont{\rm}
+\usepackage{natbib}
+\usepackage{caption}
+\frenchspacing
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
@@ -20,11 +20,16 @@
 \newcommand{\con}{\textsc{Con}}
 \newcommand{\ccal}{\textsc{Cal}}
 \newcommand{\multirow}[3]{#3}
-\newcommand{\FloatBarrier}{}
+\providecommand{\href}[2]{#2}
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{0}
 
 \title{When Accuracy Follows Position: Diagnosing Training-Induced Shortcuts in LLM Judges}
 
-\author{Anonymous}
+\author{Anonymous Submission}
+\affiliations{}
 
 \begin{document}
 \tolerance=1500
@@ -246,7 +251,7 @@ The same comparison also reinterprets the failure of SFT and high-learning-rate 
 
 We test whether the shortcut is merely an artifact of training duration, inference procedure, prompt wording, label tokens, or generic spurious-feature learning. The same pattern persists across duration, filtering, prompt, and label controls, while a length-confounded control stays near baseline (79.7\% consistency, 50.6\% first-position rate), suggesting that the severe collapse is specific to the order confound. Checkpoint evaluation shows a transition: early training improves original-order accuracy with little consistency loss, while later optimization trades consistency for a higher first-position rate (Figure~\ref{fig:optimization-pressure}a). Evaluation-time swap filtering detects but does not repair the failure, and prompt reminders change consistency only marginally (+2.2 pp on Qwen2.5 and -1.1 pp on Mistral).
 
-Changing the output labels from A/B to 1/2 or Left/Right also fails to remove the shortcut (Appendix Table~\ref{tab:labels-app}). On the original-order prompts, where the preferred response is first-listed, the model continues to select the first-listed response at nearly the same rate under each label scheme, while position-swap consistency remains depressed. The model emits the requested symbols, such as ``[[1]]'' or ``[[Left]],'' rather than reverting to ``[[A]].'' This control rules out a narrow explanation based only on memorizing the literal A token.
+Changing the output labels from A/B to 1/2 or Left/Right also fails to remove the shortcut (see the label-control table in the supplementary material). On the original-order prompts, where the preferred response is first-listed, the model continues to select the first-listed response at nearly the same rate under each label scheme, while position-swap consistency remains depressed. The model emits the requested symbols, such as ``[[1]]'' or ``[[Left]],'' rather than reverting to ``[[A]].'' This control rules out a narrow explanation based only on memorizing the literal A token.
 
 \subsection{Cross-Model Replication}
 
@@ -314,7 +319,7 @@ The shortcut is not specific to the primary Qwen2.5 model. Figure~\ref{fig:cross
 \addlegendentry{Balanced}
 \end{axis}
 \end{tikzpicture}
-\caption{Cross-model GRPO replication. Unbalanced training reduces consistency most strongly on Mistral and Qwen2.5, while balanced data restores or improves consistency across all three tested model families. Exact accuracy values and full controls are in \mbox{Appendix Table~\ref{tab:crossmodel}}.}
+\caption{Cross-model GRPO replication. Unbalanced training reduces consistency most strongly on Mistral and Qwen2.5, while balanced data restores or improves consistency across all three tested model families. Exact accuracy values and full controls are reported in the supplementary material.}
 \label{fig:crossmodel-main}
 \end{figure}
 
@@ -332,11 +337,11 @@ A stylized slot-bias model illustrates this pressure. It is not a derivation of 
 \approx -\tfrac{1}{2}(2\alpha-1),
 \qquad \alpha=\Pr(y=+1).
 \]
-Thus fully unbalanced data ($\alpha=1$) induces a first-order gradient toward choosing the first response, while balanced data ($\alpha=0.5$) cancels this shortcut gradient. Appendix~\ref{app:slotbias} gives the full derivation.
+Thus fully unbalanced data ($\alpha=1$) induces a first-order gradient toward choosing the first response, while balanced data ($\alpha=0.5$) cancels this shortcut gradient. The supplementary material gives the full derivation.
 
 This also clarifies why the tested proxy rewards fail. Decisiveness penalizes ties but does not require position invariance. Our confidence proxy applies a Brier-shaped score to a fixed fallback confidence when no confidence is emitted; it therefore remains largely aligned with verdict correctness and does not make position dependence costly. The composite reward remains satisfiable by the shortcut. Balanced data changes the training distribution instead: it removes the global $P \to v^*$ correlation, so position no longer reliably predicts reward.
 
-The confound-ratio diagnostic in Appendix~\ref{app:dose} provides a boundary check. Intermediate single-seed ratios are noisy and non-monotonic, but the fully unbalanced endpoint shows a much larger consistency loss than the balanced reference.
+The confound-ratio diagnostic in the supplementary material provides a boundary check. Intermediate single-seed ratios are noisy and non-monotonic, but the fully unbalanced endpoint shows a much larger consistency loss than the balanced reference.
 
 \subsection{Single-Order and Order-Averaged Accuracy}
 
@@ -422,9 +427,5 @@ The remedy is simple but diagnostic: remove the position-label correlation befor
 
 \clearpage
 \bibliography{custom}
-
-\clearpage
-\def\blackboxappendix{1}
-\input{supplement}
 
 \end{document}
