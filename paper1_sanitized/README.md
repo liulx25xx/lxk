@@ -1,8 +1,27 @@
-# EMNLP 2026 Paper 1: Code Agent Failure Analysis
+# Selective Recovery for Code Agents
 
-**Title**: "Beyond Text Matching: Failure Taxonomy, Adaptive Scaffolding, and Recovery Strategies for Code Agents"  
-**Venue**: EMNLP 2026 (ARR May cycle, deadline 2026-05-25 AoE)  
-**基于**: submission1 "Behavioral Scaffolding for LLM Code-Edit Repair" 的三方向扩展
+**Active title**: "Redirect, Escalate, or Abstain? Selective Recovery for Code Agents"  
+**Active manuscript**: `main_neurips.tex`  
+**Compiled PDF**: `output/pdf/main_neurips.pdf`  
+**Target direction**: AAAI-27 full-paper development; the current LaTeX file still uses the NeurIPS working template until venue-format conversion.  
+
+The paper was realigned on 2026-07-22 using the submitted EMNLP PDF, the
+official reviews, and the local artifact audit.  The new thesis treats recovery
+as selection among redirect, evidence escalation, and abstention.  Historical
+claims about an online four-way classifier, semantic ``waste,'' a universal
+scaffolding frontier, and end-to-end recovery are not active claims.
+
+## Active entry points
+
+- `main_neurips.tex`: current paper source.
+- `EMNLP_REVIEW_ALIGNMENT.md`: what was retained, corrected, or removed after
+  the reviews.
+- `AAAI27_EXPERIMENT_PRIORITIES.md`: paper-facing experiment priorities.
+- `SERVER_EXPERIMENTS.md`: executable GPU/server queue.
+- `LOCAL_AUDIT.md` and `LOCAL_EXPERIMENTS.md`: locally verified evidence.
+
+The project notes below describe the original EMNLP-era pipeline and should be
+treated as historical unless an active file above explicitly reuses them.
 
 ---
 

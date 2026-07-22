@@ -1,116 +1,144 @@
-# GPU / Server Experiment Queue
+# GPU / Server Queue for Selective Recovery
 
-This list separates experiments that cannot be completed from the stored local
-JSON artifacts. Items are ordered by how much they would strengthen a NeurIPS or
-StRICt submission.
+Updated: 2026-07-22
 
-## Completed locally on 2026-07-15
+This queue follows the revised paper thesis in `main_neurips.tex`: select among
+redirect, evidence escalation, and abstention by expected intervention utility.
+The old four-way classifier is not a submission target unless it can be rebuilt
+from prefix-only features with complete held-out artifacts.
 
-The stored artifacts were sufficient for leave-one-project-out scaffold
-selection, proxy-component ablations, blinded-judge sensitivity, and paired
-cross-category transfer with project-clustered bootstrap intervals.  Results,
-code, and processed data are in `LOCAL_EXPERIMENTS.md`,
-`scripts/local_offline_experiments.py`, and
-`results/local_offline_experiments.json`.  These analyses are removed from the
-server queue; the experiments below require new model calls, raw trajectory
-prefixes, repository containers, or human annotation.
+## Already completed locally
 
-## P0: submission-critical
+No additional model calls were needed for the following audited results:
 
-### 1. Remove privileged diagnostic context
+- leave-one-project-out selection over stored responses;
+- proxy-component ablations;
+- paired LLM-judge sensitivity on the available subset;
+- same-instance paired cross-category transfer;
+- artifact-grounded qualitative proxy-failure cases;
+- regenerated publication figures and project-clustered intervals.
 
-- **Question:** Do category-matched scaffolds still help when the prompt does not
-  disclose the gold failure type or gold target files?
-- **Protocol:** Detect a first observable error from the trajectory; provide only
-  the issue text and prefix available at that point. Compare control,
-  `reread_file`, `step_back`, and an abstain condition on a held-out split.
-- **Minimum scale:** 96 instances x 4 conditions x 3 representative models =
-  1,152 model calls, with at least three repeated generations if temperature is
-  nonzero.
-- **Resource:** API/server inference; no local GPU is required if using hosted
-  models.
-- **Deliverables:** versioned prompts, raw responses, per-instance scores, token
-  counts, latency/cost, and paired confidence intervals.
+These are documented in `LOCAL_EXPERIMENTS.md`, `LOCAL_AUDIT.md`,
+`results/local_offline_experiments.json`, and the local analysis scripts.
 
-### 2. End-to-end repository repair
+## P0.1: leakage-free action comparison
 
-- **Question:** Does a redirect improve actual SWE-bench resolve rate rather than
-  only the next-action proxy?
-- **Protocol:** Resume each agent from the intervention point for a fixed step and
-  token budget. Run repository tests in isolated SWE-bench containers. Compare
-  no intervention, matched redirect, fixed redirect, and confidence-gated
-  abstention.
-- **Minimum scale:** At least 50--100 held-out instances, two agent harnesses, and
-  three runs per stochastic condition.
-- **Resource:** Multi-core server, Docker storage, and substantial API budget; a
-  GPU is needed only for locally hosted models.
-- **Primary metrics:** resolved rate, tests passed, regression rate, tokens,
-  wall-clock time, and intervention harm rate.
+**Question:** Which recovery action has positive incremental value when only the
+issue and observable prefix are available?
 
-### 3. Reproducible online structure detector
+**Conditions:**
 
-- **Question:** Can failure structure be inferred using only observations
-  available before intervention?
-- **Protocol:** Rebuild features from prefix-only traces; exclude gold-file
-  overlap, patch status, full-trajectory counts, and post-intervention signals.
-  Use repository- or project-grouped cross-validation and save every held-out
-  prediction.
-- **Baselines:** majority class, rule-only detector, logistic regression, random
-  forest, and a small sequence/LLM classifier.
-- **Resource:** CPU for tabular baselines; GPU/API only for sequence or embedding
-  models.
-- **Deliverables:** training script, feature schema, split manifest, confusion
-  matrices, calibration curves, abstention curves, and policy value on held-out
-  examples.
+1. abstain/control;
+2. fixed `step_back` redirect;
+3. repeated-edit-error rule with `reread_file`;
+4. evidence escalation through targeted test/trace analysis;
+5. learned or calibrated selective policy.
 
-## P1: strong reviewer-facing additions
+**Protocol:** project-held-out split; reproducible observable trigger; no gold
+category, target files, patch, full trajectory, or future actions.  Freeze the
+split, prompts, token budgets, and primary metric before the test run.
 
-### 4. Directly measure trajectory structure
+**Minimum scale:** 96 instances x 4--5 conditions x 2--3 representative models.
+Use temperature zero or at least three generations for stochastic conditions.
 
-- Compute retry-cycle length, repeated-action rate, action-type entropy,
-  edit-target entropy, test/edit alternation, and semantic drift across turns.
-- Test whether these continuous features predict scaffold effect beyond the four
-  retrospective labels.
-- **Resource:** CPU for discrete features; one GPU or embedding API for semantic
-  similarity.
+**Resources:** hosted API or local inference server.  A GPU is needed only for
+locally hosted models.  Save raw prompts, outputs, token counts, latency, costs,
+and test-state manifests.
 
-### 5. Human validation of categories and proxy scores
+**Primary analysis:** same-instance incremental value, project-clustered paired
+intervals, intervention harm rate, and risk--coverage curves.  The old regex
+score may be a secondary diagnostic but cannot be the sole primary outcome.
 
-- Use two independent annotators on a stratified sample, with a written rubric
-  and blinded condition labels.
-- Report category agreement, score agreement, and disagreements between humans,
-  regex scoring, and LLM judges.
-- **Resource:** annotation time or a labeling platform; no GPU required.
+## P0.2: end-to-end repository continuation
 
-### 6. Joint held-out routing and scaffold selection
+**Question:** Does selective recovery improve actual repository progress under
+equal budget?
 
-- The completed local analysis holds out projects when selecting among stored
-  scaffold responses.  A stricter deployment test must also learn the
-  prefix-only category/router on development projects, freeze both the router
-  and scaffold policy, and generate fresh responses once on untouched projects.
-- Use nested/grouped validation so neither category detection nor scaffold
-  selection sees test outcomes.
-- **Resource:** primarily API inference for fresh responses; CPU for analysis.
+Resume from the frozen decision state and compare:
 
-## P2: breadth and generalization
+- abstain/control;
+- always redirect;
+- always escalate;
+- selective policy with abstention.
 
-### 7. Harness, language, and benchmark transfer
+Use isolated SWE-bench containers and a fixed step/token/wall-clock budget.
+Report resolved rate, tests passed or newly passing, regressions, intervention
+harm, tokens, latency, and cost.
 
-- Repeat the study on at least one additional code-agent harness and one
-  non-Python benchmark or repository collection.
-- Preserve the same observation budget and evaluation contract across settings.
-- **Resource:** server/container infrastructure and API or local-model inference.
+**Scale:** first run a 10--20-instance infrastructure smoke test.  If stable,
+run 30--50 held-out instances for the deadline and expand to 50--100 later.
 
-### 8. Intervention timing and dose
+**Resources:** multi-core server, Docker storage, API budget, and optionally one
+GPU for local models.  This is the most infrastructure-intensive experiment.
 
-- Compare first observable error, repeated-error threshold, mid-trajectory, and
-  confidence-triggered intervention. Test one-sentence versus evidence-rich
-  redirects under equal token budgets.
-- **Resource:** API/server inference; container execution for end-to-end outcomes.
+## P0.3: prefix-only action-value gate
 
-## Recommended execution order
+**Question:** Can the system predict when acting beats abstention, rather than
+only predicting a retrospective failure label?
 
-Run P0.1 and P0.3 first because they remove the largest leakage risk. Then run a
-small P0.2 pilot (10--20 instances) to validate the container and continuation
-pipeline before spending on the full end-to-end experiment. Freeze prompts,
-splits, and metrics before scaling the run.
+Construct features from the observable prefix only.  Candidate signals include
+recognized tool errors, repeated-action counts, action-type entropy, edit-target
+entropy, test/edit alternation, elapsed tokens, and recent environment feedback.
+Exclude all gold and post-decision features.
+
+**Baselines:** always abstain, always redirect, repeated-error rule, logistic
+regression, random forest/gradient boosting, and an optional small LLM gate.
+
+**Validation:** project-grouped or repository-grouped splits; threshold chosen
+on development data; every held-out prediction saved.  Report calibration,
+risk--coverage, action-specific value, harm, and cost.  Four-way accuracy is a
+secondary diagnostic only.
+
+**Resources:** CPU for tabular models; GPU/API for embeddings, sequence models,
+or LLM gates.
+
+## P1.1: evidence escalation for applied-but-unresolved cases
+
+The largest operational group contains 70/143 trajectories and did not respond
+clearly to short redirects under the stored proxy.  Compare:
+
+- short `minimal_fix` or `test_analysis` redirect;
+- targeted test analysis with the current failure output;
+- execution-trace-conditioned replanning;
+- optional critic/PRM guidance;
+- abstain/control.
+
+Use matched or explicitly reported compute budgets.  Primary outcomes are
+downstream test progress and repair success.  This experiment replaces the old
+unsupported claim of a universal ``scaffolding frontier.''
+
+**Resources:** API/server inference and containers; GPU only for a local critic
+or locally hosted model.
+
+## P1.2: intervention timing and verification
+
+Compare first observable error, repeated-error threshold, fixed mid-trajectory,
+and confidence-triggered intervention.  After acting, verify repository progress
+and allow continue/escalate/stop decisions.  Report the quality--cost--harm
+trade-off, not only the best timing point.
+
+## P1.3: human/evaluator validation
+
+Human annotation is deferred.  When annotators are available, use two blinded
+raters on a pre-specified stratified sample and report agreement and disagreement
+with the regex proxy and LLM judge.  This requires annotation time, not a GPU.
+Repository tests remain the primary recovery metric.
+
+## P2: harness and language transfer
+
+After P0 works, repeat the held-out selective policy on one additional agent
+harness or a typed/compiled-language repository set.  Keep the observation and
+budget contract fixed.  Do not prioritize additional models under the old
+gold-context regex protocol.
+
+## Execution order
+
+1. Freeze the split, decision trigger, action set, budgets, and metrics.
+2. Run the small end-to-end smoke test.
+3. Run P0.1 development conditions.
+4. Fit and freeze the P0.3 action-value gate.
+5. Run the held-out P0.1/P0.2 selective-policy evaluation.
+6. Run the stronger P1.1 escalation comparison.
+7. Add timing, human evaluation, and transfer only after the core result is
+   stable.
+
