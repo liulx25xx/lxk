@@ -1,0 +1,2 @@
+{"annotation_id":"PA-000001","question":"Which enzyme maintains telomere length?","options":{"A":"DNA ligase","B":"Topoisomerase","C":"Primase","D":"Telomerase"},"prediction":"D) Telomerase","manual_answer":null,"status":null,"notes":""}
+{"annotation_id":"PA-000002","question":"Select the best option.","options":{"A":"Option one","B":"Option two","C":"Option three","D":"Option four"},"prediction":"The evidence supports A, although C is also possible. I cannot decide between A and C.","manual_answer":null,"status":null,"notes":""}
