@@ -30,7 +30,11 @@
 - `INSTRUCTIONS_ZH.md`：可直接阅读的精简说明。
 - `packages/`：24 个独立标注包。
 - `docs/`：完整标注、盲化、质控和报告规范。
+- `docs/AI_HANDOFF_AND_HUMAN_RESULT_INTERFACE_ZH.md`：下一位 AI 的完整交接与人工结果接口。
+- `human_results/`：24 人全部返回并冻结后统一加入结果的位置。
 - `schemas/`：盲标输入与完成标注的 JSON schema。
 - `CHECKSUMS.sha256`：本目录公开文件的 SHA-256。
 
 本目录不包含模型身份、gold answer、自动 parser 结果、自动正确性或私有映射。
+
+人工答案不要逐份上传。必须等 24 人全部返回并冻结 hash 后，再按照交接接口统一加入 `human_results/`。

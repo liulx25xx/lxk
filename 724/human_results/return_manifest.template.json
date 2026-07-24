@@ -1,0 +1,14 @@
+{
+  "protocol_version": "parser-audit-v1",
+  "status": "pending_all_returns",
+  "annotator_count_expected": 24,
+  "annotator_count_received": 0,
+  "primary_judgments_expected": 2400,
+  "primary_judgments_received": 0,
+  "qc_judgments_expected": 240,
+  "qc_judgments_received": 0,
+  "all_annotation_work_frozen": false,
+  "raw_checksums_file": null,
+  "validation_report": null,
+  "notes": "Do not upload partial human answers before all annotation work is frozen."
+}
